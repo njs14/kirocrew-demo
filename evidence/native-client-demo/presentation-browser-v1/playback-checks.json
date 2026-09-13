@@ -1,0 +1,82 @@
+[
+  {
+    "slide": 4,
+    "playing": {
+      "duration": 25.998058,
+      "error": null,
+      "height": 1290,
+      "paused": false,
+      "readyState": 4,
+      "time": 0.257833,
+      "width": 1920
+    },
+    "sought": {
+      "paused": true,
+      "time": 3
+    }
+  },
+  {
+    "slide": 5,
+    "playing": {
+      "duration": 28.014062,
+      "error": null,
+      "height": 1290,
+      "paused": false,
+      "readyState": 4,
+      "time": 0.241032,
+      "width": 1920
+    },
+    "sought": {
+      "paused": true,
+      "time": 6
+    }
+  },
+  {
+    "slide": 6,
+    "playing": {
+      "duration": 29.001064,
+      "error": null,
+      "height": 1290,
+      "paused": false,
+      "readyState": 4,
+      "time": 0.236446,
+      "width": 1920
+    },
+    "sought": {
+      "paused": true,
+      "time": 6
+    }
+  },
+  {
+    "slide": 7,
+    "playing": {
+      "duration": 34.020076,
+      "error": null,
+      "height": 1290,
+      "paused": false,
+      "readyState": 4,
+      "time": 0.236306,
+      "width": 1920
+    },
+    "sought": {
+      "paused": true,
+      "time": 2
+    }
+  },
+  {
+    "slide": 8,
+    "playing": {
+      "duration": 14.001002,
+      "error": null,
+      "height": 1290,
+      "paused": false,
+      "readyState": 4,
+      "time": 0.242389,
+      "width": 1920
+    },
+    "sought": {
+      "paused": true,
+      "time": 2
+    }
+  }
+]

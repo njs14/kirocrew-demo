@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "deck_sha256": "ac06b8132961dfc35cccc5d1c470ca0ff5b395ec7f7044659803f4ea7b0be8a7",
+  "slide_count": 10,
+  "capture_method": "Actual CUA browser screenshots at 1280x720, captured by root and reviewed as a contact sheet; no screenshots rendered by this council runner",
+  "capture_viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "root_confirmed_frozen_candidate": true,
+  "slides": [
+    {
+      "number": 1,
+      "file": "slide-01.png",
+      "sha256": "0ce5aec2fdcbfcb96f216774876604b2e987b145e61434371fd85962da193bd3"
+    },
+    {
+      "number": 2,
+      "file": "slide-02.png",
+      "sha256": "e4f7e83d054da22a193f7cd1c6316fc3a3d37321fb601028fbaf7563a8d548af"
+    },
+    {
+      "number": 3,
+      "file": "slide-03.png",
+      "sha256": "d08e0dd0b4b8822eb4f3679e44ef8feebcf5e90536a991cf86ff45aa35ebc76d"
+    },
+    {
+      "number": 4,
+      "file": "slide-04.png",
+      "sha256": "a9750384c813e7e5d781863ea3ced728114c0e912c2187c18871e3c581f4b66d"
+    },
+    {
+      "number": 5,
+      "file": "slide-05.png",
+      "sha256": "6d98656b955b738582721eba90d34830bcf6048e16b93ec698779033ea3afa9a"
+    },
+    {
+      "number": 6,
+      "file": "slide-06.png",
+      "sha256": "aef327ccbfbcc814330f74b7321a68d969b60023f6257d230d3efdf41cd3ffdc"
+    },
+    {
+      "number": 7,
+      "file": "slide-07.png",
+      "sha256": "acb88dae768beaacafd16559bdb3c61d6b963f1099b12ea8916650dab45409f6"
+    },
+    {
+      "number": 8,
+      "file": "slide-08.png",
+      "sha256": "685468b9f212e814c1a1ac532e2fbfd53732e9aa351ffe3b7a33cf7672d622fa"
+    },
+    {
+      "number": 9,
+      "file": "slide-09.png",
+      "sha256": "dc98f900c94f8fd1ab2aa83058e8f50a803af8f4c192f69bd280ad5d95d5a35c"
+    },
+    {
+      "number": 10,
+      "file": "slide-10.png",
+      "sha256": "5468b5a0979892357f369a2a22976a2f8a918c2ea7391afd5b4b5098e11d8e27"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "exact_new_gitignore_exclusions": [
+    "evidence/native-client-demo/20260913-ui2/baseline.json",
+    "evidence/native-client-demo/20260913-ui2/receipt.json",
+    "evidence/native-client-demo/host-20260913-ui1/baseline.json",
+    "evidence/native-client-demo/host-20260913-ui1/receipt.json",
+    "evidence/native-client-demo/host-20260913-ui2/baseline.json",
+    "evidence/native-client-demo/host-20260913-ui2/receipt.json",
+    "output/admin-console-native-20260913/02-sel-coverage.png",
+    "output/admin-console-native-20260913/04-teardown-rule-coverage.png",
+    "output/admin-console-native-20260913/08-native-crew-denial.png"
+  ],
+  "existing_exclusions_preserved": [
+    "recordings/**/raw/",
+    "config/*.local.json",
+    ".build/",
+    ".github/workflows/"
+  ],
+  "exports": [
+    {
+      "bytes": 4733,
+      "path": "evidence/native-client-demo/20260913-ui2/baseline-publication.json",
+      "private_source_bytes": 682966,
+      "private_source_path": "evidence/native-client-demo/20260913-ui2/baseline.json",
+      "private_source_sha256": "1fd8d89b115427ed0d31b9a8c6f7b16f2b1fcd9564196ab5d7df0c781b1aef2a",
+      "sha256": "6316c5b3252acc3fc8a9b91f7436b6248c778c2824b45c5100e40c99fe9e08e3"
+    },
+    {
+      "bytes": 11079,
+      "path": "evidence/native-client-demo/20260913-ui2/receipt-publication.json",
+      "private_source_bytes": 1385769,
+      "private_source_path": "evidence/native-client-demo/20260913-ui2/receipt.json",
+      "private_source_sha256": "0b66f7888e1d4e7fc842650fa297c9d2785c856d48eb6e2cd8bf6f264c71448e",
+      "sha256": "1e81f02d2237afbd0d6394b178def71134a8be79bd50f26b23f79af42983ee2e"
+    },
+    {
+      "bytes": 4729,
+      "path": "evidence/native-client-demo/host-20260913-ui1/baseline-publication.json",
+      "private_source_bytes": 679235,
+      "private_source_path": "evidence/native-client-demo/host-20260913-ui1/baseline.json",
+      "private_source_sha256": "11d681803029e1ad652f3a1f006b6f389dc6bbe4b9d4ac1e8d22fb23ea2a343c",
+      "sha256": "592ba16cb80113dab4875f12fc5c8d73e2b6304f2f1f5d82571ad44e8118e1eb"
+    },
+    {
+      "bytes": 6365,
+      "path": "evidence/native-client-demo/host-20260913-ui1/receipt-publication.json",
+      "private_source_bytes": 1573799,
+      "private_source_path": "evidence/native-client-demo/host-20260913-ui1/receipt.json",
+      "private_source_sha256": "3dc90df39baf82bb026968b8ce34696eea32082be6bdd212fae4348e13b3a196",
+      "sha256": "9bddd53904ba1a5efddfd74b186edfe1bff662c5c6a3ba38f13c9ea93f42f78b"
+    },
+    {
+      "bytes": 4574,
+      "path": "evidence/native-client-demo/host-20260913-ui2/baseline-publication.json",
+      "private_source_bytes": 681538,
+      "private_source_path": "evidence/native-client-demo/host-20260913-ui2/baseline.json",
+      "private_source_sha256": "74f46816a104d5970057bc46e9522ed61ee7417fb38a5cb3d1fd457242c1672c",
+      "sha256": "cee808fc689b58e4b916c39410d6a323c07af8ae9d35aa62aa6f6693a29bb5a3"
+    },
+    {
+      "bytes": 6027,
+      "path": "evidence/native-client-demo/host-20260913-ui2/receipt-publication.json",
+      "private_source_bytes": 1364691,
+      "private_source_path": "evidence/native-client-demo/host-20260913-ui2/receipt.json",
+      "private_source_sha256": "06b5c0bbf0c50946c03047604057f328f912ccf14c48c25cf580aeae3891ecdc",
+      "sha256": "bd0b2201a0e95bdeafedf9b9935393718c8fbbc883b626af8e2b9f77920c2053"
+    }
+  ],
+  "independent_review": {
+    "material_findings": [],
+    "resolved_findings": [
+      "Require baseline and receipt filenames to match their expected collector kinds.",
+      "Require baseline and receipt run_id and slot to match before either export write.",
+      "Label baseline event-file references as later same-run companion evidence.",
+      "Eventless captures explicitly say events.jsonl is absent and establish no native turn; capture-status.json is suggested only when present."
+    ],
+    "reviewer": "/root/native_publication_review/native_publication_readonly",
+    "role": "sol_advisor_sol_reviewer",
+    "scope": "Read-only final helper, sixteen tests, nine ignore entries, six concrete exports and retained-source bindings, including the zero-event note correction; no live operations.",
+    "verdict": "SHIP"
+  },
+  "kind": "native_demo_publication_review",
+  "limits": [
+    "This verdict covers publication derivatives and their bounded evidence preservation, not a new native enforcement acceptance.",
+    "Original broad-source hashes are locally verified; repository readers receive scoped derivatives and can reproduce the four-outcome analysis with the existing public event and SEL evidence.",
+    "Final deck, model council and later artifact changes require their own exact-candidate receipts.",
+    "No Git staging, commit, push, AWS, SSH, policy or native UI action was performed by this publication task."
+  ],
+  "minimization": {
+    "baseline_companion_scope": "Baseline event links explicitly identify later same-run companions, not baseline-time evidence.",
+    "export_bytes": 37507,
+    "omitted": "Broad SEL pages, authentication fingerprint details, unrelated audit traces and full conversation snapshots. Exact-run audit evidence, scoped companion event hashes and aggregate SEL counts remain.",
+    "private_source_bytes": 6367998
+  },
+  "offline_reproduction": {
+    "bounded_four_outcomes_reconciled": true,
+    "cli_exit_code": 0,
+    "final_candidate_independent_reproduction": true,
+    "full_native_acceptance": false,
+    "method": "Copy the publication receipt to receipt.json and scoped events to events.jsonl in a fresh temporary run directory; invoke the unchanged CLI with --sel-receipt and the existing SEL since/until window. No --collect-sel or live configuration is used.",
+    "network_calls": false,
+    "note_delta_effect": "Final note-only candidate retains identical analyzer inputs; independent reviewer reproduced all four outcomes from the final concrete export.",
+    "original_analysis_equals_export_analysis": true,
+    "original_collection_complete": false,
+    "phase_outcomes": {
+      "allow": true,
+      "crew": true,
+      "iam": true,
+      "mcp": true
+    },
+    "source_events": "evidence/native-client-demo/20260913-ui2/events.jsonl",
+    "source_receipt": "evidence/native-client-demo/20260913-ui2/receipt-publication.json",
+    "source_sel": "evidence/native-client-demo/20260913-ui2-reconciled-final/sel-interval.json",
+    "tool": "scripts/reconcile-native-client-evidence.py"
+  },
+  "original_sources_preserved": true,
+  "private_source_retention": "All six original snapshots remain byte-identical on disk and excluded from Git. Existing reconciliation and independent review hashes continue to identify those private originals.",
+  "rejected_screenshot_scope": "Two rejected full-page captures and one mislabeled telemetry capture. The images used by the tour remain publishable. No original image was deleted.",
+  "reviewed_at": "2026-09-13T22:21:03.841567+00:00",
+  "schema": 1,
+  "source_files": {
+    ".gitignore": "205559255d9b284259abddb060c985e3ed1f7edf1ce5e40a69c4b3630a654fb7",
+    "scripts/export-native-publication.py": "f0e917f7582d06eb743b4859e3fc846643c4a5260e67e7bc043b7bb1eaa1ca12",
+    "scripts/tests/test_native_publication.py": "4540d32f826c3f37e68f2578bdb8a92626fc56949f7254ae480cae2fa47a079b"
+  },
+  "validation": {
+    "command": "python3 -m unittest discover -s scripts/tests -p test_native_publication.py -q",
+    "exporter_hashes_match": true,
+    "failed": 0,
+    "git_diff_check": "passed",
+    "last_note_delta": "Only exporter_sha256 changed in all six derivatives; publication_notes additionally changed in the two eventless host-ui2 exports. Evidence fields remain byte-equivalent.",
+    "passed": 16,
+    "private_source_hashes_match": true,
+    "private_sources_visible_to_git": false,
+    "publishable_text_auth_fingerprint_scan": "No expected=/received=8-hex pattern in new publishable JSON, JSONL, Markdown, text or HTML.",
+    "six_exports_visible_to_git": true
+  },
+  "verdict": "ship_scoped_publication_exports"
+}

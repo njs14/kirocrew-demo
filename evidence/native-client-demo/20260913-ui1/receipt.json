@@ -1,0 +1,43 @@
+{
+  "acceptance": "not_evaluated",
+  "captured_events": 0,
+  "collection_complete": false,
+  "collector_sha256": "4843db40559942835b5994bf7f5efec0c2b3c6f158e9de934d717c1e1b63fd7e",
+  "failure": "sel_page_missing_or_possibly_truncated",
+  "finished": "2026-09-13T21:15:41.962330+00:00",
+  "helper_sha256": "429357edf4cc2a3b1ab719f733b0dae667220a6ef288c2a82ad3548ae22beac8",
+  "kind": "passive_native_client_evidence",
+  "limitations": [
+    "Collection is not an automatic native-enforcement acceptance verdict.",
+    "UI footage must independently show who submitted the prompt and approved once.",
+    "A second owner WebSocket does not own approval callbacks, but normal dashboard connection bookkeeping and cache refreshes occur.",
+    "WebSocket broadcasts have no sequence number; a connected stream alone cannot prove upstream callback completeness.",
+    "Permission-triggered process snapshots do not establish that approval remained pending during SSH sampling.",
+    "Crew hook-denial SEL lacks a direct trace/tool-call-ID link; use the isolated native turn and complete service interval.",
+    "IAM attribution additionally requires deployed-policy and existing-object receipts.",
+    "Configured Crew hooks are not proof of an immutable managed policy floor."
+  ],
+  "mcp_service_before": {
+    "ActiveState": "active",
+    "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+    "MainPID": "2833",
+    "NRestarts": "0",
+    "SubState": "running"
+  },
+  "permission_triggered_process_snapshots": [],
+  "run_id": "native-20260913-ui1",
+  "schema": 1,
+  "slot": "chat-1-1789310047",
+  "slot_before": {
+    "has_more": false,
+    "key": "chat-1-1789310047",
+    "messages": [],
+    "next_before": 0,
+    "queue": [],
+    "running": false,
+    "stopping": false,
+    "title": "New Session\u2026",
+    "total": 0
+  },
+  "started": "2026-09-13T21:15:33.367072+00:00"
+}

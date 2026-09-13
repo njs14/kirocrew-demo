@@ -1,0 +1,324 @@
+{
+  "acceptance": "not_evaluated",
+  "captured_events": 55,
+  "collection_complete": false,
+  "collector_sha256": "d9c9d037a7616a87f830554a44131ab75460ce48e355875270aa6d8f218e1675",
+  "conversation_summary": {
+    "slot_after": {
+      "captured_message_count": 24,
+      "has_more": false,
+      "message_content_exported": false,
+      "running": false,
+      "stopping": false,
+      "total": 28
+    },
+    "slot_before": {
+      "captured_message_count": 0,
+      "has_more": false,
+      "message_content_exported": false,
+      "running": false,
+      "stopping": false,
+      "total": 0
+    }
+  },
+  "exporter_sha256": "f0e917f7582d06eb743b4859e3fc846643c4a5260e67e7bc043b7bb1eaa1ca12",
+  "finish_requested_at": "2026-09-13T21:27:35.670046+00:00",
+  "finished": "2026-09-13T21:27:41.895577+00:00",
+  "helper_sha256": "429357edf4cc2a3b1ab719f733b0dae667220a6ef288c2a82ad3548ae22beac8",
+  "kind": "native_client_publication_export",
+  "mcp_audit": {
+    "collection_succeeded": true,
+    "end_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=98f0;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=644a4532f;t=65b63fb644ef8;x=f168a3ff8cc189d4",
+    "events": [
+      {
+        "event": "tool_decision",
+        "invocation_id": "7d91785e-6db3-489a-b41a-92076aa93c2f",
+        "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=9816;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=63bb83cdf;t=65b63f27838a8;x=8345ae762885228",
+        "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+        "journal_timestamp_us": "1789334688118952",
+        "layer": "mcp",
+        "outcome": "allowed",
+        "principal": "kirocrew-demo-client",
+        "service": "demo-mcp-enforcement",
+        "time": "2026-09-13T21:24:48.118854+00:00",
+        "tool": "read_allowed",
+        "trace_id": "native-20260913-ui2-allow"
+      },
+      {
+        "event": "aws_dispatch",
+        "invocation_id": "7d91785e-6db3-489a-b41a-92076aa93c2f",
+        "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=9818;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=63bb9e71f;t=65b63f279e2e8;x=16fc95d8571ef104",
+        "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+        "journal_timestamp_us": "1789334688228072",
+        "layer": "aws",
+        "outcome": "attempted",
+        "principal": "kirocrew-demo-client",
+        "service": "demo-mcp-enforcement",
+        "time": "2026-09-13T21:24:48.227978+00:00",
+        "tool": "read_allowed",
+        "trace_id": "native-20260913-ui2-allow"
+      },
+      {
+        "aws_request_id": "DT9A0C6ZKDWEQETN",
+        "event": "aws_result",
+        "invocation_id": "7d91785e-6db3-489a-b41a-92076aa93c2f",
+        "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=981b;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=63bbb0bab;t=65b63f27b0774;x=5dc254563d123f5f",
+        "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+        "journal_timestamp_us": "1789334688302964",
+        "layer": "aws",
+        "object_bytes": 55,
+        "object_sha256": "34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160",
+        "outcome": "allowed",
+        "principal": "kirocrew-demo-client",
+        "service": "demo-mcp-enforcement",
+        "time": "2026-09-13T21:24:48.302854+00:00",
+        "tool": "read_allowed",
+        "trace_id": "native-20260913-ui2-allow"
+      },
+      {
+        "event": "tool_decision",
+        "invocation_id": "78210521-0da7-41a7-a17a-a6291fe146bc",
+        "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=98df;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=642deed26;t=65b63f99ee8f0;x=8caea64365d38f46",
+        "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+        "journal_timestamp_us": "1789334808094960",
+        "layer": "mcp",
+        "outcome": "denied",
+        "principal": "kirocrew-demo-client",
+        "service": "demo-mcp-enforcement",
+        "time": "2026-09-13T21:26:48.094864+00:00",
+        "tool": "mcp_denied",
+        "trace_id": "native-20260913-ui2-mcp"
+      },
+      {
+        "event": "tool_decision",
+        "invocation_id": "82188711-aa09-4b36-b76d-72df4d64e579",
+        "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=98ec;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=644a1a01d;t=65b63fb619be7;x=43ebc8c9c7ae56b6",
+        "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+        "journal_timestamp_us": "1789334837631975",
+        "layer": "mcp",
+        "outcome": "allowed",
+        "principal": "kirocrew-demo-client",
+        "service": "demo-mcp-enforcement",
+        "time": "2026-09-13T21:27:17.631806+00:00",
+        "tool": "iam_denied",
+        "trace_id": "native-20260913-ui2-iam"
+      },
+      {
+        "event": "aws_dispatch",
+        "invocation_id": "82188711-aa09-4b36-b76d-72df4d64e579",
+        "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=98ee;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=644a3319c;t=65b63fb632d65;x=bd7200333bdebd6e",
+        "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+        "journal_timestamp_us": "1789334837734757",
+        "layer": "aws",
+        "outcome": "attempted",
+        "principal": "kirocrew-demo-client",
+        "service": "demo-mcp-enforcement",
+        "time": "2026-09-13T21:27:17.734618+00:00",
+        "tool": "iam_denied",
+        "trace_id": "native-20260913-ui2-iam"
+      },
+      {
+        "aws_request_id": "8DET0VKCQPXJXCMC",
+        "error_code": "AccessDenied",
+        "event": "aws_result",
+        "http_status": 403,
+        "invocation_id": "82188711-aa09-4b36-b76d-72df4d64e579",
+        "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=98ef;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=644a44a0e;t=65b63fb6445d7;x=30a306283d9c23d8",
+        "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+        "journal_timestamp_us": "1789334837806551",
+        "layer": "aws",
+        "outcome": "denied",
+        "principal": "kirocrew-demo-client",
+        "service": "demo-mcp-enforcement",
+        "time": "2026-09-13T21:27:17.806452+00:00",
+        "tool": "iam_denied",
+        "trace_id": "native-20260913-ui2-iam"
+      }
+    ],
+    "ignored_non_audit_rows": 20,
+    "publication_scope": {
+      "omitted_other_trace_count": 0,
+      "original_event_count": 7,
+      "run_event_count": 7
+    },
+    "start_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=91b0;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=5fedc5f44;t=65b63b59c5b0e;x=f168a3ff8cc189d4"
+  },
+  "mcp_service_after": {
+    "ActiveState": "active",
+    "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+    "MainPID": "2833",
+    "NRestarts": "0",
+    "SubState": "running"
+  },
+  "mcp_service_before": {
+    "ActiveState": "active",
+    "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+    "MainPID": "2833",
+    "NRestarts": "0",
+    "SubState": "running"
+  },
+  "native_events": {
+    "bytes": 25650,
+    "events": 55,
+    "path": "events.jsonl",
+    "relationship": "scoped companion for this capture",
+    "scope": "exact source slot",
+    "sha256": "ef2a092a89bc95316e2eb916545e6b52c4578114edd24cdf144eb0facb60cfc9"
+  },
+  "new_session_sel": [],
+  "permission_triggered_process_snapshots": [],
+  "private_sel_counts": {
+    "sel_after": {
+      "other_callers": 988,
+      "target_session": 12,
+      "total": 1000
+    },
+    "sel_before": {
+      "other_callers": 1000,
+      "target_session": 0,
+      "total": 1000
+    }
+  },
+  "private_source": {
+    "bytes": 1385769,
+    "path": "receipt.json",
+    "retention": "privately_retained_ignored",
+    "sha256": "0b66f7888e1d4e7fc842650fa297c9d2785c856d48eb6e2cd8bf6f264c71448e"
+  },
+  "processes_before": [
+    {
+      "comm": "python",
+      "cwd": "/opt/kirocrew-demo/mcp-enforcement",
+      "exe": "/usr/bin/python3.12",
+      "pid": 2833,
+      "ppid": 1,
+      "uid": 997
+    },
+    {
+      "comm": "systemd",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd",
+      "pid": 3557,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "(sd-pam)",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd-executor",
+      "pid": 3558,
+      "ppid": 3557,
+      "uid": 999
+    },
+    {
+      "comm": "sshd",
+      "cwd": "/",
+      "exe": "/usr/sbin/sshd",
+      "pid": 3613,
+      "ppid": 3552,
+      "uid": 999
+    },
+    {
+      "comm": "kirocrew",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 4991,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8461,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8462,
+      "ppid": 8461,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 66975,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 66987,
+      "ppid": 66975,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 66994,
+      "ppid": 66987,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 67871,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 67872,
+      "ppid": 67871,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 67879,
+      "ppid": 67872,
+      "uid": 999
+    }
+  ],
+  "publication_notes": [
+    "The hash-bound original snapshot is privately retained and excluded from Git; its bytes were not changed.",
+    "Broad SEL pages, their error details and complete conversation snapshots are omitted by an explicit field allowlist.",
+    "SEL summary counts describe the private source, not additional exported event evidence.",
+    "Use the scoped native events.jsonl and separately recovered SEL interval for offline outcome analysis.",
+    "This export is a publication boundary, not a new collection, integrity verification or enforcement acceptance verdict."
+  ],
+  "run_id": "native-20260913-ui2",
+  "schema": 1,
+  "sel_checkpoint": {
+    "anchor_event_id": "5e23431098f94ec8",
+    "anchor_sha256": "0d1d4ad48594bd29a86c30bf3e3cc8f62a58cfe9409d627200a41d867b981318",
+    "baseline_count": 1000
+  },
+  "sel_integrity_after": {
+    "integrity": "ok",
+    "tampered": 0,
+    "total": 85960,
+    "valid": 85960
+  },
+  "sel_window": {
+    "complete": false,
+    "reason": "sel_baseline_anchor_not_retained"
+  },
+  "service_stable": true,
+  "slot": "chat-1-1789310047",
+  "source_kind": "passive_native_client_evidence",
+  "started": "2026-09-13T21:19:35.909446+00:00",
+  "stream_finished": "2026-09-13T21:27:41.894269+00:00",
+  "stream_quiet_interval_seconds": 1.0
+}

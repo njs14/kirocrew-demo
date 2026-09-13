@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-13T22:12:23.184919+00:00",
+  "status": "passed",
+  "revision": "result-posters-v2",
+  "scope": "Poster images and corresponding poster metadata only. All MP4 bytes, continuous cuts, cues and raw sources retained.",
+  "reason": "Council review requested an actual result-frame poster for each control to avoid showing the preceding turn as the initial slide image.",
+  "manifests": [
+    {
+      "path": "output/native-client-clips-20260913/manifest.json",
+      "originalSha256": "75e26eb15e30ab2432da38e3a728936f539a789333a9e5f9ccb497f22943a127",
+      "revisedSha256": "2683eef05ff8d2a347e8c2494ca15ffe8eb991effeb48fce12b98055cdf3e59e",
+      "originalReceipt": {
+        "path": "output/native-client-clips-20260913/receipt.json",
+        "sha256": "32c81f7b6233c302bfa1bc7150fc091a21e8c7558ae291e95f7a55d627c4f0d3",
+        "bytes": 34743
+      },
+      "onlyPosterObjectsChanged": true,
+      "originalManifestSnapshot": {
+        "path": "evidence/native-client-demo/poster-review-v2/native-client-clips-20260913-manifest-before.json",
+        "sha256": "75e26eb15e30ab2432da38e3a728936f539a789333a9e5f9ccb497f22943a127",
+        "bytes": 16921
+      }
+    },
+    {
+      "path": "output/native-memory-clip-20260913/manifest.json",
+      "originalSha256": "30defeffec49130c2fd9c307fb6fe19bd817902eb1044c02b9e1559751ccc8db",
+      "revisedSha256": "3565112184e648433a295349127b60181e80cd6517f67a46604edf66477b127d",
+      "originalReceipt": {
+        "path": "output/native-memory-clip-20260913/receipt.json",
+        "sha256": "2893e3ecbaf9fc4dfc9887b019400e4611f5ade57c451543cd1207bcc34740a1",
+        "bytes": 10213
+      },
+      "onlyPosterObjectsChanged": true,
+      "originalManifestSnapshot": {
+        "path": "evidence/native-client-demo/poster-review-v2/native-memory-clip-20260913-manifest-before.json",
+        "sha256": "30defeffec49130c2fd9c307fb6fe19bd817902eb1044c02b9e1559751ccc8db",
+        "bytes": 4791
+      }
+    }
+  ],
+  "posters": [
+    {
+      "id": "native-allowed-read",
+      "directory": "output/native-client-clips-20260913",
+      "clipTimeSeconds": 22,
+      "sourceTimeSeconds": 66.0,
+      "posterBefore": {
+        "url": "native-allowed-read/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 146016,
+        "sha256": "bb965d47ac84714d4d8a8b3ae0060e4cbf7ddffd5cad553d312d1b014d10f607"
+      },
+      "posterAfter": {
+        "url": "native-allowed-read/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 200388,
+        "sha256": "132b18bce72c27c560dfdf61d973a0c922de9a8c95994f174e0dbcac1821e98d",
+        "time": 22
+      },
+      "video": {
+        "path": "output/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+        "sha256": "3bcd32eab9989b73a1b85845bd1294d02f4a3de6e622808f839b676fa8bc731a",
+        "bytes": 1136859
+      },
+      "cut": {
+        "start": 44.0,
+        "end": 70.0
+      },
+      "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+      "extractionCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+        "-ss",
+        "22",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        ".build/native-result-posters-v2/native-allowed-read-result-poster.jpg"
+      ],
+      "reproductionCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+        "-ss",
+        "22",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        "native-allowed-read-result-poster.jpg"
+      ]
+    },
+    {
+      "id": "native-crew-denial",
+      "directory": "output/native-client-clips-20260913",
+      "clipTimeSeconds": 17,
+      "sourceTimeSeconds": 113.0,
+      "posterBefore": {
+        "url": "native-crew-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 225609,
+        "sha256": "320cc01ce3dfcafb5e43cda4dc9792f1174ad701908f10b46df1701ec471381a"
+      },
+      "posterAfter": {
+        "url": "native-crew-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 227591,
+        "sha256": "d74da469fa069a9672be8d716d36259258b521ba5c7360c165407ccae99fb65a",
+        "time": 17
+      },
+      "video": {
+        "path": "output/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+        "sha256": "92f089ffc6d408310cda808387c748d187e75daf9d6314d0322b32ba43fe917e",
+        "bytes": 1983357
+      },
+      "cut": {
+        "start": 96.0,
+        "end": 124.0
+      },
+      "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+      "extractionCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+        "-ss",
+        "17",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        ".build/native-result-posters-v2/native-crew-denial-result-poster.jpg"
+      ],
+      "reproductionCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+        "-ss",
+        "17",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        "native-crew-denial-result-poster.jpg"
+      ]
+    },
+    {
+      "id": "native-mcp-denial",
+      "directory": "output/native-client-clips-20260913",
+      "clipTimeSeconds": 23,
+      "sourceTimeSeconds": 183.0,
+      "posterBefore": {
+        "url": "native-mcp-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 245713,
+        "sha256": "234c12b60967ebac0d7000aaa5e6b0cc31b0b587ead2e80d2120d2d39741ddde"
+      },
+      "posterAfter": {
+        "url": "native-mcp-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 234538,
+        "sha256": "90dac171aeab9b9abf0031ba84b58b4ac37fc24d6114195490a838c6e430511d",
+        "time": 23
+      },
+      "video": {
+        "path": "output/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+        "sha256": "9895ac8db2f08902a6086be866676e3e1273373e876d402f21cd788b101fb7a2",
+        "bytes": 2047715
+      },
+      "cut": {
+        "start": 160.0,
+        "end": 189.0
+      },
+      "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+      "extractionCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+        "-ss",
+        "23",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        ".build/native-result-posters-v2/native-mcp-denial-result-poster.jpg"
+      ],
+      "reproductionCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+        "-ss",
+        "23",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        "native-mcp-denial-result-poster.jpg"
+      ]
+    },
+    {
+      "id": "native-iam-denial",
+      "directory": "output/native-client-clips-20260913",
+      "clipTimeSeconds": 28,
+      "sourceTimeSeconds": 216.0,
+      "posterBefore": {
+        "url": "native-iam-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 255232,
+        "sha256": "b98147695974ba45836e910f82aa32b27de30cba58ed74840f4c3bf17ab67b2a"
+      },
+      "posterAfter": {
+        "url": "native-iam-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 205600,
+        "sha256": "a7c77c80e53dd36d7e643cad757755875abe56e6125ff4f2c0e41eec17c5ff9f",
+        "time": 28
+      },
+      "video": {
+        "path": "output/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+        "sha256": "56c8166490123442d83c89f5694b644898355f53c97649a4275a10d2d676067e",
+        "bytes": 2207810
+      },
+      "cut": {
+        "start": 188.0,
+        "end": 222.0
+      },
+      "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+      "extractionCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+        "-ss",
+        "28",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        ".build/native-result-posters-v2/native-iam-denial-result-poster.jpg"
+      ],
+      "reproductionCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+        "-ss",
+        "28",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        "native-iam-denial-result-poster.jpg"
+      ]
+    },
+    {
+      "id": "native-memory-assignment-refusal",
+      "directory": "output/native-memory-clip-20260913",
+      "clipTimeSeconds": 8,
+      "sourceTimeSeconds": 24.0,
+      "posterBefore": {
+        "url": "native-memory-assignment-refusal/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 148400,
+        "sha256": "b5b921323b61f30191ad2a1057b9230bcd7b0ba1ec6339e1f51723d7d4d585ee"
+      },
+      "posterAfter": {
+        "url": "native-memory-assignment-refusal/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 152476,
+        "sha256": "2abf516c8994a53d5a102d4b57c967bff0e2270b7e3b8d82524fae5289ea68fc",
+        "time": 8
+      },
+      "video": {
+        "path": "output/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+        "sha256": "4ab78129747a1db40c05ed3115969756e70e5e9a122a709beee6c4e0e6d26c19",
+        "bytes": 407034
+      },
+      "cut": {
+        "start": 16.0,
+        "end": 30.0
+      },
+      "sourceSha256": "672c79f461f47c6f0389af0a908e9553fcbe9878b4c475f1e8216e353154d88e",
+      "extractionCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+        "-ss",
+        "8",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        ".build/native-result-posters-v2/native-memory-assignment-refusal-result-poster.jpg"
+      ],
+      "reproductionCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+        "-ss",
+        "8",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        "native-memory-assignment-refusal-result-poster.jpg"
+      ]
+    }
+  ],
+  "unchangedCuts": [
+    {
+      "path": "recordings/native-client-20260913/cuts-mcp-controls.json",
+      "sha256": "32f097061ee96c688eaa67b10c4fbd20d9866da40cb5e714464b1e0720d9add5",
+      "bytes": 5517
+    },
+    {
+      "path": "recordings/native-client-20260913/cuts-host-memory.json",
+      "sha256": "e4b147ba08713e77916de6e81772c26c76d09897498968d6cf78b8cf11f580ef",
+      "bytes": 1762
+    }
+  ],
+  "unchangedRawSources": [
+    {
+      "path": "recordings/native-client-20260913/raw/mcp-control-take-01.mov",
+      "sha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+      "bytes": 72052519
+    },
+    {
+      "path": "recordings/native-client-20260913/raw/host-control-take-01.mov",
+      "sha256": "672c79f461f47c6f0389af0a908e9553fcbe9878b4c475f1e8216e353154d88e",
+      "bytes": 49842004
+    }
+  ],
+  "checks": [
+    "All five candidate result posters inspected at full size",
+    "Independent read-only reviewer confirmed each poster depicts its own outcome",
+    "All five revised JPEGs decoded successfully",
+    "Only poster objects changed within processed manifests",
+    "Every MP4 hash unchanged from original processed metadata",
+    "Cut manifests unchanged from original encoding receipts",
+    "Both raw recording hashes unchanged",
+    "Original manifest bytes retained as historical evidence snapshots"
+  ],
+  "visualFindings": {
+    "native-allowed-read": "Own read_allowed ok:true result with allow trace, 55 bytes and digest.",
+    "native-crew-denial": "Own Tool call blocked row for crew_denied plus trace and policy refusal.",
+    "native-mcp-denial": "Own mcp_denied request and tool_grant_denied, layer:mcp JSON. A fragment of the prior Crew prompt remains above; the current result is unambiguous.",
+    "native-iam-denial": "Own iam_denied request and AccessDenied, HTTP 403, layer:aws JSON.",
+    "native-memory-assignment-refusal": "Own harmless fs_read request and the red private-memory assignment refusal."
+  },
+  "provenanceNote": "Original encoding receipts retain their original manifest hashes. This receipt binds those originals to the revised poster-only manifests; media encoding checks continue to apply to unchanged video bytes. poster.time is clip-relative seconds. No raw frames or video were edited or composited.",
+  "limitations": [
+    "A poster is a selected still from the actual continuous clip; it does not independently establish server acceptance.",
+    "The existing chat title remains MCP Tool Call Read Allowed for the denial posters. The scene caption, tool name and trace identify the actual case.",
+    "Browser presentation validation belongs to the rebuilt deck receipt."
+  ]
+}

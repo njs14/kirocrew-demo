@@ -1,0 +1,500 @@
+{
+  "kind": "final_native_control_presentation_browser_review",
+  "reviewed_at": "2026-09-13T22:27:52.224019+00:00",
+  "artifact": "output/kirocrew-native-controls.html",
+  "sha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e",
+  "build_sha256": "e78306e950064d10e3fd3ec41b3bec81e1f2c3f0a0a11be9626a3dab6b4246e5",
+  "status": "passed",
+  "capture_method": "Actual CUA browser screenshots; original JPEG bytes preserved with .jpg filenames",
+  "slides": [
+    {
+      "number": 1,
+      "file": "slides/slide-01.jpg",
+      "sha256": "87af11fb0a4f3b80ced89c1d7f730a3aa7b9bfef54ec9276d6f97a0a2e5bd65c",
+      "layout": {
+        "brokenVisibleImages": 0,
+        "height": 720,
+        "horizontalOverflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "number": 2,
+      "file": "slides/slide-02.jpg",
+      "sha256": "1bea661e39dc2ff2be20c503ceace946aff5082a768d84846e313055a2bc8873",
+      "layout": {
+        "brokenVisibleImages": 0,
+        "height": 720,
+        "horizontalOverflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "number": 3,
+      "file": "slides/slide-03.jpg",
+      "sha256": "49e44179359fb3aaccc843598b00a00c45b4024c1b13ef8dc233ec3fde8e1798",
+      "layout": {
+        "brokenVisibleImages": 0,
+        "height": 720,
+        "horizontalOverflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "number": 4,
+      "file": "slides/slide-04.jpg",
+      "sha256": "0c8aa3b2dd6c08f2aaadc45a7476dc96b822035a1b11a4d37958694493da4981",
+      "layout": {
+        "brokenVisibleImages": 0,
+        "height": 720,
+        "horizontalOverflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "number": 5,
+      "file": "slides/slide-05.jpg",
+      "sha256": "84eeeff18f443d68494676ecce7b664f08037272cd467c0171f0b25c03327140",
+      "layout": {
+        "brokenVisibleImages": 0,
+        "height": 720,
+        "horizontalOverflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "number": 6,
+      "file": "slides/slide-06.jpg",
+      "sha256": "f2f388bbfd93bcd050d299ae71e22223060738b622abeb2c5fc79963215b9e01",
+      "layout": {
+        "brokenVisibleImages": 0,
+        "height": 720,
+        "horizontalOverflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "number": 7,
+      "file": "slides/slide-07.jpg",
+      "sha256": "3790cd2d204d8422a30e967da4de943bad6be453c6358e204fdb780d45fccdff",
+      "layout": {
+        "brokenVisibleImages": 0,
+        "height": 720,
+        "horizontalOverflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "number": 8,
+      "file": "slides/slide-08.jpg",
+      "sha256": "da0e4c968200fc27f280888587587f55b1223211e2bfe4beaba68ffbfcfeb28e",
+      "layout": {
+        "brokenVisibleImages": 0,
+        "height": 720,
+        "horizontalOverflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "number": 9,
+      "file": "slides/slide-09.jpg",
+      "sha256": "81d690515dc627a0ce6d577eb87da168903a08f3afe4ac05597c89b879616cc6",
+      "layout": {
+        "brokenVisibleImages": 0,
+        "height": 720,
+        "horizontalOverflow": false,
+        "width": 1280
+      }
+    },
+    {
+      "number": 10,
+      "file": "slides/slide-10.jpg",
+      "sha256": "17698054777b58ba51806d71b0a13653f2aa2210611028c684bd20b3d23b983e",
+      "layout": {
+        "brokenVisibleImages": 0,
+        "height": 720,
+        "horizontalOverflow": false,
+        "width": 1280
+      }
+    }
+  ],
+  "playback": [
+    {
+      "slide": 4,
+      "playing": {
+        "error": null,
+        "height": 1290,
+        "paused": false,
+        "ready": 4,
+        "time": 0.262823,
+        "width": 1920
+      },
+      "sought": {
+        "paused": true,
+        "time": 3
+      }
+    },
+    {
+      "slide": 5,
+      "playing": {
+        "error": null,
+        "height": 1290,
+        "paused": false,
+        "ready": 4,
+        "time": 0.242349,
+        "width": 1920
+      },
+      "sought": {
+        "paused": true,
+        "time": 6
+      }
+    },
+    {
+      "slide": 6,
+      "playing": {
+        "error": null,
+        "height": 1290,
+        "paused": false,
+        "ready": 4,
+        "time": 0.235678,
+        "width": 1920
+      },
+      "sought": {
+        "paused": true,
+        "time": 6
+      }
+    },
+    {
+      "slide": 7,
+      "playing": {
+        "error": null,
+        "height": 1290,
+        "paused": false,
+        "ready": 4,
+        "time": 0.234667,
+        "width": 1920
+      },
+      "sought": {
+        "paused": true,
+        "time": 2
+      }
+    },
+    {
+      "slide": 8,
+      "playing": {
+        "error": null,
+        "height": 1290,
+        "paused": false,
+        "ready": 4,
+        "time": 0.238484,
+        "width": 1920
+      },
+      "sought": {
+        "paused": true,
+        "time": 2
+      }
+    }
+  ],
+  "delivery": [
+    {
+      "route": "/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-client-clips-20260913/native-allowed-read/poster.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-client-clips-20260913/native-allowed-read/contact-sheet.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-client-clips-20260913/native-crew-denial/poster.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-client-clips-20260913/native-crew-denial/contact-sheet.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-client-clips-20260913/native-mcp-denial/poster.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-client-clips-20260913/native-mcp-denial/contact-sheet.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-client-clips-20260913/native-iam-denial/poster.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-client-clips-20260913/native-iam-denial/contact-sheet.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/poster.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/contact-sheet.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/media-review-mcp-controls.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/media-review-memory-assignment.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913/authenticated.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913/runtime-preflight.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/poster-review-v2.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/docs/HOST-CONTROL-SCENARIOS.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/kirocrew-admin-tour.html",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/kirocrew-admin-tour.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/docs/NATIVE-CLIENT-DEMO.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/infrastructure/mcp-enforcement/README.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/infrastructure/observability/APP-INSTALL.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/admin-console/browser-receipt.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/kirocrew-admin-findings.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913-ui2/receipt-publication.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/07-gateway-overview.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console/02-arm-performance.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/01-live-security-posture.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/03-denied-command-categories.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/05-approval-duration.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/06-governance-status.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console/07-agent-backend.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console/08-telemetry-controls.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console/11-client-server-telemetry.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console/12-collection-logs.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/admin-console/native-20260913/tour-build.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/kirocrew-admin-findings.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/kirocrew-native-controls-notes.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/kirocrew-native-controls-manifest.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/kirocrew-native-controls.html",
+      "status": 200,
+      "length_matches": true
+    }
+  ],
+  "private_source_routes": [
+    {
+      "route": "/evidence/native-client-demo/20260913-ui2/baseline.json",
+      "status": 404
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913-ui2/receipt.json",
+      "status": 404
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui1/baseline.json",
+      "status": 404
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui1/receipt.json",
+      "status": 404
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui2/baseline.json",
+      "status": 404
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui2/receipt.json",
+      "status": 404
+    }
+  ],
+  "checks": [
+    "All ten final slides navigated and captured; no horizontal overflow or broken visible images at1280x720",
+    "Revised admin slide and complete final contact sheet visually inspected",
+    "Result-frame posters visibly correspond to their own native outcomes",
+    "All five MP4s play with advancing time and no media error; chapter controls seek and pause at expected times",
+    "One endpoint-control enclosure retained; owner-editable/no-enterprise and before-tool memory limits visible",
+    "Notes, overview, guided pause and original screenshot expansion covered by prior browser receipt; their UI implementation is unchanged"
+  ],
+  "prior_ui_review": "evidence/native-client-demo/presentation-browser-v1/review.json",
+  "limitations": [
+    "External council reviewed the archived original candidate; final candidate received incorporation and local/browser review",
+    "Embedded native text benefits from linked full-size playback",
+    "Six prepared host takes remain unrecorded; no added native execution claim"
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "title": "Native Mac client: four server control demonstrations",
+  "scenes": [
+    {
+      "id": "native-allowed-read",
+      "title": "A permitted S3 read",
+      "description": "Send one fixed read_allowed request and allow it once. The client displays the AWS response with a request ID, byte count and digest.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/mcp-control-take-01.mov",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "start": 44,
+      "end": 70,
+      "cues": [
+        {
+          "time": 3,
+          "label": "Submit the allowed read",
+          "detail": "The Mac client sends read_allowed with its unique trace ID."
+        },
+        {
+          "time": 9,
+          "label": "Inspect the permission request",
+          "detail": "The UI asks to run the exact MCP tool once."
+        },
+        {
+          "time": 18,
+          "label": "Read the result",
+          "detail": "The client displays ok:true, layer:aws and the S3 result identifiers."
+        }
+      ]
+    },
+    {
+      "id": "native-crew-denial",
+      "title": "Crew blocks a tool call",
+      "description": "Send one crew_denied request. The client displays a tool blocked row and reports the Crew policy refusal without an approval dialog.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/mcp-control-take-01.mov",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "start": 96,
+      "end": 124,
+      "cues": [
+        {
+          "time": 6,
+          "label": "Submit the denied tool",
+          "detail": "The Mac client requests crew_denied with its unique trace ID."
+        },
+        {
+          "time": 12,
+          "label": "See the policy block",
+          "detail": "The native client shows Tool call blocked for crew_denied."
+        },
+        {
+          "time": 20,
+          "label": "Read the refusal",
+          "detail": "The final response reports the Crew policy denial and stops."
+        }
+      ]
+    },
+    {
+      "id": "native-mcp-denial",
+      "title": "The MCP service refuses the grant",
+      "description": "Send one mcp_denied request and allow it once. The client displays tool_grant_denied from the MCP service.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/mcp-control-take-01.mov",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "start": 160,
+      "end": 189,
+      "cues": [
+        {
+          "time": 6,
+          "label": "Submit the MCP request",
+          "detail": "The Mac client requests mcp_denied with its unique trace ID."
+        },
+        {
+          "time": 11,
+          "label": "Inspect the permission request",
+          "detail": "The client presents Allow once for the exact tool call."
+        },
+        {
+          "time": 23,
+          "label": "Read the MCP refusal",
+          "detail": "The client displays ok:false, layer:mcp and tool_grant_denied."
+        }
+      ]
+    },
+    {
+      "id": "native-iam-denial",
+      "title": "AWS refuses the S3 read",
+      "description": "Send one iam_denied request and allow it once. The client displays AccessDenied, HTTP403 and an AWS request ID.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/mcp-control-take-01.mov",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "start": 188,
+      "end": 222,
+      "cues": [
+        {
+          "time": 2,
+          "label": "Submit the AWS request",
+          "detail": "The Mac client requests iam_denied with its unique trace ID."
+        },
+        {
+          "time": 12,
+          "label": "Inspect the permission request",
+          "detail": "The client presents Allow once for the exact tool call."
+        },
+        {
+          "time": 28,
+          "label": "Read the AWS refusal",
+          "detail": "The client displays AccessDenied, HTTP403, layer:aws and an AWS request ID."
+        }
+      ]
+    }
+  ]
+}

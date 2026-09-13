@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "title": "Native client: private-memory assignment refusal",
+  "generatedAt": "2026-09-13T21:49:12.708310+00:00",
+  "scenes": [
+    {
+      "id": "native-memory-assignment-refusal",
+      "title": "Unassigned conversation refused private memory",
+      "description": "Submit a harmless fixture-read request from a conversation switched to the host-controls agent. The client immediately reports that the conversation has no verified private-memory assignment.",
+      "evidenceScope": "Actual macOS native client observation of the conversation-to-memory identity-binding guard. The request stops before a tool turn. This is not an RBAC test, a filesystem denial or proof of host-tool enforcement.",
+      "recordedAt": "2026-09-13T21:40:04Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture of an unexpected assignment guard during host-control preparation. Original timing preserved."
+      },
+      "start": 16.0,
+      "end": 30.0,
+      "duration": 14.001002,
+      "cues": [
+        {
+          "time": 2.0,
+          "label": "Submit the fixture request",
+          "detail": "The composer contains one bounded fs_read request for the prepared public canary."
+        },
+        {
+          "time": 6.0,
+          "label": "Read the assignment refusal",
+          "detail": "The client reports no verified assignment to private memory and retains the conversation\u2019s V1 context."
+        },
+        {
+          "time": 10.0,
+          "label": "Locate the control boundary",
+          "detail": "The refusal occurs before a tool turn. The source-backed diagnostic identifies a conversation-to-private-memory assignment guard; the filesystem request has not been tested."
+        }
+      ],
+      "media": [
+        {
+          "url": "native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+          "type": "video/mp4",
+          "bytes": 407034,
+          "sha256": "4ab78129747a1db40c05ed3115969756e70e5e9a122a709beee6c4e0e6d26c19",
+          "duration": 14.001002,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 50.92658814350439,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-memory-assignment-refusal/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 152476,
+        "sha256": "2abf516c8994a53d5a102d4b57c967bff0e2270b7e3b8d82524fae5289ea68fc",
+        "time": 8
+      },
+      "contactSheet": {
+        "url": "native-memory-assignment-refusal/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 101129,
+        "sha256": "70710b24084c9bef74d647f5aa9653d2b362038649df628b3910029fe18a9c05"
+      },
+      "frames": [
+        {
+          "url": "native-memory-assignment-refusal/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 18594,
+          "sha256": "0d5059a1abc71966fa173b8a48b10f1ebb82542f3783a3c03f4bf5ca2661e3ba",
+          "time": 0.56004008
+        },
+        {
+          "url": "native-memory-assignment-refusal/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 18597,
+          "sha256": "8513e2673bd0b05bbda56447051e8bd6c2261678b6054aa36f66ab45c62e92e6",
+          "time": 2.8002004
+        },
+        {
+          "url": "native-memory-assignment-refusal/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 16143,
+          "sha256": "1b45c1f0b3a0654f6cc339a01e8d101970ed466f10370aad8977d5c3f50f34eb",
+          "time": 5.32038076
+        },
+        {
+          "url": "native-memory-assignment-refusal/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 16727,
+          "sha256": "4e1904d7ce7dc92dd81c6052b0fdbdcf0f13ac848e179f5195fa7662a5fad44d",
+          "time": 7.84056112
+        },
+        {
+          "url": "native-memory-assignment-refusal/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 16676,
+          "sha256": "ad7d7aaaa779a5ccb64cb6ce236929c63cb4625b5d6dac699ada69a908220023",
+          "time": 10.36074148
+        },
+        {
+          "url": "native-memory-assignment-refusal/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 16681,
+          "sha256": "b1a17e7aefe1ef095e0689719192e69a36b85a809ebcedfb77d4bbc873974f31",
+          "time": 12.880921840000001
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "672c79f461f47c6f0389af0a908e9553fcbe9878b4c475f1e8216e353154d88e",
+        "sourceDuration": 362.431667,
+        "cut": {
+          "start": 16.0,
+          "end": 30.0
+        },
+        "recordedAt": "2026-09-13T21:40:04Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    }
+  ],
+  "evidence": []
+}

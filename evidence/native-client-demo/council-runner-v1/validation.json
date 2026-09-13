@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-13T21:59:23.882051+00:00",
+  "status": "pass",
+  "inference_started": false,
+  "candidate_prepared": false,
+  "validation": "23 offline tests passed: 20 native runner tests and 3 existing launch portability tests, independently rerun by read-only reviewer",
+  "reviewer": "/root/native_deck_council/runner_readonly_review",
+  "files": {
+    "scripts/run-native-deck-council.py": "b03a335bfe95d3dda00cb7315e4a9f2e94251e4fd5d814228c58e89113de5f19",
+    "scripts/tests/test_native_deck_council.py": "ddb7147287aeb69fc1d6d01a54eebb64ee953ffedad508d08a1d6eb954d2c7de",
+    "scripts/run-deck-council.py": "9d2ec8086b50260ae6c6202c5c2c861a4b2828946ac68baefe081fce636a5540"
+  },
+  "fixed_review_findings": [
+    "Reject quoted credential fields in auxiliary text and capture JSON",
+    "Reject incomplete/malformed raw JSON streams",
+    "Explicit error terminal subtype overrides end_turn",
+    "Bind prompt text and launch policy hashes to frozen candidate"
+  ],
+  "scope": "Runner implementation and offline evidence tests only. Live reviewer receipts must independently pass exact requested response model, complete exact PNG payload coverage, launch effort and candidate integrity gates. Capture receipt is operator evidence; this runner does not render screenshots, play videos or verify live AWS state."
+}

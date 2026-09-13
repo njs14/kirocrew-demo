@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "kind": "final_native_presentation_local_review",
+  "reviewed_at": "2026-09-13T22:30:59.746128+00:00",
+  "reviewer": "/root/native_final_review",
+  "verdict": "ship_bounded_five_clip_edition",
+  "material_findings": [],
+  "scope": "Fresh local read-only inspection of the final native presentation, notes, linked admin tour, council decision incorporation, hash/link bindings and publication boundary. Only this requested review receipt was written; no live AWS, native UI, Git mutation or test rerun was performed.",
+  "candidate": {
+    "html": "output/kirocrew-native-controls.html",
+    "html_sha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e",
+    "build": "output/kirocrew-native-controls-build.json",
+    "build_sha256": "e78306e950064d10e3fd3ec41b3bec81e1f2c3f0a0a11be9626a3dab6b4246e5",
+    "slides": 10,
+    "native_clips": 5
+  },
+  "source_sha256": {
+    ".gitignore": "205559255d9b284259abddb060c985e3ed1f7edf1ce5e40a69c4b3630a654fb7",
+    "README.md": "5b4e8f42afbdf256a6008e188ab0fec60ad0c46e8276861116848d15bc246ce7",
+    "DEMO-RECORDING-PLAN.md": "1cf31c1f2194bcc5355d0e5487f7ca64beb2d87b721f0423045062c2a0d4ae9d",
+    "docs/NATIVE-CLIENT-DEMO.md": "82a605627290787303b6e7366643529f73d449b70c6e9d09d1e521b33d687391",
+    "docs/HOST-CONTROL-SCENARIOS.md": "9b5094ccd215128f9a69dc2cbcfdcdb96c34faa0433361cc255a4bbfc8669935",
+    "scripts/build-native-control-presentation.py": "9e3ddcdd116423291215192e87602da59bbe486fd116da62dc43957becafa1b9",
+    "scripts/build-native-admin-tour.py": "85f7fed2af711db16e8f1d79f47017c8bf4d90b8c0ff2b3314f01d3e6216a9b5",
+    "scripts/serve-recorded-demos.py": "fd2ed10190327a587b3bfe71b78c95f799c0628a5a126d96a41774e0826ca2d7",
+    "scripts/capture-native-client-evidence.py": "ae535152cad2325aea28622288e1270b8f8432306ebee2012d5b20ec3aa9a3e0",
+    "scripts/reconcile-native-client-evidence.py": "f49fbdda3268e805766c589a15162bd83873806f92151837ec37e6ad7c3f5b60",
+    "scripts/configure-host-controls.py": "890e0a0cc0132a4b2c570622533718c691f75e68b28934fa9bbc0f90a96c4157",
+    "scripts/export-native-publication.py": "f0e917f7582d06eb743b4859e3fc846643c4a5260e67e7bc043b7bb1eaa1ca12",
+    "scripts/run-native-deck-council.py": "b03a335bfe95d3dda00cb7315e4a9f2e94251e4fd5d814228c58e89113de5f19",
+    "scripts/tests/test_host_controls.py": "61c03755074d5688aa4d1ee59e1beb0d709dbfecf91b9f818c686554025cdd7b",
+    "scripts/tests/test_native_client_evidence.py": "5df26e530a3cd93220dc8e7cd07f1f57cc9061b4cafc75a70375d3f1fc38369c",
+    "scripts/tests/test_native_deck_council.py": "ddb7147287aeb69fc1d6d01a54eebb64ee953ffedad508d08a1d6eb954d2c7de",
+    "scripts/tests/test_native_publication.py": "4540d32f826c3f37e68f2578bdb8a92626fc56949f7254ae480cae2fa47a079b",
+    "infrastructure/host-controls/setup.py": "e140cc04785f9952f0ce2c5d960ec7b6d02f11b0ce77ccf58f39d17d71abb094",
+    "infrastructure/host-controls/anonymous-http.py": "a8330a8da6cda991418d15451c1058541970a9f72081b3cec2fbed0dc09b9435",
+    "infrastructure/host-controls/imds-tcp.py": "e016d75b86f5a67d4e98efa5ec6f4cfa1a2265179255b457867e4a1b0d520bf8",
+    "output/kirocrew-native-controls-build.json": "e78306e950064d10e3fd3ec41b3bec81e1f2c3f0a0a11be9626a3dab6b4246e5",
+    "output/kirocrew-native-controls-manifest.json": "b2cd4b1ff302ac88f6b9291e406d104e569933b34511b9edc395dafa020b11a5",
+    "output/kirocrew-native-controls-notes.md": "f0519134f8d9083a830d67a4d395243638e51edf5dfafdb40d315ecfa58f2d1e",
+    "output/kirocrew-admin-tour.html": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97",
+    "output/kirocrew-admin-tour.md": "57aed2784de1c3ea19a588dd1a525910a5ccd6f283055a0dbf4bb3dd5deca19f",
+    "evidence/admin-console/native-20260913/tour-build.json": "a9f49d568662b158ad87215014cf32010815f01b022ab874725ca5f9cad99627",
+    "evidence/admin-console/native-20260913/browser-review.json": "e0125ad771dbda8952b77b6b415550a072bb4a47e863f945277e882fbcb3a518",
+    "evidence/native-client-demo/current-status.json": "6f25eb0096b77694d54b4186bb2662edd81b2f2ea6aa8fe4f4193148b260a4f3",
+    "evidence/native-client-demo/publication-review.json": "f5a5f6767389dc094ea92cadd760a84a74f2ae44f86373b083bf7e799fbf28e0",
+    "evidence/native-client-demo/poster-review-v2.json": "0489c07e6174363188760877260778e6b47cf72c462d3589224574872885649a",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9",
+    "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642",
+    "evidence/native-client-demo/media-review-mcp-controls.json": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d",
+    "evidence/native-client-demo/media-review-memory-assignment.json": "68e609282f6cf097fc9ed3f88a1228f4703fee5311a5945cfa98a9dfc78cc167",
+    "evidence/native-client-demo/council-native-v1/council-decision-summary.json": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1",
+    "evidence/native-client-demo/council-native-v1/council-decision-summary.md": "a70877fcdf79ba521e58ef802941ba6910d6764a849c3734fc668b6b691f5b0c",
+    "evidence/native-client-demo/council-native-v1/candidate/dispatch/council-receipt.json": "da49c0b5c576c7b6826fb0926b9e0b648cda668f0c32b4a6ca65e7855d485223",
+    "evidence/native-client-demo/council-native-v1/candidate/dispatch/grok-raw.jsonl": "4eb44bd159c9002caaf0e090e312ce92d7f1165e6414ec0417e0246f5f605fce",
+    "evidence/native-client-demo/council-native-v1/candidate/dispatch/claude-raw.jsonl": "06eb7b9ed62481e0d434fc5036ef79cca3368dd3c97718d4ce3e273dc1c24ad6",
+    "evidence/native-client-demo/council-native-v1/receipt-integrity-review.json": "bc8d056e2a31bbae81160e6e83e4b03c4e23a684ba7b57b5b17148d6ad934afc",
+    "evidence/native-client-demo/council-native-v1/frozen-packet/manifest.json": "74280ad40e10efaf66fe465f0a0f4e472a20e5f60fc02f6eec2edd8a2f24fa4a",
+    "evidence/native-client-demo/presentation-browser-final/review.json": "cbb3a2a6345bda4b1384032cbf9714502bd088d0f4876fefabaaf88062592b87",
+    "evidence/native-client-demo/presentation-browser-final/slides/slide-02.jpg": "1bea661e39dc2ff2be20c503ceace946aff5082a768d84846e313055a2bc8873",
+    "evidence/native-client-demo/presentation-browser-final/slides/slide-09.jpg": "81d690515dc627a0ce6d577eb87da168903a08f3afe4ac05597c89b879616cc6",
+    "evidence/native-client-demo/20260913-ui1/receipt.json": "b14b5c14f3fb293199ccc16b8ca13fc370c2f367372e8d0a5d9f827b1de8c694"
+  },
+  "council_decisions": {
+    "D1": "Passed. The two processed manifests differ from their prior snapshots only in poster objects. Each result poster is hash-bound; all five MP4 byte hashes remain unchanged.",
+    "D2": "Passed. Architecture slide visibly retains one EC2 endpoint-control enclosure and states owner connection, owner-editable Crew configuration and no enterprise governance floor.",
+    "D3": "Passed. Memory slide and notes identify the conversation assignment guard before tools; fs_read never ran, with RBAC and host tools untested.",
+    "D4": "Passed. Final notes, visible links and allowlist use current authority hash 3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642 and include native MCP media and fresh authentication receipts.",
+    "D5": "Passed. Final slide 9 uses dated posture and governance details with original-image expansion and the separate tour. Labels distinguish configured coverage, Gateway telemetry, collection health events, SEL evidence and MCP audit.",
+    "D6": "Passed. Matrix visibly states joined server attribution and six unrecorded host takes. Notes preserve incomplete original collector, absent direct Crew trace join and other authority limits."
+  },
+  "council_scope": {
+    "original_html_sha256": "ac06b8132961dfc35cccc5d1c470ca0ff5b395ec7f7044659803f4ea7b0be8a7",
+    "original_manifest_sha256": "74280ad40e10efaf66fe465f0a0f4e472a20e5f60fc02f6eec2edd8a2f24fa4a",
+    "original_verdicts": {
+      "grok-4.6": "CHANGES REQUIRED",
+      "claude-opus-5": "CHANGES REQUIRED"
+    },
+    "effort": "Both launches requested xhigh; provider wire effort is not independently visible.",
+    "final_derivative": "The external models reviewed the archived original, not this derivative. Agreed edits and the subsequent No AI Slop self-review are documented by the builder; this receipt provides a separate local incorporation review."
+  },
+  "integrity": {
+    "checked_deck_asset_input_receipt_hash_bindings": 72,
+    "mismatches": [],
+    "html_urls_inspected": 115,
+    "missing_allowlist_routes": [],
+    "missing_local_slide_ids": [],
+    "external_html_urls": [],
+    "single_endpoint_control_box": true,
+    "accepted_artifacts_unchanged_from_HEAD": {
+      "HANDOFF.md": "5cb2ef0e7933e2fad20cbc36c0120bd3b83e3475d2d8b0cb2a3cc4ab6a805f01",
+      "output/kirocrew-system-design.html": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+      "output/kirocrew-system-design-notes.md": "4e239721237aa0407979ae95eae7334588c992a1c0d858da316fe3b129ad2163",
+      "output/kirocrew-arm-observability-demo.pptx": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13",
+      "output/kirocrew-recorded-demos.html": "754079b66dcc572f05af4345ab1f2e669e1a6458dad222abeeeaa3f49d6c2dec"
+    },
+    "final_slide_2_and_9_images_inspected": true
+  },
+  "publication_boundary": {
+    "snapshot_files": 209,
+    "snapshot_bytes": 30050378,
+    "text_files_scanned": 112,
+    "snapshot_manifest_sha256": "26e2750e4e0270a33547dfc5d6b4cf155635382598bce3a91bd6ca89c5afc144",
+    "pattern_scan": "No credential, token, key, login-code or real auth-fingerprint findings. Six fingerprint matches occur only in intentional unit-test fixtures. This is a text-pattern scan, not an exhaustive OCR or secret-detection guarantee.",
+    "six_private_collector_originals": "All ignored, byte-identical to their retained hashes and excluded from the final preview allowlist.",
+    "six_scoped_derivatives": "All match the independent publication review hashes.",
+    "tracked_github_actions_workflows": [],
+    "later_files": "This snapshot excludes this review receipt itself and any later root delivery or publication receipts.",
+    "staged_files_matched_working_bytes": 209,
+    "staged_working_differences": [],
+    "snapshot_method": "Union of staged changes, unstaged changes and publishable untracked files, excluding this review receipt. Every staged file was byte-compared with its index blob.",
+    "early_failed_receipt": {
+      "path": "evidence/native-client-demo/20260913-ui1/receipt.json",
+      "publishable": true,
+      "reason": "Explicitly inspected all 1875 bytes. It contains zero captured events, empty slot messages and queue, static limitations, service metadata and the bounded failure label sel_page_missing_or_possibly_truncated. No SEL arrays, credential values, authentication fingerprints or failure-detail leak are present."
+    }
+  },
+  "independent_council_packet_boundary": {
+    "reviewer": "/root/native_final_review/council_publication_boundary",
+    "verdict": "pass",
+    "material_findings": [],
+    "scope": "Frozen council packet and raw JSONL streams only.",
+    "observations": [
+      "Each model made 14 packet-local reads: four text files and ten slide PNGs.",
+      "All eight text results match frozen files after removing tool line-number formatting.",
+      "All 30 decoded image payload occurrences match the ten frozen PNG hashes.",
+      "Packet manifest hashes and byte sizes match; all ten screenshots were visually inspected.",
+      "All 28 text files scanned without credential, token, cookie or authentication-code findings.",
+      "No private collector, authentication or application-session receipt contents were inlined; summaries, source paths and hashes remain. Model-run session IDs are provenance metadata."
+    ]
+  },
+  "browser_evidence": {
+    "path": "evidence/native-client-demo/presentation-browser-final/review.json",
+    "sha256": "cbb3a2a6345bda4b1384032cbf9714502bd088d0f4876fefabaaf88062592b87",
+    "source": "Root browser review, inspected as a separate receipt; this reviewer did not operate UI.",
+    "verdict": "passed",
+    "candidate_hash_matches": true
+  },
+  "limits": [
+    "Six host takes remain unrecorded at the manual Mac-unlock step; this is approval of the five-clip artifact edition, not completion of those tests.",
+    "No restricted human-role RBAC, immutable enterprise policy, pending-approval PID overlap or full original-collector pass is claimed.",
+    "The original collector remains collection_complete=false and the generic reconciler full_native_acceptance=false; bounded event joins, authority checks and media review remain distinct.",
+    "Live authentication, AWS configuration and server state were not refreshed by this review.",
+    "No broad test rerun was performed; implementation tests and media decoding retain their own receipts.",
+    "Git commit/push and final remote publication identity require root verification."
+  ]
+}

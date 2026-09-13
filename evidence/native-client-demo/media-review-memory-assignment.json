@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-13T21:50:02.421504+00:00",
+  "reviewType": "native_memory_assignment_media_review",
+  "status": "media_encoded_and_sampled_frames_reviewed",
+  "controlScope": "Conversation-to-private-memory identity binding; refused before a tool turn.",
+  "enforcementAcceptance": "not_evaluated",
+  "browserPlaybackAndSeek": "pending_root_review",
+  "source": {
+    "path": "recordings/native-client-20260913/raw/host-control-take-01.mov",
+    "sha256": "672c79f461f47c6f0389af0a908e9553fcbe9878b4c475f1e8216e353154d88e",
+    "durationSeconds": 362.431667,
+    "recordedAt": "2026-09-13T21:40:04Z",
+    "width": 2560,
+    "height": 1720,
+    "audio": false
+  },
+  "cut": {
+    "start": 16,
+    "end": 30,
+    "actualDurationSeconds": 14.001002
+  },
+  "inputManifest": {
+    "path": "recordings/native-client-20260913/cuts-host-memory.json",
+    "sha256": "e4b147ba08713e77916de6e81772c26c76d09897498968d6cf78b8cf11f580ef",
+    "bytes": 1762
+  },
+  "outputManifest": {
+    "path": "output/native-memory-clip-20260913/manifest.json",
+    "sha256": "30defeffec49130c2fd9c307fb6fe19bd817902eb1044c02b9e1559751ccc8db",
+    "bytes": 4791
+  },
+  "processorReceipt": {
+    "path": "output/native-memory-clip-20260913/receipt.json",
+    "sha256": "2893e3ecbaf9fc4dfc9887b019400e4611f5ade57c451543cd1207bcc34740a1",
+    "bytes": 10213
+  },
+  "diagnosticReceipt": {
+    "path": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+    "sha256": "8090b4a69f0c4f76021d6cf1c869f352c188aaa61c31382f3b4e0b19f0ea8a6c",
+    "bytes": 2500
+  },
+  "media": [
+    {
+      "url": "native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+      "type": "video/mp4",
+      "bytes": 407034,
+      "sha256": "4ab78129747a1db40c05ed3115969756e70e5e9a122a709beee6c4e0e6d26c19",
+      "duration": 14.001002,
+      "width": 1920,
+      "height": 1290,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "fps": 50.92658814350439,
+      "audio": false,
+      "decodeValidated": true
+    }
+  ],
+  "poster": {
+    "url": "native-memory-assignment-refusal/poster.jpg",
+    "type": "image/jpeg",
+    "bytes": 148400,
+    "sha256": "b5b921323b61f30191ad2a1057b9230bcd7b0ba1ec6339e1f51723d7d4d585ee"
+  },
+  "contactSheet": {
+    "url": "native-memory-assignment-refusal/contact-sheet.jpg",
+    "type": "image/jpeg",
+    "bytes": 101129,
+    "sha256": "70710b24084c9bef74d647f5aa9653d2b362038649df628b3910029fe18a9c05"
+  },
+  "encodingChecks": [
+    "source hashes unchanged",
+    "manifest hash unchanged",
+    "script hash unchanged",
+    "cuts and cues bounded by source",
+    "all media fully decoded",
+    "MP4 H.264 yuv420p faststart",
+    "no retiming or padding",
+    "local receipt files copied and source hashes unchanged"
+  ],
+  "visualReview": {
+    "method": "Selected source frames at 16, 18, 19, 20, 21, 22, 24, 28 and 32 seconds, source contact sheet, exported contact sheet and full-size exported refusal frame. A separate read-only agent independently reviewed the source transitions. Not every frame was manually inspected.",
+    "observed": "The Mac client shows the bounded fixture-read request in its composer, then the submitted prompt and an immediate refusal stating that the conversation has no verified assignment to private memory and retains its V1 context. No tool invocation or permission card appears in the inspected sequence.",
+    "processedRefusalFrame": {
+      "path": ".build/native-memory-media-review/processed-refusal.png",
+      "sha256": "a277493705f5f18a9f844a3eff3d53819c5e5fc437c077f321bc5f98f788cc19",
+      "bytes": 319198
+    },
+    "processedRefusalFrameClipSecond": 8,
+    "sensitiveContent": "No credentials, tokens or unrelated private content were identified in inspected cut frames. The intended demo fixture path is visible.",
+    "captureArtifacts": "Transient partial black repaint patches are present in the original footage; they remain within the continuous cut. The submitted request and full refusal are readable in stable frames.",
+    "timing": "Original timing retained. No inserted frames, freeze, padding, speed change, overlays or audio."
+  },
+  "limitations": [
+    "The attempted filesystem read did not reach a tool turn; this clip does not establish host-tool or filesystem enforcement.",
+    "This is not a restricted-user RBAC test. The diagnostic identifies a conversation assignment guard after switching an existing chat to a private-store alias.",
+    "Browser playback and seeking remain for root, which owns the shared UI."
+  ]
+}

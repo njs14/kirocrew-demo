@@ -1,0 +1,27 @@
+{
+  "kind": "unused_native_capture",
+  "status": "no_demo_prompt_submitted",
+  "recording": "recordings/native-client-20260913/raw/host-control-take-02.mov",
+  "sha256": "e489e628b786f1c249675840267902eb730d96ba04a232b42c7d7e16511e2c29",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 2560,
+        "height": 1720
+      }
+    ],
+    "format": {
+      "duration": "480.020000"
+    }
+  },
+  "observer_receipt": "evidence/native-client-demo/host-20260913-ui2/receipt.json",
+  "observer_sha256": "06b5c0bbf0c50946c03047604057f328f912ccf14c48c25cf580aeae3891ecdc",
+  "captured_events": 0,
+  "slot_messages_before": 0,
+  "slot_messages_after": 0,
+  "reason": "The native UI operation stopped when macOS locked. This idle capture is excluded from published clips and establishes no host-control outcome. The passive collector was then finished; its incomplete SEL-window receipt remains unchanged.",
+  "next_action": "After manual unlock, start a fresh passive observer and raw take for the already assigned blank host-controls session."
+}

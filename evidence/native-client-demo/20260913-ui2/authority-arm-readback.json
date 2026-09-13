@@ -1,0 +1,264 @@
+{
+  "checked_at": "2026-09-13T21:35:00.635965+00:00",
+  "machine": "aarch64",
+  "uids": {
+    "crew": 999,
+    "mcp-demo": 997
+  },
+  "filesystem": {
+    "/": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": false,
+      "directory": true
+    },
+    "/etc": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": false,
+      "directory": true
+    },
+    "/etc/kirocrew-demo": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": false,
+      "directory": true
+    },
+    "/etc/kirocrew-demo/mcp-token": {
+      "uid": 0,
+      "gid": 987,
+      "mode": "0o640",
+      "symlink": false,
+      "regular": true,
+      "directory": false
+    },
+    "/etc/kirocrew-demo/mcp.env": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o600",
+      "symlink": false,
+      "regular": true,
+      "directory": false
+    },
+    "/etc/systemd": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": false,
+      "directory": true
+    },
+    "/etc/systemd/system": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": false,
+      "directory": true
+    },
+    "/etc/systemd/system/kirocrew-mcp-demo.service": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o644",
+      "symlink": false,
+      "regular": true,
+      "directory": false,
+      "sha256": "027ec03ceffdf0fcb38b9961bd35211572f564e0f249904feb111f0624461d01",
+      "local_path": "infrastructure/kirocrew-mcp-demo.service",
+      "local_sha256": "027ec03ceffdf0fcb38b9961bd35211572f564e0f249904feb111f0624461d01",
+      "matches_current_local": true
+    },
+    "/opt": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": false,
+      "directory": true
+    },
+    "/opt/kirocrew-demo": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": false,
+      "directory": true
+    },
+    "/opt/kirocrew-demo/mcp-enforcement": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": false,
+      "directory": true
+    },
+    "/opt/kirocrew-demo/mcp-enforcement/server.py": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o644",
+      "symlink": false,
+      "regular": true,
+      "directory": false,
+      "sha256": "a52c0c42d91430232fc68c20f6554e70842ebd33d0a71a79dff3f50ef431eb08",
+      "local_path": "infrastructure/mcp-enforcement/server.py",
+      "local_sha256": "a52c0c42d91430232fc68c20f6554e70842ebd33d0a71a79dff3f50ef431eb08",
+      "matches_current_local": true
+    },
+    "/usr": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": false,
+      "directory": true
+    },
+    "/usr/local": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": false,
+      "directory": true
+    },
+    "/usr/local/bin": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": false,
+      "directory": true
+    },
+    "/usr/local/bin/kiro-cli": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": true,
+      "directory": false,
+      "sha256": "3a1318d58edbd7e6b6b8cafcd04ac659f77fd8896c8b8faf6e1c87a9cb226e66",
+      "elf_64_little_endian": true,
+      "elf_machine": 183
+    },
+    "/usr/local/bin/kiro-cli-chat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0o755",
+      "symlink": false,
+      "regular": true,
+      "directory": false,
+      "sha256": "13a8a907f86f9ff482990cb7aab22848d591de923427224fff3c851e7ab157f6",
+      "elf_64_little_endian": true,
+      "elf_machine": 183
+    }
+  },
+  "services": {
+    "kirocrew-demo.service": {
+      "MainPID": "4991",
+      "NRestarts": "0",
+      "ExecMainStartTimestamp": "Sun 2026-09-13 14:26:10 UTC",
+      "WorkingDirectory": "/srv/kirocrew-demo/workspace",
+      "User": "crew",
+      "Group": "crew",
+      "ProtectHome": "read-only",
+      "ProtectSystem": "strict",
+      "NoNewPrivileges": "yes",
+      "ActiveState": "active",
+      "SubState": "running",
+      "FragmentPath": "/etc/systemd/system/kirocrew-demo.service",
+      "InvocationID": "8408354919d849a4a427e29ed4dcb694"
+    },
+    "kirocrew-mcp-demo.service": {
+      "MainPID": "2833",
+      "NRestarts": "0",
+      "ExecMainStartTimestamp": "Sun 2026-09-13 14:06:30 UTC",
+      "WorkingDirectory": "/opt/kirocrew-demo/mcp-enforcement",
+      "User": "mcp-demo",
+      "Group": "mcp-demo",
+      "ProtectHome": "yes",
+      "ProtectSystem": "strict",
+      "NoNewPrivileges": "yes",
+      "ActiveState": "active",
+      "SubState": "running",
+      "FragmentPath": "/etc/systemd/system/kirocrew-mcp-demo.service",
+      "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1"
+    }
+  },
+  "nonsecret_mcp_settings": {
+    "DEMO_S3_BUCKET": "kirocrew-demo-20260913-demobucket-pdjzgyu25xhb"
+  },
+  "processes_after_capture": [
+    {
+      "pid": 2833,
+      "ppid": 1,
+      "uid": 997,
+      "exe": "/usr/bin/python3.12",
+      "comm": "python",
+      "cwd": "/opt/kirocrew-demo/mcp-enforcement",
+      "NoNewPrivs": "1",
+      "CapEff": "0000000000000000",
+      "Seccomp": "2"
+    },
+    {
+      "pid": 4991,
+      "ppid": 1,
+      "uid": 999,
+      "exe": "/usr/bin/python3.12",
+      "comm": "kirocrew",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "NoNewPrivs": "1",
+      "CapEff": "0000000000000000",
+      "Seccomp": "2"
+    },
+    {
+      "pid": 72123,
+      "ppid": 4991,
+      "uid": 999,
+      "exe": "/usr/bin/python3.12",
+      "comm": "python3",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "NoNewPrivs": "1",
+      "CapEff": "0000000000000000",
+      "Seccomp": "2"
+    },
+    {
+      "pid": 72124,
+      "ppid": 72123,
+      "uid": 999,
+      "exe": "/usr/local/bin/kiro-cli",
+      "comm": "kiro-cli",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "NoNewPrivs": "1",
+      "CapEff": "0000000000000000",
+      "Seccomp": "2"
+    },
+    {
+      "pid": 72131,
+      "ppid": 72124,
+      "uid": 999,
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "comm": "kiro-cli-chat",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "NoNewPrivs": "1",
+      "CapEff": "0000000000000000",
+      "Seccomp": "2"
+    }
+  ],
+  "schema": 1,
+  "kind": "post_native_capture_read_only_arm_authority",
+  "instance_id_from_existing_config": "i-0fde6de3f0ea5a9d0",
+  "limits": [
+    "Observed after capture, not while an approval was pending.",
+    "Process lineage supports a Kiro CLI backend under crew UID; no direct PID-to-slot runtime binding was collected.",
+    "MCP token metadata only; its contents and digest were never read.",
+    "No raw process arguments, environment, credentials, session data or unrelated workspace paths retained.",
+    "CLI binary hashes and ELF architecture recorded; the original release archive was not rehashed or re-extracted."
+  ],
+  "original_mcp_source_sha256": "a52c0c42d91430232fc68c20f6554e70842ebd33d0a71a79dff3f50ef431eb08",
+  "mcp_source_matches_original": true
+}

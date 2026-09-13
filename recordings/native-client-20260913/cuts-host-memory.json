@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "title": "Native client: private-memory assignment refusal",
+  "scenes": [
+    {
+      "id": "native-memory-assignment-refusal",
+      "title": "Unassigned conversation refused private memory",
+      "description": "Submit a harmless fixture-read request from a conversation switched to the host-controls agent. The client immediately reports that the conversation has no verified private-memory assignment.",
+      "evidenceScope": "Actual macOS native client observation of the conversation-to-memory identity-binding guard. The request stops before a tool turn. This is not an RBAC test, a filesystem denial or proof of host-tool enforcement.",
+      "recordedAt": "2026-09-13T21:40:04Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/host-control-take-01.mov",
+        "description": "Continuous native Mac window capture of an unexpected assignment guard during host-control preparation. Original timing preserved."
+      },
+      "start": 16,
+      "end": 30,
+      "cues": [
+        {
+          "time": 2,
+          "label": "Submit the fixture request",
+          "detail": "The composer contains one bounded fs_read request for the prepared public canary."
+        },
+        {
+          "time": 6,
+          "label": "Read the assignment refusal",
+          "detail": "The client reports no verified assignment to private memory and retains the conversation\u2019s V1 context."
+        },
+        {
+          "time": 10,
+          "label": "Locate the control boundary",
+          "detail": "The refusal occurs before a tool turn. The source-backed diagnostic identifies a conversation-to-private-memory assignment guard; the filesystem request has not been tested."
+        }
+      ]
+    }
+  ]
+}

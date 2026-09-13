@@ -1,0 +1,332 @@
+{
+  "bounded_four_outcomes_reconciled": true,
+  "created": "2026-09-13T21:33:44.889550+00:00",
+  "full_native_acceptance": false,
+  "kind": "native_client_evidence_reconciliation",
+  "limitations": [
+    "Original collector receipt remains incomplete; this is a separate read-only reconciliation.",
+    "Known ACP purpose metadata is retained in original events and excluded only from functional trace matching.",
+    "No proof that EC2 process sampling overlapped pending approval; original collector missed approval_id metadata.",
+    "IAM policy attribution and allowed-fixture digest agreement require separately checked provisioning/deployment receipts.",
+    "The server hook is configurable Crew state, not an immutable enterprise policy floor.",
+    "Retained SEL rows were read without exporting the HMAC key; integrity uses the original Gateway verification, not independent per-row signature verification."
+  ],
+  "original_collection_complete": false,
+  "original_receipt_preserved": true,
+  "original_sel_window": {
+    "complete": false,
+    "reason": "sel_baseline_anchor_not_retained"
+  },
+  "phase_observations": [
+    {
+      "correlation": "Native tool-call and approval IDs to SEL; native result trace and invocation ID to service audit",
+      "joined_native_service_results": [
+        {
+          "aws_request_id": "DT9A0C6ZKDWEQETN",
+          "invocation_id": "7d91785e-6db3-489a-b41a-92076aa93c2f",
+          "layer": "aws",
+          "object_bytes": 55,
+          "object_sha256": "34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160",
+          "ok": true,
+          "principal": "kirocrew-demo-client",
+          "tool": "read_allowed",
+          "trace_id": "native-20260913-ui2-allow"
+        }
+      ],
+      "native_approval_resolved_ids": [
+        "dda2b1a2-3093-4734-8a2e-1425913d4aa1"
+      ],
+      "native_blocked_tool_call_ids": [],
+      "native_tool_call_ids": [
+        "toolu_bdrk_01VEsQp7WkYmK5EHvtqhBYuk"
+      ],
+      "outcome_observed": true,
+      "permission_request_ids": [
+        "dda2b1a2-3093-4734-8a2e-1425913d4aa1"
+      ],
+      "phase": "allow",
+      "sel_for_permission_ids": [
+        {
+          "agent": "enforcement-demo",
+          "caller_identity": "dashboard:chat-1-1789310047",
+          "entry_hash": "41ba38f647009de5e04265897aeb0258d897d6001807d73a37dd96eb1f9064e4",
+          "error": "",
+          "event_id": "febc44cfe8304969",
+          "event_type": "tool_invocation",
+          "operation": "Running: @aws-enforcement/read_allowed",
+          "outcome": "approved",
+          "prev_hash": "a716b17e00faa46762f541ae2fdf86232210a216d53cb3abbd3a8cd453027526",
+          "request_id": "dda2b1a2-3093-4734-8a2e-1425913d4aa1",
+          "resources": "",
+          "source": "dashboard",
+          "source_file": "security_events.jsonl",
+          "source_line": 26093,
+          "timestamp": "2026-09-13T21:24:48.114993+00:00",
+          "tool_kind": ""
+        }
+      ],
+      "service_events": [
+        {
+          "event": "tool_decision",
+          "invocation_id": "7d91785e-6db3-489a-b41a-92076aa93c2f",
+          "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=9816;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=63bb83cdf;t=65b63f27838a8;x=8345ae762885228",
+          "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+          "journal_timestamp_us": "1789334688118952",
+          "layer": "mcp",
+          "outcome": "allowed",
+          "principal": "kirocrew-demo-client",
+          "service": "demo-mcp-enforcement",
+          "time": "2026-09-13T21:24:48.118854+00:00",
+          "tool": "read_allowed",
+          "trace_id": "native-20260913-ui2-allow"
+        },
+        {
+          "event": "aws_dispatch",
+          "invocation_id": "7d91785e-6db3-489a-b41a-92076aa93c2f",
+          "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=9818;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=63bb9e71f;t=65b63f279e2e8;x=16fc95d8571ef104",
+          "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+          "journal_timestamp_us": "1789334688228072",
+          "layer": "aws",
+          "outcome": "attempted",
+          "principal": "kirocrew-demo-client",
+          "service": "demo-mcp-enforcement",
+          "time": "2026-09-13T21:24:48.227978+00:00",
+          "tool": "read_allowed",
+          "trace_id": "native-20260913-ui2-allow"
+        },
+        {
+          "aws_request_id": "DT9A0C6ZKDWEQETN",
+          "event": "aws_result",
+          "invocation_id": "7d91785e-6db3-489a-b41a-92076aa93c2f",
+          "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=981b;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=63bbb0bab;t=65b63f27b0774;x=5dc254563d123f5f",
+          "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+          "journal_timestamp_us": "1789334688302964",
+          "layer": "aws",
+          "object_bytes": 55,
+          "object_sha256": "34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160",
+          "outcome": "allowed",
+          "principal": "kirocrew-demo-client",
+          "service": "demo-mcp-enforcement",
+          "time": "2026-09-13T21:24:48.302854+00:00",
+          "tool": "read_allowed",
+          "trace_id": "native-20260913-ui2-allow"
+        }
+      ],
+      "tool": "read_allowed",
+      "trace_id": "native-20260913-ui2-allow"
+    },
+    {
+      "correlation": "Exact trace-bearing blocked native tool row; one isolated-turn hook_deny; no direct SEL-to-trace link",
+      "isolated_turn_sel_denials": [
+        {
+          "agent": "enforcement-demo",
+          "caller_identity": "dashboard:chat-1-1789310047",
+          "entry_hash": "b962624c22d26c4af5178335494a9479c981eaba3fe6447c7097e40b968973cc",
+          "error": "hook_deny",
+          "event_id": "c3c8392afd3f445a",
+          "event_type": "tool_invocation",
+          "operation": "Running: @aws-enforcement/crew_denied",
+          "outcome": "denied",
+          "prev_hash": "15612368a64ae3b270f42245ca44d58b6319f4de569f2b0a8df1eebb6b1b52f1",
+          "request_id": "36894b9c-84f6-4425-9054-c7b52cf132d8",
+          "resources": "",
+          "source": "dashboard",
+          "source_file": "security_events.jsonl",
+          "source_line": 26335,
+          "timestamp": "2026-09-13T21:25:34.755763+00:00",
+          "tool_kind": ""
+        }
+      ],
+      "joined_native_service_results": [],
+      "native_approval_resolved_ids": [],
+      "native_blocked_tool_call_ids": [
+        "toolu_bdrk_01UYvjoCY2wB9Q9Np3izcDsb"
+      ],
+      "native_tool_call_ids": [
+        "toolu_bdrk_01UYvjoCY2wB9Q9Np3izcDsb"
+      ],
+      "outcome_observed": true,
+      "permission_request_ids": [],
+      "phase": "crew",
+      "sel_for_permission_ids": [],
+      "service_events": [],
+      "tool": "crew_denied",
+      "trace_id": "native-20260913-ui2-crew"
+    },
+    {
+      "correlation": "Native tool-call and approval IDs to SEL; native result trace and invocation ID to service audit",
+      "joined_native_service_results": [
+        {
+          "error_code": "tool_grant_denied",
+          "invocation_id": "78210521-0da7-41a7-a17a-a6291fe146bc",
+          "layer": "mcp",
+          "ok": false,
+          "principal": "kirocrew-demo-client",
+          "tool": "mcp_denied",
+          "trace_id": "native-20260913-ui2-mcp"
+        }
+      ],
+      "native_approval_resolved_ids": [
+        "9b61ec45-8641-4bd3-86fd-f4badbf87793"
+      ],
+      "native_blocked_tool_call_ids": [],
+      "native_tool_call_ids": [
+        "toolu_bdrk_01Wqr5FPPW3cft4AQeXzUuie"
+      ],
+      "outcome_observed": true,
+      "permission_request_ids": [
+        "9b61ec45-8641-4bd3-86fd-f4badbf87793"
+      ],
+      "phase": "mcp",
+      "sel_for_permission_ids": [
+        {
+          "agent": "enforcement-demo",
+          "caller_identity": "dashboard:chat-1-1789310047",
+          "entry_hash": "e7007f079fd308247c53b55453ba3499f083e238ec9cfb992e8674baa3368616",
+          "error": "",
+          "event_id": "31a33f49597f4afd",
+          "event_type": "tool_invocation",
+          "operation": "Running: @aws-enforcement/mcp_denied",
+          "outcome": "approved",
+          "prev_hash": "fec84c0ec99ac1add3c5b1ae9ab8bbcf227b8269b982f2a87bdb6cc44f3b59fc",
+          "request_id": "9b61ec45-8641-4bd3-86fd-f4badbf87793",
+          "resources": "",
+          "source": "dashboard",
+          "source_file": "security_events.jsonl",
+          "source_line": 26633,
+          "timestamp": "2026-09-13T21:26:48.091280+00:00",
+          "tool_kind": ""
+        }
+      ],
+      "service_events": [
+        {
+          "event": "tool_decision",
+          "invocation_id": "78210521-0da7-41a7-a17a-a6291fe146bc",
+          "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=98df;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=642deed26;t=65b63f99ee8f0;x=8caea64365d38f46",
+          "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+          "journal_timestamp_us": "1789334808094960",
+          "layer": "mcp",
+          "outcome": "denied",
+          "principal": "kirocrew-demo-client",
+          "service": "demo-mcp-enforcement",
+          "time": "2026-09-13T21:26:48.094864+00:00",
+          "tool": "mcp_denied",
+          "trace_id": "native-20260913-ui2-mcp"
+        }
+      ],
+      "tool": "mcp_denied",
+      "trace_id": "native-20260913-ui2-mcp"
+    },
+    {
+      "correlation": "Native tool-call and approval IDs to SEL; native result trace and invocation ID to service audit",
+      "joined_native_service_results": [
+        {
+          "aws_request_id": "8DET0VKCQPXJXCMC",
+          "error_code": "AccessDenied",
+          "http_status": 403,
+          "invocation_id": "82188711-aa09-4b36-b76d-72df4d64e579",
+          "layer": "aws",
+          "ok": false,
+          "principal": "kirocrew-demo-client",
+          "tool": "iam_denied",
+          "trace_id": "native-20260913-ui2-iam"
+        }
+      ],
+      "native_approval_resolved_ids": [
+        "72ef7ee0-6cac-473f-b53b-76b32446b595"
+      ],
+      "native_blocked_tool_call_ids": [],
+      "native_tool_call_ids": [
+        "toolu_bdrk_01DxAgymdKXneUbZbG1gy5Ja"
+      ],
+      "outcome_observed": true,
+      "permission_request_ids": [
+        "72ef7ee0-6cac-473f-b53b-76b32446b595"
+      ],
+      "phase": "iam",
+      "sel_for_permission_ids": [
+        {
+          "agent": "enforcement-demo",
+          "caller_identity": "dashboard:chat-1-1789310047",
+          "entry_hash": "776c5f6c44971ad97f7518d272ab9fd7cdb0cd1d382a16e8a2329d38d09b4382",
+          "error": "",
+          "event_id": "61edb0536cc3447c",
+          "event_type": "tool_invocation",
+          "operation": "Running: @aws-enforcement/iam_denied",
+          "outcome": "approved",
+          "prev_hash": "96b52a32edafeee0e736d29e4452f07463129adcf650d41fa4e082954c442197",
+          "request_id": "72ef7ee0-6cac-473f-b53b-76b32446b595",
+          "resources": "",
+          "source": "dashboard",
+          "source_file": "security_events.jsonl",
+          "source_line": 26761,
+          "timestamp": "2026-09-13T21:27:17.628919+00:00",
+          "tool_kind": ""
+        }
+      ],
+      "service_events": [
+        {
+          "event": "tool_decision",
+          "invocation_id": "82188711-aa09-4b36-b76d-72df4d64e579",
+          "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=98ec;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=644a1a01d;t=65b63fb619be7;x=43ebc8c9c7ae56b6",
+          "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+          "journal_timestamp_us": "1789334837631975",
+          "layer": "mcp",
+          "outcome": "allowed",
+          "principal": "kirocrew-demo-client",
+          "service": "demo-mcp-enforcement",
+          "time": "2026-09-13T21:27:17.631806+00:00",
+          "tool": "iam_denied",
+          "trace_id": "native-20260913-ui2-iam"
+        },
+        {
+          "event": "aws_dispatch",
+          "invocation_id": "82188711-aa09-4b36-b76d-72df4d64e579",
+          "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=98ee;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=644a3319c;t=65b63fb632d65;x=bd7200333bdebd6e",
+          "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+          "journal_timestamp_us": "1789334837734757",
+          "layer": "aws",
+          "outcome": "attempted",
+          "principal": "kirocrew-demo-client",
+          "service": "demo-mcp-enforcement",
+          "time": "2026-09-13T21:27:17.734618+00:00",
+          "tool": "iam_denied",
+          "trace_id": "native-20260913-ui2-iam"
+        },
+        {
+          "aws_request_id": "8DET0VKCQPXJXCMC",
+          "error_code": "AccessDenied",
+          "event": "aws_result",
+          "http_status": 403,
+          "invocation_id": "82188711-aa09-4b36-b76d-72df4d64e579",
+          "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=98ef;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=644a44a0e;t=65b63fb6445d7;x=30a306283d9c23d8",
+          "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+          "journal_timestamp_us": "1789334837806551",
+          "layer": "aws",
+          "outcome": "denied",
+          "principal": "kirocrew-demo-client",
+          "service": "demo-mcp-enforcement",
+          "time": "2026-09-13T21:27:17.806452+00:00",
+          "tool": "iam_denied",
+          "trace_id": "native-20260913-ui2-iam"
+        }
+      ],
+      "tool": "iam_denied",
+      "trace_id": "native-20260913-ui2-iam"
+    }
+  ],
+  "run_id": "native-20260913-ui2",
+  "slot": "chat-1-1789310047",
+  "source_sha256": {
+    "collector": "ae535152cad2325aea28622288e1270b8f8432306ebee2012d5b20ec3aa9a3e0",
+    "events.jsonl": "ef2a092a89bc95316e2eb916545e6b52c4578114edd24cdf144eb0facb60cfc9",
+    "receipt.json": "0b66f7888e1d4e7fc842650fa297c9d2785c856d48eb6e2cd8bf6f264c71448e",
+    "reconciler": "f07aa286d63d7ba649e68e8a42e31b7460bf1b07088d49214cce2fd07d2a8f1b"
+  },
+  "supporting_collection_checks": {
+    "original_gateway_sel_integrity_ok": true,
+    "original_mcp_journal_complete": true,
+    "original_mcp_service_stable": true,
+    "retained_sel_interval_scanned": true
+  }
+}

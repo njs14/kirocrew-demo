@@ -1,0 +1,171 @@
+{
+  "acceptance": "not_evaluated",
+  "collection_complete": false,
+  "collector_sha256": "d9c9d037a7616a87f830554a44131ab75460ce48e355875270aa6d8f218e1675",
+  "conversation_summary": {
+    "slot_before": {
+      "captured_message_count": 0,
+      "has_more": false,
+      "message_content_exported": false,
+      "running": false,
+      "stopping": false,
+      "total": 0
+    }
+  },
+  "exporter_sha256": "f0e917f7582d06eb743b4859e3fc846643c4a5260e67e7bc043b7bb1eaa1ca12",
+  "helper_sha256": "429357edf4cc2a3b1ab719f733b0dae667220a6ef288c2a82ad3548ae22beac8",
+  "kind": "native_client_publication_export",
+  "mcp_service_before": {
+    "ActiveState": "active",
+    "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+    "MainPID": "2833",
+    "NRestarts": "0",
+    "SubState": "running"
+  },
+  "native_events": {
+    "bytes": 25650,
+    "events": 55,
+    "path": "events.jsonl",
+    "relationship": "later same-run companion; not baseline-time evidence",
+    "scope": "exact source slot",
+    "sha256": "ef2a092a89bc95316e2eb916545e6b52c4578114edd24cdf144eb0facb60cfc9"
+  },
+  "permission_triggered_process_snapshots": [],
+  "private_sel_counts": {
+    "sel_before": {
+      "other_callers": 1000,
+      "target_session": 0,
+      "total": 1000
+    }
+  },
+  "private_source": {
+    "bytes": 682966,
+    "path": "baseline.json",
+    "retention": "privately_retained_ignored",
+    "sha256": "1fd8d89b115427ed0d31b9a8c6f7b16f2b1fcd9564196ab5d7df0c781b1aef2a"
+  },
+  "processes_before": [
+    {
+      "comm": "python",
+      "cwd": "/opt/kirocrew-demo/mcp-enforcement",
+      "exe": "/usr/bin/python3.12",
+      "pid": 2833,
+      "ppid": 1,
+      "uid": 997
+    },
+    {
+      "comm": "systemd",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd",
+      "pid": 3557,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "(sd-pam)",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd-executor",
+      "pid": 3558,
+      "ppid": 3557,
+      "uid": 999
+    },
+    {
+      "comm": "sshd",
+      "cwd": "/",
+      "exe": "/usr/sbin/sshd",
+      "pid": 3613,
+      "ppid": 3552,
+      "uid": 999
+    },
+    {
+      "comm": "kirocrew",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 4991,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8461,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8462,
+      "ppid": 8461,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 66975,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 66987,
+      "ppid": 66975,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 66994,
+      "ppid": 66987,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 67871,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 67872,
+      "ppid": 67871,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 67879,
+      "ppid": 67872,
+      "uid": 999
+    }
+  ],
+  "publication_notes": [
+    "The hash-bound original snapshot is privately retained and excluded from Git; its bytes were not changed.",
+    "Broad SEL pages, their error details and complete conversation snapshots are omitted by an explicit field allowlist.",
+    "SEL summary counts describe the private source, not additional exported event evidence.",
+    "Use the scoped native events.jsonl and separately recovered SEL interval for offline outcome analysis.",
+    "This export is a publication boundary, not a new collection, integrity verification or enforcement acceptance verdict."
+  ],
+  "ready_at": "2026-09-13T21:19:44.861688+00:00",
+  "run_id": "native-20260913-ui2",
+  "schema": 1,
+  "sel_checkpoint": {
+    "anchor_event_id": "5e23431098f94ec8",
+    "anchor_sha256": "0d1d4ad48594bd29a86c30bf3e3cc8f62a58cfe9409d627200a41d867b981318",
+    "baseline_count": 1000
+  },
+  "slot": "chat-1-1789310047",
+  "source_kind": "passive_native_client_baseline",
+  "started": "2026-09-13T21:19:35.909446+00:00"
+}

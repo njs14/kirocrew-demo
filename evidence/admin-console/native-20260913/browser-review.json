@@ -1,0 +1,25 @@
+{
+  "kind": "admin_tour_browser_review",
+  "reviewed_at": "2026-09-13T22:19:55.703465+00:00",
+  "artifact": "output/kirocrew-admin-tour.html",
+  "sha256": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97",
+  "browser": "Codex in-app browser",
+  "status": "passed",
+  "baseline_review": {
+    "path": "evidence/admin-console/native-20260913/browser-review-v1.json",
+    "sha256": "2e7f545b397bd04f631beabb6dd235276d27df5a884e86857b696456176bfad6",
+    "scope": "All9stops/navigation/zoom/stickytoolbar layout passed before copy delta; UI code and original image bytes unchanged."
+  },
+  "delta_checks": [
+    "Current status banner and evidence copy inspected through actual browser accessibility tree",
+    "Backend stop explains fresh standalone CLI authentication separately from earlier KAS sign-in card",
+    "Metrics stop separates completed native turns from policy-denial evidence, background throughput and runtime faults",
+    "Metrics stop screenshot visually inspected; heading and text fit below sticky navigation",
+    "Original incomplete collector is explicitly retained privately and linked through publication export",
+    "Native authority/reconciliation limits remain visible"
+  ],
+  "limitations": [
+    "The full export/asset delivery allowlist is checked separately after final hashes settle",
+    "This screenshot tour does not create native enforcement proof; it links reviewed runtime evidence"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "status": "rejected_before_inference",
+  "reason": "All supplied .png paths contain JPEG JFIF bytes; strict PNG framing gate refused preparation",
+  "inference_started": false,
+  "source_files_unchanged": true
+}

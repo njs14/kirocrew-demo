@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-13T22:12:00.953711+00:00",
+  "purpose": "Retain original reviewed bytes after the presentation is revised; this archive was not the reviewer working directory",
+  "source_packet": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew-native-council-native-controls-v1-74280ad40e10",
+  "manifest_sha256": "74280ad40e10efaf66fe465f0a0f4e472a20e5f60fc02f6eec2edd8a2f24fa4a",
+  "files": [
+    {
+      "file": "capture-receipt.json",
+      "bytes": 6906,
+      "sha256": "a837badbc78afb30012d821aa6e536f7d6b80ed552b1f9ea0ef40faa46c70ca4"
+    },
+    {
+      "file": "evidence-summary.md",
+      "bytes": 8259,
+      "sha256": "a5efb851ad7fc3362730f908881bc0c9a1c55fe93e855845397f1b25f39a5865"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 2218,
+      "sha256": "74280ad40e10efaf66fe465f0a0f4e472a20e5f60fc02f6eec2edd8a2f24fa4a"
+    },
+    {
+      "file": "notes.md",
+      "bytes": 8678,
+      "sha256": "612775125751c05138e39a13bd2d88814e6c58b6ef49f48d338cb69acf24f78c"
+    },
+    {
+      "file": "presentation.html",
+      "bytes": 297938,
+      "sha256": "ac06b8132961dfc35cccc5d1c470ca0ff5b395ec7f7044659803f4ea7b0be8a7"
+    },
+    {
+      "file": "slide-1.png",
+      "bytes": 171900,
+      "sha256": "cbc784a170c9a575f7e734d695ed9e2804b22a1c920ec6a3f65ac296a2183c95"
+    },
+    {
+      "file": "slide-10.png",
+      "bytes": 228981,
+      "sha256": "05eed59389f1a0a1a6e8b7299aedd872bf7f1024ff3e6b76a94613ec3020e42f"
+    },
+    {
+      "file": "slide-2.png",
+      "bytes": 236793,
+      "sha256": "b455290c637baf6ccd9c771528a43aab24969ed57db2f26ad7178109d924d9cf"
+    },
+    {
+      "file": "slide-3.png",
+      "bytes": 213656,
+      "sha256": "6572f7e9650edc4e1f28b77379453cd0fc12afdf3f46ce3d18091415fb002169"
+    },
+    {
+      "file": "slide-4.png",
+      "bytes": 197975,
+      "sha256": "6a129312bf835008908afcaade01b72ce3a4d8acc66da43d3c0d754453351eff"
+    },
+    {
+      "file": "slide-5.png",
+      "bytes": 226171,
+      "sha256": "edb9d21ddf1f07dfb4f2a04dedb87df1d30460c82c3010897f127f3403b699df"
+    },
+    {
+      "file": "slide-6.png",
+      "bytes": 234245,
+      "sha256": "b6e01caf5b8f69c167cf4eb5bace99f28d9c1d4573b7566b163f8001d1a3bf9a"
+    },
+    {
+      "file": "slide-7.png",
+      "bytes": 240484,
+      "sha256": "321b0e7ed5f359a0345e358e6448fa1b04fe944bbb764c0aea5fda713b750c2d"
+    },
+    {
+      "file": "slide-8.png",
+      "bytes": 221216,
+      "sha256": "629a8ce23be4812a4b903811fccd044df6abadec407c75811ed43861ab97f34f"
+    },
+    {
+      "file": "slide-9.png",
+      "bytes": 208700,
+      "sha256": "95826232b6df77ffbe3f85c3070d0062c675b46a565f9724857ddf8673a8de71"
+    }
+  ],
+  "all_archived_bytes_identical": true,
+  "inference_started": false
+}

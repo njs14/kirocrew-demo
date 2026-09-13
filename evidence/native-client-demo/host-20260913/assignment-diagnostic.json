@@ -1,0 +1,52 @@
+{
+  "aliases": {
+    "enforcement-demo": {
+      "kiro_agent": "enforcement-demo",
+      "memory_store": "default",
+      "memory_version": null,
+      "owner_member": null,
+      "registered": true,
+      "workspace": "default"
+    },
+    "host-controls-demo": {
+      "kiro_agent": "host-controls-demo",
+      "memory_store": "member-host-controls-demo-6e02186a8d5a471e8ae182ba8a6db69c",
+      "memory_version": 2,
+      "owner_member": "host-controls-demo",
+      "registered": true,
+      "workspace": "default"
+    }
+  },
+  "config_sha256": "14e10cc77e6890e18cb5fa9d1885b2d48613cbf6dd405ffe8815699b55e8fbeb",
+  "default_agent": "enforcement-demo",
+  "diagnosis": {
+    "cause": "The UI agent sync registered host-controls-demo as an alias with a private store; the chat was created first under another agent, then switched.",
+    "configuration_mutated_by_diagnostic": false,
+    "ephemeral_is_not_a_fix": true,
+    "guard": "Unassigned conversation with persisted transcript metadata cannot acquire private V2 memory on the first turn.",
+    "guard_bypassed": false,
+    "native_enforcement_verified": false,
+    "native_tool_executed_by_diagnostic": false,
+    "supported_flow": "Create a truly new chat with host-controls-demo in the initial agent field, using a folder default-agent and its New chat action, or the supported member thread entry point."
+  },
+  "kind": "host_assignment_safe_remote_read",
+  "matches_local_source": {
+    "config/loader.py": true,
+    "dashboard/chat_handlers.py": true,
+    "dashboard/chat_persistence.py": true,
+    "dashboard/chat_runner.py": true,
+    "dashboard/handlers/agents.py": true,
+    "dashboard/handlers/members.py": true,
+    "member_memory_auth.py": true
+  },
+  "recorded_at": "2026-09-13T21:46:03.027508+00:00",
+  "source_sha256": {
+    "config/loader.py": "8c939117d505987e860e7d33ad472acb8404689d5ab55a6c6b995c21f57a9aa5",
+    "dashboard/chat_handlers.py": "2e0b2fa8606184dc24e754b814f6a1d91b5ad9a7e7e7fa382a1969a36edf8c71",
+    "dashboard/chat_persistence.py": "b33f14b5fda1ec1cc48f675d9dc72c27908223db200bfcc086a3c340a6bf97b9",
+    "dashboard/chat_runner.py": "04847c1e72b03df4e578e066acebbbe604e8c5fc47f345ddb5e1fe7986e8ca32",
+    "dashboard/handlers/agents.py": "c1d39fa4dd7ccedf61c14959791b18603c3b818af888b434eb6c400bd962ae49",
+    "dashboard/handlers/members.py": "b153ddc26d9c65fcdafd8eb378bf209dbd4e9bcf66ce8c68c46560ff65ea0dc5",
+    "member_memory_auth.py": "cd287a000c56d4aebf289e35a39dc54cf29dd099f5884b607fc0daed30000939"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "kind": "admin_tour_browser_review",
+  "reviewed_at": "2026-09-13T21:52:20.404777+00:00",
+  "artifact": "output/kirocrew-admin-tour.html",
+  "sha256": "1371aaa892398bcc03b85aadafc4af5c57c116695e649806a341b54391dfadba",
+  "browser": "Codex in-app browser",
+  "status": "passed",
+  "checks": [
+    "All nine stops selected and hash routes changed as expected",
+    "No horizontal overflow or broken images at the inspected desktop viewport",
+    "Next and previous boundary states correct",
+    "Left-arrow navigation moved to the preceding stop",
+    "Image zoom displayed original pixels; actual-pixel mode and Escape restored focus",
+    "Fresh final candidate places stop label and heading below sticky toolbar",
+    "Initial overview and final corrected collection layouts visually inspected"
+  ],
+  "delivery_checks": [
+    {
+      "route": "/admin-console-native-20260913/01-live-security-posture.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/03-denied-command-categories.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/05-approval-duration.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/06-governance-status.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/07-gateway-overview.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console/02-arm-performance.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console/07-agent-backend.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console/08-telemetry-controls.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console/11-client-server-telemetry.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/admin-console/12-collection-logs.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/docs/NATIVE-CLIENT-DEMO.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/admin-console/browser-receipt.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/admin-console/native-20260913/tour-build.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913/authenticated.json",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/infrastructure/mcp-enforcement/README.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/infrastructure/observability/APP-INSTALL.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/kirocrew-admin-findings.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/kirocrew-admin-tour.html",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/kirocrew-admin-tour.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console-native-20260913/01-live-security-posture.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console-native-20260913/03-denied-command-categories.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console-native-20260913/05-approval-duration.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console-native-20260913/06-governance-status.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console-native-20260913/07-gateway-overview.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console/02-arm-performance.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console/07-agent-backend.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console/08-telemetry-controls.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console/11-client-server-telemetry.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/admin-console/12-collection-logs.jpg",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/kirocrew-admin-findings.md",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/kirocrew-admin-tour.html",
+      "status": 200,
+      "length_matches": true
+    },
+    {
+      "route": "/output/kirocrew-admin-tour.md",
+      "status": 200,
+      "length_matches": true
+    }
+  ],
+  "limitations": [
+    "Desktop artifact review; native Mac controls remain separately evidenced",
+    "Per-turn telemetry is observed activity and does not alone prove denials"
+  ],
+  "automation_note": "Role locator for Actual pixels timed out; the visible accessibility checkbox worked and changed to Fit image."
+}

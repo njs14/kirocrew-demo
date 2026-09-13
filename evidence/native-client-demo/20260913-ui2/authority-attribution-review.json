@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "kind": "bounded_native_evidence_attribution_review",
+  "reviewed_at": "2026-09-13T21:59:42.950284+00:00",
+  "reviewer": "/root/native_attribution_review",
+  "verdict": "bounded_attribution_supported",
+  "full_native_acceptance": "requires_parent_integration_with_reviewed_native_UI_and_media",
+  "checks": {
+    "mcp_source_matches_original_and_current_local": true,
+    "mcp_unit_matches_current_local": true,
+    "inspected_paths_root_owned_no_group_world_write_no_symlink": true,
+    "mcp_process_id_and_invocation_match_native_capture": true,
+    "mcp_service_user_is_separate": true,
+    "deployed_policy_equals_original": true,
+    "both_fixture_head_identities_equal_seed_receipt": true,
+    "reconciled_four_bounded_outcomes": true
+  },
+  "source_sha256": {
+    "evidence/native-client-demo/20260913-ui2/authority-arm-readback.json": "9566995b485d6e92c7efa77d6a9870829820a38ccecfb28c359889618ed2e955",
+    "evidence/native-client-demo/20260913-ui2/authority-aws-readback.json": "e86828024125b1a8ac51c6d53862a19cc5de231038cdbfe2902df58dbdba548c",
+    "evidence/native-client-demo/20260913-ui2/receipt.json": "0b66f7888e1d4e7fc842650fa297c9d2785c856d48eb6e2cd8bf6f264c71448e",
+    "evidence/native-client-demo/20260913-ui2/events.jsonl": "ef2a092a89bc95316e2eb916545e6b52c4578114edd24cdf144eb0facb60cfc9",
+    "evidence/native-client-demo/20260913/runtime-preflight.json": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499",
+    "evidence/native-client-demo/20260913/authenticated.json": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1",
+    "evidence/aws/fixture-hashes.json": "c733be36b9741898e9d8de25596028f8d1fa9628fb2fd71bd2b99bc01a34cc14",
+    "evidence/aws/seed-fixtures-result.json": "e3c6bffd0904fa2ee568b6dfef4b780833df49539223d6ba61ca36b2b5787cde",
+    "evidence/aws/iam-demo-policy.json": "8faf681201a0af63edeae2052e89ac85c312c074c4f4eadf9b635625c73c50db",
+    "evidence/aws/arm-20260913/mcp-live-receipt.json": "70e9966407f98d5685c7e9f2f81fd82484091d740a13dfe310b7d59873380ff4",
+    "evidence/aws/arm-20260913/instances-at-cutover.json": "8dcae657cc775d35a1d3c82ac31652f6d801884e6f4dba70a25cef0266c90cbe",
+    "evidence/aws/arm-20260913/stack-current.json": "c1479f9f83f4a96816243f443c9bee83ef6c4ed66c406c2b7b8065ecedb30fce",
+    "evidence/aws/arm-20260913/template-arm.json": "aed6ca2da847fcccd91d74fc73d1317373d87a6a5ad45a3930bd773bb2700e22",
+    "infrastructure/mcp-enforcement/server.py": "a52c0c42d91430232fc68c20f6554e70842ebd33d0a71a79dff3f50ef431eb08",
+    "infrastructure/kirocrew-mcp-demo.service": "027ec03ceffdf0fcb38b9961bd35211572f564e0f249904feb111f0624461d01",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/sel-interval.json": "81b9c450ee9f14761a8d943c7b9d0c79712da6d7f27910b8fbc1dfba9af06547",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+  },
+  "supported_claims": [
+    "The allowed native tool result and MCP journal agree on the exact trace, invocation ID, S3 request ID DT9A0C6ZKDWEQETN, 55 bytes and the original allowed fixture SHA256.",
+    "The Crew case has a trace-bearing blocked native tool row, a single hook_deny for the isolated session turn, no permission card/resolution, and no corresponding service audit event in the collected interval.",
+    "The MCP case has a native approval request/resolution and matching SEL approval, then tool_grant_denied from the separate MCP service with no AWS dispatch for that invocation.",
+    "The IAM case has native/SEL approval, MCP allow, AWS dispatch and S3 GetObject AccessDenied403 with request ID8DET0VKCQPXJXCMC. Existing and fresh deployed policy deny the fixed denied prefix, and its fixture still exists.",
+    "The MCP source and service unit are root-owned and match the reviewed source. The process runs as separate mcp-demo UID997 with the same service PID and InvocationID observed during capture.",
+    "Remote Kiro CLI and kiro-cli-chat processes ran under crew UID999 in the demo workspace before capture; a fresh after-capture lineage also descends from the remote Gateway. These observations do not bind a particular PID to an approval card."
+  ],
+  "limits": [
+    "Original passive receipt remains collection_complete=false. Use the separately reviewed reconciliation for bounded outcomes; do not rewrite the original as passed.",
+    "No UI footage was independently inspected by this reviewer. Parent must bind actual native Mac prompts and once-only approvals to media.",
+    "Crew denial is session/turn correlation; SEL does not carry a direct trace-to-tool-call ID join for hook_deny.",
+    "Fresh AWS and ARM authority checks occurred after capture. They do not prove absence of arbitrary administrator changes between observations.",
+    "S3 HeadObject confirms existence, byte length, LastModified and ETag; it does not recompute denied object content SHA256.",
+    "The IAM instance-profile association is supported by existing ARM cutover instance and CloudFormation receipts. This bounded readback did not refetch IAM instance-profile membership or per-request STS caller identity.",
+    "No immutable enterprise policy floor or restricted-user identity boundary is established. Current Crew configuration remains owner editable.",
+    "The source accepts only instance-role credentials or assume-role sourced directly from EC2 metadata. The successful S3 read is consistent with that checked source; raw credential provider state was not collected.",
+    "CLI ELF architecture and binary hashes were freshly recorded, but the original release archive was not rehashed or re-extracted.",
+    "Retained SEL rows were read without exporting the HMAC key. Integrity relies on original Gateway verification; independent per-row signatures were not verified."
+  ],
+  "revision": {
+    "reason": "Bind final reviewed reconciliation and unchanged recovered SEL interval; no new runtime probing.",
+    "previous_review_sha256": "3c0d57509955abb10cec950e922c4222d33bc0a3a8b1a718e525e96f2b63fadd"
+  }
+}

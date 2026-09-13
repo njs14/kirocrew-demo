@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "candidate": "native-controls-v1",
+  "packet": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew-native-council-native-controls-v1-74280ad40e10",
+  "slide_count": 10,
+  "manifest_sha256": "74280ad40e10efaf66fe465f0a0f4e472a20e5f60fc02f6eec2edd8a2f24fa4a",
+  "output": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/candidate",
+  "sources": {
+    "presentation.html": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-native-controls.html",
+    "notes.md": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-native-controls-notes.md",
+    "evidence-summary.md": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/evidence-summary.md",
+    "capture-receipt.json": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/capture-binding.json",
+    "slide-1.png": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/slides-png/slide-01.png",
+    "slide-2.png": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/slides-png/slide-02.png",
+    "slide-3.png": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/slides-png/slide-03.png",
+    "slide-4.png": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/slides-png/slide-04.png",
+    "slide-5.png": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/slides-png/slide-05.png",
+    "slide-6.png": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/slides-png/slide-06.png",
+    "slide-7.png": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/slides-png/slide-07.png",
+    "slide-8.png": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/slides-png/slide-08.png",
+    "slide-9.png": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/slides-png/slide-09.png",
+    "slide-10.png": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/native-client-demo/council-native-v1/slides-png/slide-10.png"
+  },
+  "runner_sha256": "b03a335bfe95d3dda00cb7315e4a9f2e94251e4fd5d814228c58e89113de5f19",
+  "launch_policy_sha256": "9d2ec8086b50260ae6c6202c5c2c861a4b2828946ac68baefe081fce636a5540",
+  "inference_started": false
+}

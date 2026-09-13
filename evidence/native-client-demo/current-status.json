@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "kind": "native_demo_status",
+  "updated_at": "2026-09-13T22:20:30.034243+00:00",
+  "status": "five_native_clips_recorded_six_host_takes_pending",
+  "endpoint_client_scope": "macOS only",
+  "presentation": {
+    "path": "output/kirocrew-native-controls.html",
+    "slides": 10,
+    "native_clips": 5,
+    "exact_artifact_verdicts": "See separate build, browser and council receipts."
+  },
+  "admin_tour": {
+    "path": "output/kirocrew-admin-tour.html",
+    "stops": 9,
+    "original_screenshots": 13,
+    "browser_review": "evidence/admin-console/native-20260913/browser-review.json"
+  },
+  "recorded_outcomes": [
+    "Allowed S3 fixture read after native approval",
+    "Automatic Crew tool denial before MCP arrival",
+    "MCP grant denial before AWS dispatch",
+    "S3 IAM AccessDenied HTTP 403",
+    "Private-memory assignment refusal before a tool starts"
+  ],
+  "four_mcp_traces": [
+    "native-20260913-ui2-allow",
+    "native-20260913-ui2-crew",
+    "native-20260913-ui2-mcp",
+    "native-20260913-ui2-iam"
+  ],
+  "original_receipts_preserved": {
+    "collection_complete": false,
+    "reconciler_full_native_acceptance": false,
+    "bounded_four_outcomes_reconciled": true
+  },
+  "pending_host_takes": [
+    "Allowed workspace read",
+    "Anonymous server authentication",
+    "Sensitive-path read",
+    "Protected-path write",
+    "Custom server command rule",
+    "IPv4 metadata TCP connection isolation"
+  ],
+  "pending_reason": "The Mac locked before the corrected host session received its first prompt. Native UI recording requires manual unlock.",
+  "prepared_session": {
+    "slot": "chat-4-1789335946",
+    "folder": "Host control demos",
+    "agent": "host-controls-demo",
+    "workspace": "/srv/kirocrew-demo/workspace",
+    "prompt_submitted": false
+  },
+  "temporary_rule": {
+    "pattern": "KIROCREW_DEMO_COMMAND_CONTROL_20260913",
+    "cleanup": "Remove only this added rule through the admin UI after the takes and retain a removal receipt."
+  },
+  "limits": [
+    "Owner connection; restricted human-role RBAC untested.",
+    "Crew configuration remains Crew-writable; no immutable enterprise policy demonstrated.",
+    "Process snapshots do not establish overlap with pending approval.",
+    "Memory refusal occurred before any file tool; six host outcomes remain unobserved.",
+    "SEL integrity relies on original Gateway verification; no exported HMAC key or independent per-row signature check.",
+    "Telemetry and configured coverage counts alone do not establish security decisions."
+  ],
+  "infrastructure": "Existing VPC and subnet parameters remain supported through CloudFormation; this recording extension does not add network infrastructure.",
+  "publication": "Existing private GitHub repository; GitHub Actions out of scope.",
+  "editorial_review": "No AI Slop applied to README.md, DEMO-RECORDING-PLAN.md and docs/NATIVE-CLIENT-DEMO.md; self-checked against skill eval.",
+  "private_source_receipts": {
+    "evidence/native-client-demo/20260913-ui2/baseline.json": "1fd8d89b115427ed0d31b9a8c6f7b16f2b1fcd9564196ab5d7df0c781b1aef2a",
+    "evidence/native-client-demo/20260913-ui2/receipt.json": "0b66f7888e1d4e7fc842650fa297c9d2785c856d48eb6e2cd8bf6f264c71448e",
+    "evidence/native-client-demo/host-20260913-ui1/baseline.json": "11d681803029e1ad652f3a1f006b6f389dc6bbe4b9d4ac1e8d22fb23ea2a343c",
+    "evidence/native-client-demo/host-20260913-ui1/receipt.json": "3dc90df39baf82bb026968b8ce34696eea32082be6bdd212fae4348e13b3a196",
+    "evidence/native-client-demo/host-20260913-ui2/baseline.json": "74f46816a104d5970057bc46e9522ed61ee7417fb38a5cb3d1fd457242c1672c",
+    "evidence/native-client-demo/host-20260913-ui2/receipt.json": "06b5c0bbf0c50946c03047604057f328f912ccf14c48c25cf580aeae3891ecdc"
+  },
+  "publishable_source_receipts": {
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9",
+    "evidence/native-client-demo/20260913-ui2/authority-arm-readback.json": "9566995b485d6e92c7efa77d6a9870829820a38ccecfb28c359889618ed2e955",
+    "evidence/native-client-demo/20260913-ui2/authority-aws-readback.json": "e86828024125b1a8ac51c6d53862a19cc5de231038cdbfe2902df58dbdba548c",
+    "evidence/native-client-demo/media-review-mcp-controls.json": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d",
+    "evidence/native-client-demo/media-review-memory-assignment.json": "68e609282f6cf097fc9ed3f88a1228f4703fee5311a5945cfa98a9dfc78cc167",
+    "evidence/native-client-demo/host-20260913/assignment-diagnostic.json": "8090b4a69f0c4f76021d6cf1c869f352c188aaa61c31382f3b4e0b19f0ea8a6c",
+    "evidence/native-client-demo/host-20260913/setup-review.json": "62992da07dbc62b01dcb18316181d4878dd9b8269aaa9a66c792d6e6a835e55d",
+    "evidence/native-client-demo/host-20260913-ui2/capture-status.json": "8a4f6292fdc62ef285ff3bd2306ef72e58843c20a8346e7535f9556db5856617",
+    "evidence/native-client-demo/20260913-ui2/baseline-publication.json": "6316c5b3252acc3fc8a9b91f7436b6248c778c2824b45c5100e40c99fe9e08e3",
+    "evidence/native-client-demo/20260913-ui2/receipt-publication.json": "1e81f02d2237afbd0d6394b178def71134a8be79bd50f26b23f79af42983ee2e",
+    "evidence/native-client-demo/20260913-ui2/events.jsonl": "ef2a092a89bc95316e2eb916545e6b52c4578114edd24cdf144eb0facb60cfc9",
+    "evidence/native-client-demo/host-20260913-ui1/baseline-publication.json": "592ba16cb80113dab4875f12fc5c8d73e2b6304f2f1f5d82571ad44e8118e1eb",
+    "evidence/native-client-demo/host-20260913-ui1/receipt-publication.json": "9bddd53904ba1a5efddfd74b186edfe1bff662c5c6a3ba38f13c9ea93f42f78b",
+    "evidence/native-client-demo/host-20260913-ui1/events.jsonl": "68ec25c32af752887fdaa8102eb3919c7bdd36487269ffc0812dcadec1375359",
+    "evidence/native-client-demo/host-20260913-ui2/baseline-publication.json": "cee808fc689b58e4b916c39410d6a323c07af8ae9d35aa62aa6f6693a29bb5a3",
+    "evidence/native-client-demo/host-20260913-ui2/receipt-publication.json": "bd0b2201a0e95bdeafedf9b9935393718c8fbbc883b626af8e2b9f77920c2053",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/sel-interval.json": "81b9c450ee9f14761a8d943c7b9d0c79712da6d7f27910b8fbc1dfba9af06547"
+  },
+  "pending_capture": {
+    "status": "finished_without_prompt",
+    "events": 0,
+    "session_messages_before": 0,
+    "session_messages_after": 0,
+    "receipt": "evidence/native-client-demo/host-20260913-ui2/capture-status.json",
+    "resume": "Start a fresh passive observer and raw recording after manual unlock; do not reuse the finalized capture."
+  },
+  "publication_boundary": "Full collector baseline and receipt originals remain byte-identical, ignored by Git and privately retained. Their hashes remain private-source references. Bounded baseline-publication.json and receipt-publication.json exports preserve original collection verdicts and describe scoped native events. The recovered SEL interval supplies bounded four-turn event evidence. Broad SEL pages and complete conversation snapshots are omitted from the exports. The unused host take has zero native events and no events.jsonl file."
+}

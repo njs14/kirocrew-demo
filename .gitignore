@@ -35,3 +35,14 @@ evidence/live/latest.json
 test-results.xml
 # The source-control task deliberately has no hosted CI automation.
 .github/workflows/
+# Privately retained collector sources; scoped *-publication.json derivatives are tracked.
+evidence/native-client-demo/20260913-ui2/baseline.json
+evidence/native-client-demo/20260913-ui2/receipt.json
+evidence/native-client-demo/host-20260913-ui1/baseline.json
+evidence/native-client-demo/host-20260913-ui1/receipt.json
+evidence/native-client-demo/host-20260913-ui2/baseline.json
+evidence/native-client-demo/host-20260913-ui2/receipt.json
+# Rejected full-page captures and a mislabeled telemetry capture; used images stay tracked.
+output/admin-console-native-20260913/02-sel-coverage.png
+output/admin-console-native-20260913/04-teardown-rule-coverage.png
+output/admin-console-native-20260913/08-native-crew-denial.png

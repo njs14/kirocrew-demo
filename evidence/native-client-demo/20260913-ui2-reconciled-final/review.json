@@ -1,0 +1,45 @@
+{
+  "kind": "native_ui2_reconciliation_review",
+  "created": "2026-09-13T21:40:32.463490+00:00",
+  "reviewer": "/root/native_enforcement_scenes/passive_collector_review",
+  "verdict": "no_material_findings",
+  "tests": {
+    "command": ".build/demo-tools-venv/bin/python3.12 -m unittest discover -s scripts/tests -p test_native_client_evidence.py -q",
+    "passed": 30,
+    "live_calls": false
+  },
+  "independent_reproduction": "Reviewer independently joined original 55 native events, 12 recovered SEL rows and seven MCP service audit events; all four bounded outcome observations matched.",
+  "original_receipt_preserved": true,
+  "full_native_acceptance": false,
+  "scope": "Four bounded native outcomes, with original collection failure and process-overlap, immutable-policy, IAM-attribution and per-row-signature limits retained.",
+  "files": [
+    {
+      "path": "scripts/capture-native-client-evidence.py",
+      "sha256": "ae535152cad2325aea28622288e1270b8f8432306ebee2012d5b20ec3aa9a3e0"
+    },
+    {
+      "path": "scripts/reconcile-native-client-evidence.py",
+      "sha256": "f49fbdda3268e805766c589a15162bd83873806f92151837ec37e6ad7c3f5b60"
+    },
+    {
+      "path": "scripts/tests/test_native_client_evidence.py",
+      "sha256": "5df26e530a3cd93220dc8e7cd07f1f57cc9061b4cafc75a70375d3f1fc38369c"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2/receipt.json",
+      "sha256": "0b66f7888e1d4e7fc842650fa297c9d2785c856d48eb6e2cd8bf6f264c71448e"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2/events.jsonl",
+      "sha256": "ef2a092a89bc95316e2eb916545e6b52c4578114edd24cdf144eb0facb60cfc9"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/sel-interval.json",
+      "sha256": "81b9c450ee9f14761a8d943c7b9d0c79712da6d7f27910b8fbc1dfba9af06547"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    }
+  ]
+}

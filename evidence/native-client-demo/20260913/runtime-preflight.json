@@ -1,0 +1,26 @@
+{
+  "source": {
+    "dashboard/ws.py": {
+      "sha256": "bdd3f5dc69a7d76d417dc9223b6e6642468e966ec60ce0ebe756846ee476833f",
+      "uid": 0,
+      "matches_local_snapshot": true
+    },
+    "dashboard/websocket_hub.py": {
+      "sha256": "62fb25bb12e2c66ae7eba8bedead3bb0b90be0e184ed3a427d2024b44ff7de06",
+      "uid": 0,
+      "matches_local_snapshot": true
+    }
+  },
+  "safe_config": {
+    "auto_deny_tools": [
+      "@aws-enforcement/crew_denied"
+    ],
+    "auto_approve_tools": [],
+    "approval_mode": "interactive",
+    "acp_backend": "",
+    "allowedTools": [],
+    "tools": [
+      "@aws-enforcement"
+    ]
+  }
+}

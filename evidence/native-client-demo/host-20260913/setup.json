@@ -1,0 +1,133 @@
+{
+  "applied": true,
+  "binding": {
+    "agent_sha256": "fcf983f70a7a37cf698138a3f9cb3be930961685bdeb1961ebe112f7c1283ec3",
+    "canary_sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+    "crew_gid": 988,
+    "crew_home": "/home/crew",
+    "crew_uid": 999,
+    "demo_command_rules": [
+      {
+        "enabled": true,
+        "id": "user-9590faaf660d",
+        "pattern": "KIROCREW_DEMO_COMMAND_CONTROL_20260913"
+      }
+    ],
+    "denied_commands_sha256": "70a7b8a0f62812b6e6dd7fdc74db14f82268a181a65f743ec50e6ee0abd27a88",
+    "directories": {
+      "agents": "/home/crew/.kiro/agents",
+      "aws": "/home/crew/.aws",
+      "helpers": "/opt/kirocrew-demo/host-controls",
+      "protected_fixture": "/home/crew/.kiro/agents/.demo-host-controls",
+      "workspace_fixture": "/srv/kirocrew-demo/workspace/.host-controls-demo"
+    },
+    "files": {
+      "agent": "/home/crew/.kiro/agents/host-controls-demo.json",
+      "allowed_canary": "/srv/kirocrew-demo/workspace/.host-controls-demo/allowed-canary.txt",
+      "sensitive_canary": "/home/crew/.aws/kirocrew-demo-control-canary.txt"
+    },
+    "gateway_config_sha256": "c5a3c9e78df6799f20e0d8e743adde7786fd01d2e7e501939eb3e15db091b754",
+    "gateway_port": 5476,
+    "helper_sha256": {
+      "anonymous-http.py": "9e4e087e4ad6dece270695832ea4a37155dea0cbdbbda45a3ea73f3ef284d4b6",
+      "imds-tcp.py": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93"
+    },
+    "machine_id_sha256": "d1b470b94a19bccb4788ddc340199406391bde10f8181ba1a4071f3545f615ac",
+    "original_mcp_agent_sha256": "48855b7e4b5c2adbbbf7a2ee31e0c181b2977340f1d0e36653c69756299b4d90",
+    "source_root": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew",
+    "sources": {
+      "dashboard/handlers/_shared.py": {
+        "bytes": 119166,
+        "sha256": "86426ca04a78d4bf9359160533acd585d80aa8bf6cd9e29ecbbf14e5aee96ac0",
+        "uid": 0
+      },
+      "dashboard/handlers/core.py": {
+        "bytes": 136247,
+        "sha256": "1cb8d562f7224769b51464eaa2ae0c881b0bebad362072d49f9647cfe28687cb",
+        "uid": 0
+      },
+      "dashboard/token_auth.py": {
+        "bytes": 158225,
+        "sha256": "2ce2dd02498a6494edfc604b51436e016c62ada2f2be944499579ce09e822cda",
+        "uid": 0
+      },
+      "hooks.py": {
+        "bytes": 257918,
+        "sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+        "uid": 0
+      },
+      "platform/governance.py": {
+        "bytes": 235938,
+        "sha256": "7d9c5b109086b8c4a2d36c589d387e1fd562e7d2b407dc65d54d2e7d2fc09341",
+        "uid": 0
+      },
+      "platform/governance_profiles.py": {
+        "bytes": 71035,
+        "sha256": "102ab33ed14c8ecd1060d81a0de13214602b519291d8c25f331eae77cbfb4c73",
+        "uid": 0
+      },
+      "sandbox.py": {
+        "bytes": 579148,
+        "sha256": "3fcb43313c4970f523a50ce7a508b8b9801e88bdc06a61947a649a67cf8902e9",
+        "uid": 0
+      },
+      "security/paths.py": {
+        "bytes": 141630,
+        "sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+        "uid": 0
+      }
+    },
+    "state_dir": "/var/lib/kirocrew",
+    "workspace": "/srv/kirocrew-demo/workspace"
+  },
+  "created": [
+    "/home/crew/.aws",
+    "/home/crew/.kiro/agents/.demo-host-controls",
+    "/srv/kirocrew-demo/workspace/.host-controls-demo",
+    "/opt/kirocrew-demo/host-controls",
+    "/home/crew/.kiro/agents/host-controls-demo.json",
+    "/home/crew/.aws/kirocrew-demo-control-canary.txt",
+    "/srv/kirocrew-demo/workspace/.host-controls-demo/allowed-canary.txt",
+    "/opt/kirocrew-demo/host-controls/anonymous-http.py",
+    "/opt/kirocrew-demo/host-controls/imds-tcp.py"
+  ],
+  "kind": "host_controls_setup",
+  "local_setup_sha256": "e140cc04785f9952f0ce2c5d960ec7b6d02f11b0ce77ccf58f39d17d71abb094",
+  "native_enforcement_verified": false,
+  "schema_version": 1,
+  "source_comparison": {
+    "dashboard/handlers/_shared.py": {
+      "local_reference_sha256": "86426ca04a78d4bf9359160533acd585d80aa8bf6cd9e29ecbbf14e5aee96ac0",
+      "matches_local_reference": true
+    },
+    "dashboard/handlers/core.py": {
+      "local_reference_sha256": "1cb8d562f7224769b51464eaa2ae0c881b0bebad362072d49f9647cfe28687cb",
+      "matches_local_reference": true
+    },
+    "dashboard/token_auth.py": {
+      "local_reference_sha256": "2ce2dd02498a6494edfc604b51436e016c62ada2f2be944499579ce09e822cda",
+      "matches_local_reference": true
+    },
+    "hooks.py": {
+      "local_reference_sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+      "matches_local_reference": true
+    },
+    "platform/governance.py": {
+      "local_reference_sha256": "7d9c5b109086b8c4a2d36c589d387e1fd562e7d2b407dc65d54d2e7d2fc09341",
+      "matches_local_reference": true
+    },
+    "platform/governance_profiles.py": {
+      "local_reference_sha256": "102ab33ed14c8ecd1060d81a0de13214602b519291d8c25f331eae77cbfb4c73",
+      "matches_local_reference": true
+    },
+    "sandbox.py": {
+      "local_reference_sha256": "3fcb43313c4970f523a50ce7a508b8b9801e88bdc06a61947a649a67cf8902e9",
+      "matches_local_reference": true
+    },
+    "security/paths.py": {
+      "local_reference_sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+      "matches_local_reference": true
+    }
+  },
+  "source_reference": "Hash entries identify inspected remote bytes; setup does not assert source parity or native enforcement."
+}

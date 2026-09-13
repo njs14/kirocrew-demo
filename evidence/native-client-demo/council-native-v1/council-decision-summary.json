@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-09-13T22:11:14.139288+00:00",
+  "root_agreed_material_findings": true,
+  "review_candidate": {
+    "name": "native-controls-v1",
+    "html_sha256": "ac06b8132961dfc35cccc5d1c470ca0ff5b395ec7f7044659803f4ea7b0be8a7",
+    "notes_sha256": "612775125751c05138e39a13bd2d88814e6c58b6ef49f48d338cb69acf24f78c",
+    "manifest_sha256": "74280ad40e10efaf66fe465f0a0f4e472a20e5f60fc02f6eec2edd8a2f24fa4a",
+    "council_receipt_sha256": "da49c0b5c576c7b6826fb0926b9e0b648cda668f0c32b4a6ca65e7855d485223"
+  },
+  "reviewers": {
+    "claude": {
+      "actual_response_model_ids": [
+        "claude-opus-5"
+      ],
+      "usage_model_ids": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-5"
+      ],
+      "requested_effort": "xhigh",
+      "effort_evidence": "launch_configuration_only",
+      "exact_png_payloads_verified": 10,
+      "verdict": "CHANGES REQUIRED",
+      "review_sha256": "b58a0f37a54826a2f27d9af8089ed6488cd20786c9ac36d65b7f6678d35b6b45"
+    },
+    "grok": {
+      "actual_response_model_ids": [
+        "grok-4.6"
+      ],
+      "usage_model_ids": [
+        "grok-4.6-build"
+      ],
+      "requested_effort": "xhigh",
+      "effort_evidence": "launch_configuration_only",
+      "exact_png_payloads_verified": 10,
+      "verdict": "CHANGES REQUIRED",
+      "review_sha256": "63791383ef9bfb198dfb391678bb204893478dfe1cb8c2cdef8ca657d0e024be"
+    }
+  },
+  "capture_coverage": {
+    "slides": 10,
+    "viewport": "1280x720",
+    "original_bytes": "CUA JPEG captures with .png names preserved",
+    "review_bytes": "PNG re-encodings with identical decoded RGB24 hashes",
+    "capture_binding_sha256": "a837badbc78afb30012d821aa6e536f7d6b80ed552b1f9ea0ef40faa46c70ca4",
+    "models_viewed": "all10PNGpixels, notes and concise evidence summary",
+    "not_directly_reviewed_by_models": [
+      "video playback or seeking",
+      "every recorded frame",
+      "live AWS/backend state",
+      "raw underlying enforcement receipts",
+      "the separate full admin guide"
+    ]
+  },
+  "decisions": [
+    {
+      "id": "D1",
+      "decision": "Use the real result frame as each clip poster",
+      "agreement": "both reviewers and root",
+      "owner": "/root/native_media_cuts",
+      "scope": "Update posters only; retain MP4 bytes, source captures and cuts",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "D2",
+      "decision": "Make owner-editable Crew configuration and no enterprise policy floor visible",
+      "agreement": "both reviewers and root",
+      "owner": "/root/native_control_deck",
+      "scope": "Architecture slide; preserve one endpoint-control box",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "D3",
+      "decision": "Label private-memory refusal as a conversation assignment guard before tools",
+      "agreement": "both reviewers and root",
+      "owner": "/root/native_control_deck",
+      "scope": "No restricted-user RBAC, filesystem denial or host-tool enforcement claim",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "D4",
+      "decision": "Refresh authority receipt hash and include native MCP media/authentication receipts",
+      "agreement": "both reviewers and root",
+      "owner": "/root/native_control_deck",
+      "scope": "Final notes, supporting links and allowed-file server",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "D5",
+      "decision": "Add readable admin context and separate posture, telemetry, health logs and audit evidence",
+      "agreement": "both reviewers and root",
+      "owner": "/root/native_control_deck",
+      "scope": "Admin slide plus separately reviewed screenshot guide",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "D6",
+      "decision": "Keep joined-receipt attribution and unrecorded host-case limits visible",
+      "agreement": "both reviewers and root",
+      "owner": "/root/native_control_deck",
+      "scope": "No immutable-policy, full enterprise acceptance, pending-PID overlap or complete-original-collector claim",
+      "status": "accepted_pending_implementation"
+    }
+  ],
+  "other_dispositions": [
+    {
+      "finding": "one-second overlap between existing source cuts",
+      "disposition": "preserve existing MP4s/cuts; result posters fix wrong static layer; root playback may identify any remaining presentation issue"
+    },
+    {
+      "finding": "rounded-duration mismatch",
+      "disposition": "use consistent displayed rounding; retain precise actual-duration metadata"
+    },
+    {
+      "finding": "padded capture source names versus normalized packet names",
+      "disposition": "document provenance; exact hashes bind files; do not mutate original packet"
+    }
+  ],
+  "follow_through": {
+    "no_ai_slop": "run by deck worker after incorporation",
+    "final_validation": "root browser delta plus fresh read-only scope/diff review",
+    "external_model_review_of_final_derivative": false,
+    "limit": "External council verdicts bind the original frozen candidate. Subsequent changed bytes receive incorporation and local delta checks; they are not claimed to have an exact final-model review."
+  },
+  "independent_integrity_audit": {
+    "reviewer": "/root/native_deck_council/runner_readonly_review",
+    "verdict": "pass",
+    "additional_inference": false,
+    "scope": "raw streams, exact image payloads, tool-path confinement, prompt/launch/model/candidate bindings; no live enforcement or playback validation"
+  }
+}

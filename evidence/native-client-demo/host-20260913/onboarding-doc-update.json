@@ -1,0 +1,10 @@
+{
+  "change": "Documented initial-agent assignment through a folder New chat action after the observed guarded failure.",
+  "document": "docs/HOST-CONTROL-SCENARIOS.md",
+  "evidence": "assignment-diagnostic.json",
+  "installer_or_helpers_changed": false,
+  "kind": "host_controls_onboarding_documentation",
+  "native_recovery_verified": false,
+  "prior_setup_review_preserved": true,
+  "sha256": "9b5094ccd215128f9a69dc2cbcfdcdb96c34faa0433361cc255a4bbfc8669935"
+}

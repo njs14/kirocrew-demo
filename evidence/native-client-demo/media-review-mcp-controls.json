@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-13T21:34:18.690849+00:00",
+  "reviewType": "native_client_media_review",
+  "status": "media_encoded_and_sampled_frames_reviewed",
+  "enforcementAcceptance": "not_evaluated",
+  "browserPlaybackAndSeek": "pending_root_review",
+  "source": {
+    "path": "recordings/native-client-20260913/raw/mcp-control-take-01.mov",
+    "sha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+    "durationSeconds": 299.991667,
+    "width": 2560,
+    "height": 1720,
+    "recordedAt": "2026-09-13T21:23:50Z",
+    "audio": false
+  },
+  "inputManifest": {
+    "path": "recordings/native-client-20260913/cuts-mcp-controls.json",
+    "bytes": 5517,
+    "sha256": "32f097061ee96c688eaa67b10c4fbd20d9866da40cb5e714464b1e0720d9add5"
+  },
+  "outputManifest": {
+    "path": "output/native-client-clips-20260913/manifest.json",
+    "bytes": 16921,
+    "sha256": "75e26eb15e30ab2432da38e3a728936f539a789333a9e5f9ccb497f22943a127"
+  },
+  "processorReceipt": {
+    "path": "output/native-client-clips-20260913/receipt.json",
+    "bytes": 34743,
+    "sha256": "32c81f7b6233c302bfa1bc7150fc091a21e8c7558ae291e95f7a55d627c4f0d3"
+  },
+  "encodingChecks": [
+    "source hashes unchanged",
+    "manifest hash unchanged",
+    "script hash unchanged",
+    "cuts and cues bounded by source",
+    "all media fully decoded",
+    "MP4 H.264 yuv420p faststart",
+    "no retiming or padding",
+    "local receipt files copied and source hashes unchanged"
+  ],
+  "scenes": [
+    {
+      "id": "native-allowed-read",
+      "cut": {
+        "start": 44.0,
+        "end": 70.0
+      },
+      "actualDurationSeconds": 25.998058,
+      "media": [
+        {
+          "url": "native-allowed-read/native-allowed-read.mp4",
+          "type": "video/mp4",
+          "bytes": 1136859,
+          "sha256": "3bcd32eab9989b73a1b85845bd1294d02f4a3de6e622808f839b676fa8bc731a",
+          "duration": 25.998058,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-allowed-read/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 146016,
+        "sha256": "bb965d47ac84714d4d8a8b3ae0060e4cbf7ddffd5cad553d312d1b014d10f607"
+      },
+      "contactSheet": {
+        "url": "native-allowed-read/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 112453,
+        "sha256": "bcb7f08a4a92be535490b37fadd3d03aab78090502f44873212a00e74789bf7a"
+      },
+      "sourceFramesInspected": [
+        44,
+        50,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        62,
+        66
+      ],
+      "processedResultFrame": {
+        "path": ".build/native-media-review/native-allowed-read-result.png",
+        "bytes": 403842,
+        "sha256": "c37f59f28bef571d9449632f122b22e29be6cec6eee32f5a9fc6f470f5df0d99"
+      },
+      "processedResultFrameClipSecond": 22,
+      "observed": "Prompt and permission request for read_allowed, followed by ok:true, layer:aws, request ID, invocation ID, 55 bytes and object hash."
+    },
+    {
+      "id": "native-crew-denial",
+      "cut": {
+        "start": 96.0,
+        "end": 124.0
+      },
+      "actualDurationSeconds": 28.014062,
+      "media": [
+        {
+          "url": "native-crew-denial/native-crew-denial.mp4",
+          "type": "video/mp4",
+          "bytes": 1983357,
+          "sha256": "92f089ffc6d408310cda808387c748d187e75daf9d6314d0322b32ba43fe917e",
+          "duration": 28.014062,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-crew-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 225609,
+        "sha256": "320cc01ce3dfcafb5e43cda4dc9792f1174ad701908f10b46df1701ec471381a"
+      },
+      "contactSheet": {
+        "url": "native-crew-denial/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 148417,
+        "sha256": "c55171f636dd94a2890d2fd020c19fa9ab12d05085b30207f602549e316dc18c"
+      },
+      "sourceFramesInspected": [
+        96,
+        100,
+        102,
+        106,
+        108,
+        110,
+        113,
+        120,
+        124
+      ],
+      "processedResultFrame": {
+        "path": ".build/native-media-review/native-crew-denial-result.png",
+        "bytes": 491041,
+        "sha256": "ea7d9eb0c4c243919307c2319a7479776eb9d121b5940c0fff30d6b268cbe547"
+      },
+      "processedResultFrameClipSecond": 17,
+      "observed": "Prompt for crew_denied, native Tool call blocked row and completed Crew policy refusal; no approval dialog seen in the inspected sequence."
+    },
+    {
+      "id": "native-mcp-denial",
+      "cut": {
+        "start": 160.0,
+        "end": 189.0
+      },
+      "actualDurationSeconds": 29.001064,
+      "media": [
+        {
+          "url": "native-mcp-denial/native-mcp-denial.mp4",
+          "type": "video/mp4",
+          "bytes": 2047715,
+          "sha256": "9895ac8db2f08902a6086be866676e3e1273373e876d402f21cd788b101fb7a2",
+          "duration": 29.001064,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.515572173649396,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-mcp-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 245713,
+        "sha256": "234c12b60967ebac0d7000aaa5e6b0cc31b0b587ead2e80d2120d2d39741ddde"
+      },
+      "contactSheet": {
+        "url": "native-mcp-denial/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 155597,
+        "sha256": "7049a091cba27cf307d89249e5fbb3008fa25a7a8656a43827b6c4a07374bf91"
+      },
+      "sourceFramesInspected": [
+        160,
+        162,
+        166,
+        168,
+        171,
+        174,
+        177,
+        178,
+        179,
+        180,
+        182,
+        183,
+        188
+      ],
+      "processedResultFrame": {
+        "path": ".build/native-media-review/native-mcp-denial-result.png",
+        "bytes": 470966,
+        "sha256": "551cea2f615e4edac4c97966fc93a227ba4d33fd76ecfa12198c54df9cbeb682"
+      },
+      "processedResultFrameClipSecond": 23,
+      "observed": "Prompt and permission request for mcp_denied, followed by ok:false, layer:mcp, tool_grant_denied and invocation ID."
+    },
+    {
+      "id": "native-iam-denial",
+      "cut": {
+        "start": 188.0,
+        "end": 222.0
+      },
+      "actualDurationSeconds": 34.020076,
+      "media": [
+        {
+          "url": "native-iam-denial/native-iam-denial.mp4",
+          "type": "video/mp4",
+          "bytes": 2207810,
+          "sha256": "56c8166490123442d83c89f5694b644898355f53c97649a4275a10d2d676067e",
+          "duration": 34.020076,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-iam-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 255232,
+        "sha256": "b98147695974ba45836e910f82aa32b27de30cba58ed74840f4c3bf17ab67b2a"
+      },
+      "contactSheet": {
+        "url": "native-iam-denial/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 147279,
+        "sha256": "5735ac378d6149c37ea49a97afc6050dc201dc334476085bdcdaa621ce7ff60b"
+      },
+      "sourceFramesInspected": [
+        188,
+        190,
+        192,
+        194,
+        196,
+        198,
+        200,
+        202,
+        205,
+        206,
+        208,
+        210,
+        211,
+        216,
+        222
+      ],
+      "processedResultFrame": {
+        "path": ".build/native-media-review/native-iam-denial-result.png",
+        "bytes": 414511,
+        "sha256": "d05da4bf1bfd8f36d3e7561c4cf1b6d638b663bea815058cf0561b1f7edf4053"
+      },
+      "processedResultFrameClipSecond": 28,
+      "observed": "Prompt and permission request for iam_denied, followed by ok:false, AccessDenied, HTTP 403, layer:aws, AWS request ID and invocation ID."
+    }
+  ],
+  "visualReview": {
+    "method": "Source contact sheets and selected request, permission, block and result frames, plus all four processed contact sheets and full size processed result frames. Separate read-only agent independently inspected source transition frames. Not every frame was manually inspected.",
+    "readability": "1920x1290 exports preserve readable request, permission and result text at full size. Use native video controls or cue seeking to pause on detailed results.",
+    "sensitiveContent": "No account credentials, tokens or unrelated private content were identified in the inspected cut frames. Intended trace IDs, request IDs, invocation IDs, fixture principal, byte count and digest remain visible.",
+    "captureArtifacts": "Transient partial black repaint or occlusion patches remain in the continuous source, including allowed-request frames 54\u201357. They are not edits; readable decision and result frames exist around them. No full black interval intersects any selected cut.",
+    "excludedFullBlackIntervalsSeconds": [
+      [
+        0,
+        22.696667
+      ],
+      [
+        32.266667,
+        35.003333
+      ],
+      [
+        71.395,
+        75.375
+      ]
+    ],
+    "excludedUnrelatedSurface": "The Demo Observability visit between the completed Crew refusal and the next MCP prompt is outside all four cuts.",
+    "timing": "Cuts are continuous and retain recorded speed. No frames inserted, no padding, no synthetic freeze, no speed change, no overlay and no audio."
+  },
+  "limitations": [
+    "Media proves what the native client displayed. Server-layer attribution, exact request counts and Allow once decisions require separate receipt correlation.",
+    "The IAM cut starts with about 2 seconds of the previous MCP result before its own composer prompt, preserving the next prompt onset.",
+    "Browser playback and seeking are left for root, which owns the shared UI."
+  ]
+}

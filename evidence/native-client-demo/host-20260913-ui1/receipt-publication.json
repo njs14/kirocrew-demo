@@ -1,0 +1,227 @@
+{
+  "acceptance": "not_evaluated",
+  "captured_events": 3,
+  "collection_complete": true,
+  "collector_sha256": "ae535152cad2325aea28622288e1270b8f8432306ebee2012d5b20ec3aa9a3e0",
+  "conversation_summary": {
+    "slot_after": {
+      "captured_message_count": 2,
+      "has_more": false,
+      "message_content_exported": false,
+      "running": false,
+      "stopping": false,
+      "total": 3
+    },
+    "slot_before": {
+      "captured_message_count": 0,
+      "has_more": false,
+      "message_content_exported": false,
+      "running": false,
+      "stopping": false,
+      "total": 0
+    }
+  },
+  "exporter_sha256": "f0e917f7582d06eb743b4859e3fc846643c4a5260e67e7bc043b7bb1eaa1ca12",
+  "finish_requested_at": "2026-09-13T21:40:56.639327+00:00",
+  "finished": "2026-09-13T21:41:02.984895+00:00",
+  "helper_sha256": "429357edf4cc2a3b1ab719f733b0dae667220a6ef288c2a82ad3548ae22beac8",
+  "kind": "native_client_publication_export",
+  "mcp_audit": {
+    "collection_succeeded": true,
+    "end_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=9dfa;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=66ca92be7;t=65b64236927b1;x=f168a3ff8cc189d4",
+    "events": [],
+    "ignored_non_audit_rows": 0,
+    "publication_scope": {
+      "omitted_other_trace_count": 0,
+      "original_event_count": 0,
+      "run_event_count": 0
+    },
+    "start_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=9dfa;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=66ca92be7;t=65b64236927b1;x=f168a3ff8cc189d4"
+  },
+  "mcp_service_after": {
+    "ActiveState": "active",
+    "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+    "MainPID": "2833",
+    "NRestarts": "0",
+    "SubState": "running"
+  },
+  "mcp_service_before": {
+    "ActiveState": "active",
+    "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+    "MainPID": "2833",
+    "NRestarts": "0",
+    "SubState": "running"
+  },
+  "native_events": {
+    "bytes": 1045,
+    "events": 3,
+    "path": "events.jsonl",
+    "relationship": "scoped companion for this capture",
+    "scope": "exact source slot",
+    "sha256": "68ec25c32af752887fdaa8102eb3919c7bdd36487269ffc0812dcadec1375359"
+  },
+  "new_session_sel": [],
+  "permission_triggered_process_snapshots": [],
+  "private_sel_counts": {
+    "new_sel_interval": {
+      "other_callers": 322,
+      "target_session": 0,
+      "total": 322
+    },
+    "sel_after": {
+      "other_callers": 1000,
+      "target_session": 0,
+      "total": 1000
+    },
+    "sel_before": {
+      "other_callers": 1000,
+      "target_session": 0,
+      "total": 1000
+    }
+  },
+  "private_source": {
+    "bytes": 1573799,
+    "path": "receipt.json",
+    "retention": "privately_retained_ignored",
+    "sha256": "3dc90df39baf82bb026968b8ce34696eea32082be6bdd212fae4348e13b3a196"
+  },
+  "processes_before": [
+    {
+      "comm": "python",
+      "cwd": "/opt/kirocrew-demo/mcp-enforcement",
+      "exe": "/usr/bin/python3.12",
+      "pid": 2833,
+      "ppid": 1,
+      "uid": 997
+    },
+    {
+      "comm": "systemd",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd",
+      "pid": 3557,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "(sd-pam)",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd-executor",
+      "pid": 3558,
+      "ppid": 3557,
+      "uid": 999
+    },
+    {
+      "comm": "sshd",
+      "cwd": "/",
+      "exe": "/usr/sbin/sshd",
+      "pid": 3613,
+      "ppid": 3552,
+      "uid": 999
+    },
+    {
+      "comm": "kirocrew",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 4991,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8461,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8462,
+      "ppid": 8461,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 72123,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 72124,
+      "ppid": 72123,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 72131,
+      "ppid": 72124,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 75248,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 75249,
+      "ppid": 75248,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 75256,
+      "ppid": 75249,
+      "uid": 999
+    }
+  ],
+  "publication_notes": [
+    "The hash-bound original snapshot is privately retained and excluded from Git; its bytes were not changed.",
+    "Broad SEL pages, their error details and complete conversation snapshots are omitted by an explicit field allowlist.",
+    "SEL summary counts describe the private source, not additional exported event evidence.",
+    "Use the scoped native events.jsonl and separately recovered SEL interval for offline outcome analysis.",
+    "This export is a publication boundary, not a new collection, integrity verification or enforcement acceptance verdict."
+  ],
+  "run_id": "host-20260913-ui1",
+  "schema": 1,
+  "sel_checkpoint": {
+    "anchor_event_id": "4dc72f8297af4e6f",
+    "anchor_sha256": "0b99c227f297c3dbd6af36e045cc17b1c3c975c2352d37e61eb25766851bd69d",
+    "baseline_count": 1000
+  },
+  "sel_integrity_after": {
+    "integrity": "ok",
+    "tampered": 0,
+    "total": 89028,
+    "valid": 89028
+  },
+  "sel_window": {
+    "anchor_event_id": "4dc72f8297af4e6f",
+    "anchor_index": 322,
+    "complete": true,
+    "event_count": 322,
+    "method": "exact_newest_baseline_anchor_retained"
+  },
+  "service_stable": true,
+  "slot": "chat-3-1789335506",
+  "source_kind": "passive_native_client_evidence",
+  "started": "2026-09-13T21:39:31.081778+00:00",
+  "stream_finished": "2026-09-13T21:41:02.983849+00:00",
+  "stream_quiet_interval_seconds": 1.0
+}

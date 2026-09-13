@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-09-13T21:09:16.412279+00:00",
+  "authenticated": true,
+  "method": "SocialGitHub",
+  "source": "EC2 standalone Kiro CLI whoami",
+  "identity_details_retained": false,
+  "observer_source": {
+    "dashboard/ws.py": {
+      "sha256": "bdd3f5dc69a7d76d417dc9223b6e6642468e966ec60ce0ebe756846ee476833f",
+      "uid": 0,
+      "matches_local_snapshot": true
+    },
+    "websocket_hub.py": {
+      "missing": true,
+      "matches_local_snapshot": false
+    }
+  }
+}

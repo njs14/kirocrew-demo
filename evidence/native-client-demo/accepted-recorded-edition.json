@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "kind": "recorded_native_edition_integration",
+  "recorded_at": "2026-09-13T22:32:28.865300+00:00",
+  "status": "five_recorded_clips_reviewed_six_host_takes_pending",
+  "bounded_recorded_edition": "accepted_for_private_publication",
+  "entire_requested_host_demonstration_matrix_complete": false,
+  "artifacts": {
+    "output/kirocrew-native-controls.html": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e",
+    "output/kirocrew-native-controls-notes.md": "f0519134f8d9083a830d67a4d395243638e51edf5dfafdb40d315ecfa58f2d1e",
+    "output/kirocrew-native-controls-build.json": "e78306e950064d10e3fd3ec41b3bec81e1f2c3f0a0a11be9626a3dab6b4246e5",
+    "output/kirocrew-native-controls-manifest.json": "b2cd4b1ff302ac88f6b9291e406d104e569933b34511b9edc395dafa020b11a5",
+    "output/kirocrew-admin-tour.html": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97",
+    "output/kirocrew-admin-tour.md": "57aed2784de1c3ea19a588dd1a525910a5ccd6f283055a0dbf4bb3dd5deca19f",
+    "docs/NATIVE-CLIENT-DEMO.md": "82a605627290787303b6e7366643529f73d449b70c6e9d09d1e521b33d687391",
+    "docs/HOST-CONTROL-SCENARIOS.md": "9b5094ccd215128f9a69dc2cbcfdcdb96c34faa0433361cc255a4bbfc8669935",
+    "DEMO-RECORDING-PLAN.md": "1cf31c1f2194bcc5355d0e5487f7ca64beb2d87b721f0423045062c2a0d4ae9d",
+    "README.md": "5b4e8f42afbdf256a6008e188ab0fec60ad0c46e8276861116848d15bc246ce7",
+    "evidence/native-client-demo/current-status.json": "6f25eb0096b77694d54b4186bb2662edd81b2f2ea6aa8fe4f4193148b260a4f3",
+    "evidence/native-client-demo/final-review.json": "e460a6c6b357192c88a2e1d83f84fe140422dbc13fd039cb2ef5ba0e33556ded",
+    "evidence/native-client-demo/presentation-browser-final/review.json": "cbb3a2a6345bda4b1384032cbf9714502bd088d0f4876fefabaaf88062592b87",
+    "evidence/admin-console/native-20260913/browser-review.json": "e0125ad771dbda8952b77b6b415550a072bb4a47e863f945277e882fbcb3a518",
+    "evidence/admin-console/native-20260913/tour-build.json": "a9f49d568662b158ad87215014cf32010815f01b022ab874725ca5f9cad99627",
+    "evidence/native-client-demo/publication-review.json": "f5a5f6767389dc094ea92cadd760a84a74f2ae44f86373b083bf7e799fbf28e0",
+    "evidence/native-client-demo/fresh-checkout.json": "0e84945347fdde807452f690fea589c7b2485bb2f5400214ddfb72dcb35d3c57",
+    "evidence/native-client-demo/poster-review-v2.json": "0489c07e6174363188760877260778e6b47cf72c462d3589224574872885649a",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9",
+    "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642",
+    "evidence/native-client-demo/council-native-v1/council-decision-summary.json": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1",
+    "evidence/native-client-demo/council-native-v1/receipt-integrity-review.json": "bc8d056e2a31bbae81160e6e83e4b03c4e23a684ba7b57b5b17148d6ad934afc"
+  },
+  "observed_native_outcomes": [
+    "Allowed fixed S3 read after once-only approval",
+    "Automatic Crew tool denial before MCP arrival",
+    "MCP grant denial before AWS dispatch",
+    "IAM S3 AccessDenied, HTTP 403, with joined AWS request ID",
+    "Private-memory conversation assignment refusal before tools"
+  ],
+  "validation": {
+    "focused_local_tests": {
+      "native_client_evidence": 30,
+      "host_controls": 16,
+      "native_deck_council": 20,
+      "native_publication": 16,
+      "total": 82,
+      "status": "passed"
+    },
+    "browser": "All 10 final slides and five videos passed layout, playback and seeking checks. All 52 explicit asset routes passed; all six private-source routes returned 404.",
+    "fresh_git_export": "All 54 server routes and five MP4 range responses passed from a clean Git export without local config, private originals or raw MOVs.",
+    "independent_final_review": "No material findings on bounded edition.",
+    "council": "Grok 4.6 and Claude Opus 5 response IDs were verified, along with xhigh launch settings and all ten exact PNG payloads. Both requested changes to the original candidate. D1-D6 were incorporated, followed by No AI Slop and fresh local/browser review. No exact-model review of the final derivative is claimed."
+  },
+  "evidence_limits": [
+    "Original collector collection_complete remains false; separate bounded SEL recovery supports the four MCP outcomes.",
+    "Generic reconciler full_native_acceptance remains false; its scope does not integrate all footage/attribution.",
+    "No restricted-human-role RBAC or immutable enterprise policy was demonstrated.",
+    "Process sampling did not establish overlap with pending approval.",
+    "Private-memory refusal is conversation binding; no host file tool executed in that turn.",
+    "Configured coverage, runtime telemetry, collection health and security decision evidence have distinct scopes."
+  ],
+  "pending_host_takes": [
+    "Allowed workspace canary read",
+    "Anonymous server authentication",
+    "Sensitive-path canary read",
+    "Protected agent-path write",
+    "Custom server command rule",
+    "IPv4 metadata TCP isolation with zero application bytes"
+  ],
+  "resume": {
+    "reason": "Native UI operation reached manual macOS unlock requirement before corrected host session received any prompt.",
+    "slot": "chat-4-1789335946",
+    "folder": "Host control demos",
+    "agent": "host-controls-demo",
+    "next": "After manual unlock, recheck assigned blank session and start a fresh passive observer and raw recording.",
+    "temporary_rule": "KIROCREW_DEMO_COMMAND_CONTROL_20260913 remains for the pending take; remove only that rule afterward and retain cleanup evidence."
+  },
+  "preserved_constraints": [
+    "macOS endpoint scope",
+    "One EC2 endpoint-control box",
+    "Original Kiro CLI backend",
+    "Existing VPC/subnet CloudFormation support",
+    "No additional network infrastructure for this recording extension",
+    "Private GitHub repository; GitHub Actions out of scope",
+    "Accepted architecture/PPTX/handoff/history and raw source footage preserved"
+  ]
+}

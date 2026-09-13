@@ -1,0 +1,59 @@
+{
+  "boundaries": [
+    "No live SSH, AWS or UI actions were performed by the implementation/review agents.",
+    "The root operator performed the recorded preflight and apply.",
+    "Setup completion does not establish native enforcement.",
+    "First host-controls native turn was reported by root to fail private-memory assignment before a tool ran; onboarding diagnosis remains separate.",
+    "No policies, command rules, firewall rules, services or identities were created or changed by this installer.",
+    "The command rule was configured separately by the root operator through the supported admin UI."
+  ],
+  "deployment_observation": {
+    "all_eight_remote_source_hashes_match_local_reference": true,
+    "original_live_receipts_modified": false,
+    "setup_applied": true
+  },
+  "deployment_receipts": {
+    "preflight.json": "6183de923e72e71df80b7abf14f44d86195d10a24fb70a33c8fada00eee8c098",
+    "setup.json": "b966a8f47f7725cadcc7a1b32894543a24e11ba618f35d2104934b6e8cfa2f2d"
+  },
+  "independent_review": {
+    "agent": "host_controls_review",
+    "material_findings": [],
+    "role": "sol_advisor_sol_reviewer",
+    "scope": [
+      "Additive descriptor-relative exclusive setup",
+      "Exact preflight source and target binding",
+      "No overwrite or symlink traversal",
+      "Existing Gateway config and enforcement-demo preservation",
+      "Fixed no-argument UID-bound helpers",
+      "Anonymous loopback HTTP with no authentication or body read",
+      "Fixed IPv4 IMDS TCP connect with no application writes",
+      "Materialized agent file resolution support"
+    ],
+    "verdict": "SHIP"
+  },
+  "kind": "host_controls_setup_review",
+  "reviewed_at": "2026-09-13T21:42:47.764488+00:00",
+  "schema_version": 1,
+  "source_sha256": {
+    "docs/HOST-CONTROL-SCENARIOS.md": "c4559161a7465d3b0da097bbdd64e4a2e2af82887d3601c5e8b6ea50f97da09c",
+    "infrastructure/host-controls/anonymous-http.py": "a8330a8da6cda991418d15451c1058541970a9f72081b3cec2fbed0dc09b9435",
+    "infrastructure/host-controls/imds-tcp.py": "e016d75b86f5a67d4e98efa5ec6f4cfa1a2265179255b457867e4a1b0d520bf8",
+    "infrastructure/host-controls/setup.py": "e140cc04785f9952f0ce2c5d960ec7b6d02f11b0ce77ccf58f39d17d71abb094",
+    "scripts/configure-host-controls.py": "890e0a0cc0132a4b2c570622533718c691f75e68b28934fa9bbc0f90a96c4157",
+    "scripts/tests/test_host_controls.py": "61c03755074d5688aa4d1ee59e1beb0d709dbfecf91b9f818c686554025cdd7b"
+  },
+  "validation": {
+    "additional": [
+      "Python compilation for installer and CLI",
+      "CLI help/interface review",
+      "Documentation links and No AI Slop edit"
+    ],
+    "command": "python3 -m unittest discover -s scripts/tests -p test_host_controls.py -v",
+    "environment": "local macOS offline fixtures; mocked SSH/root ownership/network operations",
+    "failed": 0,
+    "passed": 16,
+    "tests": 16
+  },
+  "verdict": "ship_setup_only"
+}

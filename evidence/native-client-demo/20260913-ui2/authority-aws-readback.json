@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "kind": "post_native_capture_read_only_aws_authority",
+  "checked_at": "2026-09-13T21:33:56.825652+00:00",
+  "account_matches_config": true,
+  "region": "us-east-1",
+  "operations": [
+    "sts:GetCallerIdentity",
+    "iam:GetRolePolicy",
+    "s3:HeadObject allowed/sentinel.txt",
+    "s3:HeadObject denied/sentinel.txt"
+  ],
+  "policy": {
+    "RoleName": "kirocrew-demo-20260913-DemoRole-dcdmeTwVkSzS",
+    "PolicyName": "DemoBucketReadWithExplicitDenial",
+    "PolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Action": "s3:GetObject",
+          "Resource": [
+            "arn:aws:s3:::kirocrew-demo-20260913-demobucket-pdjzgyu25xhb/allowed/*",
+            "arn:aws:s3:::kirocrew-demo-20260913-demobucket-pdjzgyu25xhb/denied/*"
+          ],
+          "Effect": "Allow",
+          "Sid": "ReadOnlyDemoObjectPrefixes"
+        },
+        {
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::kirocrew-demo-20260913-demobucket-pdjzgyu25xhb/denied/*",
+          "Effect": "Deny",
+          "Sid": "DenyProtectedDemoPrefix"
+        }
+      ]
+    }
+  },
+  "policy_matches_original": true,
+  "bucket": "kirocrew-demo-20260913-demobucket-pdjzgyu25xhb",
+  "fixture_heads": [
+    {
+      "key": "allowed/sentinel.txt",
+      "ContentLength": 55,
+      "LastModified": "2026-09-13T04:12:21+00:00",
+      "ETag": "\"5aa8cf57b10c55598d8011f0c7a5280b\"",
+      "ServerSideEncryption": "AES256",
+      "expected_bytes": 55,
+      "expected_content_sha256": "34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160",
+      "length_matches_original": true
+    },
+    {
+      "key": "denied/sentinel.txt",
+      "ContentLength": 71,
+      "LastModified": "2026-09-13T04:12:21+00:00",
+      "ETag": "\"5aa051b32d39736495f4be8feda2d4b6\"",
+      "ServerSideEncryption": "AES256",
+      "expected_bytes": 71,
+      "expected_content_sha256": "20f839307fbef4ed8df39a5be476f6289c3794bc03a81d505aaf6f98cf1b0488",
+      "length_matches_original": true
+    }
+  ],
+  "limits": [
+    "Checked after native capture; does not retroactively prove no intervening AWS state changes.",
+    "HeadObject confirms existence, metadata, and byte length; it does not independently recompute content SHA256.",
+    "No S3 object bodies, AWS credentials, or caller user identity retained.",
+    "Instance profile membership was not fetched in this bounded readback."
+  ],
+  "source_receipts": {
+    "evidence/aws/iam-demo-policy.json": "8faf681201a0af63edeae2052e89ac85c312c074c4f4eadf9b635625c73c50db",
+    "evidence/aws/fixture-hashes.json": "c733be36b9741898e9d8de25596028f8d1fa9628fb2fd71bd2b99bc01a34cc14",
+    "evidence/aws/seed-fixtures-result.json": "e3c6bffd0904fa2ee568b6dfef4b780833df49539223d6ba61ca36b2b5787cde"
+  }
+}

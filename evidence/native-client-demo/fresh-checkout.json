@@ -1,0 +1,15 @@
+{
+  "kind": "fresh_git_export_playback_validation",
+  "checked_at": "2026-09-13T22:31:31.842165+00:00",
+  "passed": true,
+  "git_tree": "cc643cf0960b44694193e4cdd62f581120024555",
+  "scope": "Clean export of staged Git tree, before adding this validation receipt and final integration metadata. Delivered artifact/code/media bytes are unchanged.",
+  "routes_checked": 54,
+  "mp4_range_checks": 5,
+  "delivered_html_sha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e",
+  "private_originals_absent": true,
+  "local_config_absent": true,
+  "raw_video_absent": true,
+  "method": "Imported included preview server from canonical temporary clean git archive path; no AWS, SSH, native app, credentials, Node or FFmpeg used.",
+  "harness_note": "First setup used macOS /var alias while server root resolves to /private/var; it rejected the non-canonical build argument before serving. Repeated using the canonical temporary path."
+}

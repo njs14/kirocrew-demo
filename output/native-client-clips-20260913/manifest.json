@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 1,
+  "title": "Native Mac client: four server control demonstrations",
+  "generatedAt": "2026-09-13T21:33:02.712933+00:00",
+  "scenes": [
+    {
+      "id": "native-allowed-read",
+      "title": "A permitted S3 read",
+      "description": "Send one fixed read_allowed request and allow it once. The client displays the AWS response with a request ID, byte count and digest.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "start": 44.0,
+      "end": 70.0,
+      "duration": 25.998058,
+      "cues": [
+        {
+          "time": 3.0,
+          "label": "Submit the allowed read",
+          "detail": "The Mac client sends read_allowed with its unique trace ID."
+        },
+        {
+          "time": 9.0,
+          "label": "Inspect the permission request",
+          "detail": "The UI asks to run the exact MCP tool once."
+        },
+        {
+          "time": 18.0,
+          "label": "Read the result",
+          "detail": "The client displays ok:true, layer:aws and the S3 result identifiers."
+        }
+      ],
+      "media": [
+        {
+          "url": "native-allowed-read/native-allowed-read.mp4",
+          "type": "video/mp4",
+          "bytes": 1136859,
+          "sha256": "3bcd32eab9989b73a1b85845bd1294d02f4a3de6e622808f839b676fa8bc731a",
+          "duration": 25.998058,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-allowed-read/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 200388,
+        "sha256": "132b18bce72c27c560dfdf61d973a0c922de9a8c95994f174e0dbcac1821e98d",
+        "time": 22
+      },
+      "contactSheet": {
+        "url": "native-allowed-read/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 112453,
+        "sha256": "bcb7f08a4a92be535490b37fadd3d03aab78090502f44873212a00e74789bf7a"
+      },
+      "frames": [
+        {
+          "url": "native-allowed-read/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 18027,
+          "sha256": "23ae32a4dc2a3b465f0133e7d3ae94e9ad38fa24a043f3990ccc0819bf53d2bb",
+          "time": 1.03992232
+        },
+        {
+          "url": "native-allowed-read/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 14481,
+          "sha256": "86c315f801639f5b41f1848a5a89fb5e7f5824d0abe7638edafb45a22f0dfcbf",
+          "time": 5.199611600000001
+        },
+        {
+          "url": "native-allowed-read/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 22263,
+          "sha256": "a930470713c19aaa6ad622ecd8aa49d41e968dd486c935bfe04959f18f2b9d66",
+          "time": 9.87926204
+        },
+        {
+          "url": "native-allowed-read/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 18096,
+          "sha256": "231ad335cb340100b4edb99ada16404a15159d96b17ac394e93fb42fa92d1e9d",
+          "time": 14.558912480000002
+        },
+        {
+          "url": "native-allowed-read/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 22383,
+          "sha256": "90aac85c61db3ea1920a954ab5657972aa83329047bb62d59cf53b9a03c57af0",
+          "time": 19.23856292
+        },
+        {
+          "url": "native-allowed-read/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 21887,
+          "sha256": "2250c78305e267a74864c17afc75f3724ec4693c2227015de8d31d6c55fda9a3",
+          "time": 23.918213360000003
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 44.0,
+          "end": 70.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "native-crew-denial",
+      "title": "Crew blocks a tool call",
+      "description": "Send one crew_denied request. The client displays a tool blocked row and reports the Crew policy refusal without an approval dialog.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "start": 96.0,
+      "end": 124.0,
+      "duration": 28.014062,
+      "cues": [
+        {
+          "time": 6.0,
+          "label": "Submit the denied tool",
+          "detail": "The Mac client requests crew_denied with its unique trace ID."
+        },
+        {
+          "time": 12.0,
+          "label": "See the policy block",
+          "detail": "The native client shows Tool call blocked for crew_denied."
+        },
+        {
+          "time": 20.0,
+          "label": "Read the refusal",
+          "detail": "The final response reports the Crew policy denial and stops."
+        }
+      ],
+      "media": [
+        {
+          "url": "native-crew-denial/native-crew-denial.mp4",
+          "type": "video/mp4",
+          "bytes": 1983357,
+          "sha256": "92f089ffc6d408310cda808387c748d187e75daf9d6314d0322b32ba43fe917e",
+          "duration": 28.014062,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-crew-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 227591,
+        "sha256": "d74da469fa069a9672be8d716d36259258b521ba5c7360c165407ccae99fb65a",
+        "time": 17
+      },
+      "contactSheet": {
+        "url": "native-crew-denial/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 148417,
+        "sha256": "c55171f636dd94a2890d2fd020c19fa9ab12d05085b30207f602549e316dc18c"
+      },
+      "frames": [
+        {
+          "url": "native-crew-denial/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 24841,
+          "sha256": "58f19a8b3395fb0f7249a921864bbde87ee3320ed6fbacf2aa39eb941c46f4d5",
+          "time": 1.12056248
+        },
+        {
+          "url": "native-crew-denial/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 24687,
+          "sha256": "6dbd70652b19f562e210080eda423e34c2d47c10caff8d721d784aecf9990e21",
+          "time": 5.6028124
+        },
+        {
+          "url": "native-crew-denial/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 24951,
+          "sha256": "51ede6c46b55b888615d7afecad2cae7a630a0674d346ba78be9395955044214",
+          "time": 10.64534356
+        },
+        {
+          "url": "native-crew-denial/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 26083,
+          "sha256": "615759de81005fabb5e752d4a080ce616880782134b3a25906339473082a91f0",
+          "time": 15.687874720000002
+        },
+        {
+          "url": "native-crew-denial/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 26790,
+          "sha256": "a5b206279759e72c951dac78f63a36e5fd0ed179f529be9077955d92e1853212",
+          "time": 20.73040588
+        },
+        {
+          "url": "native-crew-denial/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 26777,
+          "sha256": "d5ece741bce8728eac2f4b0fc01615ef215251d034f1871b5a76edc6a9cb71cd",
+          "time": 25.77293704
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 96.0,
+          "end": 124.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "native-mcp-denial",
+      "title": "The MCP service refuses the grant",
+      "description": "Send one mcp_denied request and allow it once. The client displays tool_grant_denied from the MCP service.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "start": 160.0,
+      "end": 189.0,
+      "duration": 29.001064,
+      "cues": [
+        {
+          "time": 6.0,
+          "label": "Submit the MCP request",
+          "detail": "The Mac client requests mcp_denied with its unique trace ID."
+        },
+        {
+          "time": 11.0,
+          "label": "Inspect the permission request",
+          "detail": "The client presents Allow once for the exact tool call."
+        },
+        {
+          "time": 23.0,
+          "label": "Read the MCP refusal",
+          "detail": "The client displays ok:false, layer:mcp and tool_grant_denied."
+        }
+      ],
+      "media": [
+        {
+          "url": "native-mcp-denial/native-mcp-denial.mp4",
+          "type": "video/mp4",
+          "bytes": 2047715,
+          "sha256": "9895ac8db2f08902a6086be866676e3e1273373e876d402f21cd788b101fb7a2",
+          "duration": 29.001064,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.515572173649396,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-mcp-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 234538,
+        "sha256": "90dac171aeab9b9abf0031ba84b58b4ac37fc24d6114195490a838c6e430511d",
+        "time": 23
+      },
+      "contactSheet": {
+        "url": "native-mcp-denial/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 155597,
+        "sha256": "7049a091cba27cf307d89249e5fbb3008fa25a7a8656a43827b6c4a07374bf91"
+      },
+      "frames": [
+        {
+          "url": "native-mcp-denial/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 27174,
+          "sha256": "dc44d1a2d671ee5f69ee6edef59d83bdc69800da7c6e03d3958a164e84938113",
+          "time": 1.16004256
+        },
+        {
+          "url": "native-mcp-denial/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 29922,
+          "sha256": "f6f7ba936edbcacedd5fb99a5f4ae2e368ffb35433b420e06c4fb5b3bfa7afc6",
+          "time": 5.800212800000001
+        },
+        {
+          "url": "native-mcp-denial/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 25901,
+          "sha256": "3b8d72fb93469a77fcfb3140f4b25d3f643260a69f67fed66a96d60a470e0dc2",
+          "time": 11.02040432
+        },
+        {
+          "url": "native-mcp-denial/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 25972,
+          "sha256": "3014924d5a887045d034a0ee79bac683b44415e69b81b837bb3a2c66f671b337",
+          "time": 16.24059584
+        },
+        {
+          "url": "native-mcp-denial/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 26257,
+          "sha256": "1acb1c2fe7eeec61b8fbae16d4e08c7632f649f642bdd68998e6ea91460b25d7",
+          "time": 21.460787359999998
+        },
+        {
+          "url": "native-mcp-denial/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 25848,
+          "sha256": "7f28d94b7e9cce31e556af5e435d7907218ddce1854fcfa1be402af788d6b361",
+          "time": 26.68097888
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 160.0,
+          "end": 189.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "native-iam-denial",
+      "title": "AWS refuses the S3 read",
+      "description": "Send one iam_denied request and allow it once. The client displays AccessDenied, HTTP403 and an AWS request ID.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "start": 188.0,
+      "end": 222.0,
+      "duration": 34.020076,
+      "cues": [
+        {
+          "time": 2.0,
+          "label": "Submit the AWS request",
+          "detail": "The Mac client requests iam_denied with its unique trace ID."
+        },
+        {
+          "time": 12.0,
+          "label": "Inspect the permission request",
+          "detail": "The client presents Allow once for the exact tool call."
+        },
+        {
+          "time": 28.0,
+          "label": "Read the AWS refusal",
+          "detail": "The client displays AccessDenied, HTTP403, layer:aws and an AWS request ID."
+        }
+      ],
+      "media": [
+        {
+          "url": "native-iam-denial/native-iam-denial.mp4",
+          "type": "video/mp4",
+          "bytes": 2207810,
+          "sha256": "56c8166490123442d83c89f5694b644898355f53c97649a4275a10d2d676067e",
+          "duration": 34.020076,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-iam-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 205600,
+        "sha256": "a7c77c80e53dd36d7e643cad757755875abe56e6125ff4f2c0e41eec17c5ff9f",
+        "time": 28
+      },
+      "contactSheet": {
+        "url": "native-iam-denial/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 147279,
+        "sha256": "5735ac378d6149c37ea49a97afc6050dc201dc334476085bdcdaa621ce7ff60b"
+      },
+      "frames": [
+        {
+          "url": "native-iam-denial/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 28803,
+          "sha256": "d1056cb2840bd58eea6150715f0b47012105a12469cca5933841ff285d39d9f4",
+          "time": 1.3608030400000002
+        },
+        {
+          "url": "native-iam-denial/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 24567,
+          "sha256": "9655cadf4abcd223ca0f42a6c27a86bcb8f35efc7d12686180fdbd8cc1be7118",
+          "time": 6.804015200000001
+        },
+        {
+          "url": "native-iam-denial/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 26444,
+          "sha256": "e5f100a60fb51be31cd407afcded1875e8887139457f356ef467a78ee47aebc7",
+          "time": 12.927628880000002
+        },
+        {
+          "url": "native-iam-denial/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 26111,
+          "sha256": "dfdadf9f825cd5b3177dfdefb93aa7adea8be84eecb6bd4efe5938221d019b77",
+          "time": 19.051242560000002
+        },
+        {
+          "url": "native-iam-denial/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 23477,
+          "sha256": "e1c80d09c7a1ede8a3e6e868dc57d495ad18368ab42678c730664daf19cae815",
+          "time": 25.17485624
+        },
+        {
+          "url": "native-iam-denial/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 22940,
+          "sha256": "3b6d371f0c994f6bb1ad0092a5bb2bfe4c33096016205f7ee385266e23c918db",
+          "time": 31.298469920000006
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 188.0,
+          "end": 222.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    }
+  ],
+  "evidence": []
+}
