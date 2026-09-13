@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "observedWindowUtc": [
+    "2026-09-13T18:05:00Z",
+    "2026-09-13T18:07:59Z"
+  ],
+  "method": "Read-only runtime preflight by delegated explorer; AWS CLI, pinned SSH, process/listener and configuration checks. No login or service changes.",
+  "client": {
+    "nightly": "0.7.0-nightly.20260913t061222",
+    "runLocalGateway": false,
+    "local5476Listener": false,
+    "sshTunnel": "127.0.0.1:5599",
+    "sampleAt": "2026-09-13T18:05:55Z",
+    "allChecks": true
+  },
+  "server": {
+    "instanceId": "i-0fde6de3f0ea5a9d0",
+    "instanceType": "t4g.xlarge",
+    "architecture": "arm64",
+    "region": "us-east-1",
+    "instanceState": "running",
+    "gatewayPid": 4991,
+    "gatewayStartedAt": "2026-09-13T14:26:10Z",
+    "gatewayActive": true,
+    "mcpActive": true,
+    "collectorActive": true,
+    "sampleAt": "2026-09-13T18:06:46Z",
+    "allChecks": true
+  },
+  "network": {
+    "ingress": "TCP 22 from current client IPv4 /32 only",
+    "gatewayMcpAndAppLoopbackOnly": true
+  },
+  "nativeCli": {
+    "authenticated": false,
+    "whoamiExitCode": 1,
+    "loginStarted": false,
+    "nativeBackendVerified": false
+  },
+  "nativeTelemetry": {
+    "enabled": true,
+    "intervalSeconds": 10,
+    "retentionDays": 7,
+    "maxMiB": 64,
+    "anonymousHeartbeat": false,
+    "otlpConfigured": false
+  },
+  "baselineFiles": {
+    "output/kirocrew-system-design.html": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+    "output/kirocrew-system-design-notes.md": "4e239721237aa0407979ae95eae7334588c992a1c0d858da316fe3b129ad2163",
+    "output/kirocrew-arm-observability-demo.pptx": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13",
+    "ARM-CONTINUATION-RECEIPT.json": "897eca8efc8156b8551fa584122d366039f652c2c0ba52df34e08863e3cce930",
+    "HANDOFF.md": "5cb2ef0e7933e2fad20cbc36c0120bd3b83e3475d2d8b0cb2a3cc4ab6a805f01"
+  }
+}

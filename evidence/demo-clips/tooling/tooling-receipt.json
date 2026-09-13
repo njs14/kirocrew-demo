@@ -1,0 +1,44 @@
+{
+  "createdAt": "2026-09-13T18:18:38.833806+00:00",
+  "scope": "Synthetic tooling validation only; no application recordings performed by this tooling lane",
+  "status": "passed",
+  "files": {
+    "/Users/noahsutter/git-projects/kirocrew-demo/scripts/demo-clips.py": "283a12b463df873ece8b75108c9a8e45aac4d8af3f7e0452fda2b5b8502821a0",
+    "/Users/noahsutter/git-projects/kirocrew-demo/scripts/tests/test_demo_clips.py": "201f525a088fd17d560074db8b904483f06424d4d4d39d3e1b17eba27cf11d83",
+    "/Users/noahsutter/.codex/skills/demo-clips/SKILL.md": "ff9d8540f750243e64c4090d38ea451890e7f4cee3d409ff75c49f3a6e9a0c43",
+    "/Users/noahsutter/.codex/skills/demo-clips/references/manifest.md": "ed32ff99b59b059d3add21faf251c750238b17a6d23e03ae3bb6045b646d50aa",
+    "/Users/noahsutter/.codex/skills/demo-clips/agents/openai.yaml": "a85d9720cacf1458d6a0ea07ff7ff9e16f6b775c709588eed45f6a07db136419"
+  },
+  "unitTests": {
+    "command": "python3 -m unittest discover -s scripts/tests -p test_demo_clips.py -v",
+    "count": 10,
+    "passed": 10,
+    "log": "test-results.txt",
+    "fixtures": "FFmpeg testsrc2 pattern with sine audio; isolated temporary files removed"
+  },
+  "skillValidation": {
+    "status": "passed",
+    "skills": [
+      "demo-clips",
+      "ffmpeg"
+    ],
+    "command": "uv run --with pyyaml python /Users/noahsutter/.codex/skills/.system/skill-creator/scripts/quick_validate.py SKILL_PATH",
+    "note": "System and bundled Python lacked PyYAML; validator ran using ephemeral uv dependency without changing either skill"
+  },
+  "independentReview": {
+    "agent": "/root/demo_clip_tooling/tooling_forward_review",
+    "candidateSha256": "283a12b463df873ece8b75108c9a8e45aac4d8af3f7e0452fda2b5b8502821a0",
+    "remediated": [
+      "Output manifest now excludes source.raw and unknown source fields",
+      "Explicit container demuxers reject renamed ffconcat playlists; MOV external tracks disabled",
+      "Processor hash captured before encoding and checked before publishing receipt"
+    ],
+    "recheck": "Disguised playlist rejected without output. Script mutation rejected without output or residual staging. Valid synthetic control builds with allowlisted public source fields. No remaining findings from bounded recheck."
+  },
+  "vendorInstallation": "vendor-review/installation-receipt.json",
+  "limitations": [
+    "Actual application capture, factual claims, and browser player behavior are owned by other lanes.",
+    "Processed receipt.json contains local command paths and must be reviewed before serving; public manifest omits raw paths.",
+    "No automatic masking, retiming, zoom selection, padding, generated application frames, or narration."
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "KiroCrew demo in us-east-1: one t3a.small, SSH restricted to one IPv4 /32, IMDSv2, isolated Crew/MCP users, and S3 allow/deny evidence. Public IPv4 avoids NAT/LB cost. S3 is retained on deletion.",
+  "Metadata": {
+    "DeploymentNotes": [
+      "Use only a verified Canonical Ubuntu 24.04 amd64 AMI in us-east-1.",
+      "The supplied subnet must belong to VpcId and have a route to an Internet Gateway; no VPC, NAT gateway, or load balancer is created.",
+      "Egress permits HTTPS and HTTP. HTTP is needed by Ubuntu apt mirrors during bootstrap and remains permitted until an explicit later hardening change.",
+      "Use the VPC AmazonProvidedDNS resolver. Security groups do not filter AmazonProvidedDNS; no arbitrary external DNS egress is added.",
+      "Gateway and MCP ports bind to loopback and are reached through SSH or SSM forwarding; only TCP 22 is exposed, to AllowedCidr.",
+      "Bootstrap success must be verified on the host; CloudFormation does not wait for a cfn-signal.",
+      "The bootstrap creates no model/backend session and installs no Crew artifact. Gateway service must run as crew with NoNewPrivileges=true and Requires/After=kirocrew-imds-guard.service.",
+      "The MCP UID and host administrators can use the instance role; the unprivileged crew UID is blocked from both IMDS addresses.",
+      "Root EBS is deleted with the instance. The private S3 bucket and TLS-only bucket policy are retained; inspect and explicitly empty/delete them during final cleanup.",
+      "All taggable resources carry Project=kirocrew-demo. CloudFormation does not support Tags on AWS::IAM::InstanceProfile or AWS::S3::BucketPolicy.",
+      "UserData is a byte-for-byte copy of infrastructure/bootstrap.sh; keep both copies synchronized."
+    ]
+  },
+  "Parameters": {
+    "VpcId": {
+      "Type": "AWS::EC2::VPC::Id",
+      "Description": "Existing us-east-1 VPC using AmazonProvidedDNS."
+    },
+    "SubnetId": {
+      "Type": "AWS::EC2::Subnet::Id",
+      "Description": "Public subnet in VpcId with an Internet Gateway route."
+    },
+    "ImageId": {
+      "Type": "AWS::EC2::Image::Id",
+      "Description": "Verified Canonical Ubuntu Server 24.04 LTS amd64 EBS AMI in us-east-1."
+    },
+    "KeyName": {
+      "Type": "AWS::EC2::KeyPair::KeyName",
+      "Description": "Administrator SSH key pair; never provide a private key here."
+    },
+    "AllowedCidr": {
+      "Type": "String",
+      "Description": "The current client public IPv4 address, exactly /32.",
+      "AllowedPattern": "^(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])(?:\\.(?:25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])){3}/32$",
+      "ConstraintDescription": "Must be one valid IPv4 address followed by /32; broader CIDRs and IPv6 are rejected."
+    }
+  },
+  "Rules": {
+    "RegionMustBeUSEast1": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Equals": [
+              {
+                "Ref": "AWS::Region"
+              },
+              "us-east-1"
+            ]
+          },
+          "AssertDescription": "Deploy this demo only in us-east-1."
+        }
+      ]
+    }
+  },
+  "Resources": {
+    "DemoBucket": {
+      "Type": "AWS::S3::Bucket",
+      "DeletionPolicy": "Retain",
+      "UpdateReplacePolicy": "Retain",
+      "Properties": {
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "IgnorePublicAcls": true,
+          "BlockPublicPolicy": true,
+          "RestrictPublicBuckets": true
+        },
+        "OwnershipControls": {
+          "Rules": [
+            {
+              "ObjectOwnership": "BucketOwnerEnforced"
+            }
+          ]
+        },
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256"
+              }
+            }
+          ]
+        },
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "kirocrew-demo"
+          }
+        ]
+      }
+    },
+    "DemoBucketPolicy": {
+      "Type": "AWS::S3::BucketPolicy",
+      "DeletionPolicy": "Retain",
+      "UpdateReplacePolicy": "Retain",
+      "Properties": {
+        "Bucket": {
+          "Ref": "DemoBucket"
+        },
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Sid": "DenyInsecureTransport",
+              "Effect": "Deny",
+              "Principal": "*",
+              "Action": "s3:*",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "DemoBucket",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Sub": "${DemoBucket.Arn}/*"
+                }
+              ],
+              "Condition": {
+                "Bool": {
+                  "aws:SecureTransport": "false"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "DemoRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ec2.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Sub": "arn:${AWS::Partition}:iam::aws:policy/AmazonSSMManagedInstanceCore"
+          }
+        ],
+        "Policies": [
+          {
+            "PolicyName": "DemoBucketReadWithExplicitDenial",
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Sid": "ReadOnlyDemoObjectPrefixes",
+                  "Effect": "Allow",
+                  "Action": "s3:GetObject",
+                  "Resource": [
+                    {
+                      "Fn::Sub": "${DemoBucket.Arn}/allowed/*"
+                    },
+                    {
+                      "Fn::Sub": "${DemoBucket.Arn}/denied/*"
+                    }
+                  ]
+                },
+                {
+                  "Sid": "DenyProtectedDemoPrefix",
+                  "Effect": "Deny",
+                  "Action": "s3:GetObject",
+                  "Resource": {
+                    "Fn::Sub": "${DemoBucket.Arn}/denied/*"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "kirocrew-demo"
+          }
+        ]
+      }
+    },
+    "DemoInstanceProfile": {
+      "Type": "AWS::IAM::InstanceProfile",
+      "Properties": {
+        "Roles": [
+          {
+            "Ref": "DemoRole"
+          }
+        ]
+      }
+    },
+    "DemoSecurityGroup": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "KiroCrew demo: SSH from one current client IPv4 /32; no inbound gateway or MCP ports.",
+        "VpcId": {
+          "Ref": "VpcId"
+        },
+        "SecurityGroupIngress": [
+          {
+            "Description": "SSH forwarding and administration from the current client IP only",
+            "IpProtocol": "tcp",
+            "FromPort": 22,
+            "ToPort": 22,
+            "CidrIp": {
+              "Ref": "AllowedCidr"
+            }
+          }
+        ],
+        "SecurityGroupEgress": [
+          {
+            "Description": "HTTPS to package repositories and AWS APIs including SSM and S3",
+            "IpProtocol": "tcp",
+            "FromPort": 443,
+            "ToPort": 443,
+            "CidrIp": "0.0.0.0/0"
+          },
+          {
+            "Description": "HTTP for Ubuntu apt bootstrap mirrors; remains enabled until explicitly removed",
+            "IpProtocol": "tcp",
+            "FromPort": 80,
+            "ToPort": 80,
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "kirocrew-demo"
+          }
+        ]
+      }
+    },
+    "DemoInstance": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": {
+          "Ref": "ImageId"
+        },
+        "InstanceType": "t3a.small",
+        "KeyName": {
+          "Ref": "KeyName"
+        },
+        "IamInstanceProfile": {
+          "Ref": "DemoInstanceProfile"
+        },
+        "CreditSpecification": {
+          "CPUCredits": "standard"
+        },
+        "MetadataOptions": {
+          "HttpEndpoint": "enabled",
+          "HttpProtocolIpv6": "disabled",
+          "HttpTokens": "required",
+          "HttpPutResponseHopLimit": 1,
+          "InstanceMetadataTags": "disabled"
+        },
+        "BlockDeviceMappings": [
+          {
+            "DeviceName": "/dev/sda1",
+            "Ebs": {
+              "VolumeSize": 24,
+              "VolumeType": "gp3",
+              "Iops": 3000,
+              "Encrypted": true,
+              "DeleteOnTermination": true
+            }
+          }
+        ],
+        "NetworkInterfaces": [
+          {
+            "DeviceIndex": "0",
+            "AssociatePublicIpAddress": true,
+            "DeleteOnTermination": true,
+            "SubnetId": {
+              "Ref": "SubnetId"
+            },
+            "GroupSet": [
+              {
+                "Ref": "DemoSecurityGroup"
+              }
+            ]
+          }
+        ],
+        "Monitoring": false,
+        "PropagateTagsToVolumeOnCreation": true,
+        "UserData": {
+          "Fn::Base64": "#!/usr/bin/env bash\n# Ubuntu 24.04 amd64 bootstrap for the KiroCrew EC2 demo.\n# This file is embedded byte-for-byte in ec2-demo.json UserData.\n# It installs OS packages only. The reviewed Crew/backend/MCP artifacts are\n# installed separately over the administrator's SSH connection.\nset -euo pipefail\numask 022\n\nif [[ $(id -u) -ne 0 ]]; then\n  printf '%s\\n' 'Run this bootstrap as root.' >&2\n  exit 1\nfi\n\nexport DEBIAN_FRONTEND=noninteractive\napt-get update\napt-get install -y --no-install-recommends \\\n  ca-certificates curl iptables python3-venv python3-boto3 unzip\n\nif ! id crew >/dev/null 2>&1; then\n  useradd --system --user-group --create-home \\\n    --home-dir /home/crew --shell /bin/bash crew\nfi\nif ! id mcp-demo >/dev/null 2>&1; then\n  useradd --system --user-group --create-home \\\n    --home-dir /var/lib/mcp-demo --shell /usr/sbin/nologin mcp-demo\nfi\n# These service accounts receive neither sudo membership nor a password.\nusermod --lock crew\nusermod --lock mcp-demo\n\ninstall -d -o root -g root -m 0755 /opt/kirocrew-demo /etc/kirocrew\ninstall -d -o crew -g crew -m 0700 /home/crew\ninstall -d -o crew -g crew -m 0700 /var/lib/kirocrew\ninstall -d -o crew -g crew -m 0700 /var/lib/kirocrew/workspace\ninstall -d -o mcp-demo -g mcp-demo -m 0700 /var/lib/mcp-demo\n\n# IMDS belongs to the MCP service and host administration, not the agent UID.\n# IMDSv2/hop-limit settings alone do not isolate host processes from credentials.\ncat > /usr/local/sbin/kirocrew-imds-guard <<'GUARD'\n#!/usr/bin/env bash\nset -euo pipefail\ncrew_uid=$(id -u crew)\nif ! iptables -w -C OUTPUT -d 169.254.169.254/32 \\\n  -m owner --uid-owner \"$crew_uid\" -j REJECT \\\n  --reject-with icmp-admin-prohibited 2>/dev/null; then\n  iptables -w -I OUTPUT 1 -d 169.254.169.254/32 \\\n    -m owner --uid-owner \"$crew_uid\" -j REJECT \\\n    --reject-with icmp-admin-prohibited\nfi\nif ! ip6tables -w -C OUTPUT -d fd00:ec2::254/128 \\\n  -m owner --uid-owner \"$crew_uid\" -j REJECT \\\n  --reject-with icmp6-adm-prohibited 2>/dev/null; then\n  ip6tables -w -I OUTPUT 1 -d fd00:ec2::254/128 \\\n    -m owner --uid-owner \"$crew_uid\" -j REJECT \\\n    --reject-with icmp6-adm-prohibited\nfi\nGUARD\nchown root:root /usr/local/sbin/kirocrew-imds-guard\nchmod 0755 /usr/local/sbin/kirocrew-imds-guard\n\ncat > /etc/systemd/system/kirocrew-imds-guard.service <<'UNIT'\n[Unit]\nDescription=Block the KiroCrew service UID from EC2 instance metadata\nAfter=local-fs.target\nBefore=kirocrew-demo.service kirocrew-mcp-demo.service\n\n[Service]\nType=oneshot\nExecStart=/usr/local/sbin/kirocrew-imds-guard\nRemainAfterExit=yes\n\n[Install]\nWantedBy=multi-user.target\nUNIT\nchmod 0644 /etc/systemd/system/kirocrew-imds-guard.service\nsystemctl daemon-reload\nsystemctl enable --now kirocrew-imds-guard.service\n\n# Canonical Ubuntu EC2 AMIs normally include the official SSM Agent snap.\n# If absent, use AWS's documented snap installation; no curl-pipe-shell.\nif ! snap list amazon-ssm-agent >/dev/null 2>&1; then\n  snap install amazon-ssm-agent --classic\nfi\nsystemctl enable --now snap.amazon-ssm-agent.amazon-ssm-agent.service\n\n# A marker is written only after package, firewall and SSM setup succeeds.\n# CloudFormation CREATE_COMPLETE alone does not establish bootstrap success.\ndate -u '+%Y-%m-%dT%H:%M:%SZ' > /opt/kirocrew-demo/bootstrap-complete\nchmod 0644 /opt/kirocrew-demo/bootstrap-complete\n"
+        },
+        "Tags": [
+          {
+            "Key": "Project",
+            "Value": "kirocrew-demo"
+          },
+          {
+            "Key": "Name",
+            "Value": "kirocrew-demo"
+          }
+        ]
+      }
+    }
+  },
+  "Outputs": {
+    "InstanceId": {
+      "Description": "EC2 instance ID.",
+      "Value": {
+        "Ref": "DemoInstance"
+      }
+    },
+    "PublicIp": {
+      "Description": "Public IPv4 address; changes after a stop/start.",
+      "Value": {
+        "Fn::GetAtt": [
+          "DemoInstance",
+          "PublicIp"
+        ]
+      }
+    },
+    "SecurityGroupId": {
+      "Description": "Security group with one inbound TCP 22 /32 rule.",
+      "Value": {
+        "Ref": "DemoSecurityGroup"
+      }
+    },
+    "DemoBucketName": {
+      "Description": "Private demo bucket retained on stack deletion.",
+      "Value": {
+        "Ref": "DemoBucket"
+      }
+    },
+    "InstanceRoleName": {
+      "Description": "Instance role used by the host and MCP process.",
+      "Value": {
+        "Ref": "DemoRole"
+      }
+    },
+    "InstanceRoleArn": {
+      "Description": "Instance role ARN.",
+      "Value": {
+        "Fn::GetAtt": [
+          "DemoRole",
+          "Arn"
+        ]
+      }
+    }
+  }
+}

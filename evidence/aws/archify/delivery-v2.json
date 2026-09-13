@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-ec2-live.architecture.json",
+  "output": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-ec2-live.html",
+  "specification": {
+    "sha256": "3ce8c1b8d6fb52dc6c5155d95a14593bfd96c7f2606a3fe5582ec9f7fcf800eb",
+    "bytes": 4711
+  },
+  "artifact": {
+    "sha256": "75c5ea0d2c9d53e1e6270dc55cd940171f7e8d5be924462a147f4fa87590eb2c",
+    "bytes": 809347
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}

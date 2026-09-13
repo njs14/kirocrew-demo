@@ -1,0 +1,61 @@
+{
+  "scope": "Git-index export on same macOS host, path includes spaces; no runtime snapshot or local config copied.",
+  "checks": [
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts/tests",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "........................................................................................................\n----------------------------------------------------------------------\nRan 104 tests in 7.329s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "infrastructure/observability-collector/test_collector.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ".....................................\n----------------------------------------------------------------------\nRan 37 tests in 2.020s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "node",
+        "--test",
+        "scripts/tests/browser-runtime.test.cjs"
+      ],
+      "exit_code": 0,
+      "stdout": "\u2714 default launch uses Playwright browser discovery, without a machine-specific executable (0.59025ms)\n\u2714 explicit browser executable is an existing file and is preserved (0.221667ms)\n\u2714 missing module has local setup instructions and never invokes an installer (0.11675ms)\n\u2714 an explicit module override can supply an existing runtime (2.291625ms)\n\u2139 tests 4\n\u2139 suites 0\n\u2139 pass 4\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 74.932375\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "bash",
+        "-n",
+        "demo.sh",
+        "native-demo.sh",
+        "infrastructure/configure-arm-services.sh"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/native-backend-demo.py",
+        "plan"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"mode\": \"offline_plan\",\n  \"project\": \"/srv/kirocrew-demo/workspace\",\n  \"agent\": \"enforcement-demo\",\n  \"prompts\": [\n    {\n      \"phase\": \"allow\",\n      \"tool\": \"read_allowed\",\n      \"trace_id\": \"native-RUNID-allow\",\n      \"message\": \"Call exactly the MCP tool @aws-enforcement/read_allowed once with the only argument trace_id=\\\"native-RUNID-allow\\\". Do not call any other tool, use a shell, retry, or take an alternative route. After a denial, stop and report that denial. Return the tool's structured result.\"\n    },\n    {\n      \"phase\": \"crew\",\n      \"tool\": \"crew_denied\",\n      \"trace_id\": \"native-RUNID-crew\",\n      \"message\": \"Call exactly the MCP tool @aws-enforcement/crew_denied once with the only argument trace_id=\\\"native-RUNID-crew\\\". Do not call any other tool, use a shell, retry, or take an alternative route. After a denial, stop and report that denial. Return the tool's structured result.\"\n    },\n    {\n      \"phase\": \"mcp\",\n      \"tool\": \"mcp_denied\",\n      \"trace_id\": \"native-RUNID-mcp\",\n      \"message\": \"Call exactly the MCP tool @aws-enforcement/mcp_denied once with the only argument trace_id=\\\"native-RUNID-mcp\\\". Do not call any other tool, use a shell, retry, or take an alternative route. After a denial, stop and report that denial. Return the tool's structured result.\"\n    },\n    {\n      \"phase\": \"iam\",\n      \"tool\": \"iam_denied\",\n      \"trace_id\": \"native-RUNID-iam\",\n      \"message\": \"Call exactly the MCP tool @aws-enforcement/iam_denied once with the only argument trace_id=\\\"native-RUNID-iam\\\". Do not call any other tool, use a shell, retry, or take an alternative route. After a denial, stop and report that denial. Return the tool's structured result.\"\n    }\n  ],\n  \"automatic_approval\": false\n}\n",
+      "stderr": ""
+    }
+  ]
+}

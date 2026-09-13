@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-13T18:35:06.455311+00:00",
+  "reviewer": "independent local review agent /root/demo_delivery_review",
+  "verdict": "pass_with_documented_scope_limits",
+  "reviewScope": "Read-only source, manifest, staged receipt and final artifact inspection plus local stub-based tests. No live admin actions, MCP/AWS execution, app mutations or server stops. No model council approval is claimed.",
+  "candidate": {
+    "edition": "output/kirocrew-recorded-demos.html",
+    "editionSha256": "754079b66dcc572f05af4345ab1f2e669e1a6458dad222abeeeaa3f49d6c2dec",
+    "notesSha256": "ddb903a42f50df2759dfe968fb014295a6bd16f5f468e9daac4d14bff0a7d006",
+    "processedManifestSha256": "9a3a6c269e4ad9a58de4ca1f489a4806935ec0baf8350b36654382acdfd6e860",
+    "sourceSha256": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+    "slideCount": 20,
+    "recordedSceneCount": 6
+  },
+  "checks": {
+    "acceptedSourceMatchesFrozenHash": true,
+    "first14SlideSectionsByteIdentical": true,
+    "acceptedNotesPrefixPreserved": true,
+    "singleEndpointEnclosurePreserved": true,
+    "editionNotesManifestBuildInputHashesMatch": true,
+    "all31ServedFilesMatchHashesAndSizes": true,
+    "all10CopiedReceiptsMatchStagedBytes": true,
+    "sixCaptureDigestsMatchProvenance": true,
+    "allPublicAssetAndEvidenceLinksAllowlisted": true,
+    "allChapterTimesOrderedAndInRange": true,
+    "sixVideoMetadataRecordsMatchFfprobe": true,
+    "videosAreH264_1600x1000_25fps_Silent": true,
+    "servedHtmlMatchesCandidateHash": true,
+    "rawCapturesNotInServeAllowlist": true,
+    "publicManifestOmitsRawPaths": true,
+    "operatorCommandsFixedAndHttpArgumentsBounded": true,
+    "sameOriginNonceAndHostExecutionBoundary": true,
+    "rawCommandOutputNotRetainedOrServed": true,
+    "nativeDirectSyntheticAndTelemetryScopesDistinct": true,
+    "finalWordingOnlyRebuildPreservesMediaAndProvenance": true,
+    "newCaptionsMatchNoAiSlopWordRule": true
+  },
+  "tests": [
+    {
+      "command": "python3 -B evidence/demo-clips/probe-presenter/test_presenter.py",
+      "passed": 16,
+      "failed": 0,
+      "scope": "Local stubs and historical parser fixtures; no real probes executed"
+    },
+    {
+      "command": "python3 -B evidence/demo-clips/player/test_player.py",
+      "passed": 12,
+      "failed": 0,
+      "scope": "Synthetic builder/media-server fixtures; includes source protection, range requests, path rejection and asset replacement"
+    }
+  ],
+  "factualChecks": [
+    "Direct probe receipt reports expected 55-byte S3 object/digest, MCP tool_grant_denied and IAM AccessDenied HTTP 403 with AWS request ID; native verification remains false.",
+    "Synthetic receipt reports scripted approval, zero network calls, no backend session or MCP gateway execution, 7 of 7 SEL entries before tampering and 6 of 7 during tampering; runner verifies restored integrity before reporting original_restored=true.",
+    "Synthetic frozen package is September 12; current Mac preflight is September 13. These observations remain separate.",
+    "Custom collector events are distinguished from native Gateway metrics and Crew security audit events."
+  ],
+  "resolvedFindings": [
+    "Presenter test assertion was updated for current standalone-operator label; independent rerun now passes all 16 tests.",
+    "New visible captions now use test runner; recorded UI and accepted source sections retain their original wording."
+  ],
+  "editorialObservations": [
+    "New captions, notes and guide state concrete actions, observed values and acceptance limits. No promotional or invented capability language found.",
+    "Guide explicitly marks client quit/relaunch and authenticated native Kiro CLI scenes as pending, with concrete completion gates."
+  ],
+  "limits": [
+    "Actual browser playback and desktop/mobile layout are being checked independently by the player owner; this receipt does not claim those browser observations.",
+    "Planned client-stop/server-survival/recovery scene is absent from these six recordings and must remain identified as unrecorded in final delivery.",
+    "Native authenticated Kiro CLI/backend enforcement scene remains pending.",
+    "Archive exclusion review covers file inventory and byte identity with reviewed artifacts; actual frame-by-frame recording inspection and real browser playback are covered by the recording and player owners, not this receipt."
+  ],
+  "findings": [],
+  "guide": {
+    "path": "DEMO-RECORDING-GUIDE.md",
+    "sha256": "66939ee41103e9be352ea3bbd2e3838750c155be3c8846b4429ada11b544849d",
+    "factualAndEditorialReview": "pass",
+    "pendingScenesExplicit": true
+  },
+  "package": {
+    "path": "output/kirocrew-recorded-demos-20260913.zip",
+    "sha256": "19cd124affabf654fe8997138d579b3fca4046269ebeaf2d699559faf46b09c1",
+    "bytes": 10549987,
+    "files": 35,
+    "passed": true,
+    "checks": {
+      "archiveIntegrity": true,
+      "expectedZipHash": true,
+      "expectedFileCount": true,
+      "exactAllowlistPlusFourDocuments": true,
+      "allBundleManifestHashesAndSizes": true,
+      "allBuildAllowlistBytesIdentical": true,
+      "bundledGuideAndBuildIdentical": true,
+      "noRawCaptureBrowserStateScriptsOrFixtures": true,
+      "noAbsoluteTraversalOrSymlinkEntries": true,
+      "finalHtmlHash": true,
+      "loopbackReadmeCommand": true,
+      "allPublicLinksResolveInsideArchive": true
+    }
+  }
+}

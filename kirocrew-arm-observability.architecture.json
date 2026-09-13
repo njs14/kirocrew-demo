@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Observe the client and the ARM host",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1370,
+      760
+    ]
+  },
+  "components": [
+    {
+      "id": "obs-mac-collector",
+      "type": "backend",
+      "label": "Custom Mac collector",
+      "sublabel": "Selected process CPU/RSS · TCP checks",
+      "pos": [
+        22,
+        280
+      ],
+      "size": [
+        230,
+        88
+      ]
+    },
+    {
+      "id": "obs-server-collector",
+      "type": "backend",
+      "label": "Custom server collector",
+      "sublabel": "Host + service health · no IMDS",
+      "pos": [
+        418,
+        94
+      ],
+      "size": [
+        242,
+        88
+      ]
+    },
+    {
+      "id": "obs-sample-store",
+      "type": "database",
+      "label": "Local health samples",
+      "sublabel": "client.json · server.json · events",
+      "pos": [
+        418,
+        280
+      ],
+      "size": [
+        242,
+        88
+      ]
+    },
+    {
+      "id": "obs-app-adapter",
+      "type": "security",
+      "label": "Custom read-only adapter",
+      "sublabel": "Loopback :9102 · owner proxy",
+      "pos": [
+        858,
+        280
+      ],
+      "size": [
+        240,
+        88
+      ]
+    },
+    {
+      "id": "obs-admin-ui",
+      "type": "frontend",
+      "label": "Demo Observability",
+      "sublabel": "Desktop App Kit page",
+      "pos": [
+        1214,
+        280
+      ],
+      "size": [
+        134,
+        88
+      ]
+    },
+    {
+      "id": "obs-native-telemetry",
+      "type": "backend",
+      "label": "Native Crew Telemetry",
+      "sublabel": "Gateway OTEL · local export",
+      "pos": [
+        418,
+        514
+      ],
+      "size": [
+        242,
+        88
+      ]
+    },
+    {
+      "id": "obs-native-jsonl",
+      "type": "database",
+      "label": "Native telemetry JSONL",
+      "sublabel": "10 s export · 7 days · 64 MiB cap",
+      "pos": [
+        858,
+        514
+      ],
+      "size": [
+        240,
+        88
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "ARM EC2 host · custom health data and native telemetry stay separate",
+      "wraps": [
+        "obs-server-collector",
+        "obs-sample-store",
+        "obs-app-adapter",
+        "obs-native-telemetry",
+        "obs-native-jsonl"
+      ],
+      "pad": 40
+    }
+  ],
+  "connections": [
+    {
+      "id": "obs-client-upload",
+      "from": "obs-mac-collector",
+      "to": "obs-sample-store",
+      "label": "Pinned SSH · 60 s",
+      "variant": "security"
+    },
+    {
+      "id": "obs-server-sample",
+      "from": "obs-server-collector",
+      "to": "obs-sample-store",
+      "label": "Local sample · 60 s",
+      "labelDy": 24
+    },
+    {
+      "id": "obs-read-samples",
+      "from": "obs-sample-store",
+      "to": "obs-app-adapter",
+      "label": "Bounded local files"
+    },
+    {
+      "id": "obs-admin-read",
+      "from": "obs-app-adapter",
+      "to": "obs-admin-ui",
+      "label": "Gateway · SSH",
+      "variant": "security"
+    },
+    {
+      "id": "obs-native-write",
+      "from": "obs-native-telemetry",
+      "to": "obs-native-jsonl",
+      "label": "Local export"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Custom health view",
+      "items": [
+        "Fixed CPU/RSS, host counters and TCP reachability.",
+        "Samples older than 180 seconds appear stale.",
+        "No prompts, chats or arbitrary logs are collected."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Native telemetry is separate",
+      "items": [
+        "Gateway OTEL writes its own local JSONL.",
+        "Beacon is off; no OTLP endpoint is configured.",
+        "Custom samples do not enter the native panel."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Observed behavior",
+      "items": [
+        "Owner proxy shows current client and server samples.",
+        "Client stop 14:44:42 UTC; recovery 14:49:34 UTC.",
+        "Gateway PID 4991 and its start time stayed unchanged."
+      ]
+    }
+  ]
+}

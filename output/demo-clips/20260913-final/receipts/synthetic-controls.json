@@ -1,0 +1,104 @@
+{
+  "command_argv": [
+    "/bin/bash",
+    "/Users/noahsutter/git-projects/kirocrew-demo/demo.sh"
+  ],
+  "exit_code": 0,
+  "finished_at": "2026-09-13T18:23:30.500341+00:00",
+  "kind": "demo_probe_presenter_command_result",
+  "mode": "synthetic",
+  "native_backend_verified": false,
+  "passed": true,
+  "raw_output_retained": false,
+  "receipt": {
+    "approval_mode": "scripted rehearsal",
+    "backend_session_executed": false,
+    "baseline": {
+      "installed_version": "0.7.0-nightly.20260912t060850",
+      "snapshot_digest": "e1dd17ec6272f834c5d4b3fbed4c6bec5b7bd6c59e66db68a9f731c012eb8b25"
+    },
+    "kind": "local_synthetic_control_rehearsal",
+    "mcp_gateway_executed": false,
+    "native_backend_verified": false,
+    "network_calls": 0,
+    "passed": true,
+    "steps": [
+      {
+        "crew_action": "auto_approve",
+        "handler_executed": true,
+        "step": "allow"
+      },
+      {
+        "approval_ui": "synthetic harness",
+        "crew_action": "allow",
+        "handler_executed": false,
+        "step": "ask-pending"
+      },
+      {
+        "approval_mode": "scripted rehearsal",
+        "approved": true,
+        "handler_executed": true,
+        "step": "ask-resolved"
+      },
+      {
+        "crew_action": "deny",
+        "handler_executed": false,
+        "step": "deny"
+      },
+      {
+        "bytes_unchanged": true,
+        "crew_action": "deny",
+        "handler_executed": false,
+        "step": "protected-path"
+      },
+      {
+        "crew_action": "deny",
+        "shell_executed": false,
+        "step": "command-gate"
+      },
+      {
+        "decisions": {
+          "DenyDemo": {
+            "limiting_layer": "policy",
+            "permitted": false
+          },
+          "ReadDemo": {
+            "limiting_layer": "both",
+            "permitted": true
+          },
+          "WriteDemo": {
+            "limiting_layer": "profile",
+            "permitted": false
+          }
+        },
+        "signature_state": "unchecked",
+        "step": "policy-profile"
+      },
+      {
+        "output": "[REDACTED: credential]",
+        "step": "redaction",
+        "synthetic_input": true
+      },
+      {
+        "correlated_request": "demo-deny",
+        "event_source": "harness records the actual gate verdict",
+        "step": "sel-integrity",
+        "total": 7,
+        "valid": 7
+      },
+      {
+        "original_restored": true,
+        "step": "sel-tamper-detection",
+        "total": 7,
+        "valid": 6
+      }
+    ]
+  },
+  "sanitization": "strict field and value allowlist",
+  "schema": 1,
+  "started_at": "2026-09-13T18:23:07.698951+00:00",
+  "stderr_bytes": 54,
+  "stderr_sha256": "150c4b165964a40d334845df2c9eed72d94dd5ead77e7fa2672abd4a2fb206e9",
+  "stdout_bytes": 1875,
+  "stdout_sha256": "c22fb53778c1332f7733ca66573681117a0959ff2649aa98cb8c970d8d77861e"
+}

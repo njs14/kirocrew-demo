@@ -1,0 +1,54 @@
+{
+  "recordedAt": "2026-09-13T18:21:29.413074+00:00",
+  "scope": "Synthetic player implementation QA only. No KiroCrew or AWS capture evidence.",
+  "unitTests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "browser": {
+    "scope": "Synthetic player fixture only; no KiroCrew, AWS or recording proof",
+    "passed": true,
+    "checks": [
+      "Video metadata, muted controls and inline playback",
+      "Cue selection seeks and pauses",
+      "Cue details update",
+      "Next chapter seeks to the next timestamp and pauses",
+      "Guided playback pauses at the first chapter",
+      "Opening overview pauses playback",
+      "Outgoing slide video pauses",
+      "Original slide navigation works",
+      "Video keyboard focus does not navigate slides",
+      "Desktop slide fits",
+      "Mobile has no horizontal overflow",
+      "Mobile chapter buttons have 44px targets",
+      "Complete notes download stays embedded"
+    ]
+  },
+  "browserConsole": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "visualInspection": "Desktop and mobile synthetic screenshots inspected. No clipping of video controls or chapter details; mobile full-page screenshot captures a sticky toolbar that may cover a lower section until scrolled.",
+  "sourcePreserved": {
+    "output/kirocrew-system-design.html": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+    "output/kirocrew-system-design-notes.md": "4e239721237aa0407979ae95eae7334588c992a1c0d858da316fe3b129ad2163"
+  },
+  "review": "Independent source review found destination-write issue, fixed with complete destination preflight and atomic replacements. Final reviewer found no further code issue. Later additions validate poster, contact sheet and cue receipt hashes; these passed author tests. No external model council review of this edition.",
+  "limits": [
+    "Document visibility/pagehide pause handlers not separately exercised.",
+    "Actual recorded scenes still require final layout/playback checks."
+  ],
+  "files": {
+    "scripts/build-recorded-demo-presentation.py": "4b271074f028fdcf56f37fdf233eecac83405265efff734c5b20c90f20cd3dfb",
+    "scripts/serve-recorded-demos.py": "fd2ed10190327a587b3bfe71b78c95f799c0628a5a126d96a41774e0826ca2d7",
+    "presentation/demo-player.js": "7a0768ab1b0da7b71a6f9ba806ee1775fbe2b511f052a6a0337fb76eb1461613",
+    "presentation/demo-player.css": "99ffc46cb25eea7538d3ae84258469bb50f154a8a44b2e28fa39b058cb4c83a8",
+    "evidence/demo-clips/player/test_player.py": "017fcbf3900f75f4b97de255e09514665ffd369cbbc262482de0c04bd8121aae",
+    "evidence/demo-clips/player/browser-check.js": "7ed973d54f3e67250926c41dffc316d0d27a6e158a27010783a7f27390293c17",
+    "evidence/demo-clips/player/browser-result.json": "de9394f94d783bc95d7451532f08c94907f6617cc20475341b839b528cfa8b43",
+    "evidence/demo-clips/player/browser-fixture/desktop.png": "2432bcb21b3a7aa9436e852170f25b797f3a3d3ec8c25d6ec468e078c8bcf89e",
+    "evidence/demo-clips/player/browser-fixture/mobile.png": "e2df6f0f3aa9a2c96840e29db12d555e9f3feaa0136be4cc273b4f22bf3300ee",
+    "evidence/demo-clips/player/browser-fixture/edition.html": "70c0428ed5ca9edba6e17ab8a649c551c336a520c8a28dc1687c2fce78ccd3a4",
+    "evidence/demo-clips/player/unit-test-results.txt": "1195f236dcf73ac902ea86e48904e5ec60087d95e835da7672ba979af142e28b"
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 3,
+  "artifactType": "Viewer with two checked Archify architecture diagrams and a 15-control reference",
+  "kirocrewBaseline": {
+    "version": "0.7.0.dev20260911060948",
+    "commit": "fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482",
+    "freshLatestFeedVerified": false
+  },
+  "diagramChecks": {
+    "kirocrew-security-layers.html": {
+      "ok": true,
+      "file": "/workspace/scratch/91cd8ab8965a/kirocrew-security-layers.html",
+      "checks": [
+        {
+          "name": "single_svg",
+          "ok": true,
+          "details": [
+            "found 1 <svg> block(s)"
+          ]
+        },
+        {
+          "name": "finite_svg",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "orthogonal_arrows",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "label_route_clearance",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "relationship_crossings",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "relationship_corridors",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "container_border_runs",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "route_rhythm",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "legend_clearance",
+          "ok": true,
+          "details": []
+        }
+      ],
+      "composition": {
+        "schemaVersion": 1,
+        "profile": "showcase",
+        "status": "pass",
+        "summary": {
+          "errors": 0,
+          "warnings": 0
+        },
+        "metrics": {
+          "properCrossings": 0,
+          "ambiguousCorridors": 0,
+          "containerBorderRuns": 0,
+          "labelRouteClearanceIssues": 0,
+          "minLabelRouteClearance": 142.5,
+          "desktopReadabilityIssues": 0,
+          "minProjectedNodeTextPx": null,
+          "maxBends": 0,
+          "routesOverSuggestedBends": 0,
+          "maxStretch": 1,
+          "routesOverSuggestedStretch": 0,
+          "minSegmentPx": 120,
+          "minInteriorSegmentPx": null,
+          "shortSegmentCount": 0,
+          "shortEndpointSegmentCount": 0,
+          "shortInteriorSegmentCount": 0,
+          "microSegmentCount": 0
+        },
+        "suggestedLimits": {
+          "bendsPerRelationship": 2,
+          "stretch": 1.35,
+          "segmentPx": 16,
+          "microSegmentPx": 8
+        },
+        "issues": []
+      }
+    },
+    "kirocrew-aws-deployment.html": {
+      "ok": true,
+      "file": "/workspace/scratch/91cd8ab8965a/kirocrew-aws-deployment.html",
+      "checks": [
+        {
+          "name": "single_svg",
+          "ok": true,
+          "details": [
+            "found 1 <svg> block(s)"
+          ]
+        },
+        {
+          "name": "finite_svg",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "orthogonal_arrows",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "label_route_clearance",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "relationship_crossings",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "relationship_corridors",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "container_border_runs",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "route_rhythm",
+          "ok": true,
+          "details": []
+        },
+        {
+          "name": "legend_clearance",
+          "ok": true,
+          "details": []
+        }
+      ],
+      "composition": {
+        "schemaVersion": 1,
+        "profile": "showcase",
+        "status": "pass",
+        "summary": {
+          "errors": 0,
+          "warnings": 0
+        },
+        "metrics": {
+          "properCrossings": 0,
+          "ambiguousCorridors": 0,
+          "containerBorderRuns": 0,
+          "labelRouteClearanceIssues": 0,
+          "minLabelRouteClearance": 15,
+          "desktopReadabilityIssues": 0,
+          "minProjectedNodeTextPx": null,
+          "maxBends": 2,
+          "routesOverSuggestedBends": 0,
+          "maxStretch": 1,
+          "routesOverSuggestedStretch": 0,
+          "minSegmentPx": 52.5,
+          "minInteriorSegmentPx": 273,
+          "shortSegmentCount": 0,
+          "shortEndpointSegmentCount": 0,
+          "shortInteriorSegmentCount": 0,
+          "microSegmentCount": 0
+        },
+        "suggestedLimits": {
+          "bendsPerRelationship": 2,
+          "stretch": 1.35,
+          "segmentPx": 16,
+          "microSegmentPx": 8
+        },
+        "issues": []
+      }
+    }
+  },
+  "newBaseDiagramDelivery": {
+    "schemaVersion": 1,
+    "ok": true,
+    "command": "deliver",
+    "type": "architecture",
+    "input": "/workspace/scratch/91cd8ab8965a/kirocrew-security-layers.architecture.json",
+    "output": "/workspace/scratch/91cd8ab8965a/kirocrew-security-layers-base.html",
+    "specification": {
+      "sha256": "fa3662e9483a6dbac6fa505fa3b5e855e42134246d5d08e3122013bd7d4f4d55",
+      "bytes": 3881
+    },
+    "artifact": {
+      "sha256": "f51ac796f42f996f84cf7050cb440eb11ffef19a1f9c4c45e66fa8efd581e882",
+      "bytes": 803073
+    },
+    "validation": {
+      "checksPassed": 9,
+      "checkCount": 9,
+      "compositionProfile": "showcase",
+      "compositionStatus": "pass",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "detailedEndpointDerivative": {
+    "method": "Detailed SVG content inside one endpoint component; original Archify topology, geometry and base preserved. Generic hand-authored vector symbols; AWS service icons retained in the deployment view.",
+    "base": {
+      "path": "kirocrew-security-layers-base.html",
+      "sha256": "f51ac796f42f996f84cf7050cb440eb11ffef19a1f9c4c45e66fa8efd581e882",
+      "bytes": 803073
+    },
+    "derivative": {
+      "path": "kirocrew-security-layers.html",
+      "sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+      "bytes": 806216
+    },
+    "script": "detail-endpoint-panel.py",
+    "endpointInternalLayers": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5"
+    ]
+  },
+  "embedding": {
+    "security": {
+      "source": "kirocrew-security-layers.html",
+      "sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+      "exactBytesMatch": true
+    },
+    "aws": {
+      "source": "kirocrew-aws-deployment.html",
+      "sha256": "4375acf0466215035c06b9a9d643555eb9b6e5a478e541b6558435b14ac07784",
+      "exactBytesMatch": true
+    }
+  },
+  "wrapperChecks": {
+    "javascriptSyntax": "node --check passed",
+    "controlEntries": 15,
+    "awsViewUnchanged": true,
+    "browserBehavior": "unverified"
+  },
+  "browserEvidence": {
+    "schemaVersion": 1,
+    "ok": false,
+    "command": "visual-check",
+    "evidenceKind": "automated-browser",
+    "status": "skipped",
+    "visualReview": "pending",
+    "artifact": {
+      "path": "/workspace/scratch/91cd8ab8965a/kirocrew-security-layers.html",
+      "sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+      "bytes": 806216
+    },
+    "state": {
+      "detail": "read",
+      "motion": "still"
+    },
+    "chrome": {
+      "status": "unavailable",
+      "executable": null
+    },
+    "diagnostics": [
+      {
+        "code": "viewer/chrome-unavailable",
+        "severity": "warning",
+        "message": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path.",
+        "subject": {
+          "artifact": "/workspace/scratch/91cd8ab8965a/kirocrew-security-layers.html"
+        },
+        "evidence": {
+          "executable": null
+        },
+        "supportedFixes": [
+          "set ARCHIFY_CHROME to a Chrome or Chromium executable and rerun visual-check"
+        ]
+      }
+    ],
+    "containment": {
+      "status": "skipped",
+      "viewports": []
+    },
+    "readability": {
+      "status": "skipped",
+      "minimumProjectedNodeTextPx": 6,
+      "viewports": []
+    },
+    "viewerChrome": {
+      "status": "skipped",
+      "viewports": []
+    },
+    "captures": {
+      "status": "skipped",
+      "screenshots": [],
+      "contactSheet": null
+    },
+    "sidecars": {
+      "receipt": "kirocrew-security-layers.visual-check.json",
+      "contactSheet": "kirocrew-security-layers.visual-check.html"
+    },
+    "error": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path."
+  },
+  "visualReview": {
+    "status": "completed",
+    "visual_review": "passed",
+    "correction_rounds": 1,
+    "reviewer": "/root/endpoint_visual_review",
+    "requestedByUser": true,
+    "scope": "Actual static light/dark PNG inspection; architecture source, SVG postprocessor and 15-control reference review. Followup inspected final changed areas in both PNGs. Browser behavior and deployment not verified.",
+    "findings": [
+      {
+        "severity": "minor",
+        "finding": "Cyan endpoint border conflicted with the generic Frontend legend key.",
+        "resolution": "Removed redundant generic legend; reviewer confirmed resolution in both final PNGs.",
+        "status": "resolved"
+      }
+    ],
+    "additionalCorrection": "Applied pre-tool coverage footnote to L1 as well as L2; reviewer confirmed fit and clarity.",
+    "blockingFindings": 0,
+    "conclusion": "One coherent endpoint enclosure. Owner bands, runtime strip and six-layer grid remain clear and labels fit in both themes. External authorization and proposed integrations remain distinct.",
+    "finalArtifacts": [
+      {
+        "name": "kirocrew-security-layers.html",
+        "sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+        "bytes": 806216
+      },
+      {
+        "name": "kirocrew-aws-remote-preview.png",
+        "sha256": "dce92f1993fb53af9bdd4f51077a82ab6ea552bc6d6e6af48b763b42fd57ab1a",
+        "bytes": 322973
+      },
+      {
+        "name": "kirocrew-security-layers-dark-preview.png",
+        "sha256": "40f1d65e6678b46aa8d49fa813a2171e90a379529c4b07d3bcfc333085521981",
+        "bytes": 331601
+      }
+    ],
+    "browser_evidence": "skipped (Chromium unavailable)"
+  },
+  "artifacts": [
+    {
+      "name": "kirocrew-aws-remote.html",
+      "sha256": "e51a06d0b02afdb210f34c74aabdf542599e00dfd898d8619e2b7db2c0290e9f",
+      "bytes": 2230459
+    },
+    {
+      "name": "kirocrew-aws-remote-preview.png",
+      "sha256": "dce92f1993fb53af9bdd4f51077a82ab6ea552bc6d6e6af48b763b42fd57ab1a",
+      "bytes": 322973
+    },
+    {
+      "name": "kirocrew-aws-remote-notes.md",
+      "sha256": "49030d07baf0ff55b04a12c439be96a7807aa9a5faee1377667a7f86373708f6",
+      "bytes": 25421
+    },
+    {
+      "name": "kirocrew-security-layers.html",
+      "sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+      "bytes": 806216
+    },
+    {
+      "name": "kirocrew-security-layers-base.html",
+      "sha256": "f51ac796f42f996f84cf7050cb440eb11ffef19a1f9c4c45e66fa8efd581e882",
+      "bytes": 803073
+    },
+    {
+      "name": "kirocrew-security-layers.architecture.json",
+      "sha256": "fa3662e9483a6dbac6fa505fa3b5e855e42134246d5d08e3122013bd7d4f4d55",
+      "bytes": 3881
+    },
+    {
+      "name": "kirocrew-security-layers-preview.svg",
+      "sha256": "cec5d590e2a5b31f8cbfeda408480092b4ff83ec93215cf685ac3f6736ee2593",
+      "bytes": 19248
+    },
+    {
+      "name": "kirocrew-security-layers-dark-preview.png",
+      "sha256": "40f1d65e6678b46aa8d49fa813a2171e90a379529c4b07d3bcfc333085521981",
+      "bytes": 331601
+    },
+    {
+      "name": "kirocrew-security-layers-dark-preview.svg",
+      "sha256": "7b844ab2c06fd58e6560770dffec95ab6b988c14bdcd7ec815292b8c9d42117a",
+      "bytes": 19210
+    },
+    {
+      "name": "kirocrew-control-layers.json",
+      "sha256": "5de158b34a491ae4fcc2204369eb1c12b4b24ef02cff7fc5f81c5038422b147a",
+      "bytes": 18359
+    },
+    {
+      "name": "kirocrew-security-layers-delivery.json",
+      "sha256": "9a12dd6347823aa9b44395edad4d7a34c6fc5138ef6b989b4bf507bb15e29ebd",
+      "bytes": 682
+    },
+    {
+      "name": "kirocrew-endpoint-detail.json",
+      "sha256": "3643afe1caf0df9cf09991355247a24a501e51ea63c196a21547f1707e9e4e8b",
+      "bytes": 688
+    },
+    {
+      "name": "kirocrew-security-layers.visual-check.json",
+      "sha256": "be1706efe9f68b011b314070f9b091cca133e4c14924f04c0e5eda8cdf08a3f6",
+      "bytes": 1566
+    },
+    {
+      "name": "kirocrew-security-layers-base.visual-check.json",
+      "sha256": "ae3eae21fc65140a66d0750a2ce7a24470b9858fb647b64d61eb3566d706a169",
+      "bytes": 1586
+    },
+    {
+      "name": "kirocrew-endpoint-review.json",
+      "sha256": "43526e8d2dc41f62e29196a441771f49b5041267c110e44509d0831c25babf6e",
+      "bytes": 1614
+    },
+    {
+      "name": "kirocrew-aws-deployment.html",
+      "sha256": "4375acf0466215035c06b9a9d643555eb9b6e5a478e541b6558435b14ac07784",
+      "bytes": 845336
+    },
+    {
+      "name": "kirocrew-aws-deployment-preview.png",
+      "sha256": "138916abe123e7cd16a17efe50c0a4610cc855ae18152662a02d0bcf20a51097",
+      "bytes": 300397
+    },
+    {
+      "name": "kirocrew-aws-deployment-notes.md",
+      "sha256": "25fc16a4077fffc09cc5e545691232b932780b223ce9664b87044fda3803c985",
+      "bytes": 7903
+    },
+    {
+      "name": "kirocrew-aws-remote.architecture.json",
+      "sha256": "a1c6ad04b4d8ee177e36abb2995cd0467bec629e8fd832d274836c2ee9973340",
+      "bytes": 7482
+    },
+    {
+      "name": "kirocrew-aws-remote-base.html",
+      "sha256": "3211cd701ba4c0a8b002deafbe0b5c624b075e9662d5330881dd2f6b90a3cdfa",
+      "bytes": 820105
+    },
+    {
+      "name": "kirocrew-aws-icons.json",
+      "sha256": "e5682a009169d0d2d224f185fce6efce42a8377fa61a9b50179c2d08729111d1",
+      "bytes": 3076
+    },
+    {
+      "name": "kirocrew-aws-base-delivery.json",
+      "sha256": "b288f2d3bfb2525a4cf145da0c6f5717ca4100ca6e715c6417fa3d84a456c105",
+      "bytes": 672
+    },
+    {
+      "name": "build-security-diagram.py",
+      "sha256": "4f535c2a5a50c0d773e1810e60639444c9c16a9d68b03d201beafd979815e090",
+      "bytes": 3035
+    },
+    {
+      "name": "detail-endpoint-panel.py",
+      "sha256": "7cf0846c8da688ddcdfaebaa5d575a16ce6a4a9c50be512a5367b4be683f2a5d",
+      "bytes": 8192
+    },
+    {
+      "name": "build-security-viewer.py",
+      "sha256": "d5a57aca982f6e762b9a7425265bb80792a5cb3623847136f68b788febc359b6",
+      "bytes": 23938
+    },
+    {
+      "name": "export-security-preview.cjs",
+      "sha256": "f342e29356b3c27861ab64b5771b9f872babdc9c47ddcac0db7d3727080339fe",
+      "bytes": 2816
+    },
+    {
+      "name": "package-kirocrew-visual.py",
+      "sha256": "7ff776f0541d04807cc99e485c049d98db7cf10f7546a53f01321920efc01f9e",
+      "bytes": 5877
+    },
+    {
+      "name": "add-aws-icons.cjs",
+      "sha256": "c2a2c16c526e06d39e834db2bbdf4f2196bb6e13284dc1715935ad16c2a2b885",
+      "bytes": 3107
+    },
+    {
+      "name": "export-aws-preview.cjs",
+      "sha256": "46c4207ab98694883eb732577ffd7d40b0fad22a711904da0a7c6feca6ccde72",
+      "bytes": 2891
+    }
+  ]
+}

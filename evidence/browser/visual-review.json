@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-09-13T03:46:05.011977+00:00",
+  "visual_review": "passed",
+  "reviewer": "Codex author, image-capable inspection",
+  "independent_review": false,
+  "artifacts": [
+    {
+      "path": "kirocrew-aws-remote.html",
+      "sha256": "aa8a5e9bd970a3a945caffe340fe0792aff72709017bdec54093c74bb86cb7cc",
+      "bytes": 2228358
+    },
+    {
+      "path": "kirocrew-security-layers-browser.html",
+      "sha256": "e47121b910829997265ecb42c9c248d14da1cc244b1575952be6b7b071b26d08",
+      "bytes": 805022
+    },
+    {
+      "path": "kirocrew-aws-deployment-browser.html",
+      "sha256": "c45720356c1289c2d2992eca5534ae169e29dd5d2e8b6675093bebd80bef9e46",
+      "bytes": 843995
+    }
+  ],
+  "scope": "Integrated browser screenshots: both diagrams, light/dark, 1440x900 and 2048x1320; focus detail card; actual PNG exports; static SVG topology remains identical.",
+  "observations": [
+    "Single endpoint enclosure preserved; internal bands and labels remain aligned.",
+    "Connections and AWS service icons remain clear; no new crossings or obscured labels.",
+    "Reader and navigation settle before screenshots; full caveat visible at laptop size.",
+    "Large desktop compositions fill the available height without a conspicuous empty lower band.",
+    "PNG exports retain endpoint custom styles; exported files contain no viewer controls."
+  ],
+  "reader_layout_correction_rounds": 2,
+  "separate_export_runtime_fix": "Include existing ep-* CSS rules in SVG serialization.",
+  "screenshots": [
+    {
+      "path": "evidence/browser/viewer-aws-1440-dark.png",
+      "sha256": "e6086a624b88d4419a0e28ca7b872eb0ac3770c0b5f605d29de4f7bd63845aae",
+      "bytes": 125901
+    },
+    {
+      "path": "evidence/browser/viewer-aws-1440-light.png",
+      "sha256": "87dd88f2672fca0427a66b39c2cdbe7c212531d87e4d7365be1476fdd16c5610",
+      "bytes": 127117
+    },
+    {
+      "path": "evidence/browser/viewer-aws-2048-dark.png",
+      "sha256": "259458af040419418f82c700f5224dcea0ce5f8bf36c1e8cda64e1580e880ea2",
+      "bytes": 183501
+    },
+    {
+      "path": "evidence/browser/viewer-aws-2048-light.png",
+      "sha256": "9412c9aa82579a170dc3932f1fcb203204062cd7e8f75d88c79ed29027de113e",
+      "bytes": 183851
+    },
+    {
+      "path": "evidence/browser/viewer-reference.png",
+      "sha256": "bf9c9ff67fb7039cad9836354e23cbc533c4ad745101559c2a96fd08b41806bc",
+      "bytes": 191623
+    },
+    {
+      "path": "evidence/browser/viewer-security-1440-dark.png",
+      "sha256": "ad59c40f9cc3636f3ccafc2a8c710789963849b4a11976dc2316d9667c25a3e8",
+      "bytes": 122780
+    },
+    {
+      "path": "evidence/browser/viewer-security-1440-light.png",
+      "sha256": "106b5215b320a8fcd767379e4f48ebf9ef7f06e8390d29d87ed98c666094dfdf",
+      "bytes": 123295
+    },
+    {
+      "path": "evidence/browser/viewer-security-2048-dark.png",
+      "sha256": "32220cb67ab5892223c6495dd217eb28d92c4808fc7d179bb590cdcba4786d99",
+      "bytes": 177143
+    },
+    {
+      "path": "evidence/browser/viewer-security-2048-light.png",
+      "sha256": "d42da09a8287c8372e6ebc2d42e0a4e10855a96078ffb146036437b56ae2860c",
+      "bytes": 179330
+    }
+  ],
+  "exports": [
+    {
+      "path": "evidence/browser/security-browser-export.png",
+      "sha256": "9dd45fa4040b1feeb1b1c3e243aaab323001d260113bc4f52e6aa9670417485a",
+      "bytes": 665358
+    },
+    {
+      "path": "evidence/browser/security-browser-export.svg",
+      "sha256": "81d81dd9b869926488fe5a5c852d470ba3bba339d645eccf91a9cae800e42de0",
+      "bytes": 148258
+    },
+    {
+      "path": "evidence/browser/aws-browser-export.png",
+      "sha256": "2bd1e12691d58008f46c85e21857cd82a4f8a86b6b8f8e33384883e2f788c518",
+      "bytes": 643130
+    },
+    {
+      "path": "evidence/browser/aws-browser-export.svg",
+      "sha256": "a97976856524070c3ef3300f0012d5f099bb253800f717f0cb5b292a6d908715",
+      "bytes": 186178
+    }
+  ]
+}

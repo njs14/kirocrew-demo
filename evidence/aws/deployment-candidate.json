@@ -1,0 +1,7 @@
+{
+  "stack_name": "kirocrew-demo-20260913",
+  "allowed_cidr": "24.60.107.229/32",
+  "template_sha256": "778016a3c8fb7d45933e651ace1634a9148b9ead7960797ae208a795752602ea",
+  "bootstrap_sha256": "46c2f99747f3a04d48e47f41b2e880f9be10fe3d425b75b4981717dd8c9459d6",
+  "authorized_by": "2026-09-13 user request for cheap EC2 backend/MCP/AWS demo, us-east-1, inbound only user IP"
+}

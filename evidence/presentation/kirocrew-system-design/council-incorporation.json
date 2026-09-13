@@ -1,0 +1,20 @@
+{
+  "candidate_html_sha256": "bfc2516128526ab049a7c4c0b36994aae82d87c44790785ee9125da5d63a5712",
+  "final_html_sha256": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+  "final_notes_sha256": "4e239721237aa0407979ae95eae7334588c992a1c0d858da316fe3b129ad2163",
+  "council_receipt": {
+    "path": "evidence/council/system-design-v1/council-verified-receipt.json",
+    "bytes": 20505,
+    "sha256": "f3244a91e1fd1d41e7232b47136569a18214b7d817d59a2509cd4ba4684aa3bc"
+  },
+  "decisions": {
+    "path": "evidence/council/system-design-v1/DECISIONS.md",
+    "bytes": 4127,
+    "sha256": "a3fc3fc44486a97865840d5b6d5e048819ddc44c22f424a195a2e843d263f8a3"
+  },
+  "accepted_decisions_incorporated": true,
+  "subsequent_no_ai_slop_complete": true,
+  "final_author_visual_review": "/root/deck_draft read decisions, complete final notes, and all14final browser captures. No outstanding findings.",
+  "final_byte_external_council_approval": false,
+  "original_image_bytes_preserved": true
+}

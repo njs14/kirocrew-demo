@@ -1,0 +1,107 @@
+{
+  "status": "pass",
+  "run_id": "20260913T190950Z-1e9b0b",
+  "baseline": {
+    "installed_version": "0.7.0-nightly.20260912t060850",
+    "snapshot_digest": "e1dd17ec6272f834c5d4b3fbed4c6bec5b7bd6c59e66db68a9f731c012eb8b25",
+    "source_commit": null,
+    "scope": "frozen snapshot of user-installed package",
+    "accepted_baseline": false,
+    "historical_manifest_selected": true,
+    "manifest_sha256": "78df5a19ee6375db40d8a04e00244b1160c4a155cad3ba81da6f0cc43e2d5a1b"
+  },
+  "runner_sha256": "0df80c7aee9476762c45309b433a963c7f31b5c73bcb4afc4b44239e5c77ccea",
+  "launcher_sha256": "a7cbcb0abfff07e62d5f2fc60d7e4309b94373548b04f4054634a77cb6335ff7",
+  "python_version": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]",
+  "python_executable": "/Users/noahsutter/git-projects/kirocrew-demo/.build/demo-tools-venv/bin/python",
+  "source_package_version": "0.7.0-nightly.20260912t060850",
+  "nightly_wheel_executed": false,
+  "installed_nightly_modules_executed": true,
+  "scope": "actual Crew functions in a synthetic callback harness",
+  "backend_session_executed": false,
+  "network_calls": 0,
+  "aws_deployed": false,
+  "mcp_gateway_executed": false,
+  "interactive": false,
+  "steps": [
+    {
+      "step": "allow",
+      "crew_action": "auto_approve",
+      "handler_executed": true
+    },
+    {
+      "step": "ask-pending",
+      "crew_action": "allow",
+      "handler_executed": false,
+      "approval_ui": "synthetic harness"
+    },
+    {
+      "step": "ask-resolved",
+      "approved": true,
+      "handler_executed": true,
+      "approval_mode": "scripted rehearsal"
+    },
+    {
+      "step": "deny",
+      "crew_action": "deny",
+      "reason": "Blocked by security policy: DenyDemo",
+      "handler_executed": false
+    },
+    {
+      "step": "protected-path",
+      "crew_action": "deny",
+      "bytes_unchanged": true,
+      "handler_executed": false
+    },
+    {
+      "step": "command-gate",
+      "crew_action": "deny",
+      "reason": "Blocked: command matches data-exfiltration pattern '--data-binary @'",
+      "shell_executed": false
+    },
+    {
+      "step": "policy-profile",
+      "decisions": {
+        "ReadDemo": {
+          "permitted": true,
+          "limiting_layer": "both",
+          "reason": "permitted"
+        },
+        "WriteDemo": {
+          "permitted": false,
+          "limiting_layer": "profile",
+          "reason": "profile denies: 'WriteDemo' not in allow-set"
+        },
+        "DenyDemo": {
+          "permitted": false,
+          "limiting_layer": "policy",
+          "reason": "policy denies: 'DenyDemo' not in allow-set"
+        }
+      },
+      "signature_state": "unchecked"
+    },
+    {
+      "step": "redaction",
+      "output": "[REDACTED: credential]",
+      "synthetic_input": true
+    },
+    {
+      "step": "sel-integrity",
+      "total": 7,
+      "valid": 7,
+      "correlated_request": "demo-deny",
+      "event_source": "harness records the actual gate verdict"
+    },
+    {
+      "step": "sel-tamper-detection",
+      "total": 7,
+      "valid": 6,
+      "original_restored": true
+    }
+  ],
+  "limitations": [
+    "Backend admission, ACP callback delivery and backend auto-approval bypass remain untested.",
+    "SEL events are explicitly emitted by the harness using Crew logging.",
+    "MCP authorization, OAuth, IAM and external collection require a deployed environment."
+  ]
+}

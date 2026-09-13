@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-09-13T14:56:15.423244+00:00",
+  "host": "i-0fde6de3f0ea5a9d0",
+  "ssh_alias": "kirocrew-demo",
+  "unix_user": "crew",
+  "probe": "TCP connect only to169.254.169.254:80; no HTTP request, credential read, or metadata token",
+  "connected": false,
+  "errno": 113,
+  "elapsed_seconds": 0.0,
+  "scope": "Observed active denial of crew IPv4 metadata TCP connection. Does not establish native agent sandbox execution or IPv6 path behavior.",
+  "guard_unit": "kirocrew-imds-guard.service",
+  "guard_state_receipt": "observability-runtime-receipt.json"
+}

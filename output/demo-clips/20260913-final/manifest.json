@@ -1,0 +1,843 @@
+{
+  "schemaVersion": 1,
+  "title": "KiroCrew recorded walkthroughs",
+  "generatedAt": "2026-09-13T18:31:24.950518+00:00",
+  "scenes": [
+    {
+      "id": "endpoint-reference",
+      "title": "One endpoint-control boundary",
+      "description": "Expand the preserved endpoint diagram, then return to the recorded ARM deployment view.",
+      "evidenceScope": "Architecture reference and previously recorded deployment evidence.",
+      "recordedAt": "2026-09-13T18:14:49.325Z",
+      "source": {
+        "kind": "browser-recording",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0.0,
+      "end": 24.84,
+      "duration": 24.84,
+      "cues": [
+        {
+          "time": 2.7,
+          "label": "Read the reference scope",
+          "detail": "The diagram describes the execution boundary. Its September 11 reference label remains visible.",
+          "evidence": "receipts/endpoint-validation.json"
+        },
+        {
+          "time": 6.5,
+          "label": "Inspect the single enclosure",
+          "detail": "Gateway, backend, workspace and endpoint controls remain in one box.",
+          "evidence": "receipts/endpoint-validation.json"
+        },
+        {
+          "time": 18.7,
+          "label": "Move to the ARM deployment",
+          "detail": "The next slide describes recorded ARM deployment evidence and marks the native MCP path as pending.",
+          "evidence": "receipts/endpoint-capture.json"
+        }
+      ],
+      "media": [
+        {
+          "url": "endpoint-reference/endpoint-reference.mp4",
+          "type": "video/mp4",
+          "bytes": 1823896,
+          "sha256": "992494ac45475d201b4fbce66ea8b0aa90741093ebf5e9a0a95c0e824cc0df37",
+          "duration": 24.84,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "endpoint-reference/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 116572,
+        "sha256": "95480ff54dad831f638d19259fa24a158bbef08feafb79735adcab86c6ba0a2d"
+      },
+      "contactSheet": {
+        "url": "endpoint-reference/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 126722,
+        "sha256": "cdac98203471c45dda13eb75b7c706a37650da85cb8c5d8bfbdbfd01a2a8f864"
+      },
+      "frames": [
+        {
+          "url": "endpoint-reference/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 22130,
+          "sha256": "6cbfbcd35c472e41071853e71ed729dbc0865ecfd8f99bed1caf14595ce40717",
+          "time": 0.9936
+        },
+        {
+          "url": "endpoint-reference/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 26242,
+          "sha256": "f0323554fdb573c60a30a224ffe07ae8b884796b9cdd322f1eba247215d69e31",
+          "time": 4.968
+        },
+        {
+          "url": "endpoint-reference/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 19191,
+          "sha256": "841ccba60f8ce0dca38a3a806b6dc988763a34bccbdae1dcc223d93aa81dbaf0",
+          "time": 9.4392
+        },
+        {
+          "url": "endpoint-reference/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 19164,
+          "sha256": "d5aadd8050d30ff96bce84fb1244d97df5b75968189a3fec77c15503e23f694e",
+          "time": 13.910400000000001
+        },
+        {
+          "url": "endpoint-reference/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 21680,
+          "sha256": "22c3d37a7e9ea3740094d6793b3cb856d51fe1bfb5ea4893228f72811ad9fd5e",
+          "time": 18.3816
+        },
+        {
+          "url": "endpoint-reference/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 22672,
+          "sha256": "a13b1b949289acc979872960971a8a8a8556b65a543608145286570d4a0e998c",
+          "time": 22.852800000000002
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "780594e6adc6764e6bb6d63cbc132017a7d71c82123a813b177eb8f6daadf50c",
+        "sourceDuration": 24.84,
+        "cut": {
+          "start": 0.0,
+          "end": 24.84
+        },
+        "recordedAt": "2026-09-13T18:14:49.325Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "admin-console",
+      "title": "Navigate the admin console",
+      "description": "Read the remote Gateway overview, inspect the selected backend, filter its sign-in error, and open observability.",
+      "evidenceScope": "Live owner-portal navigation. Native Kiro CLI authentication remains pending.",
+      "recordedAt": "2026-09-13T18:16:15.405Z",
+      "source": {
+        "kind": "browser-recording",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0.0,
+      "end": 23.24,
+      "duration": 23.24,
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Read the Gateway overview",
+          "detail": "The running Gateway reports uptime and zero completed sessions. This page shows the remote server nightly.",
+          "evidence": "receipts/preflight.json"
+        },
+        {
+          "time": 6.0,
+          "label": "Inspect the backend selection",
+          "detail": "Kiro CLI is selected. The GitHub card uses a separate KAS identity; the fresh CLI authentication check is false.",
+          "evidence": "receipts/preflight.json"
+        },
+        {
+          "time": 13.0,
+          "label": "Inspect the native startup failure",
+          "detail": "The log filter exposes the actual Kiro CLI not-logged-in error. No successful native turn is claimed.",
+          "evidence": "receipts/admin-light-capture.json"
+        },
+        {
+          "time": 19.0,
+          "label": "Open the telemetry app",
+          "detail": "Demo Observability combines the bounded Mac and EC2 collector samples.",
+          "evidence": "receipts/admin-light-capture.json"
+        }
+      ],
+      "media": [
+        {
+          "url": "admin-console/admin-console.mp4",
+          "type": "video/mp4",
+          "bytes": 1603479,
+          "sha256": "3f7a1934580373a5fe7d322473ea582d8dcf19d80bc8341cb44c3496b1fc0b89",
+          "duration": 23.24,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "admin-console/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 95614,
+        "sha256": "162286f9b42f49a71cb6bc501d037d30056e7611293e9c0328eada2b0028b91b"
+      },
+      "contactSheet": {
+        "url": "admin-console/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 105777,
+        "sha256": "a71ba8f9de24b69dcc6c4ba6dea932c2d13951dba352e181a30190703f2e06bf"
+      },
+      "frames": [
+        {
+          "url": "admin-console/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 14131,
+          "sha256": "4b28a9a37c8f23b93116a866b4c29ef6e63d38af61d82beb1b4631475a33cffa",
+          "time": 0.9296
+        },
+        {
+          "url": "admin-console/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 19673,
+          "sha256": "e09f5589e8423f6b41faa85473631fcc19be689df6cdb41894797c333fb94ef5",
+          "time": 4.648
+        },
+        {
+          "url": "admin-console/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 20967,
+          "sha256": "a760052721a2640db7baef2258170f581e3140d8a4f1147cc223c04332b5b99c",
+          "time": 8.831199999999999
+        },
+        {
+          "url": "admin-console/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 30509,
+          "sha256": "5e7ef1a255b77b2d6aa2bd5272242e36d59831ed2b4a1ff77cfc064c17d93850",
+          "time": 13.0144
+        },
+        {
+          "url": "admin-console/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 3483,
+          "sha256": "ad014abdbba344782f465285c3752c237d700739f5a917d9c92c43c6cb6141d3",
+          "time": 17.197599999999998
+        },
+        {
+          "url": "admin-console/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 19275,
+          "sha256": "86d60484f75756a6ca8c63806a63735ec48bc41b9415c413e9db260629daafc0",
+          "time": 21.3808
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "a86f0a3a50882adaf0e9af92f2322549f4608c9aabade5e07b60b54cf0b85f10",
+        "sourceDuration": 23.24,
+        "cut": {
+          "start": 0.0,
+          "end": 23.24
+        },
+        "recordedAt": "2026-09-13T18:16:15.405Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "client-server-telemetry",
+      "title": "Compare client and server telemetry",
+      "description": "Refresh stored samples, expand process measurements, and filter real collection events by source.",
+      "evidenceScope": "Live custom telemetry dashboard. Collection events are separate from Crew security audit events.",
+      "recordedAt": "2026-09-13T18:09:22.466Z",
+      "source": {
+        "kind": "browser-recording",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0.0,
+      "end": 22.52,
+      "duration": 22.52,
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Compare both sources",
+          "detail": "The client reports Local Gateway off while the EC2 Gateway and MCP checks are healthy. Sample times are displayed in the browser time zone.",
+          "evidence": "receipts/preflight.json"
+        },
+        {
+          "time": 3.0,
+          "label": "Refresh stored samples",
+          "detail": "Refresh reads the latest stored samples. The collectors run separately every 60 seconds.",
+          "evidence": "receipts/telemetry-capture.json"
+        },
+        {
+          "time": 5.5,
+          "label": "Inspect Mac process metrics",
+          "detail": "The expanded client measurements describe local processes and probes.",
+          "evidence": "receipts/telemetry-capture.json"
+        },
+        {
+          "time": 9.0,
+          "label": "Inspect EC2 services",
+          "detail": "The server detail adds Gateway and MCP main-process CPU and memory.",
+          "evidence": "receipts/telemetry-capture.json"
+        },
+        {
+          "time": 12.5,
+          "label": "Filter client events",
+          "detail": "Client filtering retains health changes and collection errors, including recorded historical events.",
+          "evidence": "receipts/telemetry-capture.json"
+        },
+        {
+          "time": 16.0,
+          "label": "Filter server events",
+          "detail": "The table now shows only server collection events.",
+          "evidence": "receipts/telemetry-capture.json"
+        },
+        {
+          "time": 20.0,
+          "label": "Return to all events",
+          "detail": "All restores both sources. These fixed collection labels exclude prompts and credentials.",
+          "evidence": "receipts/telemetry-capture.json"
+        }
+      ],
+      "media": [
+        {
+          "url": "client-server-telemetry/client-server-telemetry.mp4",
+          "type": "video/mp4",
+          "bytes": 891208,
+          "sha256": "d932d6c3fd7011142e5cfdde5e58a625ab30e9f6b8dab9d93212f469411b85bc",
+          "duration": 22.52,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "client-server-telemetry/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 134425,
+        "sha256": "c557e57d2186620e6200490d46b3eee4ed984b6e26162717e616ba9b6c07e6df"
+      },
+      "contactSheet": {
+        "url": "client-server-telemetry/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 113864,
+        "sha256": "908072db7ca152898f643af70e6c68c705b55bac2e812effac7c7f738002f3b6"
+      },
+      "frames": [
+        {
+          "url": "client-server-telemetry/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 19502,
+          "sha256": "cce96904357a54925dd9883ce295b847a306cdae9b83d16b4613cf38ee7577a3",
+          "time": 0.9008
+        },
+        {
+          "url": "client-server-telemetry/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 19808,
+          "sha256": "adc59fa8314432e02813e2fafcf6c53f16b3cdeb9104abdb5d60c8f72504fa54",
+          "time": 4.5040000000000004
+        },
+        {
+          "url": "client-server-telemetry/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 18866,
+          "sha256": "302401577a8c0f031f7368096e0a3eb848016ff779fc48342d77c799589b0182",
+          "time": 8.5576
+        },
+        {
+          "url": "client-server-telemetry/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 19831,
+          "sha256": "9c9cec0e079d5a73ac5779afe1508ec5c53e7962d9dac71d3d07cdaf6929a803",
+          "time": 12.6112
+        },
+        {
+          "url": "client-server-telemetry/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 17531,
+          "sha256": "36c620da1b25c3e30954bf5406bec38de543d9df93dd2cad8c5147dabd9c3c22",
+          "time": 16.6648
+        },
+        {
+          "url": "client-server-telemetry/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 19728,
+          "sha256": "0fa1b2f5547dbc543da10187913e6bf81d4e669fab687fe5b4d887184d46244c",
+          "time": 20.7184
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "af81ef7310f567a83bfa9d5e667ef5adec52c3ff6154155d60b8a1eb71847a10",
+        "sourceDuration": 22.52,
+        "cut": {
+          "start": 0.0,
+          "end": 22.52
+        },
+        "recordedAt": "2026-09-13T18:09:22.466Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "gateway-instrumentation",
+      "title": "Inspect native Gateway telemetry",
+      "description": "Read the configured metrics switch, then inspect Gateway instruments and startup measurements.",
+      "evidenceScope": "Live native Gateway instrumentation. Zero completed backend turns; separate custom collectors provide the client/server view.",
+      "recordedAt": "2026-09-13T18:16:52.471Z",
+      "source": {
+        "kind": "browser-recording",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0.0,
+      "end": 20.68,
+      "duration": 20.68,
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Read the telemetry settings",
+          "detail": "Record metrics is enabled. The environment disables anonymous reporting. This take does not change either setting.",
+          "evidence": "receipts/preflight.json"
+        },
+        {
+          "time": 6.5,
+          "label": "Inspect Gateway instruments",
+          "detail": "Request and process instruments contain measurements. The top summary still shows zero completed turns.",
+          "evidence": "receipts/native-telemetry-light-capture.json"
+        },
+        {
+          "time": 12.5,
+          "label": "Inspect startup measurements",
+          "detail": "The Startup tab displays the Gateway instrumentation already collected by this running server.",
+          "evidence": "receipts/native-telemetry-light-capture.json"
+        },
+        {
+          "time": 18.0,
+          "label": "Return to latency",
+          "detail": "The Latency tab restores the instruments view.",
+          "evidence": "receipts/native-telemetry-light-capture.json"
+        }
+      ],
+      "media": [
+        {
+          "url": "gateway-instrumentation/gateway-instrumentation.mp4",
+          "type": "video/mp4",
+          "bytes": 1057222,
+          "sha256": "b9636107f91a45d88c1548db18c06db67f0ddce60c9ce6bbb8dee864084796f4",
+          "duration": 20.68,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "gateway-instrumentation/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 139023,
+        "sha256": "80f5373f81e57d0fdb9c5cc5d27afd65c26b529d0128197eead35db69b93c081"
+      },
+      "contactSheet": {
+        "url": "gateway-instrumentation/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 96429,
+        "sha256": "824c07486f32a4c9cb18d78af2dae1957ad10d5be65ace3bed129a131011a279"
+      },
+      "frames": [
+        {
+          "url": "gateway-instrumentation/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 18011,
+          "sha256": "5a55858abd3f704500d8923445423f72dd9b403af1a7c05dcff97e22a7a24183",
+          "time": 0.8272
+        },
+        {
+          "url": "gateway-instrumentation/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 18001,
+          "sha256": "306a0c2410334272dbad9e1678ce900a595e87dd495d8889771f8f3a82578124",
+          "time": 4.136
+        },
+        {
+          "url": "gateway-instrumentation/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 17559,
+          "sha256": "9b4ee0e8cb811230302e7ab4109f85c4b94e7b8441034d43f1be7d5b516810e9",
+          "time": 7.8584
+        },
+        {
+          "url": "gateway-instrumentation/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 12190,
+          "sha256": "68f1d1256f90071bc5ff66508b85677ea7cc73a2bce96221e4bd2b2deb115161",
+          "time": 11.580800000000002
+        },
+        {
+          "url": "gateway-instrumentation/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 14708,
+          "sha256": "72823e2af86ff797e0ef207871a683529d3cce5e6a37d751d8a7c2d748a1bd84",
+          "time": 15.3032
+        },
+        {
+          "url": "gateway-instrumentation/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 17642,
+          "sha256": "61e742776e26dd18cf0e3545e70713067a256f2feea894502f0be8427bf7accb",
+          "time": 19.0256
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "0cbe3222a6af50a5f480a9301bcd2026964a9f95f9eadce2359029e77b7d1abd",
+        "sourceDuration": 20.68,
+        "cut": {
+          "start": 0.0,
+          "end": 20.68
+        },
+        "recordedAt": "2026-09-13T18:16:52.471Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "direct-mcp-aws",
+      "title": "Follow a direct MCP request to AWS",
+      "description": "Start the bounded probe, read its three outcomes, and inspect the fresh receipt.",
+      "evidenceScope": "Actual direct MCP/AWS execution from a standalone operator screen. Native Kiro CLI acceptance remains pending.",
+      "recordedAt": "2026-09-13T18:21:23.913Z",
+      "source": {
+        "kind": "browser-recording",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0.0,
+      "end": 25.56,
+      "duration": 25.56,
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Read the execution scope",
+          "detail": "The fixed command invokes the EC2 MCP service directly. It does not run through a native Kiro CLI turn.",
+          "evidence": "receipts/direct-probe-capture.json"
+        },
+        {
+          "time": 3.7,
+          "label": "Run the bounded probe",
+          "detail": "The button starts the actual command. The following outcomes come from its completed result.",
+          "evidence": "receipts/direct-mcp-aws.json"
+        },
+        {
+          "time": 7.0,
+          "label": "Compare three outcomes",
+          "detail": "S3 returned the expected 55-byte object and digest. MCP rejected a disallowed tool before AWS dispatch. IAM returned AccessDenied with an AWS request ID.",
+          "evidence": "receipts/direct-mcp-aws.json"
+        },
+        {
+          "time": 16.0,
+          "label": "Inspect the receipt",
+          "detail": "The receipt records timestamps, trace IDs, the object digest and AWS request IDs. Native backend verification remains false.",
+          "evidence": "receipts/direct-mcp-aws.json"
+        },
+        {
+          "time": 22.0,
+          "label": "Return to the result cards",
+          "detail": "These outcomes establish the bounded direct probe only.",
+          "evidence": "receipts/direct-mcp-aws.json"
+        }
+      ],
+      "media": [
+        {
+          "url": "direct-mcp-aws/direct-mcp-aws.mp4",
+          "type": "video/mp4",
+          "bytes": 1187608,
+          "sha256": "9f8de84c75c69b1ac5ceef2e18a965d1344827bdee862f1734dc4916bf909da7",
+          "duration": 25.56,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "direct-mcp-aws/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 114602,
+        "sha256": "fdbb1759dbbff99f3102885c7d98d6974c3bd3d4b0998b5d07653c58bfb59bf5"
+      },
+      "contactSheet": {
+        "url": "direct-mcp-aws/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 128123,
+        "sha256": "2acae7533733ac74e787d0143d8ce4935fbd6a817e31e886349b723db4a6bf91"
+      },
+      "frames": [
+        {
+          "url": "direct-mcp-aws/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 18726,
+          "sha256": "8c7edeed29695599f2054b297f07a690b3641a77dbe06d6a8fe8bb4fafd995f7",
+          "time": 1.0224
+        },
+        {
+          "url": "direct-mcp-aws/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 17619,
+          "sha256": "a951ae1b3ccadbedda58d23d40d0b2aed8f3bc43d3d562081c83f2b8e28030ef",
+          "time": 5.112
+        },
+        {
+          "url": "direct-mcp-aws/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 25516,
+          "sha256": "6207e7571cadaa6929d6646d2d8c7c9e9f33313c18ec444fe9cb646b231d3ff8",
+          "time": 9.7128
+        },
+        {
+          "url": "direct-mcp-aws/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 25473,
+          "sha256": "adad1d5ea985f820eaead87492a122af599006ff6066558c7a56c1a32efac2ca",
+          "time": 14.313600000000001
+        },
+        {
+          "url": "direct-mcp-aws/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 21861,
+          "sha256": "52bdc3248b11e082c0f755352dfbf8331d4c837dffceb7f64cebb0a9ca48569a",
+          "time": 18.9144
+        },
+        {
+          "url": "direct-mcp-aws/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 25584,
+          "sha256": "7ff6a615d0046c5b2b86b26e1e612459506179d2280d16ce53d57b192dcfb359",
+          "time": 23.5152
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "1517126754e6902caf0c76a01373a8f35efc8c20d5b7f8f31722fc83df907509",
+        "sourceDuration": 25.56,
+        "cut": {
+          "start": 0.0,
+          "end": 25.56
+        },
+        "recordedAt": "2026-09-13T18:21:23.913Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "synthetic-controls",
+      "title": "Rehearse the synthetic endpoint controls",
+      "description": "Run the isolated control test runner, inspect the results, and open its receipt.",
+      "evidenceScope": "Actual execution of a local synthetic test runner. Approval is scripted; no native approval UI, backend MCP or AWS call occurs.",
+      "recordedAt": "2026-09-13T18:23:04.179Z",
+      "source": {
+        "kind": "browser-recording",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0.0,
+      "end": 45.8,
+      "duration": 45.8,
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Read the rehearsal scope",
+          "detail": "This disposable local run models endpoint controls. It does not verify native KiroCrew enforcement.",
+          "evidence": "receipts/synthetic-capture.json"
+        },
+        {
+          "time": 4.2,
+          "label": "Run the frozen control test runner",
+          "detail": "The button invokes the existing isolated rehearsal. The recorded wait preserves the command\u2019s actual runtime.",
+          "evidence": "receipts/synthetic-controls.json"
+        },
+        {
+          "time": 28.0,
+          "label": "Inspect the control results",
+          "detail": "The test runner covers allow, scripted approval, deny, protected paths, command gating, Policy/Profile intersection and redaction.",
+          "evidence": "receipts/synthetic-controls.json"
+        },
+        {
+          "time": 32.0,
+          "label": "Read the SEL checks",
+          "detail": "The test runner verifies 7 of 7 entries, detects the tampered fixture at 6 of 7, then restores and verifies 7 of 7.",
+          "evidence": "receipts/synthetic-controls.json"
+        },
+        {
+          "time": 36.5,
+          "label": "Inspect the command receipt",
+          "detail": "The fresh receipt identifies the isolated synthetic run and keeps native backend verification false.",
+          "evidence": "receipts/synthetic-controls.json"
+        },
+        {
+          "time": 42.0,
+          "label": "Return to the rehearsal results",
+          "detail": "Use this scene to explain the controls while keeping native runtime acceptance pending.",
+          "evidence": "receipts/synthetic-controls.json"
+        }
+      ],
+      "media": [
+        {
+          "url": "synthetic-controls/synthetic-controls.mp4",
+          "type": "video/mp4",
+          "bytes": 1735170,
+          "sha256": "480a0fa9b1037e88fd56494d6d54a48f34ba4e400b2cfd840cffa77005975137",
+          "duration": 45.8,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "synthetic-controls/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 141770,
+        "sha256": "e3dcae738551ae3d99f1b80ab2f0b63bd3527a1456ef32b7f8a17b964ff4b9fb"
+      },
+      "contactSheet": {
+        "url": "synthetic-controls/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 135952,
+        "sha256": "33a212f16287c7d8573548c0670cdcf6bbfd662f765748f1e2274888dc576c2a"
+      },
+      "frames": [
+        {
+          "url": "synthetic-controls/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 22022,
+          "sha256": "9bb8376369c88889ac40f872ab260f3c207ca359d84b04717392a1268e3b6536",
+          "time": 1.8319999999999999
+        },
+        {
+          "url": "synthetic-controls/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 22065,
+          "sha256": "9a2e4e74bb57d968d7d49cd9b9f9c69c00d0bc250339f022742636cb001b4b72",
+          "time": 9.16
+        },
+        {
+          "url": "synthetic-controls/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 22204,
+          "sha256": "9ddb1b11aa29895bdd1674b74f57238c71d419e8258d175e1a3785846fab00d5",
+          "time": 17.404
+        },
+        {
+          "url": "synthetic-controls/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 22083,
+          "sha256": "54b10206e4351e1eade426aa9b2b2ad167ba266525939d2e952d43eb09a1993b",
+          "time": 25.648
+        },
+        {
+          "url": "synthetic-controls/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 24989,
+          "sha256": "d4fdd23a989bde0872af3134b3d4ed136a5bf4a760b2317f8cee32fde494b84c",
+          "time": 33.891999999999996
+        },
+        {
+          "url": "synthetic-controls/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 25066,
+          "sha256": "96244d17386c754906f1a89103fe68b1d29d82514020ce6e462288a6aa74e40b",
+          "time": 42.135999999999996
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "1d08a166621e906bc0a65552f985194500df298f996d838f0cb25294cc1ce6b2",
+        "sourceDuration": 45.8,
+        "cut": {
+          "start": 0.0,
+          "end": 45.8
+        },
+        "recordedAt": "2026-09-13T18:23:04.179Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "url": "receipts/endpoint-validation.json",
+      "type": "application/json",
+      "bytes": 2855,
+      "sha256": "041e35f90d5205c0c82c9b63f8bcd9d7132687fd2c990bac777e0f4435627565"
+    },
+    {
+      "url": "receipts/endpoint-capture.json",
+      "type": "application/json",
+      "bytes": 1314,
+      "sha256": "e2fb1589f468d3a1a7caee4c5f3ac8ca1e2c9a48b9234b32af1679cc7fb77e2d"
+    },
+    {
+      "url": "receipts/preflight.json",
+      "type": "application/json",
+      "bytes": 1885,
+      "sha256": "cde547a48312b86623d095583da5fa28afd5199a16ef658f279ae1cb945ee2a5"
+    },
+    {
+      "url": "receipts/admin-light-capture.json",
+      "type": "application/json",
+      "bytes": 544,
+      "sha256": "69c88aacf579e248132e1b398c12ac0f4117f2d0c7e6bc94adfc843437922304"
+    },
+    {
+      "url": "receipts/telemetry-capture.json",
+      "type": "application/json",
+      "bytes": 826,
+      "sha256": "a533d6070505c348a376fd7b8a64197d1bd07754bd3a71d32ceaf04ec6438f21"
+    },
+    {
+      "url": "receipts/native-telemetry-light-capture.json",
+      "type": "application/json",
+      "bytes": 563,
+      "sha256": "be3abea48073f392189dc413c7960cd350df00aacc8bc26de32d19d10c1adc3f"
+    },
+    {
+      "url": "receipts/direct-probe-capture.json",
+      "type": "application/json",
+      "bytes": 682,
+      "sha256": "f789731452dd9e3019b3646022bc514ddd455b8d039154b6217527f48fbdd79d"
+    },
+    {
+      "url": "receipts/direct-mcp-aws.json",
+      "type": "application/json",
+      "bytes": 3302,
+      "sha256": "6412c535f5ba266018e31401d824fe22ff6c2c467691c277f24f965b051c0119"
+    },
+    {
+      "url": "receipts/synthetic-capture.json",
+      "type": "application/json",
+      "bytes": 707,
+      "sha256": "0fe2899a19b6d944e5195e73bfe9632b09bfa17aa556eef41ac7929809d40246"
+    },
+    {
+      "url": "receipts/synthetic-controls.json",
+      "type": "application/json",
+      "bytes": 2831,
+      "sha256": "36c587f421aa5247123c5632f92ba5e9865422112b082d1f89c928fb8fa787f1"
+    }
+  ]
+}

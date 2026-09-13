@@ -1,0 +1,300 @@
+{
+  "title": "KiroCrew endpoint and governance control map",
+  "baseline": "0.7.0.dev20260911060948",
+  "commit": "fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482",
+  "baselineNote": "Diagram and source-link baseline: verified September 11 nightly. The local rehearsal uses the separately fingerprinted user-installed September 12 nightly; see continuation evidence.",
+  "layers": [
+    {
+      "code": "E",
+      "title": "Managed endpoint baseline",
+      "owner": "Enterprise",
+      "scope": "All processes on the execution host",
+      "body": "MDM and EDR where supported, managed OS configuration, disk encryption, device identity, restricted administration and network egress establish the host baseline.",
+      "limit": "These are enterprise controls. Crew is not an endpoint detection and response product. Protect the machine where execution happens; a remote Crew service does not govern independently launched laptop agents.",
+      "demo": "Name the execution host and show its management, identity and network posture.",
+      "sources": []
+    },
+    {
+      "code": "L0",
+      "title": "OS sandbox",
+      "owner": "Crew + OS",
+      "scope": "Agent subprocess tree and descendants",
+      "body": "The sandbox wrapper confines agent processes using platform-native facilities. Linux and macOS have different implementations; credential-path visibility and environment handling are part of the launch boundary. A policy floor can require a minimum sandbox level.",
+      "limit": "Inspect the effective launch posture for the exact OS and backend. Configuration, native backend sandbox ownership, unavailable facilities and explicit unconfined allowances affect the result. VM isolation is a separate outer boundary.",
+      "demo": "Show the effective sandbox mode and one harmless denied access from inside the agent process.",
+      "sources": [
+        {
+          "label": "sandbox.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/sandbox.py"
+        },
+        {
+          "label": "platform/governance.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/platform/governance.py"
+        }
+      ]
+    },
+    {
+      "code": "L1",
+      "title": "Filesystem and protected configuration",
+      "owner": "Crew",
+      "scope": "Tool requests that reach the path gate",
+      "body": "Resolved-path checks protect sensitive reads and writes. A wider write-protected set covers configuration. Keystone files include policy and trust records that the agent must not be able to rewrite to authorize itself.",
+      "limit": "Path checks mediate known file/tool paths. Shell, imported executables and independent host processes need OS-level confinement as well. A privileged host operator remains outside the agent threat boundary.",
+      "demo": "Attempt a read of a synthetic protected path, then an attempted change to a protected policy or trust record.",
+      "sources": [
+        {
+          "label": "security/paths.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/security/paths.py"
+        },
+        {
+          "label": "hooks.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/hooks.py"
+        },
+        {
+          "label": "platform/governance.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/platform/governance.py"
+        }
+      ]
+    },
+    {
+      "code": "L2",
+      "title": "Commands and exfiltration shapes",
+      "owner": "Crew",
+      "scope": "PreToolUse decisions over actual tool arguments",
+      "body": "The command gate evaluates denied operations, shell command forms and exfiltration checks before trust or approval shortcuts at that gate. Enterprise command pins and companion additions constrain operator-configurable rules.",
+      "limit": "Built-in denied rules are default-on but configurable; do not describe the entire shipped catalog as an immutable floor. Suspicious bash patterns in the history scan are advisory, a different control from execution blocking.",
+      "demo": "Use a harmless command shaped to match a known enabled deny rule and show the rule and decision.",
+      "sources": [
+        {
+          "label": "security/denied_rules.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/security/denied_rules.py"
+        },
+        {
+          "label": "security/exfil.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/security/exfil.py"
+        },
+        {
+          "label": "platform/security_authority.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/platform/security_authority.py"
+        },
+        {
+          "label": "hooks.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/hooks.py"
+        }
+      ]
+    },
+    {
+      "code": "L3",
+      "title": "Input and response validation",
+      "owner": "Crew",
+      "scope": "Registered MCP schemas and API boundaries",
+      "body": "Registered schemas enforce types, bounded lengths, enum choices and normalization. Responses can be sanitized and truncated to limit oversized or malformed inputs and outputs.",
+      "limit": "Coverage is per tool. In this nightly, some dispatchers pass unregistered tools to their handler without central schema validation; the computer-use dispatcher rejects unregistered tools. Validation is not authorization.",
+      "demo": "Submit malformed arguments to a known schema-backed tool and show rejection before its handler runs.",
+      "sources": [
+        {
+          "label": "validation.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/validation.py"
+        },
+        {
+          "label": "security_posture.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/security_posture.py"
+        }
+      ]
+    },
+    {
+      "code": "L4",
+      "title": "Output redaction",
+      "owner": "Crew",
+      "scope": "Covered human-facing and external output sinks",
+      "body": "Credential-pattern scanners, exfiltration-URL checks and streaming redaction reduce sensitive output at registered sinks. The posture registry identifies concrete coverage instead of a fixed marketing count.",
+      "limit": "Pattern recognition is not general-purpose DLP and cannot guarantee detection of arbitrary secrets, encodings or semantic leakage. Coverage varies by sink; transport and downstream data controls remain necessary.",
+      "demo": "Use fake credentials and a synthetic exfiltration URL; show the redacted result without handling real secrets.",
+      "sources": [
+        {
+          "label": "security/redaction.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/security/redaction.py"
+        },
+        {
+          "label": "security/exfil.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/security/exfil.py"
+        },
+        {
+          "label": "security_posture.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/security_posture.py"
+        }
+      ]
+    },
+    {
+      "code": "L5",
+      "title": "Security Event Log",
+      "owner": "Crew + enterprise collector",
+      "scope": "Recorded security decisions and activity",
+      "body": "SEL stores structured events with an HMAC integrity chain. Its signing material is separated from the log directory, and rotated segments remain individually verifiable.",
+      "limit": "A valid chain does not prove complete event capture, immutable retention or resistance to a fully privileged host compromise. Collector integration and external retention are separate deployment work. SSM port forwarding does not record tool payloads.",
+      "demo": "Correlate a denied action with its SEL event, run verification, and identify what reaches the external collector.",
+      "sources": [
+        {
+          "label": "sel.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/sel.py"
+        },
+        {
+          "label": "security_posture.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/security_posture.py"
+        }
+      ]
+    },
+    {
+      "code": "G",
+      "title": "Policy and profile governance",
+      "owner": "Crew",
+      "scope": "Cross-cutting ceiling and narrower session scopes",
+      "body": "Effective permissions compose Policy \u2229 Profile. Profiles bind to relevant surfaces, apps or tasks and may narrow the policy ceiling. Scopes cover tools, MCP, commands, paths, channels, approval posture, sandbox floors, backend selection and capabilities.",
+      "limit": "A policy declaration is meaningful only where its enforcer is connected. Backend admission and live session retirement are different operations. The presence of a governance scope alone does not prove a remote integration is deployed.",
+      "demo": "Show policy explain for the same operation under two profiles and identify the limiting rule.",
+      "sources": [
+        {
+          "label": "platform/governance.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/platform/governance.py"
+        },
+        {
+          "label": "platform/governance_profiles.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/platform/governance_profiles.py"
+        },
+        {
+          "label": "agent_backend_governance.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/agent_backend_governance.py"
+        }
+      ]
+    },
+    {
+      "code": "A",
+      "title": "Access and surface controls",
+      "owner": "Crew + access provider",
+      "scope": "Browser, dashboard, messaging and remote transport",
+      "body": "Dashboard token authentication, origin/CSRF checks and Host validation protect the browser-facing boundary. Messaging surfaces apply their own owner, user and origin checks. SSH/SSM or MicroVM endpoint authentication protects a separate transport boundary.",
+      "limit": "Authorization to open a tunnel or port does not automatically become per-user Crew authorization or permission to call downstream tools. A logical conversation session is not necessarily a separate OS process.",
+      "demo": "Show the entry identity, Crew session identity and downstream workload identity as three separate facts.",
+      "sources": [
+        {
+          "label": "security_posture.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/security_posture.py"
+        },
+        {
+          "label": "messaging/session_trust.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/messaging/session_trust.py"
+        }
+      ]
+    },
+    {
+      "code": "P",
+      "title": "Approvals and backend enforcement",
+      "owner": "Crew + selected backend",
+      "scope": "Permission callbacks and pre-tool hooks",
+      "body": "Crew brokers approval decisions for requests that reach its boundary. Its hard path, command and governance decisions precede approval/trust shortcuts there. Managed backend configuration also removes unsafe gate-skipping approval entries where applicable.",
+      "limit": "Native backend auto-approval can execute without a Crew permission callback. An observational tool event received after execution is not a prevention point. Rehearse enforcement with the actual backend, version and launch settings.",
+      "demo": "Demonstrate allow, ask and deny on the chosen backend, then explain which event occurs before execution.",
+      "sources": [
+        {
+          "label": "hooks.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/hooks.py"
+        },
+        {
+          "label": "platform/governance.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/platform/governance.py"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Credentials and environment",
+      "owner": "Crew + OS + IAM",
+      "scope": "Process launch and service authority",
+      "body": "Launch handling scrubs sensitive inherited environment variables and sandbox policy limits access to credential locations. Internal credential access follows explicit privileged paths. External MCP services should use narrowly scoped workload identities.",
+      "limit": "A per-session IAM role is still usable by code that can obtain its credentials. An unprivileged Unix user does not by itself isolate an EC2 instance profile. Do not put control-plane or broad target-system authority in the agent environment.",
+      "demo": "Inspect environment names and role permissions without printing credential values.",
+      "sources": [
+        {
+          "label": "sandbox.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/sandbox.py"
+        },
+        {
+          "label": "hooks.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/hooks.py"
+        },
+        {
+          "label": "security/paths.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/security/paths.py"
+        }
+      ]
+    },
+    {
+      "code": "R",
+      "title": "Resource protection",
+      "owner": "Crew + OS + cloud runtime",
+      "scope": "Process, memory and descriptor usage",
+      "body": "Launch wrappers can apply Linux cgroup process/memory bounds and resource limits. Cloud compute sizing, runtime ceilings and task termination add separate outer limits.",
+      "limit": "Availability and strength are platform dependent. Resource bounds reduce exhaustion; they do not authorize a tool operation or guarantee that a provider billing budget is enforced.",
+      "demo": "Show configured limits and the effective host mechanism; use a small controlled resource exercise.",
+      "sources": [
+        {
+          "label": "sandbox.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/sandbox.py"
+        }
+      ]
+    },
+    {
+      "code": "T",
+      "title": "Project skill trust and agent context",
+      "owner": "Crew + operator",
+      "scope": "Project-supplied skills, memory and steering",
+      "body": "Project skill loading has a consent record tied to the canonical project directory, stored in the protected trust area. Memory, steering, lessons and skills then supply context to the selected backend.",
+      "limit": "Consenting to load a skill is not proof its instructions are safe. Skills, plans and memory are not ACLs; prompt injection remains a reason to enforce the lower execution layers.",
+      "demo": "Open an untrusted sample project and show the project-skill trust decision.",
+      "sources": [
+        {
+          "label": "skill_trust.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/skill_trust.py"
+        }
+      ]
+    },
+    {
+      "code": "X",
+      "title": "Apps, hooks and unattended work",
+      "owner": "Crew",
+      "scope": "Gateway services and extension capabilities",
+      "body": "App manifests declare permissions checked at installation and runtime. Governance capabilities cover script hooks, spawning, memory writes, browsing, cron, messaging and other extensions. These constrain the Gateway services that keep work running.",
+      "limit": "A workflow, scheduler or subagent does not automatically create a new host isolation boundary. Each dispatch path and extension must honor the applicable permissions and runtime controls.",
+      "demo": "Show one disabled capability and an app permission declaration, then a blocked attempt through that path.",
+      "sources": [
+        {
+          "label": "apps/permissions.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/apps/permissions.py"
+        },
+        {
+          "label": "hooks.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/hooks.py"
+        },
+        {
+          "label": "platform/governance.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/platform/governance.py"
+        }
+      ]
+    },
+    {
+      "code": "M",
+      "title": "MCP and target-service governance",
+      "owner": "External + Crew",
+      "scope": "Routed remote calls and target APIs",
+      "body": "Crew governs known MCP references where its checks apply. A separately deployed LiteLLM/MCP tier can add caller authentication, server/tool grants and service credentials; target AWS IAM or SaaS authorization then decides whether the resource action is allowed.",
+      "limit": "The proposed external gateway governs only traffic routed through it. Direct shell/SDK/network access needs separate confinement. Caller OAuth identity and downstream AWS workload credentials are not interchangeable.",
+      "demo": "Demonstrate gateway tool denial separately from downstream IAM denial.",
+      "sources": [
+        {
+          "label": "platform/governance.py",
+          "url": "https://github.com/kirodotdev/KiroCrew/blob/fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482/src/kiro_crew/platform/governance.py"
+        }
+      ]
+    }
+  ]
+}

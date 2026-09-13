@@ -1,0 +1,6 @@
+{
+  "host_fingerprint": "SHA256:g/0EOkKN45cF4achDY/SjpypiedVkMrylANDd/J2Ul8",
+  "verified_against": "AWS authenticated EC2 console output for i-020eb373045b56586",
+  "private_key_transferred": false,
+  "ssh_config_backup": null
+}

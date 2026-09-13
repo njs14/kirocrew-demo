@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-09-13T03:46:05.011977+00:00",
+  "visual_review": "passed",
+  "reviewer": "Codex author, image-capable inspection",
+  "artifact": {
+    "path": "output/kirocrew-demo.pptx",
+    "sha256": "a6cc6e3272cb337c5b4c40cefd61b0042d4d41c5877e3d332ac41b8d1a164f0a",
+    "bytes": 366311
+  },
+  "method": "Imported finalized PPTX through artifact-tool, rendered and inspected all seven slides.",
+  "native_powerpoint_playback_verified": false,
+  "observations": [
+    "Headings, body text and native tables fit without clipping.",
+    "Endpoint remains one detailed box.",
+    "Slide 5 uses topology overview; presenter transitions to full browser view for details.",
+    "Speaker notes preserve installed-package, pinned-source and cloud-evidence boundaries."
+  ],
+  "renders": [
+    {
+      "path": "output/slides/slide-1.png",
+      "sha256": "811d676cd561f71a404225b13cb279fa7000c5bd7bf180fe0c17b372f56e26d8",
+      "bytes": 61868
+    },
+    {
+      "path": "output/slides/slide-2.png",
+      "sha256": "8a2052147008c5a258402ff9cc7dc6f056a8c72f70eb4cf2d68cd7952c196bca",
+      "bytes": 164391
+    },
+    {
+      "path": "output/slides/slide-3.png",
+      "sha256": "c54a78d5825a7d8db94260adc22ab9be5e9601c287a03efbf48e7285c846d912",
+      "bytes": 94318
+    },
+    {
+      "path": "output/slides/slide-4.png",
+      "sha256": "1164467987afdbbdcd2bbba4b881416c833cc3569f8322373b53a9686b9b3938",
+      "bytes": 109823
+    },
+    {
+      "path": "output/slides/slide-5.png",
+      "sha256": "35da6ac791ff76ec9987a2fbe7d429777c84f1c4ffac28cedd0a79389e5e7c43",
+      "bytes": 145715
+    },
+    {
+      "path": "output/slides/slide-6.png",
+      "sha256": "861ea8145332462d34f7291d099f10f74c16215f216c3ab3b5ac19de8d6e21ba",
+      "bytes": 102155
+    },
+    {
+      "path": "output/slides/slide-7.png",
+      "sha256": "3457c4fea397bb7c027743508f5cfcd5c1a24c8f05cca0747d64603a60a606bc",
+      "bytes": 100769
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-09-13T05:07:37.721170+00:00",
+  "reviewer": "Codex deployment_review subagent; bounded final documentation and link review",
+  "status": "no_remaining_blocking_findings",
+  "document_sha256": {
+    "README.md": "3b7401f7da1b8d50af4f00c5bfd2048e200e64a3505a3c832afa2d3ec08ca31e",
+    "WALKTHROUGH.md": "fc1ead472cf5089fead3392ab5b04319201e52dccec715455e9d56a1cfcb39c2",
+    "WALKTHROUGH-EC2.md": "fc1ead472cf5089fead3392ab5b04319201e52dccec715455e9d56a1cfcb39c2",
+    "kirocrew-ec2-notes.md": "636e68701916e10292bed9e329143277d5783c0e28318c6b0e435cf6a3574206",
+    "scripts/EC2-LOGIN.md": "0e9d0609071f0f424f02d997e186516853c809afcb1782f4adbf3b66b0571ac4"
+  },
+  "resolved_findings": [
+    {
+      "id": "four-tool-inventory-scope",
+      "path": "WALKTHROUGH.md",
+      "also_applies_to": "WALKTHROUGH-EC2.md",
+      "status": "resolved",
+      "resolution": "The demo MCP service exposes four bounded tools; approve only the requested fixed operation."
+    }
+  ],
+  "open_findings": [],
+  "local_markdown_link_check": {
+    "checked": 33,
+    "missing": 0,
+    "links": [
+      {
+        "source": "README.md",
+        "target": "output/kirocrew-ec2-demo.pptx",
+        "exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "kirocrew-demo-live.html",
+        "exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "WALKTHROUGH.md",
+        "exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "kirocrew-ec2-notes.md",
+        "exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "infrastructure/RUNBOOK.md",
+        "exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "infrastructure/ec2-demo.json",
+        "exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "HANDOFF.md",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/client-runtime-verification.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "infrastructure/ec2-demo.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/security-group.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/ssh-verification.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/deployment-final-review.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/iam-demo-policy.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/mcp-live-receipt.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/mcp-live-audit.jsonl",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/walkthrough-direct-probe.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/primary-mcp-tools.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "infrastructure/mcp-enforcement/server.py",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "scripts/native-backend-demo.py",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/operator-scripts-review.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "scripts/EC2-LOGIN.md",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/ec2-login-setup.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/backend-login-status.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/nightly/installed-nightly-verification.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/deployed-nightly-verification.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/linux-repack.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/kiro-cli-artifact.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/t3a-small-pricing.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/aws/gp3-pricing.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "infrastructure/RUNBOOK.md",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/council/candidate-v3/council-verified-receipt.json",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/council/candidate-v3/DECISIONS.md",
+        "exists": true
+      },
+      {
+        "source": "kirocrew-ec2-notes.md",
+        "target": "evidence/slides/kirocrew-ec2-demo/no-ai-slop.md",
+        "exists": true
+      }
+    ]
+  },
+  "walkthrough_files_identical": true,
+  "deck_check": {
+    "path": "output/kirocrew-ec2-demo.pptx",
+    "sha256": "eaf91801fa8f43e2192df5f229b9d7ef677b9d49a6f9552a629c43b5e6113a46",
+    "finalization_path": "evidence/slides/kirocrew-ec2-demo/finalization.json",
+    "finalization_sha256": "5be5d3f00354630006c7853b16c050c380c96a4320a20d9a8fe3ba17a286fe58",
+    "matches_finalization_sha256": true,
+    "matches_first_party_import_sha256": true,
+    "slides_and_notes_read": 9,
+    "extracted_text_and_notes_reviewed_for_native_pending_scope": true,
+    "native_pending_scope_preserved": true
+  },
+  "authentication_boundary": {
+    "native_authentication": "pending",
+    "native_backend_session_and_four_turn_sequence": "pending",
+    "setup_receipt": "evidence/aws/ec2-login-setup.json",
+    "setup_receipt_sha256": "2be5d678dd0cdd13499866c0203c22094357ba68e284bc77210b152c00d0dd64",
+    "setup_only": true
+  },
+  "limitations": [
+    "Bounded content, command and local-link review; no cloud/model/SSH/authentication operation executed.",
+    "Slide text and speaker notes were inspected from the finalized PPTX package. This receipt does not add an independent visual rendering review or native PowerPoint playback claim.",
+    "The setup receipt proves callback preparation only. User sign-in, remote authentication confirmation, native backend enforcement and sandbox behavior require their own evidence.",
+    "HANDOFF and START files are intentionally outside this receipt because root is completing them."
+  ]
+}

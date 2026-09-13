@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "kind": "integrated_live_viewer_build",
+  "artifact": {
+    "path": "kirocrew-demo-live.html",
+    "bytes": 2164991,
+    "sha256": "488556e0e09919043ba616da0d340c9b0ceff4f130c2bd17799f7d2da43e8d87"
+  },
+  "inputs": [
+    {
+      "path": "kirocrew-security-layers-browser.html",
+      "bytes": 805022,
+      "sha256": "e47121b910829997265ecb42c9c248d14da1cc244b1575952be6b7b071b26d08"
+    },
+    {
+      "path": "kirocrew-ec2-live.html",
+      "bytes": 809098,
+      "sha256": "4f8547905863a4303ad5117f3d876c11c638eded381f9562a5824f935d9b9fef"
+    },
+    {
+      "path": "evidence/aws/client-runtime-verification.json",
+      "bytes": 1034,
+      "sha256": "827ac43582525486362fce86f0602dd8fdab70f21661e2c0002e10c2ce5f8783"
+    },
+    {
+      "path": "evidence/aws/mcp-live-receipt.json",
+      "bytes": 2199,
+      "sha256": "8072fbe3b4048296b49436b8f23e4772ad3c3e4aba605305efd8901aa2843442"
+    },
+    {
+      "path": "evidence/aws/backend-login-status.json",
+      "bytes": 873,
+      "sha256": "8bbf0ea3650f6f1ad74c330c5d92274ed523b6751ac6086bc6b48e547a66400d"
+    },
+    {
+      "path": "evidence/aws/walkthrough-direct-probe.json",
+      "bytes": 2199,
+      "sha256": "1f8ff02ed43d580aab11227e4d52fa4538335e4cc2818076c3bec50d6eddcd2f"
+    }
+  ],
+  "embedded_diagrams": {
+    "security": {
+      "path": "kirocrew-security-layers-browser.html",
+      "bytes": 805022,
+      "sha256": "e47121b910829997265ecb42c9c248d14da1cc244b1575952be6b7b071b26d08"
+    },
+    "ec2": {
+      "path": "kirocrew-ec2-live.html",
+      "bytes": 809098,
+      "sha256": "4f8547905863a4303ad5117f3d876c11c638eded381f9562a5824f935d9b9fef"
+    }
+  },
+  "client_verified": true,
+  "direct_mcp_verified": true,
+  "native_crew_backend_verified": false,
+  "scope": "Build and evidence attribution only. Browser validation is recorded separately."
+}

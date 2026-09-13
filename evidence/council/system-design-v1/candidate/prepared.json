@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "candidate": "system-design-v1",
+  "packet": "/private/tmp/kirocrew-council-system-design-v1-da036f95026d",
+  "manifest_sha256": "da036f95026defc582acbecd2109f0c905f1266c250afccc7442b73758802d02",
+  "output": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/council/system-design-v1/candidate",
+  "sources": {
+    "presentation.html": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-system-design.html",
+    "notes.md": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-system-design-notes.md",
+    "evidence-summary.md": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/council/system-design-v1/evidence-summary.md",
+    "slide-01.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-01.jpg",
+    "slide-02.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-02.jpg",
+    "slide-03.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-03.jpg",
+    "slide-04.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-04.jpg",
+    "slide-05.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-05.jpg",
+    "slide-06.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-06.jpg",
+    "slide-07.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-07.jpg",
+    "slide-08.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-08.jpg",
+    "slide-09.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-09.jpg",
+    "slide-10.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-10.jpg",
+    "slide-11.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-11.jpg",
+    "slide-12.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-12.jpg",
+    "slide-13.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-13.jpg",
+    "slide-14.jpg": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design/slide-14.jpg"
+  },
+  "inference_started": false
+}

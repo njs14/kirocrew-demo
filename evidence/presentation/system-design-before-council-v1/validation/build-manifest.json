@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "edition": "Standalone system-design presentation",
+  "slide_count": 14,
+  "recorded_evidence_date": "2026-09-13",
+  "live_state_reverified": false,
+  "native_kiro_cli_proof": "pending in source receipts",
+  "prior_council_scope": "Frozen PPTX candidate-v2 only; this HTML edition has no new external council verdict",
+  "artifact": {
+    "path": "output/kirocrew-system-design.html",
+    "sha256": "bfc2516128526ab049a7c4c0b36994aae82d87c44790785ee9125da5d63a5712",
+    "bytes": 1758551
+  },
+  "speaker_notes": {
+    "path": "output/kirocrew-system-design-notes.md",
+    "sha256": "b7fc925872ed5be0c285537f7415781bb4dd96b4cc294c205d26b8e247602269"
+  },
+  "preserved_pptx_sha256": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13",
+  "embedded_assets": {
+    "evidence/browser/endpoint-slide.png": {
+      "sha256": "4c64d4035f1c61b8bdd8d59cf5fb8e1abb318a754a73cc0865f5e4b603ecedc1",
+      "bytes": 85943
+    },
+    "evidence/aws/archify-arm/kirocrew-arm-slide-council-1152x480.png": {
+      "sha256": "e2d4e021f9b31bd3ebdc3d7d2e0339fbd3a9ae709bb935b4f223280d3ccb6b59",
+      "bytes": 61292
+    },
+    "output/admin-console/09-native-telemetry.jpg": {
+      "sha256": "ce3695a785c868db8024f5be73dd09277912a0b517d91ebf2beb01779fe1775d",
+      "bytes": 58431
+    },
+    "output/admin-console/11-client-server-telemetry.jpg": {
+      "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698",
+      "bytes": 78171
+    },
+    "output/admin-console/13-client-stopped.jpg": {
+      "sha256": "8ddf44bd2bd6f007ffe3aa7f1a2d87e72aa9aec4ee3406b5b630f4318cba7409",
+      "bytes": 77659
+    },
+    "output/admin-console/12-collection-logs.jpg": {
+      "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63",
+      "bytes": 81268
+    }
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "KiroCrew on ARM",
+      "section": "System design"
+    },
+    {
+      "number": 2,
+      "title": "What this demo must establish",
+      "section": "01 / Requirements"
+    },
+    {
+      "number": 3,
+      "title": "One endpoint-control boundary",
+      "section": "02 / Architecture"
+    },
+    {
+      "number": 4,
+      "title": "ARM execution in us-east-1",
+      "section": "02 / Architecture"
+    },
+    {
+      "number": 5,
+      "title": "Host identity determines authority",
+      "section": "03 / Authorization"
+    },
+    {
+      "number": 6,
+      "title": "Four calls, three denial boundaries",
+      "section": "03 / Authorization"
+    },
+    {
+      "number": 7,
+      "title": "Direct MCP and AWS results",
+      "section": "04 / Recorded evidence"
+    },
+    {
+      "number": 8,
+      "title": "Client and server nightly baselines",
+      "section": "04 / Recorded evidence"
+    },
+    {
+      "number": 9,
+      "title": "Native telemetry measures the Gateway",
+      "section": "05 / Observability"
+    },
+    {
+      "number": 10,
+      "title": "Client and server in the admin portal",
+      "section": "05 / Observability"
+    },
+    {
+      "number": 11,
+      "title": "Closing the client did not stop the Gateway",
+      "section": "05 / Observability"
+    },
+    {
+      "number": 12,
+      "title": "Running cost and operational trade-offs",
+      "section": "06 / Decisions"
+    },
+    {
+      "number": 13,
+      "title": "Decisions to revisit as usage grows",
+      "section": "06 / Decisions"
+    },
+    {
+      "number": 14,
+      "title": "Desktop-to-EC2 walkthrough",
+      "section": "07 / Live demo"
+    }
+  ]
+}

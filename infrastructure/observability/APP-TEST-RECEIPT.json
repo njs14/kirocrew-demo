@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-13T14:31:04.868388+00:00",
+  "scope": "local app tests and manifest validation; live deployment and browser validation pending root agent",
+  "runtime": {
+    "python": "3.12.14",
+    "kirocrew": "0.7.0-nightly.20260913t061222",
+    "proxy_sdk_path": "/Applications/KiroCrew Nightly.app/Contents/Resources/backend-dist/kirocrew-backend-arm64/lib/python3.12/site-packages/kiro_crew/apps/proxy_auth.py",
+    "proxy_sdk_sha256": "e04ccd5cc389734774cf0064aa0605ed6d99dce56101c04b943792d1560f341b",
+    "frozen_september12_proxy_sdk_sha256": "e04ccd5cc389734774cf0064aa0605ed6d99dce56101c04b943792d1560f341b",
+    "installed_proxy_matches_frozen_september12": true
+  },
+  "checks": {
+    "security_and_schema_http_tests": {
+      "passed": 16,
+      "failed": 0,
+      "framework": "unittest",
+      "duration_seconds": 0.575
+    },
+    "manifest_validate": {
+      "errors": []
+    },
+    "javascript_syntax": "pass",
+    "shell_syntax": "pass",
+    "ui_regression_tests": {
+      "passed": 4,
+      "failed": 0,
+      "framework": "node:test with actual shipped ESM and inert host imports",
+      "duration_ms": 46.878208
+    },
+    "runtime_spawn_contract": {
+      "allowed_port_range": [
+        9100,
+        9200
+      ],
+      "manifest_port": 9102,
+      "backend_port": 9102,
+      "contained_entrypoint_exists": true,
+      "ui_entry_exists": true,
+      "secret_required": true,
+      "bind_address": "127.0.0.1"
+    }
+  },
+  "claims": {
+    "custom_app_telemetry": true,
+    "native_client_ingestion_added": false,
+    "new_network_ingress": false,
+    "hmac_freshness_seconds": 60,
+    "single_use_signatures": false,
+    "live_browser_verified": false
+  },
+  "environment_recovery": "System Python 3.14 lacked croniter while importing the complete App Kit package; tests passed under the installed Nightly bundled Python 3.12 with its real dependencies.",
+  "files": {
+    "app/app.json": "34e474700da3868d828fdaeba2af60cd71801defe9b93e9a6548131fea571cee",
+    "app/backend/server.py": "33a46c42b29de99d41cbe581fa5e86c3946a279d8506932a5fec8429d720c80e",
+    "app/ui/dist/index.mjs": "a652b81dea5a32ff5772f48b27875fc8ca810f36c0d4743a7800c584682f67eb",
+    "tests/test_app.py": "885d3ea85935574c75e9dc9bdd5ad9648892d06090629e1931af654d0c57e346",
+    "stage-app.sh": "5b7e18b8c3794a958092808798c7ac68ec12be1784465f9ce28044a3e229c1dd",
+    "APP-INSTALL.md": "98d682cadc364ec25f98e85cb3709f2b1fc19a13ed792abb3a6efb19c28a907e",
+    "tests/test_ui.mjs": "0fbd66e4d7b7547e2692cf77ee43b7b52ad364e9f1f837c729d752f8c2c5d963"
+  },
+  "ui_revision_recorded_at": "2026-09-13T14:34:50.852465+00:00",
+  "review_fixes": [
+    "Label local TCP probe SSH tunnel listener reachable",
+    "Advance sample age every second; remove Current badge on failed refresh; mark retained samples last known and stale after 180 seconds",
+    "Live activation exposed runtime-only port restriction; version1.0.1 uses9102 and tests assert actual platform range"
+  ],
+  "port_revision_recorded_at": "2026-09-13T14:42:07.225172+00:00",
+  "live_failure_reported_by_parent": {
+    "initial_version": "1.0.0",
+    "port": 8012,
+    "reason": "port outside Gateway runtime range9100-9200",
+    "corrected_version": "1.0.1",
+    "corrected_port": 9102,
+    "activation_not_retested_in_this_receipt": true
+  }
+}

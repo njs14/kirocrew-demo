@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "artifacts": [
+    {
+      "path": ".build/slides/build-arm-observability-deck.mjs",
+      "bytes": 27259,
+      "sha256": "1a3d4829cb62e87fb52174ca91b7ab4d478ebd19d7a51ebb526bb55727c779a3"
+    },
+    {
+      "path": ".build/slides/arm-observability-state.json",
+      "bytes": 688,
+      "sha256": "382d4642235b12214631d4df018863f4e303ee637fc84e64a4cf2c1a76ef3586"
+    },
+    {
+      "path": ".build/slides/apply-native-image-crops.py",
+      "bytes": 1904,
+      "sha256": "d95d0838462ddf240d08a1c41633f9a5e19983d20c60dd72e59e15b2cda33869"
+    },
+    {
+      "path": ".build/slides/arm-no-ai-edits.json",
+      "bytes": 2313,
+      "sha256": "5ea4a1a12289c0dd501d0aabbcd2db8bb3b0a9ca40da050db8dafcb6b2570f06"
+    },
+    {
+      "path": ".build/slides/build-arm-observability-deck.council-incorporated.mjs",
+      "bytes": 27508,
+      "sha256": "882725cbada010656bd7d74a8c1b6d67b5a58e49b5ee71b954b77735ba66bf62"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/final-cloud-verification.json",
+      "bytes": 4886,
+      "sha256": "95237019cad827d3917d4c9bccf9dea06693138e8125239c08f811ecdae180b6"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/final-direct-mcp-rehearsal.json",
+      "bytes": 2199,
+      "sha256": "65da98adc8f9dc4b773f1a0f699ded04db03065ff0e89355ae6945defb13d14d"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/crew-imds-connect-receipt.json",
+      "bytes": 594,
+      "sha256": "b5bc6b94d11dcd9be68e2c7918da7f9a56c3448998f065331df9b9864ea15fb7"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/source-verification.json",
+      "bytes": 5756,
+      "sha256": "23b1ccbe2b7c58a3f8bfbe35a140c19d0d47490dea7a5f9fbcf9399e5088b37e"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/observability-api-readback.json",
+      "bytes": 6387,
+      "sha256": "d7d60f596efdfef322c84f0d79e63bb06f307c2c47efd4664ad58c2812f098e0"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/observability-runtime-receipt.json",
+      "bytes": 9004,
+      "sha256": "580f30e31638d8bf6ac27d2863a292888e6abf0b265da9a87e5b7144b560963e"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/client-runtime-receipt.json",
+      "bytes": 2268,
+      "sha256": "7d59a2da6b192c1218ef36a6be45c8e774507725a8adb20d85b2086df54bdc87"
+    },
+    {
+      "path": "evidence/nightly/client-20260913-verification.json",
+      "bytes": 38485,
+      "sha256": "1600bb72d083e15c8e92f431f2c8fde513e603eabd4a5ba411692dadd0e90888"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/price.json",
+      "bytes": 10709,
+      "sha256": "5f5282f8d0eb4b85491a253a0bf6ed2cbed6bb3a2dac0f86aeacb80e5fce51b3"
+    },
+    {
+      "path": "evidence/aws/gp3-pricing.json",
+      "bytes": 1523,
+      "sha256": "a7afb8de0144bcb8d5c606de5875e86db7313ceb0112190447da1b3067541fc2"
+    },
+    {
+      "path": "evidence/council/arm-observability-v1/DECISIONS.md",
+      "bytes": 4380,
+      "sha256": "10ef636b10958a60b7353b3042836a14b8afdb66c47b6b90b7f588f35f973b81"
+    },
+    {
+      "path": "evidence/council/arm-observability-v1/candidate/dispatch/grok-review.md",
+      "bytes": 4578,
+      "sha256": "8decd813278e86d1723cbecdd6394ea25ea06ac4c8dfded8b7d3821c76c885c6"
+    },
+    {
+      "path": "evidence/council/arm-observability-v1/candidate/dispatch/claude-review.md",
+      "bytes": 7336,
+      "sha256": "17f6e58916a59d913ba67efe2553a9e377b9481628b88ee8f821603a30023760"
+    },
+    {
+      "path": "evidence/council/arm-observability-v1/candidate/dispatch/council-receipt.json",
+      "bytes": 11246,
+      "sha256": "72dc38e73a2fc5bef3eb9d331bbcc2a4315556e90042d0bef3489ed48f107838"
+    }
+  ]
+}

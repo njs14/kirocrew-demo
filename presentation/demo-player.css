@@ -1,0 +1,52 @@
+/* These rules apply only to the additive recorded-demo slides. */
+.recorded-demo{padding:2.3cqw 3.2cqw 1.7cqw;gap:1.15cqw}
+.recorded-demo .slide-header{margin-bottom:0}
+.recorded-demo .eyebrow{margin-bottom:.6cqw;font-size:.95cqw}
+.recorded-demo h2{font-size:2.7cqw;line-height:1.1}
+.recorded-demo .demo-description{font-size:1.18cqw;line-height:1.4;margin-top:.6cqw;color:#535764}
+.demo-layout{display:grid;grid-template-columns:minmax(0,3.7fr) minmax(0,1.2fr);gap:1.7cqw;flex:1;min-height:0;align-items:start}
+.demo-screen{min-width:0;min-height:0;height:100%;display:grid;grid-template-rows:minmax(0,1fr) auto auto;gap:.7cqw}
+.demo-screen video{width:100%;height:100%;min-height:0;display:block;background:#121216;object-fit:contain;border:1px solid #bcb9c4}
+.demo-controls{display:flex;flex-wrap:wrap;align-items:center;gap:.7cqw}
+.demo-controls button,.demo-cues button{font:inherit;color:#332440;border:1px solid #bfb3d0;background:#f5f0fc;border-radius:3px;padding:.55cqw .8cqw;font-size:1.03cqw;line-height:1.3}
+.demo-controls button:hover,.demo-cues button:hover{background:#e6d8f8}
+.demo-controls label{font-size:1.02cqw;display:flex;align-items:center;gap:.3cqw;cursor:pointer}
+.demo-controls input{accent-color:#7146a9}
+.demo-chapters{min-width:0;max-height:100%;overflow:auto;padding:.2cqw .4cqw .3cqw .1cqw}
+.demo-chapters h3{font-size:1.14cqw;letter-spacing:0;margin-bottom:.65cqw}
+.demo-cues{display:flex;flex-direction:column;gap:.45cqw;margin-bottom:1cqw}
+.demo-cues button{text-align:left;display:flex;gap:.65cqw;background:transparent;border-color:#e0dce5;padding:.5cqw .6cqw}
+.demo-cues button[aria-current=step]{border-color:#7146a9;background:#e9def6}
+.demo-cues time{font-variant-numeric:tabular-nums;color:#755789;flex:none}
+.demo-cue-detail{font-size:1.03cqw;line-height:1.4;border-top:1px solid #d6cfe1;padding-top:.9cqw;overflow-wrap:anywhere}
+.demo-cue-detail strong{display:block;margin-bottom:.4cqw}
+.demo-cue-detail p{font-size:inherit;line-height:inherit;margin-bottom:.6cqw}
+.demo-cue-detail a{color:#684295;text-underline-offset:3px}
+.recorded-demo .slide-footer{margin-top:0;padding-top:.7cqw;font-size:.9cqw;align-items:center}
+.demo-scope{max-width:77cqw;overflow-wrap:anywhere}
+.demo-scope strong{font-weight:700;color:#4e365e}
+.demo-status{font-size:1.03cqw!important;line-height:1.35;min-height:1.4em;color:#654185}
+.demo-fixture{color:#a12b2b;font-weight:700}
+@media(max-width:760px){
+ .recorded-demo{padding:25px 18px 22px;gap:20px}
+ .recorded-demo .eyebrow{font-size:11px;margin-bottom:10px}
+ .recorded-demo h2{font-size:30px}
+ .recorded-demo .demo-description{font-size:14px;margin-top:10px}
+ .demo-layout{grid-template-columns:1fr;gap:22px}
+ .demo-screen{gap:12px;height:auto;display:flex;flex-direction:column}
+ .demo-screen video{aspect-ratio:16/9;height:auto}
+ .demo-controls{gap:10px}
+ .demo-controls button,.demo-cues button{font-size:14px;padding:10px 12px;min-height:44px}
+ .demo-controls label{font-size:14px;gap:5px;min-height:44px}
+ .demo-chapters{max-height:none;overflow:visible;padding:0}
+ .demo-chapters h3{font-size:16px;margin-bottom:10px}
+ .demo-cues{gap:8px;margin-bottom:16px}
+ .demo-cues button{gap:12px}
+ .demo-cue-detail{font-size:15px;padding-top:15px}
+ .demo-cue-detail strong{margin-bottom:8px}
+ .demo-cue-detail p{margin-bottom:10px}
+ .recorded-demo .slide-footer{font-size:11px;padding-top:13px;gap:15px}
+ .demo-scope{max-width:none}
+ .demo-status{font-size:13px!important;min-height:1.4em}
+}
+@media print{.demo-controls,.demo-cues{display:none}.demo-layout{display:block}.demo-chapters{margin-top:15px}.demo-screen video{max-height:60vh}.demo-status{display:none}}

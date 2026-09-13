@@ -1,0 +1,24 @@
+{
+  "name": "kirocrew-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "KiroCrew security and governance demo visuals",
+  "scripts": {
+    "preview:security": "node export-security-preview.cjs",
+    "preview:security:dark": "node export-security-preview.cjs --dark",
+    "build:viewer": "python3 build-security-viewer.py",
+    "check:security": "node archify-source/archify/bin/archify.mjs check kirocrew-security-layers.html --json",
+    "check:browser": "node scripts/validate-browser.cjs",
+    "check:live-viewer": "node scripts/validate-live-viewer.cjs",
+    "inspect:browser": "node scripts/inspect-browser.cjs",
+    "test:browser-runtime": "node --test scripts/tests/browser-runtime.test.cjs",
+    "preview:demos": "python3 scripts/serve-recorded-demos.py"
+  },
+  "devDependencies": {
+    "sharp": "0.35.4",
+    "playwright": "1.63.0"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

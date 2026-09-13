@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "kind": "admin_walkthrough_artifact_manifest",
+  "built_at_utc": "2026-09-13T15:10:53.760561+00:00",
+  "status": "static_passed_browser_blocked",
+  "builder_sha256": "b7a7e0ddc370915a4fd742b97bb23be38c3490f55457d80c8f973f9b474492c3",
+  "browser_receipt": {
+    "path": "evidence/admin-console/browser-receipt.json",
+    "sha256": "7ec5239c3cb55087dbab974ab64a3c485fdf6038a4136952a4a933f3dc5cd317",
+    "live_portal_observed": true,
+    "portable_html_browser_status": "blocked_by_browser_URL_security_policy"
+  },
+  "browser_scope": "The direct local-file attempt on the prior guide build was blocked by browser URL security policy. This rebuilt guide has not been opened; no alternate route was attempted.",
+  "artifacts": [
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-walkthrough.html",
+      "sha256": "94fef71b10965ac734136c352a7d011a1d36ac1ba97680b49f33a9d89fb72b62",
+      "bytes": 1258022
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-walkthrough.md",
+      "sha256": "c680b69118b916646416e6c09eba63dfa0cfcab1b851144ba07d881d2d441bea",
+      "bytes": 16314
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-findings.md",
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71",
+      "bytes": 7075
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/01-overview.jpg",
+      "sha256": "0a1becff3f53ce21bc7a6b0dec596cf6be2044205bd7e0d9f50350ddd2ef9de3",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "overview",
+      "navigation": "Settings \u2192 Overview",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/02-arm-performance.jpg",
+      "sha256": "368456a4d432f80a3c79ed34117b2bb8b24182cbcdcb917acea7e8308dd891ba",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "performance",
+      "navigation": "Developer \u2192 System \u2192 Performance",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/03-gateway-services.jpg",
+      "sha256": "b2c3b29c1aeecc41b9a4de3e1240b749333e0c4d71653b0cc6288238ae297ca8",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "services",
+      "navigation": "Developer \u2192 System \u2192 Services",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/04-security-posture.jpg",
+      "sha256": "7b149096d19efb142e48ac4b0f80888303d42e743b5abc5d5a016dae97a9b43a",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "posture",
+      "navigation": "Settings \u2192 Security \u2192 Live Security Posture",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/05-interactive-approval.jpg",
+      "sha256": "17dbdf6b0ae2b6cb58bc80149913a99d8da0775a23d431c5edfa7663c5465671",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "approval",
+      "navigation": "Settings \u2192 Security \u2192 YOLO (auto-approve)",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/06-governance.jpg",
+      "sha256": "825a2161654543dddd2e11d041306fb9c9c555be2ef2ab29aeae0e2c58bd2cfd",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "governance",
+      "navigation": "Settings \u2192 Security \u2192 Governance Policy",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/07-agent-backend.jpg",
+      "sha256": "35735f35bed62fee253dd3d4d1471acd2ea32c072a4421d6906db0b422e73ccf",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "backend",
+      "navigation": "Developer \u2192 Agent Backend",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/08-telemetry-controls.jpg",
+      "sha256": "16ca6e0c062799f6e7510dce429a9853a515be0f558e7a93e21ca9bfa65a09b1",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "privacy",
+      "navigation": "Settings \u2192 Privacy \u2192 Telemetry controls",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/09-native-telemetry.jpg",
+      "sha256": "ce3695a785c868db8024f5be73dd09277912a0b517d91ebf2beb01779fe1775d",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "native-telemetry",
+      "navigation": "Developer \u2192 Telemetry",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/10-native-auth-log.jpg",
+      "sha256": "3dd436321a99059a99b57eeb5dc7d37cb4a8d57197617be1c6fb89c1600726a5",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "backend-logs",
+      "navigation": "Developer \u2192 Logs \u00b7 search AcpRuntime dead",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/11-client-server-telemetry.jpg",
+      "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "combined",
+      "navigation": "Apps \u2192 Demo Observability",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/13-client-stopped.jpg",
+      "sha256": "8ddf44bd2bd6f007ffe3aa7f1a2d87e72aa9aec4ee3406b5b630f4318cba7409",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "client-pause",
+      "navigation": "Apps \u2192 Demo Observability \u00b7 controlled desktop pause",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/admin-console/12-collection-logs.jpg",
+      "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63",
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "screen": "collection-logs",
+      "navigation": "Apps \u2192 Demo Observability \u2192 Collection logs",
+      "capture": "Parent observed and saved original CUA browser screenshot; this builder reads unchanged bytes."
+    }
+  ],
+  "screenshot_count": 13,
+  "expected_screenshot_count": 13,
+  "static_checks": {
+    "thirteen_sections": true,
+    "unique_section_ids": true,
+    "all_screenshots_present": true,
+    "all_screenshots_embedded_unchanged": true,
+    "all_navigation_targets_exist": true,
+    "no_external_asset_urls": true,
+    "no_missing_markdown_images": true
+  },
+  "scope": [
+    "Screenshots are historical observed UI snapshots, not a live portal.",
+    "Native Kiro CLI authentication and enforcement remain pending.",
+    "Custom App Kit telemetry is separate from native Gateway telemetry and the security event log.",
+    "Browser layout, screenshot expansion and keyboard behavior remain unverified after the recorded URL-policy block."
+  ]
+}

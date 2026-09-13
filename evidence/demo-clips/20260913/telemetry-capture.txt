@@ -1,0 +1,45 @@
+### Result
+{"scene":"client-server-telemetry","startedAt":"2026-09-13T18:09:22.466Z","endedAt":"2026-09-13T18:09:43.883Z","marks":[{"time":0,"label":"Both sources are current"},{"time":2.533,"label":"Refresh the stored collector samples"},{"time":4.745,"label":"Inspect Mac process measurements"},{"time":8.313,"label":"Inspect EC2 service measurements"},{"time":11.864,"label":"Filter collection logs to the client"},{"time":15.4,"label":"Filter collection logs to the server"},{"time":18.912,"label":"Restore all collection events"}],"recordedPage":"http://localhost:5599/apps/demo-observability","nativeBackendProof":false}
+### Ran Playwright code
+```js
+await (async page => {
+  await page.getByRole('heading', { name: 'Client and server, in one view' }).waitFor();
+  const startedAt = new Date().toISOString();
+  const marks = [];
+  await page.screencast.start({path:'recordings/20260913/raw/03-client-server-telemetry.webm',size:{width:1600,height:1000}});
+  const start = Date.now();
+  const mark = label => marks.push({time:(Date.now()-start)/1000,label});
+  try {
+    mark('Both sources are current');
+    await page.waitForTimeout(2500);
+    await page.getByRole('button',{name:'Refresh',exact:true}).click();
+    mark('Refresh the stored collector samples');
+    await page.waitForTimeout(2200);
+    await page.getByRole('region',{name:'Client telemetry',exact:true}).getByText('More measurements',{exact:true}).click();
+    mark('Inspect Mac process measurements');
+    await page.waitForTimeout(3500);
+    await page.getByRole('region',{name:'Client telemetry',exact:true}).getByText('More measurements',{exact:true}).click();
+    await page.getByRole('region',{name:'Server telemetry',exact:true}).getByText('More measurements',{exact:true}).click();
+    mark('Inspect EC2 service measurements');
+    await page.waitForTimeout(3500);
+    await page.getByRole('region',{name:'Server telemetry',exact:true}).getByText('More measurements',{exact:true}).click();
+    await page.getByRole('button',{name:'Client',exact:true}).click();
+    mark('Filter collection logs to the client');
+    await page.waitForTimeout(3500);
+    await page.getByRole('button',{name:'Server',exact:true}).click();
+    mark('Filter collection logs to the server');
+    await page.waitForTimeout(3500);
+    await page.getByRole('button',{name:'All',exact:true}).click();
+    mark('Restore all collection events');
+    await page.waitForTimeout(2500);
+    return {scene:'client-server-telemetry',startedAt,endedAt:new Date().toISOString(),marks,recordedPage:page.url(),nativeBackendProof:false};
+  } finally { await page.screencast.stop(); }
+}
+)(page);
+```
+### Page
+- Page URL: http://localhost:5599/apps/demo-observability
+- Page Title: Kiro Crew
+- Console: 10 errors, 0 warnings
+### Events
+- New console entries: .playwright-cli/console-2026-09-13T18-08-15-499Z.log#L7-L10

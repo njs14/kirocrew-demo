@@ -1,0 +1,18 @@
+[
+  {
+    "source": "kirocrew-security-layers.html",
+    "source_sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+    "artifact": "kirocrew-security-layers-browser.html",
+    "artifact_sha256": "089e495ca5297b767e8e77291e72f3a84a154652de0562565176d968231eb042",
+    "svg_sha256": "6aa6d29fd00863689c3eafea081e39a81c0e8c0b0ab63a425d05458ac1801796",
+    "svg_unchanged": true
+  },
+  {
+    "source": "kirocrew-aws-deployment.html",
+    "source_sha256": "4375acf0466215035c06b9a9d643555eb9b6e5a478e541b6558435b14ac07784",
+    "artifact": "kirocrew-aws-deployment-browser.html",
+    "artifact_sha256": "99951a9dfcb07d3621c60ea3904567e01da54b10faf9879623d880834359cc22",
+    "svg_sha256": "117560ede30de0ace28aa38b7346da9c7b5dd70f3a7972cb92909026b395c0fc",
+    "svg_unchanged": true
+  }
+]

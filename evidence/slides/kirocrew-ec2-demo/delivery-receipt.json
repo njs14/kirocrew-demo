@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "time": "2026-09-13T05:06:19.509054+00:00",
+  "status": "complete_for_current_evidence_scope",
+  "artifacts": [
+    {
+      "path": "output/kirocrew-ec2-demo.pptx",
+      "bytes": 159660,
+      "sha256": "eaf91801fa8f43e2192df5f229b9d7ef677b9d49a6f9552a629c43b5e6113a46"
+    },
+    {
+      "path": "output/kirocrew-ec2-demo-copy.md",
+      "bytes": 12198,
+      "sha256": "1590ffd176587e26f1231b536d77a39b9dce8db49febfcb8e199a65337de3b58"
+    },
+    {
+      "path": ".build/slides/build-ec2-deck.mjs",
+      "bytes": 18809,
+      "sha256": "60548f24f8ebe06edd002670fe5769ee9d62661d24fdf064672c824e6f33a85d"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/finalization.json",
+      "bytes": 4054,
+      "sha256": "5be5d3f00354630006c7853b16c050c380c96a4320a20d9a8fe3ba17a286fe58"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/visual-review.json",
+      "bytes": 3847,
+      "sha256": "e305b7ac282aae10fc245c8c5cfe4f0821b545b5ab77444707a47ed8296efe55"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/root-author-acceptance.json",
+      "bytes": 3196,
+      "sha256": "6d2f120001457cabec8f045e6858ac30c0bb433d38d5f9663e8af9d15889f10b"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/no-ai-slop.md",
+      "bytes": 3250,
+      "sha256": "d53ed36d078cec4437202aa77cfc36734e46daeaec83b84fbcc4dfddb5d0ca17"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/council-incorporation.json",
+      "bytes": 4897,
+      "sha256": "3cb61bd5f44da7bdecd59d5afa653c96c175fdf178c8787775afacf7787ba4aa"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/review-text.md",
+      "bytes": 11940,
+      "sha256": "82e97c1b0ecf83d4063cdd8c1af034e6f801ba692c11b955f8c65c6f5b68b5ef"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/review-manifest.json",
+      "bytes": 2743,
+      "sha256": "c49496a4b4876c6adfae0b2ed7fbfa80cc123a5befe64a9c3b8a07dcacdcc5c7"
+    },
+    {
+      "path": "evidence/aws/archify-slide/delivery-receipt.json",
+      "bytes": 3968,
+      "sha256": "b805ef7bfbaf40b219a78facfe0c608a4d906102e39ec70a4fc53c2322e2899b"
+    }
+  ],
+  "slide_count": 9,
+  "editable_table_slides": [
+    4,
+    5,
+    6
+  ],
+  "renders": [
+    {
+      "slide": 1,
+      "path": "output/kirocrew-ec2-demo-slides/slide-1.png",
+      "sha256": "c52d9c1b2830fb0c3cac94376ec4c973d8b4b3498d5518253620fda2c8ac94c5",
+      "bytes": 67024,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 2,
+      "path": "output/kirocrew-ec2-demo-slides/slide-2.png",
+      "sha256": "ef7ebb461d550e570b91f4c59934a945de2c5d95125e5af15e8ea617787dc821",
+      "bytes": 157050,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 3,
+      "path": "output/kirocrew-ec2-demo-slides/slide-3.png",
+      "sha256": "74723ae1e522ae6c1b1604d76b748e2fad823126186c80446ee4687533ab7732",
+      "bytes": 78344,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 4,
+      "path": "output/kirocrew-ec2-demo-slides/slide-4.png",
+      "sha256": "e926ef6341a0b34f0b76f58db66efc91bb802fb4c3569c9466438fbda0f0850c",
+      "bytes": 104288,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 5,
+      "path": "output/kirocrew-ec2-demo-slides/slide-5.png",
+      "sha256": "2f0f0fd0f2579a3826bd576611f6ff6c83d9a13a6ec06549bd23c2dead3498b6",
+      "bytes": 90774,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 6,
+      "path": "output/kirocrew-ec2-demo-slides/slide-6.png",
+      "sha256": "23aae8f8fc4535abfcb7e3438f261a9e98d867ed236f2d9f072cfb63ba723b55",
+      "bytes": 114595,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 7,
+      "path": "output/kirocrew-ec2-demo-slides/slide-7.png",
+      "sha256": "f1c270d6aca1dde1734acb4fb846b326a22fcf94a43c5c43d868df6a03547512",
+      "bytes": 100086,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 8,
+      "path": "output/kirocrew-ec2-demo-slides/slide-8.png",
+      "sha256": "0eaf143be799934a02d1983f73dcf6ca1d00be2f722b88c0c9940da3fab80a4c",
+      "bytes": 94869,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 9,
+      "path": "output/kirocrew-ec2-demo-slides/slide-9.png",
+      "sha256": "6705650238714e7a7f55522a2666534312f2b7afa232388b827795c7d4e81759",
+      "bytes": 103870,
+      "pixels_match_preflight": true
+    }
+  ],
+  "preserved_reference_image": {
+    "path": "evidence/browser/endpoint-slide.png",
+    "bytes": 85943,
+    "sha256": "4c64d4035f1c61b8bdd8d59cf5fb8e1abb318a754a73cc0865f5e4b603ecedc1"
+  },
+  "new_slide3_image": {
+    "path": "evidence/aws/archify-slide/kirocrew-ec2-slide-1152x480.png",
+    "bytes": 39769,
+    "sha256": "451fbde58bdae4822efb8ee8bfd2e89f0e8379a3b1f6b42df17aa3a5335b384d"
+  },
+  "council_reviewed_candidate": "fe7708a0689906820be49bd06baa325c93fec3465856bdc0071c2daae307cc3e",
+  "council_decisions_applied": true,
+  "no_ai_slop_applied_after_decisions": true,
+  "root_author_accepted_final": true,
+  "native_backend_authentication_pending": true,
+  "native_powerpoint_playback_verified": false,
+  "council_reviewed_final_bytes": false
+}

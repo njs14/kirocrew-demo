@@ -1,0 +1,99 @@
+{
+  "command_argv": [
+    "/usr/bin/ssh",
+    "-T",
+    "kirocrew-demo-admin",
+    "sudo -u mcp-demo env DEMO_MCP_TOKEN_FILE=/etc/kirocrew-demo/mcp-token /opt/kirocrew-demo/mcp-venv/bin/python /opt/kirocrew-demo/mcp-enforcement/probe.py --expected-allowed-sha256 34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160"
+  ],
+  "exit_code": 0,
+  "finished_at": "2026-09-13T18:21:29.394386+00:00",
+  "kind": "demo_probe_presenter_command_result",
+  "mode": "direct",
+  "native_backend_verified": false,
+  "passed": true,
+  "raw_output_retained": false,
+  "receipt": {
+    "checks": [
+      {
+        "http_status": 401,
+        "name": "authentication_required",
+        "passed": true
+      },
+      {
+        "name": "catalog",
+        "passed": true,
+        "tools": [
+          "crew_denied",
+          "iam_denied",
+          "mcp_denied",
+          "read_allowed"
+        ]
+      },
+      {
+        "name": "read_allowed",
+        "passed": true,
+        "result": {
+          "aws_request_id": "CMSJ6HKBJ4YEW6TR",
+          "invocation_id": "f735cb9e-b296-4006-8f77-081cf6f2a58a",
+          "layer": "aws",
+          "object_bytes": 55,
+          "object_sha256": "34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160",
+          "ok": true,
+          "principal": "kirocrew-demo-client",
+          "tool": "read_allowed",
+          "trace_id": "probe-3ed3b9d93c21455cb887d7ab92d83a92-read_allowed"
+        }
+      },
+      {
+        "name": "mcp_denied",
+        "passed": true,
+        "result": {
+          "error_code": "tool_grant_denied",
+          "invocation_id": "5ce7e470-0e7a-49bd-8a6f-2bc5dd91d5cc",
+          "layer": "mcp",
+          "ok": false,
+          "principal": "kirocrew-demo-client",
+          "tool": "mcp_denied",
+          "trace_id": "probe-3ed3b9d93c21455cb887d7ab92d83a92-mcp_denied"
+        }
+      },
+      {
+        "name": "iam_denied",
+        "passed": true,
+        "result": {
+          "aws_request_id": "Y8P2NZ17949A7E6J",
+          "error_code": "AccessDenied",
+          "http_status": 403,
+          "invocation_id": "cb79a121-789f-49d9-b156-44289fd2e8ca",
+          "layer": "aws",
+          "ok": false,
+          "principal": "kirocrew-demo-client",
+          "tool": "iam_denied",
+          "trace_id": "probe-3ed3b9d93c21455cb887d7ab92d83a92-iam_denied"
+        }
+      }
+    ],
+    "dependencies": {
+      "boto3": "1.43.93",
+      "httpx": "0.28.1",
+      "mcp": "1.30.0"
+    },
+    "expected_allowed_sha256": "34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160",
+    "kind": "direct_mcp_service_probe",
+    "native_backend_verified": false,
+    "native_crew_backend_verified": false,
+    "passed": true,
+    "schema": 1,
+    "server_file_sha256": "a52c0c42d91430232fc68c20f6554e70842ebd33d0a71a79dff3f50ef431eb08",
+    "time": "2026-09-13T18:21:28.689118+00:00",
+    "trace_prefix": "probe-3ed3b9d93c21455cb887d7ab92d83a92",
+    "url": "http://127.0.0.1:8001/mcp"
+  },
+  "sanitization": "strict field and value allowlist",
+  "schema": 1,
+  "started_at": "2026-09-13T18:21:26.938698+00:00",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 2199,
+  "stdout_sha256": "98aa8075c7f58394c45d410f91c1c07f9b3d9b2d6e992721daa5db46a8857c81"
+}

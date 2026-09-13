@@ -1,0 +1,8 @@
+{
+  "previous_ip": "100.57.5.32",
+  "arm_ip": "100.61.173.192",
+  "host_key_alias": "kirocrew-demo-arm-20260913",
+  "ssh_backup": "/Users/noahsutter/.ssh/config.before-demo-cloud-20260913T140900.039298Z",
+  "local_gateway_enabled": false,
+  "tunnel_restarted": true
+}

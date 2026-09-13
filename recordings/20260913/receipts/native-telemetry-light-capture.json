@@ -1,0 +1,24 @@
+{
+  "scene": "gateway-instrumentation",
+  "startedAt": "2026-09-13T18:16:52.471Z",
+  "endedAt": "2026-09-13T18:17:13.160Z",
+  "marks": [
+    {
+      "time": 0,
+      "label": "Metrics recording is enabled; anonymous reporting is disabled"
+    },
+    {
+      "time": 5.614,
+      "label": "Read native Gateway instruments and the zero-turn baseline"
+    },
+    {
+      "time": 11.647,
+      "label": "Inspect recorded startup measurements"
+    },
+    {
+      "time": 17.18,
+      "label": "Return to latency instruments"
+    }
+  ],
+  "nativeBackendProof": false
+}

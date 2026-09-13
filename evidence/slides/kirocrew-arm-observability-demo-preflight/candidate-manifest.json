@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "created": "2026-09-13T14:34:16.088Z",
+  "artifact": "output/kirocrew-arm-observability-demo-preflight.pptx",
+  "sha256": "8c02e4faf8cc2038d3b972be2dc65423bedb1bdbf8469c1aba30d483d691091f",
+  "slides": 12,
+  "state": {
+    "nativeVerified": false,
+    "clientVerified": true,
+    "nativeReceipt": "Native Kiro CLI sign-in and backend session verification pending.",
+    "clientReceipt": "Native desktop connected through SSH. Local Gateway is off.",
+    "topologyImage": null,
+    "telemetryVerified": false,
+    "nativeTelemetryImage": null,
+    "customObservabilityImage": null,
+    "observabilityFlowImage": null
+  },
+  "sourceBuilder": ".build/slides/build-arm-observability-deck.mjs",
+  "sourceBuilderSha256": "cbf85752fe6f19514fe224c69ddee3321af5ea1a094895fb00420bf8e5cfd7da",
+  "sourceAssets": [
+    {
+      "path": "evidence/browser/endpoint-slide.png",
+      "bytes": 85943,
+      "sha256": "4c64d4035f1c61b8bdd8d59cf5fb8e1abb318a754a73cc0865f5e4b603ecedc1"
+    }
+  ],
+  "renderDirectory": "output/kirocrew-arm-observability-demo-preflight-slides",
+  "nativePowerPointPlaybackVerified": false
+}

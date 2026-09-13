@@ -1,0 +1,29 @@
+test_arbitrary_errors_rejected (test_collector.CollectorTests) ... ok
+test_bounded_store_atomic_modes_and_replay (test_collector.CollectorTests) ... ok
+test_clock_skew_and_status_lie_rejected (test_collector.CollectorTests) ... ok
+test_dry_run_has_no_write_or_network (test_collector.CollectorTests) ... ok
+test_exact_process_scope_and_no_identity_output (test_collector.CollectorTests) ... ok
+test_failed_metric_recovers (test_collector.CollectorTests) ... ok
+test_failed_process_probe_is_unknown (test_collector.CollectorTests) ... ok
+test_fixed_receiver_pinned_transport (test_collector.CollectorTests) ... ok
+test_no_processes_is_known_zero (test_collector.CollectorTests) ... ok
+test_noisy_events_are_suppressed (test_collector.CollectorTests) ... ok
+test_nonfinite_bool_negative_metric_rejected (test_collector.CollectorTests) ... ok
+test_oversized_input_rejected (test_collector.CollectorTests) ... ok
+test_private_or_extra_fields_rejected (test_collector.CollectorTests) ... ok
+test_source_swap_rejected (test_collector.CollectorTests) ... ok
+test_ssh_failure_receipt_has_no_raw_error (test_collector.CollectorTests) ... ok
+test_stop_live_job_remaining_is_failure (test_collector.CollectorTests) ... ok
+test_stop_missing_plist_confirms_already_absent (test_collector.CollectorTests) ... ok
+test_stop_missing_plist_unloads_verified_live_job (test_collector.CollectorTests) ... ok
+test_stop_refuses_other_live_job_with_same_label (test_collector.CollectorTests) ... ok
+test_stop_rejects_same_label_wrong_plist_arguments (test_collector.CollectorTests) ... ok
+test_stop_removes_only_recognized_plist_after_absence (test_collector.CollectorTests) ... ok
+test_stop_unknown_state_cannot_claim_success (test_collector.CollectorTests) ... ok
+test_symlink_and_writable_directory_rejected (test_collector.CollectorTests) ... ok
+test_unknown_port_is_not_reported_off (test_collector.CollectorTests) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 2.274s
+
+OK

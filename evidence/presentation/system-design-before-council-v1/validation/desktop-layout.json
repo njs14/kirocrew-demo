@@ -1,0 +1,163 @@
+[
+  {
+    "footerOverlap": [],
+    "id": "slide-1",
+    "images": [],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "KiroCrew on ARM",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-2",
+    "images": [],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "What this demo must establish",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-3",
+    "images": [
+      {
+        "h": 750,
+        "loaded": true,
+        "w": 760
+      }
+    ],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "One endpoint-control boundary",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-4",
+    "images": [
+      {
+        "h": 480,
+        "loaded": true,
+        "w": 1152
+      }
+    ],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "ARM execution in us-east-1",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-5",
+    "images": [],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "Host identity determines authority",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-6",
+    "images": [],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "Four calls, three denial boundaries",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-7",
+    "images": [],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "Direct MCP and AWS results",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-8",
+    "images": [],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "Client and server nightly baselines",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-9",
+    "images": [
+      {
+        "h": 720,
+        "loaded": true,
+        "w": 1280
+      }
+    ],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "Native telemetry measures the Gateway",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-10",
+    "images": [
+      {
+        "h": 720,
+        "loaded": true,
+        "w": 1280
+      }
+    ],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "Client and server in the admin portal",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-11",
+    "images": [
+      {
+        "h": 720,
+        "loaded": true,
+        "w": 1280
+      },
+      {
+        "h": 720,
+        "loaded": true,
+        "w": 1280
+      }
+    ],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "Closing the client did not stop the Gateway",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-12",
+    "images": [],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "Running cost and operational trade-offs",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-13",
+    "images": [],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "Decisions to revisit as usage grows",
+    "visibleSlides": 1
+  },
+  {
+    "footerOverlap": [],
+    "id": "slide-14",
+    "images": [],
+    "overflow": [],
+    "pageOverflow": false,
+    "title": "Desktop-to-EC2 walkthrough",
+    "visibleSlides": 1
+  }
+]

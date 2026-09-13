@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.pytest-safe-tmp/
+*.pyc
+test-results.xml

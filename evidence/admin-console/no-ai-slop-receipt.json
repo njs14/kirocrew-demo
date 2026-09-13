@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "kind": "no_ai_slop_edit_and_self_evaluation",
+  "completed_at_utc": "2026-09-13T15:11:47.376523+00:00",
+  "skill": {
+    "path": "/Users/noahsutter/.codex/plugins/cache/openai-curated-remote/no-ai-slop/1.0.6/skills/no-ai-slop/SKILL.md",
+    "sha256": "73f87f7f79bd3540c4d8494b5c43d37d25584be6886212e1516fdd8d1c539846"
+  },
+  "eval": {
+    "path": "/Users/noahsutter/.codex/plugins/cache/openai-curated-remote/no-ai-slop/1.0.6/skills/no-ai-slop/eval.md",
+    "sha256": "b274cdc623e57ff1b4f673aedef929ba2b01419d13097248c3c74a5dbd80ccfd"
+  },
+  "draft": {
+    "path": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/admin-console/editorial-draft.md",
+    "sha256": "f4d3ef5df48c437ae0675a44cb1f76a5a261ca00a1902c830ad49f7d6225d4a5",
+    "scope": "Full initial draft preserved before final factual additions and minimum effective edit."
+  },
+  "final_artifacts": [
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-walkthrough.html",
+      "sha256": "94fef71b10965ac734136c352a7d011a1d36ac1ba97680b49f33a9d89fb72b62",
+      "bytes": 1258022
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-walkthrough.md",
+      "sha256": "c680b69118b916646416e6c09eba63dfa0cfcab1b851144ba07d881d2d441bea",
+      "bytes": 16314
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-findings.md",
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71",
+      "bytes": 7075
+    }
+  ],
+  "core_point": "Teach the owner-console operator to identify the remote host, read configured controls, verify independent Kiro CLI authentication, and interpret native and custom telemetry from observed evidence.",
+  "voice_signals_preserved": [
+    "Precise product and control names",
+    "Direct operator instructions",
+    "Concrete measured values",
+    "Explicit pending acceptance checks"
+  ],
+  "changes": [
+    "Clarified that the Privacy metrics setting applies to the remote Gateway.",
+    "Corrected cross-screen cues and linked the fresh-login and native-run procedures.",
+    "Shortened repeated cautions and the findings opening.",
+    "Added direct evidence links; retained all measured values and authentication limits.",
+    "Corrected 64 MiB cap to a retention target and explained temporary active-writer overshoot, with runbook and frozen exporter references."
+  ],
+  "factual_additions_after_draft": [
+    "Observed custom client/server metrics and the controlled desktop pause/recovery screenshots.",
+    "Corrected capture filenames to .jpg without changing their original JPEG bytes."
+  ],
+  "evaluation": {
+    "Editing principles": [
+      {
+        "check": 1,
+        "result": "pass",
+        "note": "Preserves the requested admin walkthrough and observed facts without inventing evidence."
+      },
+      {
+        "check": 2,
+        "result": "pass",
+        "note": "Preserves the operator voice: literal product names, direct instructions and explicit uncertainty."
+      },
+      {
+        "check": 3,
+        "result": "pass",
+        "note": "Leaves clear existing sentences intact."
+      },
+      {
+        "check": 4,
+        "result": "pass",
+        "note": "Uses small edits and keeps the technical scope and values."
+      },
+      {
+        "check": 5,
+        "result": "pass",
+        "note": "Opens with deployment and native-authentication status."
+      },
+      {
+        "check": 6,
+        "result": "pass",
+        "note": "Places host identity and metric scope before interpretation."
+      },
+      {
+        "check": 7,
+        "result": "pass",
+        "note": "Keeps measured values, timings and source references concrete."
+      },
+      {
+        "check": 8,
+        "result": "pass",
+        "note": "Uses direct verbs and operator actions."
+      },
+      {
+        "check": 9,
+        "result": "pass",
+        "note": "Keeps the tour structure, with controlled pause before recovery."
+      },
+      {
+        "check": 10,
+        "result": "pass",
+        "note": "Clarifies the metric target, screen sequence and recovery instructions."
+      }
+    ],
+    "Words to cut": [
+      {
+        "check": 1,
+        "result": "pass",
+        "note": "No banned prose words or empty filler found in the final guide and findings."
+      }
+    ],
+    "Patterns to cut": [
+      {
+        "check": 1,
+        "result": "pass",
+        "note": "No dramatic binary setups, negative lists, rhetorical setups or throat clearing."
+      },
+      {
+        "check": 2,
+        "result": "pass",
+        "note": "No faux insights, dramatic reveals, superficial analysis or synonym cycling."
+      },
+      {
+        "check": 3,
+        "result": "pass",
+        "note": "Claims cite observations, source code or receipts rather than unnamed authority."
+      },
+      {
+        "check": 4,
+        "result": "pass",
+        "note": "No fake-profound ending."
+      },
+      {
+        "check": 5,
+        "result": "pass",
+        "note": "Ends the substantive guide on the executable sign-in and native-run next action."
+      },
+      {
+        "check": 6,
+        "result": "pass",
+        "note": "Headings and lists support the screen sequence, evidence findings and comparison table."
+      },
+      {
+        "check": 7,
+        "result": "pass",
+        "note": "Colons introduce labels or the observed error quote."
+      },
+      {
+        "check": 8,
+        "result": "pass",
+        "note": "No em dashes in the final guide or findings."
+      }
+    ],
+    "Final read": [
+      {
+        "check": 1,
+        "result": "pass",
+        "note": "Author read the full draft and final copy and checked every entry in eval.md."
+      },
+      {
+        "check": 2,
+        "result": "pass",
+        "note": "Repeated screen structure serves navigation; paragraph sentences vary with the observation."
+      },
+      {
+        "check": 3,
+        "result": "pass",
+        "note": "The copy retains the requested concise, AWS-fluent operator voice."
+      },
+      {
+        "check": 4,
+        "result": "pass",
+        "note": "The final prose reads naturally to a technical colleague."
+      },
+      {
+        "check": 5,
+        "result": "pass",
+        "note": "Full edited guide and findings are delivered with What changed sections."
+      },
+      {
+        "check": 6,
+        "result": "pass",
+        "note": "Edit mode was used; the detect-only response requirements do not apply."
+      }
+    ]
+  },
+  "lexical_scan": {
+    "banned_word_hits": [],
+    "em_dash_count": 0,
+    "scope": "Final prose artifacts only; original screenshot bytes are preserved."
+  },
+  "passed": true,
+  "scope_limits": [
+    "This is an editorial self-evaluation, not model-council approval.",
+    "The author repeated all 25 eval.md checks after the factual precision correction.",
+    "The direct local-file browser attempt on prior guide bytes was blocked by URL security policy. The rebuilt guide remains unopened; no alternate route was attempted."
+  ],
+  "final_link_check": "All final Markdown artifact, runbook and source links resolve after the retention correction.",
+  "previous_final_artifacts_before_retention_correction": [
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-walkthrough.html",
+      "sha256": "4a555ef0576d02d88fa73a8065645c7356d5596d13c05b26adfe9a694638faa8",
+      "bytes": 1257834
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-walkthrough.md",
+      "sha256": "5ec9b46900464536ae1bca1a98facce66a8d749eed4afe29e8bcebb0261affb2",
+      "bytes": 16092
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-findings.md",
+      "sha256": "2de0567647ad2fac97913fb82595da3138fc4d30ddd20124e0ab1c7abc8674bc",
+      "bytes": 6628
+    }
+  ],
+  "retention_correction": {
+    "source": "/Users/noahsutter/git-projects/kirocrew-demo/.build/installed-nightly/kiro_crew/metrics/local_exporter.py",
+    "sha256": "ccf3fbfeb58b6eba19e4bb7bfffe7029ef0d7f0a3a602301b7c6b1311ce17dd0",
+    "lines": "337-343,398-409",
+    "meaning": "Pruning protects active writers, so retained bytes may temporarily exceed the configured size target.",
+    "review": "Full 25-check eval.md self-evaluation repeated for the revised prose; no failed checks remain."
+  }
+}

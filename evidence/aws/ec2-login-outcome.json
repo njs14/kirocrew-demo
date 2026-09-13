@@ -1,0 +1,14 @@
+{
+  "recorded_at": "2026-09-13T05:10:33.923788+00:00",
+  "source": "login-helper owner final process result and sanitized remote/local observations",
+  "status": "ended_without_authenticated_account",
+  "helper_exit_code": 1,
+  "authenticated": false,
+  "accountType": null,
+  "callback_listeners_remaining": false,
+  "remote_helper_temporary_directories_remaining": false,
+  "agent_stopped_or_restarted_flow": false,
+  "oauth_url_expired": true,
+  "credentials_or_oauth_query_persisted": false,
+  "next_action": "Run python3 scripts/ec2-login.py in a local interactive terminal when ready to complete GitHub sign-in."
+}

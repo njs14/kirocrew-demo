@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/workspace/scratch/91cd8ab8965a/kirocrew-security-layers.architecture.json",
+  "output": "/workspace/scratch/91cd8ab8965a/kirocrew-security-layers-base.html",
+  "specification": {
+    "sha256": "fa3662e9483a6dbac6fa505fa3b5e855e42134246d5d08e3122013bd7d4f4d55",
+    "bytes": 3881
+  },
+  "artifact": {
+    "sha256": "f51ac796f42f996f84cf7050cb440eb11ffef19a1f9c4c45e66fa8efd581e882",
+    "bytes": 803073
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}

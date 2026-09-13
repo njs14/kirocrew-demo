@@ -1,0 +1,27 @@
+{
+  "time": "2026-09-13T04:53:47.279Z",
+  "artifact": {
+    "path": "kirocrew-ec2-live.html",
+    "bytes": 809098,
+    "sha256": "4f8547905863a4303ad5117f3d876c11c638eded381f9562a5824f935d9b9fef"
+  },
+  "browser": "152.0.7977.84",
+  "interactions": [
+    "Gateway search, result selection, runtime focus, Escape dismissal",
+    "Presentation mode opened and Escape restored reader"
+  ],
+  "exports": [
+    {
+      "path": "evidence/aws/archify/kirocrew-ec2-live.svg",
+      "bytes": 152134,
+      "sha256": "d324e70dbb76c924fbcf3800f12e93321f34536a01b426de4cc6f082b437cd49"
+    },
+    {
+      "path": "evidence/aws/archify/kirocrew-ec2-live.png",
+      "bytes": 426298,
+      "sha256": "99382e00aa855fd5d0773f0864b1bb9fdab0f72206c9e0afbec75dfaffb5a8ed"
+    }
+  ],
+  "errors": [],
+  "status": "pass"
+}

@@ -1,0 +1,15 @@
+test_audio_opt_in (test_demo_clips.DemoClipTests.test_audio_opt_in) ... ok
+test_build_mp4_webm_and_provenance (test_demo_clips.DemoClipTests.test_build_mp4_webm_and_provenance) ... ok
+test_cuts_and_cues_outside_source_are_rejected_before_output (test_demo_clips.DemoClipTests.test_cuts_and_cues_outside_source_are_rejected_before_output) ... ok
+test_duplicate_ids_synthetic_scope_and_untimed_capture_rejected (test_demo_clips.DemoClipTests.test_duplicate_ids_synthetic_scope_and_untimed_capture_rejected) ... ok
+test_existing_output_and_raw_are_never_overwritten (test_demo_clips.DemoClipTests.test_existing_output_and_raw_are_never_overwritten) ... ok
+test_local_path_boundaries (test_demo_clips.DemoClipTests.test_local_path_boundaries) ... ok
+test_missing_and_active_evidence_files_rejected (test_demo_clips.DemoClipTests.test_missing_and_active_evidence_files_rejected) ... ok
+test_renamed_playlist_cannot_read_external_source (test_demo_clips.DemoClipTests.test_renamed_playlist_cannot_read_external_source) ... ok
+test_script_change_during_build_rejects_receipt (test_demo_clips.DemoClipTests.test_script_change_during_build_rejects_receipt) ... ok
+test_unsafe_evidence_urls (test_demo_clips.DemoClipTests.test_unsafe_evidence_urls) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.741s
+
+OK

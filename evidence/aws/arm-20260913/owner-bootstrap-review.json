@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-13T14:29:51.804846+00:00",
+  "scope": "Offline implementation review only; no host activation, SSH, UI, token mint or sudoers changes.",
+  "artifact": {
+    "path": "infrastructure/kirocrew-owner-token.py",
+    "sha256": "7750fe9d6e51c4568c8ac155137c23c3f29ec45faf9fbaf55c07fb0ca7b593a5",
+    "intended_install": "root:root 0755 /usr/local/bin/kirocrew-owner-token"
+  },
+  "verdict": "offline_checks_passed",
+  "checks": {
+    "tests_run": 21,
+    "failures": 0,
+    "errors": 0,
+    "test_output": "test_accepted_ttl_bounds (__main__.OwnerTokenTests.test_accepted_ttl_bounds) ... ok\ntest_admin_self_sudo_is_noninteractive_and_fixed (__main__.OwnerTokenTests.test_admin_self_sudo_is_noninteractive_and_fixed) ... ok\ntest_command_pins_mount_and_drops_user (__main__.OwnerTokenTests.test_command_pins_mount_and_drops_user) ... ok\ntest_default_ttl (__main__.OwnerTokenTests.test_default_ttl) ... ok\ntest_inactive_wrong_uid_and_missing_pid_refused (__main__.OwnerTokenTests.test_inactive_wrong_uid_and_missing_pid_refused) ... ok\ntest_main_success_inherits_only_pinned_namespace_fd (__main__.OwnerTokenTests.test_main_success_inherits_only_pinned_namespace_fd) ... ok\ntest_only_token (__main__.OwnerTokenTests.test_only_token) ... ok\ntest_parent_port_bounds (__main__.OwnerTokenTests.test_parent_port_bounds) ... ok\ntest_pinned_mount_mismatch_refused_before_mint (__main__.OwnerTokenTests.test_pinned_mount_mismatch_refused_before_mint) ... ok\ntest_process_start_change_refused_before_mint (__main__.OwnerTokenTests.test_process_start_change_refused_before_mint) ... ok\ntest_reject_ttl_outside_bounds_and_shell_text (__main__.OwnerTokenTests.test_reject_ttl_outside_bounds_and_shell_text) ... ok\ntest_repeated_options_refused (__main__.OwnerTokenTests.test_repeated_options_refused) ... ok\ntest_service_restart_refused_before_mint (__main__.OwnerTokenTests.test_service_restart_refused_before_mint) ... ok\ntest_service_uses_exact_unit (__main__.OwnerTokenTests.test_service_uses_exact_unit) ... ok\ntest_unprivileged_crew_cannot_self_sudo (__main__.OwnerTokenTests.test_unprivileged_crew_cannot_self_sudo) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.004s\n\nOK\n\ntest_actual_identity_parser_accepts_verified_fixture (__main__.IdentityTests.test_actual_identity_parser_accepts_verified_fixture) ... ok\ntest_changed_uid_refused (__main__.IdentityTests.test_changed_uid_refused) ... ok\ntest_wrong_python_refused (__main__.IdentityTests.test_wrong_python_refused) ... ok\ntest_wrong_subcommand_refused (__main__.IdentityTests.test_wrong_subcommand_refused) ... ok\ntest_wrong_user_namespace_refused (__main__.IdentityTests.test_wrong_user_namespace_refused) ... ok\ntest_non_root_or_writable_chain_refused (__main__.OwnershipTests.test_non_root_or_writable_chain_refused) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.049s\n\nOK\n"
+  },
+  "implementation": [
+    "Only token with bounded 1m-20h TTL and bounded optional embedding parent port.",
+    "Only ubuntu may self-invoke existing sudo -n; root may invoke directly. No crew sudo rights.",
+    "Exact active running crew service MainPID, root-controlled executable chain and root-controlled wrapper.",
+    "Gateway crew credentials, Python executable, entrypoint, user namespace and start identity verified.",
+    "Pinned mount namespace descriptor plus repeat service/process checks before nsenter.",
+    "Drop to crew with clean environment before unchanged stock wrapper; inherited stock URL stdout only."
+  ],
+  "source_basis": [
+    ".build/installed-nightly/kiro_crew/member_memory_auth.py:808",
+    ".build/installed-nightly/kiro_crew/platform_compat.py:1546",
+    ".build/installed-nightly/kiro_crew/cli_server.py:146",
+    ".build/kirocrew-source/website/electron/remote-token.js:46"
+  ],
+  "desktop_selected_config": {
+    "path": "/Users/noahsutter/Library/Application Support/kirocrew-desktop-nightly/config.json",
+    "runLocalGateway": false,
+    "port": "5599",
+    "current": {
+      "host": "kirocrew-demo",
+      "binPath": "/usr/local/bin/kirocrew-demo",
+      "remotePort": "5476",
+      "remotePath": "/opt/kirocrew/venv/bin:/usr/local/bin:/usr/bin:/bin"
+    },
+    "proposed_changes": {
+      "host": "kirocrew-demo-admin",
+      "binPath": "/usr/local/bin/kirocrew-owner-token"
+    }
+  },
+  "not_verified": [
+    "Linux executable paths and exact live Gateway argv against this implementation.",
+    "Successful mint through pinned namespace.",
+    "Native restart and token refresh.",
+    "Continued refusal of ordinary crew token bootstrap."
+  ],
+  "activation_required": "Administrator installs the reviewed artifact, validates a token without logging its bytes, changes only the two desktop fields, and verifies native restart. Preserve the independent crew SSH tunnel and all systemd hardening.",
+  "independent_source_review": {
+    "reviewer": "/root/owner_bootstrap_review/wrapper_final_review",
+    "verdict": "no_blocking_findings",
+    "sha256": "7750fe9d6e51c4568c8ac155137c23c3f29ec45faf9fbaf55c07fb0ca7b593a5",
+    "scope": "Read-only source review, no root/SSH/UI/token execution.",
+    "operational_limit": "A restart after the final identity check may fail the mint; the pinned namespace prevents privilege redirection, and native reconnect can retry."
+  }
+}

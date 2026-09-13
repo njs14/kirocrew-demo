@@ -1,0 +1,24 @@
+{
+  "scene": "admin-console",
+  "startedAt": "2026-09-13T18:16:15.405Z",
+  "endedAt": "2026-09-13T18:16:37.297Z",
+  "marks": [
+    {
+      "time": 0,
+      "label": "Read the remote Gateway overview"
+    },
+    {
+      "time": 4.602,
+      "label": "Kiro CLI is selected; native sign-in remains pending"
+    },
+    {
+      "time": 11.168,
+      "label": "Filter native backend logs to the sign-in failure"
+    },
+    {
+      "time": 17.39,
+      "label": "Open the custom client and server dashboard"
+    }
+  ],
+  "nativeBackendProof": false
+}

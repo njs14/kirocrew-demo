@@ -1,0 +1,9 @@
+{
+  "runner_sha256": "b60de76606abb5f3445a0bc522db326a04c3e27fcf1cd3d1dc2b816872e4877e",
+  "inference_started": false,
+  "twelve_slide_packet_acceptance": "pass",
+  "slide10_11_12_image_payloads": "pass",
+  "failed_slide12_rejected": "pass",
+  "model_and_effort_flags_unchanged": "pass",
+  "all_temporary_synthetic_packet_files_removed": true
+}

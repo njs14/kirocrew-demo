@@ -1,0 +1,13 @@
+{
+  "source": "live AWS reads",
+  "mode": "read-only / dry-run",
+  "stack": "kirocrew-demo-20260913",
+  "region": "us-east-1",
+  "instance": "i-0fde6de3f0ea5a9d0",
+  "state": "running",
+  "instance_type": "t4g.xlarge",
+  "architecture": "arm64",
+  "public_ip": "100.61.173.192",
+  "ssh_ingress": "24.60.107.229/32",
+  "bucket": "kirocrew-demo-20260913-demobucket-pdjzgyu25xhb"
+}

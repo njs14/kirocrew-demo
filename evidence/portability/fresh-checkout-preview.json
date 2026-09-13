@@ -1,0 +1,240 @@
+{
+  "scope": "Export of staged source on macOS in a path containing spaces; HTTP delivery, not new browser visual acceptance.",
+  "doctor": {
+    "feature": "preview",
+    "platform": "darwin",
+    "scope": "Local prerequisites and recorded artifact hashes only; no remote connection or authentication check.",
+    "passed": true,
+    "checks": [
+      {
+        "name": "python",
+        "passed": true,
+        "detail": "Python 3.12+; current 3.14.7"
+      },
+      {
+        "name": "preview_platform",
+        "passed": true,
+        "detail": "The restricted preview server supports macOS and Linux. The exported HTML/media can be served by another static server."
+      },
+      {
+        "name": "recorded_artifacts",
+        "passed": true,
+        "detail": {
+          "files": 31,
+          "missing": [],
+          "changed": []
+        }
+      }
+    ]
+  },
+  "http_checks": [
+    {
+      "route": "/demo-clips/20260913-final/endpoint-reference/endpoint-reference.mp4",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/endpoint-reference/poster.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/endpoint-reference/contact-sheet.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/receipts/endpoint-validation.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/receipts/endpoint-capture.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/admin-console/admin-console.mp4",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/admin-console/poster.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/admin-console/contact-sheet.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/receipts/preflight.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/receipts/admin-light-capture.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/client-server-telemetry/client-server-telemetry.mp4",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/client-server-telemetry/poster.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/client-server-telemetry/contact-sheet.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/receipts/telemetry-capture.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/gateway-instrumentation/gateway-instrumentation.mp4",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/gateway-instrumentation/poster.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/gateway-instrumentation/contact-sheet.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/receipts/native-telemetry-light-capture.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/direct-mcp-aws/direct-mcp-aws.mp4",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/direct-mcp-aws/poster.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/direct-mcp-aws/contact-sheet.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/receipts/direct-probe-capture.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/receipts/direct-mcp-aws.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/synthetic-controls/synthetic-controls.mp4",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/synthetic-controls/poster.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/synthetic-controls/contact-sheet.jpg",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/receipts/synthetic-capture.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/receipts/synthetic-controls.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/kirocrew-recorded-demos-notes.md",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/kirocrew-recorded-demos.html",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/kirocrew-recorded-demos-manifest.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/kirocrew-recorded-demos-build.json",
+      "status": 200,
+      "hash_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/endpoint-reference/endpoint-reference.mp4",
+      "range_status": 206,
+      "range_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/admin-console/admin-console.mp4",
+      "range_status": 206,
+      "range_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/client-server-telemetry/client-server-telemetry.mp4",
+      "range_status": 206,
+      "range_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/gateway-instrumentation/gateway-instrumentation.mp4",
+      "range_status": 206,
+      "range_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/direct-mcp-aws/direct-mcp-aws.mp4",
+      "range_status": 206,
+      "range_matched": true
+    },
+    {
+      "route": "/demo-clips/20260913-final/synthetic-controls/synthetic-controls.mp4",
+      "range_status": 206,
+      "range_matched": true
+    },
+    {
+      "route": "/config/demo.local.json",
+      "rejected_status": 404
+    },
+    {
+      "route": "/HANDOFF.md",
+      "rejected_status": 404
+    },
+    {
+      "route": "/../README.md",
+      "rejected_status": 404
+    }
+  ],
+  "passed": true
+}

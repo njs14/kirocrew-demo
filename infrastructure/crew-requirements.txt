@@ -1,0 +1,28 @@
+aiohttp<4,>=3.9
+truststore==0.10.4; sys_platform == "darwin"
+yarl<2,>=1.9
+slack-sdk<4,>=3.27
+websockets<16,>=12
+cron-descriptor<2,>=1.4
+croniter<3,>=2.0
+pathspec>=0.12
+numpy<3,>=1.21
+snowballstemmer>=1.0
+tzdata>=2024.1; platform_system == "Windows"
+pywinpty<4,>=2.0; platform_system == "Windows"
+tzlocal>=5.0; platform_system == "Windows"
+jinja2>=2.11.3
+typing-extensions>=4.5.0
+openpyxl<4,>=3.1
+pysqlite3-binary>=0.5.4; sys_platform == "linux" and platform_machine == "x86_64"
+python-docx<2,>=1
+pdfplumber<1,>=0.10
+defusedxml<1,>=0.7
+qrcode[pil]<9,>=7.4
+cryptography<48,>=42
+requests<3,>=2.28
+PyYAML<7,>=6
+opentelemetry-api<2,>=1
+opentelemetry-sdk<2,>=1
+uv<1,>=0.5
+jsonschema>=4,<5

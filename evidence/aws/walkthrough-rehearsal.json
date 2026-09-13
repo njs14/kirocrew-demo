@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-09-13T04:53:40.043942+00:00",
+  "scope": "Brief-to-direct-MCP walkthrough command rehearsal; native backend still requires user GitHub authentication",
+  "direct_probe_receipt": "evidence/aws/walkthrough-direct-probe.json",
+  "direct_probe_passed": true,
+  "native_plan_launcher_passed": true,
+  "launcher_python": "installed KiroCrew Nightly app Python 3.12",
+  "aiohttp_version": "3.14.3",
+  "native_backend_executed": false,
+  "operator_scripts_review": "evidence/aws/operator-scripts-review.json",
+  "files": {
+    "WALKTHROUGH.md": "35ed77fd7582eb5496dd8f6c4f5ad0dc5e25595c44d8e65cff6b5d07972e46ac",
+    "WALKTHROUGH-EC2.md": "35ed77fd7582eb5496dd8f6c4f5ad0dc5e25595c44d8e65cff6b5d07972e46ac",
+    "native-demo.sh": "a54838bfced6474606751c6ec37c9224b0eace03cfed4b5146aee424260290b8",
+    "scripts/native-backend-demo.py": "c859ac80e4adc29a5943504e015df637c5ebf19a5fe6e597eece57be89601267",
+    "scripts/demo-cloud.py": "f0a7519ed7caee871b97e3fffc986804258f477c94aeee34422e988b8cc2b188",
+    "scripts/ec2-login.py": "e5fc023f26d3ceaa0a6bb4b3d1940d073150b3211242d2d5c76a42306035bc47"
+  }
+}

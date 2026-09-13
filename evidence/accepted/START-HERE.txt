@@ -1,0 +1,4 @@
+Open this folder as the working directory for your Codex session.
+
+Starter prompt:
+Read HANDOFF.md, then inspect the current HTML, notes and review receipts. Continue this existing KiroCrew demo project from its accepted state. Start with the outstanding browser validation, preserve the single endpoint-control box, and report any remaining blockers before changing the architecture.

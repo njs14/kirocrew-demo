@@ -1,0 +1,53 @@
+{
+  "artifacts": {
+    ".gitignore": "08bb2948d9e1fa97f76a5c028155270e3dd27c4b39daff5b33249e71221cc742",
+    "README.md": "68a0c13a955baec04a34e25f382bde6eea1d8701c6fb12a8d356589526b45910",
+    "probe.py": "772c26fdc20cd498b52fc565f2228fd6f1ab097995c164cc45cfa68780b7e607",
+    "pytest.ini": "bd9afb0d88a56da229ad3b15a2fcbd65d329219809a4cdaa6ddaad3d9c8db724",
+    "requirements-test.in": "738049ca9fcfa198dc9919ebc10d0b877c77c910414f620b68780d0b7195c52e",
+    "requirements-test.txt": "e5456558c9ce3899af24588a3d8bbdb3b9042e2f2eae0e4ff66cec77deea0dd7",
+    "requirements.in": "521161f031a6a948edaf2b6697ae5d89280659d66e66b792475b9d7b0d3c333e",
+    "requirements.txt": "9815c0cb4be1aa117db7feaa1f91eb3376c1aebf95489d023dec50e2e1d932c8",
+    "server.py": "a52c0c42d91430232fc68c20f6554e70842ebd33d0a71a79dff3f50ef431eb08",
+    "test-results.xml": "0baae02e2a4ca75043cb1ec157f63f9ecd42b33466cb434b3f043d653d450cf6",
+    "test_server.py": "707ad3dd807e3053c64b0f6cda45515b25fca7d77d3c40a73d34856cf54452f5"
+  },
+  "cloud_calls": 0,
+  "command": ".venv/bin/python -m pytest -q --junitxml=test-results.xml",
+  "created_at": "2026-09-13T04:14:20.307946+00:00",
+  "dependencies": {
+    "boto3": "1.43.93",
+    "botocore": "1.43.93",
+    "httpx": "0.28.1",
+    "mcp": "1.30.0",
+    "pytest": "9.1.1",
+    "starlette": "1.6.0",
+    "uvicorn": "0.52.4"
+  },
+  "errors": 0,
+  "failures": 0,
+  "listening_service_started": false,
+  "live_aws_iam_verified": false,
+  "model_calls": 0,
+  "native_crew_backend_verified": false,
+  "python": "3.12.14",
+  "review": {
+    "independently_reran_tests": false,
+    "portability_adjustment": "pytest uses project-owned .pytest-safe-tmp; no relaxed production token validation",
+    "production_findings_remaining": 0,
+    "scope": "read-only targeted source review and remediation recheck"
+  },
+  "review_corrections": [
+    "Require GetObject operation attribution so STS AccessDenied cannot pass as S3 denial",
+    "Require provisioned sentinel SHA and correlation fields in direct probe",
+    "Add protected token file ownership, mode, ancestor, and symlink tests"
+  ],
+  "schema": 1,
+  "scope": "offline_in_process_mcp_sdk_and_stubbed_aws_boundary",
+  "status": "passed",
+  "test_count": 30,
+  "warnings": [
+    "Starlette TestClient httpx deprecation",
+    "AnyIO BlockingPortal alias deprecation"
+  ]
+}

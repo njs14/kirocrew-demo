@@ -1,0 +1,36 @@
+[Unit]
+Description=KiroCrew EC2 enforcement demo Gateway
+Wants=network-online.target
+After=network-online.target kirocrew-imds-guard.service
+Requires=kirocrew-imds-guard.service
+
+[Service]
+Type=simple
+User=crew
+Group=crew
+WorkingDirectory=/srv/kirocrew-demo/workspace
+Environment=HOME=/home/crew
+Environment=PATH=/opt/kirocrew/venv/bin:/usr/local/bin:/usr/bin:/bin
+Environment=KIROCREW_HOME=/var/lib/kirocrew
+Environment=KIROCREW_PORT=5476
+Environment=KIROCREW_BIND=127.0.0.1
+Environment=KIROCREW_ALLOWED_LOOPBACK_PORTS=5599
+Environment=KIROCREW_TELEMETRY_DISABLED=1
+Environment=KIROCREW_SKIP_MODEL_DOWNLOAD=1
+Environment=AWS_EC2_METADATA_DISABLED=true
+ExecStart=/opt/kirocrew/venv/bin/kirocrew gateway --no-crons --no-tunnel --no-open --approval interactive
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/var/lib/kirocrew /home/crew /srv/kirocrew-demo/workspace
+PrivateTmp=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+
+[Install]
+WantedBy=multi-user.target

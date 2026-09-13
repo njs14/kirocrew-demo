@@ -1,0 +1,37 @@
+{
+  "observed_at": "2026-09-13T04:57:49.450539+00:00",
+  "method": "Author visual inspection of exact Playwright screenshots using view_image",
+  "artifact": {
+    "path": "kirocrew-demo-live.html",
+    "sha256": "488556e0e09919043ba616da0d340c9b0ceff4f130c2bd17799f7d2da43e8d87"
+  },
+  "screenshots": [
+    {
+      "path": "evidence/aws/viewer-ec2-1440-light.png",
+      "sha256": "adb415193848b76d5603df7c4c11efb75a8422a862617fe675db75746eb45108"
+    },
+    {
+      "path": "evidence/aws/viewer-security-1440-dark.png",
+      "sha256": "58cfeadaf35b48df295f63953e564043fa3c534f76458d118fc433ddf52ff8f4"
+    },
+    {
+      "path": "evidence/aws/viewer-reference.png",
+      "sha256": "3a90fc224eee9a5908ffd481de0297693e068e167e39392c4e92da024added25"
+    },
+    {
+      "path": "evidence/aws/viewer-reference-details.png",
+      "sha256": "1962d643af576a3a34d026862a071dc70a1ddcbb86c8a2717005a6eb1c74b49a"
+    }
+  ],
+  "status": "pass",
+  "findings": [
+    "Council-adjusted EC2 diagram, toolbar and evidence cards remain fully visible at 1440 by 900; configuration wording no longer implies verified L0-L5 enforcement.",
+    "Accepted security diagram retains its single endpoint-control box; footer caveat remains visible.",
+    "Reference hierarchy and five outcome rows are legible; pending native backend status is distinct; final presenter links visible in scrolling reference.",
+    "Expanded reference details state the SSM core role permission and writable Crew demo deny rule; native status now points to the current GitHub sign-in boundary. Rehearsal receipt linked separately from original direct-probe rows."
+  ],
+  "limits": [
+    "This is author visual inspection, not independent architecture or security review.",
+    "Diagram text is dense at minimum viewport; built-in zoom, focus and presentation controls remain available."
+  ]
+}

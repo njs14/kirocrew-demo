@@ -1,0 +1,71 @@
+{
+  "Changes": [
+    {
+      "Type": "Resource",
+      "ResourceChange": {
+        "Action": "Add",
+        "LogicalResourceId": "DemoArmInstance",
+        "ResourceType": "AWS::EC2::Instance",
+        "Scope": [],
+        "Details": []
+      }
+    }
+  ],
+  "ChangeSetName": "kirocrew-arm-20260913",
+  "ChangeSetId": "arn:aws:cloudformation:us-east-1:770132776059:changeSet/kirocrew-arm-20260913/06d79a98-4a69-4c1b-bcd0-af7983aa9a3b",
+  "StackId": "arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b",
+  "StackName": "kirocrew-demo-20260913",
+  "Description": "Add minimum Light-tier ARM host, retain existing x86 host for rollback, preserve network/IAM/S3.",
+  "Parameters": [
+    {
+      "ParameterKey": "KeyName",
+      "ParameterValue": "kirocrew-demo-20260913"
+    },
+    {
+      "ParameterKey": "AllowedCidr",
+      "ParameterValue": "24.60.107.229/32"
+    },
+    {
+      "ParameterKey": "VpcId",
+      "ParameterValue": "vpc-07b9dae1b0889f755"
+    },
+    {
+      "ParameterKey": "ArmImageId",
+      "ParameterValue": "ami-0246d714afcc1d494"
+    },
+    {
+      "ParameterKey": "ImageId",
+      "ParameterValue": "ami-025d99823a4caad37"
+    },
+    {
+      "ParameterKey": "SubnetId",
+      "ParameterValue": "subnet-0e97cd68883d3d479"
+    }
+  ],
+  "CreationTime": "2026-09-13T13:56:57.815000+00:00",
+  "ExecutionStatus": "AVAILABLE",
+  "Status": "CREATE_COMPLETE",
+  "StatusReason": null,
+  "NotificationARNs": [],
+  "RollbackConfiguration": {},
+  "Capabilities": [
+    "CAPABILITY_IAM"
+  ],
+  "Tags": [
+    {
+      "Key": "Project",
+      "Value": "kirocrew-demo"
+    }
+  ],
+  "ParentChangeSetId": null,
+  "IncludeNestedStacks": false,
+  "RootChangeSetId": null,
+  "OnStackFailure": null,
+  "ImportExistingResources": null,
+  "StackDriftStatus": null,
+  "DeploymentMode": null,
+  "DeploymentConfig": {
+    "Mode": "STANDARD",
+    "DisableRollback": false
+  }
+}

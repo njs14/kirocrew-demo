@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-13T05:10:33.978393+00:00",
+  "status": "ec2_deployed_artifacts_delivered_native_authentication_pending",
+  "user_objective_fully_complete": false,
+  "root": "/Users/noahsutter/git-projects/kirocrew-demo",
+  "cloud_last_observation": {
+    "source": "live AWS reads",
+    "mode": "read-only / dry-run",
+    "stack": "kirocrew-demo-20260913",
+    "region": "us-east-1",
+    "instance": "i-020eb373045b56586",
+    "state": "running",
+    "public_ip": "100.57.5.32",
+    "ssh_ingress": "24.60.107.229/32",
+    "bucket": "kirocrew-demo-20260913-demobucket-pdjzgyu25xhb",
+    "observed_at": "2026-09-13T04:59:09.590307+00:00",
+    "command_exit": 0
+  },
+  "client": {
+    "runLocalGateway": false,
+    "local_gateway_port_5476_listening": false,
+    "ssh_tunnel_local_port": 5599,
+    "remote_gateway_loopback_port": 5476,
+    "remote_workspace": "/srv/kirocrew-demo/workspace",
+    "native_desktop_connection_verified": true
+  },
+  "mcp": {
+    "aws_knowledge_plugin_uninstalled": true,
+    "primary_aws_mcp_region": "us-east-1",
+    "direct_ec2_mcp_auth_catalog_allow_grant_deny_s3_iam_deny_verified": true,
+    "iam_user_credentials_copied_to_ec2": false
+  },
+  "native": {
+    "authentication_verified": false,
+    "model_backend_executed": false,
+    "crew_denial_verified": false,
+    "sandbox_execution_verified": false,
+    "full_session_performance_verified": false,
+    "latest_login_setup": "evidence/aws/ec2-login-setup.json",
+    "latest_login_outcome": "evidence/aws/ec2-login-outcome.json",
+    "fresh_login_command": "python3 scripts/ec2-login.py",
+    "next_step": "The prior attempt ended and cleaned up. Start a fresh helper when ready to complete GitHub sign-in. Then execute native-demo.sh and verify each actual callback, SEL and MCP trace."
+  },
+  "council": {
+    "candidate_sha256": "fe7708a0689906820be49bd06baa325c93fec3465856bdc0071c2daae307cc3e",
+    "reviewers": [
+      "Grok 4.6, xhigh launch setting, Grok Build",
+      "Opus 5, xhigh launch setting, Claude Code"
+    ],
+    "both_saw_all_nine_slide_images_and_text_notes": true,
+    "both_verdicts": "changes required",
+    "accepted_decisions_incorporated": true,
+    "subsequent_no_ai_slop_pass_complete": true,
+    "final_byte_council_approval": false,
+    "final_author_visual_and_copy_acceptance": true
+  },
+  "validation": {
+    "deck_package_layout_font_import": "passed",
+    "all_nine_final_renders_inspected": true,
+    "native_powerpoint_playback": "not performed",
+    "archify_and_viewer_browser_checks": "passed across four sizes and both themes",
+    "selected_deployed_nightly_modules_matching_installed_record": 24,
+    "documented_direct_probe_rehearsal": "passed",
+    "actual_changed_ip_start_stop_cycle": "not performed",
+    "rehearsal_scope_note": "The rehearsal receipt binds earlier walkthrough/helper bytes. Subsequent walkthrough wording and login helper fixes have separate document and setup receipts. The rehearsed direct command and native launcher are unchanged."
+  },
+  "limitations": [
+    "Native sign-in and model-driven Crew enforcement remain pending; direct MCP probes do not establish them.",
+    "Crew owns its demo configuration and deny rule; immutable managed policy is not established.",
+    "The custom MCP service uses one fixed bearer principal and fixed grants, not a general OAuth MCP gateway.",
+    "The 2 GiB host reports low memory; full backend performance is unverified.",
+    "EC2 runs a custom Linux repack of the installed nightly; no official Linux nightly release or source SHA is claimed.",
+    "Cloud state, IP address and billing are point-in-time observations. The instance remains running for the demo and login."
+  ],
+  "accepted_artifacts_preserved": [
+    {
+      "path": "kirocrew-security-layers.html",
+      "sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+      "bytes": 806216
+    },
+    {
+      "path": "kirocrew-security-layers-base.html",
+      "sha256": "f51ac796f42f996f84cf7050cb440eb11ffef19a1f9c4c45e66fa8efd581e882",
+      "bytes": 803073
+    },
+    {
+      "path": "kirocrew-security-layers.architecture.json",
+      "sha256": "fa3662e9483a6dbac6fa505fa3b5e855e42134246d5d08e3122013bd7d4f4d55",
+      "bytes": 3881
+    },
+    {
+      "path": "kirocrew-aws-deployment.html",
+      "sha256": "4375acf0466215035c06b9a9d643555eb9b6e5a478e541b6558435b14ac07784",
+      "bytes": 845336
+    },
+    {
+      "path": "kirocrew-aws-remote.html",
+      "sha256": "aa8a5e9bd970a3a945caffe340fe0792aff72709017bdec54093c74bb86cb7cc",
+      "bytes": 2228358
+    },
+    {
+      "path": "kirocrew-security-layers-browser.html",
+      "sha256": "e47121b910829997265ecb42c9c248d14da1cc244b1575952be6b7b071b26d08",
+      "bytes": 805022
+    },
+    {
+      "path": "kirocrew-aws-deployment-browser.html",
+      "sha256": "c45720356c1289c2d2992eca5534ae169e29dd5d2e8b6675093bebd80bef9e46",
+      "bytes": 843995
+    },
+    {
+      "path": "demo.sh",
+      "sha256": "cfed79f68d47db9c051c53c24f893cf80c1a8ffcdafe604a4f365df7d503d1b6",
+      "bytes": 652
+    },
+    {
+      "path": "scripts/run-live-demo.py",
+      "sha256": "51311fadd1b8434bea6b3820f216f4bf7a0af6bd1a1ffab4601e8b742cf1ffae",
+      "bytes": 10485
+    },
+    {
+      "path": "output/kirocrew-demo.pptx",
+      "sha256": "a6cc6e3272cb337c5b4c40cefd61b0042d4d41c5877e3d332ac41b8d1a164f0a",
+      "bytes": 366311
+    }
+  ],
+  "files": [
+    {
+      "path": "HANDOFF.md",
+      "bytes": 14363,
+      "sha256": "19479ef9dbf3289e9004eae69ddfdafcb3db16af9b832b87b8d0ce2486d637bd"
+    },
+    {
+      "path": "START-HERE.txt",
+      "bytes": 590,
+      "sha256": "5afc69a4908dde28b69932b9b8f3deee763cc931caa7e0d5d536d372687be996"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1201,
+      "sha256": "3b7401f7da1b8d50af4f00c5bfd2048e200e64a3505a3c832afa2d3ec08ca31e"
+    },
+    {
+      "path": "WALKTHROUGH.md",
+      "bytes": 7889,
+      "sha256": "fc1ead472cf5089fead3392ab5b04319201e52dccec715455e9d56a1cfcb39c2"
+    },
+    {
+      "path": "WALKTHROUGH-EC2.md",
+      "bytes": 7889,
+      "sha256": "fc1ead472cf5089fead3392ab5b04319201e52dccec715455e9d56a1cfcb39c2"
+    },
+    {
+      "path": "kirocrew-ec2-notes.md",
+      "bytes": 7597,
+      "sha256": "636e68701916e10292bed9e329143277d5783c0e28318c6b0e435cf6a3574206"
+    },
+    {
+      "path": "output/kirocrew-ec2-demo.pptx",
+      "bytes": 159660,
+      "sha256": "eaf91801fa8f43e2192df5f229b9d7ef677b9d49a6f9552a629c43b5e6113a46"
+    },
+    {
+      "path": "output/kirocrew-ec2-demo-copy.md",
+      "bytes": 12198,
+      "sha256": "1590ffd176587e26f1231b536d77a39b9dce8db49febfcb8e199a65337de3b58"
+    },
+    {
+      "path": "kirocrew-demo-live.html",
+      "bytes": 2164991,
+      "sha256": "488556e0e09919043ba616da0d340c9b0ceff4f130c2bd17799f7d2da43e8d87"
+    },
+    {
+      "path": "kirocrew-ec2-live.html",
+      "bytes": 809098,
+      "sha256": "4f8547905863a4303ad5117f3d876c11c638eded381f9562a5824f935d9b9fef"
+    },
+    {
+      "path": "kirocrew-ec2-live.architecture.json",
+      "bytes": 4718,
+      "sha256": "b0fe61ca2fb257e54e999c0bb031edb2f275e4f13a625257a0a1e6f242d674e9"
+    },
+    {
+      "path": "kirocrew-ec2-slide.html",
+      "bytes": 797380,
+      "sha256": "489a1b3f5eaa86299106c33d818ca328d5778d291cd596499ec6920849f969e2"
+    },
+    {
+      "path": "kirocrew-ec2-slide.architecture.json",
+      "bytes": 2129,
+      "sha256": "1c628b2d6ff8d9f10193cc247e210dbe022f9617a377a993f2a6514840caad50"
+    },
+    {
+      "path": "infrastructure/ec2-demo.json",
+      "bytes": 14193,
+      "sha256": "778016a3c8fb7d45933e651ace1634a9148b9ead7960797ae208a795752602ea"
+    },
+    {
+      "path": "infrastructure/bootstrap.sh",
+      "bytes": 3314,
+      "sha256": "46c2f99747f3a04d48e47f41b2e880f9be10fe3d425b75b4981717dd8c9459d6"
+    },
+    {
+      "path": "infrastructure/configure-demo.py",
+      "bytes": 3034,
+      "sha256": "cf48645c34c4312b5debb027f3bc03ff4f84bc216f821fe53e4b5045b51f1fba"
+    },
+    {
+      "path": "infrastructure/kirocrew-demo.service",
+      "bytes": 1094,
+      "sha256": "662c10170325a0a2e0025e2007d48c650e5ddf88343f0475f50404cfc97360df"
+    },
+    {
+      "path": "infrastructure/kirocrew-mcp-demo.service",
+      "bytes": 850,
+      "sha256": "027ec03ceffdf0fcb38b9961bd35211572f564e0f249904feb111f0624461d01"
+    },
+    {
+      "path": "infrastructure/crew-requirements-linux.lock",
+      "bytes": 152397,
+      "sha256": "d4e5f14049274f75870bbd2d694148a32b036394fca4cbf6b5d0b9ab9ca5da42"
+    },
+    {
+      "path": "infrastructure/RUNBOOK.md",
+      "bytes": 15575,
+      "sha256": "27a0d1d56e2b28602718a14b80f1ab8b30b4e2439d894d191fc049a6a9a1d8fb"
+    },
+    {
+      "path": "infrastructure/mcp-enforcement/server.py",
+      "bytes": 13826,
+      "sha256": "a52c0c42d91430232fc68c20f6554e70842ebd33d0a71a79dff3f50ef431eb08"
+    },
+    {
+      "path": "infrastructure/mcp-enforcement/probe.py",
+      "bytes": 5247,
+      "sha256": "772c26fdc20cd498b52fc565f2228fd6f1ab097995c164cc45cfa68780b7e607"
+    },
+    {
+      "path": "infrastructure/mcp-enforcement/test_server.py",
+      "bytes": 12387,
+      "sha256": "707ad3dd807e3053c64b0f6cda45515b25fca7d77d3c40a73d34856cf54452f5"
+    },
+    {
+      "path": "infrastructure/mcp-enforcement/TEST-RECEIPT.json",
+      "bytes": 2335,
+      "sha256": "2e792dbd854598d4e8f326ca00467a9d87cdbc63be213fb585db43d5382bb71b"
+    },
+    {
+      "path": "native-demo.sh",
+      "bytes": 643,
+      "sha256": "a54838bfced6474606751c6ec37c9224b0eace03cfed4b5146aee424260290b8"
+    },
+    {
+      "path": "scripts/native-backend-demo.py",
+      "bytes": 36363,
+      "sha256": "c859ac80e4adc29a5943504e015df637c5ebf19a5fe6e597eece57be89601267"
+    },
+    {
+      "path": "scripts/native-backend-demo.README.md",
+      "bytes": 6346,
+      "sha256": "711f87eaa57ac24628b884aaeda63cbc274a85f22d2e3ca7989a56fca27bbfd8"
+    },
+    {
+      "path": "scripts/demo-cloud.py",
+      "bytes": 19993,
+      "sha256": "f0a7519ed7caee871b97e3fffc986804258f477c94aeee34422e988b8cc2b188"
+    },
+    {
+      "path": "scripts/ec2-login.py",
+      "bytes": 20138,
+      "sha256": "8e78cfeedae1692165b1292e97dbf58675427137abf339cabea3da3063e9bbec"
+    },
+    {
+      "path": "scripts/EC2-LOGIN.md",
+      "bytes": 2282,
+      "sha256": "0e9d0609071f0f424f02d997e186516853c809afcb1782f4adbf3b66b0571ac4"
+    },
+    {
+      "path": "scripts/aws-mcp-client.py",
+      "bytes": 1104,
+      "sha256": "4204c11af863cfc6b719fee55c605a5a729918af2aff2bfca848a37a7d68d525"
+    },
+    {
+      "path": "scripts/build-live-viewer.py",
+      "bytes": 15769,
+      "sha256": "9507e99e27cf32275d0dbb8d6a661fdf3525d031ec7f9f0159d4dee3e5fb3ce7"
+    },
+    {
+      "path": "scripts/validate-live-viewer.cjs",
+      "bytes": 8585,
+      "sha256": "e94ab62232af6c0ca99f256c0d488d3a04d371b5d51e89f22f2d8f51a2998bfa"
+    },
+    {
+      "path": "evidence/aws/stack-state.json",
+      "bytes": 3640,
+      "sha256": "93c63d9a73a2c4b9c42af83e771f440e75d140731a33148fbde60a7042ff2222"
+    },
+    {
+      "path": "evidence/aws/final-cloud-status.json",
+      "bytes": 390,
+      "sha256": "6e8f2e465a4e4dc22cea4df3b39a65f5359b1cc274fdae431910428ce2f85d84"
+    },
+    {
+      "path": "evidence/aws/security-group.json",
+      "bytes": 2920,
+      "sha256": "d65380f161ce9f6cccea8a3f0a8e23bf9a1c9bde6c19b3654141d9708bda2442"
+    },
+    {
+      "path": "evidence/aws/client-runtime-verification.json",
+      "bytes": 1034,
+      "sha256": "827ac43582525486362fce86f0602dd8fdab70f21661e2c0002e10c2ce5f8783"
+    },
+    {
+      "path": "evidence/aws/mcp-live-receipt.json",
+      "bytes": 2199,
+      "sha256": "8072fbe3b4048296b49436b8f23e4772ad3c3e4aba605305efd8901aa2843442"
+    },
+    {
+      "path": "evidence/aws/mcp-live-audit.jsonl",
+      "bytes": 2667,
+      "sha256": "6aaf999a252237219cfd7504d13a60356696119f9ae3a1c3ad59652c2ad307f1"
+    },
+    {
+      "path": "evidence/aws/walkthrough-direct-probe.json",
+      "bytes": 2199,
+      "sha256": "1f8ff02ed43d580aab11227e4d52fa4538335e4cc2818076c3bec50d6eddcd2f"
+    },
+    {
+      "path": "evidence/aws/walkthrough-rehearsal.json",
+      "bytes": 1118,
+      "sha256": "7fe77da84984211fe0c141b8330424328faa17c009f737bd1eba7b48c940dfa9"
+    },
+    {
+      "path": "evidence/aws/deployed-nightly-verification.json",
+      "bytes": 7859,
+      "sha256": "ffc2ac9e4c495c62a904a3883880e22a4601d700725fee7e2f8bb9fb7cd9cc3d"
+    },
+    {
+      "path": "evidence/aws/linux-repack.json",
+      "bytes": 442,
+      "sha256": "837809f01136f7535275e7495c554357e183a3395ea4878fbdd741c67248e80e"
+    },
+    {
+      "path": "evidence/aws/kiro-cli-artifact.json",
+      "bytes": 243,
+      "sha256": "c654b4f543611cf5feb012fe174ed14fdaa93dc81da26f836007c2753cfb94c9"
+    },
+    {
+      "path": "evidence/aws/primary-mcp-tools.json",
+      "bytes": 19235,
+      "sha256": "5f197e0236b3819b5e568ed07b93f66d725570695dea65150519efc7dbf6a768"
+    },
+    {
+      "path": "evidence/aws/deployment-final-review.json",
+      "bytes": 12654,
+      "sha256": "78fbb0105dd2f3e04b50a5f577c750205b7c265780423878a7a3bc5f7a2c659a"
+    },
+    {
+      "path": "evidence/aws/operator-scripts-review.json",
+      "bytes": 5435,
+      "sha256": "20e6fca1b95b87b079eb7aee85e25cb93f2c538921ffcf28b9e0ef2cf37706a3"
+    },
+    {
+      "path": "evidence/aws/ec2-login-setup.json",
+      "bytes": 1188,
+      "sha256": "2be5d678dd0cdd13499866c0203c22094357ba68e284bc77210b152c00d0dd64"
+    },
+    {
+      "path": "evidence/aws/ec2-login-outcome.json",
+      "bytes": 621,
+      "sha256": "617eda2782bb0d28b23570346f3f37fdf9adec6cf4ed74f3911991ca385bed28"
+    },
+    {
+      "path": "evidence/aws/backend-login-status.json",
+      "bytes": 873,
+      "sha256": "8bbf0ea3650f6f1ad74c330c5d92274ed523b6751ac6086bc6b48e547a66400d"
+    },
+    {
+      "path": "evidence/aws/handoff-doc-review.json",
+      "bytes": 7149,
+      "sha256": "7ae2c3802f26ac685fb84693c564539d6af1f5521d74cfb90d2336799a6a405e"
+    },
+    {
+      "path": "evidence/aws/archify/delivery-receipt.json",
+      "bytes": 3875,
+      "sha256": "ab682039d77f361f4d6dc9f4d133da9576d3cafcdd7ea95e40962e3ccca8a800"
+    },
+    {
+      "path": "evidence/aws/archify-slide/delivery-receipt.json",
+      "bytes": 3968,
+      "sha256": "b805ef7bfbaf40b219a78facfe0c608a4d906102e39ec70a4fc53c2322e2899b"
+    },
+    {
+      "path": "evidence/aws/viewer-build.json",
+      "bytes": 1846,
+      "sha256": "cb4c972418d3e61cfc1481836d7cc7125baa5e4ac9337483e3e5736572fdd9fb"
+    },
+    {
+      "path": "evidence/aws/viewer-browser-receipt.json",
+      "bytes": 11352,
+      "sha256": "3d75cf638b8913d93f266620ae9349bc40ee28577dc2e4ce676ee95c39a31aad"
+    },
+    {
+      "path": "evidence/aws/viewer-perceptual.json",
+      "bytes": 1852,
+      "sha256": "dedeb7cffa897536d77219bebef5b8e60c991c9b28bb37c8627f9d38d01c15b7"
+    },
+    {
+      "path": "evidence/aws/t3a-small-pricing.json",
+      "bytes": 10735,
+      "sha256": "311b29ce59b4e8258bbbbc8ca5308a8267a3156f265fa8569110b27d0157f214"
+    },
+    {
+      "path": "evidence/aws/gp3-pricing.json",
+      "bytes": 1523,
+      "sha256": "a7afb8de0144bcb8d5c606de5875e86db7313ceb0112190447da1b3067541fc2"
+    },
+    {
+      "path": "evidence/council/candidate-v3/council-verified-receipt.json",
+      "bytes": 9189,
+      "sha256": "4585a9a49dae103b1aa35e3aa6e151c81f99a3544aeabf1918fb1611eb5cbb8a"
+    },
+    {
+      "path": "evidence/council/candidate-v3/DECISIONS.md",
+      "bytes": 3401,
+      "sha256": "e9c43e8b46848a8718c4ae2043260600ea73919892b884e1a3a12929bdc64224"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/delivery-receipt.json",
+      "bytes": 5106,
+      "sha256": "741a4223e58588d158a3c7eaf405f897d7bd8ce7e37628a484a9b0910e4aea57"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/council-incorporation.json",
+      "bytes": 4897,
+      "sha256": "3cb61bd5f44da7bdecd59d5afa653c96c175fdf178c8787775afacf7787ba4aa"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/no-ai-slop.md",
+      "bytes": 3250,
+      "sha256": "d53ed36d078cec4437202aa77cfc36734e46daeaec83b84fbcc4dfddb5d0ca17"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/root-author-acceptance.json",
+      "bytes": 3196,
+      "sha256": "6d2f120001457cabec8f045e6858ac30c0bb433d38d5f9663e8af9d15889f10b"
+    },
+    {
+      "path": "evidence/slides/kirocrew-ec2-demo/finalization.json",
+      "bytes": 4054,
+      "sha256": "5be5d3f00354630006c7853b16c050c380c96a4320a20d9a8fe3ba17a286fe58"
+    }
+  ]
+}

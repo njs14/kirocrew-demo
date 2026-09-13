@@ -1,0 +1,143 @@
+{
+  "created_at": "2026-09-13T14:03:58.044575+00:00",
+  "status": "passed",
+  "scope": "Operator helper exact ARM active-instance and stack binding; offline and in-memory stub checks only",
+  "file": "scripts/demo-cloud.py",
+  "sha256": "04a388930b154ffac74c0ecbc0bc60b190cca840ca0970e44ba582728ccd55b3",
+  "stack_arn": "arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b",
+  "active_instance": {
+    "id": "i-0fde6de3f0ea5a9d0",
+    "instance_type": "t4g.xlarge",
+    "architecture": "arm64"
+  },
+  "historical_offline_only": {
+    "id": "i-020eb373045b56586",
+    "instance_type": "t3a.small",
+    "architecture": "x86_64"
+  },
+  "ssh_host_key_alias": "kirocrew-demo-arm-20260913",
+  "changes": [
+    "Verify exact stack ARN before resource lookups",
+    "Derive instance lookup from stack output and require exact active ARM binding",
+    "Keep original instance tuple valid only for historical offline receipts",
+    "Report actual instance ID, type and architecture in status",
+    "Validate exact active instance during wait",
+    "Require new ARM pinned SSH host-key alias",
+    "Start and stop use the verified context instance ID, including accurate historical offline plans"
+  ],
+  "checks": [
+    {
+      "name": "python3 -m py_compile scripts/demo-cloud.py",
+      "passed": true
+    },
+    {
+      "name": "Historic offline status reports exact small/x86_64 binding",
+      "passed": true
+    },
+    {
+      "name": "ARM offline status reports exact xlarge/arm64 binding",
+      "passed": true
+    },
+    {
+      "name": "Unexpected ARM instance type rejected",
+      "passed": true
+    },
+    {
+      "name": "Wrong architecture rejected",
+      "passed": true
+    },
+    {
+      "name": "Returned wrong instance ID rejected",
+      "passed": true
+    },
+    {
+      "name": "Wrong stack ARN rejected",
+      "passed": true
+    },
+    {
+      "name": "Missing project tag rejected",
+      "passed": true
+    },
+    {
+      "name": "Changed SG attachment rejected",
+      "passed": true
+    },
+    {
+      "name": "Broad ingress rejected",
+      "passed": true
+    },
+    {
+      "name": "CFN CIDR drift rejected",
+      "passed": true
+    },
+    {
+      "name": "Offline mode cannot apply mutations",
+      "passed": true
+    },
+    {
+      "name": "Offline stop plan uses its verified historic receipt ID",
+      "passed": true
+    },
+    {
+      "name": "Offline stop plan uses its verified ARM receipt ID",
+      "passed": true
+    },
+    {
+      "name": "Stubbed live context accepts exact ARM binding",
+      "passed": true
+    },
+    {
+      "name": "Account and stack checks precede instance lookup",
+      "passed": true
+    },
+    {
+      "name": "Wrong account rejects before resource reads",
+      "passed": true
+    },
+    {
+      "name": "Historic live output rejected",
+      "passed": true
+    },
+    {
+      "name": "Wrong live stack ARN rejected",
+      "passed": true
+    },
+    {
+      "name": "Arbitrary live output rejected",
+      "passed": true
+    },
+    {
+      "name": "Wait validates the exact active ARM instance",
+      "passed": true
+    },
+    {
+      "name": "Wait rejects unexpected returned architecture",
+      "passed": true
+    },
+    {
+      "name": "Pinned ARM SSH update only changes HostName",
+      "passed": true
+    },
+    {
+      "name": "Old host-key alias rejected",
+      "passed": true
+    },
+    {
+      "name": "Disabled strict host-key check rejected",
+      "passed": true
+    }
+  ],
+  "external_calls": {
+    "aws": 0,
+    "ssh": 0,
+    "models": 0
+  },
+  "supersedes": {
+    "helper_sha256": "fad14540174412cbea1a5bb4957cf89fd8be422e80cc9014d50032dd096ec5b6",
+    "reason": "User selected ARM replacement instead of x86 resize; xlarge x86 allowlist removed"
+  },
+  "limitations": [
+    "No live cloud or SSH execution by this review",
+    "Root must verify the new ARM host key and update the shared SSH block before using start --apply for reconnection"
+  ]
+}

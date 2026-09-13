@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-13T14:35:21.706026+00:00",
+  "purpose": "New ARM and observability diagram edition; x86 references retained",
+  "products": [
+    {
+      "edition": "live",
+      "diagramType": "architecture",
+      "specification": {
+        "path": "kirocrew-arm-live.architecture.json",
+        "bytes": 4883,
+        "sha256": "911067e0f07affce6156281dc430445581c117e2c8277ea07901281b703a7690"
+      },
+      "html": {
+        "path": "kirocrew-arm-live.html",
+        "bytes": 809534,
+        "sha256": "5de2c2fd2e57456e51f2336b717dba7a756d6e3ef54e9d25f57176d5c3d59cfa"
+      },
+      "validation": {
+        "checksPassed": 9,
+        "checkCount": 9,
+        "compositionProfile": "showcase",
+        "compositionStatus": "pass",
+        "errors": 0,
+        "warnings": 0
+      },
+      "staticGraphics": {
+        "svg": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-live.svg",
+          "bytes": 296078,
+          "sha256": "cf2fbe696ff3e98e2b345264d44ba77c5c08982983dd7b963ec6448fd23d9fb1"
+        },
+        "png": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-live.png",
+          "bytes": 519792,
+          "sha256": "1e24ffea453d4da6c4503afc8d883670465a42aff04e043c16cad047e2c4a825"
+        },
+        "actualSize": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-live-1152x480.png",
+          "bytes": 65360,
+          "sha256": "18c875a2bd1a66c61dc5aab171f6ac3fd645cc764fa877422059a226c35b742c"
+        }
+      },
+      "visual_review": {
+        "status": "passed",
+        "scope": "Non-browser static SVG raster rendering only; light theme. Slide edition inspected at exact1152\u00d7480. No HTML viewer claim.",
+        "reviewer": "image-capable author agent"
+      },
+      "browser_evidence": {
+        "status": "unavailable",
+        "reason": "CUA file URL policy blocked opening the local diagram. No browser/server reroute attempted, and no non-CUA browser automation run."
+      }
+    },
+    {
+      "edition": "slide",
+      "diagramType": "architecture",
+      "specification": {
+        "path": "kirocrew-arm-slide.architecture.json",
+        "bytes": 2205,
+        "sha256": "0c5ec30a361c2cdd1f8ad42dc6373e55fecfae5ea58c31a255193f414d3550ef"
+      },
+      "html": {
+        "path": "kirocrew-arm-slide.html",
+        "bytes": 797518,
+        "sha256": "67c31462e6d0fddb4979fd74e722ccdad3b51d733c1b4af9dbada5642e506f4c"
+      },
+      "validation": {
+        "checksPassed": 9,
+        "checkCount": 9,
+        "compositionProfile": "showcase",
+        "compositionStatus": "pass",
+        "errors": 0,
+        "warnings": 0
+      },
+      "staticGraphics": {
+        "svg": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-slide.svg",
+          "bytes": 285315,
+          "sha256": "633e563ee76d35c0fe55a125c9d924f56b7e02c0dc1651ef71a8ba821fcdbb05"
+        },
+        "png": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-slide.png",
+          "bytes": 122923,
+          "sha256": "a55bb004990d51645e3c4c91d78895d335dff1dfe076d291b25314c115c89d9e"
+        },
+        "actualSize": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-slide-1152x480.png",
+          "bytes": 51687,
+          "sha256": "c688b894b0194c7245295f88d2ac6b37ce65733721649e05db23f83e69b1bd42"
+        }
+      },
+      "visual_review": {
+        "status": "passed",
+        "scope": "Non-browser static SVG raster rendering only; light theme. Slide edition inspected at exact1152\u00d7480. No HTML viewer claim.",
+        "reviewer": "image-capable author agent"
+      },
+      "browser_evidence": {
+        "status": "unavailable",
+        "reason": "CUA file URL policy blocked opening the local diagram. No browser/server reroute attempted, and no non-CUA browser automation run."
+      }
+    },
+    {
+      "edition": "observability",
+      "diagramType": "architecture",
+      "specification": {
+        "path": "kirocrew-arm-observability.architecture.json",
+        "bytes": 4091,
+        "sha256": "e62a6994ee22f89abab10bf07b5e2a414bb72ced87e6a77ddb7f7bd595892236"
+      },
+      "html": {
+        "path": "kirocrew-arm-observability.html",
+        "bytes": 805580,
+        "sha256": "33785569a65d96fe8b71f5b137e09b8f90f2bcf8d3c47e8af59b680f15fa4cad"
+      },
+      "validation": {
+        "checksPassed": 9,
+        "checkCount": 9,
+        "compositionProfile": "showcase",
+        "compositionStatus": "pass",
+        "errors": 0,
+        "warnings": 0
+      },
+      "staticGraphics": {
+        "svg": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-observability.svg",
+          "bytes": 292103,
+          "sha256": "dd9d78c11afb75d11b9daa2fe596876fb322b30f4108bd82f29bc30d8ded075e"
+        },
+        "png": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-observability.png",
+          "bytes": 481487,
+          "sha256": "529edf45dbbdf9703f84bd12454abb23c7db08b9b16d7c3c502dc35e1b393332"
+        },
+        "actualSize": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-observability-1152x480.png",
+          "bytes": 60942,
+          "sha256": "d4d27003dd2106781a9d438e40f63434f7d9f8f00e429670f4f9ea199eaefc0d"
+        }
+      },
+      "visual_review": {
+        "status": "passed",
+        "scope": "Non-browser static SVG raster rendering only; light theme. Slide edition inspected at exact1152\u00d7480. No HTML viewer claim.",
+        "reviewer": "image-capable author agent"
+      },
+      "browser_evidence": {
+        "status": "unavailable",
+        "reason": "CUA file URL policy blocked opening the local diagram. No browser/server reroute attempted, and no non-CUA browser automation run."
+      }
+    }
+  ],
+  "prior_diagrams_verified_unchanged": [
+    {
+      "path": "kirocrew-ec2-live.html",
+      "bytes": 809098,
+      "sha256": "4f8547905863a4303ad5117f3d876c11c638eded381f9562a5824f935d9b9fef"
+    },
+    {
+      "path": "kirocrew-ec2-live.architecture.json",
+      "bytes": 4718,
+      "sha256": "b0fe61ca2fb257e54e999c0bb031edb2f275e4f13a625257a0a1e6f242d674e9"
+    },
+    {
+      "path": "kirocrew-ec2-slide.html",
+      "bytes": 797380,
+      "sha256": "489a1b3f5eaa86299106c33d818ca328d5778d291cd596499ec6920849f969e2"
+    },
+    {
+      "path": "kirocrew-ec2-slide.architecture.json",
+      "bytes": 2129,
+      "sha256": "1c628b2d6ff8d9f10193cc247e210dbe022f9617a377a993f2a6514840caad50"
+    }
+  ],
+  "sources": [
+    {
+      "path": "evidence/aws/arm-20260913/final-cloud-verification.json",
+      "bytes": 4886,
+      "sha256": "95237019cad827d3917d4c9bccf9dea06693138e8125239c08f811ecdae180b6"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/mcp-live-receipt.json",
+      "bytes": 2199,
+      "sha256": "70e9966407f98d5685c7e9f2f81fd82484091d740a13dfe310b7d59873380ff4"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/ssh-cutover.json",
+      "bytes": 268,
+      "sha256": "b92c6d6f249a6c51b8b06b82e19589158879a85388b8029c39cf3c2e2aaef47d"
+    },
+    {
+      "path": "infrastructure/set-demo-telemetry.py",
+      "bytes": 1533,
+      "sha256": "2e324099fe7862d1e69a3011b5a1f2368d157e52679a2d986e912c6131938494"
+    },
+    {
+      "path": "infrastructure/observability/app/backend/server.py",
+      "bytes": 9674,
+      "sha256": "338aad5c0cfb8242e04052873e5a2def32076129459bd9b89c40c32331559d54"
+    },
+    {
+      "path": "infrastructure/observability/app/app.json",
+      "bytes": 640,
+      "sha256": "4b266342dbe8c8d320c04f5ef54b50d157410118df6a645840cf22d6633dad22"
+    },
+    {
+      "path": "infrastructure/observability-collector/collector.py",
+      "bytes": 17473,
+      "sha256": "744f58aac5c8c773dd64a1091bd5f8bbeed2357402df6f6e7ca3d9a14e9194ea"
+    },
+    {
+      "path": "scripts/demo-telemetry.py",
+      "bytes": 8969,
+      "sha256": "a2c1ac469d5578d481b9a84032095e19ebba43b4bb0417aebbf24319529115cd"
+    }
+  ],
+  "claims": {
+    "arm_cloud_state": "observed",
+    "direct_mcp_and_iam_probes": "passed on ARM",
+    "native_backend_enforcement": "unverified",
+    "custom_observability_runtime": "pending final root deployment receipt",
+    "native_telemetry_runtime": "pending final root deployment receipt"
+  },
+  "cost_notes": {
+    "active_compute_usd_per_hour": 0.1344,
+    "public_ipv4_usd_per_hour": 0.005,
+    "active_40gib_gp3_usd_per_month": 3.2,
+    "stopped_legacy_24gib_gp3_usd_per_month": 1.92,
+    "scope": "Provided root verified values for deck; not a billing total or external pricing refresh by this diagram task."
+  }
+}

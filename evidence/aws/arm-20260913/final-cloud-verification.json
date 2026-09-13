@@ -1,0 +1,155 @@
+{
+  "schema": 1,
+  "kind": "arm_cutover_final_read_only_cloud_verification",
+  "verified_at_utc": "2026-09-13T14:22:25.219094+00:00",
+  "account": "770132776059",
+  "region": "us-east-1",
+  "source": "Fresh AWS CLI read-only API responses; selected resource fields only",
+  "operations": [
+    {
+      "service": "cloudformation",
+      "operation": "describe-stacks"
+    },
+    {
+      "service": "ec2",
+      "operation": "describe-instance-credit-specifications"
+    },
+    {
+      "service": "ec2",
+      "operation": "describe-instances"
+    },
+    {
+      "service": "ec2",
+      "operation": "describe-security-groups"
+    },
+    {
+      "service": "ec2",
+      "operation": "describe-volumes"
+    },
+    {
+      "service": "sts",
+      "operation": "get-caller-identity"
+    }
+  ],
+  "stack": {
+    "name": "kirocrew-demo-20260913",
+    "arn": "arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b",
+    "status": "UPDATE_COMPLETE",
+    "allowed_cidr": "24.60.107.229/32",
+    "active_instance_id": "i-0fde6de3f0ea5a9d0",
+    "legacy_instance_id": "i-020eb373045b56586",
+    "security_group_id": "sg-08ac4789794115e39"
+  },
+  "active_instance": {
+    "instance_id": "i-0fde6de3f0ea5a9d0",
+    "state": "running",
+    "instance_type": "t4g.xlarge",
+    "architecture": "arm64",
+    "vcpus": 4,
+    "cpu_credits": "standard",
+    "public_ipv4": "100.61.173.192",
+    "security_group_ids": [
+      "sg-08ac4789794115e39"
+    ],
+    "root_device": "/dev/sda1",
+    "volumes": [
+      {
+        "device": "/dev/sda1",
+        "volume_id": "vol-02a27fe0b4d1af5af",
+        "size_gib": 40,
+        "type": "gp3",
+        "encrypted": true,
+        "state": "in-use",
+        "delete_on_termination": true
+      }
+    ],
+    "project_tag": "kirocrew-demo",
+    "stack_arn": "arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b",
+    "metadata": {
+      "State": "applied",
+      "HttpTokens": "required",
+      "HttpPutResponseHopLimit": 1,
+      "HttpProtocolIpv6": "disabled"
+    }
+  },
+  "legacy_instance": {
+    "instance_id": "i-020eb373045b56586",
+    "state": "stopped",
+    "instance_type": "t3a.small",
+    "architecture": "x86_64",
+    "vcpus": 2,
+    "cpu_credits": "standard",
+    "public_ipv4": null,
+    "security_group_ids": [
+      "sg-08ac4789794115e39"
+    ],
+    "root_device": "/dev/sda1",
+    "volumes": [
+      {
+        "device": "/dev/sda1",
+        "volume_id": "vol-07fce30fb97a89ab9",
+        "size_gib": 24,
+        "type": "gp3",
+        "encrypted": true,
+        "state": "in-use",
+        "delete_on_termination": true
+      }
+    ],
+    "project_tag": "kirocrew-demo",
+    "stack_arn": "arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b",
+    "metadata": {
+      "State": "applied",
+      "HttpTokens": "required",
+      "HttpPutResponseHopLimit": 1,
+      "HttpProtocolIpv6": "disabled"
+    }
+  },
+  "security_group": {
+    "group_id": "sg-08ac4789794115e39",
+    "inbound_rules": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "UserIdGroupPairs": [],
+        "IpRanges": [
+          {
+            "Description": "SSH forwarding and administration from the current client IP only",
+            "CidrIp": "24.60.107.229/32"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": []
+      }
+    ]
+  },
+  "checks": {
+    "aws_account_matches": true,
+    "stack_id_matches": true,
+    "stack_update_complete": true,
+    "stack_active_instance_matches": true,
+    "stack_legacy_instance_matches": true,
+    "active_running": true,
+    "active_t4g_xlarge_arm64": true,
+    "active_root_40gib_encrypted_gp3": true,
+    "legacy_stopped": true,
+    "legacy_t3a_small_x86": true,
+    "legacy_root_24gib_encrypted_gp3": true,
+    "legacy_no_public_ipv4": true,
+    "both_standard_cpu_credits": true,
+    "both_only_expected_security_group": true,
+    "only_inbound_ssh_from_exact_client_ipv4": true,
+    "stack_allowed_cidr_matches": true,
+    "stack_security_group_matches": true,
+    "both_project_and_stack_tags_match": true
+  },
+  "passed": true,
+  "discrepancies": [],
+  "scope_limits": [
+    "No cloud, host, service or client configuration was changed.",
+    "The public IPv4 is a snapshot and can change after stop/start.",
+    "This receipt verifies cloud state and ingress only; it does not establish backend authentication, a native Crew tool session, sandbox enforcement, telemetry collection or desktop UI behavior.",
+    "The original x86 instance remains CloudFormation-managed and stopped; its EBS storage is retained for rollback and still billed."
+  ],
+  "sanitization": "Excluded caller user identity/ARN, credential and session data, user-data, account email and full unfiltered API responses."
+}

@@ -1,0 +1,12 @@
+{
+  "status": "callback_login_expired_before_user_completion",
+  "initial_flow": "Kiro CLI --use-device-flow --license free showed Builder ID device approval; user reported browser returning to sign-in/approval",
+  "local_account_type": "SocialGitHub",
+  "replacement_flow": "Normal Kiro CLI login with isolated xdg-open URL capture and guarded SSH loopback callback forwarding; user chooses GitHub on app.kiro.dev",
+  "remote_cli_version": "2.21.4",
+  "credentials_or_sessions_copied": false,
+  "native_backend_verified": false,
+  "note": "OAuth URLs and account identifiers are intentionally omitted. This is a point-in-time status; fresh whoami is required before native validation.",
+  "observed_at": "2026-09-13T04:44:58.983505+00:00",
+  "next_action": "Start scripts/ec2-login.py in an interactive terminal for a fresh GitHub sign-in and verified callback tunnel."
+}

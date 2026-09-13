@@ -1,0 +1,71 @@
+{
+  "reference": "EC2-CONTINUATION-RECEIPT.json and exact delivered x86 artifact hashes",
+  "checks": [
+    {
+      "path": "kirocrew-security-layers.html",
+      "sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-security-layers-base.html",
+      "sha256": "f51ac796f42f996f84cf7050cb440eb11ffef19a1f9c4c45e66fa8efd581e882",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-security-layers.architecture.json",
+      "sha256": "fa3662e9483a6dbac6fa505fa3b5e855e42134246d5d08e3122013bd7d4f4d55",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-aws-deployment.html",
+      "sha256": "4375acf0466215035c06b9a9d643555eb9b6e5a478e541b6558435b14ac07784",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-aws-remote.html",
+      "sha256": "aa8a5e9bd970a3a945caffe340fe0792aff72709017bdec54093c74bb86cb7cc",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-security-layers-browser.html",
+      "sha256": "e47121b910829997265ecb42c9c248d14da1cc244b1575952be6b7b071b26d08",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-aws-deployment-browser.html",
+      "sha256": "c45720356c1289c2d2992eca5534ae169e29dd5d2e8b6675093bebd80bef9e46",
+      "unchanged": true
+    },
+    {
+      "path": "demo.sh",
+      "sha256": "cfed79f68d47db9c051c53c24f893cf80c1a8ffcdafe604a4f365df7d503d1b6",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/run-live-demo.py",
+      "sha256": "51311fadd1b8434bea6b3820f216f4bf7a0af6bd1a1ffab4601e8b742cf1ffae",
+      "unchanged": true
+    },
+    {
+      "path": "output/kirocrew-demo.pptx",
+      "sha256": "a6cc6e3272cb337c5b4c40cefd61b0042d4d41c5877e3d332ac41b8d1a164f0a",
+      "unchanged": true
+    },
+    {
+      "path": "output/kirocrew-ec2-demo.pptx",
+      "sha256": "eaf91801fa8f43e2192df5f229b9d7ef677b9d49a6f9552a629c43b5e6113a46",
+      "unchanged": true
+    },
+    {
+      "path": "output/kirocrew-ec2-demo-copy.md",
+      "sha256": "1590ffd176587e26f1231b536d77a39b9dce8db49febfcb8e199a65337de3b58",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-demo-live.html",
+      "sha256": "488556e0e09919043ba616da0d340c9b0ceff4f130c2bd17799f7d2da43e8d87",
+      "unchanged": true
+    }
+  ],
+  "passed": true
+}

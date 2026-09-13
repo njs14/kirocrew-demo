@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "reviewed_at": "2026-09-13T15:16:41.255662+00:00",
+  "artifact": "output/kirocrew-arm-observability-demo.pptx",
+  "sha256": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13",
+  "reviewer": "deck author",
+  "all_12_slides_inspected_as_exact_rendered_pixels": true,
+  "blocking_findings": [],
+  "renders": [
+    {
+      "slide": 1,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-1.png",
+      "sha256": "19247a9b300da68e9d3db6febf3ddd74c1029aa0538a06987bf1e875dd1e2a60"
+    },
+    {
+      "slide": 2,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-2.png",
+      "sha256": "d48b2b4cbb1bca0b570b5561ca7c3773d4ec88a67ee26e6173ca88c85f549409"
+    },
+    {
+      "slide": 3,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-3.png",
+      "sha256": "6fc69d770840d45ec70d2fc43fc3fbf301d56ff3494ec2b071c499760068bfa3"
+    },
+    {
+      "slide": 4,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-4.png",
+      "sha256": "86c5ad558d8531f2dad5bbcb510afacb7588dde519e57ceca14f48aa8f9b806c"
+    },
+    {
+      "slide": 5,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-5.png",
+      "sha256": "6bb3bd3fef3c98653e43ccd407d2248d2e1c2c6c4937aa1445e7db15f873d694"
+    },
+    {
+      "slide": 6,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-6.png",
+      "sha256": "e4ea3345e7b90a7982d6cb6067c61c513bd97caa082dc9df87a6969a1f4a0ea6"
+    },
+    {
+      "slide": 7,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-7.png",
+      "sha256": "a7b5e5408c93a57d153f96c43abd86bf93b8a130849b5f0a577f14b114067c17"
+    },
+    {
+      "slide": 8,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-8.png",
+      "sha256": "78ea9660c000f205d818db7242996c9df2183d557b4ba826a8cac3d2da9b5072"
+    },
+    {
+      "slide": 9,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-9.png",
+      "sha256": "f161f7eb661691a99b4659c92d975e0f08ab5523cc32daca0d280dbabf23e7ea"
+    },
+    {
+      "slide": 10,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-10.png",
+      "sha256": "c7fc083f58c024502302c8c4f1afc5e47ed0fd847bd26214d80d31dd9a4f4216"
+    },
+    {
+      "slide": 11,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-11.png",
+      "sha256": "0eaf143be799934a02d1983f73dcf6ca1d00be2f722b88c0c9940da3fab80a4c"
+    },
+    {
+      "slide": 12,
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-12.png",
+      "sha256": "01c59173273c5fa93fa084f6ced431aa774732a4e2bb799d43bfa2fa90417eea"
+    }
+  ],
+  "native_powerpoint_playback_verified": false,
+  "known_limits": [
+    "Accepted reference image retains the reported intersection-glyph appearance by explicit root decision.",
+    "Screenshot microcopy remains original; main evidence labels and captions are readable."
+  ]
+}

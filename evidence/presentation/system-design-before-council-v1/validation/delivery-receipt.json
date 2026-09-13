@@ -1,0 +1,230 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-13T16:11:46.147257+00:00",
+  "edition": "KiroCrew system-design browser presentation",
+  "slide_count": 14,
+  "artifacts": [
+    {
+      "path": "output/kirocrew-system-design.html",
+      "bytes": 1758551,
+      "sha256": "bfc2516128526ab049a7c4c0b36994aae82d87c44790785ee9125da5d63a5712"
+    },
+    {
+      "path": "output/kirocrew-system-design-notes.md",
+      "bytes": 24705,
+      "sha256": "b7fc925872ed5be0c285537f7415781bb4dd96b4cc294c205d26b8e247602269"
+    },
+    {
+      "path": "PRESENTATION.md",
+      "bytes": 3086,
+      "sha256": "d9ab7f869011c1573d7f6b3feb85b354fc64ea143129ecda538f6f31537118e2"
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/build-system-design-presentation.py",
+      "bytes": 24508,
+      "sha256": "27bdd8d1658d99e266e7f12217dcbda3d2628836ff1102dade3415a92d6a86cb"
+    },
+    {
+      "path": "scripts/serve-presentation.py",
+      "bytes": 1282,
+      "sha256": "5adffcd0e0d043d302d886f4ec6da06531ec5c4d35f49302ae9047ee0bf0829e"
+    },
+    {
+      "path": "presentation/slides.css",
+      "bytes": 14224,
+      "sha256": "52a325e2239ba31b4cad4283676ce8e7d6c4e223c47115429c53901802e45d8d"
+    },
+    {
+      "path": "presentation/slide-runtime.js",
+      "bytes": 13367,
+      "sha256": "a90bfa3c9feb9de983fe91b01b70995424d21c7190f83b357fb702a090c9e2d9"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/presentation/kirocrew-system-design/build-manifest.json",
+      "bytes": 3510,
+      "sha256": "b41ce50c131eeeb40afed80d58cac38590d4cc6858628e8431d1e19c1eb4f2a8"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/desktop-layout.json",
+      "bytes": 3174,
+      "sha256": "f1055b41317e24a8664c5e56798f162a05e70c373596f15abfa2f3d7612654ad"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/image-expanded.jpg",
+      "bytes": 64485,
+      "sha256": "a7dbdb3011bdd5b4033f211afb0cfcfb1fefcf677b6edebbac33837b40678738"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/interactions.json",
+      "bytes": 762,
+      "sha256": "69990fcd09abd965000e9489cab1a61afaa01b9f8c4b3d207c467013ff736e4d"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/mobile-authorization.jpg",
+      "bytes": 37360,
+      "sha256": "71a7fbb9e75791ca1a56d11dd23a509c42bae8daab67ace8daad98d2e2410530"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/mobile-cover.jpg",
+      "bytes": 15254,
+      "sha256": "670e33b0737589a1c3679bcf129f2e6c4b3abbf15e2ff35fbaa497b4a13136eb"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/mobile-decisions.jpg",
+      "bytes": 44006,
+      "sha256": "609f5ddd581988ee2c1ec5ff4bf92fcdc1621152258bf142cebe10f40ffd54e6"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/mobile-layout.json",
+      "bytes": 2997,
+      "sha256": "8a8aae258f864117411eea628f6c6e51f7490525f14d6689a6333b7b2515576e"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/no-ai-slop.json",
+      "bytes": 2539,
+      "sha256": "7c624b8a7216d67e88b6da6787c24d5ca3edb86c0ae62f150854b06dcd6f59de"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-01.jpg",
+      "bytes": 52480,
+      "sha256": "8b9543cd195e0f358cfc9984590b6e5f32d8e0dff85c0b0fc9d96cbba5f1c5be"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-02.jpg",
+      "bytes": 69620,
+      "sha256": "64589197833c27dc1f86be7bc5a15a7e6c78fa50d9def0c5187bb95174a9d80f"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-03.jpg",
+      "bytes": 68378,
+      "sha256": "94d2d71998d82c1532a94ce9804a1d56c34832748c8dda9dc533afe8ef080c6b"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-04.jpg",
+      "bytes": 62110,
+      "sha256": "efe5fad2c9bf8e19076dd45e17b10ebb6c23db8995686c44a8b8a776c6cc2565"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-05.jpg",
+      "bytes": 66541,
+      "sha256": "57f6be10da9cc8458942dd00ac07b358801130e42f95958398eea8a1743a299b"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-06.jpg",
+      "bytes": 63539,
+      "sha256": "863bf2bb5541ad3d23d6980f10168f4a55ca951c65e021a494e4a33f73df5782"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-07.jpg",
+      "bytes": 61265,
+      "sha256": "455eb083c389fa29774e332ff74405ee1dd657a92620f531728d39c7e1fb0628"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-08.jpg",
+      "bytes": 61387,
+      "sha256": "666d4b4747d0f2c4bfd8b0402181b4b50633672c2c2c1675a251a6840d896de2"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-09.jpg",
+      "bytes": 70101,
+      "sha256": "cd74194fb0c1ee561b62efd0ffbe66d45c328edafb024a0b7149845760c98c8e"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-10.jpg",
+      "bytes": 65769,
+      "sha256": "62004edb5156effd0e6e058c5040b10e2fb043374e6c7a531a8883879af35ab8"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-11.jpg",
+      "bytes": 74269,
+      "sha256": "15652822850cfabddd38fd3e8ae820a949b46d7b06f35db30e4caaa97d22b871"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-12.jpg",
+      "bytes": 65283,
+      "sha256": "50a9cfcc1fa6f7ea7ba97bd655e12c216819315140957523e4a08882a0c7c319"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-13.jpg",
+      "bytes": 75723,
+      "sha256": "302191e6852cc36c765710b68c1d08cb89d855a7ffe8c11148835446ffd90fcc"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/slide-14.jpg",
+      "bytes": 66768,
+      "sha256": "a76963a898a48f707ff353342dbb4efcb0a87d1e41bae20b316cae2a799780c5"
+    },
+    {
+      "path": "evidence/presentation/kirocrew-system-design/static-validation.json",
+      "bytes": 501,
+      "sha256": "040545b9d1faf07e4a5e0c9ea43120b56f6e986c2d876ac4131ff7c2fc84aee9"
+    }
+  ],
+  "preserved_sources": [
+    {
+      "path": "output/kirocrew-arm-observability-demo.pptx",
+      "bytes": 357661,
+      "sha256": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13"
+    },
+    {
+      "path": "ARM-CONTINUATION-RECEIPT.json",
+      "bytes": 21577,
+      "sha256": "897eca8efc8156b8551fa584122d366039f652c2c0ba52df34e08863e3cce930"
+    }
+  ],
+  "validation": {
+    "desktop": {
+      "viewport": "1280x720",
+      "slides_checked": 14,
+      "overflow_or_footer_overlap": 0,
+      "final_build_captures": "slide-01.jpg through slide-14.jpg"
+    },
+    "mobile": {
+      "viewport": "390x844",
+      "slides_checked": 14,
+      "horizontal_page_overflow": 0,
+      "visible_controls_within_viewport": true,
+      "navigation_resets_vertical_scroll": true,
+      "capture_note": "Viewport screenshots used for mobile after full-page capture scaling proved unsuitable."
+    },
+    "interactions": [
+      "Previous/next navigation",
+      "Home/End and arrow key navigation",
+      "14-slide overview and slide selection",
+      "Speaker notes and exact probe command",
+      "Original evidence image expansion and close",
+      "Fullscreen enter and exit",
+      "Mobile scroll reset"
+    ],
+    "static": "All static-validation.json checks passed; node --check presentation/slide-runtime.js passed",
+    "independent_review": {
+      "agent": "/root/deck_draft",
+      "scope": "All 14 desktop slide captures and complete notes; revised slides 2, 3, 11, 12 rechecked; final notes export rechecked",
+      "findings_resolved": [
+        "Endpoint reference image clipping",
+        "Visible EDT time-zone label on slide 11",
+        "Notes-export inline label spacing"
+      ],
+      "outstanding_findings": 0
+    },
+    "writing": "Complete draft edited and directly evaluated with No AI Slop; see no-ai-slop.json"
+  },
+  "limits": [
+    "No new AWS or native authentication validation in this presentation-only turn.",
+    "Evidence remains recorded September 13, 2026; native Kiro CLI proof remains pending in source receipts.",
+    "Grok/Opus council scope remains the prior frozen PPTX candidate. No new external council verdict for this HTML.",
+    "Browser validation covers only this new standalone presentation, not previously blocked viewer resources.",
+    "Print UI and physical printing not exercised. Embedded downloads checked byte-for-byte; browser download prompts not exercised."
+  ],
+  "preview": {
+    "url": "http://127.0.0.1:5605/",
+    "bind": "127.0.0.1",
+    "single_file_allowlist": true,
+    "temporary_process": true,
+    "restart": "python3 scripts/serve-presentation.py"
+  }
+}

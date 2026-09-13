@@ -1,0 +1,117 @@
+{
+  "scope": "Help and absent-target/baseline guards; no live probes or login",
+  "checks": [
+    {
+      "argv": [
+        "python3",
+        "scripts/deploy-demo.py",
+        "--help"
+      ],
+      "expected_code": 0,
+      "exit_code": 0,
+      "passed": true,
+      "output": "               [--acknowledge-network-review]\n                      [{plan,create-change-set,execute}]\n\nPlan, create, and explicitly execute a portable-demo CloudFormation change\nset.\n\npositional arguments:\n  {plan,create-change-set,execute}\n\noptions:\n  -h, --help            show this help message and exit\n  --parameters PARAMETERS\n                        Native CloudFormation ParameterKey/ParameterValue JSON\n                        list.\n  --stack-name STACK_NAME\n  --region REGION\n  --profile PROFILE\n  --apply               Permit the selected CloudFormation mutation; plan is\n                        always read-only.\n  --change-set CHANGE_SET\n                        Full ARN required for execute.\n  --allow-replacement   Explicitly permit reviewed removal/conditional\n                        replacement on execute.\n  --acknowledge-network-review\n                        Acknowledge unresolved route coverage or restricted\n                        destination warnings after network review.\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/demo-cloud.py",
+        "--help"
+      ],
+      "expected_code": 0,
+      "exit_code": 0,
+      "passed": true,
+      "output": "S CLI credential\nchain. No credentials or SSH keys are copied, printed, or rewritten.\n\npositional arguments:\n  {status,start,stop,update-my-ip,cleanup-plan,local-client-rollback}\n\noptions:\n  -h, --help            show this help message and exit\n  --apply               perform the selected reversible operation\n  --dry-run             show the plan only (default)\n  --offline             use saved receipts; no AWS or public-IP requests;\n                        cannot apply\n  --client-ip CLIENT_IP\n                        single client IPv4 as seen by EC2; required for\n                        private routing, otherwise discover public egress\n  --config CONFIG       machine configuration JSON; alternatively set\n                        KIRO_DEMO_CONFIG\n  --evidence-dir EVIDENCE_DIR\n                        offline receipt directory override; only valid with\n                        --offline\n  --profile PROFILE     existing AWS CLI profile (credentials are never\n                        copied)\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/demo-telemetry.py",
+        "--help"
+      ],
+      "expected_code": 0,
+      "exit_code": 0,
+      "passed": true,
+      "output": "usage: demo-telemetry.py [-h] [--apply] [--config CONFIG]\n                         {collect-once,setup,stop}\n\nCollect bounded client metrics for the demo. All changes require --apply. This\nis a custom demo collector, separate from KiroCrew product analytics. Read-\nonly collection never reads command arguments, environment, or app state.\n\npositional arguments:\n  {collect-once,setup,stop}\n\noptions:\n  -h, --help            show this help message and exit\n  --apply               Upload once, activate, or stop the client timer.\n  --config CONFIG       Deployment JSON; defaults to KIRO_DEMO_CONFIG when\n                        set.\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/ec2-login.py",
+        "--help"
+      ],
+      "expected_code": 0,
+      "exit_code": 0,
+      "passed": true,
+      "output": "usage: ec2-login.py [-h] [--config CONFIG] [--timeout SECONDS]\n\nFresh Kiro CLI 2.21.4 sign-in on EC2 through a local SSH callback tunnel. Uses\nonly Python's standard library, the existing strict SSH alias, and lsof. The\nbrowser URL is printed to a terminal; tokens and account email are not shown.\n\noptions:\n  -h, --help         show this help message and exit\n  --config CONFIG    Explicit deployment JSON; or set KIRO_DEMO_CONFIG\n  --timeout SECONDS  maximum sign-in duration, 60\u20133600 seconds (default: 900)\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/serve-demo-probes.py",
+        "--help"
+      ],
+      "expected_code": 0,
+      "exit_code": 0,
+      "passed": true,
+      "output": "usage: serve-demo-probes.py [-h] [--config CONFIG]\n\nLoopback-only operator screen for two fixed, bounded demo commands. This is a\nrecording aid, not KiroCrew's native interface. Starting this server does not\nrun either command. The operator must press a same-origin UI button. Only\nschema-checked probe receipts / synthetic step rows are retained or served.\n\noptions:\n  -h, --help       show this help message and exit\n  --config CONFIG  Explicit deployment JSON; or set KIRO_DEMO_CONFIG\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/demo-clips.py",
+        "--help"
+      ],
+      "expected_code": 0,
+      "exit_code": 0,
+      "passed": true,
+      "output": "usage: demo-clips.py [-h] [--output OUTPUT] [--check] [--width WIDTH] [--webm]\n                     [--audio]\n                     manifest\n\nBuild evidence-preserving HTML demo media from reviewed cuts of local\nrecordings.\n\npositional arguments:\n  manifest         Reviewed JSON manifest; raw paths are relative to its\n                   directory\n\noptions:\n  -h, --help       show this help message and exit\n  --output OUTPUT  New output directory (never overwritten)\n  --check          Validate input, timing, and cues without encoding\n  --width WIDTH    Maximum video width; no upscaling (default 1600)\n  --webm           Also encode VP9 WebM\n  --audio          Include source audio; default is silent\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/run-deck-council.py",
+        "--help"
+      ],
+      "expected_code": 0,
+      "exit_code": 0,
+      "passed": true,
+      "output": "usage: run-deck-council.py [-h] {prepare,run,assess} ...\n\nFreeze and review one deck with the two explicitly requested local clients.\n`prepare` never starts a reviewer. `run` requires the prepared manifest hash.\nAuthentication stays in each product; cloud/API credentials are not inherited.\n\npositional arguments:\n  {prepare,run,assess}\n    prepare             freeze packet only; never call models\n    run                 call both exact reviewers once for a confirmed\n                        prepared packet\n    assess              reconcile completed raw evidence only; never call\n                        models\n\noptions:\n  -h, --help            show this help message and exit\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/demo-cloud.py",
+        "status"
+      ],
+      "expected_code": 1,
+      "exit_code": 1,
+      "passed": true,
+      "output": "ERROR: Choose the deployment explicitly with --config PATH or KIRO_DEMO_CONFIG.\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/demo-telemetry.py",
+        "collect-once",
+        "--apply"
+      ],
+      "expected_code": 2,
+      "exit_code": 2,
+      "passed": true,
+      "output": "usage: demo-telemetry.py [-h] [--apply] [--config CONFIG]\n                         {collect-once,setup,stop}\ndemo-telemetry.py: error: --config or KIRO_DEMO_CONFIG is required before uploading or installing a timer\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/run-live-demo.py",
+        "--validate-baseline"
+      ],
+      "expected_code": 2,
+      "exit_code": 2,
+      "passed": true,
+      "output": "Baseline validation failed: baseline snapshot is not present on this machine; prepare your installed package with scripts/prepare-demo-baseline.py and select its --baseline-manifest\n"
+    }
+  ],
+  "validation_note": "Telemetry absent-config check initially expected exit1; corrected expected argparse usage error to2 and reran. No source change."
+}

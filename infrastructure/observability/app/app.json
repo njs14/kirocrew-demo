@@ -1,0 +1,15 @@
+{
+  "name": "demo-observability",
+  "version": "1.0.1",
+  "displayName": "Demo Observability",
+  "description": "Client and EC2 health samples, with timestamped collection events for the KiroCrew demo.",
+  "author": "KiroCrew demo project",
+  "tags": ["observability", "demo"],
+  "defaultEnabled": false,
+  "permissions": {"api": ["/apps/demo-observability/api"], "events": []},
+  "backend": {"entryPoint": "backend/server.py", "type": "python", "port": "9102", "healthCheck": "/health"},
+  "ui": {
+    "entry": "dist/index.mjs",
+    "pages": [{"route": "/apps/demo-observability", "label": "Demo Observability", "icon": "Activity"}]
+  }
+}

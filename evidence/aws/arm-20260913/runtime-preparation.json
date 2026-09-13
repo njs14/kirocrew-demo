@@ -1,0 +1,853 @@
+{
+  "observed_at": "2026-09-13T13:59:00.565936+00:00",
+  "status": "prepared_and_static_checks_passed",
+  "scope": "Local static preparation only; native ARM installation and running Gateway validation remain pending.",
+  "target": {
+    "os": "Ubuntu 24.04",
+    "architecture": "aarch64",
+    "python": "3.12"
+  },
+  "version": "0.7.0-nightly.20260912t060850",
+  "source_archive": {
+    "path": ".build/kirocrew-nightly-snapshot.tar.gz",
+    "sha256": "5133df99766a436a0fe346c6c57b4475fa00389a62fe7e464ec8440942e33d39",
+    "regular_files": 4008,
+    "provenance": "Frozen custom Linux repack; installed nightly source and assets, not an official Linux release artifact. _build_info.py retains original dmg label; no rewriting.",
+    "retained_arm64_binaries": [
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/linux_aarch64/libggml-base.so.0",
+        "bytes": 881761,
+        "sha256": "6da567d19c7f7e87667e08033c4b81b57c8082842e2b60ba4c825214497ef315",
+        "elf_machine": 183
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/linux_aarch64/libggml-cpu.so.0",
+        "bytes": 1017601,
+        "sha256": "47ecf749fd96cc4e9ba7a411b08d167a22a97e9b0dd683201e3e7b2bca66a57c",
+        "elf_machine": 183
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/linux_aarch64/libggml.so.0",
+        "bytes": 588633,
+        "sha256": "de95cd8d39ef2f9222681a01a40897c4099aa28460f28e33ef864b4960f95fb5",
+        "elf_machine": 183
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/linux_aarch64/libgomp-d22c30c5.so.1.0.0",
+        "bytes": 274665,
+        "sha256": "053187ea2b36543b67d37805ff3e8188f5d57674b31f698fe87cfe2221a43ed9",
+        "elf_machine": 183
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/linux_aarch64/libllama.so",
+        "bytes": 3393089,
+        "sha256": "c9b722bd52645d605f07698dc0d646dd4719588957f76ef6183132387f1cdc45",
+        "elf_machine": 183
+      }
+    ],
+    "foreign_binaries_excluded_by_installer": [
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/linux_x86_64/libggml-base.so.0",
+        "bytes": 873537,
+        "sha256": "5cdc9aad31bf77160b64bd1275a55bec4e809408cd8e26427bd8e035ffffd3b2",
+        "elf_machine": 62
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/linux_x86_64/libggml-cpu.so.0",
+        "bytes": 1160433,
+        "sha256": "c29a841c67b6ac4df1e8acbfd20fab16345eaad816b6e421e3dd2b18456cd97c",
+        "elf_machine": 62
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/linux_x86_64/libggml.so.0",
+        "bytes": 498497,
+        "sha256": "f8c1924a465a5cb65beab9a441472ad6404c47da946ea4fb07f0f5b4c3324832",
+        "elf_machine": 62
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/linux_x86_64/libgomp-a34b3233.so.1.0.0",
+        "bytes": 168193,
+        "sha256": "3a7eaece7231911be2fbb1b3e7cb4cb5c2e0f84e0c2bb73739472b5a1feec8c1",
+        "elf_machine": 62
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/linux_x86_64/libllama.so",
+        "bytes": 3593873,
+        "sha256": "9c1b95c4b475cceb91a65e5685befcb798f0921dcc81c28fec8793442bc6ffbb",
+        "elf_machine": 62
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_arm64/libggml-base.0.dylib",
+        "bytes": 736880,
+        "sha256": "01175c570ac00d0e012db36fd0a0d1028c7a95e9d7c6bb14fa44c229ce4a9637"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_arm64/libggml-blas.0.dylib",
+        "bytes": 72896,
+        "sha256": "ce7c54a55c63adfb6af8ceaf86f008526111d0f443c585e5f6cad062de01dbf5"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_arm64/libggml-cpu.0.dylib",
+        "bytes": 878896,
+        "sha256": "1088ec3b48769c2b1e067eba6bbefbd945ff4edfcddbe769c3ba585519742980"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_arm64/libggml-metal.0.dylib",
+        "bytes": 845600,
+        "sha256": "daccca8c260f73b6fd387e8baa9ac582cdc232712fb47cefdd2614eac8f74841"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_arm64/libggml.0.dylib",
+        "bytes": 91488,
+        "sha256": "d1a4da242adab454fd5e2be0697f5dd0421ea5f301f81ca08a6dced8b2b7e62b"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_arm64/libllama.dylib",
+        "bytes": 2391024,
+        "sha256": "4fbe720ccf176001f783c9620fc11bf4c6686992db5294059367fdeb0e518e7e"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_x86_64/libggml-base.0.dylib",
+        "bytes": 692352,
+        "sha256": "15226bb638743281901f9cc8994318cb2deb458279a9b872bce5f7ac6e425a71"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_x86_64/libggml-blas.0.dylib",
+        "bytes": 48400,
+        "sha256": "42c2e339c0836765c96e0b1581799dad500d26c9a871d968cc33e9de90406e64"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_x86_64/libggml-cpu.0.dylib",
+        "bytes": 947264,
+        "sha256": "a224e0d3b7cda0cbca4d3e77ab1c8046f3133e9ef71ea3bf6ec880cd58e974ec"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_x86_64/libggml-metal.0.dylib",
+        "bytes": 837760,
+        "sha256": "ec14b2de053594c1ae07199eb7fc7ec994521fb666c2ae46510f2da70c79769a"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_x86_64/libggml.0.dylib",
+        "bytes": 58560,
+        "sha256": "7c9e81dc98173e54a41abd570a6f52625809c161dbd26ed4d2e61a730058f7b7"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/macos_x86_64/libllama.dylib",
+        "bytes": 2567424,
+        "sha256": "ea1b87bcff40ebf3a93354c4c9b984449d9a6cf726da5ae79ae8e852ebcb791d"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/win_amd64/ggml-base.dll",
+        "bytes": 645120,
+        "sha256": "ff7c22159b5f261f787d8b7c3f4b6bfad7e576ad78c7f549b45a3ad9a9d8a790"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/win_amd64/ggml-cpu.dll",
+        "bytes": 893440,
+        "sha256": "e54cfb14e37e68a9144685c5cea158d83cd7aad1833f3e305e00861ba213641f"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/win_amd64/ggml.dll",
+        "bytes": 67072,
+        "sha256": "fd531597881fc6a070dcc70756648d37e19177f72c338c932ae8b99ad31f3ace"
+      },
+      {
+        "path": "kiro_crew/_vendor/llama_cpp_libs/win_amd64/llama.dll",
+        "bytes": 2813440,
+        "sha256": "4de986137563abb682ef339dadd86768368ded12aa76ee9f41450c195741f209"
+      }
+    ]
+  },
+  "dependencies": {
+    "lock_path": "infrastructure/crew-requirements-linux-arm64.lock",
+    "lock_sha256": "ec8fbe5784220eb94a51d44b2d28734dbe2d21a1080d1d7645408bb69ac12427",
+    "package_count": 48,
+    "same_version_count": 48,
+    "removed_platform_specific_package": "pysqlite3-binary==0.5.4.post2",
+    "reason": "Original requirements marker restricts pysqlite3-binary to Linux x86_64; source _sqlite_compat.py explicitly uses stdlib SQLite on ARM. Installer probes FTS5 before install.",
+    "versions": {
+      "aiohappyeyeballs": "2.7.1",
+      "aiohttp": "3.14.3",
+      "aiosignal": "1.4.0",
+      "attrs": "26.1.0",
+      "certifi": "2026.7.22",
+      "cffi": "2.1.1",
+      "charset-normalizer": "3.5.1",
+      "cron-descriptor": "1.4.5",
+      "croniter": "2.0.7",
+      "cryptography": "47.0.0",
+      "defusedxml": "0.7.1",
+      "et-xmlfile": "2.0.0",
+      "frozenlist": "1.8.0",
+      "idna": "3.19",
+      "jinja2": "3.1.6",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "lxml": "6.1.3",
+      "markupsafe": "3.0.3",
+      "multidict": "6.8.0",
+      "numpy": "2.5.3",
+      "openpyxl": "3.1.5",
+      "opentelemetry-api": "1.44.0",
+      "opentelemetry-sdk": "1.44.0",
+      "opentelemetry-semantic-conventions": "0.65b0",
+      "pathspec": "1.1.1",
+      "pdfminer-six": "20260107",
+      "pdfplumber": "0.11.10",
+      "pillow": "12.3.0",
+      "propcache": "0.5.2",
+      "pycparser": "3.0",
+      "pypdfium2": "5.13.0",
+      "python-dateutil": "2.9.0.post0",
+      "python-docx": "1.2.0",
+      "pytz": "2026.3.post1",
+      "pyyaml": "6.0.3",
+      "qrcode": "8.2",
+      "referencing": "0.37.0",
+      "requests": "2.34.2",
+      "rpds-py": "2026.6.3",
+      "six": "1.17.0",
+      "slack-sdk": "3.44.1",
+      "snowballstemmer": "3.1.1",
+      "typing-extensions": "4.16.0",
+      "urllib3": "2.7.0",
+      "uv": "0.12.13",
+      "websockets": "15.0.1",
+      "yarl": "1.24.5"
+    },
+    "wheels": [
+      {
+        "file": "aiohappyeyeballs-2.7.1-py3-none-any.whl",
+        "bytes": 15038,
+        "sha256": "9243213661e29250eb41368e5daa826fc017156c3b8a11440826b2e3ed376472",
+        "binaries": []
+      },
+      {
+        "file": "aiohttp-3.14.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "bytes": 1765282,
+        "sha256": "f631fe87a6f30df5fbe6d79640b25e4cffb38c31c7fb6f10871517b84b0f8c1a",
+        "binaries": [
+          {
+            "path": "aiohttp/_http_parser.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "aiohttp/_http_writer.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "aiohttp/_websocket/mask.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "aiohttp/_websocket/reader_c.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "aiosignal-1.4.0-py3-none-any.whl",
+        "bytes": 7490,
+        "sha256": "053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e",
+        "binaries": []
+      },
+      {
+        "file": "attrs-26.1.0-py3-none-any.whl",
+        "bytes": 67548,
+        "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+        "binaries": []
+      },
+      {
+        "file": "certifi-2026.7.22-py3-none-any.whl",
+        "bytes": 136983,
+        "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+        "binaries": []
+      },
+      {
+        "file": "cffi-2.1.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+        "bytes": 222389,
+        "sha256": "68e62fe11f30d5ca8289242866f0a5291402d8529ca2178ab8afc5c9694ae890",
+        "binaries": [
+          {
+            "path": "_cffi_backend.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "charset_normalizer-3.5.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "bytes": 238530,
+        "sha256": "4582c27e8c889d64811987b5967fbd3ae0c823fe1fd933b543d55ac20bb475fa",
+        "binaries": [
+          {
+            "path": "charset_normalizer/cd.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "charset_normalizer/md.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "cron_descriptor-1.4.5-py3-none-any.whl",
+        "bytes": 50370,
+        "sha256": "736b3ae9d1a99bc3dbfc5b55b5e6e7c12031e7ba5de716625772f8b02dcd6013",
+        "binaries": []
+      },
+      {
+        "file": "croniter-2.0.7-py2.py3-none-any.whl",
+        "bytes": 21201,
+        "sha256": "f15e80828d23920c4bb7f4d9340b932c9dcabecafc7775703c8b36d1253ed526",
+        "binaries": []
+      },
+      {
+        "file": "cryptography-47.0.0-cp311-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+        "bytes": 4644617,
+        "sha256": "b9a8943e359b7615db1a3ba587994618e094ff3d6fa5a390c73d079ce18b3973",
+        "binaries": [
+          {
+            "path": "cryptography/hazmat/bindings/_rust.abi3.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "defusedxml-0.7.1-py2.py3-none-any.whl",
+        "bytes": 25604,
+        "sha256": "a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61",
+        "binaries": []
+      },
+      {
+        "file": "et_xmlfile-2.0.0-py3-none-any.whl",
+        "bytes": 18059,
+        "sha256": "7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa",
+        "binaries": []
+      },
+      {
+        "file": "frozenlist-1.8.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "bytes": 243014,
+        "sha256": "96f423a119f4777a4a056b66ce11527366a8bb92f54e541ade21f2374433f6d4",
+        "binaries": [
+          {
+            "path": "frozenlist/_frozenlist.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "idna-3.19-py3-none-any.whl",
+        "bytes": 68550,
+        "sha256": "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4",
+        "binaries": []
+      },
+      {
+        "file": "jinja2-3.1.6-py3-none-any.whl",
+        "bytes": 134899,
+        "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+        "binaries": []
+      },
+      {
+        "file": "jsonschema-4.26.0-py3-none-any.whl",
+        "bytes": 90630,
+        "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce",
+        "binaries": []
+      },
+      {
+        "file": "jsonschema_specifications-2025.9.1-py3-none-any.whl",
+        "bytes": 18437,
+        "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe",
+        "binaries": []
+      },
+      {
+        "file": "lxml-6.1.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+        "bytes": 4939696,
+        "sha256": "f683dc6300317700025e41d89a43e0276692ded16113a3c43eab704d605c58e5",
+        "binaries": [
+          {
+            "path": "lxml/_elementpath.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "lxml/builder.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "lxml/etree.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "lxml/objectify.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "lxml/sax.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "lxml/html/_difflib.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "lxml/html/diff.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "markupsafe-3.0.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "bytes": 24332,
+        "sha256": "3a7e8ae81ae39e62a41ec302f972ba6ae23a5c5396c8e60113e9066ef893da0d",
+        "binaries": [
+          {
+            "path": "markupsafe/_speedups.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "multidict-6.8.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "bytes": 283771,
+        "sha256": "90c10b22860dbd09982d0b8993b66231a861bea2993d4a817ff35273f6ea285a",
+        "binaries": [
+          {
+            "path": "multidict/_multidict.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "numpy-2.5.3-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "bytes": 15687872,
+        "sha256": "76c2c1e6bfa5c84adc6434dfbf013aa92096a7985221762c8f11fedfd20fff58",
+        "binaries": [
+          {
+            "path": "numpy/_core/_multiarray_tests.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/_core/_multiarray_umath.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/_core/_operand_flag_tests.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/_core/_rational_tests.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/_core/_simd.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/_core/_struct_ufunc_tests.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/_core/_umath_tests.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/fft/_pocketfft_umath.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/linalg/_umath_linalg.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/linalg/lapack_lite.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/random/_bounded_integers.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/random/_common.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/random/_generator.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/random/_mt19937.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/random/_pcg64.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/random/_philox.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/random/_sfc64.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/random/bit_generator.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy/random/mtrand.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy.libs/libgfortran-e1b7dfc8-d8198c01.so.5.0.0",
+            "elf_machine": 183
+          },
+          {
+            "path": "numpy.libs/libscipy_openblas64_-f552eb69.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "openpyxl-3.1.5-py2.py3-none-any.whl",
+        "bytes": 250910,
+        "sha256": "5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2",
+        "binaries": []
+      },
+      {
+        "file": "opentelemetry_api-1.44.0-py3-none-any.whl",
+        "bytes": 60018,
+        "sha256": "94b98c893a91b88657eaac1e3ba89618cdb85be6918196705354f34728b2cdef",
+        "binaries": []
+      },
+      {
+        "file": "opentelemetry_sdk-1.44.0-py3-none-any.whl",
+        "bytes": 137221,
+        "sha256": "df081c4c6bcfdb1211e3e86140376792643128a25f8d72d1d27675936e7e96ad",
+        "binaries": []
+      },
+      {
+        "file": "opentelemetry_semantic_conventions-0.65b0-py3-none-any.whl",
+        "bytes": 204645,
+        "sha256": "1cacde7b0ad306f84c5ef08c3dbe1bbaf20165bba6f8bff43b670e555a086bcb",
+        "binaries": []
+      },
+      {
+        "file": "pathspec-1.1.1-py3-none-any.whl",
+        "bytes": 57328,
+        "sha256": "a00ce642f577bf7f473932318056212bc4f8bfdf53128c78bbd5af0b9b20b189",
+        "binaries": []
+      },
+      {
+        "file": "pdfminer_six-20260107-py3-none-any.whl",
+        "bytes": 6592252,
+        "sha256": "366585ba97e80dffa8f00cebe303d2f381884d8637af4ce422f1df3ef38111a9",
+        "binaries": []
+      },
+      {
+        "file": "pdfplumber-0.11.10-py3-none-any.whl",
+        "bytes": 60047,
+        "sha256": "7741ea81bf165b474b153e6789d10d18e06b6ddcf3ec84289c3ef2fed6802580",
+        "binaries": []
+      },
+      {
+        "file": "pillow-12.3.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+        "bytes": 6266838,
+        "sha256": "d9c7f76c0673154f044e9d78c8655fb4213f6ca31a836df48b40fe5d187717b9",
+        "binaries": [
+          {
+            "path": "PIL/_avif.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "PIL/_imaging.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "PIL/_imagingcms.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "PIL/_imagingft.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "PIL/_imagingmath.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "PIL/_imagingmorph.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "PIL/_imagingtk.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "PIL/_webp.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libXau-7926f62a.so.6.0.0",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libavif-f796425e.so.16.4.2",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libbrotlicommon-f79e5820.so.1.2.0",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libbrotlidec-53ab751a.so.1.2.0",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libfreetype-c6d69da6.so.6.20.6",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libharfbuzz-905f7917.so.0.61421.0",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libjpeg-f7df23c0.so.62.4.0",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/liblcms2-ba35981c.so.2.0.19",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/liblzma-d6711707.so.5.8.3",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libopenjp2-0ec72a70.so.2.5.4",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libpng16-5a20c924.so.16.58.0",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libsharpyuv-5dac68d0.so.0.1.2",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libtiff-fb36a6b9.so.6.2.0",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libwebp-bac0fc6b.so.7.2.0",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libwebpdemux-b0a60f8c.so.2.0.17",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libwebpmux-fec2c160.so.3.1.2",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libxcb-d77ff8de.so.1.1.0",
+            "elf_machine": 183
+          },
+          {
+            "path": "pillow.libs/libzstd-a93d6be8.so.1.5.7",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "propcache-0.5.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "bytes": 59995,
+        "sha256": "5dbc581d2814337da56222fab8dc5f161cd798a434e49bac27930aaef798e144",
+        "binaries": [
+          {
+            "path": "propcache/_helpers_c.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "pycparser-3.0-py3-none-any.whl",
+        "bytes": 48172,
+        "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992",
+        "binaries": []
+      },
+      {
+        "file": "pypdfium2-5.13.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "bytes": 3676486,
+        "sha256": "9ee8c2bb2e68b396ab4a763215ac100dacb6b96d0da5bebeb239a021aecc3a7e",
+        "binaries": [
+          {
+            "path": "pypdfium2_raw/libpdfium.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+        "bytes": 229892,
+        "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+        "binaries": []
+      },
+      {
+        "file": "python_docx-1.2.0-py3-none-any.whl",
+        "bytes": 252987,
+        "sha256": "3fd478f3250fbbbfd3b94fe1e985955737c145627498896a8a6bf81f4baf66c7",
+        "binaries": []
+      },
+      {
+        "file": "pytz-2026.3.post1-py2.py3-none-any.whl",
+        "bytes": 508283,
+        "sha256": "dd95840dd199baea12d9cc096a1d452caa6596a1c1e4b5f3dbd1541855d5e815",
+        "binaries": []
+      },
+      {
+        "file": "pyyaml-6.0.3-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "bytes": 775116,
+        "sha256": "9149cad251584d5fb4981be1ecde53a1ca46c891a79788c0df828d2f166bda28",
+        "binaries": [
+          {
+            "path": "yaml/_yaml.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "qrcode-8.2-py3-none-any.whl",
+        "bytes": 45986,
+        "sha256": "16e64e0716c14960108e85d853062c9e8bba5ca8252c0b4d0231b9df4060ff4f",
+        "binaries": []
+      },
+      {
+        "file": "referencing-0.37.0-py3-none-any.whl",
+        "bytes": 26766,
+        "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231",
+        "binaries": []
+      },
+      {
+        "file": "requests-2.34.2-py3-none-any.whl",
+        "bytes": 73075,
+        "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0",
+        "binaries": []
+      },
+      {
+        "file": "rpds_py-2026.6.3-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "bytes": 368180,
+        "sha256": "55927d532399c2c646100ff7feb48eaa940ad70f42cd68e1328f3ded9f81ca24",
+        "binaries": [
+          {
+            "path": "rpds/rpds.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "six-1.17.0-py2.py3-none-any.whl",
+        "bytes": 11050,
+        "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+        "binaries": []
+      },
+      {
+        "file": "slack_sdk-3.44.1-py2.py3-none-any.whl",
+        "bytes": 319865,
+        "sha256": "d6f20a0fbe3fecf9cac955c99d686301b48a645b7045472c3a0cdd186d7c42b2",
+        "binaries": []
+      },
+      {
+        "file": "snowballstemmer-3.1.1-py3-none-any.whl",
+        "bytes": 104164,
+        "sha256": "7e207fa178741da09cdee59d3ecec3827ad5f92b1fc5c9ff3755b639f71f5752",
+        "binaries": []
+      },
+      {
+        "file": "typing_extensions-4.16.0-py3-none-any.whl",
+        "bytes": 45571,
+        "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+        "binaries": []
+      },
+      {
+        "file": "urllib3-2.7.0-py3-none-any.whl",
+        "bytes": 131087,
+        "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897",
+        "binaries": []
+      },
+      {
+        "file": "uv-0.12.13-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl",
+        "bytes": 21699128,
+        "sha256": "891aff3e186cd5844102750372304e9ca20edffc50cb39a14cd047ea3416de75",
+        "binaries": [
+          {
+            "path": "uv-0.12.13.data/scripts/uv",
+            "elf_machine": 183
+          },
+          {
+            "path": "uv-0.12.13.data/scripts/uvx",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "websockets-15.0.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+        "bytes": 183152,
+        "sha256": "e8b56bdcdb4505c8078cb6c7157d9811a85790f2f2b3632c7d1462ab5783d215",
+        "binaries": [
+          {
+            "path": "websockets/speedups.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      },
+      {
+        "file": "yarl-1.24.5-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+        "bytes": 107741,
+        "sha256": "90333fd89b43c0d08ac85f3f1447593fc2c66de18c3d6378d7125ea118dc7a54",
+        "binaries": [
+          {
+            "path": "yarl/_quoting_c.cpython-312-aarch64-linux-gnu.so",
+            "elf_machine": 183
+          }
+        ]
+      }
+    ],
+    "wheel_bytes": 71000267,
+    "binary_builds_used": false,
+    "source_index": "https://pypi.org/simple/",
+    "compile_command": "uv pip compile infrastructure/crew-requirements.txt --constraint .build/arm-runtime/constraints.txt --python-version 3.12 --python-platform aarch64-unknown-linux-gnu --generate-hashes --only-binary=:all: --output-file infrastructure/crew-requirements-linux-arm64.lock",
+    "download_command": "python3 -m pip download --require-hashes --only-binary=:all: --no-deps --platform manylinux2014_aarch64 --platform manylinux_2_28_aarch64 --platform manylinux_2_34_aarch64 --python-version 3.12 --implementation cp --abi cp312 --abi abi3 --dest .build/arm-runtime/wheels -r infrastructure/crew-requirements-linux-arm64.lock"
+  },
+  "metadata": {
+    "path": ".build/arm-runtime/crew-dist-info.tar.gz",
+    "sha256": "237daba5bf5cc2eaaa63100e7a78eaf08f4af61dc0097e2f85fbd629251ea7ad",
+    "source": "Installed KiroCrew Nightly.app arm64 backend kirocrew-0.7.0.dist-info METADATA/entry_points/top_level/licenses only; RECORD regenerated for installed files, INSTALLER identifies custom repack. Metadata version remains upstream 0.7.0; code runtime version remains nightly.",
+    "console_entrypoint": "kiro_crew._bootstrap:main"
+  },
+  "installer": {
+    "path": "infrastructure/install-arm-runtime.sh",
+    "sha256": "21abaa6ecba853916f41bb988a514439f4905d50e00f1141fa086e4ef8681aea",
+    "command": "sudo bash /opt/kirocrew-demo/install/install-arm-runtime.sh",
+    "upload_files": {
+      ".build/kirocrew-nightly-snapshot.tar.gz": "kirocrew-nightly-snapshot.tar.gz",
+      "infrastructure/crew-requirements-linux-arm64.lock": "crew-requirements-linux-arm64.lock",
+      ".build/arm-runtime/crew-dist-info.tar.gz": "crew-dist-info.tar.gz",
+      ".build/arm-runtime/wheels/": "wheels/",
+      "infrastructure/install-arm-runtime.sh": "install-arm-runtime.sh"
+    },
+    "installation_directory": "/opt/kirocrew-demo/install",
+    "runtime_directory": "/opt/kirocrew/venv",
+    "no_service_start": true,
+    "no_model_downloads": true
+  },
+  "failures": [],
+  "extraction_simulation": {
+    "passed": true,
+    "python_heredoc_syntax_blocks": 3,
+    "python_source_files_byte_identical": 1278,
+    "foreign_members_excluded": 25,
+    "native_runtime_executed": false
+  }
+}

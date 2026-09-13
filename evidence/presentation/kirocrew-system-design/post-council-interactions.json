@@ -1,0 +1,15 @@
+{
+  "artifact_sha256": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+  "checks": {
+    "image_dialog_opens": true,
+    "expanded_native_telemetry_image_natural_width_1280": true,
+    "escape_closes_image": true,
+    "walkthrough_notes_open": true,
+    "notes_contain_exact_ssh_probe": true,
+    "notes_require_automatic_denial_before_approval": true,
+    "escape_closes_notes": true,
+    "cover_restored": true
+  },
+  "prior_navigation_checks": "interactions.json; runtime unchanged",
+  "viewport_override_reset": true
+}

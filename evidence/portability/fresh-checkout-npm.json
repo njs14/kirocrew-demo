@@ -1,0 +1,12 @@
+{
+  "scope": "Fresh index export; package-lock installation with lifecycle hooks disabled; no browser downloaded.",
+  "exit_code": 0,
+  "stdout": "\nadded 8 packages in 795ms\n",
+  "stderr": "",
+  "module_check": {
+    "exit_code": 0,
+    "stdout": "{\"playwright\":\"1.63.0\",\"sharp\":\"0.35.4\",\"chromiumExecutableConfigured\":true,\"sharpLibraryLoaded\":true}\n",
+    "stderr": ""
+  },
+  "validation_note": "The first diagnostic tried a non-exported sharp/package.json subpath; the supported sharp.versions API passed. No source or dependency change."
+}

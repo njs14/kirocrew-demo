@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-09-13T04:52:27Z",
+  "runner_sha256": "2dd4737181c11dc950dbc4c56a1416131464d7da3c15e26555d201535afbd4e7",
+  "inference_started_by_validation": false,
+  "syntax": "pass",
+  "wrong_manifest_rejected": "pass",
+  "cloud_api_ssh_environment_excluded": "pass",
+  "own_product_os_identity_preserved": "pass",
+  "grok_actual_target_file_and_ImageContent_shape": "pass",
+  "all_nine_grok_png_payloads_exact": "pass",
+  "wrong_model_failed_terminal_empty_review_rejected": "pass",
+  "prior_closed_pipe_child_timeout_fixture": "pass",
+  "note": "One failed Claude auth launch preserved; successful auth-fix retains USER/LOGNAME/SHELL for normal product keychain lookup. External calls were performed only by authorized run mode."
+}

@@ -1,0 +1,87 @@
+{
+  "response_model_ids": [
+    "claude-opus-5"
+  ],
+  "usage_model_ids": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5"
+  ],
+  "exact_response_model_verified": true,
+  "all_nine_image_payloads_verified": true,
+  "image_reads": [
+    {
+      "file": "slide-1.png",
+      "read_requested": true,
+      "successful_result_observed": true,
+      "explicit_image_payload_observed": true
+    },
+    {
+      "file": "slide-2.png",
+      "read_requested": true,
+      "successful_result_observed": true,
+      "explicit_image_payload_observed": true
+    },
+    {
+      "file": "slide-3.png",
+      "read_requested": true,
+      "successful_result_observed": true,
+      "explicit_image_payload_observed": true
+    },
+    {
+      "file": "slide-4.png",
+      "read_requested": true,
+      "successful_result_observed": true,
+      "explicit_image_payload_observed": true
+    },
+    {
+      "file": "slide-5.png",
+      "read_requested": true,
+      "successful_result_observed": true,
+      "explicit_image_payload_observed": true
+    },
+    {
+      "file": "slide-6.png",
+      "read_requested": true,
+      "successful_result_observed": true,
+      "explicit_image_payload_observed": true
+    },
+    {
+      "file": "slide-7.png",
+      "read_requested": true,
+      "successful_result_observed": true,
+      "explicit_image_payload_observed": true
+    },
+    {
+      "file": "slide-8.png",
+      "read_requested": true,
+      "successful_result_observed": true,
+      "explicit_image_payload_observed": true
+    },
+    {
+      "file": "slide-9.png",
+      "read_requested": true,
+      "successful_result_observed": true,
+      "explicit_image_payload_observed": true
+    }
+  ],
+  "terminal_result": {
+    "type": "result",
+    "subtype": "success",
+    "is_error": false,
+    "stop_reason": "end_turn"
+  },
+  "terminal_result_count": 1,
+  "terminal_success": true,
+  "stream_errors": [],
+  "review_text_present": true,
+  "non_json_lines": 0,
+  "exit_code": 0,
+  "failure": null,
+  "duration_seconds": 135.1,
+  "raw_stdout_sha256": "48df81e41b96bf3c6e21c5a8166aeebf0514151cd545c724e40c91560e972fc4",
+  "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "raw_output_bytes": 2497899,
+  "launch_sha256": "27e8298378bf4d6f32e59aa518f473a5b5f3634d9badc4f0ee9d3f036dfb61d6",
+  "sandbox_warning_observed": false,
+  "review_evidence_complete": true
+}

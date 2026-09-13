@@ -1,0 +1,24 @@
+{
+    "RoleName": "kirocrew-demo-20260913-DemoRole-dcdmeTwVkSzS",
+    "PolicyName": "DemoBucketReadWithExplicitDenial",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Action": "s3:GetObject",
+                "Resource": [
+                    "arn:aws:s3:::kirocrew-demo-20260913-demobucket-pdjzgyu25xhb/allowed/*",
+                    "arn:aws:s3:::kirocrew-demo-20260913-demobucket-pdjzgyu25xhb/denied/*"
+                ],
+                "Effect": "Allow",
+                "Sid": "ReadOnlyDemoObjectPrefixes"
+            },
+            {
+                "Action": "s3:GetObject",
+                "Resource": "arn:aws:s3:::kirocrew-demo-20260913-demobucket-pdjzgyu25xhb/denied/*",
+                "Effect": "Deny",
+                "Sid": "DenyProtectedDemoPrefix"
+            }
+        ]
+    }
+}

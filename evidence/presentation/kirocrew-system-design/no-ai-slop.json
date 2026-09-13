@@ -1,0 +1,59 @@
+{
+  "skill": "/Users/noahsutter/.codex/plugins/cache/openai-curated-remote/no-ai-slop/1.0.6/skills/no-ai-slop/SKILL.md",
+  "eval": "/Users/noahsutter/.codex/plugins/cache/openai-curated-remote/no-ai-slop/1.0.6/skills/no-ai-slop/eval.md",
+  "sequence": "Both council reviews, agreed revisions, complete draft read, minimum effective edit, direct evaluation, final visual validation",
+  "artifact_sha256": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+  "notes_sha256": "4e239721237aa0407979ae95eae7334588c992a1c0d858da316fe3b129ad2163",
+  "before_edit_notes": {
+    "path": "evidence/presentation/kirocrew-system-design/council-incorporated/kirocrew-system-design-notes.md",
+    "bytes": 25291,
+    "sha256": "a1f35d443e07bcbad4e8250056d48f4c6460d560385a54f290f531c0799ba2e6"
+  },
+  "voice_preserved": [
+    "Direct technical statements",
+    "Exact names, quantities and timestamps",
+    "Explicit uncertainty and proof limits",
+    "Instructional live-demo cadence"
+  ],
+  "changes": [
+    "Simplified the one-operator assumption",
+    "Explained zero turn latency with a concrete empty-series sentence",
+    "Replaced fragmented retained-disk copy with a complete sentence",
+    "Removed repeated probe setup wording",
+    "Kept automatic Crew denial explicit",
+    "Normalized spacing in the full notes export and included visible subtitles"
+  ],
+  "eval_results": {
+    "editing_principles_1": "pass",
+    "editing_principles_2": "pass",
+    "editing_principles_3": "pass",
+    "editing_principles_4": "pass",
+    "editing_principles_5": "pass",
+    "editing_principles_6": "pass",
+    "editing_principles_7": "pass",
+    "editing_principles_8": "pass",
+    "editing_principles_9": "pass",
+    "editing_principles_10": "pass",
+    "words_to_cut_1": "pass",
+    "patterns_to_cut_1": "pass",
+    "patterns_to_cut_2": "pass",
+    "patterns_to_cut_3": "pass",
+    "patterns_to_cut_4": "pass",
+    "patterns_to_cut_5": "pass",
+    "patterns_to_cut_6": "pass",
+    "patterns_to_cut_7": "pass",
+    "patterns_to_cut_8": "pass",
+    "final_read_1": "pass",
+    "final_read_2": "pass",
+    "final_read_3": "pass",
+    "final_read_4": "pass",
+    "final_read_5": "pass",
+    "final_read_6": "pass"
+  },
+  "eval_notes": [
+    "Primary agent read the complete incorporated draft and final diff against all eval checks.",
+    "Material negative statements identify verification limits; they were retained rather than treated as rhetorical contrasts.",
+    "Detect-only final condition does not apply to this edit request.",
+    "The full edited draft and What changed are available in the downloadable notes."
+  ]
+}

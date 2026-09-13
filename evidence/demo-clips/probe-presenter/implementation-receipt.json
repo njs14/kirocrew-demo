@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "created_at": "2026-09-13T18:19:35.308502+00:00",
+  "scope": "Local operator presenter implementation; stub-only validation",
+  "tests": {
+    "command": "python3 evidence/demo-clips/probe-presenter/test_presenter.py",
+    "passed": 16,
+    "failed": 0,
+    "real_remote_probe_executed": false,
+    "real_synthetic_rehearsal_executed": false,
+    "checks": [
+      "strict receipt schema",
+      "native boundary",
+      "wrong digest",
+      "secret and HTML rejection",
+      "synthetic scope",
+      "exact fixed SSH command",
+      "bounded output",
+      "bounded timeout",
+      "Host and Origin rejection",
+      "nonce requirement",
+      "no command or path parameters",
+      "single active run",
+      "sanitized immutable artifact route",
+      "failure evidence retention",
+      "visible standalone operator and pending native boundary labels"
+    ]
+  },
+  "static_checks": [
+    "python3 -m py_compile scripts/serve-demo-probes.py",
+    "node --check recordings/20260913/probe-presenter/app.js"
+  ],
+  "browser_validation": "pending parent recording session",
+  "files": [
+    {
+      "path": "scripts/serve-demo-probes.py",
+      "sha256": "891ffb38a032a47d51aa053c3e0627fe3b561a6b1eca1320c4787c218d2456c3"
+    },
+    {
+      "path": "recordings/20260913/probe-presenter/index.html",
+      "sha256": "ccd41bed3299e7f807cab99a0add93c52d43a0a2dbf6796e9a5922d01d27a2a2"
+    },
+    {
+      "path": "recordings/20260913/probe-presenter/app.js",
+      "sha256": "1c23bb3291e612e362d69e3bd0d170edfceafbedf0a3715a4c1ed51243702d2a"
+    },
+    {
+      "path": "recordings/20260913/probe-presenter/styles.css",
+      "sha256": "1534eabdb9d02f718a9069a0d4aeb62c22422f1e69b98e9589ab4a0b49565472"
+    },
+    {
+      "path": "recordings/20260913/probe-presenter/README.md",
+      "sha256": "c6d86c8e702612d678220cf043d409cdbcd3ab7a5871fca665d77ecb76c9a5c5"
+    },
+    {
+      "path": "evidence/demo-clips/probe-presenter/test_presenter.py",
+      "sha256": "4c0fa1f1db0a5a48b5ddf9c927406c551f82bd53b50c6ce2b7d6c62d8f6dca80"
+    }
+  ],
+  "revalidated_at": "2026-09-13T18:22:00.459836+00:00",
+  "revalidation_scope": "Focused stub-only suite after No AI Slop copy edits; no live command calls"
+}

@@ -1,0 +1,76 @@
+{
+  "checks": [
+    {
+      "http_status": 401,
+      "name": "authentication_required",
+      "passed": true
+    },
+    {
+      "name": "catalog",
+      "passed": true,
+      "tools": [
+        "crew_denied",
+        "iam_denied",
+        "mcp_denied",
+        "read_allowed"
+      ]
+    },
+    {
+      "name": "read_allowed",
+      "passed": true,
+      "result": {
+        "aws_request_id": "NJ47PCKDNPWNT29P",
+        "invocation_id": "595a0d95-557c-473c-8158-93424c6978a5",
+        "layer": "aws",
+        "object_bytes": 55,
+        "object_sha256": "34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160",
+        "ok": true,
+        "principal": "kirocrew-demo-client",
+        "tool": "read_allowed",
+        "trace_id": "probe-ba7a350953984ac9a1d70d1a0497673c-read_allowed"
+      }
+    },
+    {
+      "name": "mcp_denied",
+      "passed": true,
+      "result": {
+        "error_code": "tool_grant_denied",
+        "invocation_id": "f6e9c165-04e8-4d52-b7cb-44bd98ab29a4",
+        "layer": "mcp",
+        "ok": false,
+        "principal": "kirocrew-demo-client",
+        "tool": "mcp_denied",
+        "trace_id": "probe-ba7a350953984ac9a1d70d1a0497673c-mcp_denied"
+      }
+    },
+    {
+      "name": "iam_denied",
+      "passed": true,
+      "result": {
+        "aws_request_id": "NJ428FX3JS4EV6VK",
+        "error_code": "AccessDenied",
+        "http_status": 403,
+        "invocation_id": "d9ec435e-ad71-4c56-8511-41c8c886a77e",
+        "layer": "aws",
+        "ok": false,
+        "principal": "kirocrew-demo-client",
+        "tool": "iam_denied",
+        "trace_id": "probe-ba7a350953984ac9a1d70d1a0497673c-iam_denied"
+      }
+    }
+  ],
+  "dependencies": {
+    "boto3": "1.43.93",
+    "httpx": "0.28.1",
+    "mcp": "1.30.0"
+  },
+  "expected_allowed_sha256": "34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160",
+  "kind": "direct_mcp_service_probe",
+  "native_crew_backend_verified": false,
+  "passed": true,
+  "schema": 1,
+  "server_file_sha256": "a52c0c42d91430232fc68c20f6554e70842ebd33d0a71a79dff3f50ef431eb08",
+  "time": "2026-09-13T04:17:07.112687+00:00",
+  "trace_prefix": "probe-ba7a350953984ac9a1d70d1a0497673c",
+  "url": "http://127.0.0.1:8001/mcp"
+}

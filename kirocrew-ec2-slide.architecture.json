@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "The laptop connects to EC2",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "viewBox": [
+      720,
+      280
+    ],
+    "legend": {
+      "mode": "hidden"
+    }
+  },
+  "components": [
+    {
+      "id": "slide-client",
+      "type": "frontend",
+      "label": "Laptop client",
+      "sublabel": "Local Gateway off",
+      "pos": [
+        16,
+        108
+      ],
+      "size": [
+        110,
+        74
+      ]
+    },
+    {
+      "id": "slide-runtime",
+      "type": "backend",
+      "label": "Gateway + Kiro CLI",
+      "sublabel": "Remote workspace",
+      "pos": [
+        220,
+        102
+      ],
+      "size": [
+        164,
+        86
+      ]
+    },
+    {
+      "id": "slide-mcp",
+      "type": "security",
+      "label": "MCP service",
+      "sublabel": "Demo tool grants",
+      "pos": [
+        448,
+        102
+      ],
+      "size": [
+        116,
+        86
+      ]
+    },
+    {
+      "id": "slide-s3",
+      "type": "database",
+      "label": "S3",
+      "sublabel": "Demo objects",
+      "pos": [
+        640,
+        108
+      ],
+      "size": [
+        64,
+        74
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "EC2 host",
+      "wraps": [
+        "slide-runtime",
+        "slide-mcp"
+      ],
+      "pad": 38
+    },
+    {
+      "kind": "security-group",
+      "label": "Crew execution",
+      "wraps": [
+        "slide-runtime"
+      ],
+      "pad": 10
+    },
+    {
+      "kind": "security-group",
+      "label": "Separate privilege",
+      "wraps": [
+        "slide-mcp"
+      ],
+      "pad": 10
+    }
+  ],
+  "connections": [
+    {
+      "id": "slide-ssh",
+      "from": "slide-client",
+      "to": "slide-runtime",
+      "label": "SSH tunnel",
+      "variant": "security"
+    },
+    {
+      "id": "slide-call",
+      "from": "slide-runtime",
+      "to": "slide-mcp",
+      "label": "MCP",
+      "variant": "emphasis"
+    },
+    {
+      "id": "slide-aws",
+      "from": "slide-mcp",
+      "to": "slide-s3",
+      "label": "AWS API",
+      "variant": "emphasis"
+    }
+  ]
+}

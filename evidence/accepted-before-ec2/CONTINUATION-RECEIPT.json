@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-09-13T03:46:05.011977+00:00",
+  "status": "complete_for_local_walkthrough",
+  "root": "/Users/noahsutter/git-projects/kirocrew-demo",
+  "accepted_visual_preserved": [
+    {
+      "path": "kirocrew-security-layers.html",
+      "sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+      "bytes": 806216
+    },
+    {
+      "path": "kirocrew-security-layers-base.html",
+      "sha256": "f51ac796f42f996f84cf7050cb440eb11ffef19a1f9c4c45e66fa8efd581e882",
+      "bytes": 803073
+    },
+    {
+      "path": "kirocrew-security-layers.architecture.json",
+      "sha256": "fa3662e9483a6dbac6fa505fa3b5e855e42134246d5d08e3122013bd7d4f4d55",
+      "bytes": 3881
+    },
+    {
+      "path": "kirocrew-aws-deployment.html",
+      "sha256": "4375acf0466215035c06b9a9d643555eb9b6e5a478e541b6558435b14ac07784",
+      "bytes": 845336
+    }
+  ],
+  "files": [
+    {
+      "path": "HANDOFF.md",
+      "sha256": "699dea16a67061c3f560a77849aa9fd603b5f890f096c471e15bff1654865697",
+      "bytes": 8718
+    },
+    {
+      "path": "README.txt",
+      "sha256": "9cdc34b6fe080214008fd9ef0cc27853cd23ff62fc8414b7a45b438da9866a9f",
+      "bytes": 1537
+    },
+    {
+      "path": "START-HERE.txt",
+      "sha256": "cd7b73a42f639f22a99f8809dc9e464fb0ffebb8222401266e4d2b80acfc2f34",
+      "bytes": 390
+    },
+    {
+      "path": "WALKTHROUGH.md",
+      "sha256": "51b056196fe767605dd27e2fd6e96666513ad060ae83449a99cae7ce1c7a59c4",
+      "bytes": 6375
+    },
+    {
+      "path": "kirocrew-continuation-notes.md",
+      "sha256": "b535158808a28a8bcfe7fa502c806aa959e19d7d5ab8bbd285dcd88615f79c68",
+      "bytes": 8969
+    },
+    {
+      "path": "kirocrew-aws-remote-notes.md",
+      "sha256": "c2bc08f89e1280ab9cba7ba1c1e46fc18bdd2c974d2bcfe8c1074e6ad763db4d",
+      "bytes": 34646
+    },
+    {
+      "path": "kirocrew-control-layers.json",
+      "sha256": "f0dc1330ff3a493c78ec670331088501a0f7c4cd7a94ad0c63c0fc8908a97a2c",
+      "bytes": 18449
+    },
+    {
+      "path": "kirocrew-aws-remote.html",
+      "sha256": "aa8a5e9bd970a3a945caffe340fe0792aff72709017bdec54093c74bb86cb7cc",
+      "bytes": 2228358
+    },
+    {
+      "path": "kirocrew-security-layers-browser.html",
+      "sha256": "e47121b910829997265ecb42c9c248d14da1cc244b1575952be6b7b071b26d08",
+      "bytes": 805022
+    },
+    {
+      "path": "kirocrew-aws-deployment-browser.html",
+      "sha256": "c45720356c1289c2d2992eca5534ae169e29dd5d2e8b6675093bebd80bef9e46",
+      "bytes": 843995
+    },
+    {
+      "path": "prepare-browser-views.py",
+      "sha256": "dec93996c109bd10c292a29e48a87604cdeb4eb57e335fc6bada01bf1dcb503c",
+      "bytes": 3131
+    },
+    {
+      "path": "build-security-viewer.py",
+      "sha256": "5fa872b4416c3e90af0a55747d72bdd625f6cae09a5a403870b6729bd9eb921b",
+      "bytes": 25918
+    },
+    {
+      "path": "demo.sh",
+      "sha256": "cfed79f68d47db9c051c53c24f893cf80c1a8ffcdafe604a4f365df7d503d1b6",
+      "bytes": 652
+    },
+    {
+      "path": "scripts/run-live-demo.py",
+      "sha256": "51311fadd1b8434bea6b3820f216f4bf7a0af6bd1a1ffab4601e8b742cf1ffae",
+      "bytes": 10485
+    },
+    {
+      "path": "scripts/validate-browser.cjs",
+      "sha256": "7ee4c0f2e2fd774021a11a7ee8b63c4437b4b65c425133575e4cfdc5a9834d71",
+      "bytes": 6663
+    },
+    {
+      "path": "output/kirocrew-demo.pptx",
+      "sha256": "a6cc6e3272cb337c5b4c40cefd61b0042d4d41c5877e3d332ac41b8d1a164f0a",
+      "bytes": 366311
+    },
+    {
+      "path": ".build/slides/build-deck.mjs",
+      "sha256": "45279ecda6c0fa060f7164c7ed9a332b5e5fd83d90273004a825d71deb434142",
+      "bytes": 11398
+    },
+    {
+      "path": ".build/slides/render-final.mjs",
+      "sha256": "6e81541cc41f836c148981ee927d59fb9e4e38b24c0f2b1dba0ae7a3a8481f82",
+      "bytes": 608
+    },
+    {
+      "path": "evidence/slides/finalization.json",
+      "sha256": "919b2f9be866cbc563789df557017eeda7b88cf7d6765d62c4f03682743a70a3",
+      "bytes": 3913
+    },
+    {
+      "path": "evidence/slides/visual-review.json",
+      "sha256": "28af278855f168ba9aec1e0b0cfcd7ca019072bfc57c5032d83a97a77c928996",
+      "bytes": 1927
+    },
+    {
+      "path": "evidence/browser/derivatives.json",
+      "sha256": "94c05ec8bb3b0cefac34ced9a9fea3eec5fe923e3dc8494bf1aae56541734aeb",
+      "bytes": 811
+    },
+    {
+      "path": "evidence/browser/integrated-browser-receipt.json",
+      "sha256": "71d31fa7ba685a0f43c9670bba5247112a8a60cf010f8bba08ef33ce60814258",
+      "bytes": 9140
+    },
+    {
+      "path": "evidence/browser/visual-review.json",
+      "sha256": "0f7300c9b5752f79de05f7afa2bf1046c1bb3b0bf5c578b8be5f4714522ae409",
+      "bytes": 3870
+    },
+    {
+      "path": "evidence/browser/security-static-check.txt",
+      "sha256": "b1ba801805b27c4489a94e9f7fe9682c0a29860e7aeefd3b9189b457362cf843",
+      "bytes": 1842
+    },
+    {
+      "path": "evidence/browser/aws-static-check.txt",
+      "sha256": "bde741a88b5fd569635818772c3a3e79933ee1089657e0d3dd35fa803da19f81",
+      "bytes": 1838
+    },
+    {
+      "path": "kirocrew-security-layers-browser.visual-check.json",
+      "sha256": "d0ce8ef15c44d4e502a59fa268bcbd5b9b67dbeb030831e183522565f3620bae",
+      "bytes": 17184
+    },
+    {
+      "path": "kirocrew-aws-deployment-browser.visual-check.json",
+      "sha256": "4cc6b1fd0f41e63e1168811395e8f8607c06fbc164aaaf3a5fc6fbd32a2bfb0c",
+      "bytes": 17354
+    },
+    {
+      "path": "evidence/nightly/baseline-verification.json",
+      "sha256": "5220f1ce449bb80fe1fc4442252fc7ca743900ae10bae94666e831e7e7ff7283",
+      "bytes": 7178
+    },
+    {
+      "path": "evidence/nightly/installed-nightly-verification.json",
+      "sha256": "78df5a19ee6375db40d8a04e00244b1160c4a155cad3ba81da6f0cc43e2d5a1b",
+      "bytes": 719124
+    },
+    {
+      "path": "evidence/live/20260913T032933Z-4efa70/receipt.json",
+      "sha256": "e3e9392fac58610ede54582418b8cdba3360af48231880df5ff2f519e2ca23e1",
+      "bytes": 3223
+    }
+  ],
+  "diagram_type": "architecture",
+  "validation": "9/9 showcase per derivative; 0 errors, 0 warnings",
+  "browser_evidence": "passed",
+  "visual_review": "passed",
+  "correction_rounds": 2,
+  "browser_scope": "Four desktop sizes, both themes, three tabs, keyboard/details, focus/search, camera zoom/reset, presentation mode, PNG/SVG exports.",
+  "installed_nightly": "0.7.0-nightly.20260912t060850",
+  "cdn_latest_verified": false,
+  "user_reports_latest": true,
+  "live_rehearsal": {
+    "path": "evidence/live/20260913T032933Z-4efa70/receipt.json",
+    "sha256": "e3e9392fac58610ede54582418b8cdba3360af48231880df5ff2f519e2ca23e1",
+    "bytes": 3223
+  },
+  "backend_session_executed": false,
+  "mcp_gateway_executed": false,
+  "aws_deployed": false,
+  "limitations": [
+    "Function-level synthetic harness supplies approval UI, handlers and explicit SEL recording.",
+    "Actual backend callback delivery, native approvals and L0 isolation are unverified.",
+    "MCP/OAuth/IAM and external audit collection require a deployed environment.",
+    "PPTX validated and rendered through artifact-tool; native presentation-app playback not verified.",
+    "Executable depends on this Mac runtime and frozen local package snapshot.",
+    "Historical receipts remain historical; no new independent security audit."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "scene": "synthetic-controls",
+  "startedAt": "2026-09-13T18:23:04.179Z",
+  "endedAt": "2026-09-13T18:23:48.699Z",
+  "marks": [
+    {
+      "time": 0,
+      "label": "Read the isolated synthetic scope"
+    },
+    {
+      "time": 3.52,
+      "label": "Run the frozen control rehearsal"
+    },
+    {
+      "time": 26.419,
+      "label": "Read the recorded control outcomes"
+    },
+    {
+      "time": 34.967,
+      "label": "Inspect synthetic approval and SEL receipt fields"
+    },
+    {
+      "time": 41.517,
+      "label": "Return to the rehearsal results"
+    }
+  ],
+  "outcome": "Checks passed",
+  "artifactUrl": "/artifacts/synthetic-20260913T182330Z-13e6a7f3.json",
+  "nativeBackendProof": false
+}

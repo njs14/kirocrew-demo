@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-13T04:38:58.789645+00:00",
+  "diagram_type": "architecture",
+  "output": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-ec2-live.html",
+  "specification": {
+    "sha256": "94627df60234e1d1d766df58de6b20eb37aa5642392f1439d7148e9026cde7f8",
+    "bytes": 4724
+  },
+  "artifact": {
+    "sha256": "3f057eb3a2e985c57c91ff1bbe42625ad7ea7111da3123069560ce22317142bc",
+    "bytes": 809372
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  },
+  "browser_evidence": "passed",
+  "browser_receipt": "kirocrew-ec2-live.visual-check.json",
+  "visual_review": "passed",
+  "correction_rounds": 2,
+  "perceptual_review": {
+    "reviewer": "image-capable author agent",
+    "artifact_sha256": "3f057eb3a2e985c57c91ff1bbe42625ad7ea7111da3123069560ce22317142bc",
+    "screenshots_reviewed": [
+      "kirocrew-ec2-live.visual-check.1440x900.light.png",
+      "kirocrew-ec2-live.visual-check.1440x900.dark.png",
+      "kirocrew-ec2-live.visual-check.2048x1320.light.png",
+      "kirocrew-ec2-live.visual-check.2048x1320.dark.png"
+    ],
+    "exports_reviewed": [
+      "evidence/aws/archify/kirocrew-ec2-live.png",
+      "evidence/aws/archify/kirocrew-ec2-live-presentation.png"
+    ],
+    "observations": [
+      "Single endpoint-control enclosure contains runtime, controls and remote workspace.",
+      "No node overlaps, route crossings or obscured relationship labels.",
+      "Both themes remain readable and contained at the four required desktop sizes; no empty lower band.",
+      "Workspace wording distinguishes crew write access from root-owned runtime/service code.",
+      "Native browser PNG/SVG exports exclude viewer controls.",
+      "Final copy names the EC2 execution endpoint, configured Crew hooks, and GetObject denial without implying verified native L0\u2013L5 coverage or a reversed HTTP response.",
+      "Bounded presentation crop preserves all topology and labels; generic color legend omitted."
+    ]
+  },
+  "interactions": [
+    "Gateway search, result selection, runtime focus, Escape dismissal",
+    "Presentation mode opened and Escape restored reader"
+  ],
+  "exports": [
+    {
+      "path": "evidence/aws/archify/kirocrew-ec2-live.svg",
+      "bytes": 152433,
+      "sha256": "51473dc6235da08266ccf772a6a7a69f1cd1b30ab5d404c93631982873a213ee"
+    },
+    {
+      "path": "evidence/aws/archify/kirocrew-ec2-live.png",
+      "bytes": 426707,
+      "sha256": "63004b0f90ee3a4638f48a5e2bab219a107d40e77e3eb8c7550a1d2ee51c701c"
+    }
+  ],
+  "sources": [
+    {
+      "path": "infrastructure/ec2-demo.json",
+      "sha256": "778016a3c8fb7d45933e651ace1634a9148b9ead7960797ae208a795752602ea",
+      "bytes": 14193
+    },
+    {
+      "path": "infrastructure/kirocrew-demo.service",
+      "sha256": "662c10170325a0a2e0025e2007d48c650e5ddf88343f0475f50404cfc97360df",
+      "bytes": 1094
+    },
+    {
+      "path": "infrastructure/kirocrew-mcp-demo.service",
+      "sha256": "027ec03ceffdf0fcb38b9961bd35211572f564e0f249904feb111f0624461d01",
+      "bytes": 850
+    },
+    {
+      "path": "evidence/aws/security-group.json",
+      "sha256": "d65380f161ce9f6cccea8a3f0a8e23bf9a1c9bde6c19b3654141d9708bda2442",
+      "bytes": 2920
+    },
+    {
+      "path": "evidence/aws/mcp-live-receipt.json",
+      "sha256": "8072fbe3b4048296b49436b8f23e4772ad3c3e4aba605305efd8901aa2843442",
+      "bytes": 2199
+    },
+    {
+      "path": "evidence/aws/iam-demo-policy.json",
+      "sha256": "8faf681201a0af63edeae2052e89ac85c312c074c4f4eadf9b635625c73c50db",
+      "bytes": 862
+    },
+    {
+      "path": "evidence/aws/client-runtime-verification.json",
+      "sha256": "827ac43582525486362fce86f0602dd8fdab70f21661e2c0002e10c2ce5f8783",
+      "bytes": 1034
+    }
+  ],
+  "scope": [
+    "Actual CloudFormation EC2 demo in us-east-1; SSH ingress limited to current user IPv4 /32.",
+    "Laptop Gateway off observed; SSH tunnel and native desktop connected to remote Gateway.",
+    "Direct MCP authentication, fixed tool grants and S3 IAM denial observed.",
+    "Kiro CLI backend is installed but browser sign-in remains pending; diagram does not claim native backend end-to-end proof.",
+    "Enterprise private EC2/SSM, central policy distribution and LiteLLM proposals remain outside this actual topology."
+  ],
+  "historical_visuals": "Existing accepted security diagram and wrapper were not edited.",
+  "derived_presentation_export": {
+    "receipt": "evidence/aws/archify/presentation-crop.json",
+    "svg": {
+      "path": "evidence/aws/archify/kirocrew-ec2-live-presentation.svg",
+      "bytes": 152529,
+      "sha256": "8691637ce2c547e59e2824438a17bb8375689d5ad77a1d9b22bd9fb416537453"
+    },
+    "png": {
+      "path": "evidence/aws/archify/kirocrew-ec2-live-presentation.png",
+      "bytes": 202649,
+      "sha256": "c19be95bd3582df21d0a059660d78b01c099b7fa2550781f3a304c797d78c68b"
+    }
+  }
+}

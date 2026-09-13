@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "source": "https://github.com/awslabs/aws-icons-for-plantuml",
+  "revision": "e26e2c05daf8b6bc4c764669fc2be04c314ccb8c",
+  "method": "AWS-published PNG assets embedded in a derivative of the checked Archify HTML. Base HTML and specification remain unchanged.",
+  "assets": [
+    {
+      "node": "session-manager",
+      "repositoryPath": "dist/ManagementGovernance/SystemsManager.png",
+      "localPath": "aws-diagram-assets/SystemsManager.png",
+      "sha256": "2e278a9e61c5eb3799a8f7981971eff771ce7a13a0ad5fa7c048bc6b044bc8b3",
+      "bytes": 2188
+    },
+    {
+      "node": "policy-bucket",
+      "repositoryPath": "dist/Storage/SimpleStorageService.png",
+      "localPath": "aws-diagram-assets/SimpleStorageService.png",
+      "sha256": "6715951abe7d964792afc3d36dec4e2f89e7d27df74d702ba75e575304a80d22",
+      "bytes": 2205
+    },
+    {
+      "node": "app-logs",
+      "repositoryPath": "dist/ManagementGovernance/CloudWatch.png",
+      "localPath": "aws-diagram-assets/CloudWatch.png",
+      "sha256": "bff48c147d824c98be094794975e628b666d0a46e90378cf0265225aee27c802",
+      "bytes": 2468
+    },
+    {
+      "node": "ssm-endpoints",
+      "repositoryPath": "dist/NetworkingContentDelivery/PrivateLink.png",
+      "localPath": "aws-diagram-assets/PrivateLink.png",
+      "sha256": "d00a8cb251768efaade75200562f50b0b9b4767dfdd90aee0fcf62381b5c007d",
+      "bytes": 1782
+    },
+    {
+      "node": "execution-host",
+      "repositoryPath": "dist/Compute/EC2.png",
+      "localPath": "aws-diagram-assets/EC2.png",
+      "sha256": "7cd2bef0daa55d3fc97c03707ae3ebf1c5953043969a94e65e0b66c4d533b0ed",
+      "bytes": 693
+    },
+    {
+      "node": "mcp-tier",
+      "repositoryPath": "dist/Containers/Fargate.png",
+      "localPath": "aws-diagram-assets/Fargate.png",
+      "sha256": "128fd1504eb07aed8dffe1a403f04f4b79419be20c0ffe0ede78ec57536090a2",
+      "bytes": 2252
+    },
+    {
+      "node": "controlled-egress",
+      "repositoryPath": "dist/SecurityIdentityCompliance/NetworkFirewall.png",
+      "localPath": "aws-diagram-assets/NetworkFirewall.png",
+      "sha256": "aa5d60fd715535cfbda47791a8803ba8f07247d03496a8fbf29c4198a981615a",
+      "bytes": 2415
+    },
+    {
+      "node": "controlled-egress",
+      "repositoryPath": "dist/NetworkingContentDelivery/VPCNATGateway.png",
+      "localPath": "aws-diagram-assets/VPCNATGateway.png",
+      "sha256": "d808af49670cdaf815266f2547b6e6ca244087714a0831f46500871557e82eb7",
+      "bytes": 2860
+    },
+    {
+      "node": "encrypted-volume",
+      "repositoryPath": "dist/Storage/ElasticBlockStore.png",
+      "localPath": "aws-diagram-assets/ElasticBlockStore.png",
+      "sha256": "c19b9e2f8eec3616d4812fcf8e38cfbce2eb8909bbe0b7dca73a059eccd9c2d3",
+      "bytes": 1363
+    },
+    {
+      "node": "tool-resources",
+      "repositoryPath": "dist/SecurityIdentityCompliance/IdentityandAccessManagement.png",
+      "localPath": "aws-diagram-assets/IdentityandAccessManagement.png",
+      "sha256": "a3e65cb907bfd9af17d6ef6d42da746461fdac191696d7f818682349a8795d55",
+      "bytes": 981
+    }
+  ]
+}

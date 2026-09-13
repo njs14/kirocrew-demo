@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-09-13T04:10:10.205662+00:00",
+  "reviewer": "Codex deployment_review subagent; fresh bounded source review",
+  "status": "no_blocking_findings_in_reviewed_candidate",
+  "scope": [
+    "CloudFormation networking, IAM/S3, instance metadata restrictions and cost configuration",
+    "Bootstrap users, permission boundaries, IMDS owner firewall and service ordering",
+    "Crew/CLI artifact hash verification and safe archive members",
+    "Gateway systemd isolation and upstream AppArmor profile integration",
+    "Linux x86_64 Python 3.12 dependency-lock remediation"
+  ],
+  "candidate_sha256": {
+    "infrastructure/ec2-demo.json": "778016a3c8fb7d45933e651ace1634a9148b9ead7960797ae208a795752602ea",
+    "infrastructure/bootstrap.sh": "46c2f99747f3a04d48e47f41b2e880f9be10fe3d425b75b4981717dd8c9459d6",
+    "infrastructure/install-crew.sh": "0e6d1cc0f9bbbf521ee8cae72c53cfee9506137f7151f8e63daba217d8ae1030",
+    "infrastructure/kirocrew-demo.service": "125efdc39477485497776c79d83346ce560704d5e453477812e140e05b76cf3b",
+    "infrastructure/crew-requirements.txt": "a8f950355676248bb783feede68c89d00cc5b197eecdc38a7b15f944554b46da",
+    "infrastructure/crew-requirements-linux.lock": "d4e5f14049274f75870bbd2d694148a32b036394fca4cbf6b5d0b9ab9ca5da42"
+  },
+  "resolved_findings": [
+    {
+      "id": "dependency-artifact-lock",
+      "priority": "P2",
+      "path": "infrastructure/install-crew.sh",
+      "line": 9,
+      "status": "resolved",
+      "resolution": "Exact hash-locked requirements plus pip --require-hashes --only-binary=:all: prevent version drift and source builds in this installation step."
+    }
+  ],
+  "open_findings": [],
+  "checks": {
+    "cfn_bootstrap_userdata_exact_equality": true,
+    "ingress_only_tcp22_with_ipv4_slash32_constraint": true,
+    "gateway_loopback_bind_and_imds_service_dependency": true,
+    "archive_hashes_match_installer": true,
+    "crew_archive_no_special_members_or_path_traversal": true,
+    "installed_base_requirements_applicable_to_target": 23,
+    "explicit_jsonschema_covered": true,
+    "locked_distribution_count": 49,
+    "every_distribution_exact_pin_and_sha256_hashes": true,
+    "no_direct_url_requirements": true,
+    "offline_resolution_from_original_inputs_and_lock_constraints_equal": true,
+    "offline_resolution_command": [
+      "/opt/homebrew/bin/uv",
+      "pip",
+      "compile",
+      "--offline",
+      "infrastructure/crew-requirements.txt",
+      "--constraint",
+      "infrastructure/crew-requirements-linux.lock",
+      "--python-version",
+      "3.12",
+      "--python-platform",
+      "x86_64-unknown-linux-gnu",
+      "--only-binary=:all:",
+      "--no-header",
+      "--quiet"
+    ],
+    "metadata_source": "/Applications/KiroCrew Nightly.app/Contents/Resources/backend-dist/kirocrew-backend-arm64/lib/python3.12/site-packages/kirocrew-0.7.0.dist-info/METADATA",
+    "metadata_sha256": "ade7e48959ea25f1bd1e6a3900e6cf6bd629b3516bde37325d6d39fde4e6f50e"
+  },
+  "limitations": [
+    "Source/configuration review only; no cloud API calls, deployment or service execution performed by reviewer.",
+    "Runtime package installation, native sandbox behavior, firewall effectiveness, backend login, MCP enforcement and AWS allow/deny require separate host evidence.",
+    "Hashes bind dependency artifacts accepted by the lock; this is not an independent audit or publisher-signature verification of every dependency.",
+    "The generated lock may include hashes for multiple platform artifacts; installer permits binary wheels only."
+  ]
+}

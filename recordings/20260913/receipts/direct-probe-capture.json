@@ -1,0 +1,30 @@
+{
+  "scene": "direct-mcp-aws",
+  "startedAt": "2026-09-13T18:21:23.913Z",
+  "endedAt": "2026-09-13T18:21:48.337Z",
+  "marks": [
+    {
+      "time": 0,
+      "label": "Direct probe scope and fixed outcomes"
+    },
+    {
+      "time": 3.025,
+      "label": "Start the real bounded command"
+    },
+    {
+      "time": 5.82,
+      "label": "Read the completed command outcomes"
+    },
+    {
+      "time": 14.871,
+      "label": "Inspect the fresh receipt fields"
+    },
+    {
+      "time": 20.922,
+      "label": "Return to the three outcomes"
+    }
+  ],
+  "outcome": "Checks passed",
+  "artifactUrl": "/artifacts/direct-20260913T182129Z-28c18bd5.json",
+  "nativeBackendProof": false
+}

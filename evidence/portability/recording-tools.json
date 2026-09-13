@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "checked_at": "2026-09-13T19:12:14.211615+00:00",
+  "scope": "Portable local baseline preparation, real synthetic rehearsal, browser tooling configuration, and historical council launcher portability",
+  "files": [
+    {
+      "path": "scripts/prepare-demo-baseline.py",
+      "sha256": "17464754e976bd4e653f4c4f59daaf3341a9bda5deaa0fcde49848535d1729f6"
+    },
+    {
+      "path": "scripts/run-live-demo.py",
+      "sha256": "0df80c7aee9476762c45309b433a963c7f31b5c73bcb4afc4b44239e5c77ccea"
+    },
+    {
+      "path": "scripts/browser-runtime.cjs",
+      "sha256": "8a98b891e45f4d6646e4931d39195f88a740aa0c336862a11ded48113f429198"
+    },
+    {
+      "path": "scripts/inspect-browser.cjs",
+      "sha256": "52a30b9e60ee5b14aa3696b53b8fe042412b34c8ff1bf37015fd38dc39187726"
+    },
+    {
+      "path": "scripts/validate-browser.cjs",
+      "sha256": "b0b894e4be6d554e0efa69230610d9f82e3ae7145684c5f02bd87472024b5787"
+    },
+    {
+      "path": "scripts/validate-live-viewer.cjs",
+      "sha256": "19d1f13e71ee21be18db04faaa7ce6f272e210bca64d23ea8a26357b49ddfda0"
+    },
+    {
+      "path": "scripts/run-deck-council.py",
+      "sha256": "9d2ec8086b50260ae6c6202c5c2c861a4b2828946ac68baefe081fce636a5540"
+    },
+    {
+      "path": "scripts/tests/test_demo_baseline.py",
+      "sha256": "306f003296c17c5ccb1a2fa085c91bc494390b663364a6dd0879ecf3bb3e0ecd"
+    },
+    {
+      "path": "scripts/tests/test_deck_council_portability.py",
+      "sha256": "a9a626735df0162eb81999829ce30f6a71070332a8b669bcba16ade962d7a4b9"
+    },
+    {
+      "path": "scripts/tests/browser-runtime.test.cjs",
+      "sha256": "000dfcb94754efdef811808cccc81a5ecc1b816a683ae4830f1736fdfca2f26c"
+    },
+    {
+      "path": "package.json",
+      "sha256": "45526fcb39ca126a38a66b7e59c8781dd4f6c5444d9ba12951332abf8b218802"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "713d9889b376904ac49400f8b201c9f72a8a0c4604384167965375fa5378cbe2"
+    },
+    {
+      "path": "requirements-demo.txt",
+      "sha256": "0736cc52c8071389f4ddce2f0d7e6639e68d25865e4bd375d64ee8ffb07b3c4c"
+    },
+    {
+      "path": "docs/RECORDING.md",
+      "sha256": "d7c8448884055e02cb2f857f413d4b5da4ded52c7586d2367f77a03b2f09fef1"
+    }
+  ],
+  "tests": {
+    "baseline_tests": 12,
+    "council_configuration_tests": 3,
+    "browser_runtime_tests": 4,
+    "python_syntax": "pass",
+    "browser_script_syntax": "pass",
+    "pip_check": "pass",
+    "clean_venv_python": "3.12.14",
+    "direct_runtime_requirements": 7,
+    "resolved_runtime_packages": 19,
+    "independent_baseline_review": "pass after FIFO and excluded-bytecode fixes"
+  },
+  "real_harness_runs": [
+    {
+      "path": "evidence/live/20260913T190950Z-1e9b0b/receipt.json",
+      "sha256": "5e825d729d0a61dd87dec8e86f7465059d7c8171e6ce0860b3137eeadcb5a678",
+      "status": "pass"
+    },
+    {
+      "path": "evidence/live/20260913T191106Z-e20538/receipt.json",
+      "sha256": "7e541e549315e1bf51f1f174ec0f806ab64900e8e72ba1a27b4622ccd10d3597",
+      "status": "pass"
+    }
+  ],
+  "manifest_selection": "legacy manifest and explicit prepared manifest via KIRO_DEMO_BASELINE both exercised",
+  "registry": {
+    "playwright": "1.63.0",
+    "source": "https://registry.npmjs.org/playwright",
+    "install_hooks_executed": false,
+    "browser_downloaded": false
+  },
+  "platform": {
+    "observed": "Darwin",
+    "machine": "arm64",
+    "linux_execution_verified": false,
+    "windows_native_supported": false
+  },
+  "accepted_artifacts_rebuilt": false,
+  "reviewers_executed": false,
+  "live_aws_or_app_mutations": false,
+  "limitations": [
+    "Requires user-provided local installed package; package and runtime state remain excluded from Git.",
+    "Different package versions require their own dependencies and acceptance tests.",
+    "No browser UI checks were performed by this subtask; root owns fresh-clone validation.",
+    "Synthetic controls do not establish native Kiro CLI enforcement."
+  ]
+}

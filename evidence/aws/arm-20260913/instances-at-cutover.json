@@ -1,0 +1,370 @@
+{
+  "Reservations": [
+    {
+      "ReservationId": "r-02542a1c4b6d8e736",
+      "OwnerId": "770132776059",
+      "RequesterId": "043234062703",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2026-09-13T04:09:01+00:00",
+                "DeleteOnTermination": true,
+                "Status": "attached",
+                "VolumeId": "vol-07fce30fb97a89ab9",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "3cfeb0e3-66c1-cad5-c9b4-37f20793bcb4",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::770132776059:instance-profile/kirocrew-demo-20260913-DemoInstanceProfile-gQvvZTBfIjzv",
+            "Id": "AIPA3GT35SR5QPRDFKHET"
+          },
+          "NetworkInterfaces": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-100-57-5-32.compute-1.amazonaws.com",
+                "PublicIp": "100.57.5.32"
+              },
+              "Attachment": {
+                "AttachTime": "2026-09-13T04:09:00+00:00",
+                "AttachmentId": "eni-attach-0c2059b57a9e6da56",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-08ac4789794115e39",
+                  "GroupName": "kirocrew-demo-20260913-DemoSecurityGroup-q2LqWjmmFENz"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "02:ff:f6:75:e3:09",
+              "NetworkInterfaceId": "eni-0861127b1ac8babc9",
+              "OwnerId": "770132776059",
+              "PrivateDnsName": "ip-172-31-2-71.ec2.internal",
+              "PrivateIpAddress": "172.31.2.71",
+              "PrivateIpAddresses": [
+                {
+                  "Association": {
+                    "IpOwnerId": "amazon",
+                    "PublicDnsName": "ec2-100-57-5-32.compute-1.amazonaws.com",
+                    "PublicIp": "100.57.5.32"
+                  },
+                  "Primary": true,
+                  "PrivateDnsName": "ip-172-31-2-71.ec2.internal",
+                  "PrivateIpAddress": "172.31.2.71"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-0e97cd68883d3d479",
+              "VpcId": "vpc-07b9dae1b0889f755",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-08ac4789794115e39",
+              "GroupName": "kirocrew-demo-20260913-DemoSecurityGroup-q2LqWjmmFENz"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "Project",
+              "Value": "kirocrew-demo"
+            },
+            {
+              "Key": "aws:cloudformation:stack-name",
+              "Value": "kirocrew-demo-20260913"
+            },
+            {
+              "Key": "aws:cloudformation:logical-id",
+              "Value": "DemoInstance"
+            },
+            {
+              "Key": "aws:cloudformation:stack-id",
+              "Value": "arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b"
+            },
+            {
+              "Key": "Name",
+              "Value": "kirocrew-demo"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 1,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "BootMode": "uefi-preferred",
+          "PlatformDetails": "Linux/UNIX",
+          "UsageOperation": "RunInstances",
+          "UsageOperationUpdateTime": "2026-09-13T04:09:00+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "uefi",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "SecondaryInterfaces": [],
+          "InstanceId": "i-020eb373045b56586",
+          "ImageId": "ami-025d99823a4caad37",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-172-31-2-71.ec2.internal",
+          "PublicDnsName": "ec2-100-57-5-32.compute-1.amazonaws.com",
+          "StateTransitionReason": "",
+          "KeyName": "kirocrew-demo-20260913",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "t3a.small",
+          "LaunchTime": "2026-09-13T04:09:00+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "use1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-0e97cd68883d3d479",
+          "VpcId": "vpc-07b9dae1b0889f755",
+          "PrivateIpAddress": "172.31.2.71",
+          "PublicIpAddress": "100.57.5.32"
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-075b168b8c993cdc3",
+      "OwnerId": "770132776059",
+      "RequesterId": "043234062703",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "arm64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2026-09-13T13:58:31+00:00",
+                "DeleteOnTermination": true,
+                "Status": "attached",
+                "VolumeId": "vol-02a27fe0b4d1af5af",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "81a73334-4977-117e-b6c2-b791e125dc1f",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::770132776059:instance-profile/kirocrew-demo-20260913-DemoInstanceProfile-gQvvZTBfIjzv",
+            "Id": "AIPA3GT35SR5QPRDFKHET"
+          },
+          "NetworkInterfaces": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-100-61-173-192.compute-1.amazonaws.com",
+                "PublicIp": "100.61.173.192"
+              },
+              "Attachment": {
+                "AttachTime": "2026-09-13T13:58:30+00:00",
+                "AttachmentId": "eni-attach-0f2dc4a61a7370180",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-08ac4789794115e39",
+                  "GroupName": "kirocrew-demo-20260913-DemoSecurityGroup-q2LqWjmmFENz"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "02:ff:e9:93:90:0b",
+              "NetworkInterfaceId": "eni-06ca9a16d436182df",
+              "OwnerId": "770132776059",
+              "PrivateDnsName": "ip-172-31-8-10.ec2.internal",
+              "PrivateIpAddress": "172.31.8.10",
+              "PrivateIpAddresses": [
+                {
+                  "Association": {
+                    "IpOwnerId": "amazon",
+                    "PublicDnsName": "ec2-100-61-173-192.compute-1.amazonaws.com",
+                    "PublicIp": "100.61.173.192"
+                  },
+                  "Primary": true,
+                  "PrivateDnsName": "ip-172-31-8-10.ec2.internal",
+                  "PrivateIpAddress": "172.31.8.10"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-0e97cd68883d3d479",
+              "VpcId": "vpc-07b9dae1b0889f755",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-08ac4789794115e39",
+              "GroupName": "kirocrew-demo-20260913-DemoSecurityGroup-q2LqWjmmFENz"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "Project",
+              "Value": "kirocrew-demo"
+            },
+            {
+              "Key": "Name",
+              "Value": "kirocrew-demo-arm"
+            },
+            {
+              "Key": "aws:cloudformation:logical-id",
+              "Value": "DemoArmInstance"
+            },
+            {
+              "Key": "aws:cloudformation:stack-name",
+              "Value": "kirocrew-demo-20260913"
+            },
+            {
+              "Key": "aws:cloudformation:stack-id",
+              "Value": "arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 4,
+            "ThreadsPerCore": 1
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "BootMode": "uefi",
+          "PlatformDetails": "Linux/UNIX",
+          "UsageOperation": "RunInstances",
+          "UsageOperationUpdateTime": "2026-09-13T13:58:30+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "uefi",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "SecondaryInterfaces": [],
+          "InstanceId": "i-0fde6de3f0ea5a9d0",
+          "ImageId": "ami-0246d714afcc1d494",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-172-31-8-10.ec2.internal",
+          "PublicDnsName": "ec2-100-61-173-192.compute-1.amazonaws.com",
+          "StateTransitionReason": "",
+          "KeyName": "kirocrew-demo-20260913",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "t4g.xlarge",
+          "LaunchTime": "2026-09-13T13:58:30+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "use1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "us-east-1a"
+          },
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-0e97cd68883d3d479",
+          "VpcId": "vpc-07b9dae1b0889f755",
+          "PrivateIpAddress": "172.31.8.10",
+          "PublicIpAddress": "100.61.173.192"
+        }
+      ]
+    }
+  ]
+}

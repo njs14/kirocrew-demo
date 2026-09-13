@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "scannedAt": "2026-09-13T19:21:02.376379+00:00",
+  "verdict": "pass-with-declared-synthetic-fixtures",
+  "scope": "Exact staged Git blob bytes, including readable archive members. This receipt is excluded from its own content binding.",
+  "previousScannedTree": "3238503312d3b63cf7b90616dd989804761f1801",
+  "treeBeforeReceipt": "22ea1122bae6e6d2632e08a5f754788103901660",
+  "treeAfterScan": "22ea1122bae6e6d2632e08a5f754788103901660",
+  "treeStable": true,
+  "receiptExcluded": "evidence/portability/publication-scan.json",
+  "changesSinceInitialScan": [
+    "M\tREADME.md",
+    "A\tevidence/portability/acceptance.json",
+    "A\tevidence/portability/fresh-checkout-entrypoints.json",
+    "A\tevidence/portability/fresh-checkout-npm.json",
+    "A\tevidence/portability/fresh-checkout-preview.json",
+    "A\tevidence/portability/fresh-checkout-tests.json",
+    "A\tevidence/portability/preserved-artifacts.json",
+    "A\tevidence/portability/publication-scan.json",
+    "A\tevidence/portability/runtime.json"
+  ],
+  "scanMode": "Full staged scan repeated after final receipt and README additions.",
+  "fileCount": 1260,
+  "totalBytes": 111869438,
+  "indexManifestSha256": "9177c68f2e457cba30cb53a66fd4fa3c0a10aaacb2e519a361e35aaefc2ff219",
+  "indexManifestFormat": {
+    "entryOrder": "Unmodified git ls-files --stage -z output order, excluding only receiptExcluded.",
+    "fields": {
+      "path": "UTF-8 string from path after TAB",
+      "mode": "six-character Git mode string",
+      "gitBlob": "Git object ID string",
+      "stage": "integer",
+      "bytes": "integer staged blob byte length",
+      "sha256": "lowercase hex SHA-256 of exact staged blob bytes"
+    },
+    "serialization": "json.dumps(entries, sort_keys=True, separators=(comma, colon)) using Python default ensure_ascii=True, encoded as UTF-8; no trailing newline."
+  },
+  "largestFiles": [
+    {
+      "path": "evidence/council/arm-observability-v1/candidate/dispatch/claude-raw.jsonl",
+      "bytes": 4249818
+    },
+    {
+      "path": "evidence/council/system-design-v1/candidate/dispatch/claude-raw.jsonl",
+      "bytes": 2680957
+    },
+    {
+      "path": "evidence/council/candidate-v3/claude-auth-fix/claude-raw.jsonl",
+      "bytes": 2497899
+    },
+    {
+      "path": "evidence/accepted/kirocrew-aws-remote.html",
+      "bytes": 2230459
+    },
+    {
+      "path": "kirocrew-aws-remote.html",
+      "bytes": 2228358
+    },
+    {
+      "path": "evidence/council/arm-observability-v1/candidate/dispatch/grok-raw.jsonl",
+      "bytes": 2211507
+    },
+    {
+      "path": "kirocrew-demo-live.html",
+      "bytes": 2164991
+    },
+    {
+      "path": "output/demo-clips/20260913-final/endpoint-reference/endpoint-reference.mp4",
+      "bytes": 1823896
+    },
+    {
+      "path": "output/kirocrew-recorded-demos.html",
+      "bytes": 1804334
+    },
+    {
+      "path": "output/kirocrew-system-design.html",
+      "bytes": 1760865
+    }
+  ],
+  "filesAtLeast50MB": [],
+  "textFilesOrArchiveMembersScanned": 1671,
+  "textBytesScanned": 62541912,
+  "nonTextFilesOrMembers": 394,
+  "archiveCount": 13,
+  "archiveMembers": 805,
+  "archiveHandling": "Recognized ZIP signatures were inspected from staged blob memory without extraction; includes PowerPoint OOXML. All members were at most 25 MB and readable archive members were scanned.",
+  "patternCategories": [
+    "AWS_access_key",
+    "GitHub_token",
+    "Private_key",
+    "JWT",
+    "Credential_URL",
+    "Long_bearer_literal",
+    "Secret_literal"
+  ],
+  "patternHits": [
+    {
+      "category": "Credential_URL",
+      "path": "archify-source/archify/test/repository-evidence.test.mjs",
+      "count": 2,
+      "lines": [
+        216,
+        238
+      ],
+      "disposition": "Declared synthetic token URLs in tests that assert credential redaction, confirmed from exact staged source."
+    },
+    {
+      "category": "AWS_access_key",
+      "path": "scripts/run-live-demo.py",
+      "count": 2,
+      "lines": [
+        162,
+        164
+      ],
+      "disposition": "Declared fake credential fixture and corresponding redaction assertion, confirmed from exact staged source."
+    }
+  ],
+  "confirmedLiveCredentialFindings": 0,
+  "excludedPathViolations": [],
+  "excludedCategoriesChecked": [
+    "GitHub Actions workflows",
+    "private-key and credential filenames",
+    "session storage and cookie state filenames",
+    "build caches and dependencies",
+    "raw recordings",
+    "disposable synthetic crew-home and workspace state",
+    "mutable latest-run pointer",
+    "local configuration and environment files",
+    "generated test XML"
+  ],
+  "smallBinaryFiles": [],
+  "symlinkCount": 0,
+  "gitlinkCount": 0,
+  "unmergedEntries": 0,
+  "stagedGitignoreSha256": "10e25475da839c9d7783356d47ddc25e617d2958c985e0f5c695e7b2657fdd64",
+  "limitations": [
+    "Pattern and file-structure checks do not prove the absence of every possible secret.",
+    "Raster images and video pixels are not OCR scanned in this exact-index pass. Existing visual review remains separately scoped.",
+    "Historical AWS resource identifiers and local path metadata remain in reviewed evidence; they are not authentication material.",
+    "The final tree changes when this refreshed receipt is staged. Its binding covers every other indexed path and excludes the receipt itself."
+  ]
+}

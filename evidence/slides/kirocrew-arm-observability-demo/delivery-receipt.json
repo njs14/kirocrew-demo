@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "completed_at": "2026-09-13T15:18:34.413330+00:00",
+  "final_artifact": "output/kirocrew-arm-observability-demo.pptx",
+  "final_sha256": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13",
+  "slide_count": 12,
+  "status": "complete; author verified",
+  "artifacts": [
+    {
+      "path": "output/kirocrew-arm-observability-demo.pptx",
+      "bytes": 357661,
+      "sha256": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-copy.md",
+      "bytes": 18979,
+      "sha256": "8c720e0c2b16d9ef54ceac38fc8e56b1abbc83b1c358b9107184fc9cd8840e67"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-1.png",
+      "bytes": 68645,
+      "sha256": "19247a9b300da68e9d3db6febf3ddd74c1029aa0538a06987bf1e875dd1e2a60"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-2.png",
+      "bytes": 165894,
+      "sha256": "d48b2b4cbb1bca0b570b5561ca7c3773d4ec88a67ee26e6173ca88c85f549409"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-3.png",
+      "bytes": 94730,
+      "sha256": "6fc69d770840d45ec70d2fc43fc3fbf301d56ff3494ec2b071c499760068bfa3"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-4.png",
+      "bytes": 118087,
+      "sha256": "86c5ad558d8531f2dad5bbcb510afacb7588dde519e57ceca14f48aa8f9b806c"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-5.png",
+      "bytes": 95424,
+      "sha256": "6bb3bd3fef3c98653e43ccd407d2248d2e1c2c6c4937aa1445e7db15f873d694"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-6.png",
+      "bytes": 120542,
+      "sha256": "e4ea3345e7b90a7982d6cb6067c61c513bd97caa082dc9df87a6969a1f4a0ea6"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-7.png",
+      "bytes": 116665,
+      "sha256": "a7b5e5408c93a57d153f96c43abd86bf93b8a130849b5f0a577f14b114067c17"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-8.png",
+      "bytes": 162546,
+      "sha256": "78ea9660c000f205d818db7242996c9df2183d557b4ba826a8cac3d2da9b5072"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-9.png",
+      "bytes": 280387,
+      "sha256": "f161f7eb661691a99b4659c92d975e0f08ab5523cc32daca0d280dbabf23e7ea"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-10.png",
+      "bytes": 177043,
+      "sha256": "c7fc083f58c024502302c8c4f1afc5e47ed0fd847bd26214d80d31dd9a4f4216"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-11.png",
+      "bytes": 94869,
+      "sha256": "0eaf143be799934a02d1983f73dcf6ca1d00be2f722b88c0c9940da3fab80a4c"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-slides/slide-12.png",
+      "bytes": 124981,
+      "sha256": "01c59173273c5fa93fa084f6ced431aa774732a4e2bb799d43bfa2fa90417eea"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/review-text.md",
+      "bytes": 18456,
+      "sha256": "5d5af8d3abc087262f470b54433037e32dd6de31836a2c7b3e291f663ac496ae"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/review-text.json",
+      "bytes": 19722,
+      "sha256": "4ef0fb814e6c7224c5b6cef0efad3a267fcecf6794d28c625e209e23f1fc8aff"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/review-manifest.json",
+      "bytes": 3632,
+      "sha256": "d554c37061c696c0392ef8f974a44234be80ccff80cc2a702b5772c49c82f232"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/finalization.json",
+      "bytes": 4066,
+      "sha256": "c33d7cd61f9eb6581319429660c2418307115c23e0e204f1f63f071d6d883d1c"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/visual-review.json",
+      "bytes": 2897,
+      "sha256": "9b77c04d7a1dd6cd7fd051176bd17474657bd5fa033cac95b3bbf72c9b38f762"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/embedded-image-checks.json",
+      "bytes": 2749,
+      "sha256": "df68cea24fafb08cc2bdf5adad3f01cd31fcbb2d2171e928cc66e0ffa630c7b7"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/council-incorporation.json",
+      "bytes": 3591,
+      "sha256": "a40c9ce35e7df4c0f988c1d7cce58af5ed1f55c279c7cd03e0d79a0dc059d456"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/no-ai-slop.md",
+      "bytes": 3316,
+      "sha256": "21c8f816311787da3a9a978a9176f7ce9c724e92b3fe1cf569d10276799b268a"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/source-manifest.json",
+      "bytes": 3611,
+      "sha256": "41bb0ced08bc9fcc5599150e39abd2d70e62d777ef5391416f5f19c0c4518ab1"
+    }
+  ],
+  "validation": {
+    "package_integrity": "passed",
+    "layout_and_Arial_policy": "passed",
+    "native_editable_tables": "slides 4, 5, 6 passed",
+    "exact_pptx_reimport": "passed",
+    "all_12_rendered_slides_inspected": "passed",
+    "embedded_original_images": "5 of 5 unchanged",
+    "native_crop_metadata": "3 of 3 matched",
+    "speaker_notes": "exact author/extraction match",
+    "no_ai_slop": "full draft and eval completed after council decisions"
+  },
+  "council": {
+    "reviewed_candidate_sha256": "99d10eee8723b3998c40f52e902602661138e7388f0d6d3db8e2d5ef13f63dd9",
+    "verdicts": [
+      "CHANGES REQUIRED",
+      "CHANGES REQUIRED"
+    ],
+    "accepted_changes_incorporated": true,
+    "final_bytes_reviewed_by_council": false
+  },
+  "limits": [
+    "Native Kiro CLI authentication and a completed native backend session remain pending.",
+    "Native PowerPoint application playback has not been verified.",
+    "The accepted endpoint reference image retains its original glyph appearance by explicit decision."
+  ],
+  "preserved_previous_final_sha256": "eaf91801fa8f43e2192df5f229b9d7ef677b9d49a6f9552a629c43b5e6113a46"
+}

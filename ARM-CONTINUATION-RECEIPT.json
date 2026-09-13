@@ -1,0 +1,586 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-13T15:25:52.824290+00:00",
+  "status": "arm_and_client_server_telemetry_delivered_native_cli_authentication_pending",
+  "user_objective_fully_complete": false,
+  "root": "/Users/noahsutter/git-projects/kirocrew-demo",
+  "cloud": {
+    "stack": "kirocrew-demo-20260913",
+    "region": "us-east-1",
+    "active_instance": "i-0fde6de3f0ea5a9d0",
+    "type": "t4g.xlarge",
+    "architecture": "arm64",
+    "vcpus": 4,
+    "memory_gib": 16,
+    "root_gp3_gib": 40,
+    "legacy_instance": "i-020eb373045b56586",
+    "legacy_state": "stopped",
+    "legacy_type": "t3a.small",
+    "legacy_root_gp3_gib": 24,
+    "cpu_credits": "standard",
+    "inbound": "TCP 22 from 24.60.107.229/32 only",
+    "instance_hour_usd": 0.1344,
+    "public_ipv4_hour_usd": 0.005,
+    "both_gp3_volumes_month_usd": 5.12,
+    "base_730_hour_month_usd": 106.882,
+    "billing_limit": "Excludes models, S3, transfer, other services and taxes; stopped hosts retain storage costs.",
+    "state_is_point_in_time": true
+  },
+  "client": {
+    "version": "0.7.0-nightly.20260913t061222",
+    "runLocalGateway": false,
+    "local_5476_listener": false,
+    "tunnel_port": 5599,
+    "native_desktop_reconnect_observed": true,
+    "owner_helper": "/usr/local/bin/kirocrew-owner-token",
+    "owner_ssh_alias": "kirocrew-demo-admin",
+    "ordinary_tunnel_alias": "kirocrew-demo"
+  },
+  "server": {
+    "version": "0.7.0-nightly.20260912t060850",
+    "distribution": "Custom Linux ARM64 repack of frozen installed Nightly; not an official Linux release",
+    "kiro_cli": "2.21.4",
+    "loopback_ports": [
+      5476,
+      8001,
+      9102
+    ]
+  },
+  "telemetry": {
+    "native_gateway_local_metrics": true,
+    "flush_seconds": 10,
+    "retention_days": 7,
+    "retention_target_mib": 64,
+    "retention_target_is_strict_cap": false,
+    "otlp_export": false,
+    "vendor_beacon": false,
+    "custom_client_and_server_collection": true,
+    "collector_interval_seconds": 60,
+    "samples_per_source_limit": 240,
+    "event_limit": 200,
+    "portal_refresh_seconds": 15,
+    "stale_after_seconds": 180,
+    "app": "Demo Observability",
+    "app_version": "1.0.1",
+    "actual_cua_screenshots": 13,
+    "controlled_desktop_restart": {
+      "stop_event": "2026-09-13T14:44:42Z",
+      "recovery_event": "2026-09-13T14:49:34Z",
+      "gateway_before": {
+        "MainPID": "4991",
+        "ExecMainStartTimestamp": "Sun 2026-09-13 14:26:10 UTC",
+        "ActiveState": "active"
+      },
+      "gateway_after": {
+        "MainPID": "4991",
+        "ExecMainStartTimestamp": "Sun 2026-09-13 14:26:10 UTC",
+        "User": "crew",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "gateway_identity_unchanged": true
+    },
+    "event_scope": "Fixed custom collection events. Native Gateway logs and metrics remain separate. No native SEL/audit equivalence."
+  },
+  "native": {
+    "selected_backend": "Kiro CLI",
+    "authentication_verified": false,
+    "completed_model_turn": false,
+    "approval_and_crew_deny_verified": false,
+    "native_sel_correlation_verified": false,
+    "sandbox_execution_verified": false,
+    "login": "The fresh normal sign-in helper ended without authentication. A subsequent CLI check remained signed out, and both callback listeners were closed. Start a fresh helper when ready; do not reuse the old OAuth link.",
+    "next_step": "Complete standalone CLI sign-in, then run native-demo.sh with a new evidence directory and approve only its exact bounded pending cards."
+  },
+  "council": {
+    "candidate_sha256": "99d10eee8723b3998c40f52e902602661138e7388f0d6d3db8e2d5ef13f63dd9",
+    "models": [
+      "grok-4.6",
+      "claude-opus-5"
+    ],
+    "requested_effort": "xhigh",
+    "effort_scope": "Launch flags verified; provider-internal effort not independently visible.",
+    "images_per_reviewer": 12,
+    "both_verdicts": "CHANGES REQUIRED",
+    "accepted_decisions_incorporated": true,
+    "no_ai_slop_after_incorporation": true,
+    "final_byte_council_approval": false
+  },
+  "validation": {
+    "final_slide_count": 12,
+    "final_author_visual_review": "all twelve rendered slides",
+    "telemetry_independent_focused_checks": 44,
+    "actual_portal_cua_validation": "passed observed flows",
+    "standalone_html_browser_validation": "blocked by browser local-file URL security policy; no workaround",
+    "archify_static_checks": "nine of nine for each of three specifications; zero errors and warnings",
+    "guide_static_validation": "thirteen original JPEG byte matches, links, anchors and inline JavaScript",
+    "native_powerpoint_playback": "not performed"
+  },
+  "limitations": [
+    "Native Kiro CLI login and end-to-end enforcement remain pending.",
+    "Direct MCP, AWS and collector probes are separate observed runs.",
+    "The demo Crew configuration remains writable by crew; no immutable enterprise policy floor is deployed.",
+    "The MCP service has one bounded demo principal, not general OAuth/group or tenant administration.",
+    "The server is a custom frozen ARM repack; the newer Mac Nightly is a separate baseline.",
+    "New standalone HTML viewer interactions and responsive layout could not be browser-tested.",
+    "The instance remains running for the demo and sign-in; compute and storage continue billing."
+  ],
+  "accepted_artifacts_preserved": [
+    {
+      "path": "kirocrew-security-layers.html",
+      "sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-security-layers-base.html",
+      "sha256": "f51ac796f42f996f84cf7050cb440eb11ffef19a1f9c4c45e66fa8efd581e882",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-security-layers.architecture.json",
+      "sha256": "fa3662e9483a6dbac6fa505fa3b5e855e42134246d5d08e3122013bd7d4f4d55",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-aws-deployment.html",
+      "sha256": "4375acf0466215035c06b9a9d643555eb9b6e5a478e541b6558435b14ac07784",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-aws-remote.html",
+      "sha256": "aa8a5e9bd970a3a945caffe340fe0792aff72709017bdec54093c74bb86cb7cc",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-security-layers-browser.html",
+      "sha256": "e47121b910829997265ecb42c9c248d14da1cc244b1575952be6b7b071b26d08",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-aws-deployment-browser.html",
+      "sha256": "c45720356c1289c2d2992eca5534ae169e29dd5d2e8b6675093bebd80bef9e46",
+      "unchanged": true
+    },
+    {
+      "path": "demo.sh",
+      "sha256": "cfed79f68d47db9c051c53c24f893cf80c1a8ffcdafe604a4f365df7d503d1b6",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/run-live-demo.py",
+      "sha256": "51311fadd1b8434bea6b3820f216f4bf7a0af6bd1a1ffab4601e8b742cf1ffae",
+      "unchanged": true
+    },
+    {
+      "path": "output/kirocrew-demo.pptx",
+      "sha256": "a6cc6e3272cb337c5b4c40cefd61b0042d4d41c5877e3d332ac41b8d1a164f0a",
+      "unchanged": true
+    },
+    {
+      "path": "output/kirocrew-ec2-demo.pptx",
+      "sha256": "eaf91801fa8f43e2192df5f229b9d7ef677b9d49a6f9552a629c43b5e6113a46",
+      "unchanged": true
+    },
+    {
+      "path": "output/kirocrew-ec2-demo-copy.md",
+      "sha256": "1590ffd176587e26f1231b536d77a39b9dce8db49febfcb8e199a65337de3b58",
+      "unchanged": true
+    },
+    {
+      "path": "kirocrew-demo-live.html",
+      "sha256": "488556e0e09919043ba616da0d340c9b0ceff4f130c2bd17799f7d2da43e8d87",
+      "unchanged": true
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "output/kirocrew-arm-observability-demo.pptx",
+      "bytes": 357661,
+      "sha256": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13"
+    },
+    {
+      "path": "output/kirocrew-arm-observability-demo-copy.md",
+      "bytes": 18979,
+      "sha256": "8c720e0c2b16d9ef54ceac38fc8e56b1abbc83b1c358b9107184fc9cd8840e67"
+    },
+    {
+      "path": "output/kirocrew-admin-walkthrough.html",
+      "bytes": 1258022,
+      "sha256": "94fef71b10965ac734136c352a7d011a1d36ac1ba97680b49f33a9d89fb72b62"
+    },
+    {
+      "path": "output/kirocrew-admin-walkthrough.md",
+      "bytes": 16314,
+      "sha256": "c680b69118b916646416e6c09eba63dfa0cfcab1b851144ba07d881d2d441bea"
+    },
+    {
+      "path": "output/kirocrew-admin-findings.md",
+      "bytes": 7075,
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    },
+    {
+      "path": "output/kirocrew-admin-screenshots.zip",
+      "bytes": 731487,
+      "sha256": "25d5063331827522229dac7b5a8439c62bc1ae21b901f9f8f90b485d7f2d0984"
+    },
+    {
+      "path": "kirocrew-arm-live.html",
+      "bytes": 809583,
+      "sha256": "9fc9c2b8b01cc0009150fa94659361d0cba9a23c7bef2c77507d6aaa64160a7c"
+    },
+    {
+      "path": "kirocrew-arm-live.architecture.json",
+      "bytes": 4922,
+      "sha256": "bc251957a76f815ccdc5482f6874e543becebe479df7f29be9868a4f36a155e0"
+    },
+    {
+      "path": "kirocrew-arm-observability.html",
+      "bytes": 805591,
+      "sha256": "3709efdab5e2d4bf734d8c02d4beea21b34aad9da21de60c8deb98879d76f5ec"
+    },
+    {
+      "path": "kirocrew-arm-observability.architecture.json",
+      "bytes": 4099,
+      "sha256": "7f4f41cacffdee0b147ca42ae4708efb3a56b19f75bb487fe99f6623b6345b6f"
+    },
+    {
+      "path": "kirocrew-arm-slide.html",
+      "bytes": 797878,
+      "sha256": "30d612a4f2f09f196ba7c35fe1247f11c6fe678fb8df3c45a4294cd7185b4479"
+    },
+    {
+      "path": "kirocrew-arm-slide.architecture.json",
+      "bytes": 2431,
+      "sha256": "8384bc846d972493c179bba18d69c0f3a9a50eb42a5b17d10462aad427c84e7b"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 20134,
+      "sha256": "5cb2ef0e7933e2fad20cbc36c0120bd3b83e3475d2d8b0cb2a3cc4ab6a805f01"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4715,
+      "sha256": "b0455730ae2c7b1a1a53f983b79605fe159ded510f8944f9aea4ca36e8125a2b"
+    },
+    {
+      "path": "WALKTHROUGH.md",
+      "bytes": 14166,
+      "sha256": "f38c5d5546fc046e200f5fbcfc41b3e05c7690bbba406d8c106652da8d9d5b34"
+    },
+    {
+      "path": "kirocrew-ec2-notes.md",
+      "bytes": 17529,
+      "sha256": "71dfdcd555bdedbc34df1cf16184b86998fdd32eaab592f532e5dd0af4547148"
+    },
+    {
+      "path": "infrastructure/RUNBOOK.md",
+      "bytes": 26061,
+      "sha256": "d2403aeddfef918d8717ce9805edd541f9dcc4329928d8eb43f04f0b9bc10f7f"
+    }
+  ],
+  "sources": [
+    {
+      "path": "infrastructure/ec2-demo.json",
+      "bytes": 19619,
+      "sha256": "aed6ca2da847fcccd91d74fc73d1317373d87a6a5ad45a3930bd773bb2700e22"
+    },
+    {
+      "path": "infrastructure/bootstrap.sh",
+      "bytes": 3314,
+      "sha256": "46c2f99747f3a04d48e47f41b2e880f9be10fe3d425b75b4981717dd8c9459d6"
+    },
+    {
+      "path": "infrastructure/install-arm-runtime.sh",
+      "bytes": 5536,
+      "sha256": "21abaa6ecba853916f41bb988a514439f4905d50e00f1141fa086e4ef8681aea"
+    },
+    {
+      "path": "infrastructure/configure-arm-services.sh",
+      "bytes": 2470,
+      "sha256": "54c2965f5d92df1f895c995faf1a06bc57f62e1958159cd988e8712bec6d4290"
+    },
+    {
+      "path": "infrastructure/crew-requirements-linux-arm64.lock",
+      "bytes": 154265,
+      "sha256": "ec8fbe5784220eb94a51d44b2d28734dbe2d21a1080d1d7645408bb69ac12427"
+    },
+    {
+      "path": "infrastructure/kirocrew-owner-token.py",
+      "bytes": 7730,
+      "sha256": "7750fe9d6e51c4568c8ac155137c23c3f29ec45faf9fbaf55c07fb0ca7b593a5"
+    },
+    {
+      "path": "infrastructure/set-demo-telemetry.py",
+      "bytes": 1533,
+      "sha256": "2e324099fe7862d1e69a3011b5a1f2368d157e52679a2d986e912c6131938494"
+    },
+    {
+      "path": "scripts/demo-cloud.py",
+      "bytes": 21356,
+      "sha256": "c8cefdf6411c2c3a18f593c6baebb7d3a99b6adbe9d28d04c1e1105f9e6a8e39"
+    },
+    {
+      "path": "scripts/ec2-login.py",
+      "bytes": 20138,
+      "sha256": "8e78cfeedae1692165b1292e97dbf58675427137abf339cabea3da3063e9bbec"
+    },
+    {
+      "path": "scripts/native-backend-demo.py",
+      "bytes": 36417,
+      "sha256": "253c634609c3a0015d5f8472423ab1cb8606d0240e8c86be6d50680ec39a9a95"
+    },
+    {
+      "path": "scripts/demo-telemetry.py",
+      "bytes": 8969,
+      "sha256": "a2c1ac469d5578d481b9a84032095e19ebba43b4bb0417aebbf24319529115cd"
+    },
+    {
+      "path": "scripts/build-admin-walkthrough.py",
+      "bytes": 42597,
+      "sha256": "b7a7e0ddc370915a4fd742b97bb23be38c3490f55457d80c8f973f9b474492c3"
+    },
+    {
+      "path": "infrastructure/observability-collector/collector.py",
+      "bytes": 17473,
+      "sha256": "744f58aac5c8c773dd64a1091bd5f8bbeed2357402df6f6e7ca3d9a14e9194ea"
+    },
+    {
+      "path": "infrastructure/observability-collector/install.sh",
+      "bytes": 693,
+      "sha256": "e0f75b1a7c52b75d76fcd622d142215c82dc0b1ef27fce07884ff89658d819ae"
+    },
+    {
+      "path": "infrastructure/observability/app/app.json",
+      "bytes": 640,
+      "sha256": "34e474700da3868d828fdaeba2af60cd71801defe9b93e9a6548131fea571cee"
+    },
+    {
+      "path": "infrastructure/observability/app/backend/server.py",
+      "bytes": 9701,
+      "sha256": "33a46c42b29de99d41cbe581fa5e86c3946a279d8506932a5fec8429d720c80e"
+    },
+    {
+      "path": "infrastructure/observability/app/ui/dist/index.mjs",
+      "bytes": 12156,
+      "sha256": "a652b81dea5a32ff5772f48b27875fc8ca810f36c0d4743a7800c584682f67eb"
+    },
+    {
+      "path": "infrastructure/observability/stage-app.sh",
+      "bytes": 835,
+      "sha256": "5b7e18b8c3794a958092808798c7ac68ec12be1784465f9ce28044a3e229c1dd"
+    },
+    {
+      "path": ".build/slides/build-arm-observability-deck.mjs",
+      "bytes": 27259,
+      "sha256": "1a3d4829cb62e87fb52174ca91b7ab4d478ebd19d7a51ebb526bb55727c779a3"
+    },
+    {
+      "path": ".build/slides/arm-observability-state.json",
+      "bytes": 688,
+      "sha256": "382d4642235b12214631d4df018863f4e303ee637fc84e64a4cf2c1a76ef3586"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/aws/arm-20260913/final-cloud-verification.json",
+      "bytes": 4886,
+      "sha256": "95237019cad827d3917d4c9bccf9dea06693138e8125239c08f811ecdae180b6"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/final-network-readback.json",
+      "bytes": 624,
+      "sha256": "9d75e3cd09cbfab02b1f98f0674121c1fa4f159d4a485f1b6b83797b1a42d7f0"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/primary-mcp-config-readback.json",
+      "bytes": 565,
+      "sha256": "eb2b9dbeffabd2e41ad9391d9da8862102a1828d54f96be70765acda9b23af90"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/source-verification.json",
+      "bytes": 5756,
+      "sha256": "23b1ccbe2b7c58a3f8bfbe35a140c19d0d47490dea7a5f9fbcf9399e5088b37e"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/runtime-preparation.json",
+      "bytes": 31063,
+      "sha256": "610df0968cb45bd46d324a32364e93ea2e93dc73b8ffa7734b9c0187e0b04f58"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/client-runtime-receipt.json",
+      "bytes": 2268,
+      "sha256": "7d59a2da6b192c1218ef36a6be45c8e774507725a8adb20d85b2086df54bdc87"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/native-cli-login-outcome.json",
+      "bytes": 825,
+      "sha256": "b00099883fc2e714513fde0289e8fc9b391a7804cd11fe6873eeeeba92af9cc1"
+    },
+    {
+      "path": "evidence/nightly/client-20260913-verification.json",
+      "bytes": 38485,
+      "sha256": "1600bb72d083e15c8e92f431f2c8fde513e603eabd4a5ba411692dadd0e90888"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/observability-runtime-receipt.json",
+      "bytes": 9004,
+      "sha256": "580f30e31638d8bf6ac27d2863a292888e6abf0b265da9a87e5b7144b560963e"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/observability-api-readback.json",
+      "bytes": 6387,
+      "sha256": "d7d60f596efdfef322c84f0d79e63bb06f307c2c47efd4664ad58c2812f098e0"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/observability-final-review.json",
+      "bytes": 7377,
+      "sha256": "893c1c3ed1a3d2ae71f02fb3d672082904ec547aadd498a259a585536963755e"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/owner-bootstrap-review.json",
+      "bytes": 5422,
+      "sha256": "fe23dbca042024cc25f68a617a76cafc6d55c8f729630833694d0ec1353895d8"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/native-runner-owner-update.json",
+      "bytes": 3064,
+      "sha256": "1074dd081f34630253c6f34b924d0c5996763f43341f50df5af712670f09d383"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/lifecycle-owner-update.json",
+      "bytes": 2839,
+      "sha256": "570aaa6e1ee1c4936ab733d78af0c54e04754f7c76e20557a7c61e94e4926138"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/final-direct-mcp-rehearsal.json",
+      "bytes": 2199,
+      "sha256": "65da98adc8f9dc4b773f1a0f699ded04db03065ff0e89355ae6945defb13d14d"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/crew-imds-connect-receipt.json",
+      "bytes": 594,
+      "sha256": "b5bc6b94d11dcd9be68e2c7918da7f9a56c3448998f065331df9b9864ea15fb7"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/historical-artifact-preservation.json",
+      "bytes": 2304,
+      "sha256": "8cf4c113cc9ac296323683bb9a85988f62559ea95017a3fb3252d1496d91164c"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/price.json",
+      "bytes": 10709,
+      "sha256": "5f5282f8d0eb4b85491a253a0bf6ed2cbed6bb3a2dac0f86aeacb80e5fce51b3"
+    },
+    {
+      "path": "evidence/aws/archify-arm/delivery-receipt.json",
+      "bytes": 13849,
+      "sha256": "78b8961954d44fcb858ab5ebea5271c016a1398f1eac432487f4f6652b5eab80"
+    },
+    {
+      "path": "evidence/aws/archify-arm/council-delivery-receipt.json",
+      "bytes": 13849,
+      "sha256": "78b8961954d44fcb858ab5ebea5271c016a1398f1eac432487f4f6652b5eab80"
+    },
+    {
+      "path": "evidence/admin-console/browser-receipt.json",
+      "bytes": 3664,
+      "sha256": "7ec5239c3cb55087dbab974ab64a3c485fdf6038a4136952a4a933f3dc5cd317"
+    },
+    {
+      "path": "evidence/admin-console/final-portal-observation.json",
+      "bytes": 957,
+      "sha256": "b154887ee2ab9a56732f90f063bcc0afa952aee56f91aa582e5322b410f2987f"
+    },
+    {
+      "path": "evidence/admin-console/walkthrough-manifest.json",
+      "bytes": 8522,
+      "sha256": "af282ac8c30783b78e34da842ec33f4ffc0401893b225cea3af43b2c808fb4ea"
+    },
+    {
+      "path": "evidence/admin-console/static-validation.json",
+      "bytes": 2117,
+      "sha256": "5001f798747448aac29d216cad9909a814ca3174baa8e3de601ea1461dff9706"
+    },
+    {
+      "path": "evidence/admin-console/no-ai-slop-receipt.json",
+      "bytes": 8392,
+      "sha256": "afe9e397a95fc51e41871cea8f2c0dd825f76b5e237db250a295019afd16a5bf"
+    },
+    {
+      "path": "evidence/council/arm-observability-v1/council-verified-receipt.json",
+      "bytes": 18271,
+      "sha256": "c4397c5d11f9cb7d8d45eb3d35983585ffde5cef2217700a7f3c11e0a0bae982"
+    },
+    {
+      "path": "evidence/council/arm-observability-v1/council-synthesis.md",
+      "bytes": 7195,
+      "sha256": "c99f1119cd3c46863ba1d3962098e188a8a8494a161c1722315c56691b8034ae"
+    },
+    {
+      "path": "evidence/council/arm-observability-v1/DECISIONS.md",
+      "bytes": 4380,
+      "sha256": "10ef636b10958a60b7353b3042836a14b8afdb66c47b6b90b7f588f35f973b81"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/no-ai-slop.md",
+      "bytes": 3316,
+      "sha256": "21c8f816311787da3a9a978a9176f7ce9c724e92b3fe1cf569d10276799b268a"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/author-notes.json",
+      "bytes": 15118,
+      "sha256": "c77eff33fb75d71d5a3c8b05142cb41161c51387191fb2d2a36f5e474fc203fe"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/candidate-manifest.json",
+      "bytes": 2869,
+      "sha256": "76bf7cc64518380cf508776ca7b61db241da4e313b70721480a3b90bcb83d016"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/council-incorporation.json",
+      "bytes": 3591,
+      "sha256": "a40c9ce35e7df4c0f988c1d7cce58af5ed1f55c279c7cd03e0d79a0dc059d456"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/delivery-receipt.json",
+      "bytes": 5958,
+      "sha256": "6ececc74ea11ffe70277e63a52a61020e06449fbb74bb5f1997d43cc26af834a"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/embedded-image-checks.json",
+      "bytes": 2749,
+      "sha256": "df68cea24fafb08cc2bdf5adad3f01cd31fcbb2d2171e928cc66e0ffa630c7b7"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/finalization.json",
+      "bytes": 4066,
+      "sha256": "c33d7cd61f9eb6581319429660c2418307115c23e0e204f1f63f071d6d883d1c"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/review-manifest.json",
+      "bytes": 3632,
+      "sha256": "d554c37061c696c0392ef8f974a44234be80ccff80cc2a702b5772c49c82f232"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/review-text.json",
+      "bytes": 19722,
+      "sha256": "4ef0fb814e6c7224c5b6cef0efad3a267fcecf6794d28c625e209e23f1fc8aff"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/root-final-review.json",
+      "bytes": 670,
+      "sha256": "4e37681076f9adb12873039afb829e96556764bc38f5abe31ece837bcec181db"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/source-manifest.json",
+      "bytes": 3611,
+      "sha256": "41bb0ced08bc9fcc5599150e39abd2d70e62d777ef5391416f5f19c0c4518ab1"
+    },
+    {
+      "path": "evidence/slides/kirocrew-arm-observability-demo/visual-review.json",
+      "bytes": 2897,
+      "sha256": "9b77c04d7a1dd6cd7fd051176bd17474657bd5fa033cac95b3bbf72c9b38f762"
+    }
+  ]
+}

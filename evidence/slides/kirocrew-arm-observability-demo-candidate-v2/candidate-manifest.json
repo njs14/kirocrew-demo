@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "created": "2026-09-13T14:56:29.810Z",
+  "artifact": "output/kirocrew-arm-observability-demo-candidate-v2.pptx",
+  "sha256": "99d10eee8723b3998c40f52e902602661138e7388f0d6d3db8e2d5ef13f63dd9",
+  "slides": 12,
+  "state": {
+    "nativeVerified": false,
+    "clientVerified": true,
+    "nativeReceipt": "Native Kiro CLI sign-in and backend session verification pending.",
+    "clientReceipt": "Native desktop connected through SSH. Local Gateway is off.",
+    "topologyImage": "evidence/aws/archify-arm/kirocrew-arm-slide-1152x480.png",
+    "telemetryVerified": true,
+    "nativeTelemetryImage": "output/admin-console/09-native-telemetry.jpg",
+    "customObservabilityImage": "output/admin-console/11-client-server-telemetry.jpg",
+    "observabilityFlowImage": null,
+    "collectionLogsImage": "output/admin-console/12-collection-logs.jpg",
+    "telemetryReceipt": "evidence/aws/arm-20260913/observability-api-readback.json"
+  },
+  "sourceBuilder": ".build/slides/build-arm-observability-deck.mjs",
+  "sourceBuilderSha256": "e45a28d78f40457fc6def92fd5da68d8133dbc3fc19b43bbb8b99dfb11008cdf",
+  "sourceAssets": [
+    {
+      "path": "evidence/browser/endpoint-slide.png",
+      "bytes": 85943,
+      "sha256": "4c64d4035f1c61b8bdd8d59cf5fb8e1abb318a754a73cc0865f5e4b603ecedc1"
+    },
+    {
+      "path": "evidence/aws/archify-arm/kirocrew-arm-slide-1152x480.png",
+      "bytes": 51687,
+      "sha256": "c688b894b0194c7245295f88d2ac6b37ce65733721649e05db23f83e69b1bd42"
+    },
+    {
+      "path": "output/admin-console/09-native-telemetry.jpg",
+      "bytes": 58431,
+      "sha256": "ce3695a785c868db8024f5be73dd09277912a0b517d91ebf2beb01779fe1775d"
+    },
+    {
+      "path": "output/admin-console/11-client-server-telemetry.jpg",
+      "bytes": 78171,
+      "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698"
+    },
+    {
+      "path": "output/admin-console/12-collection-logs.jpg",
+      "bytes": 81268,
+      "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63"
+    }
+  ],
+  "nativeCrops": [
+    {
+      "slide": 8,
+      "image_index": 0,
+      "crop": {
+        "left": 0.233,
+        "top": 0.425,
+        "right": 0.02,
+        "bottom": 0.17
+      }
+    },
+    {
+      "slide": 9,
+      "image_index": 0,
+      "crop": {
+        "left": 0.079,
+        "top": 0.086,
+        "right": 0.026,
+        "bottom": 0.278
+      }
+    },
+    {
+      "slide": 10,
+      "image_index": 0,
+      "crop": {
+        "left": 0.08,
+        "top": 0.389,
+        "right": 0.025,
+        "bottom": 0.163
+      }
+    }
+  ],
+  "renderDirectory": "output/kirocrew-arm-observability-demo-candidate-v2-slides",
+  "nativePowerPointPlaybackVerified": false
+}

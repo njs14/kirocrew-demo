@@ -1,0 +1,329 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-09-13T15:14:07.626392+00:00",
+  "purpose": "ARM council correction: native Gateway/Kiro CLI MCP path visibly pending; direct service/AWS probe evidence kept separate.",
+  "products": [
+    {
+      "edition": "live",
+      "diagramType": "architecture",
+      "specification": {
+        "path": "kirocrew-arm-live.architecture.json",
+        "bytes": 4922,
+        "sha256": "bc251957a76f815ccdc5482f6874e543becebe479df7f29be9868a4f36a155e0"
+      },
+      "html": {
+        "path": "kirocrew-arm-live.html",
+        "bytes": 809583,
+        "sha256": "9fc9c2b8b01cc0009150fa94659361d0cba9a23c7bef2c77507d6aaa64160a7c"
+      },
+      "validation": {
+        "checksPassed": 9,
+        "checkCount": 9,
+        "compositionProfile": "showcase",
+        "compositionStatus": "pass",
+        "errors": 0,
+        "warnings": 0
+      },
+      "staticGraphics": {
+        "svg": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-live-council.svg",
+          "bytes": 296074,
+          "sha256": "4fe6416a705e89cd379ea7aaf5e1df8ba71343a9029f07efc4075d9da9157e8a"
+        },
+        "png": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-live-council.png",
+          "bytes": 520051,
+          "sha256": "e6447b910741650ef5fe3bd6f386bf77d1a86a5e1d2a157b702c97875e6adbf3"
+        },
+        "actualSize": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-live-council-1152x480.png",
+          "bytes": 65736,
+          "sha256": "313c02c8c01688d37c96dae1625d247411fa165db0b8337fd39574647265c312"
+        }
+      },
+      "visual_review": {
+        "status": "passed",
+        "scope": "Non-browser light-theme SVG raster inspection. Slide viewed at exact 1152×480: dashed pending MCP edge distinct from green AWS edge, all labels/host/privilege boundaries and two-line evidence footer readable without clipping. Full live PNG also inspected at tool-displayed resolution.",
+        "reviewer": "image-capable author agent",
+        "geometry": "Existing nodes, boundaries and routes unchanged; only native MCP edge style/label, evidence card, and slide derivative footer changed."
+      },
+      "browser_evidence": {
+        "status": "unavailable",
+        "reason": "CUA file URL policy blocked opening the local diagram. No browser/server reroute attempted, and no non-CUA browser automation run."
+      },
+      "validationReceipt": {
+        "path": "evidence/aws/archify-arm/live-validation-council.json",
+        "bytes": 1911,
+        "sha256": "012e66277031768cdbd4d383ead83163e795ae74918dcd962996dd55db87b2ab"
+      },
+      "deliveryReceipt": {
+        "path": "evidence/aws/archify-arm/live-delivery-council.json",
+        "bytes": 689,
+        "sha256": "b8be1f3bfba4cab6ae22520745f6e27e7e8d4c6782b0126ef8faf3654fc5cd78"
+      },
+      "staticReceipt": {
+        "path": "evidence/aws/archify-arm/kirocrew-arm-live-council-static.json",
+        "bytes": 2533,
+        "sha256": "b7fb080971025b3700ede497cff4cec2d6c4c85bd79c252e47a6a83cb8284adc"
+      }
+    },
+    {
+      "edition": "slide",
+      "diagramType": "architecture",
+      "specification": {
+        "path": "kirocrew-arm-slide.architecture.json",
+        "bytes": 2431,
+        "sha256": "8384bc846d972493c179bba18d69c0f3a9a50eb42a5b17d10462aad427c84e7b"
+      },
+      "html": {
+        "path": "kirocrew-arm-slide.html",
+        "bytes": 797878,
+        "sha256": "30d612a4f2f09f196ba7c35fe1247f11c6fe678fb8df3c45a4294cd7185b4479"
+      },
+      "validation": {
+        "checksPassed": 9,
+        "checkCount": 9,
+        "compositionProfile": "showcase",
+        "compositionStatus": "pass",
+        "errors": 0,
+        "warnings": 0
+      },
+      "staticGraphics": {
+        "svg": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-slide-council.svg",
+          "bytes": 285694,
+          "sha256": "6ce4692a663ec5c326c070efd63e142b1be209b8ae7f256bec475ad01f9f6a76"
+        },
+        "png": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-slide-council.png",
+          "bytes": 142781,
+          "sha256": "d7d2594a5edb84e0fe2a6ae964fcc4558b77efa7f07c5e7d14d69e7800d2ab8f"
+        },
+        "actualSize": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-slide-council-1152x480.png",
+          "bytes": 61292,
+          "sha256": "e2d4e021f9b31bd3ebdc3d7d2e0339fbd3a9ae709bb935b4f223280d3ccb6b59"
+        }
+      },
+      "visual_review": {
+        "status": "passed",
+        "scope": "Non-browser light-theme SVG raster inspection. Slide viewed at exact 1152×480: dashed pending MCP edge distinct from green AWS edge, all labels/host/privilege boundaries and two-line evidence footer readable without clipping. Full live PNG also inspected at tool-displayed resolution.",
+        "reviewer": "image-capable author agent",
+        "geometry": "Existing nodes, boundaries and routes unchanged; only native MCP edge style/label, evidence card, and slide derivative footer changed."
+      },
+      "browser_evidence": {
+        "status": "unavailable",
+        "reason": "CUA file URL policy blocked opening the local diagram. No browser/server reroute attempted, and no non-CUA browser automation run."
+      },
+      "validationReceipt": {
+        "path": "evidence/aws/archify-arm/slide-validation-council.json",
+        "bytes": 1914,
+        "sha256": "9eb07ce5e37b07348652abf7041871504b271c6b0928f4c70e76e32e43b1f7cc"
+      },
+      "deliveryReceipt": {
+        "path": "evidence/aws/archify-arm/slide-delivery-council.json",
+        "bytes": 691,
+        "sha256": "52773c6f07c3fc6bfeaac67be531f7309a2cdc2e96cf35b085e91f4f6e5bc1d3"
+      },
+      "staticReceipt": {
+        "path": "evidence/aws/archify-arm/kirocrew-arm-slide-council-static.json",
+        "bytes": 2993,
+        "sha256": "f22a3ee547a19b0e064d3fa2a654e127ccf205843ad23e8e8008765e739d34a7"
+      }
+    },
+    {
+      "edition": "observability",
+      "diagramType": "architecture",
+      "specification": {
+        "path": "kirocrew-arm-observability.architecture.json",
+        "bytes": 4099,
+        "sha256": "7f4f41cacffdee0b147ca42ae4708efb3a56b19f75bb487fe99f6623b6345b6f"
+      },
+      "html": {
+        "path": "kirocrew-arm-observability.html",
+        "bytes": 805591,
+        "sha256": "3709efdab5e2d4bf734d8c02d4beea21b34aad9da21de60c8deb98879d76f5ec"
+      },
+      "validation": {
+        "checksPassed": 9,
+        "checkCount": 9,
+        "compositionProfile": "showcase",
+        "compositionStatus": "pass",
+        "errors": 0,
+        "warnings": 0
+      },
+      "staticGraphics": {
+        "svg": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-observability.svg",
+          "bytes": 292107,
+          "sha256": "3871cca4496bae282908f7849d7c3424facf7932cdcabe00744c4df45186cdb3"
+        },
+        "png": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-observability.png",
+          "bytes": 481665,
+          "sha256": "3368cd1de43bfb577fd82ce814b5b7a54b8d4bab0f62651c5253ab29a347cb9f"
+        },
+        "actualSize": {
+          "path": "evidence/aws/archify-arm/kirocrew-arm-observability-1152x480.png",
+          "bytes": 60916,
+          "sha256": "9a287f249451a039fee20ea6ff9d6c4b74f79745225c9acb4f95bf0b3df958f2"
+        }
+      },
+      "visual_review": {
+        "status": "passed",
+        "scope": "Non-browser static SVG raster rendering only; light theme. Slide edition inspected at exact1152×480. No HTML viewer claim.",
+        "reviewer": "image-capable author agent"
+      },
+      "browser_evidence": {
+        "status": "unavailable",
+        "reason": "CUA file URL policy blocked opening the local diagram. No browser/server reroute attempted, and no non-CUA browser automation run."
+      }
+    }
+  ],
+  "prior_diagrams_verified_unchanged": [
+    {
+      "path": "kirocrew-ec2-live.html",
+      "bytes": 809098,
+      "sha256": "4f8547905863a4303ad5117f3d876c11c638eded381f9562a5824f935d9b9fef"
+    },
+    {
+      "path": "kirocrew-ec2-live.architecture.json",
+      "bytes": 4718,
+      "sha256": "b0fe61ca2fb257e54e999c0bb031edb2f275e4f13a625257a0a1e6f242d674e9"
+    },
+    {
+      "path": "kirocrew-ec2-slide.html",
+      "bytes": 797380,
+      "sha256": "489a1b3f5eaa86299106c33d818ca328d5778d291cd596499ec6920849f969e2"
+    },
+    {
+      "path": "kirocrew-ec2-slide.architecture.json",
+      "bytes": 2129,
+      "sha256": "1c628b2d6ff8d9f10193cc247e210dbe022f9617a377a993f2a6514840caad50"
+    }
+  ],
+  "sources": [
+    {
+      "path": "evidence/aws/arm-20260913/final-cloud-verification.json",
+      "bytes": 4886,
+      "sha256": "95237019cad827d3917d4c9bccf9dea06693138e8125239c08f811ecdae180b6"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/mcp-live-receipt.json",
+      "bytes": 2199,
+      "sha256": "70e9966407f98d5685c7e9f2f81fd82484091d740a13dfe310b7d59873380ff4"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/ssh-cutover.json",
+      "bytes": 268,
+      "sha256": "b92c6d6f249a6c51b8b06b82e19589158879a85388b8029c39cf3c2e2aaef47d"
+    },
+    {
+      "path": "infrastructure/set-demo-telemetry.py",
+      "bytes": 1533,
+      "sha256": "2e324099fe7862d1e69a3011b5a1f2368d157e52679a2d986e912c6131938494"
+    },
+    {
+      "path": "infrastructure/observability/app/backend/server.py",
+      "bytes": 9701,
+      "sha256": "33a46c42b29de99d41cbe581fa5e86c3946a279d8506932a5fec8429d720c80e"
+    },
+    {
+      "path": "infrastructure/observability/app/app.json",
+      "bytes": 640,
+      "sha256": "34e474700da3868d828fdaeba2af60cd71801defe9b93e9a6548131fea571cee"
+    },
+    {
+      "path": "infrastructure/observability-collector/collector.py",
+      "bytes": 17473,
+      "sha256": "744f58aac5c8c773dd64a1091bd5f8bbeed2357402df6f6e7ca3d9a14e9194ea"
+    },
+    {
+      "path": "scripts/demo-telemetry.py",
+      "bytes": 8969,
+      "sha256": "a2c1ac469d5578d481b9a84032095e19ebba43b4bb0417aebbf24319529115cd"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/observability-runtime-receipt.json",
+      "bytes": 9004,
+      "sha256": "580f30e31638d8bf6ac27d2863a292888e6abf0b265da9a87e5b7144b560963e"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/client-runtime-receipt.json",
+      "bytes": 2268,
+      "sha256": "7d59a2da6b192c1218ef36a6be45c8e774507725a8adb20d85b2086df54bdc87"
+    },
+    {
+      "path": "evidence/nightly/client-20260913-verification.json",
+      "bytes": 38485,
+      "sha256": "1600bb72d083e15c8e92f431f2c8fde513e603eabd4a5ba411692dadd0e90888"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/final-direct-mcp-rehearsal.json",
+      "bytes": 2199,
+      "sha256": "65da98adc8f9dc4b773f1a0f699ded04db03065ff0e89355ae6945defb13d14d"
+    },
+    {
+      "path": "evidence/aws/arm-20260913/crew-imds-connect-receipt.json",
+      "bytes": 594,
+      "sha256": "b5bc6b94d11dcd9be68e2c7918da7f9a56c3448998f065331df9b9864ea15fb7"
+    }
+  ],
+  "claims": {
+    "arm_cloud_state": "observed",
+    "direct_mcp_and_iam_probes": "Latest direct service probe passed on ARM at 2026-09-13T15:01:37.648154+00:00; does not exercise the native Crew backend.",
+    "native_backend_enforcement": "unverified",
+    "custom_observability_runtime": "Live: owner-proxied page, both sources current,60-second collection timers, controlled client stop/recovery observed",
+    "native_telemetry_runtime": "Live configuration/API: local10-second OTEL export,7-day retention,64MiB cap, no OTLP, beacon disabled",
+    "client_runtime": "Sep13 desktop connected to Sep12 custom ARM repack; local Gateway off; Kiro CLI authentication still pending"
+  },
+  "cost_notes": {
+    "active_compute_usd_per_hour": 0.1344,
+    "public_ipv4_usd_per_hour": 0.005,
+    "active_40gib_gp3_usd_per_month": 3.2,
+    "stopped_legacy_24gib_gp3_usd_per_month": 1.92,
+    "scope": "Provided root verified values for deck; not a billing total or external pricing refresh by this diagram task."
+  },
+  "runtime_evidence": {
+    "app_version": "1.0.1",
+    "adapter_loopback_port": 9102,
+    "owner_proxy_verified": true,
+    "unsigned_adapter_data_http": 401,
+    "unauthenticated_gateway_app_http": 403,
+    "both_sources_current": true,
+    "custom_collection_interval_seconds": 60,
+    "native_export_interval_seconds": 10,
+    "native_retention_days": 7,
+    "native_max_total_mb": 64,
+    "otlp_configured": false,
+    "beacon_enabled": false,
+    "client_stop_utc": "2026-09-13T14:44:42Z",
+    "client_recovery_utc": "2026-09-13T14:49:34Z",
+    "gateway_pid_before_and_after": 4991,
+    "gateway_identity_unchanged": true,
+    "client_version": "0.7.0-nightly.20260913t061222",
+    "server_version": "0.7.0-nightly.20260912t060850",
+    "server_distribution": "Custom frozen Linux ARM64 repack; not official Linux release",
+    "native_kiro_cli_authenticated": false
+  },
+  "update_scope": {
+    "node_geometry_and_topology_unchanged": true,
+    "unrelated_edges_unchanged": true,
+    "native_mcp_edges": "Schema-supported dashed variant with explicit pending labels",
+    "slide_asset_unchanged": false,
+    "prior_reviewed_image_files_unchanged": true,
+    "historical_diagrams_unchanged": true,
+    "observability_diagram_unchanged": true,
+    "archive_manifest": {
+      "path": "evidence/aws/archify-arm/pre-council-native-path-20260913/archive-manifest.json",
+      "bytes": 7738,
+      "sha256": "2bbbbeeaded93c04b9c10ddfee36c61b77e7717352da66439f61a1cd860b0b30"
+    },
+    "changes": [
+      "Native MCP edge styled dashed and labeled pending in both ARM execution diagrams.",
+      "Evidence cards distinguish direct mcp-demo → MCP → S3 verification from native Kiro CLI path pending sign-in.",
+      "New slide vector derivative transcribes its authored card into the unused footer, preserving existing geometry."
+    ],
+    "browser_validation": "Unavailable due existing CUA file URL policy block; no retry, reroute or non-CUA browser automation. Portal browser evidence remains separate."
+  }
+}

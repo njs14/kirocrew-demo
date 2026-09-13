@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "fourteen_slide_sections": true,
+    "unique_dom_ids": true,
+    "six_original_evidence_images": true,
+    "no_remote_subresources": true,
+    "embedded_download_kirocrew-arm-observability-demo.pptx": true,
+    "embedded_download_kirocrew-system-design-notes.md": true,
+    "original_pptx_unchanged": true,
+    "prior_arm_receipt_unchanged": true,
+    "build_manifest_matches_html": true,
+    "notes_export_joins_fixed": true
+  },
+  "passed": true,
+  "printing_exercised": false
+}

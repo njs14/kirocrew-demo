@@ -1,0 +1,37 @@
+{
+  "scene": "client-server-telemetry",
+  "startedAt": "2026-09-13T18:09:22.466Z",
+  "endedAt": "2026-09-13T18:09:43.883Z",
+  "marks": [
+    {
+      "time": 0,
+      "label": "Both sources are current"
+    },
+    {
+      "time": 2.533,
+      "label": "Refresh the stored collector samples"
+    },
+    {
+      "time": 4.745,
+      "label": "Inspect Mac process measurements"
+    },
+    {
+      "time": 8.313,
+      "label": "Inspect EC2 service measurements"
+    },
+    {
+      "time": 11.864,
+      "label": "Filter collection logs to the client"
+    },
+    {
+      "time": 15.4,
+      "label": "Filter collection logs to the server"
+    },
+    {
+      "time": 18.912,
+      "label": "Restore all collection events"
+    }
+  ],
+  "recordedPage": "http://localhost:5599/apps/demo-observability",
+  "nativeBackendProof": false
+}

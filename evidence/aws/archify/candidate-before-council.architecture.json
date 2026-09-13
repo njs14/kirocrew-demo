@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "KiroCrew on EC2",
+    "locale": "en",
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1380,
+      760
+    ]
+  },
+  "components": [
+    {
+      "id": "desktop-client",
+      "type": "frontend",
+      "label": "Laptop client",
+      "sublabel": "Local Gateway off · :5599",
+      "pos": [
+        24,
+        318
+      ],
+      "size": [
+        210,
+        88
+      ]
+    },
+    {
+      "id": "crew-runtime",
+      "type": "backend",
+      "label": "Gateway + Kiro CLI",
+      "sublabel": "crew UID · loopback :5476",
+      "pos": [
+        390,
+        318
+      ],
+      "size": [
+        280,
+        88
+      ]
+    },
+    {
+      "id": "endpoint-controls",
+      "type": "security",
+      "label": "Policy ∩ Profile · L0–L5",
+      "sublabel": "Approval · schemas · redaction · SEL",
+      "pos": [
+        390,
+        134
+      ],
+      "size": [
+        280,
+        88
+      ]
+    },
+    {
+      "id": "remote-workspace",
+      "type": "database",
+      "label": "Remote workspace",
+      "sublabel": "crew-writable · encrypted EBS",
+      "pos": [
+        390,
+        510
+      ],
+      "size": [
+        280,
+        88
+      ]
+    },
+    {
+      "id": "demo-mcp",
+      "type": "security",
+      "label": "Demo MCP service",
+      "sublabel": "mcp-demo UID · loopback :8001",
+      "pos": [
+        838,
+        318
+      ],
+      "size": [
+        244,
+        88
+      ]
+    },
+    {
+      "id": "instance-role",
+      "type": "cloud",
+      "label": "EC2 instance role",
+      "sublabel": "IMDSv2 · blocked for crew UID",
+      "pos": [
+        838,
+        510
+      ],
+      "size": [
+        244,
+        88
+      ]
+    },
+    {
+      "id": "s3-allowed",
+      "type": "database",
+      "label": "S3 allowed/*",
+      "sublabel": "GetObject permitted",
+      "pos": [
+        1212,
+        192
+      ],
+      "size": [
+        144,
+        88
+      ]
+    },
+    {
+      "id": "s3-denied",
+      "type": "database",
+      "label": "S3 denied/*",
+      "sublabel": "Explicit IAM Deny",
+      "pos": [
+        1212,
+        444
+      ],
+      "size": [
+        144,
+        88
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "us-east-1 · t3a.small · Ubuntu 24.04",
+      "wraps": [
+        "crew-runtime",
+        "endpoint-controls",
+        "remote-workspace",
+        "demo-mcp",
+        "instance-role"
+      ],
+      "pad": 44
+    },
+    {
+      "kind": "security-group",
+      "label": "EC2 execution endpoint",
+      "wraps": [
+        "crew-runtime",
+        "endpoint-controls",
+        "remote-workspace"
+      ],
+      "pad": 20
+    }
+  ],
+  "connections": [
+    {
+      "id": "ssh-client",
+      "from": "desktop-client",
+      "to": "crew-runtime",
+      "label": "SSH · TCP 22",
+      "variant": "security"
+    },
+    {
+      "id": "crew-controls",
+      "from": "endpoint-controls",
+      "to": "crew-runtime",
+      "label": "Configured Crew hooks",
+      "variant": "security",
+      "labelDy": 24
+    },
+    {
+      "id": "workspace-io",
+      "from": "crew-runtime",
+      "to": "remote-workspace",
+      "label": "Files + session state",
+      "labelDy": 24
+    },
+    {
+      "id": "mcp-call",
+      "from": "crew-runtime",
+      "to": "demo-mcp",
+      "label": "MCP · bearer grant",
+      "variant": "emphasis"
+    },
+    {
+      "id": "role-credentials",
+      "from": "instance-role",
+      "to": "demo-mcp",
+      "label": "Role credentials",
+      "variant": "security"
+    },
+    {
+      "id": "s3-allow-call",
+      "from": "demo-mcp",
+      "to": "s3-allowed",
+      "label": "Read",
+      "variant": "emphasis"
+    },
+    {
+      "id": "s3-deny-call",
+      "from": "demo-mcp",
+      "to": "s3-denied",
+      "label": "GetObject denied",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Network boundary",
+      "items": [
+        "Only TCP 22 accepts this laptop's public IP /32.",
+        "SSH forwards local :5599 to EC2 loopback :5476.",
+        "Gateway and MCP have no public ingress."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Observed enforcement",
+      "items": [
+        "Bearer auth: one principal, four fixed tools.",
+        "MCP grant denial stops before AWS dispatch.",
+        "S3 reads succeed; the denied prefix returns 403."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Evidence boundary",
+      "items": [
+        "Direct MCP/AWS probes passed on this EC2 host.",
+        "Kiro CLI is installed; browser sign-in is pending.",
+        "Root-owned service code; L0–L5 coverage varies."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "ParameterKey": "VpcId",
+    "ParameterValue": "vpc-0123456789abcdef0"
+  },
+  {
+    "ParameterKey": "SubnetId",
+    "ParameterValue": "subnet-0123456789abcdef0"
+  },
+  {
+    "ParameterKey": "ImageId",
+    "ParameterValue": "ami-0123456789abcdef0"
+  },
+  {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "your-existing-key-pair"
+  },
+  {
+    "ParameterKey": "AllowedCidr",
+    "ParameterValue": "203.0.113.10/32"
+  },
+  {
+    "ParameterKey": "AssociatePublicIpAddress",
+    "ParameterValue": "true"
+  },
+  {
+    "ParameterKey": "InstanceType",
+    "ParameterValue": "t4g.xlarge"
+  },
+  {
+    "ParameterKey": "HttpsEgressCidr",
+    "ParameterValue": "0.0.0.0/0"
+  },
+  {
+    "ParameterKey": "HttpEgressCidr",
+    "ParameterValue": "0.0.0.0/0"
+  },
+  {
+    "ParameterKey": "AllowHttpEgress",
+    "ParameterValue": "true"
+  },
+  {
+    "ParameterKey": "RootVolumeGiB",
+    "ParameterValue": "40"
+  }
+]

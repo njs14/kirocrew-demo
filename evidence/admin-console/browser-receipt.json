@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-09-13T14:55:41.961949+00:00",
+  "tool": "CUA in-app browser plus native KiroCrew Nightly",
+  "live_admin_browser": {
+    "url": "http://localhost:5599/apps/demo-observability",
+    "viewport": "1280x720 default; no resizing",
+    "result": "passed observed flows",
+    "checks": [
+      "Authenticated owner dashboard connected to EC2",
+      "Overview, Performance, Services, Security Posture, Interactive approval, Governance, Kiro CLI backend, Privacy telemetry, native Telemetry and filtered native Logs inspected",
+      "Custom page displayed both current client/server samples",
+      "Client-only filter displayed3events; Server-only displayed1event; All restored4events",
+      "Desktop quit generated warning14:44:42Z while allserverchecks remainedYes",
+      "Desktop relaunched, ownerviewconnected, bothsourcesCurrent and recoveryinfo14:49:34Z",
+      "GatewayPID4991andstart14:26:10UTCunchanged acrossdesktoprestart"
+    ],
+    "screenshots": {
+      "output/admin-console/01-overview.jpg": "0a1becff3f53ce21bc7a6b0dec596cf6be2044205bd7e0d9f50350ddd2ef9de3",
+      "output/admin-console/02-arm-performance.jpg": "368456a4d432f80a3c79ed34117b2bb8b24182cbcdcb917acea7e8308dd891ba",
+      "output/admin-console/03-gateway-services.jpg": "b2c3b29c1aeecc41b9a4de3e1240b749333e0c4d71653b0cc6288238ae297ca8",
+      "output/admin-console/04-security-posture.jpg": "7b149096d19efb142e48ac4b0f80888303d42e743b5abc5d5a016dae97a9b43a",
+      "output/admin-console/05-interactive-approval.jpg": "17dbdf6b0ae2b6cb58bc80149913a99d8da0775a23d431c5edfa7663c5465671",
+      "output/admin-console/06-governance.jpg": "825a2161654543dddd2e11d041306fb9c9c555be2ef2ab29aeae0e2c58bd2cfd",
+      "output/admin-console/07-agent-backend.jpg": "35735f35bed62fee253dd3d4d1471acd2ea32c072a4421d6906db0b422e73ccf",
+      "output/admin-console/08-telemetry-controls.jpg": "16ca6e0c062799f6e7510dce429a9853a515be0f558e7a93e21ca9bfa65a09b1",
+      "output/admin-console/09-native-telemetry.jpg": "ce3695a785c868db8024f5be73dd09277912a0b517d91ebf2beb01779fe1775d",
+      "output/admin-console/10-native-auth-log.jpg": "3dd436321a99059a99b57eeb5dc7d37cb4a8d57197617be1c6fb89c1600726a5",
+      "output/admin-console/11-client-server-telemetry.jpg": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698",
+      "output/admin-console/12-collection-logs.jpg": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63",
+      "output/admin-console/13-client-stopped.jpg": "8ddf44bd2bd6f007ffe3aa7f1a2d87e72aa9aec4ee3406b5b630f4318cba7409"
+    },
+    "limits": [
+      "Snapshots show values at capture, not continuous service availability",
+      "Native Kiro CLI authentication remains pending",
+      "No agent turn, native approval, SEL trace or sandbox execution proof"
+    ]
+  },
+  "portable_html": {
+    "path": "output/kirocrew-admin-walkthrough.html",
+    "browser_status": "blocked_by_browser_URL_security_policy",
+    "attempt": "direct local file URL",
+    "workaround_attempted": false,
+    "verified_elsewhere": "evidence/admin-console/static-validation.json",
+    "not_verified": [
+      "Browser layout",
+      "TOC interaction",
+      "Screenshot dialog and Escape",
+      "Responsive viewport behavior"
+    ],
+    "attempted_artifact_sha256": "4a555ef0576d02d88fa73a8065645c7356d5596d13c05b26adfe9a694638faa8",
+    "current_artifact_sha256": "94fef71b10965ac734136c352a7d011a1d36ac1ba97680b49f33a9d89fb72b62",
+    "post_attempt_revision": "The guide now describes 64 MiB as a retention target. No browser attempt was made on the revised bytes; the same local-file policy block remains unresolved."
+  }
+}

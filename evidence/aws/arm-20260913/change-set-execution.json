@@ -1,0 +1,5 @@
+{
+  "accepted": true,
+  "change_set": "arn:aws:cloudformation:us-east-1:770132776059:changeSet/kirocrew-arm-20260913/06d79a98-4a69-4c1b-bcd0-af7983aa9a3b",
+  "stack": "arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b"
+}

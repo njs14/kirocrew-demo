@@ -1,0 +1,6 @@
+{
+    "ImageId": "ami-025d99823a4caad37",
+    "Name": "ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20260904",
+    "Date": "2026-09-04T11:46:14.000Z",
+    "Architecture": "x86_64"
+}

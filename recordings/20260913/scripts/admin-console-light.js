@@ -1,0 +1,27 @@
+async page => {
+  await page.getByText('All systems running',{exact:true}).waitFor();
+  const startedAt = new Date().toISOString(), marks=[];
+  await page.screencast.start({path:'recordings/20260913/raw/02-admin-console-light.webm',size:{width:1600,height:1000}});
+  const start=Date.now(), mark=label=>marks.push({time:(Date.now()-start)/1000,label});
+  let annotation;
+  try {
+    mark('Read the remote Gateway overview');
+    await page.waitForTimeout(4500);
+    await page.getByRole('navigation',{name:'Main navigation'}).getByRole('button',{name:'Developer',exact:true}).click();
+    await page.locator('main nav button').filter({hasText:/^Agent Backend$/}).click();
+    await page.getByRole('button',{name:'Kiro CLI',exact:true}).waitFor();
+    annotation=await page.screencast.showOverlay('<div style="position:fixed;left:300px;right:80px;bottom:20px;padding:16px 20px;background:#fff7e7;color:#604515;border:1px solid #e3bb60;border-radius:10px;font:17px/1.45 system-ui;box-shadow:0 5px 25px #0003"><strong>Demo note</strong> · Kiro CLI is selected. Its own sign-in check is still false. The GitHub card reads a separate KAS identity.</div>');
+    mark('Kiro CLI is selected; native sign-in remains pending');
+    await page.waitForTimeout(6500);
+    await annotation.dispose(); annotation=null;
+    await page.locator('main nav button').filter({hasText:/^Logs$/}).click();
+    await page.getByRole('textbox',{name:'Filter logs',exact:true}).fill('AcpRuntime dead');
+    mark('Filter native backend logs to the sign-in failure');
+    await page.waitForTimeout(6000);
+    await page.getByRole('navigation',{name:'Main navigation'}).getByRole('button',{name:'Demo Observability',exact:true}).click();
+    await page.getByRole('heading',{name:'Client and server, in one view'}).waitFor();
+    mark('Open the custom client and server dashboard');
+    await page.waitForTimeout(4500);
+    return {scene:'admin-console',startedAt,endedAt:new Date().toISOString(),marks,nativeBackendProof:false};
+  } finally {if(annotation) await annotation.dispose();await page.screencast.stop();}
+}

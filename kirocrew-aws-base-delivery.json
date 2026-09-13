@@ -1,0 +1,24 @@
+{
+  "artifact": {
+    "bytes": 820105,
+    "sha256": "3211cd701ba4c0a8b002deafbe0b5c624b075e9662d5330881dd2f6b90a3cdfa"
+  },
+  "command": "deliver",
+  "input": "/workspace/scratch/91cd8ab8965a/kirocrew-aws-remote.architecture.json",
+  "ok": true,
+  "output": "/workspace/scratch/91cd8ab8965a/kirocrew-aws-remote-base.html",
+  "schemaVersion": 1,
+  "specification": {
+    "bytes": 7482,
+    "sha256": "a1c6ad04b4d8ee177e36abb2995cd0467bec629e8fd832d274836c2ee9973340"
+  },
+  "type": "architecture",
+  "validation": {
+    "checkCount": 9,
+    "checksPassed": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}

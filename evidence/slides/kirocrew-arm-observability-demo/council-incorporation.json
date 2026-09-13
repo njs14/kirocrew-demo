@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "final_artifact_sha256": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13",
+  "reviewed_candidate_sha256": "99d10eee8723b3998c40f52e902602661138e7388f0d6d3db8e2d5ef13f63dd9",
+  "decision_path": "evidence/council/arm-observability-v1/DECISIONS.md",
+  "decision_sha256": "10ef636b10958a60b7353b3042836a14b8afdb66c47b6b90b7f588f35f973b81",
+  "reports": [
+    "evidence/council/arm-observability-v1/candidate/dispatch/grok-review.md",
+    "evidence/council/arm-observability-v1/candidate/dispatch/claude-review.md"
+  ],
+  "original_verdicts": [
+    "CHANGES REQUIRED",
+    "CHANGES REQUIRED"
+  ],
+  "changes": [
+    {
+      "slides": [
+        2
+      ],
+      "decision": "Promote reference and execution limits",
+      "implementation": "Magenta caption names verified remote/MCP/IAM path and unverified sandbox/egress/SEL/HMAC; image bytes preserved."
+    },
+    {
+      "slides": [
+        3
+      ],
+      "decision": "Show pending native path",
+      "implementation": "New council image has purple dashed MCP pending edge plus direct-probe and native-sign-in captions. One EC2 host enclosure preserved."
+    },
+    {
+      "slides": [
+        4
+      ],
+      "decision": "Bind metadata denial and configuration ownership",
+      "implementation": "Crew IPv4 TCP errno 113/no HTTP displayed; notes cite new negative probe. Crew-writable configuration and unverified immutable policy visible."
+    },
+    {
+      "slides": [
+        5
+      ],
+      "decision": "Mark Crew denial pending",
+      "implementation": "crew_denied row says configured; native proof pending."
+    },
+    {
+      "slides": [
+        6
+      ],
+      "decision": "Use fresh separate direct probe",
+      "implementation": "15:01:37 UTC timestamp/new AWS request IDs; native backend verified:false visible. Earlier probe retained."
+    },
+    {
+      "slides": [
+        7
+      ],
+      "decision": "Separate client/server build provenance",
+      "implementation": "September 13 Mac vs frozenSeptember 12 unofficial Linux ARM64 repack; equivalence unverified; native login pending."
+    },
+    {
+      "slides": [
+        8
+      ],
+      "decision": "Clarify metrics windows and single sample",
+      "implementation": "14 d display/7 d retention/64 MiB target/10 s export visible; single boot observation and percentile limits in notes."
+    },
+    {
+      "slides": [
+        9,
+        10
+      ],
+      "decision": "Clarify clocks and CPU definitions",
+      "implementation": "EDT UTC\u22124 captions visible; client process-family versus host CPU methods in slide 9/notes."
+    },
+    {
+      "slides": [
+        10
+      ],
+      "decision": "Attribute continuity precisely",
+      "implementation": "Stopped/recovery sample labels; per-receipt Gateway PID 4991/start 14:26:10 UTC unchanged; active services and pending model-session continuity stated."
+    },
+    {
+      "slides": [
+        12
+      ],
+      "decision": "Show standard credits and retained storage",
+      "implementation": "No surplus charges/sustained throttle; stopped t3a.small 24 GiB charge visible; exact rate arithmetic preserved."
+    },
+    {
+      "slides": [
+        9
+      ],
+      "decision": "Low-priority AppKit port",
+      "implementation": "Loopback 9102 appears in caption and notes; execution diagram kept uncluttered."
+    }
+  ],
+  "all_accepted_decisions_incorporated": true,
+  "no_ai_edit_after_incorporation": true,
+  "final_bytes_reviewed_by_council": false,
+  "claim_boundary": "Council reviewed candidate-v2. Final edited bytes passed author and artifact checks only."
+}

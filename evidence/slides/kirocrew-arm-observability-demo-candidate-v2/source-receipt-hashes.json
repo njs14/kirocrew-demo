@@ -1,0 +1,10 @@
+{
+  "evidence/aws/arm-20260913/final-cloud-verification.json": "95237019cad827d3917d4c9bccf9dea06693138e8125239c08f811ecdae180b6",
+  "evidence/aws/arm-20260913/mcp-live-receipt.json": "70e9966407f98d5685c7e9f2f81fd82484091d740a13dfe310b7d59873380ff4",
+  "evidence/aws/arm-20260913/source-verification.json": "23b1ccbe2b7c58a3f8bfbe35a140c19d0d47490dea7a5f9fbcf9399e5088b37e",
+  "evidence/aws/arm-20260913/price.json": "5f5282f8d0eb4b85491a253a0bf6ed2cbed6bb3a2dac0f86aeacb80e5fce51b3",
+  "evidence/aws/arm-20260913/observability-api-readback.json": "d7d60f596efdfef322c84f0d79e63bb06f307c2c47efd4664ad58c2812f098e0",
+  "evidence/aws/arm-20260913/observability-runtime-receipt.json": "580f30e31638d8bf6ac27d2863a292888e6abf0b265da9a87e5b7144b560963e",
+  "evidence/aws/arm-20260913/client-runtime-receipt.json": "7d59a2da6b192c1218ef36a6be45c8e774507725a8adb20d85b2086df54bdc87",
+  "evidence/nightly/client-20260913-verification.json": "1600bb72d083e15c8e92f431f2c8fde513e603eabd4a5ba411692dadd0e90888"
+}

@@ -1,0 +1,129 @@
+{
+  "recordedAt": "2026-09-13T18:36:46.299563+00:00",
+  "scope": "Final recorded-demo HTML playback, controls, media and receipt serving. This QA did not operate the live portal or execute probes.",
+  "passed": true,
+  "edition": "output/kirocrew-recorded-demos.html",
+  "editionSha256": "754079b66dcc572f05af4345ab1f2e669e1a6458dad222abeeeaa3f49d6c2dec",
+  "buildReceiptSha256": "504c739fc33dd0387cbfb70ecd6a0440050c5a944405f432ae52bb4af2d1a8d5",
+  "notesSha256": "ddb903a42f50df2759dfe968fb014295a6bd16f5f468e9daac4d14bff0a7d006",
+  "slideCount": 20,
+  "preservedSource": {
+    "path": "output/kirocrew-system-design.html",
+    "sha256": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+    "slides": [
+      {
+        "index": 1,
+        "sha256": "8d5379920896911f509b3a694ee93eea27a75500748fb49f38e55885a55fc0e7"
+      },
+      {
+        "index": 2,
+        "sha256": "9d0ded5dffd10dcd0bd7d0a9f16b922ce2b1ae77778854969f52d36d0dc9499f"
+      },
+      {
+        "index": 3,
+        "sha256": "35d5263b2ee658192d4e115a3eb76394f21ae8e3611556e1c838690ce82358ff"
+      },
+      {
+        "index": 4,
+        "sha256": "01107af990dbd491b2b21feab9c6683112af8455d67db3a6f5e91e2e11068ff5"
+      },
+      {
+        "index": 5,
+        "sha256": "e6109d69750018d2d8b43d7ead98924d16eddde238ba64e408054a7a7fd85d78"
+      },
+      {
+        "index": 6,
+        "sha256": "6e33416be2673dd670fe70dae802a26e67edda67d6886b88793e36f793173fbe"
+      },
+      {
+        "index": 7,
+        "sha256": "8338fdbd1815637acad8ee7361801426707908a737ba53b3b2e1ef08e4d1a272"
+      },
+      {
+        "index": 8,
+        "sha256": "ad785717d371dc87be87057e90325b8e6aba9eac5adb5bf87db8f751244509e4"
+      },
+      {
+        "index": 9,
+        "sha256": "138f9db6de093774316a12f4717538bc20816c424ec44f1c2271b85d7335efe3"
+      },
+      {
+        "index": 10,
+        "sha256": "305f248658d14675f1c7117810f7e1fbf763137e78f4c6af35d03a1c8ae73372"
+      },
+      {
+        "index": 11,
+        "sha256": "2d8af9d95797b47f87ebef2c59c2775a6d810f396a1407da33297a4c3aa645f2"
+      },
+      {
+        "index": 12,
+        "sha256": "9927f333aaf050c935d7a054f56d30fca3fbabc9a45ff01304ab9bf95a856f70"
+      },
+      {
+        "index": 13,
+        "sha256": "b2c4a5bcc6f232544489f5fba5ac9b3972f7ca095c1ed35f4867e34492379f7a"
+      },
+      {
+        "index": 14,
+        "sha256": "332bc91c3c35605f959e54c19d05d6b7729e1a15c3038bdb23471be534252645"
+      }
+    ],
+    "preservedSlides": 14,
+    "allOriginalSlideBytesPreserved": true
+  },
+  "browser": {
+    "engine": "Chromium through Playwright CLI 0.1.19",
+    "checksPassed": 71,
+    "scenes": 6,
+    "chapterSeeks": 29,
+    "desktopViewport": [
+      1440,
+      1000
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "errors": 0,
+    "warnings": 0,
+    "checks": "All six videos decode, start and advance; all chapter cues pause/seek/update details; guided pause, overview and notes pause, outgoing-slide pause, keyboard guards, desktop fit and mobile target sizes pass."
+  },
+  "http": {
+    "headAndRangeMediaCount": 6,
+    "rangeModes": [
+      "first bytes",
+      "suffix",
+      "open ended"
+    ],
+    "hashVerifiedLinkedReceipts": 10,
+    "deniedPaths": 5,
+    "mediaBytesEqualPreviousCandidate": true
+  },
+  "visualInspection": "Inspected telemetry, direct-result and mobile captures. Video controls and chapter text fit. The video itself contains dense dashboard details; fullscreen and linked receipts support closer inspection. Root also inspected the refreshed final captures.",
+  "fileOpening": {
+    "status": "blocked",
+    "verified": false,
+    "tool": "playwright-cli open",
+    "attemptedUrl": "file:///Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-recorded-demos.html#slide-19",
+    "message": "Access to \"file:\" protocol is blocked.",
+    "scope": "The tool rejected navigation before opening the local file. Direct-file playback remains unverified. No workaround attempted."
+  },
+  "unverified": [
+    "Direct file playback: blocked by the browser tool protocol policy.",
+    "Document-hidden pause: opening a second headless browser tab did not make document.hidden true, so this path was not exercised.",
+    "pagehide pause was not separately exercised."
+  ],
+  "initialRefreshIssue": "After server replacement, navigation to an unchanged URL with a new fragment retained the prior document. Its old media URL returned 404. A fresh browser session loaded final media paths; the complete browser QA then passed with zero console errors. No implementation change was needed.",
+  "reviewScope": "This author QA binds the final recorded edition. It is not external model council approval and does not verify native Kiro CLI enforcement.",
+  "files": {
+    "browser-check.js": "10823b0321293a8b5f8bce87239d1d2a8e4fc3c6821614dd873b1fe75d9aaca1",
+    "browser-result-final.json": "41abb0431ec0fd0c8fb1f3eb2153e37f68ea906a363bcc9421420befed90cd63",
+    "http-result-final.json": "6916e190bd47fdb04d44de9dd49b1f8061d3403ae4537656a7fb37cf0d95872f",
+    "console-final.txt": "d0e5634bb0c1271965327ad2ac18107af18fa7da6d2c9ce13e03eeda6cb603db",
+    "desktop-telemetry.png": "a9efc3cc99250e2e5939c52d0ebfa1c1b403c85d7b54c7065170ffe3f39da9e7",
+    "desktop-direct-result.png": "fc720ae6b31dc66635a74d1e79aefc581bbbf94df4be845602d79fc16b526eb4",
+    "mobile-telemetry.png": "55ad86807d8762a06df926407b40d5a91e37b92d370ea61fe25a595e9d72d79e",
+    "visibility-result.json": "720311943ac48675171afea429406d562ec93c17a0386ac56fc10dcffd80d033",
+    "file-opening-result.json": "08e18b4172921b158fe21f968f3202367658111b6611f6c3d108a1882f8a4860"
+  }
+}

@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2070" height="1860" viewBox="0 0 1380 1240"><style><![CDATA[.c-grid{ stroke: #e2e8f0; fill: none; }
+.c-mask{ fill: #ffffff; stroke: none; }
+.c-frontend{ fill: rgba(34, 211, 238, 0.15);   stroke: #0891b2; }
+.c-backend{ fill: rgba(52, 211, 153, 0.18);    stroke: #059669; }
+.c-database{ fill: rgba(167, 139, 250, 0.2);   stroke: #7c3aed; }
+.c-cloud{ fill: rgba(251, 191, 36, 0.18);      stroke: #d97706; }
+.c-security{ fill: rgba(251, 113, 133, 0.15);   stroke: #e11d48; }
+.c-messagebus{ fill: rgba(251, 146, 60, 0.15); stroke: #ea580c; }
+.c-external{ fill: rgba(148, 163, 184, 0.18);   stroke: #64748b; }
+.t-primary{ fill: #0f172a; }
+.t-muted{ fill: #64748b; }
+.t-dim{ fill: #94a3b8; }
+.t-frontend{ fill: #0891b2; }
+.t-backend{ fill: #059669; }
+.t-database{ fill: #7c3aed; }
+.t-cloud{ fill: #d97706; }
+.t-security{ fill: #e11d48; }
+.t-messagebus{ fill: #ea580c; }
+.t-external{ fill: #64748b; }
+svg .semantic-sigil{
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.35;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: 0.76;
+      pointer-events: none;
+    }
+svg .semantic-sigil > *{ vector-effect: non-scaling-stroke; }
+svg .semantic-sigil .sigil-fill{ fill: currentColor; stroke: none; }
+svg .s-frontend{ color: #0891b2; }
+svg .s-backend{ color: #059669; }
+svg .s-database{ color: #7c3aed; }
+svg .s-cloud{ color: #d97706; }
+svg .s-security{ color: #e11d48; }
+svg .s-messagebus{ color: #ea580c; }
+svg .s-external{ color: #64748b; }
+.a-default{ stroke: #94a3b8; fill: none; }
+.a-emphasis{ stroke: #059669; fill: none; }
+.a-security{ stroke: #e11d48; fill: none; stroke-dasharray: 5,5; }
+.a-dashed{ stroke: #7c3aed; fill: none; stroke-dasharray: 4,4; }
+.m-default{ fill: #94a3b8; }
+.m-emphasis{ fill: #059669; }
+.m-security{ fill: #e11d48; }
+.m-dashed{ fill: #7c3aed; }
+.c-security-group{ fill: transparent; stroke: #e11d48; stroke-dasharray: 4,4; }
+.c-region{ fill: rgba(251, 191, 36, 0.05); stroke: #d97706; stroke-dasharray: 8,4; }
+.c-lane{ fill: rgba(248, 250, 252, 0.65); stroke: #cbd5e1; stroke-dasharray: 6,6; }
+.ep-shell{fill:#ffffff;stroke:#0891b2;stroke-width:2;}
+.ep-host-band{fill:rgba(148, 163, 184, 0.18);stroke:none;}
+.ep-runtime-band{fill:rgba(52, 211, 153, 0.18);stroke:none;}
+.ep-policy-band{fill:rgba(251, 113, 133, 0.15);stroke:none;}
+.ep-layer-badge{fill:rgba(52, 211, 153, 0.18);stroke:none;}
+.ep-divider{fill:none;stroke:#cbd5e1;stroke-width:1;}
+.ep-icon{fill:none;stroke:#0891b2;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+.ep-icon-muted{fill:none;stroke:#64748b;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+.ep-icon-green{fill:none;stroke:#059669;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+.ep-icon-rose{fill:none;stroke:#e11d48;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+text {font-family:"DejaVu Sans Mono",monospace;}]]></style><rect width="1380" height="1240" fill="#f8fafc"/><text x="24" y="38" fill="#0f172a" font-size="25" font-weight="700">One endpoint, layered control</text><text x="24" y="65" fill="#64748b" font-size="12">KiroCrew governance · host protection · controlled tool access</text><g transform="translate(0 85)">
+        <title id="archify-diagram-title">KiroCrew · One endpoint, layered control</title>
+        <desc id="archify-diagram-description">Execution host → governed MCP → target authorization</desc>
+        <!-- Definitions -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-default" />
+          </marker>
+          <marker id="arrowhead-emphasis" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-emphasis" />
+          </marker>
+          <marker id="arrowhead-security" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-security" />
+          </marker>
+          <marker id="arrowhead-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-dashed" />
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" class="c-grid" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+
+        <!-- Background Grid -->
+        <rect width="100%" height="100%" fill="url(#grid)" />
+
+        <!-- Boundaries (behind everything) -->
+
+
+        <!-- Connection paths (before components for correct z-order) -->
+        <path data-edge-from="developer-entry" data-edge-to="endpoint-control" data-edge-label="Access" data-edge-key="0" data-edge-id="authenticated-entry" data-composition-points="190,605;330,605" d="M 190 605 L 330 605" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="central-policy" data-edge-to="endpoint-control" data-edge-label="Policy ceiling" data-edge-key="1" data-edge-id="policy-sync" data-composition-points="685,135;685,255" d="M 685 135 L 685 255" class="a-security" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
+        <path data-edge-from="endpoint-control" data-edge-to="mcp-tool-governance" data-edge-label="Routed MCP" data-edge-key="2" data-edge-id="governed-mcp-route" data-composition-points="1040,605;1160,605" d="M 1040 605 L 1160 605" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="mcp-tool-governance" data-edge-to="target-permissions" data-edge-label="Scoped API" data-edge-key="3" data-edge-id="resource-request" data-composition-points="1260,655;1260,850" d="M 1260 655 L 1260 850" class="a-security" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
+
+        <!-- Components -->
+        <g id="node-developer-entry" data-node-id="developer-entry" data-node-label="Developer" tabindex="0" role="button" aria-label="Focus Developer, Desktop · browser · CLI, Architecture component" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="Desktop · browser · CLI" data-node-tag="Identity at entry" data-node-context="Architecture component"><title>Developer · Desktop · browser · CLI · Architecture component · Identity at entry</title><rect x="20" y="555" width="170" height="100" rx="8" class="c-mask"/><rect x="20" y="555" width="170" height="100" rx="8" class="c-frontend"/><g class="ep-icon" aria-hidden="true" transform="translate(32 567) scale(1.0)"><rect x="4" y="3" width="16" height="13" rx="2"/><path d="M1 20h22l-3-4H4Z"/><path d="M10 19h4"/></g><text x="66" y="584" class="t-primary" font-size="12" font-weight="700" data-node-label="" data-detail-anchor="">Developer</text><text x="32" y="608" class="t-muted" font-size="10" >Desktop / browser / CLI</text><text x="32" y="643" class="t-muted" font-size="9" >Identity at entry</text></g>
+
+        <g id="node-endpoint-control" data-node-id="endpoint-control" data-node-label="Endpoint control" tabindex="0" role="button" aria-label="Focus Endpoint control: enterprise host protection; Gateway, agent and tools; policy and profile; L0 sandbox, L1 paths, L2 commands, L3 schemas, L4 redaction, L5 security event log; credentials, resource limits and project-skill trust" aria-pressed="false" data-node-kind="security" data-node-sublabel="Enterprise baseline + KiroCrew L0–L5" data-node-tag="Local endpoint or remote execution host" data-node-context="Architecture component"><title>Endpoint control · Enterprise baseline + KiroCrew L0–L5 · Architecture component · Local endpoint or remote execution host</title><rect x="330" y="255" width="710" height="700" rx="12" class="c-mask"/><rect x="330" y="255" width="710" height="700" rx="12" class="ep-shell"/><g class="ep-icon" aria-hidden="true" transform="translate(354 277) scale(1.25)"><path d="M12 2 21 6v6c0 5-5 8-9 10-4-2-9-5-9-10V6Z"/><path d="m7 12 3 3 7-7"/></g><text x="398" y="302" class="t-primary" font-size="24" font-weight="700" data-node-label="" data-detail-anchor="">Endpoint control</text><text x="354" y="329" class="t-muted" font-size="12" >Execution host · local endpoint or remote Crew host</text><path d="M354 347H1016" class="ep-divider"/><rect x="350" y="365" width="670" height="92" rx="8" class="ep-host-band"/><g class="ep-icon-muted" aria-hidden="true" transform="translate(368 391) scale(1.1666666666666667)"><rect x="4" y="3" width="16" height="13" rx="2"/><path d="M1 20h22l-3-4H4Z"/><path d="M10 19h4"/></g><text x="414" y="387" class="t-muted" font-size="12" font-weight="700" >ENTERPRISE HOST PROTECTION</text><text x="414" y="411" class="t-primary" font-size="13" >EDR / MDM where supported · managed OS</text><text x="414" y="435" class="t-muted" font-size="12" >Disk encryption · device identity · network egress</text><text x="354" y="490" class="t-backend" font-size="16" font-weight="700" >KiroCrew managed execution</text><rect x="350" y="505" width="670" height="66" rx="8" class="ep-runtime-band"/><g class="ep-icon-green" aria-hidden="true" transform="translate(364 519) scale(0.8333333333333334)"><path d="M4 21V4h16v17M9 21v-7h6v7M8 8h2M14 8h2"/></g><text x="392" y="529" class="t-primary" font-size="12" font-weight="600" >Gateway + session</text><text x="364" y="553" class="t-muted" font-size="10" >Auth · origin · app scopes</text><g class="ep-icon-green" aria-hidden="true" transform="translate(586 519) scale(0.8333333333333334)"><rect x="3" y="6" width="18" height="15" rx="4"/><path d="M12 2v4M8 12h1M15 12h1M8 17h8"/></g><text x="614" y="529" class="t-primary" font-size="12" font-weight="600" >Selected backend</text><text x="586" y="553" class="t-muted" font-size="10" >Kiro CLI / Codex / Claude Code</text><g class="ep-icon-green" aria-hidden="true" transform="translate(824 519) scale(0.8333333333333334)"><rect x="2" y="3" width="20" height="18" rx="3"/><path d="m6 8 4 4-4 4M13 16h5"/></g><text x="852" y="529" class="t-primary" font-size="12" font-weight="600" >Tool execution</text><text x="824" y="553" class="t-muted" font-size="10" >Files · shell · routed MCP</text><path d="m570 528 5 5-5 5m236-10 5 5-5 5" class="ep-icon-green"/><rect x="350" y="585" width="670" height="50" rx="8" class="ep-policy-band"/><g class="ep-icon-rose" aria-hidden="true" transform="translate(367 597) scale(0.9583333333333334)"><rect x="4" y="3" width="16" height="19" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></g><text x="410" y="607" class="t-primary" font-size="13" font-weight="600" >Policy ∩ Profile · protected configuration</text><text x="410" y="624" class="t-muted" font-size="11" >Approvals · tool / app scopes · backend admission</text><rect x="354" y="653" width="34" height="30" rx="6" class="ep-layer-badge"/><text x="361" y="673" class="t-backend" font-size="12" font-weight="700" >L0</text><text x="400" y="673" class="t-primary" font-size="14" font-weight="600" >Isolate processes</text><text x="400" y="696" class="t-muted" font-size="10.5" >OS sandbox · agent descendants</text><rect x="700" y="653" width="34" height="30" rx="6" class="ep-layer-badge"/><text x="707" y="673" class="t-backend" font-size="12" font-weight="700" >L1</text><text x="746" y="673" class="t-primary" font-size="14" font-weight="600" >Protect paths*</text><text x="746" y="696" class="t-muted" font-size="10.5" >Resolved paths · protected policy files</text><rect x="354" y="727" width="34" height="30" rx="6" class="ep-layer-badge"/><text x="361" y="747" class="t-backend" font-size="12" font-weight="700" >L2</text><text x="400" y="747" class="t-primary" font-size="14" font-weight="600" >Gate commands*</text><text x="400" y="770" class="t-muted" font-size="10.5" >Deny rules · exfiltration checks</text><rect x="700" y="727" width="34" height="30" rx="6" class="ep-layer-badge"/><text x="707" y="747" class="t-backend" font-size="12" font-weight="700" >L3</text><text x="746" y="747" class="t-primary" font-size="14" font-weight="600" >Validate tool inputs</text><text x="746" y="770" class="t-muted" font-size="10.5" >Registered schemas · bounded arguments</text><rect x="354" y="801" width="34" height="30" rx="6" class="ep-layer-badge"/><text x="361" y="821" class="t-backend" font-size="12" font-weight="700" >L4</text><text x="400" y="821" class="t-primary" font-size="14" font-weight="600" >Redact outputs</text><text x="400" y="844" class="t-muted" font-size="10.5" >Credential / URL patterns · covered sinks</text><rect x="700" y="801" width="34" height="30" rx="6" class="ep-layer-badge"/><text x="707" y="821" class="t-backend" font-size="12" font-weight="700" >L5</text><text x="746" y="821" class="t-primary" font-size="14" font-weight="600" >Record decisions</text><text x="746" y="844" class="t-muted" font-size="10.5" >SEL events · HMAC-chain verification</text><path d="M685 651V859" class="ep-divider"/><path d="M354 711H1016" class="ep-divider"/><path d="M354 785H1016" class="ep-divider"/><path d="M354 875H1016" class="ep-divider"/><text x="354" y="903" class="t-muted" font-size="10" font-weight="700" >ACROSS THE LAYERS</text><text x="354" y="928" class="t-primary" font-size="12" >Credential scrub · resource limits · project-skill trust</text></g>
+
+        <g id="node-central-policy" data-node-id="central-policy" data-node-label="Central policy authority" tabindex="0" role="button" aria-label="Focus Central policy authority, Protected policy → local enforcement, Architecture component" aria-pressed="false" data-node-kind="security" data-node-sublabel="Protected policy → local enforcement" data-node-tag="Remote distribution adapter proposed" data-node-context="Architecture component"><title>Central policy authority · Protected policy → local enforcement · Architecture component · Remote distribution adapter proposed</title><rect x="545" y="30" width="280" height="105" rx="8" class="c-mask"/><rect x="545" y="30" width="280" height="105" rx="8" class="c-security"/><g class="ep-icon-rose" aria-hidden="true" transform="translate(557 42) scale(1.0)"><rect x="4" y="3" width="16" height="19" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></g><text x="591" y="59" class="t-primary" font-size="12" font-weight="700" data-node-label="" data-detail-anchor="">Central policy authority</text><text x="557" y="83" class="t-muted" font-size="10" >Protected policy → local enforcement</text><text x="557" y="123" class="t-muted" font-size="9" >Distribution adapter proposed</text></g>
+
+        <g id="node-mcp-tool-governance" data-node-id="mcp-tool-governance" data-node-label="MCP governance" tabindex="0" role="button" aria-label="Focus MCP governance, Server / tool grants · OAuth, Architecture component" aria-pressed="false" data-node-kind="security" data-node-sublabel="Server / tool grants · OAuth" data-node-tag="Proposed LiteLLM / service tier" data-node-context="Architecture component"><title>MCP governance · Server / tool grants · OAuth · Architecture component · Proposed LiteLLM / service tier</title><rect x="1160" y="555" width="200" height="100" rx="8" class="c-mask"/><rect x="1160" y="555" width="200" height="100" rx="8" class="c-security"/><g class="ep-icon-rose" aria-hidden="true" transform="translate(1172 567) scale(1.0)"><rect x="2" y="2" width="8" height="8" rx="2"/><rect x="14" y="2" width="8" height="8" rx="2"/><rect x="8" y="14" width="8" height="8" rx="2"/><path d="M6 10v3h12v-3M12 13v1"/></g><text x="1206" y="584" class="t-primary" font-size="12" font-weight="700" data-node-label="" data-detail-anchor="">MCP governance</text><text x="1172" y="608" class="t-muted" font-size="10" >Server / tool grants · OAuth</text><text x="1172" y="643" class="t-muted" font-size="9" >LiteLLM / service tier proposed</text></g>
+
+        <g id="node-target-permissions" data-node-id="target-permissions" data-node-label="Target authorization" tabindex="0" role="button" aria-label="Focus Target authorization, AWS IAM · SaaS permissions, Architecture component" aria-pressed="false" data-node-kind="cloud" data-node-sublabel="AWS IAM · SaaS permissions" data-node-tag="Independent resource decision" data-node-context="Architecture component"><title>Target authorization · AWS IAM · SaaS permissions · Architecture component · Independent resource decision</title><rect x="1160" y="850" width="200" height="100" rx="8" class="c-mask"/><rect x="1160" y="850" width="200" height="100" rx="8" class="c-cloud"/><g class="ep-icon" aria-hidden="true" transform="translate(1172 862) scale(1.0)"><circle cx="8" cy="9" r="5"/><path d="m12 13 9 9M16 17l3-3M19 20l3-3"/></g><text x="1206" y="879" class="t-primary" font-size="12" font-weight="700" data-node-label="" data-detail-anchor="">Target authorization</text><text x="1172" y="903" class="t-muted" font-size="10" >AWS IAM / SaaS permissions</text><text x="1172" y="938" class="t-muted" font-size="9" >Independent resource decision</text></g>
+
+        <!-- Connection labels -->
+        <g data-detail="context" data-edge-from="developer-entry" data-edge-to="endpoint-control" data-edge-label="Access" data-edge-key="0" data-edge-id="authenticated-entry">
+          <rect x="240.6" y="585" width="38.8" height="14" rx="3" class="c-mask"/>
+          <text x="260" y="595" class="t-backend" font-size="8" text-anchor="middle">Access</text>
+        </g>
+        <g data-detail="context" data-edge-from="central-policy" data-edge-to="endpoint-control" data-edge-label="Policy ceiling" data-edge-key="1" data-edge-id="policy-sync">
+          <rect x="646.4" y="185" width="77.2" height="14" rx="3" class="c-mask"/>
+          <text x="685" y="195" class="t-security" font-size="8" text-anchor="middle">Policy ceiling</text>
+        </g>
+        <g data-detail="context" data-edge-from="endpoint-control" data-edge-to="mcp-tool-governance" data-edge-label="Routed MCP" data-edge-key="2" data-edge-id="governed-mcp-route">
+          <rect x="1071" y="585" width="58" height="14" rx="3" class="c-mask"/>
+          <text x="1100" y="595" class="t-backend" font-size="8" text-anchor="middle">Routed MCP</text>
+        </g>
+        <g data-detail="context" data-edge-from="mcp-tool-governance" data-edge-to="target-permissions" data-edge-label="Scoped API" data-edge-key="3" data-edge-id="resource-request">
+          <rect x="1231" y="745" width="58" height="14" rx="3" class="c-mask"/>
+          <text x="1260" y="755" class="t-security" font-size="8" text-anchor="middle">Scoped API</text>
+        </g>
+
+        <!-- Boundary labels (foreground masks keep routes out of titles) -->
+
+
+        <!-- Legend -->
+        
+      </g><path d="M24 1130H1356" stroke="#cbd5e1"/><text x="24" y="1158" fill="#64748b" font-size="11">* Pre-tool enforcement requires a Crew hook or permission callback; coverage depends on backend and configuration.</text><text x="24" y="1185" fill="#64748b" font-size="11">This is a control map. OS sandbox, schema and output coverage vary; the reference tab records the limits and demo proof.</text><text x="24" y="1212" fill="#64748b" font-size="11">Verified nightly: 0.7.0.dev20260911060948. Latest-feed refresh unavailable. External integrations remain proposed.</text></svg>

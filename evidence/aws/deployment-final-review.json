@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex deployment_review subagent; bounded source review and read-only host checks",
+  "status": "no_blocking_source_findings_native_backend_acceptance_pending",
+  "observed_at_utc": "2026-09-13T04:36:52.340067+00:00",
+  "candidate_sha256": {
+    "infrastructure/configure-demo.py": "cf48645c34c4312b5debb027f3bc03ff4f84bc216f821fe53e4b5045b51f1fba",
+    "infrastructure/kirocrew-demo.service": "662c10170325a0a2e0025e2007d48c650e5ddf88343f0475f50404cfc97360df",
+    "infrastructure/kirocrew-mcp-demo.service": "027ec03ceffdf0fcb38b9961bd35211572f564e0f249904feb111f0624461d01",
+    "infrastructure/kirocrew-demo-client-command": "66b0dab6068a0ae354c1f7b893d12897887bae1f70c13947aebea81eead9e649",
+    "infrastructure/install-crew.sh": "0e6d1cc0f9bbbf521ee8cae72c53cfee9506137f7151f8e63daba217d8ae1030",
+    "infrastructure/bootstrap.sh": "46c2f99747f3a04d48e47f41b2e880f9be10fe3d425b75b4981717dd8c9459d6",
+    "infrastructure/ec2-demo.json": "778016a3c8fb7d45933e651ace1634a9148b9ead7960797ae208a795752602ea",
+    "infrastructure/crew-requirements-linux.lock": "d4e5f14049274f75870bbd2d694148a32b036394fca4cbf6b5d0b9ab9ca5da42",
+    "infrastructure/mcp-enforcement/server.py": "a52c0c42d91430232fc68c20f6554e70842ebd33d0a71a79dff3f50ef431eb08",
+    "infrastructure/mcp-enforcement/probe.py": "772c26fdc20cd498b52fc565f2228fd6f1ab097995c164cc45cfa68780b7e607",
+    "infrastructure/mcp-enforcement/requirements.txt": "9815c0cb4be1aa117db7feaa1f91eb3376c1aebf95489d023dec50e2e1d932c8"
+  },
+  "evidence_sha256": {
+    "evidence/aws/client-runtime-verification.json": "827ac43582525486362fce86f0602dd8fdab70f21661e2c0002e10c2ce5f8783",
+    "evidence/aws/security-group.json": "d65380f161ce9f6cccea8a3f0a8e23bf9a1c9bde6c19b3654141d9708bda2442",
+    "evidence/aws/mcp-live-receipt.json": "8072fbe3b4048296b49436b8f23e4772ad3c3e4aba605305efd8901aa2843442",
+    "evidence/aws/mcp-live-audit.jsonl": "6aaf999a252237219cfd7504d13a60356696119f9ae3a1c3ad59652c2ad307f1",
+    "evidence/aws/iam-demo-policy.json": "8faf681201a0af63edeae2052e89ac85c312c074c4f4eadf9b635625c73c50db",
+    "evidence/aws/fixture-hashes.json": "c733be36b9741898e9d8de25596028f8d1fa9628fb2fd71bd2b99bc01a34cc14",
+    "evidence/aws/seed-fixtures-result.json": "e3c6bffd0904fa2ee568b6dfef4b780833df49539223d6ba61ca36b2b5787cde",
+    "evidence/aws/deployment-review.json": "e6b1514dcee50eee4bef9551e1ac7443efc55d797659f21f41ebb94199ac1912"
+  },
+  "checks": {
+    "current_bootstrap_equals_template_userdata": true,
+    "recorded_security_group_single_ipv4_32_tcp22": true,
+    "recorded_mcp_audit_correlates_to_service_receipt": true,
+    "local_runLocalGateway": false,
+    "local_listeners": {
+      "5476": {
+        "return_code": 1,
+        "safe_listener_listing": ""
+      },
+      "5599": {
+        "return_code": 0,
+        "safe_listener_listing": "COMMAND   PID       USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nssh     20212 noahsutter    4u  IPv4 0xc6d4bffd012079d7      0t0  TCP 127.0.0.1:5599 (LISTEN)"
+      }
+    }
+  },
+  "remote_read_only_observation": {
+    "kirocrew-demo.service": {
+      "MainPID": "3847",
+      "WorkingDirectory": "/srv/kirocrew-demo/workspace",
+      "User": "crew",
+      "Group": "crew",
+      "ReadWritePaths": "/var/lib/kirocrew /home/crew /srv/kirocrew-demo/workspace",
+      "ProtectHome": "read-only",
+      "ProtectSystem": "strict",
+      "NoNewPrivileges": "yes",
+      "Requires": "kirocrew-imds-guard.service sysinit.target -.mount system.slice",
+      "After": "system.slice -.mount systemd-tmpfiles-setup.service kirocrew-imds-guard.service systemd-journald.socket basic.target sysinit.target tmp.mount network-online.target",
+      "ActiveState": "active",
+      "SubState": "running",
+      "apparmor_label": "kirocrew-userns (unconfined)",
+      "process_isolation": {
+        "Uid": "999\t999\t999\t999",
+        "Gid": "988\t988\t988\t988",
+        "CapEff": "0000000000000000",
+        "CapBnd": "000001fffffeffff",
+        "NoNewPrivs": "1",
+        "Seccomp": "2"
+      }
+    },
+    "kirocrew-mcp-demo.service": {
+      "MainPID": "3072",
+      "WorkingDirectory": "/opt/kirocrew-demo/mcp-enforcement",
+      "User": "mcp-demo",
+      "Group": "mcp-demo",
+      "ReadWritePaths": "",
+      "ProtectHome": "yes",
+      "ProtectSystem": "strict",
+      "NoNewPrivileges": "yes",
+      "Requires": "system.slice sysinit.target -.mount",
+      "After": "tmp.mount systemd-tmpfiles-setup.service sysinit.target basic.target kirocrew-imds-guard.service system.slice network-online.target systemd-journald.socket -.mount",
+      "ActiveState": "active",
+      "SubState": "running",
+      "apparmor_label": "unconfined",
+      "process_isolation": {
+        "Uid": "997\t997\t997\t997",
+        "Gid": "987\t987\t987\t987",
+        "CapEff": "0000000000000000",
+        "CapBnd": "000001fff7fcffff",
+        "NoNewPrivs": "1",
+        "Seccomp": "2"
+      }
+    },
+    "kirocrew-imds-guard.service": {
+      "MainPID": "0",
+      "WorkingDirectory": "",
+      "User": "",
+      "Group": "",
+      "ReadWritePaths": "",
+      "ProtectHome": "no",
+      "ProtectSystem": "no",
+      "NoNewPrivileges": "no",
+      "Requires": "sysinit.target system.slice",
+      "After": "basic.target local-fs.target sysinit.target system.slice systemd-journald.socket",
+      "ActiveState": "active",
+      "SubState": "exited"
+    },
+    "listening_tcp": [
+      "State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess",
+      "LISTEN 0      2048       127.0.0.1:8001      0.0.0.0:*          ",
+      "LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*          ",
+      "LISTEN 0      4096         0.0.0.0:22        0.0.0.0:*          ",
+      "LISTEN 0      128        127.0.0.1:5476      0.0.0.0:*          ",
+      "LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*          ",
+      "LISTEN 0      128        127.0.0.1:3128      0.0.0.0:*          ",
+      "LISTEN 0      4096            [::]:22           [::]:*          "
+    ],
+    "imds_guard_ipv4": [
+      "-P OUTPUT ACCEPT",
+      "-A OUTPUT -d 169.254.169.254/32 -m owner --uid-owner 999 -j REJECT --reject-with icmp-admin-prohibited"
+    ],
+    "imds_guard_ipv6": [
+      "-P OUTPUT ACCEPT",
+      "-A OUTPUT -d fd00:ec2::254/128 -m owner --uid-owner 999 -j REJECT --reject-with icmp6-adm-prohibited"
+    ],
+    "metadata_only": {
+      "/srv": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0o755",
+        "symlink": false
+      },
+      "/srv/kirocrew-demo": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0o755",
+        "symlink": false
+      },
+      "/srv/kirocrew-demo/workspace": {
+        "uid": 999,
+        "gid": 988,
+        "mode": "0o700",
+        "symlink": false
+      },
+      "/var/lib/kirocrew": {
+        "uid": 999,
+        "gid": 988,
+        "mode": "0o700",
+        "symlink": false
+      },
+      "/var/lib/kirocrew/config.json": {
+        "uid": 999,
+        "gid": 988,
+        "mode": "0o600",
+        "symlink": false
+      },
+      "/home/crew": {
+        "uid": 999,
+        "gid": 988,
+        "mode": "0o700",
+        "symlink": false
+      },
+      "/home/crew/.kiro": {
+        "uid": 999,
+        "gid": 988,
+        "mode": "0o755",
+        "symlink": false
+      },
+      "/home/crew/.kiro/agents": {
+        "uid": 999,
+        "gid": 988,
+        "mode": "0o700",
+        "symlink": false
+      },
+      "/home/crew/.kiro/agents/enforcement-demo.json": {
+        "uid": 999,
+        "gid": 988,
+        "mode": "0o600",
+        "symlink": false
+      },
+      "/opt/kirocrew": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0o755",
+        "symlink": false
+      },
+      "/opt/kirocrew/venv/bin/kirocrew": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0o755",
+        "symlink": false
+      },
+      "/opt/kirocrew-demo/mcp-enforcement/server.py": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0o644",
+        "symlink": false
+      },
+      "/etc/kirocrew-demo": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0o755",
+        "symlink": false
+      },
+      "/etc/kirocrew-demo/mcp-token": {
+        "uid": 0,
+        "gid": 987,
+        "mode": "0o640",
+        "symlink": false
+      },
+      "/etc/kirocrew-demo/mcp.env": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0o600",
+        "symlink": false
+      }
+    },
+    "code_sha256": {
+      "/etc/systemd/system/kirocrew-demo.service": "662c10170325a0a2e0025e2007d48c650e5ddf88343f0475f50404cfc97360df",
+      "/etc/systemd/system/kirocrew-mcp-demo.service": "027ec03ceffdf0fcb38b9961bd35211572f564e0f249904feb111f0624461d01",
+      "/usr/local/bin/kirocrew-demo": "66b0dab6068a0ae354c1f7b893d12897887bae1f70c13947aebea81eead9e649",
+      "/usr/local/sbin/kirocrew-imds-guard": "11dfd1ffadf28fa1a97909badd013bdd258580cfdfac3f404c39cbdee77a10ae",
+      "/opt/kirocrew-demo/mcp-enforcement/server.py": "a52c0c42d91430232fc68c20f6554e70842ebd33d0a71a79dff3f50ef431eb08",
+      "/opt/kirocrew/venv/bin/kirocrew": "8f29b68ae1126c2dbc670b25e662f72a7b27fc56d25dac50be7cee9ba35fba88"
+    }
+  },
+  "imds_ipv4_denial_probe": {
+    "tcp_connect_errno": 113,
+    "crew_uid": 999,
+    "method": "TCP connect only; no HTTP request or credential response",
+    "iptables_reject_packets_before": 1,
+    "iptables_reject_packets_after": 2,
+    "passed": true
+  },
+  "remote_code_matches_local": [
+    "infrastructure/kirocrew-demo.service",
+    "infrastructure/kirocrew-mcp-demo.service",
+    "infrastructure/kirocrew-demo-client-command",
+    "infrastructure/mcp-enforcement/server.py"
+  ],
+  "open_source_findings": [],
+  "acceptance_pending": [
+    {
+      "id": "native-backend-chain",
+      "source": "evidence/aws/client-runtime-verification.json",
+      "action": "Complete fresh remote Kiro CLI login, then run each of the four native backend turns and bind actual permission callbacks, Crew SEL, MCP audit and AWS response IDs. The direct service probe does not prove the Crew hook.",
+      "verified": false
+    },
+    {
+      "id": "native-l0-sandbox",
+      "source": "infrastructure/install-crew.sh:34",
+      "action": "Exercise the actual backend launch and verify credential masking and deny behavior inside its native sandbox. The attached AppArmor userns grant, service hardening and IMDS firewall do not establish that the backend sandbox was exercised.",
+      "verified": false
+    }
+  ],
+  "claim_boundaries": [
+    {
+      "source": "infrastructure/configure-demo.py:25",
+      "observation": "config.json and the agent configuration are owned by crew and the service has writable access to the home and state directories. auto_deny_tools is a native Crew demo rule; this configuration is not an immutable administrator-managed governance ceiling.",
+      "action": "Describe this boundary explicitly in the walkthrough; do not label the current Crew hook rule as a signed or immutable managed policy."
+    },
+    {
+      "source": "infrastructure/mcp-enforcement/server.py:1",
+      "observation": "The deployed component is a purpose-built MCP SDK service with a fixed bearer principal and fixed invocation grants. It is not LiteLLM, OAuth, tenant identity or group policy enforcement.",
+      "action": "Keep the deployed implementation distinct from the broader architecture proposal."
+    },
+    {
+      "source": "evidence/aws/client-runtime-verification.json",
+      "observation": "The existing native UI receipt records Gateway connected. This reviewer freshly verified runLocalGateway=false, no local 5476 listener, SSH-only local 5599 listener, and active remote Gateway listening on loopback.",
+      "action": "Remote client operation can be claimed independently of backend model-session acceptance."
+    }
+  ],
+  "limitations": [
+    "No cloud mutation, deployment, login, model request or fixture request performed by this reviewer. The IMDS test attempted a TCP connection only, returned errno 113 and incremented the matching Crew UID reject rule; no credential HTTP request or response occurred.",
+    "Security group, S3 fixture, IAM policy, direct MCP and native UI observations were assessed from bound existing receipts; service state, nonsecret filesystem metadata, code hashes, local listener state and IPv4 IMDS rejection were freshly inspected.",
+    "No token file contents, raw agent JSON, remote environment, cookies or backend identity were read.",
+    "The gateway AppArmor label is kirocrew-userns (unconfined): it grants user namespaces to the gateway launcher and is not by itself a filesystem confinement policy.",
+    "This review does not constitute a full audit of the upstream Crew runtime or dependencies."
+  ]
+}

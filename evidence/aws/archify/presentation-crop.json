@@ -1,0 +1,31 @@
+{
+  "time": "2026-09-13T04:56:07.704Z",
+  "kind": "derived-presentation-export",
+  "source": {
+    "path": "evidence/aws/archify/kirocrew-ec2-live.svg",
+    "bytes": 152134,
+    "sha256": "d324e70dbb76c924fbcf3800f12e93321f34536a01b426de4cc6f082b437cd49"
+  },
+  "derivedSvg": {
+    "path": "evidence/aws/archify/kirocrew-ec2-live-presentation.svg",
+    "bytes": 152230,
+    "sha256": "e2e881d50e8d2188de66206e74048d800cf374ad259bdfbda573e0eaaaa16f9f"
+  },
+  "derivedPng": {
+    "path": "evidence/aws/archify/kirocrew-ec2-live-presentation.png",
+    "bytes": 201863,
+    "sha256": "3193e41e21b8a5dd434349948929a9ab250490a6f8c25aeb4a940f0e33f44b7d"
+  },
+  "viewBox": [
+    8,
+    74,
+    1364,
+    584
+  ],
+  "renderedDimensions": [
+    4092,
+    1752
+  ],
+  "changes": "The canonical SVG is preserved byte-for-byte inside a new outer SVG viewport. Full topology, labels and authored geometry are retained; generic color legend and outer whitespace outside the crop are omitted.",
+  "canonicalDiagramUnchanged": true
+}

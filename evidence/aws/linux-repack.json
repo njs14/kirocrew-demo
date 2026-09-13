@@ -1,0 +1,7 @@
+{
+  "source": "frozen installed September 12 package; custom Linux repack, not official Linux nightly artifact",
+  "version": "0.7.0-nightly.20260912t060850",
+  "sha256": "5133df99766a436a0fe346c6c57b4475fa00389a62fe7e464ec8440942e33d39",
+  "bytes": 76211205,
+  "requirements_source": "/Applications/KiroCrew Nightly.app/Contents/Resources/backend-dist/kirocrew-backend-arm64/lib/python3.12/site-packages/kirocrew-0.7.0.dist-info/METADATA"
+}

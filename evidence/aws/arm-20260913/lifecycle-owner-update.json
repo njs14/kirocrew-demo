@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-09-13T14:42:50.341301+00:00",
+  "status": "passed",
+  "scope": "local-client-rollback identity guard only",
+  "file": "scripts/demo-cloud.py",
+  "sha256": "c8cefdf6411c2c3a18f593c6baebb7d3a99b6adbe9d28d04c1e1105f9e6a8e39",
+  "previous_sha256": "04a388930b154ffac74c0ecbc0bc60b190cca840ca0970e44ba582728ccd55b3",
+  "accepted_pairs": [
+    {
+      "host": "kirocrew-demo",
+      "binPath": "/usr/local/bin/kirocrew-demo"
+    },
+    {
+      "host": "kirocrew-demo-admin",
+      "binPath": "/usr/local/bin/kirocrew-owner-token"
+    }
+  ],
+  "checks": [
+    {
+      "name": "python3 -m py_compile scripts/demo-cloud.py",
+      "passed": true
+    },
+    {
+      "name": "Restoring only the rollback guard reproduces previous reviewed helper hash exactly; AWS and other operations unchanged",
+      "passed": true
+    },
+    {
+      "name": "Original crew host/wrapper pair accepted and only intended rollback fields change in captured payload",
+      "passed": true
+    },
+    {
+      "name": "New admin owner-token host/wrapper pair accepted and unrelated config preserved in captured payload",
+      "passed": true
+    },
+    {
+      "name": "Accepted new pair dry-run does not call mutation hooks",
+      "passed": true
+    },
+    {
+      "name": "Absent demo endpoint preserves idempotent rollback behavior",
+      "passed": true
+    },
+    {
+      "name": "crossed old host/new wrapper rejected before side-effect hooks",
+      "passed": true
+    },
+    {
+      "name": "crossed new host/old wrapper rejected before side-effect hooks",
+      "passed": true
+    },
+    {
+      "name": "unrelated host rejected before side-effect hooks",
+      "passed": true
+    },
+    {
+      "name": "unknown wrapper rejected before side-effect hooks",
+      "passed": true
+    },
+    {
+      "name": "missing wrapper rejected before side-effect hooks",
+      "passed": true
+    },
+    {
+      "name": "missing host rejected before side-effect hooks",
+      "passed": true
+    },
+    {
+      "name": "string endpoint rejected before side-effect hooks",
+      "passed": true
+    },
+    {
+      "name": "list endpoint rejected before side-effect hooks",
+      "passed": true
+    },
+    {
+      "name": "malformed host value rejected before side-effect hooks",
+      "passed": true
+    }
+  ],
+  "validation_method": "Temporary fixture files and captured side-effect hooks; no real config write or subprocess/network invocation",
+  "external_calls": {
+    "aws": 0,
+    "ssh": 0,
+    "models": 0,
+    "local_config_mutations": 0
+  },
+  "notes": [
+    "Other endpoint fields are not rewritten; removing the recognized demo entry preserves all unrelated config entries and fields.",
+    "The tunnel continues to use its existing crew SSH alias; this change only recognizes the accepted desktop owner-token bootstrap configuration."
+  ]
+}

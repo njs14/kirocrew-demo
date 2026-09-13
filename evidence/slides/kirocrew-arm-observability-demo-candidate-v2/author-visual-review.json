@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "candidate_sha256": "99d10eee8723b3998c40f52e902602661138e7388f0d6d3db8e2d5ef13f63dd9",
+  "reviewed_at": "2026-09-13T14:58:06.846943+00:00",
+  "all_slides_inspected": true,
+  "comparison": [
+    {
+      "slide": 1,
+      "sha256": "19247a9b300da68e9d3db6febf3ddd74c1029aa0538a06987bf1e875dd1e2a60",
+      "same_inspected_bytes_as_v1": true
+    },
+    {
+      "slide": 2,
+      "sha256": "ef7ebb461d550e570b91f4c59934a945de2c5d95125e5af15e8ea617787dc821",
+      "same_inspected_bytes_as_v1": true
+    },
+    {
+      "slide": 3,
+      "sha256": "7d90a099ba409c881b5c4701d9bbe719872cd74d333b91a3fe01830ceacae934",
+      "same_inspected_bytes_as_v1": true
+    },
+    {
+      "slide": 4,
+      "sha256": "e926ef6341a0b34f0b76f58db66efc91bb802fb4c3569c9466438fbda0f0850c",
+      "same_inspected_bytes_as_v1": true
+    },
+    {
+      "slide": 5,
+      "sha256": "2f0f0fd0f2579a3826bd576611f6ff6c83d9a13a6ec06549bd23c2dead3498b6",
+      "same_inspected_bytes_as_v1": true
+    },
+    {
+      "slide": 6,
+      "sha256": "5950e313854b40f5a499f031e3aa8197ef9a9a74989bdfe773d2556182d6ed27",
+      "same_inspected_bytes_as_v1": true
+    },
+    {
+      "slide": 7,
+      "sha256": "2f1c6c8c9c0e4bf1d3cafb66a096f15ae76e607f629f6fd534f45a3d59cf6a7a",
+      "same_inspected_bytes_as_v1": true
+    },
+    {
+      "slide": 8,
+      "sha256": "4768469a4baaf8b5509134b2939b2bf0043de6b1d741fdd979da47b357b22fae",
+      "same_inspected_bytes_as_v1": true
+    },
+    {
+      "slide": 9,
+      "sha256": "de139348d8f49428a3706659ebf618b182601576f037bc8756a6bee630bcf737",
+      "same_inspected_bytes_as_v1": true
+    },
+    {
+      "slide": 10,
+      "sha256": "3cbe2c4e6bff1713cf9424b9f59c78c2e218dd8329a8e018b4b6441e1e7dbf4a",
+      "same_inspected_bytes_as_v1": true
+    },
+    {
+      "slide": 11,
+      "sha256": "0eaf143be799934a02d1983f73dcf6ca1d00be2f722b88c0c9940da3fab80a4c",
+      "same_inspected_bytes_as_v1": true
+    },
+    {
+      "slide": 12,
+      "sha256": "b7595bafc79b2bb09e8f4d7d02b182ed4273eed081476df6203789285ae0695d",
+      "same_inspected_bytes_as_v1": true
+    }
+  ],
+  "blocking_findings": [],
+  "scope": "Artifact-tool rendered exact candidate images; no native PowerPoint playback"
+}

@@ -1,0 +1,9 @@
+{
+  "runLocalGateway": false,
+  "remote_local_port": 5599,
+  "ssh_host_alias": "kirocrew-demo",
+  "remote_binary": "/usr/local/bin/kirocrew-demo",
+  "backup": "/Users/noahsutter/Library/Application Support/kirocrew-desktop-nightly/config.before-ec2-20260913T042141Z.json",
+  "preserved_other_keys": true,
+  "verification": "configuration saved; runtime verification pending"
+}

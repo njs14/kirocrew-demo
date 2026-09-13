@@ -1,0 +1,17 @@
+test_cue_outside_clip_rejected (__main__.PlayerTests.test_cue_outside_clip_rejected) ... ok
+test_derived_destination_symlink_rejected_before_any_write (__main__.PlayerTests.test_derived_destination_symlink_rejected_before_any_write) ... ok
+test_hash_tamper_rejected (__main__.PlayerTests.test_hash_tamper_rejected) ... ok
+test_http_scope_ranges_and_replacement (__main__.PlayerTests.test_http_scope_ranges_and_replacement) ... ok
+test_javascript_evidence_rejected (__main__.PlayerTests.test_javascript_evidence_rejected) ... ok
+test_original_slide_bytes_and_private_source (__main__.PlayerTests.test_original_slide_bytes_and_private_source) ... ok
+test_protected_destination_collision_rejected (__main__.PlayerTests.test_protected_destination_collision_rejected) ... ok
+test_raw_evidence_rejected (__main__.PlayerTests.test_raw_evidence_rejected) ... ok
+test_script_in_title_escaped (__main__.PlayerTests.test_script_in_title_escaped) ... ok
+test_symlink_media_rejected (__main__.PlayerTests.test_symlink_media_rejected) ... ok
+test_synthetic_rejected_for_final (__main__.PlayerTests.test_synthetic_rejected_for_final) ... ok
+test_traversal_media_rejected (__main__.PlayerTests.test_traversal_media_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.917s
+
+OK

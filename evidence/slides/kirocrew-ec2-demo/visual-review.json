@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "time": "2026-09-13T05:05:37.407506+00:00",
+  "artifact": {
+    "path": "output/kirocrew-ec2-demo.pptx",
+    "sha256": "eaf91801fa8f43e2192df5f229b9d7ef677b9d49a6f9552a629c43b5e6113a46",
+    "bytes": 159660
+  },
+  "visual_review": "passed",
+  "reviewer": "Codex deck_draft author",
+  "method": "Reimported final PPTX through artifact-tool, rendered and individually inspected all nine slides at 1280x720.",
+  "observations": [
+    "Single accepted endpoint screenshot retained at original display size and exact PNG bytes, with an external reference caption.",
+    "Concise slide 3 labels read at slide scale and place MCP within the same EC2 host but outside the Crew execution boundary.",
+    "All headings, copy, footers and three native tables fit without clipping or overlap.",
+    "The cover, baseline and walkthrough show native sign-in/session pending.",
+    "Slide 8 leads with the rehearsed direct probe and makes automatic Crew denial a later native acceptance condition."
+  ],
+  "source_assets": [
+    {
+      "path": "evidence/browser/endpoint-slide.png",
+      "bytes": 85943,
+      "sha256": "4c64d4035f1c61b8bdd8d59cf5fb8e1abb318a754a73cc0865f5e4b603ecedc1"
+    },
+    {
+      "path": "evidence/aws/archify-slide/kirocrew-ec2-slide-1152x480.png",
+      "bytes": 39769,
+      "sha256": "451fbde58bdae4822efb8ee8bfd2e89f0e8379a3b1f6b42df17aa3a5335b384d"
+    }
+  ],
+  "embedded_images": {
+    "ppt/media/image.png": "4c64d4035f1c61b8bdd8d59cf5fb8e1abb318a754a73cc0865f5e4b603ecedc1",
+    "ppt/media/image2.png": "451fbde58bdae4822efb8ee8bfd2e89f0e8379a3b1f6b42df17aa3a5335b384d"
+  },
+  "renders": [
+    {
+      "slide": 1,
+      "path": "output/kirocrew-ec2-demo-slides/slide-1.png",
+      "sha256": "c52d9c1b2830fb0c3cac94376ec4c973d8b4b3498d5518253620fda2c8ac94c5",
+      "bytes": 67024,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 2,
+      "path": "output/kirocrew-ec2-demo-slides/slide-2.png",
+      "sha256": "ef7ebb461d550e570b91f4c59934a945de2c5d95125e5af15e8ea617787dc821",
+      "bytes": 157050,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 3,
+      "path": "output/kirocrew-ec2-demo-slides/slide-3.png",
+      "sha256": "74723ae1e522ae6c1b1604d76b748e2fad823126186c80446ee4687533ab7732",
+      "bytes": 78344,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 4,
+      "path": "output/kirocrew-ec2-demo-slides/slide-4.png",
+      "sha256": "e926ef6341a0b34f0b76f58db66efc91bb802fb4c3569c9466438fbda0f0850c",
+      "bytes": 104288,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 5,
+      "path": "output/kirocrew-ec2-demo-slides/slide-5.png",
+      "sha256": "2f0f0fd0f2579a3826bd576611f6ff6c83d9a13a6ec06549bd23c2dead3498b6",
+      "bytes": 90774,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 6,
+      "path": "output/kirocrew-ec2-demo-slides/slide-6.png",
+      "sha256": "23aae8f8fc4535abfcb7e3438f261a9e98d867ed236f2d9f072cfb63ba723b55",
+      "bytes": 114595,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 7,
+      "path": "output/kirocrew-ec2-demo-slides/slide-7.png",
+      "sha256": "f1c270d6aca1dde1734acb4fb846b326a22fcf94a43c5c43d868df6a03547512",
+      "bytes": 100086,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 8,
+      "path": "output/kirocrew-ec2-demo-slides/slide-8.png",
+      "sha256": "0eaf143be799934a02d1983f73dcf6ca1d00be2f722b88c0c9940da3fab80a4c",
+      "bytes": 94869,
+      "pixels_match_preflight": true
+    },
+    {
+      "slide": 9,
+      "path": "output/kirocrew-ec2-demo-slides/slide-9.png",
+      "sha256": "6705650238714e7a7f55522a2666534312f2b7afa232388b827795c7d4e81759",
+      "bytes": 103870,
+      "pixels_match_preflight": true
+    }
+  ],
+  "native_powerpoint_playback_verified": false,
+  "final_council_review_performed": false
+}

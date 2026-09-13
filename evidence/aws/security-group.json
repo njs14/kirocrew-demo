@@ -1,0 +1,76 @@
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-08ac4789794115e39",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "HTTP for Ubuntu apt bootstrap mirrors; remains enabled until explicitly removed",
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 443,
+                    "ToPort": 443,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "HTTPS to package repositories and AWS APIs including SSM and S3",
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "kirocrew-demo"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "kirocrew-demo-20260913"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "DemoSecurityGroup"
+                }
+            ],
+            "VpcId": "vpc-07b9dae1b0889f755",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:770132776059:security-group/sg-08ac4789794115e39",
+            "OwnerId": "770132776059",
+            "GroupName": "kirocrew-demo-20260913-DemoSecurityGroup-q2LqWjmmFENz",
+            "Description": "KiroCrew demo: SSH from one current client IPv4 /32; no inbound gateway or MCP ports.",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "Description": "SSH forwarding and administration from the current client IP only",
+                            "CidrIp": "24.60.107.229/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}

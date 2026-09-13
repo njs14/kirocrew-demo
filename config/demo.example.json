@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "aws": {
+    "region": "us-east-1",
+    "account_id": "123456789012",
+    "stack_name": "kirocrew-demo",
+    "profile": null
+  },
+  "ssh": {
+    "config_path": "~/.ssh/config",
+    "known_hosts_path": "~/.ssh/kirocrew-demo-known_hosts",
+    "gateway_alias": "kirocrew-demo",
+    "admin_alias": "kirocrew-demo-admin",
+    "aliases": ["kirocrew-demo", "kirocrew-demo-admin"],
+    "host_key_alias": "replace-with-verified-instance-alias",
+    "local_port": 5599,
+    "remote_port": 5476,
+    "address_mode": "auto"
+  },
+  "tunnel": {"mode": "manual"},
+  "telemetry": {"interval_seconds": 60},
+  "probe": {"port": 5607, "evidence_dir": "../evidence/probes"}
+}

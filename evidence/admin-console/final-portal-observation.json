@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-09-13T15:21:48.500853+00:00",
+  "tool": "CUA in-app browser",
+  "url": "http://localhost:5599/apps/demo-observability",
+  "browser_visible": true,
+  "deliverable_tab_retained": true,
+  "same_product_owner_session_refreshed": true,
+  "gateway_connected": true,
+  "client": {
+    "sample_utc": "2026-09-13T15:20:26Z",
+    "freshness": "Current",
+    "desktop_running": true,
+    "ssh_tunnel_listener_reachable": true,
+    "local_gateway_off": true
+  },
+  "server": {
+    "sample_utc": "2026-09-13T15:21:16Z",
+    "freshness": "Current",
+    "gateway_service_active": true,
+    "mcp_service_active": true,
+    "gateway_loopback_reachable": true,
+    "mcp_loopback_reachable": true
+  },
+  "collection_event_count": 4,
+  "expired_cli_signin_tab_closed": true,
+  "owner_token_recorded": false,
+  "scope": "Observed current live portal after final artifacts were produced. Original thirteen screenshots retain their capture-time scope."
+}

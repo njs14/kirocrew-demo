@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "evaluatedAt": "2026-09-13T18:35:09.843417+00:00",
+  "skill": "no-ai-slop:no-ai-slop 1.0.6",
+  "mode": "minimum effective edit and self-evaluation",
+  "scope": [
+    "New recorded scene descriptions, scopes, cue labels and details",
+    "DEMO-RECORDING-GUIDE.md",
+    "Operator-screen explanation before capture"
+  ],
+  "files": {
+    "recordings/20260913/manifest-final.json": "25d8c15f977e2c443c27c11e57ad351c80d9f446763651b8a4afd5bac8b80b79",
+    "DEMO-RECORDING-GUIDE.md": "66939ee41103e9be352ea3bbd2e3838750c155be3c8846b4429ada11b544849d",
+    "output/kirocrew-recorded-demos.html": "754079b66dcc572f05af4345ab1f2e669e1a6458dad222abeeeaa3f49d6c2dec",
+    "output/kirocrew-recorded-demos-notes.md": "ddb903a42f50df2759dfe968fb014295a6bd16f5f468e9daac4d14bff0a7d006"
+  },
+  "preserved": [
+    "Accepted first 14 slide sections and source notes",
+    "Recorded UI and actual command receipt text",
+    "Native authentication gate and direct/synthetic evidence boundaries"
+  ],
+  "edits": [
+    "Changed new caption noun harness to test runner",
+    "Replaced contrastive operator-screen wording with Standalone operator screen",
+    "Removed redundant reassurance about command outcomes"
+  ],
+  "selfEvaluation": {
+    "editingPrinciples": "pass",
+    "wordsToCut": "pass; historical and quoted technical text preserved",
+    "patternsToCut": "pass",
+    "finalRead": "pass",
+    "fullEditedDraftDelivered": "output/kirocrew-recorded-demos.html and DEMO-RECORDING-GUIDE.md",
+    "whatChanged": "DEMO-RECORDING-GUIDE.md final section"
+  },
+  "newClaimsAddedByEditing": false,
+  "limitations": [
+    "This is an editorial check, not a runtime enforcement verdict",
+    "Previous model council verdicts remain scoped to their frozen candidates"
+  ]
+}

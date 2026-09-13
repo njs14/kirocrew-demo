@@ -1,0 +1,32 @@
+{
+  "source_hashes": {
+    "HANDOFF.md": "5cb2ef0e7933e2fad20cbc36c0120bd3b83e3475d2d8b0cb2a3cc4ab6a805f01",
+    "evidence/presentation/kirocrew-system-design/build-manifest.json": "b41ce50c131eeeb40afed80d58cac38590d4cc6858628e8431d1e19c1eb4f2a8",
+    "evidence/presentation/kirocrew-system-design/delivery-receipt.json": "34fc8fcb95b302d7207502ff67252363c7959c129340cf9281bf37dbc0d37930",
+    "evidence/presentation/kirocrew-system-design/static-validation.json": "040545b9d1faf07e4a5e0c9ea43120b56f6e986c2d876ac4131ff7c2fc84aee9",
+    "evidence/presentation/kirocrew-system-design/interactions.json": "69990fcd09abd965000e9489cab1a61afaa01b9f8c4b3d207c467013ff736e4d",
+    "output/kirocrew-system-design-notes.md": "b7fc925872ed5be0c285537f7415781bb4dd96b4cc294c205d26b8e247602269",
+    "output/kirocrew-system-design.html": "bfc2516128526ab049a7c4c0b36994aae82d87c44790785ee9125da5d63a5712"
+  },
+  "secret_marker_scan": {
+    "passed": true,
+    "ordinary_html_notes_and_evidence_summary": true,
+    "decoded_embedded_text_members": 66,
+    "data_mime_counts": {
+      "application/vnd.openxmlformats-officedocument.presentationml.presentation": 1,
+      "image/png": 4,
+      "image/jpeg": 8,
+      "text/markdown": 1
+    },
+    "incidental_raw_base64_matches": 6,
+    "html_bytes_unchanged": true,
+    "scope": "Obvious AWS access-key IDs, private-key headers and configured AWS secret/session token values; not a universal secret-detection guarantee."
+  },
+  "cli_versions": {
+    "grok": "1.0.25 (f7e67d6988e2) stable",
+    "claude": "2.1.267"
+  },
+  "fresh_live_state_validation": false,
+  "review_authorized_by": "Explicit user request relayed by root",
+  "source_modification_allowed": false
+}

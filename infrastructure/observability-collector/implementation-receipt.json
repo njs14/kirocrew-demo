@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-09-13T14:34:11.309173+00:00",
+  "scope": "offline tests and live read-only Mac probe; no SSH upload or service activation",
+  "python": "/usr/bin/python3 3.9.6",
+  "tests": {
+    "command": [
+      "/usr/bin/python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "infrastructure/observability-collector",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "count": 24,
+    "passed": true
+  },
+  "client_dry_run": {
+    "applied": false,
+    "sample": {
+      "schema_version": 1,
+      "source": "client",
+      "collector": "kirocrew-demo-custom",
+      "collected_at": "2026-09-13T14:30:17Z",
+      "status": "ok",
+      "metrics": {
+        "process_count": 5,
+        "cpu_percent": 10.0,
+        "rss_mib": 853.61
+      },
+      "checks": {
+        "client_running": true,
+        "remote_gateway_reachable": true,
+        "local_gateway_off": true
+      },
+      "errors": []
+    }
+  },
+  "server_runtime_verified": false,
+  "timers_activated": false,
+  "files": {
+    "scripts/demo-telemetry.py": "a2c1ac469d5578d481b9a84032095e19ebba43b4bb0417aebbf24319529115cd",
+    "infrastructure/observability-collector/collector.py": "744f58aac5c8c773dd64a1091bd5f8bbeed2357402df6f6e7ca3d9a14e9194ea",
+    "infrastructure/observability-collector/install.sh": "e0f75b1a7c52b75d76fcd622d142215c82dc0b1ef27fce07884ff89658d819ae",
+    "infrastructure/observability-collector/kirocrew-demo-observability.service": "72fbb8ee0c76f8c82a26aa9528c96b370a1154cb893e4f0f4fbc38c7bae35c51",
+    "infrastructure/observability-collector/kirocrew-demo-observability.timer": "c23fe500d0af81997c9a9b6a6b4b106b9aa0e50fa2ffd64f08179cc98e36e058",
+    "infrastructure/observability-collector/test_collector.py": "c33d275d07cf1ea0172ceff375afdaea1d72919dc59f3d6f2c2485fd8be8e5f4",
+    "infrastructure/observability-collector/README.md": "78d2ad6fd65efcfe067efa3fba4f8060937b03a7775f5eeb9473ff2d9bffeef0"
+  },
+  "lifecycle_revision": "Stop verifies the live launchd identity even without its plist and requires confirmed service absence before reporting success."
+}

@@ -1,0 +1,89 @@
+Dedicated Crew config, agent and protected MCP service token prepared
+Collecting annotated-types==0.8.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 3))
+  Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Collecting anyio==4.15.1 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 7))
+  Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB 3.8 MB/s eta 0:00:00
+Collecting attrs==26.1.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 15))
+  Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Collecting boto3==1.43.93 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 21))
+  Downloading boto3-1.43.93-py3-none-any.whl (140 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.0/140.0 kB 9.8 MB/s eta 0:00:00
+Collecting botocore==1.43.93 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 25))
+  Downloading botocore-1.43.93-py3-none-any.whl (15.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.8/15.8 MB 63.7 MB/s eta 0:00:00
+Collecting certifi==2026.7.22 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 31))
+  Using cached certifi-2026.7.22-py3-none-any.whl (136 kB)
+Collecting cffi==2.1.1 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 37))
+  Using cached cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+Collecting click==8.5.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 139))
+  Downloading click-8.5.0-py3-none-any.whl (125 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 14.9 MB/s eta 0:00:00
+Collecting cryptography==50.0.1 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 143))
+  Downloading cryptography-50.0.1-cp311-abi3-manylinux_2_34_x86_64.whl (4.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 69.5 MB/s eta 0:00:00
+Collecting h11==0.16.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 191))
+  Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Collecting httpcore==1.0.9 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 197))
+  Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 8.2 MB/s eta 0:00:00
+Collecting httpx==0.28.1 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 201))
+  Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 9.9 MB/s eta 0:00:00
+Collecting httpx-sse==0.4.3 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 205))
+  Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+Collecting idna==3.19 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 209))
+  Using cached idna-3.19-py3-none-any.whl (68 kB)
+Collecting jmespath==1.1.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 215))
+  Downloading jmespath-1.1.0-py3-none-any.whl (20 kB)
+Collecting jsonschema==4.26.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 221))
+  Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Collecting jsonschema-specifications==2025.9.1 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 225))
+  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Collecting mcp==1.30.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 229))
+  Downloading mcp-1.30.0-py3-none-any.whl (234 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 234.6/234.6 kB 25.3 MB/s eta 0:00:00
+Collecting pycparser==3.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 233))
+  Using cached pycparser-3.0-py3-none-any.whl (48 kB)
+Collecting pydantic==2.13.5 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 237))
+  Downloading pydantic-2.13.5-py3-none-any.whl (472 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.6/472.6 kB 34.7 MB/s eta 0:00:00
+Collecting pydantic-core==2.46.5 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 243))
+  Downloading pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 72.0 MB/s eta 0:00:00
+Collecting pydantic-settings==2.15.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 365))
+  Downloading pydantic_settings-2.15.0-py3-none-any.whl (69 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.4/69.4 kB 9.0 MB/s eta 0:00:00
+Collecting pyjwt==2.14.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 369))
+  Downloading pyjwt-2.14.0-py3-none-any.whl (32 kB)
+Collecting python-dateutil==2.9.0.post0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 373))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Collecting python-dotenv==1.2.3 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 377))
+  Downloading python_dotenv-1.2.3-py3-none-any.whl (22 kB)
+Collecting python-multipart==0.0.32 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 381))
+  Downloading python_multipart-0.0.32-py3-none-any.whl (30 kB)
+Collecting referencing==0.37.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 385))
+  Using cached referencing-0.37.0-py3-none-any.whl (26 kB)
+Collecting rpds-py==2026.6.3 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 391))
+  Using cached rpds_py-2026.6.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (366 kB)
+Collecting s3transfer==0.19.2 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 511))
+  Downloading s3transfer-0.19.2-py3-none-any.whl (90 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.2/90.2 kB 12.0 MB/s eta 0:00:00
+Collecting six==1.17.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 515))
+  Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Collecting sse-starlette==3.4.11 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 519))
+  Downloading sse_starlette-3.4.11-py3-none-any.whl (17 kB)
+Collecting starlette==1.6.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 523))
+  Downloading starlette-1.6.0-py3-none-any.whl (75 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.0/76.0 kB 11.4 MB/s eta 0:00:00
+Collecting typing-extensions==4.16.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 529))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Collecting typing-inspection==0.4.4 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 540))
+  Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Collecting urllib3==2.7.0 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 547))
+  Using cached urllib3-2.7.0-py3-none-any.whl (131 kB)
+Collecting uvicorn==0.52.4 (from -r /opt/kirocrew-demo/mcp-enforcement/requirements.txt (line 551))
+  Downloading uvicorn-0.52.4-py3-none-any.whl (79 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.9/79.9 kB 8.9 MB/s eta 0:00:00
+Installing collected packages: urllib3, typing-extensions, six, rpds-py, python-multipart, python-dotenv, pyjwt, pycparser, jmespath, idna, httpx-sse, h11, click, certifi, attrs, annotated-types, uvicorn, typing-inspection, referencing, python-dateutil, pydantic-core, httpcore, cffi, anyio, starlette, pydantic, jsonschema-specifications, httpx, cryptography, botocore, sse-starlette, s3transfer, pydantic-settings, jsonschema, mcp, boto3
+Successfully installed annotated-types-0.8.0 anyio-4.15.1 attrs-26.1.0 boto3-1.43.93 botocore-1.43.93 certifi-2026.7.22 cffi-2.1.1 click-8.5.0 cryptography-50.0.1 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 idna-3.19 jmespath-1.1.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 mcp-1.30.0 pycparser-3.0 pydantic-2.13.5 pydantic-core-2.46.5 pydantic-settings-2.15.0 pyjwt-2.14.0 python-dateutil-2.9.0.post0 python-dotenv-1.2.3 python-multipart-0.0.32 referencing-0.37.0 rpds-py-2026.6.3 s3transfer-0.19.2 six-1.17.0 sse-starlette-3.4.11 starlette-1.6.0 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.7.0 uvicorn-0.52.4

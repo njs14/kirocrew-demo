@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "slides": 12,
+  "assets": [
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight.pptx",
+      "bytes": 130062,
+      "sha256": "8c02e4faf8cc2038d3b972be2dc65423bedb1bdbf8469c1aba30d483d691091f"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/slides/kirocrew-arm-observability-demo-preflight/review-text.md",
+      "bytes": 13128,
+      "sha256": "ce73c177916263d1f60e75ec4fc0869c82a4f1908c4297587101e1afbf467b02"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/slides/kirocrew-arm-observability-demo-preflight/review-text.json",
+      "bytes": 14301,
+      "sha256": "c3d32b4c334ccab0ece93b8b1c539399e8c2b5377f71a1aed03c9ff5524174f2"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-1.png",
+      "bytes": 68645,
+      "sha256": "19247a9b300da68e9d3db6febf3ddd74c1029aa0538a06987bf1e875dd1e2a60"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-2.png",
+      "bytes": 157050,
+      "sha256": "ef7ebb461d550e570b91f4c59934a945de2c5d95125e5af15e8ea617787dc821"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-3.png",
+      "bytes": 41470,
+      "sha256": "40233362c9395f98d8a00f02c3d7145346a97fb4c7ded2df0f867226f482cdaa"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-4.png",
+      "bytes": 104288,
+      "sha256": "e926ef6341a0b34f0b76f58db66efc91bb802fb4c3569c9466438fbda0f0850c"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-5.png",
+      "bytes": 90774,
+      "sha256": "2f0f0fd0f2579a3826bd576611f6ff6c83d9a13a6ec06549bd23c2dead3498b6"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-6.png",
+      "bytes": 116079,
+      "sha256": "5950e313854b40f5a499f031e3aa8197ef9a9a74989bdfe773d2556182d6ed27"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-7.png",
+      "bytes": 99908,
+      "sha256": "19e6a63f8d4bb0d2e7259f2dcdb0bc7acb924df17d5357d9aed0028ae985b8dc"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-8.png",
+      "bytes": 40352,
+      "sha256": "fe92fae720172c3f5101118be9b5a0714def4a0f97d96574647d5999755d9c8b"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-9.png",
+      "bytes": 44341,
+      "sha256": "0bbbca58794376f3b891ebd31f9b4b427620594cb7ca5073e73bef84329a3484"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-10.png",
+      "bytes": 74220,
+      "sha256": "b196a693eb6b374ae7a9a1ade464e7f4f3b76935a6072c95b1b7fa9b8d669bcd"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-11.png",
+      "bytes": 94869,
+      "sha256": "0eaf143be799934a02d1983f73dcf6ca1d00be2f722b88c0c9940da3fab80a4c"
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-preflight-slides/slide-12.png",
+      "bytes": 110703,
+      "sha256": "b7595bafc79b2bb09e8f4d7d02b182ed4273eed081476df6203789285ae0695d"
+    }
+  ]
+}

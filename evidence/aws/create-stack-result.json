@@ -1,0 +1,30 @@
+{
+  "_meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"status\": \"success\", \"stdout\": \"\", \"stderr\": null, \"return_value\": {\"created_stack\": {\"StackId\": \"arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b\", \"OperationId\": \"72f0c390-af28-11f1-b3b3-0affd5886c7b\"}}, \"warning\": null, \"api_calls\": [{\"service\": \"cloudformation\", \"operation\": \"CreateStack\", \"status\": \"success\"}]}",
+      "annotations": null,
+      "_meta": null
+    }
+  ],
+  "structuredContent": {
+    "status": "success",
+    "stdout": "",
+    "return_value": {
+      "created_stack": {
+        "StackId": "arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b",
+        "OperationId": "72f0c390-af28-11f1-b3b3-0affd5886c7b"
+      }
+    },
+    "api_calls": [
+      {
+        "service": "cloudformation",
+        "operation": "CreateStack",
+        "status": "success"
+      }
+    ]
+  },
+  "isError": false,
+  "resultType": "complete"
+}

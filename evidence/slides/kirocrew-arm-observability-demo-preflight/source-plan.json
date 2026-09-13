@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "previous_deck": {
+    "path": "output/kirocrew-ec2-demo.pptx",
+    "sha256": "eaf91801fa8f43e2192df5f229b9d7ef677b9d49a6f9552a629c43b5e6113a46"
+  },
+  "previous_copy": {
+    "path": "output/kirocrew-ec2-demo-copy.md",
+    "sha256": "1590ffd176587e26f1231b536d77a39b9dce8db49febfcb8e199a65337de3b58"
+  },
+  "new_source": ".build/slides/build-arm-observability-deck.mjs",
+  "expected_slides": 12,
+  "telemetry_runtime_verified": false,
+  "prices": {
+    "compute_per_hour": 0.1344,
+    "public_ipv4_per_hour": 0.005,
+    "running_per_hour": 0.1394,
+    "arm_gp3_per_month": 3.2,
+    "retained_rollback_gp3_per_month": 1.92,
+    "base_at_730_running_hours_with_rollback": 106.882
+  },
+  "status": "draft; awaiting live telemetry and screenshots"
+}

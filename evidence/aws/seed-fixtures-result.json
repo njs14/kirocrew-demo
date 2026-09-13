@@ -1,0 +1,80 @@
+{
+  "_meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"status\": \"success\", \"stdout\": \"\", \"stderr\": null, \"return_value\": {\"bucket\": \"kirocrew-demo-20260913-demobucket-pdjzgyu25xhb\", \"objects\": [{\"key\": \"allowed/sentinel.txt\", \"put\": {\"ETag\": \"\\\"5aa8cf57b10c55598d8011f0c7a5280b\\\"\", \"ChecksumCRC32\": \"0ZXy6g==\", \"ChecksumType\": \"FULL_OBJECT\", \"ServerSideEncryption\": \"AES256\"}, \"head\": {\"AcceptRanges\": \"bytes\", \"LastModified\": \"2026-09-13T04:12:21+00:00\", \"ContentLength\": 55, \"ETag\": \"\\\"5aa8cf57b10c55598d8011f0c7a5280b\\\"\", \"ContentType\": \"text/plain\", \"ServerSideEncryption\": \"AES256\", \"Metadata\": {}}}, {\"key\": \"denied/sentinel.txt\", \"put\": {\"ETag\": \"\\\"5aa051b32d39736495f4be8feda2d4b6\\\"\", \"ChecksumCRC32\": \"V5ldlA==\", \"ChecksumType\": \"FULL_OBJECT\", \"ServerSideEncryption\": \"AES256\"}, \"head\": {\"AcceptRanges\": \"bytes\", \"LastModified\": \"2026-09-13T04:12:21+00:00\", \"ContentLength\": 71, \"ETag\": \"\\\"5aa051b32d39736495f4be8feda2d4b6\\\"\", \"ContentType\": \"text/plain\", \"ServerSideEncryption\": \"AES256\", \"Metadata\": {}}}]}, \"warning\": null, \"api_calls\": [{\"service\": \"s3\", \"operation\": \"PutObject\", \"status\": \"success\"}, {\"service\": \"s3\", \"operation\": \"HeadObject\", \"status\": \"success\"}, {\"service\": \"s3\", \"operation\": \"PutObject\", \"status\": \"success\"}, {\"service\": \"s3\", \"operation\": \"HeadObject\", \"status\": \"success\"}]}",
+      "annotations": null,
+      "_meta": null
+    }
+  ],
+  "structuredContent": {
+    "status": "success",
+    "stdout": "",
+    "return_value": {
+      "bucket": "kirocrew-demo-20260913-demobucket-pdjzgyu25xhb",
+      "objects": [
+        {
+          "key": "allowed/sentinel.txt",
+          "put": {
+            "ETag": "\"5aa8cf57b10c55598d8011f0c7a5280b\"",
+            "ChecksumCRC32": "0ZXy6g==",
+            "ChecksumType": "FULL_OBJECT",
+            "ServerSideEncryption": "AES256"
+          },
+          "head": {
+            "AcceptRanges": "bytes",
+            "LastModified": "2026-09-13T04:12:21+00:00",
+            "ContentLength": 55,
+            "ETag": "\"5aa8cf57b10c55598d8011f0c7a5280b\"",
+            "ContentType": "text/plain",
+            "ServerSideEncryption": "AES256",
+            "Metadata": {}
+          }
+        },
+        {
+          "key": "denied/sentinel.txt",
+          "put": {
+            "ETag": "\"5aa051b32d39736495f4be8feda2d4b6\"",
+            "ChecksumCRC32": "V5ldlA==",
+            "ChecksumType": "FULL_OBJECT",
+            "ServerSideEncryption": "AES256"
+          },
+          "head": {
+            "AcceptRanges": "bytes",
+            "LastModified": "2026-09-13T04:12:21+00:00",
+            "ContentLength": 71,
+            "ETag": "\"5aa051b32d39736495f4be8feda2d4b6\"",
+            "ContentType": "text/plain",
+            "ServerSideEncryption": "AES256",
+            "Metadata": {}
+          }
+        }
+      ]
+    },
+    "api_calls": [
+      {
+        "service": "s3",
+        "operation": "PutObject",
+        "status": "success"
+      },
+      {
+        "service": "s3",
+        "operation": "HeadObject",
+        "status": "success"
+      },
+      {
+        "service": "s3",
+        "operation": "PutObject",
+        "status": "success"
+      },
+      {
+        "service": "s3",
+        "operation": "HeadObject",
+        "status": "success"
+      }
+    ]
+  },
+  "isError": false,
+  "resultType": "complete"
+}

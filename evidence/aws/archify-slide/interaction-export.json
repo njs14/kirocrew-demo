@@ -1,0 +1,27 @@
+{
+  "time": "2026-09-13T04:53:47.278Z",
+  "artifact": {
+    "path": "kirocrew-ec2-slide.html",
+    "bytes": 797380,
+    "sha256": "489a1b3f5eaa86299106c33d818ca328d5778d291cd596499ec6920849f969e2"
+  },
+  "browser": "152.0.7977.84",
+  "interactions": [
+    "Gateway search, result selection, runtime focus, Escape dismissal",
+    "Presentation mode opened and Escape restored reader"
+  ],
+  "exports": [
+    {
+      "path": "evidence/aws/archify-slide/kirocrew-ec2-slide.svg",
+      "bytes": 142235,
+      "sha256": "1ab1a45e71571fefd29273fd7700afed0a820b045b766ed888306c865278bbdd"
+    },
+    {
+      "path": "evidence/aws/archify-slide/kirocrew-ec2-slide.png",
+      "bytes": 167059,
+      "sha256": "733a32bae83600704c3d52cc3339187407a8e6da9a57dda7ced9228b56b104db"
+    }
+  ],
+  "errors": [],
+  "status": "pass"
+}

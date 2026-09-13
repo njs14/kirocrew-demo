@@ -1,0 +1,62 @@
+[
+  {
+    "slide": 1,
+    "title": "KiroCrew on ARM",
+    "notes": "00:00–00:20. The Mac runs the desktop client. A t4g.xlarge EC2 host runs the Gateway, Kiro CLI installation, workspace and separate MCP service. The local Gateway is off. Direct MCP and AWS checks passed on ARM. Native Kiro CLI authentication and a verified backend session remain pending. The observability walkthrough distinguishes native Gateway metrics from custom Mac and EC2 samples. Sources: evidence/aws/arm-20260913/final-cloud-verification.json; evidence/aws/arm-20260913/mcp-live-receipt.json. Telemetry activation and screenshots require their own live receipts."
+  },
+  {
+    "slide": 2,
+    "title": "One execution host",
+    "notes": "00:20–00:55. The enclosure maps controls around the execution host. In remote mode, the Gateway, selected backend and workspace run on the same host. The reference includes enterprise controls and Crew capabilities beyond this demo. The original desktop receipt verifies the pre-cutover connection; current ARM connection evidence is pending. The ARM probe verifies direct MCP grants and S3 IAM outcomes. Native backend enforcement and sandbox behavior remain pending. The reference cites the September 11 baseline. Sources: kirocrew-security-layers.html; evidence/nightly/baseline-verification.json; evidence/aws/client-runtime-verification.json; evidence/aws/arm-20260913/mcp-live-receipt.json."
+  },
+  {
+    "slide": 3,
+    "title": "ARM execution in us-east-1",
+    "notes": "00:55–01:35. CloudFormation now directs the demo to a t4g.xlarge: four vCPUs, 16 GiB RAM and 40 GiB encrypted gp3 storage. The security group admits TCP 22 only from the client IPv4 /32. SSH forwards laptop port 5599 to EC2 loopback port 5476. The Gateway, Kiro CLI installation and workspace share the Crew execution boundary. The MCP service uses a separate UID and listens on loopback port 8001. IMDSv2 is required with a hop limit of one. The original x86 instance is stopped and remains available for rollback. Its 24 GiB disk remains billable. Cloud verification passed at 2026-09-13T14:22:25Z. The resource check does not establish native backend authentication or telemetry health. Sources: infrastructure/ec2-demo.json; evidence/aws/arm-20260913/final-cloud-verification.json; evidence/aws/arm-20260913/host-checks.txt."
+  },
+  {
+    "slide": 4,
+    "title": "Host identities and AWS credentials",
+    "notes": "01:35–02:10. Root owns the executable and service files. The crew user runs the Gateway, backend and workspace. An owner-based firewall rule blocks metadata requests from the crew UID, and the Gateway requires that guard service. The mcp-demo UID can obtain the instance role through IMDSv2. That role permits reads under two demonstration S3 prefixes, explicitly denies GetObject under denied/, and includes the SSM core managed policy. The MCP service exposes four fixed tools. Root remains a trusted administrator. The operator’s IAM user keys remain local. Crew owns and can edit its configuration. Sources: infrastructure/bootstrap.sh; infrastructure/kirocrew-demo.service; infrastructure/kirocrew-mcp-demo.service; infrastructure/mcp-enforcement/server.py; infrastructure/ec2-demo.json."
+  },
+  {
+    "slide": 5,
+    "title": "Four calls, three denial boundaries",
+    "notes": "02:10–02:45. The direct probe verified read_allowed, mcp_denied and iam_denied. Native Crew denial is pending. read_allowed returns the object length and digest. The MCP service grants crew_denied so the Crew hook can block it before dispatch. Its configured rule names @aws-enforcement/crew_denied. mcp_denied appears in discovery, but the service rejects the call before loading AWS credentials or invoking the SDK. iam_denied passes the MCP grant and attempts GetObject on an existing object under denied/, where IAM applies the explicit deny. After native sign-in, inspect each request and approve the three routed calls once. crew_denied must stop automatically before an approval card or MCP dispatch. An operator rejection cannot count as that proof. Sources: infrastructure/configure-demo.py; infrastructure/mcp-enforcement/server.py; evidence/aws/iam-demo-policy.json; evidence/aws/fixture-hashes.json; evidence/aws/walkthrough-direct-probe.json."
+  },
+  {
+    "slide": 6,
+    "title": "ARM: MCP and AWS results",
+    "notes": "02:45–03:20. The direct_mcp_service_probe passed on the ARM host at 2026-09-13T14:07:16Z and records native_crew_backend_verified=false. An unauthenticated request returned 401, and discovery returned four tools. read_allowed returned 55 bytes and the expected SHA256, with AWS request ID 5NMYCQ5YF956H52H. mcp_denied returned tool_grant_denied at the MCP boundary. iam_denied returned S3 AccessDenied, HTTP 403, and request ID 5NMQFXT3FYT6A0A9. This probe directly exercises MCP and AWS; it does not establish native Crew execution or the configured Crew hook denial. Sources: evidence/aws/arm-20260913/mcp-live-receipt.json; infrastructure/mcp-enforcement/server.py."
+  },
+  {
+    "slide": 7,
+    "title": "Nightly on ARM, with room to run",
+    "notes": "03:20–03:50. The Crew source is the installed 0.7.0-nightly.20260912t060850 package, repacked for Linux ARM64 with pinned dependencies. It is a custom repack, not an official Linux nightly artifact. The ARM dependency lock contains 48 version- and hash-locked packages. The x86-only pysqlite3-binary dependency is omitted under its original platform marker, and the installer checks standard-library SQLite FTS5 support. All 24 selected control modules on the ARM host match the installed nightly source and are root-owned without group or world write access. Kiro CLI is a separate official 2.21.4 ARM artifact. Native authentication and backend performance remain pending. An initial host check reported 14.57 GiB available and ample memory posture. This is an idle-host observation, not a full-session benchmark. Local-model downloads remain off. Sources: evidence/aws/arm-20260913/runtime-preparation.json; infrastructure/crew-requirements-linux-arm64.lock; evidence/aws/arm-20260913/source-verification.json; evidence/aws/arm-20260913/host-checks.txt; evidence/aws/arm-20260913/kiro-cli-manifest.json; evidence/aws/arm-20260913/install-services.log; infrastructure/kirocrew-demo.service."
+  },
+  {
+    "slide": 8,
+    "title": "Native Gateway telemetry",
+    "notes": "03:50–04:25. Open the admin portal’s Developer → Telemetry view. Native instrumentation reports Gateway metrics. Local collection, anonymous usage beacons and desktop diagnostics are separate systems. The native Telemetry view does not ingest the custom client and server samples. Live collection settings and displayed metrics require a runtime receipt; model-related charts may remain empty while native authentication is pending."
+  },
+  {
+    "slide": 9,
+    "title": "Client and server in Demo Observability",
+    "notes": "04:25–05:00. Open the Demo Observability App Kit page. The custom app separates Mac client process samples from EC2 host and service samples. Collection events report collector and transfer state. These are custom operational measurements, not native frontend RUM, distributed traces or centralized raw logs. Live sample values and screenshots require their own receipt."
+  },
+  {
+    "slide": 10,
+    "title": "Read the source and time first",
+    "notes": "05:00–05:30. In the admin walkthrough, first confirm which source produced each metric and when it was sampled. Then inspect the Mac client’s local Gateway-off and SSH tunnel listener-reachable checks. Compare the EC2 Gateway and MCP service checks. The custom app treats old, missing and future-dated samples as distinct states. A reachable local SSH tunnel listener is a local transport observation; it does not establish successful model execution. Exact intervals, retention and runtime results require the collector receipt."
+  },
+  {
+    "slide": 11,
+    "title": "Desktop-to-EC2 walkthrough",
+    "notes": "05:30–07:00. Show the native desktop connected on port 5599 and the remote workspace at /srv/kirocrew-demo/workspace. Confirm that local port 5476 has no listener. Run the direct MCP command from WALKTHROUGH.md as mcp-demo on EC2. The bearer token stays on the instance. Show the 55-byte digest, tool_grant_denied and S3 AccessDenied 403 with a new AWS request ID. The receipt must report direct_mcp_service_probe, passed=true and native_crew_backend_verified=false. This direct path is available while Kiro CLI authentication remains pending. After successful authentication through scripts/ec2-login.py, use native-demo.sh to test four native turns in a dedicated session. Inspect the real request card and approve read_allowed, mcp_denied and iam_denied once each. crew_denied must stop automatically before any approval card or MCP arrival. An approval card on that turn fails the test, even if the runner rejects it. The runner correlates callback IDs and MCP/AWS traces. The Crew-denial SEL record lacks a direct trace ID, so the correlation uses the dedicated session and isolated turn interval. Sources: WALKTHROUGH.md; scripts/native-backend-demo.README.md; scripts/EC2-LOGIN.md; evidence/aws/arm-20260913/mcp-live-receipt.json."
+  },
+  {
+    "slide": 12,
+    "title": "Running cost and rollback",
+    "notes": "07:00–07:30. The AWS Pricing API lists On Demand Linux t4g.xlarge at $0.1344 per hour in us-east-1. Public IPv4 adds $0.005 per hour, for $0.1394 per running hour, rounded to $0.139. At $0.08 per GB-month, the active 40 GiB gp3 disk costs $3.20 per month. The stopped x86 rollback host retains a 24 GiB gp3 disk at $1.92 per month. Together the disks cost $5.12 per month while rollback is retained. At 730 running hours, compute, IPv4 and both disks total $106.882, or about $107 per month. S3, transfer, model usage and taxes add charges. The instances use standard credits, and there is no NAT gateway or load balancer. The older x86 instance is stopped. Stop the active ARM instance after the demo with scripts/demo-cloud.py; inspect its dry-run plan first. Stopping releases the ephemeral IPv4 address and stops compute billing; EBS remains billable. Refresh the SSH address after restart. Keep the stopped x86 rollback host until it is no longer needed. Sources: evidence/aws/arm-20260913/price.json; evidence/aws/gp3-pricing.json; https://aws.amazon.com/vpc/pricing/ ; evidence/aws/arm-20260913/final-cloud-verification.json; scripts/demo-cloud.py."
+  }
+]

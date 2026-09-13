@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "KiroCrew \u00b7 Proposed AWS remote Gateway",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1320,
+      880
+    ]
+  },
+  "components": [
+    {
+      "id": "workstation",
+      "type": "frontend",
+      "label": "Developer workstation",
+      "sublabel": "AWS CLI + Session plugin",
+      "pos": [
+        30,
+        120
+      ],
+      "size": [
+        180,
+        96
+      ],
+      "tag": "Federated human IAM role"
+    },
+    {
+      "id": "session-manager",
+      "type": "cloud",
+      "label": "AWS Systems Manager",
+      "sublabel": "Session Manager \u00b7 IAM access",
+      "pos": [
+        320,
+        120
+      ],
+      "size": [
+        205,
+        96
+      ],
+      "tag": "Port-forward session"
+    },
+    {
+      "id": "policy-bucket",
+      "type": "database",
+      "label": "Amazon S3",
+      "sublabel": "Versioned policy artifacts",
+      "pos": [
+        630,
+        120
+      ],
+      "size": [
+        220,
+        96
+      ],
+      "tag": "Private bucket \u00b7 read-only host role"
+    },
+    {
+      "id": "app-logs",
+      "type": "cloud",
+      "label": "Amazon CloudWatch Logs",
+      "sublabel": "Selected Crew / OS / MCP logs",
+      "pos": [
+        980,
+        120
+      ],
+      "size": [
+        220,
+        96
+      ],
+      "tag": "Configured collectors + retention"
+    },
+    {
+      "id": "ssm-endpoints",
+      "type": "cloud",
+      "label": "AWS PrivateLink",
+      "sublabel": "ssm + ssmmessages endpoints",
+      "pos": [
+        320,
+        400
+      ],
+      "size": [
+        205,
+        96
+      ],
+      "tag": "Instance-side private access"
+    },
+    {
+      "id": "execution-host",
+      "type": "backend",
+      "label": "Amazon EC2 \u00b7 Crew",
+      "sublabel": "Gateway + agent backend",
+      "pos": [
+        630,
+        400
+      ],
+      "size": [
+        220,
+        96
+      ],
+      "tag": "Loopback listener \u00b7 non-root service"
+    },
+    {
+      "id": "mcp-tier",
+      "type": "security",
+      "label": "Amazon ECS / Fargate",
+      "sublabel": "LiteLLM + MCP tool services",
+      "pos": [
+        980,
+        400
+      ],
+      "size": [
+        220,
+        96
+      ],
+      "tag": "Optional tier \u00b7 separate task roles"
+    },
+    {
+      "id": "model-provider",
+      "type": "external",
+      "label": "External providers",
+      "sublabel": "Model API / approved services",
+      "pos": [
+        30,
+        680
+      ],
+      "size": [
+        180,
+        96
+      ],
+      "tag": "Provider credentials required"
+    },
+    {
+      "id": "controlled-egress",
+      "type": "security",
+      "label": "Controlled VPC egress",
+      "sublabel": "AWS Network Firewall + NAT",
+      "pos": [
+        320,
+        680
+      ],
+      "size": [
+        205,
+        96
+      ],
+      "tag": "Firewall enforces \u00b7 NAT translates"
+    },
+    {
+      "id": "encrypted-volume",
+      "type": "database",
+      "label": "Amazon EBS",
+      "sublabel": "Workspace \u00b7 state \u00b7 local logs",
+      "pos": [
+        630,
+        680
+      ],
+      "size": [
+        220,
+        96
+      ],
+      "tag": "KMS-encrypted attached volume"
+    },
+    {
+      "id": "tool-resources",
+      "type": "cloud",
+      "label": "AWS tool resources",
+      "sublabel": "Resource / target-account IAM",
+      "pos": [
+        980,
+        680
+      ],
+      "size": [
+        220,
+        96
+      ],
+      "tag": "Task role signs AWS requests"
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "AWS account / Region \u00b7 proposed single-host pilot",
+      "wraps": [
+        "session-manager",
+        "policy-bucket",
+        "app-logs",
+        "ssm-endpoints",
+        "execution-host",
+        "mcp-tier",
+        "controlled-egress",
+        "encrypted-volume",
+        "tool-resources"
+      ],
+      "pad": 45
+    },
+    {
+      "kind": "security-group",
+      "label": "VPC private subnets \u00b7 endpoints and compute \u00b7 no public compute IPs",
+      "wraps": [
+        "ssm-endpoints",
+        "execution-host",
+        "mcp-tier"
+      ],
+      "pad": 30
+    }
+  ],
+  "connections": [
+    {
+      "id": "start-session",
+      "from": "workstation",
+      "to": "session-manager",
+      "label": "StartSession",
+      "variant": "emphasis"
+    },
+    {
+      "id": "ssm-channel",
+      "from": "session-manager",
+      "to": "ssm-endpoints",
+      "label": "Agent-initiated TLS",
+      "variant": "security",
+      "labelAt": [
+        422.5,
+        295
+      ]
+    },
+    {
+      "id": "local-forward",
+      "from": "ssm-endpoints",
+      "to": "execution-host",
+      "label": "Tunnel traffic",
+      "variant": "emphasis"
+    },
+    {
+      "id": "policy-sync",
+      "from": "policy-bucket",
+      "to": "execution-host",
+      "label": "Protected file sync*",
+      "variant": "security",
+      "labelAt": [
+        740,
+        295
+      ]
+    },
+    {
+      "id": "emit-logs",
+      "from": "execution-host",
+      "to": "app-logs",
+      "label": "Log collector",
+      "variant": "dashed"
+    },
+    {
+      "id": "governed-mcp",
+      "from": "execution-host",
+      "to": "mcp-tier",
+      "label": "MCP / HTTPS",
+      "variant": "emphasis",
+      "labelAt": [
+        915,
+        473
+      ]
+    },
+    {
+      "id": "aws-tool",
+      "from": "mcp-tier",
+      "to": "tool-resources",
+      "label": "Signed AWS API",
+      "variant": "security",
+      "labelAt": [
+        1090,
+        585
+      ]
+    },
+    {
+      "id": "disk-attachment",
+      "from": "execution-host",
+      "to": "encrypted-volume",
+      "label": "Volume attachment",
+      "variant": "dashed",
+      "labelAt": [
+        740,
+        585
+      ]
+    },
+    {
+      "id": "provider-route",
+      "from": "execution-host",
+      "to": "controlled-egress",
+      "label": "Approved egress",
+      "variant": "security"
+    },
+    {
+      "id": "external-https",
+      "from": "controlled-egress",
+      "to": "model-provider",
+      "label": "HTTPS",
+      "variant": "default"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "1 \u00b7 Remote access and execution",
+      "items": [
+        "Human IAM authorizes the SSM tunnel. SSM Agent starts the connection; no inbound EC2 ports or public IP are needed.",
+        "Gateway and Kiro CLI / Codex / Claude Code execute on EC2. Independent laptop agents remain outside this service."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "2 \u00b7 Policy and credentials",
+      "items": [
+        "* Proposed privileged sync reads S3 through a gateway endpoint and writes a protected file:// policy source. File and ancestor directories must be unwritable by Crew.",
+        "Keep the EC2 instance role narrow. MCP caller identity / tool grants and downstream task-role IAM are separate controls."
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "3 \u00b7 Evidence and deployment scope",
+      "items": [
+        "CloudTrail records SSM API activity, not forwarded payload. Application collectors supply tool evidence; a Logs endpoint supports private delivery.",
+        "Egress routes need firewall enforcement; NAT alone does not filter. Optional MCP services need equivalent controls for external calls.",
+        "Retained nightly: 0.7.0.dev20260911060948 \u00b7 fa0d8cf3c241. Architecture proposal; deployment and integration are untested."
+      ]
+    }
+  ]
+}

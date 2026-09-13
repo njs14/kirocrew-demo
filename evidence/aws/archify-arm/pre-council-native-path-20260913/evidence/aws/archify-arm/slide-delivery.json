@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-arm-slide.architecture.json",
+  "output": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-arm-slide.html",
+  "specification": {
+    "sha256": "0c5ec30a361c2cdd1f8ad42dc6373e55fecfae5ea58c31a255193f414d3550ef",
+    "bytes": 2205
+  },
+  "artifact": {
+    "sha256": "67c31462e6d0fddb4979fd74e722ccdad3b51d733c1b4af9dbada5642e506f4c",
+    "bytes": 797518
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}

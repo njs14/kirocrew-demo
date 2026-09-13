@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-13T14:53:11.569006+00:00",
+  "scope": "Live ARM host, authenticated native/custom metrics, client schedules, controlled desktop restart, and actual CUA portal observations.",
+  "source_sha256": {
+    "scripts/demo-telemetry.py": "a2c1ac469d5578d481b9a84032095e19ebba43b4bb0417aebbf24319529115cd",
+    "infrastructure/observability-collector/collector.py": "744f58aac5c8c773dd64a1091bd5f8bbeed2357402df6f6e7ca3d9a14e9194ea",
+    "infrastructure/observability/app/app.json": "34e474700da3868d828fdaeba2af60cd71801defe9b93e9a6548131fea571cee",
+    "infrastructure/observability/app/backend/server.py": "33a46c42b29de99d41cbe581fa5e86c3946a279d8506932a5fec8429d720c80e",
+    "infrastructure/observability/app/ui/dist/index.mjs": "a652b81dea5a32ff5772f48b27875fc8ca810f36c0d4743a7800c584682f67eb",
+    "infrastructure/set-demo-telemetry.py": "2e324099fe7862d1e69a3011b5a1f2368d157e52679a2d986e912c6131938494",
+    "infrastructure/kirocrew-owner-token.py": "7750fe9d6e51c4568c8ac155137c23c3f29ec45faf9fbaf55c07fb0ca7b593a5"
+  },
+  "server": {
+    "observed_at": "2026-09-13T14:53:11.523294+00:00",
+    "units": {
+      "kirocrew-demo": {
+        "MainPID": "4991",
+        "ExecMainStartTimestamp": "Sun 2026-09-13 14:26:10 UTC",
+        "User": "crew",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "kirocrew-mcp-demo": {
+        "MainPID": "2833",
+        "ExecMainStartTimestamp": "Sun 2026-09-13 14:06:30 UTC",
+        "User": "mcp-demo",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "kirocrew-imds-guard": {
+        "MainPID": "0",
+        "ExecMainStartTimestamp": "Sun 2026-09-13 13:59:18 UTC",
+        "User": "",
+        "ActiveState": "active",
+        "SubState": "exited"
+      },
+      "kirocrew-demo-observability.timer": {
+        "ActiveState": "active",
+        "SubState": "waiting"
+      }
+    },
+    "listeners": [
+      "127.0.0.1:5476",
+      "127.0.0.1:8001",
+      "127.0.0.1:9102"
+    ],
+    "http": {
+      "app_health": 200,
+      "unsigned_app_data": 401,
+      "unauthenticated_gateway_app": 403
+    },
+    "installed_files": {
+      "/usr/local/bin/kirocrew-owner-token": {
+        "sha256": "7750fe9d6e51c4568c8ac155137c23c3f29ec45faf9fbaf55c07fb0ca7b593a5",
+        "uid": 0,
+        "gid": 0,
+        "mode": "0o755"
+      },
+      "/opt/kirocrew-demo/set-demo-telemetry.py": {
+        "sha256": "2e324099fe7862d1e69a3011b5a1f2368d157e52679a2d986e912c6131938494",
+        "uid": 0,
+        "gid": 0,
+        "mode": "0o755"
+      },
+      "/opt/kirocrew-demo/observability/collector.py": {
+        "sha256": "744f58aac5c8c773dd64a1091bd5f8bbeed2357402df6f6e7ca3d9a14e9194ea",
+        "uid": 0,
+        "gid": 0,
+        "mode": "0o644"
+      },
+      "/var/lib/kirocrew/apps/demo-observability/app.json": {
+        "sha256": "34e474700da3868d828fdaeba2af60cd71801defe9b93e9a6548131fea571cee",
+        "uid": 999,
+        "gid": 988,
+        "mode": "0o644"
+      },
+      "/var/lib/kirocrew/apps/demo-observability/backend/server.py": {
+        "sha256": "33a46c42b29de99d41cbe581fa5e86c3946a279d8506932a5fec8429d720c80e",
+        "uid": 999,
+        "gid": 988,
+        "mode": "0o644"
+      },
+      "/var/lib/kirocrew/apps/demo-observability/ui/dist/index.mjs": {
+        "sha256": "a652b81dea5a32ff5772f48b27875fc8ca810f36c0d4743a7800c584682f67eb",
+        "uid": 999,
+        "gid": 988,
+        "mode": "0o644"
+      }
+    },
+    "config": {
+      "telemetry": {
+        "enabled": true,
+        "local_dir": "",
+        "export_interval_seconds": 10,
+        "retention_days": 7,
+        "max_total_mb": 64,
+        "otlp_endpoint": "",
+        "beacon_enabled": false
+      },
+      "agent": {
+        "acp_backend": "",
+        "approval_mode": "interactive",
+        "log_level": "INFO"
+      }
+    },
+    "collector_data_permissions": {
+      "server.json": {
+        "uid": 0,
+        "gid": 988,
+        "mode": "0o640",
+        "bytes": 647
+      },
+      "client-history.jsonl": {
+        "uid": 0,
+        "gid": 988,
+        "mode": "0o640",
+        "bytes": 6130
+      },
+      "events.jsonl": {
+        "uid": 0,
+        "gid": 988,
+        "mode": "0o640",
+        "bytes": 509
+      },
+      "client.json": {
+        "uid": 0,
+        "gid": 988,
+        "mode": "0o640",
+        "bytes": 368
+      },
+      "server-history.jsonl": {
+        "uid": 0,
+        "gid": 988,
+        "mode": "0o640",
+        "bytes": 12038
+      }
+    },
+    "controlled_restart_samples": [
+      {
+        "schema_version": 1,
+        "source": "client",
+        "collector": "kirocrew-demo-custom",
+        "collected_at": "2026-09-13T14:44:42Z",
+        "status": "ok",
+        "metrics": {
+          "process_count": 0,
+          "cpu_percent": 0,
+          "rss_mib": 0.0
+        },
+        "checks": {
+          "client_running": false,
+          "remote_gateway_reachable": true,
+          "local_gateway_off": true
+        },
+        "errors": []
+      },
+      {
+        "schema_version": 1,
+        "source": "client",
+        "collector": "kirocrew-demo-custom",
+        "collected_at": "2026-09-13T14:49:34Z",
+        "status": "ok",
+        "metrics": {
+          "process_count": 5,
+          "cpu_percent": 46.2,
+          "rss_mib": 443.66
+        },
+        "checks": {
+          "client_running": true,
+          "remote_gateway_reachable": true,
+          "local_gateway_off": true
+        },
+        "errors": []
+      }
+    ],
+    "plain_kiro_cli_authenticated": false,
+    "plain_kiro_cli_exit_code": 1
+  },
+  "client_jobs": {
+    "com.kirocrew.demo-tunnel": {
+      "loaded": true,
+      "program_arguments": [
+        "/usr/bin/ssh",
+        "-F",
+        "/Users/noahsutter/.ssh/config",
+        "-N",
+        "-T",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ExitOnForwardFailure=yes",
+        "-L",
+        "127.0.0.1:5599:127.0.0.1:5476",
+        "kirocrew-demo"
+      ],
+      "start_interval": null,
+      "run_at_load": true
+    },
+    "com.kirocrew.demo-observability": {
+      "loaded": true,
+      "program_arguments": [
+        "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+        "/Users/noahsutter/git-projects/kirocrew-demo/scripts/demo-telemetry.py",
+        "collect-once",
+        "--apply"
+      ],
+      "start_interval": 60,
+      "run_at_load": true
+    }
+  },
+  "api_readback_sha256": "d7d60f596efdfef322c84f0d79e63bb06f307c2c47efd4664ad58c2812f098e0",
+  "browser_observations": {
+    "actual_cua": true,
+    "custom_page": "/apps/demo-observability",
+    "native_and_browser_connected": true,
+    "both_sources_current": true,
+    "screenshots": [
+      "output/admin-console/01-overview.jpg",
+      "output/admin-console/02-arm-performance.jpg",
+      "output/admin-console/03-gateway-services.jpg",
+      "output/admin-console/04-security-posture.jpg",
+      "output/admin-console/05-interactive-approval.jpg",
+      "output/admin-console/06-governance.jpg",
+      "output/admin-console/07-agent-backend.jpg",
+      "output/admin-console/08-telemetry-controls.jpg",
+      "output/admin-console/09-native-telemetry.jpg",
+      "output/admin-console/10-native-auth-log.jpg",
+      "output/admin-console/11-client-server-telemetry.jpg",
+      "output/admin-console/12-collection-logs.jpg",
+      "output/admin-console/13-client-stopped.jpg"
+    ],
+    "controlled_client_restart": {
+      "stop_event": "2026-09-13T14:44:42Z",
+      "recovery_event": "2026-09-13T14:49:34Z",
+      "gateway_before": {
+        "MainPID": "4991",
+        "ExecMainStartTimestamp": "Sun 2026-09-13 14:26:10 UTC",
+        "ActiveState": "active"
+      },
+      "gateway_after": {
+        "MainPID": "4991",
+        "ExecMainStartTimestamp": "Sun 2026-09-13 14:26:10 UTC",
+        "User": "crew",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "gateway_identity_unchanged": true
+    }
+  },
+  "activation_correction": "Initial manifest port 8012 passed manifest validation but failed runtime 9100-9200 restriction. Version 1.0.1 updated to 9102; backend health, signed owner snapshot, and real browser rendering then passed.",
+  "limits": [
+    "Native Kiro CLI authentication is still pending; no completed agent turn, native tool approval, native SEL correlation or sandbox execution is claimed.",
+    "Client/server collection logs are custom fixed events, not native security audit events.",
+    "Client TCP5599 is only local SSH-listener reachability; server TCP probes are not agent-response tests.",
+    "No OTLP export; vendor beacon is disabled. Native instrumentation is kept on EC2.",
+    "Application read-signature freshness permits repeated reads within the SDK 60-second window."
+  ],
+  "probe_correction": "Initial read queried a nonexistent kirocrew-demo-imds-guard unit. The corrected read queries kirocrew-imds-guard, which the Gateway actually Requires. No guard configuration or runtime state was changed."
+}

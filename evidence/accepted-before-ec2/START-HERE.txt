@@ -1,0 +1,9 @@
+Open WALKTHROUGH.md for the six-minute presenter sequence.
+
+Deck: output/kirocrew-demo.pptx
+Visual: kirocrew-aws-remote.html
+Terminal: ./demo.sh --interactive
+
+For future Codex continuation, read HANDOFF.md and CONTINUATION-RECEIPT.json.
+Preserve the single endpoint-control box and the distinction between the
+September 11 diagram baseline and the verified installed September 12 package.

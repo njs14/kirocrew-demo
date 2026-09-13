@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "title": "KiroCrew recorded walkthroughs",
+  "synthetic": false,
+  "scenes": [
+    {
+      "id": "endpoint-reference",
+      "title": "One endpoint-control boundary",
+      "description": "Expand the preserved endpoint diagram, then return to the recorded ARM deployment view.",
+      "evidenceScope": "Architecture reference and previously recorded deployment evidence.",
+      "recordedAt": "2026-09-13T18:14:49.325Z",
+      "duration": 24.84,
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 1823896,
+          "sha256": "992494ac45475d201b4fbce66ea8b0aa90741093ebf5e9a0a95c0e824cc0df37",
+          "duration": 24.84,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "demo-clips/20260913-final/endpoint-reference/endpoint-reference.mp4"
+        }
+      ],
+      "poster": {
+        "url": "demo-clips/20260913-final/endpoint-reference/poster.jpg"
+      },
+      "contactSheet": {
+        "url": "demo-clips/20260913-final/endpoint-reference/contact-sheet.jpg"
+      },
+      "cues": [
+        {
+          "time": 2.7,
+          "label": "Read the reference scope",
+          "detail": "The diagram describes the execution boundary. Its September 11 reference label remains visible.",
+          "evidence": "demo-clips/20260913-final/receipts/endpoint-validation.json"
+        },
+        {
+          "time": 6.5,
+          "label": "Inspect the single enclosure",
+          "detail": "Gateway, backend, workspace and endpoint controls remain in one box.",
+          "evidence": "demo-clips/20260913-final/receipts/endpoint-validation.json"
+        },
+        {
+          "time": 18.7,
+          "label": "Move to the ARM deployment",
+          "detail": "The next slide describes recorded ARM deployment evidence and marks the native MCP path as pending.",
+          "evidence": "demo-clips/20260913-final/receipts/endpoint-capture.json"
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "780594e6adc6764e6bb6d63cbc132017a7d71c82123a813b177eb8f6daadf50c",
+        "cut": {
+          "start": 0.0,
+          "end": 24.84
+        },
+        "sourceDuration": 24.84
+      }
+    },
+    {
+      "id": "admin-console",
+      "title": "Navigate the admin console",
+      "description": "Read the remote Gateway overview, inspect the selected backend, filter its sign-in error, and open observability.",
+      "evidenceScope": "Live owner-portal navigation. Native Kiro CLI authentication remains pending.",
+      "recordedAt": "2026-09-13T18:16:15.405Z",
+      "duration": 23.24,
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 1603479,
+          "sha256": "3f7a1934580373a5fe7d322473ea582d8dcf19d80bc8341cb44c3496b1fc0b89",
+          "duration": 23.24,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "demo-clips/20260913-final/admin-console/admin-console.mp4"
+        }
+      ],
+      "poster": {
+        "url": "demo-clips/20260913-final/admin-console/poster.jpg"
+      },
+      "contactSheet": {
+        "url": "demo-clips/20260913-final/admin-console/contact-sheet.jpg"
+      },
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Read the Gateway overview",
+          "detail": "The running Gateway reports uptime and zero completed sessions. This page shows the remote server nightly.",
+          "evidence": "demo-clips/20260913-final/receipts/preflight.json"
+        },
+        {
+          "time": 6.0,
+          "label": "Inspect the backend selection",
+          "detail": "Kiro CLI is selected. The GitHub card uses a separate KAS identity; the fresh CLI authentication check is false.",
+          "evidence": "demo-clips/20260913-final/receipts/preflight.json"
+        },
+        {
+          "time": 13.0,
+          "label": "Inspect the native startup failure",
+          "detail": "The log filter exposes the actual Kiro CLI not-logged-in error. No successful native turn is claimed.",
+          "evidence": "demo-clips/20260913-final/receipts/admin-light-capture.json"
+        },
+        {
+          "time": 19.0,
+          "label": "Open the telemetry app",
+          "detail": "Demo Observability combines the bounded Mac and EC2 collector samples.",
+          "evidence": "demo-clips/20260913-final/receipts/admin-light-capture.json"
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "a86f0a3a50882adaf0e9af92f2322549f4608c9aabade5e07b60b54cf0b85f10",
+        "cut": {
+          "start": 0.0,
+          "end": 23.24
+        },
+        "sourceDuration": 23.24
+      }
+    },
+    {
+      "id": "client-server-telemetry",
+      "title": "Compare client and server telemetry",
+      "description": "Refresh stored samples, expand process measurements, and filter real collection events by source.",
+      "evidenceScope": "Live custom telemetry dashboard. Collection events are separate from Crew security audit events.",
+      "recordedAt": "2026-09-13T18:09:22.466Z",
+      "duration": 22.52,
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 891208,
+          "sha256": "d932d6c3fd7011142e5cfdde5e58a625ab30e9f6b8dab9d93212f469411b85bc",
+          "duration": 22.52,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "demo-clips/20260913-final/client-server-telemetry/client-server-telemetry.mp4"
+        }
+      ],
+      "poster": {
+        "url": "demo-clips/20260913-final/client-server-telemetry/poster.jpg"
+      },
+      "contactSheet": {
+        "url": "demo-clips/20260913-final/client-server-telemetry/contact-sheet.jpg"
+      },
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Compare both sources",
+          "detail": "The client reports Local Gateway off while the EC2 Gateway and MCP checks are healthy. Sample times are displayed in the browser time zone.",
+          "evidence": "demo-clips/20260913-final/receipts/preflight.json"
+        },
+        {
+          "time": 3.0,
+          "label": "Refresh stored samples",
+          "detail": "Refresh reads the latest stored samples. The collectors run separately every 60 seconds.",
+          "evidence": "demo-clips/20260913-final/receipts/telemetry-capture.json"
+        },
+        {
+          "time": 5.5,
+          "label": "Inspect Mac process metrics",
+          "detail": "The expanded client measurements describe local processes and probes.",
+          "evidence": "demo-clips/20260913-final/receipts/telemetry-capture.json"
+        },
+        {
+          "time": 9.0,
+          "label": "Inspect EC2 services",
+          "detail": "The server detail adds Gateway and MCP main-process CPU and memory.",
+          "evidence": "demo-clips/20260913-final/receipts/telemetry-capture.json"
+        },
+        {
+          "time": 12.5,
+          "label": "Filter client events",
+          "detail": "Client filtering retains health changes and collection errors, including recorded historical events.",
+          "evidence": "demo-clips/20260913-final/receipts/telemetry-capture.json"
+        },
+        {
+          "time": 16.0,
+          "label": "Filter server events",
+          "detail": "The table now shows only server collection events.",
+          "evidence": "demo-clips/20260913-final/receipts/telemetry-capture.json"
+        },
+        {
+          "time": 20.0,
+          "label": "Return to all events",
+          "detail": "All restores both sources. These fixed collection labels exclude prompts and credentials.",
+          "evidence": "demo-clips/20260913-final/receipts/telemetry-capture.json"
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "af81ef7310f567a83bfa9d5e667ef5adec52c3ff6154155d60b8a1eb71847a10",
+        "cut": {
+          "start": 0.0,
+          "end": 22.52
+        },
+        "sourceDuration": 22.52
+      }
+    },
+    {
+      "id": "gateway-instrumentation",
+      "title": "Inspect native Gateway telemetry",
+      "description": "Read the configured metrics switch, then inspect Gateway instruments and startup measurements.",
+      "evidenceScope": "Live native Gateway instrumentation. Zero completed backend turns; separate custom collectors provide the client/server view.",
+      "recordedAt": "2026-09-13T18:16:52.471Z",
+      "duration": 20.68,
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 1057222,
+          "sha256": "b9636107f91a45d88c1548db18c06db67f0ddce60c9ce6bbb8dee864084796f4",
+          "duration": 20.68,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "demo-clips/20260913-final/gateway-instrumentation/gateway-instrumentation.mp4"
+        }
+      ],
+      "poster": {
+        "url": "demo-clips/20260913-final/gateway-instrumentation/poster.jpg"
+      },
+      "contactSheet": {
+        "url": "demo-clips/20260913-final/gateway-instrumentation/contact-sheet.jpg"
+      },
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Read the telemetry settings",
+          "detail": "Record metrics is enabled. The environment disables anonymous reporting. This take does not change either setting.",
+          "evidence": "demo-clips/20260913-final/receipts/preflight.json"
+        },
+        {
+          "time": 6.5,
+          "label": "Inspect Gateway instruments",
+          "detail": "Request and process instruments contain measurements. The top summary still shows zero completed turns.",
+          "evidence": "demo-clips/20260913-final/receipts/native-telemetry-light-capture.json"
+        },
+        {
+          "time": 12.5,
+          "label": "Inspect startup measurements",
+          "detail": "The Startup tab displays the Gateway instrumentation already collected by this running server.",
+          "evidence": "demo-clips/20260913-final/receipts/native-telemetry-light-capture.json"
+        },
+        {
+          "time": 18.0,
+          "label": "Return to latency",
+          "detail": "The Latency tab restores the instruments view.",
+          "evidence": "demo-clips/20260913-final/receipts/native-telemetry-light-capture.json"
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "0cbe3222a6af50a5f480a9301bcd2026964a9f95f9eadce2359029e77b7d1abd",
+        "cut": {
+          "start": 0.0,
+          "end": 20.68
+        },
+        "sourceDuration": 20.68
+      }
+    },
+    {
+      "id": "direct-mcp-aws",
+      "title": "Follow a direct MCP request to AWS",
+      "description": "Start the bounded probe, read its three outcomes, and inspect the fresh receipt.",
+      "evidenceScope": "Actual direct MCP/AWS execution from a standalone operator screen. Native Kiro CLI acceptance remains pending.",
+      "recordedAt": "2026-09-13T18:21:23.913Z",
+      "duration": 25.56,
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 1187608,
+          "sha256": "9f8de84c75c69b1ac5ceef2e18a965d1344827bdee862f1734dc4916bf909da7",
+          "duration": 25.56,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "demo-clips/20260913-final/direct-mcp-aws/direct-mcp-aws.mp4"
+        }
+      ],
+      "poster": {
+        "url": "demo-clips/20260913-final/direct-mcp-aws/poster.jpg"
+      },
+      "contactSheet": {
+        "url": "demo-clips/20260913-final/direct-mcp-aws/contact-sheet.jpg"
+      },
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Read the execution scope",
+          "detail": "The fixed command invokes the EC2 MCP service directly. It does not run through a native Kiro CLI turn.",
+          "evidence": "demo-clips/20260913-final/receipts/direct-probe-capture.json"
+        },
+        {
+          "time": 3.7,
+          "label": "Run the bounded probe",
+          "detail": "The button starts the actual command. The following outcomes come from its completed result.",
+          "evidence": "demo-clips/20260913-final/receipts/direct-mcp-aws.json"
+        },
+        {
+          "time": 7.0,
+          "label": "Compare three outcomes",
+          "detail": "S3 returned the expected 55-byte object and digest. MCP rejected a disallowed tool before AWS dispatch. IAM returned AccessDenied with an AWS request ID.",
+          "evidence": "demo-clips/20260913-final/receipts/direct-mcp-aws.json"
+        },
+        {
+          "time": 16.0,
+          "label": "Inspect the receipt",
+          "detail": "The receipt records timestamps, trace IDs, the object digest and AWS request IDs. Native backend verification remains false.",
+          "evidence": "demo-clips/20260913-final/receipts/direct-mcp-aws.json"
+        },
+        {
+          "time": 22.0,
+          "label": "Return to the result cards",
+          "detail": "These outcomes establish the bounded direct probe only.",
+          "evidence": "demo-clips/20260913-final/receipts/direct-mcp-aws.json"
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "1517126754e6902caf0c76a01373a8f35efc8c20d5b7f8f31722fc83df907509",
+        "cut": {
+          "start": 0.0,
+          "end": 25.56
+        },
+        "sourceDuration": 25.56
+      }
+    },
+    {
+      "id": "synthetic-controls",
+      "title": "Rehearse the synthetic endpoint controls",
+      "description": "Run the isolated control test runner, inspect the results, and open its receipt.",
+      "evidenceScope": "Actual execution of a local synthetic test runner. Approval is scripted; no native approval UI, backend MCP or AWS call occurs.",
+      "recordedAt": "2026-09-13T18:23:04.179Z",
+      "duration": 45.8,
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 1735170,
+          "sha256": "480a0fa9b1037e88fd56494d6d54a48f34ba4e400b2cfd840cffa77005975137",
+          "duration": 45.8,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "demo-clips/20260913-final/synthetic-controls/synthetic-controls.mp4"
+        }
+      ],
+      "poster": {
+        "url": "demo-clips/20260913-final/synthetic-controls/poster.jpg"
+      },
+      "contactSheet": {
+        "url": "demo-clips/20260913-final/synthetic-controls/contact-sheet.jpg"
+      },
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Read the rehearsal scope",
+          "detail": "This disposable local run models endpoint controls. It does not verify native KiroCrew enforcement.",
+          "evidence": "demo-clips/20260913-final/receipts/synthetic-capture.json"
+        },
+        {
+          "time": 4.2,
+          "label": "Run the frozen control test runner",
+          "detail": "The button invokes the existing isolated rehearsal. The recorded wait preserves the command\u2019s actual runtime.",
+          "evidence": "demo-clips/20260913-final/receipts/synthetic-controls.json"
+        },
+        {
+          "time": 28.0,
+          "label": "Inspect the control results",
+          "detail": "The test runner covers allow, scripted approval, deny, protected paths, command gating, Policy/Profile intersection and redaction.",
+          "evidence": "demo-clips/20260913-final/receipts/synthetic-controls.json"
+        },
+        {
+          "time": 32.0,
+          "label": "Read the SEL checks",
+          "detail": "The test runner verifies 7 of 7 entries, detects the tampered fixture at 6 of 7, then restores and verifies 7 of 7.",
+          "evidence": "demo-clips/20260913-final/receipts/synthetic-controls.json"
+        },
+        {
+          "time": 36.5,
+          "label": "Inspect the command receipt",
+          "detail": "The fresh receipt identifies the isolated synthetic run and keeps native backend verification false.",
+          "evidence": "demo-clips/20260913-final/receipts/synthetic-controls.json"
+        },
+        {
+          "time": 42.0,
+          "label": "Return to the rehearsal results",
+          "detail": "Use this scene to explain the controls while keeping native runtime acceptance pending.",
+          "evidence": "demo-clips/20260913-final/receipts/synthetic-controls.json"
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "1d08a166621e906bc0a65552f985194500df298f996d838f0cb25294cc1ce6b2",
+        "cut": {
+          "start": 0.0,
+          "end": 45.8
+        },
+        "sourceDuration": 45.8
+      }
+    }
+  ],
+  "reviewScope": "Prior model council covers its frozen source candidate only; this derivative has no final council verdict."
+}

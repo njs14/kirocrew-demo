@@ -1,0 +1,48 @@
+async (page) => {
+  const checks = [];
+  const expect = (condition, label) => { if (!condition) throw new Error(label); checks.push(label); };
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  const video = page.locator(".recorded-demo video");
+  await page.waitForFunction(() => document.querySelector("video").readyState >= 2);
+  expect(await video.evaluate(el => el.duration === 6 && el.muted && el.controls && el.playsInline), "Video metadata, muted controls and inline playback");
+  await page.getByRole("button", { name: "0:04 Second checkpoint" }).click();
+  await page.waitForFunction(() => document.querySelector("video").currentTime === 4);
+  expect(await video.evaluate(el => el.paused), "Cue selection seeks and pauses");
+  expect(await page.locator(".demo-cue-detail").textContent().then(t => t.includes("Chapter selection must pause")), "Cue details update");
+  await page.getByRole("button", { name: "0:00 Beginning" }).click();
+  await page.getByRole("button", { name: "Next chapter" }).click();
+  await page.waitForFunction(() => document.querySelector("video").currentTime === 2);
+  expect(await video.evaluate(el => el.paused), "Next chapter seeks to the next timestamp and pauses");
+  await page.getByRole("checkbox", { name: "Pause at chapters" }).check();
+  await page.getByRole("button", { name: "Replay", exact: true }).click();
+  await page.waitForFunction(() => {
+    const v = document.querySelector("video");
+    return v.paused && v.currentTime >= 1.99 && v.currentTime <= 2.01;
+  }, null, { timeout: 10000 });
+  expect((await page.locator(".demo-status").textContent()).includes("Guided pause"), "Guided playback pauses at the first chapter");
+  await page.getByRole("checkbox", { name: "Pause at chapters" }).uncheck();
+  await page.getByRole("button", { name: "Replay", exact: true }).click();
+  await page.waitForFunction(() => !document.querySelector("video").paused);
+  await page.getByRole("button", { name: "Slides", exact: true }).click();
+  expect(await video.evaluate(el => el.paused), "Opening overview pauses playback");
+  await page.locator("#overview-dialog [data-close]").click();
+  await page.getByRole("button", { name: "Replay", exact: true }).click();
+  await page.waitForFunction(() => !document.querySelector("video").paused);
+  await page.getByRole("button", { name: "Previous slide", exact: true }).click();
+  expect(await video.evaluate(el => el.paused), "Outgoing slide video pauses");
+  expect(await page.evaluate(() => window.presentationApi.current()) === 13, "Original slide navigation works");
+  await page.getByRole("button", { name: "Next slide", exact: true }).click();
+  await video.focus();
+  await page.keyboard.press("ArrowRight");
+  expect(await page.evaluate(() => window.presentationApi.current()) === 14, "Video keyboard focus does not navigate slides");
+  await page.getByRole("button", { name: "0:00 Beginning" }).click();
+  await page.screenshot({ path: "evidence/demo-clips/player/browser-fixture/desktop.png" });
+  expect(await page.locator(".recorded-demo").evaluate(el => el.scrollHeight <= el.clientHeight && el.scrollWidth <= el.clientWidth), "Desktop slide fits");
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.screenshot({ path: "evidence/demo-clips/player/browser-fixture/mobile.png", fullPage: true });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), "Mobile has no horizontal overflow");
+  expect(await page.locator(".demo-cues button").evaluateAll(buttons => buttons.every(b => b.getBoundingClientRect().height >= 44)), "Mobile chapter buttons have 44px targets");
+  const notes = await page.locator('a[download$="-notes.md"]').getAttribute("href");
+  expect(notes.startsWith("data:text/markdown;base64,"), "Complete notes download stays embedded");
+  return { scope: "Synthetic player fixture only; no KiroCrew, AWS or recording proof", passed: true, checks };
+}

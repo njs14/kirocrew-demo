@@ -1,0 +1,178 @@
+{
+  "selected_modules": [
+    {
+      "path": "agent_backend_governance.py",
+      "sha256": "9284a729c6f5069ed81e62cfe188331a9881914c4714f204507844edb5505f22",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "apps/permissions.py",
+      "sha256": "16afa8b7a8aa1140c9de11d660897f5ed80316e47dd597f01ab8999c69c95377",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "hooks.py",
+      "sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "platform/governance.py",
+      "sha256": "7d9c5b109086b8c4a2d36c589d387e1fd562e7d2b407dc65d54d2e7d2fc09341",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "platform/governance_profiles.py",
+      "sha256": "102ab33ed14c8ecd1060d81a0de13214602b519291d8c25f331eae77cbfb4c73",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "platform/policy_distribution.py",
+      "sha256": "b4f57a6163a61f7d1f5025f3472794d44484c0b83fc263b29d957845937df30e",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "platform/security_authority.py",
+      "sha256": "30cc8d8caf17c481a138f55319692e92962e5ec11f606a8da9152f1a86e02c28",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "sandbox.py",
+      "sha256": "3fcb43313c4970f523a50ce7a508b8b9801e88bdc06a61947a649a67cf8902e9",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/__init__.py",
+      "sha256": "c54f385e54260071901a5f595543c6ef74014fa3254d89408f0642ef590e2bca",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/_exports.py",
+      "sha256": "8ddb16ede0ca0ebccb11a7eb451fc81f79c9021b953a6265a24bfc37b3678d01",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/argv_floor.py",
+      "sha256": "29968e323f706b2800834b7d9d1d7e1c37f64089bc601a0d7a3ea86aa2c8d078",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/denied_rules.py",
+      "sha256": "e485cb5b1347af79cb25d14d6409d0ce57fe83a4e126f278c3cff89e728ec133",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/diagnostics.py",
+      "sha256": "356903aa044a545b0dceb311fcdc1d8e0c4ab81a37d23ee93880bac5aa96880c",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/exfil.py",
+      "sha256": "9738ff156d0e54a9c50422838c5974f972b1e5ebc7f48a5a42be2a488ecef004",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/helpers.py",
+      "sha256": "2a9d5247ec31ae0fa1a970f69915098b7173bd3b41d7ddfbb6123dc0b80a23b6",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/host_addresses.py",
+      "sha256": "da6763f7cf2d2f6f0133de6f6f8ff6c98f5a948d6228fb36b294c4a8219f1e44",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/paths.py",
+      "sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/redaction.py",
+      "sha256": "e6473ead95cd810794586e43f2edad01d61db9018ce34b0c388487cca6e45e82",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/shell_normalizer.py",
+      "sha256": "47a61257bac80d84c0d547825a88a277334d8506f3662a7734ef5656bbcf9d53",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security/vocabulary.py",
+      "sha256": "29a066b1f4d47d079466f2fe7284d5968809ea6b09b21d59f34797832288caf8",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "security_posture.py",
+      "sha256": "e64e0b80a3cdc13e46dfe68d4600cac2f559cf6b8dd909361b25d2e48f226a12",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "sel.py",
+      "sha256": "01e28dc301b0edafda96c8af31fa28a57ebdd5fb03c97174a6abd729e49918a0",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "skill_trust.py",
+      "sha256": "931234d547c6de2575db22cf28420ce6fd207a55f267ba0e42702eb6350e17c4",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    },
+    {
+      "path": "validation.py",
+      "sha256": "8d747b6bfc0c60bd9e0a64ec826f3b59c03436a3123a1611f5445ccb237e08a6",
+      "matches_installed_nightly": true,
+      "uid": 0,
+      "group_or_world_writable": false
+    }
+  ],
+  "passed": true,
+  "config_correction": {
+    "subagent_auto_max_before": 1,
+    "after": 3,
+    "reason": "Nightly minimum is 3; previous 1 was already clamped to3"
+  }
+}

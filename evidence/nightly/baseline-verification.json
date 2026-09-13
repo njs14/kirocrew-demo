@@ -1,0 +1,159 @@
+{
+  "checked_at": "2026-09-13T03:16:48.796708+00:00",
+  "retained_nightly": "0.7.0.dev20260911060948",
+  "pinned_commit": "fa0d8cf3c241b3b53b81fe4115ab70a30c1ca482",
+  "tree": "dd8d21e77fe850d179b5a7971ad3f876f6eb011b",
+  "official_source": "https://github.com/kirodotdev/KiroCrew",
+  "fresh_latest_feed_verified": false,
+  "feed_result": "web tool rejected both current and pinned CDN manifest URLs as unsafe to open (non-retryable). No alternate transport used for denied URLs.",
+  "wheel_reacquired": false,
+  "source_checkout_reacquired": true,
+  "retained_module_comparison": [
+    {
+      "path": "src/kiro_crew/agent_backend_governance.py",
+      "retained_sha256": "9284a729c6f5069ed81e62cfe188331a9881914c4714f204507844edb5505f22",
+      "official_sha256": "9284a729c6f5069ed81e62cfe188331a9881914c4714f204507844edb5505f22",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/apps/permissions.py",
+      "retained_sha256": "16afa8b7a8aa1140c9de11d660897f5ed80316e47dd597f01ab8999c69c95377",
+      "official_sha256": "16afa8b7a8aa1140c9de11d660897f5ed80316e47dd597f01ab8999c69c95377",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/hooks.py",
+      "retained_sha256": "0601e086b0baa54a062dbd6dbfb4531ee7852fa437800e86aa9e8a447699fa9a",
+      "official_sha256": "0601e086b0baa54a062dbd6dbfb4531ee7852fa437800e86aa9e8a447699fa9a",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/platform/governance.py",
+      "retained_sha256": "c5c84e1ef9bc77cdd890fd64b8912543d2e0a506073e73d577c5f22519d6ad24",
+      "official_sha256": "c5c84e1ef9bc77cdd890fd64b8912543d2e0a506073e73d577c5f22519d6ad24",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/platform/governance_profiles.py",
+      "retained_sha256": "102ab33ed14c8ecd1060d81a0de13214602b519291d8c25f331eae77cbfb4c73",
+      "official_sha256": "102ab33ed14c8ecd1060d81a0de13214602b519291d8c25f331eae77cbfb4c73",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/platform/policy_distribution.py",
+      "retained_sha256": "b4f57a6163a61f7d1f5025f3472794d44484c0b83fc263b29d957845937df30e",
+      "official_sha256": "b4f57a6163a61f7d1f5025f3472794d44484c0b83fc263b29d957845937df30e",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/platform/security_authority.py",
+      "retained_sha256": "30cc8d8caf17c481a138f55319692e92962e5ec11f606a8da9152f1a86e02c28",
+      "official_sha256": "30cc8d8caf17c481a138f55319692e92962e5ec11f606a8da9152f1a86e02c28",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/sandbox.py",
+      "retained_sha256": "8f65453f5b09541315eaee750b6df56d3dba3e9e2fcb767fa3b2965ee8dad180",
+      "official_sha256": "8f65453f5b09541315eaee750b6df56d3dba3e9e2fcb767fa3b2965ee8dad180",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/__init__.py",
+      "retained_sha256": "04cd24dc5419cc6628509eb31a0180232a618424a29fc7d5a48332d69c0a19ed",
+      "official_sha256": "04cd24dc5419cc6628509eb31a0180232a618424a29fc7d5a48332d69c0a19ed",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/_exports.py",
+      "retained_sha256": "7fb35d0ebe644a19c0b661be55b31ec12982c21b0e78931583ef8e413323900e",
+      "official_sha256": "7fb35d0ebe644a19c0b661be55b31ec12982c21b0e78931583ef8e413323900e",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/argv_floor.py",
+      "retained_sha256": "36d2a252a1188a1290c9d6f57000713bea69083c1a624548efabaeac8846799b",
+      "official_sha256": "36d2a252a1188a1290c9d6f57000713bea69083c1a624548efabaeac8846799b",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/denied_rules.py",
+      "retained_sha256": "e485cb5b1347af79cb25d14d6409d0ce57fe83a4e126f278c3cff89e728ec133",
+      "official_sha256": "e485cb5b1347af79cb25d14d6409d0ce57fe83a4e126f278c3cff89e728ec133",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/diagnostics.py",
+      "retained_sha256": "356903aa044a545b0dceb311fcdc1d8e0c4ab81a37d23ee93880bac5aa96880c",
+      "official_sha256": "356903aa044a545b0dceb311fcdc1d8e0c4ab81a37d23ee93880bac5aa96880c",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/exfil.py",
+      "retained_sha256": "ba91d61b968d89aa295bd95b1fb7c71f43ca16ed84367b775f33a24c5f9c4a93",
+      "official_sha256": "ba91d61b968d89aa295bd95b1fb7c71f43ca16ed84367b775f33a24c5f9c4a93",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/helpers.py",
+      "retained_sha256": "2a9d5247ec31ae0fa1a970f69915098b7173bd3b41d7ddfbb6123dc0b80a23b6",
+      "official_sha256": "2a9d5247ec31ae0fa1a970f69915098b7173bd3b41d7ddfbb6123dc0b80a23b6",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/host_addresses.py",
+      "retained_sha256": "da6763f7cf2d2f6f0133de6f6f8ff6c98f5a948d6228fb36b294c4a8219f1e44",
+      "official_sha256": "da6763f7cf2d2f6f0133de6f6f8ff6c98f5a948d6228fb36b294c4a8219f1e44",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/paths.py",
+      "retained_sha256": "8b17cb944ea157e4bce2949803c1ef2fb77b07a5fef66eca0a03048e411f5e92",
+      "official_sha256": "8b17cb944ea157e4bce2949803c1ef2fb77b07a5fef66eca0a03048e411f5e92",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/redaction.py",
+      "retained_sha256": "e6473ead95cd810794586e43f2edad01d61db9018ce34b0c388487cca6e45e82",
+      "official_sha256": "e6473ead95cd810794586e43f2edad01d61db9018ce34b0c388487cca6e45e82",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/shell_normalizer.py",
+      "retained_sha256": "b8475ac9037e1e17a11011be9c8181ddc968c68825943615790086cee98867b5",
+      "official_sha256": "b8475ac9037e1e17a11011be9c8181ddc968c68825943615790086cee98867b5",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security/vocabulary.py",
+      "retained_sha256": "29a066b1f4d47d079466f2fe7284d5968809ea6b09b21d59f34797832288caf8",
+      "official_sha256": "29a066b1f4d47d079466f2fe7284d5968809ea6b09b21d59f34797832288caf8",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/security_posture.py",
+      "retained_sha256": "167c4d65480588d4874ee03b39aa8cd16e92520111f785a68e24b4a24e3ab747",
+      "official_sha256": "167c4d65480588d4874ee03b39aa8cd16e92520111f785a68e24b4a24e3ab747",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/sel.py",
+      "retained_sha256": "cb219f0929d0c93c4b57ab201f3a62b0312fa580605338e637a22e6e37452a5f",
+      "official_sha256": "cb219f0929d0c93c4b57ab201f3a62b0312fa580605338e637a22e6e37452a5f",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/skill_trust.py",
+      "retained_sha256": "931234d547c6de2575db22cf28420ce6fd207a55f267ba0e42702eb6350e17c4",
+      "official_sha256": "931234d547c6de2575db22cf28420ce6fd207a55f267ba0e42702eb6350e17c4",
+      "match": true
+    },
+    {
+      "path": "src/kiro_crew/validation.py",
+      "retained_sha256": "9f8494877046b1f32781dc7d42ddab4c92cc22d76cec19c8b2d357e7bc5551f0",
+      "official_sha256": "9f8494877046b1f32781dc7d42ddab4c92cc22d76cec19c8b2d357e7bc5551f0",
+      "match": true
+    }
+  ],
+  "all_match": true,
+  "installed_desktop": "0.7.0-nightly.20260907t061245"
+}

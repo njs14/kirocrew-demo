@@ -1,0 +1,22 @@
+{
+  "method": "Detailed SVG content inside one endpoint component; original Archify topology, geometry and base preserved. Generic hand-authored vector symbols; AWS service icons retained in the deployment view.",
+  "base": {
+    "path": "kirocrew-security-layers-base.html",
+    "sha256": "f51ac796f42f996f84cf7050cb440eb11ffef19a1f9c4c45e66fa8efd581e882",
+    "bytes": 803073
+  },
+  "derivative": {
+    "path": "kirocrew-security-layers.html",
+    "sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+    "bytes": 806216
+  },
+  "script": "detail-endpoint-panel.py",
+  "endpointInternalLayers": [
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+  ]
+}

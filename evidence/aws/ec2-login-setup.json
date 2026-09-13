@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-09-13T05:00:22.465654+00:00",
+  "scope": "Fresh remote login browser callback setup only; no sign-in submitted during helper validation.",
+  "helper": "scripts/ec2-login.py",
+  "helper_sha256": "8e78cfeedae1692165b1292e97dbf58675427137abf339cabea3da3063e9bbec",
+  "remote_cli_version": "2.21.4",
+  "remote_ssh_alias": "kirocrew-demo",
+  "startup_fix": "Remove only inherited SSH_CLIENT, SSH_CONNECTION and SSH_TTY from the child CLI environment.",
+  "prior_cancelled_attempt_directory_absent": true,
+  "fresh_url_domain": "app.kiro.dev",
+  "fresh_url_path": "/signin",
+  "callback_port": 3128,
+  "callback_local_addresses": [
+    "127.0.0.1",
+    "::1"
+  ],
+  "helper_verified_own_ssh_listeners_before_url_display": true,
+  "independent_listener_observation": [
+    {
+      "pid": 32227,
+      "addresses": [
+        "127.0.0.1:3128",
+        "[::1]:3128"
+      ],
+      "command": "ssh"
+    }
+  ],
+  "fresh_flow_started_successfully": true,
+  "authentication_confirmed": false,
+  "credentials_copied": false,
+  "url_query_or_auth_state_persisted": false,
+  "remaining_validation": "User browser sign-in, remote whoami confirmation, and normal helper cleanup."
+}

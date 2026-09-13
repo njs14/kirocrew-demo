@@ -1,0 +1,57 @@
+{
+  "skill": "/Users/noahsutter/.codex/plugins/cache/openai-curated-remote/no-ai-slop/1.0.6/skills/no-ai-slop/SKILL.md",
+  "eval": "/Users/noahsutter/.codex/plugins/cache/openai-curated-remote/no-ai-slop/1.0.6/skills/no-ai-slop/eval.md",
+  "scope": "Complete 14-slide copy and speaker notes, after the system-design narrative and visual review",
+  "editor": "Primary agent; direct read of full final draft and all eval checks",
+  "artifact_sha256": "bfc2516128526ab049a7c4c0b36994aae82d87c44790785ee9125da5d63a5712",
+  "notes_sha256": "b7fc925872ed5be0c285537f7415781bb4dd96b4cc294c205d26b8e247602269",
+  "changes": [
+    "Removed process narration from requirements notes",
+    "Simplified one-operator assumption and cost labels",
+    "Replaced vague operational language with the number of services to operate",
+    "Removed obsolete timing prefixes from source speaker notes",
+    "Fixed notes-export label boundaries without changing visible slides"
+  ],
+  "protected_details": [
+    "Single endpoint-control enclosure",
+    "Original evidence images",
+    "Exact tool names and request IDs",
+    "Recorded timestamps and EDT/UTC distinction",
+    "Direct service proof versus pending native CLI proof",
+    "Cost assumptions and retained storage",
+    "Nightly provenance and limited verification scope"
+  ],
+  "eval_results": {
+    "editing_principles_1": "pass",
+    "editing_principles_2": "pass",
+    "editing_principles_3": "pass",
+    "editing_principles_4": "pass",
+    "editing_principles_5": "pass",
+    "editing_principles_6": "pass",
+    "editing_principles_7": "pass",
+    "editing_principles_8": "pass",
+    "editing_principles_9": "pass",
+    "editing_principles_10": "pass",
+    "words_to_cut_1": "pass",
+    "patterns_to_cut_1": "pass",
+    "patterns_to_cut_2": "pass",
+    "patterns_to_cut_3": "pass",
+    "patterns_to_cut_4": "pass",
+    "patterns_to_cut_5": "pass",
+    "patterns_to_cut_6": "pass",
+    "patterns_to_cut_7": "pass",
+    "patterns_to_cut_8": "pass",
+    "final_read_1": "pass",
+    "final_read_2": "pass",
+    "final_read_3": "pass",
+    "final_read_4": "pass",
+    "final_read_5": "pass",
+    "final_read_6": "pass"
+  },
+  "eval_notes": [
+    "Technical limits and proposed-versus-deployed distinctions were retained because they are material facts.",
+    "Functional slide headings, metric labels and exact CLI/code vocabulary retained.",
+    "Final-read detect-only condition is not applicable to this edit request.",
+    "Full edited draft and What changed are in the downloadable notes."
+  ]
+}

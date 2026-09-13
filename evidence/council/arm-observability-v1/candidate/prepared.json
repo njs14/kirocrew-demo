@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "candidate": "arm-observability-v1",
+  "packet": "/private/tmp/kirocrew-council-arm-observability-v1-f99ba433ccb5",
+  "manifest_sha256": "f99ba433ccb533fe0142ebad8810b58a6b159a127696913331d9f2f118a511f8",
+  "output": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/council/arm-observability-v1/candidate",
+  "sources": {
+    "deck.pptx": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2.pptx",
+    "notes.md": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/slides/kirocrew-arm-observability-demo-candidate-v2/review-text.md",
+    "evidence-summary.md": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/slides/kirocrew-arm-observability-demo-candidate-v2/evidence-summary.md",
+    "slide-1.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-1.png",
+    "slide-2.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-2.png",
+    "slide-3.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-3.png",
+    "slide-4.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-4.png",
+    "slide-5.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-5.png",
+    "slide-6.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-6.png",
+    "slide-7.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-7.png",
+    "slide-8.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-8.png",
+    "slide-9.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-9.png",
+    "slide-10.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-10.png",
+    "slide-11.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-11.png",
+    "slide-12.png": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2-slides/slide-12.png"
+  },
+  "inference_started": false
+}

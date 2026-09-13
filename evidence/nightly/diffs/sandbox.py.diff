@@ -1,0 +1,422 @@
+diff --git a/.build/kirocrew-source/src/kiro_crew/sandbox.py b/.build/installed-nightly/kiro_crew/sandbox.py
+index 62dbb61..e8f64a1 100644
+--- a/.build/kirocrew-source/src/kiro_crew/sandbox.py
++++ b/.build/installed-nightly/kiro_crew/sandbox.py
+@@ -366,6 +366,12 @@ _CREW_READONLY_LEAVES: tuple[str, ...] = (
+     # READONLY note above says a kernel write denial is what holds regardless of
+     # how a command spells the way there.
+     "file_delivery_consent.json",
++    # The browser launcher and its vendored Node package tree. Agent browser
++    # commands must read and execute this directory, while a write would choose
++    # the binary the unsandboxed gateway executes during startup reclamation or
++    # an owner address-bar launch. The gateway installer runs outside the agent
++    # sandbox, so it can still replace the managed copy.
++    "playwright-cli",
+     # The app dev-mode AUTHORIZATION record (operator grants binding each dev
+     # app to its resolved ui root — see apps/dev_mode.py). Sealing it makes
+     # "operator, not agent" kernel-enforced: a sandboxed process cannot mint,
+@@ -692,6 +698,9 @@ def carveout_shadowed_by_foreign_mask(path: str, mode: str = "standard") -> bool
+ #:    * ``member-memory-bindings`` — an empty dir identifies no runs; its
+ #:      directory bind shows records the gateway publishes later without
+ #:      granting agent processes the ability to create or replace one;
++#:    * ``playwright-cli`` — an empty dir means the launcher is absent,
++#:      exactly as a missing dir does; its directory bind shows a later gateway
++#:      install while withholding every agent-side write;
+ #:    * ``computer_use.json`` — ``computer_use.enable_state.load_state`` reads ``{}``
+ #:      as DISABLED, which is what an absent keystone means;
+ #:    * ``oauth_endpoints.json`` — ``security._validate_operator_oauth_entries``
+@@ -737,7 +746,16 @@ def carveout_shadowed_by_foreign_mask(path: str, mode: str = "standard") -> bool
+ #: this list closes: a mask needs the opposite treatment (an empty bind OVER the
+ #: name), and ``_CREW_HIDDEN_LEAVES`` has no reader to prove an empty document is
+ #: absent-equivalent, so each leaf needs its own argument.
+-_CREW_PRECREATE_READONLY_DIR_LEAVES: tuple[str, ...] = ("profiles", "member-memory-bindings")
++_CREW_PRECREATE_READONLY_DIR_LEAVES: tuple[str, ...] = (
++    "profiles",
++    "member-memory-bindings",
++    "playwright-cli",
++)
++#: Read-only directory leaves whose NAME must remain the mounted name. A resolving
++#: symlink is unsafe here: the mount follows its target and leaves the lexical name
++#: replaceable, which would let an agent choose the executable the gateway runs.
++_CREW_NOFOLLOW_READONLY_DIR_LEAVES: tuple[str, ...] = ("playwright-cli",)
++assert set(_CREW_NOFOLLOW_READONLY_DIR_LEAVES) <= set(_CREW_PRECREATE_READONLY_DIR_LEAVES)
+ _CREW_PRECREATE_READONLY_FILE_LEAVES: tuple[str, ...] = (
+     "computer_use.json",
+     "oauth_endpoints.json",
+@@ -978,10 +996,10 @@ def _warn_if_alias_backed(target: str) -> None:
+ def _refuse_if_dangling_symlink(target: str) -> None:
+     """Refuse the spawn when *target* is a symlink that resolves to nothing.
+ 
+-    A RESOLVING symlink is left alone deliberately: it reads as present, so the launcher
+-    seals the inode it resolves to. The residual exposure there — the link NAME stays
+-    replaceable in a writable parent — is pre-existing for every ceiling, not specific to
+-    one this function materialises, and closing it needs the data-home root sealed.
++    A RESOLVING symlink is left to the caller. Most legacy ceilings report that
++    alias and seal its referent; a strict directory such as the gateway launcher
++    follows this check with :func:`_refuse_if_symlink_leaf` because its lexical name
++    selects executable code and must remain the mounted name.
+     """
+     if not os.path.islink(target) or os.path.exists(target):
+         return
+@@ -997,20 +1015,15 @@ def _refuse_if_dangling_symlink(target: str) -> None:
+ 
+ 
+ def _refuse_if_symlink_leaf(target: str) -> None:
+-    """Refuse the spawn when a HIDDEN-dir leaf is itself a symlink or junction.
++    """Refuse when a masked or strict read-only directory leaf is a link.
+ 
+     Stronger than :func:`_refuse_if_dangling_symlink`, which refuses only a link that
+     resolves to nothing. A leaf that RESOLVES -- a link pointing at a real directory --
+     is the attacker's entry here: ``os.path.isdir`` follows it and reports a directory,
+-    so the mask loop binds over the link's TARGET, not the leaf name. The leaf name
++    so the mask or seal binds over the link's TARGET, not the leaf name. The leaf name
+     lives in the writable data home, so a sandboxed process can unlink it and drop an
+-    agent-controlled directory in its place, and the pre-created staging directory the
+-    preview CLI writes into is then one the agent owns. Unlike a ceiling -- where a
+-    resolving link is a pre-existing property closable only by sealing the data-home
+-    root -- these leaves are ones this module CREATES, so refusing a link at the name is
+-    in scope and costs nothing legitimate: the gateway makes the staging leaf a plain
+-    directory, never a link. Refused, not removed, for the same reason as the dangling
+-    case: ``lstat`` then ``unlink`` is not atomic.
++    agent-controlled directory in its place. Refused, not removed, because ``lstat``
++    then ``unlink`` is not atomic.
+     """
+     try:
+         info = os.lstat(target)
+@@ -1147,9 +1160,11 @@ def _materialize_sealable_ceilings() -> list[str]:
+     * a **creation failure** other than ``EEXIST`` — a read-only mount, or a filesystem
+       with no hardlink support.
+ 
+-    ``EEXIST`` is the one benign outcome, in both loops: the racing spawn that got there
+-    first, or the operator's real document. Either way the path now exists, so the
+-    launcher seals it and there is nothing to report.
++    ``EEXIST`` is benign for ordinary ceilings: another spawn or the operator won
++    the race and the launcher seals the winner. Strict executable directories have
++    a higher bar. Their winner is re-checked with ``lstat`` and must be a real
++    directory, because a symlink would move the mount off the name the gateway later
++    resolves.
+ 
+     Never TRUNCATES and never REMOVES: an existing ceiling is left byte-for-byte alone,
+     so this can only ever add the absent default.
+@@ -1158,11 +1173,17 @@ def _materialize_sealable_ceilings() -> list[str]:
+     dir_targets, file_targets = _sealable_absent_ceilings()
+ 
+     for target in dir_targets:
++        strict_nofollow = os.path.basename(target) in _CREW_NOFOLLOW_READONLY_DIR_LEAVES
+         _refuse_if_dangling_symlink(target)
++        if strict_nofollow:
++            _refuse_if_symlink_leaf(target)
+         if os.path.exists(target):
+-            # Present, so the launcher will seal it -- but say so when the seal is
+-            # reachable around rather than through this path.
+-            _warn_if_alias_backed(target)
++            if strict_nofollow:
++                _require_real_dir_nofollow(target)
++            else:
++                # Present, so the launcher will seal it -- but say so when the seal is
++                # reachable around rather than through this path.
++                _warn_if_alias_backed(target)
+             continue
+         if not os.path.isdir(os.path.dirname(target)):
+             continue
+@@ -1170,6 +1191,10 @@ def _materialize_sealable_ceilings() -> list[str]:
+             # 0o700 needs no reassertion: a umask can only clear bits, never add them.
+             os.mkdir(target, 0o700)
+         except FileExistsError:
++            if strict_nofollow:
++                # A competing creator may have planted a link after the check above.
++                # Re-check the winner without following it before trusting the name.
++                _require_real_dir_nofollow(target)
+             continue
+         except OSError as exc:
+             _warn_unsealed_ceiling(target, exc)
+@@ -2012,6 +2037,289 @@ def _voice_runtime_ancestor_guards() -> tuple[str, ...]:
+     return _voice_runtime_paths_cache[4]
+ 
+ 
++def _path_identity(path: str) -> tuple[int, int] | None:
++    """``(st_dev, st_ino)`` for *path*, or ``None`` when it cannot be stat'd.
++
++    THE seam every identity comparison below goes through, so a path that
++    cannot be inspected (not created yet, an ancestor this process may not
++    traverse, a race that unlinks mid-walk) degrades to the spelling answer
++    instead of raising into the caller's spawn path.
++
++    ``os.lstat`` keeps the identity walk on the component named by the
++    spelling being checked. The canonical spelling was already resolved with
++    ``realpath(strict=True)``, so following each component again would add no
++    information and would make the lexical alias walk perform a second path
++    resolution.
++    """
++
++    try:
++        info = os.lstat(path)
++    except OSError:
++        return None
++    return (info.st_dev, info.st_ino)
++
++
++def _identity_within_sealed_parent(path: str, parent: str) -> bool:
++    """Whether *path* is *parent* or lies inside it BY FILESYSTEM IDENTITY.
++
++    Spelling alone misses an alias the filesystem itself treats as the same
++    directory. On case-insensitive APFS ``<data home>/RUN`` and
++    ``<data home>/run`` are ONE directory, and ``realpath`` does not fold the
++    difference (it walks with ``lstat``/``readlink``, neither of which
++    canonicalizes case) -- so a differently-cased declaration walks straight
++    past the lexical predicate, which would let the probe honor it and hand the
++    child a TMPDIR the seal has already made read-only. Identity is the
++    filesystem's own answer, which covers firmlink and normalization aliases for
++    free.
++
++    A declared temp usually does NOT exist yet, so the walk simply climbs until
++    a component stats: the deepest EXISTING ancestor is what carries identity,
++    and if that ancestor is the sealed parent or lives under it then so does
++    every not-yet-created component below it -- *path* arrives resolved and
++    normalized, so no remainder can climb back out. Only the sealed parent's
++    identity is compared, never a case-folded spelling, so a case-SENSITIVE
++    filesystem keeps answering exactly as it did: there ``<data home>/RUN`` is a
++    different directory, it does not exist, and nothing seals it.
++
++    An unstat-able parent yields ``False`` rather than a folded-spelling guess.
++    :func:`_voice_runtime_parent_paths` primes and CREATES the sealed parent, so
++    that needs an out-of-band deletion race to reach -- and in that state
++    case-folding would mis-refuse a genuinely distinct ``RUN`` directory on a
++    case-sensitive filesystem, which is the worse answer: the OS seal is the
++    actual boundary, and this predicate only turns its EROFS into a clean
++    refusal.
++    """
++    parent_identity = _path_identity(parent)
++    if parent_identity is None:
++        return False
++    current = path
++    while True:
++        if _path_identity(current) == parent_identity:
++            return True
++        next_up = os.path.dirname(current)
++        if next_up == current:
++            return False
++        current = next_up
++
++
++#: Temp keys a child's ``tempfile``/``mktemp`` consults, in
++#: POSIX-then-Windows order. Spec keys are matched case-insensitively.
++CANONICAL_TEMP_KEYS = ("TMPDIR", "TMP", "TEMP")
++
++
++#: Operator-facing reason per refusal cause. ``check-failed`` belongs to the
++#: shared env wrapper below; the path classifier itself returns only the first
++#: two causes.
++DECLARED_TEMP_REFUSAL_REASONS = {
++    "sealed": ("it is inside the sandbox-sealed runtime parent, where the server " "cannot write"),
++    "unclassifiable": (
++        "it is relative and the daemon and child use different working directories, or its "
++        "canonical form cannot be established (a symlink cycle or a component that cannot "
++        "be traversed), so containment cannot be verified"
++    ),
++    "check-failed": "the seal check itself failed, so containment cannot be verified",
++}
++
++
++#: Why a spec-declared temp path is refused. ``sealed`` is a path inside
++#: ``<data home>/run``; ``unclassifiable`` is a path whose canonical form cannot
++#: be established (a symlink cycle, a component that cannot be traversed), so
++#: containment cannot be verified.
++DeclaredTempRefusal = Literal["sealed", "unclassifiable"]
++
++
++def classify_declared_temp_path(path: str) -> "DeclaredTempRefusal | None":
++    """Why a spec-declared temp *path* is refused, or ``None`` when it may be honored.
++
++    The cause matters to the caller because only ``"sealed"`` describes a
++    path inside ``<data home>/run``: an ``"unclassifiable"`` refusal is about a
++    path whose canonical form could not be established, and a diagnostic that
++    called it sealed would send an operator looking in the wrong place. Every
++    cause gets the same response -- stop honoring the path.
++
++    The question a caller must ask BEFORE it hands a sandboxed child a directory
++    that came from config text. ``<data home>/run`` is sealed read-only
++    on both backends, so a spec-declared ``TMPDIR`` under it silently gives the
++    child a temp dir it cannot write -- and the write carve-out is not the answer:
++    ``extra_writable_dirs`` is validated for SELF-DERIVED scratch paths only, so
++    pointing it at spec text would hand untrusted config a write window under
++    ``run``. A caller that gets a refusal cause must therefore stop honoring the
++    path, not try to open it.
++
++    Relative declarations are ``"unclassifiable"`` because the daemon and the
++    spawned child do not share a required working directory. The classifier
++    would resolve one against the daemon's cwd while ``spawn_backend`` runs the
++    child under ``work_dir``. Refusing the spelling is the only way to keep one
++    decision valid at every spawn boundary.
++
++    Windows: nothing else to refuse, so ``None`` for every absolute path. Kiro Crew has no
++    native Windows sandbox backend (see the delegation note in
++    :func:`wrap_argv`): a probe child there is either not spawned at all or runs
++    unsandboxed with a writable ``run``, so a declared temp under it is
++    writable and is honored exactly as it was before this check existed. Gating
++    here rather than resolving is also what keeps the check local -- on Windows
++    ``realpath`` and ``stat`` OPEN the path, so classifying untrusted config
++    text there would mean opening whatever it names.
++
++    Both spellings are tested because the data home may be a supported symlink
++    and path-based rules see each spelling independently. Spelling is only the
++    fast answer: :func:`_identity_within_sealed_parent` then asks the filesystem
++    itself, so a case, firmlink, or normalization alias of the seal cannot walk
++    past this predicate.
++
++    Blocking (``realpath``, the identity walk, plus the one-time priming of the
++    runtime directories), so an async caller must reach it off the event loop.
++    """
++    if not path:
++        return None
++    if not os.path.isabs(path):
++        return "unclassifiable"
++    if sys.platform == "win32":
++        return None
++    # realpath resolves the ORIGINAL spelling, BEFORE any lexical pass. Order is
++    # load-bearing: normalizing first collapses ``..`` lexically and so deletes
++    # the very symlink that ``..`` was climbing out of, which would make a
++    # ``<symlink-into-run>/../tmp`` declaration read as outside the seal while
++    # the child's libc resolves symlink-first and lands back inside it. Both
++    # spellings are still checked, since path-based sandbox rules
++    # see the lexical one independently.
++    #
++    # Strict first, so the kernel's own loop detection answers for a symlink
++    # cycle: the lenient form returns a cycle's link with the remainder appended
++    # and never raises, and comparing that half-resolved spelling would honor a
++    # declaration whose real location is unknown. A declared temp usually does
++    # not exist yet, so a missing component is the ordinary case and falls back
++    # to resolving as far as the path goes; every other failure (ELOOP, ENOTDIR,
++    # EACCES) leaves the canonical form unestablished, which is refused like any
++    # other unverifiable declaration.
++    try:
++        canonical = os.path.realpath(path, strict=True)
++    except FileNotFoundError:
++        canonical = os.path.realpath(path)
++    except OSError:
++        return "unclassifiable"
++    lexical = os.path.normpath(os.path.abspath(path))
++    spellings = tuple(dict.fromkeys((lexical, canonical)))
++    parents = _voice_runtime_parent_paths()
++    for spelling in spellings:
++        for parent in parents:
++            if _path_within(spelling, parent) or _identity_within_sealed_parent(spelling, parent):
++                return "sealed"
++    return None
++
++
++def classify_declared_temp_env(
++    env: "Mapping[str, object]",
++    declared_temp_keys: "Sequence[str] | None" = None,
++    *,
++    classifier: "Callable[[str], DeclaredTempRefusal | None] | None" = None,
++) -> tuple[tuple[str, ...], dict[str, tuple[str, str]], str]:
++    """Classify the temp declaration in *env* once for every MCP spawn path.
++
++    The first item is the accepted canonical key set in lookup order. The
++    second maps each refused key to ``(declared path, cause)``. The third names
++    a classifier failure for the WARNING. One refused key drops the whole temp
++    declaration because ``tempfile`` may consult a sibling first.
++
++    When *declared_temp_keys* is ``None``, every temp key in *env* is declared.
++    A caller whose environment mixes operator and ambient values passes the
++    operator-owned key names explicitly. Path inspection blocks, so async
++    callers run this function through :func:`asyncio.to_thread`.
++    """
++    if declared_temp_keys is None:
++        declared_upper = {
++            key.upper()
++            for key in env
++            if isinstance(key, str) and key.upper() in CANONICAL_TEMP_KEYS
++        }
++    else:
++        declared_upper = {
++            key.upper()
++            for key in declared_temp_keys
++            if isinstance(key, str) and key.upper() in CANONICAL_TEMP_KEYS
++        }
++    accepted = tuple(key for key in CANONICAL_TEMP_KEYS if key in declared_upper)
++    declared_values = {
++        key.upper(): value
++        for key, value in env.items()
++        if isinstance(key, str) and key.upper() in declared_upper and isinstance(value, str)
++    }
++    if not declared_values:
++        return accepted, {}, ""
++
++    check = classifier or classify_declared_temp_path
++    try:
++        refused: dict[str, tuple[str, str]] = {
++            key: (path, cause)
++            for key, path in declared_values.items()
++            if (cause := check(path)) is not None
++        }
++    except Exception as exc:
++        failure = f"{type(exc).__name__}: {exc}"
++        return (
++            (),
++            {key: (path, "check-failed") for key, path in declared_values.items()},
++            failure,
++        )
++    if refused:
++        return (), refused, ""
++    return accepted, {}, ""
++
++
++def _repr_declared_temp_log_value(
++    value: str,
++    redactor: "Callable[[str], str] | None",
++) -> str:
++    """Return one redacted, control-character-safe log field."""
++    display = value
++    if redactor is not None:
++        try:
++            display = redactor(value)
++        except Exception:
++            display = "<redaction failed>"
++    return repr(display)
++
++
++def declared_temp_refusal_reasons(
++    refused: "Mapping[str, tuple[str, str]]",
++    failure: str = "",
++    *,
++    redactor: "Callable[[str], str] | None" = None,
++) -> list[str]:
++    """Render one operator-facing reason per distinct refusal cause."""
++    reasons: list[str] = []
++    for _key, (_path, cause) in sorted(refused.items()):
++        reason = DECLARED_TEMP_REFUSAL_REASONS[cause]
++        if cause == "check-failed" and failure:
++            reason = f"{reason} ({_repr_declared_temp_log_value(failure, redactor)})"
++        if reason not in reasons:
++            reasons.append(reason)
++    return reasons
++
++
++def format_declared_temp_refusals(
++    refused: "Mapping[str, tuple[str, str]]",
++    *,
++    hidden_keys: "Sequence[str]" = (),
++    redactor: "Callable[[str], str] | None" = None,
++) -> str:
++    """Render refused key/path fields as one credential-safe log line.
++
++    ``repr`` keeps control characters inside the field instead of letting a
++    declared path forge another log record. Keys in *hidden_keys* came from a
++    resolved ``secret://`` value, so their path is never rendered at all.
++    """
++    hidden_upper = {key.upper() for key in hidden_keys}
++    fields: list[str] = []
++    for key, (path, _cause) in sorted(refused.items()):
++        if key.upper() in hidden_upper:
++            display = repr("<resolved secret>")
++        else:
++            display = _repr_declared_temp_log_value(path, redactor)
++        fields.append(f"{key}={display}")
++    return ", ".join(fields)
++
++
+ _VOICE_GUARD_REMEDY = "Pick a project subdirectory that does not contain the Kiro Crew data home."
+ 
+ _VoiceGuardRelationship = Literal["contains", "inside", "alias", "cannot-verify"]

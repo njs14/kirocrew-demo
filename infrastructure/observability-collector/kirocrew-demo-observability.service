@@ -1,0 +1,22 @@
+[Unit]
+Description=KiroCrew demo allowlisted host metrics
+After=kirocrew-demo.service kirocrew-mcp-demo.service
+
+[Service]
+Type=oneshot
+User=root
+Group=crew
+ExecStart=/usr/bin/python3 /opt/kirocrew-demo/observability/collector.py server --store
+TimeoutStartSec=20
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/kirocrew-demo-observability
+RestrictAddressFamilies=AF_UNIX AF_INET
+IPAddressDeny=any
+IPAddressAllow=localhost
+StandardOutput=null
+StandardError=journal
+

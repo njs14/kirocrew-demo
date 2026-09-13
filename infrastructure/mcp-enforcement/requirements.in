@@ -1,0 +1,4 @@
+# Supported MCP v1 maintenance line; requirements.txt locks the selected release.
+mcp>=1.30.0,<2
+boto3==1.43.93
+uvicorn==0.52.4

@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "The laptop connects to ARM EC2",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "viewBox": [
+      720,
+      280
+    ],
+    "legend": {
+      "mode": "hidden"
+    }
+  },
+  "components": [
+    {
+      "id": "arm-slide-client",
+      "type": "frontend",
+      "label": "Laptop client",
+      "sublabel": "Local Gateway off",
+      "pos": [
+        16,
+        108
+      ],
+      "size": [
+        110,
+        74
+      ]
+    },
+    {
+      "id": "arm-slide-runtime",
+      "type": "backend",
+      "label": "Gateway + Kiro CLI",
+      "sublabel": "Remote workspace",
+      "pos": [
+        220,
+        102
+      ],
+      "size": [
+        164,
+        86
+      ]
+    },
+    {
+      "id": "arm-slide-mcp",
+      "type": "security",
+      "label": "MCP service",
+      "sublabel": "Demo tool grants",
+      "pos": [
+        448,
+        102
+      ],
+      "size": [
+        116,
+        86
+      ]
+    },
+    {
+      "id": "arm-slide-s3",
+      "type": "database",
+      "label": "S3",
+      "sublabel": "Demo objects",
+      "pos": [
+        640,
+        108
+      ],
+      "size": [
+        64,
+        74
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "ARM EC2 host",
+      "wraps": [
+        "arm-slide-runtime",
+        "arm-slide-mcp"
+      ],
+      "pad": 38
+    },
+    {
+      "kind": "security-group",
+      "label": "Crew execution",
+      "wraps": [
+        "arm-slide-runtime"
+      ],
+      "pad": 10
+    },
+    {
+      "kind": "security-group",
+      "label": "Separate privilege",
+      "wraps": [
+        "arm-slide-mcp"
+      ],
+      "pad": 10
+    }
+  ],
+  "connections": [
+    {
+      "id": "arm-slide-ssh",
+      "from": "arm-slide-client",
+      "to": "arm-slide-runtime",
+      "label": "SSH tunnel",
+      "variant": "security"
+    },
+    {
+      "id": "arm-slide-call",
+      "from": "arm-slide-runtime",
+      "to": "arm-slide-mcp",
+      "label": "MCP pending",
+      "variant": "dashed"
+    },
+    {
+      "id": "arm-slide-aws",
+      "from": "arm-slide-mcp",
+      "to": "arm-slide-s3",
+      "label": "AWS API",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "amber",
+      "title": "Evidence boundary",
+      "items": [
+        "Verified direct probe: mcp-demo → MCP → S3.",
+        "Native Kiro CLI path pending sign-in."
+      ]
+    }
+  ]
+}

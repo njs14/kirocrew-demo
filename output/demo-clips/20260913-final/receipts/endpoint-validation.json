@@ -1,0 +1,83 @@
+{
+  "scene": "01-endpoint-reference",
+  "validation": "passed",
+  "hashes": {
+    "raw": {
+      "path": "recordings/20260913/raw/01-endpoint-reference.webm",
+      "sha256": "780594e6adc6764e6bb6d63cbc132017a7d71c82123a813b177eb8f6daadf50c"
+    },
+    "script": {
+      "path": "recordings/20260913/scripts/endpoint-reference.js",
+      "sha256": "b7883099e884292814b6ff4301fbd65cdde004df2c6b49ac44bab4f409d07cdd"
+    },
+    "acceptedDeck": {
+      "path": "output/kirocrew-system-design.html",
+      "sha256": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b"
+    },
+    "expandedFrame": {
+      "path": "evidence/demo-clips/20260913/endpoint-frame-expanded.png",
+      "sha256": "9febf6065965a8120eeeb40f053d50726ccf991d420ed09018aa983ec9913588"
+    },
+    "armFrame": {
+      "path": "evidence/demo-clips/20260913/endpoint-frame-arm.png",
+      "sha256": "39192e6a8546e453e223805b230db4eacc64ec282a6943468c56e307164da5a4"
+    }
+  },
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp8",
+        "width": 1600,
+        "height": 1000,
+        "r_frame_rate": "25/1"
+      }
+    ],
+    "format": {
+      "duration": "24.840000",
+      "size": "1989099"
+    }
+  },
+  "decode": {
+    "command": "ffmpeg -hide_banner -loglevel error -i recordings/20260913/raw/01-endpoint-reference.webm -f null -",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  "visualInspection": [
+    {
+      "seconds": 8,
+      "file": "evidence/demo-clips/20260913/endpoint-frame-expanded.png",
+      "result": "Single endpoint-control enclosure complete and legible, caption identifies accepted September 11 reference and unverified broader capabilities."
+    },
+    {
+      "seconds": 21,
+      "file": "evidence/demo-clips/20260913/endpoint-frame-arm.png",
+      "result": "Full ARM placement slide visible; native MCP pending label and recorded timestamps legible."
+    }
+  ],
+  "recommendedLabel": "Architecture reference \u2014 accepted single endpoint-control box",
+  "recommendedDescription": "Actual navigation of the accepted deck. September 11 reference and September 13 recorded ARM placement; broader controls and native Kiro CLI path are not verified by this clip.",
+  "suggestedCues": [
+    {
+      "time": 2.7,
+      "label": "Reference and scope"
+    },
+    {
+      "time": 6.5,
+      "label": "Inspect the single enclosure",
+      "pause": true
+    },
+    {
+      "time": 18.7,
+      "label": "Recorded ARM placement",
+      "pause": true
+    }
+  ],
+  "limitations": [
+    "Browser-content recording only, no native desktop footage.",
+    "No live Gateway, admin portal, AWS or authentication actions.",
+    "Viewing recorded architectural evidence does not refresh underlying deployment checks.",
+    "Original footage is silent and at real speed; no generated frames or video padding."
+  ]
+}

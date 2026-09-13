@@ -1,0 +1,198 @@
+{
+  "schema": 1,
+  "checked_at": "2026-09-13T19:18:22.234900+00:00",
+  "scope": "Portable runtime configuration, lifecycle guards, telemetry collection, login callback wiring, and fixed operator commands. Source review and local fixture tests on macOS only.",
+  "files": [
+    {
+      "path": "scripts/demo_config.py",
+      "sha256": "dc7ff02a5ff956bd32e927aa2bd92a49ffd326830c951c85dd3d53098811a31e",
+      "bytes": 10201
+    },
+    {
+      "path": "config/demo.example.json",
+      "sha256": "30022592b334cb6c87faac483e70ca531a16d6bbfc0598af19e027f92d1dc651",
+      "bytes": 683
+    },
+    {
+      "path": "scripts/demo-cloud.py",
+      "sha256": "0a0c8851db860a94abcc7ce8502037a2d706408975846821419d3669fef80ab5",
+      "bytes": 29540
+    },
+    {
+      "path": "scripts/demo-telemetry.py",
+      "sha256": "b9fdc745aa63e3cff858b2cfe7aaec92d7ce69a0c210d454b349d3bad9c0f0bd",
+      "bytes": 12235
+    },
+    {
+      "path": "scripts/ec2-login.py",
+      "sha256": "5c1f146a045979e76de5b2c0f2958e29d590ed24f13ef19f1da542a8f7f53a75",
+      "bytes": 20491
+    },
+    {
+      "path": "scripts/serve-demo-probes.py",
+      "sha256": "94cc3c0ec2c08302dcf0f3b7561788a7b3da638f0c292b51cbeb767bb6c02917",
+      "bytes": 22981
+    },
+    {
+      "path": "demo.sh",
+      "sha256": "a7cbcb0abfff07e62d5f2fc60d7e4309b94373548b04f4054634a77cb6335ff7",
+      "bytes": 1106
+    },
+    {
+      "path": "native-demo.sh",
+      "sha256": "521d5fc9a5f48c20181c1e5a6df1300268a6ede40f8e9a70b2a6be13facfdaf6",
+      "bytes": 1126
+    },
+    {
+      "path": "infrastructure/configure-arm-services.sh",
+      "sha256": "081edcf235f39774605c80a33ee495434d5a30bbfb4e7e3eeb26c8b149f890b1",
+      "bytes": 3950
+    },
+    {
+      "path": "infrastructure/observability-collector/collector.py",
+      "sha256": "f96c61c9395569886c01d28f3e74c26b86719bbcd3b6f1e9cf467f703cd58124",
+      "bytes": 22710
+    },
+    {
+      "path": "scripts/tests/test_demo_config.py",
+      "sha256": "44f730b445ee892160cb2629eb97219639b51a6162fec196fda59869188e485e",
+      "bytes": 10367
+    },
+    {
+      "path": "scripts/tests/test_demo_cloud.py",
+      "sha256": "85f4bf7dd800a10abac9f78e3bbcf89b6887e2251ccb82fe96281b57001e7fcd",
+      "bytes": 23721
+    },
+    {
+      "path": "scripts/tests/test_demo_probes.py",
+      "sha256": "9caf6f8aeae5264d258e3db80c915181fa2f70fb539da5405863d33abafae972",
+      "bytes": 11810
+    },
+    {
+      "path": "infrastructure/observability-collector/test_collector.py",
+      "sha256": "d9ff01d84a1284a568e3374d4bae9dfb96f648cbff4ac848616325f569cd9e98",
+      "bytes": 21865
+    },
+    {
+      "path": "docs/RUNTIME.md",
+      "sha256": "bfdaeba2104de9fc96d266b7c0d0dc1261df040c580b1ae02cb50c0224009bf4",
+      "bytes": 13843
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "runtime_test_count": 95,
+    "categories": [
+      {
+        "name": "configuration, SSH guards, wrapper environment and mocked login callback",
+        "passed": 15,
+        "failed": 0,
+        "command": [
+          "python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "scripts/tests",
+          "-p",
+          "test_demo_config.py"
+        ]
+      },
+      {
+        "name": "cloud lifecycle and managed tunnel identity",
+        "passed": 27,
+        "failed": 0,
+        "command": [
+          "python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "scripts/tests",
+          "-p",
+          "test_demo_cloud.py"
+        ]
+      },
+      {
+        "name": "operator command, CSRF, receipt schema and bounded subprocess behavior",
+        "passed": 16,
+        "failed": 0,
+        "command": [
+          "python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "scripts/tests",
+          "-p",
+          "test_demo_probes.py"
+        ]
+      },
+      {
+        "name": "standalone collector and telemetry timer behavior",
+        "passed": 37,
+        "failed": 0,
+        "command": [
+          "python3",
+          "infrastructure/observability-collector/test_collector.py"
+        ]
+      }
+    ],
+    "shell_syntax": {
+      "passed": true,
+      "command": [
+        "bash",
+        "-n",
+        "demo.sh",
+        "native-demo.sh",
+        "infrastructure/configure-arm-services.sh"
+      ]
+    },
+    "python_compilation": {
+      "passed": true,
+      "scope": "Changed runtime Python modules"
+    },
+    "fresh_index_export_tests": {
+      "path": "evidence/portability/fresh-checkout-tests.json",
+      "sha256": "488f4fea9d8b1b7fd2b62582d77ef4537e2da3d3b6b3d59d5209f4a9421d92d0",
+      "bytes": 3885
+    },
+    "fresh_index_export_scope": "Separate root validation on the same macOS host, with a checkout path containing spaces, without local config or runtime snapshots. Its aggregate counts include other implementation lanes and are not additional runtime tests."
+  },
+  "review": {
+    "reviewer": "/root/portable_runtime_review",
+    "verdict": "pass",
+    "remaining_material_findings": 0,
+    "scope": "Independent source inspection and 95 local/fixture tests; no deployment, native authentication or native enforcement acceptance.",
+    "final_delta_recheck": {
+      "config_sha256": "dc7ff02a5ff956bd32e927aa2bd92a49ffd326830c951c85dd3d53098811a31e",
+      "config_tests_sha256": "44f730b445ee892160cb2629eb97219639b51a6162fec196fda59869188e485e",
+      "runtime_docs_sha256": "bfdaeba2104de9fc96d266b7c0d0dc1261df040c580b1ae02cb50c0224009bf4",
+      "result": "Reviewer inspected the final regex error wrapper and two final regressions, reran all 15 configuration tests, and confirmed all other reviewed runtime source hashes remained unchanged."
+    },
+    "reviewed_fixes": [
+      "The login callback and cleanup use the configured SSH alias; a mocked started-to-URL-to-authenticated flow verifies tunnel construction without a real login.",
+      "The synthetic shell wrapper preserves the selected baseline path while stripping credentials and Python module overrides.",
+      "A relative app path is normalized before deriving the anchored running-process guard; invalid regex syntax produces a fixed ValueError.",
+      "Cloud lifecycle and local rollback verify the exact loaded LaunchAgent program and SSH arguments before mutations; only exact absence permits bootstrap.",
+      "Pinned known-host paths retain final symlink visibility and reject symlinked files.",
+      "The reusable presenter suite uses generated receipts and explicit fixture configuration, preserving command, CSRF, output, schema and concurrency checks without historical deployment dependencies.",
+      "Fresh-machine documentation uses the prepared manifest workflow and lists required ARM artifacts, runtime staging and separate S3 fixture/digest prerequisites."
+    ]
+  },
+  "boundaries": {
+    "live_aws_operations_by_runtime_lane": false,
+    "live_ssh_operations_by_runtime_lane": false,
+    "native_login_attempts_by_runtime_lane": false,
+    "client_or_server_application_changes_by_runtime_lane": false,
+    "telemetry_uploads_or_timer_changes_by_runtime_lane": false,
+    "read_only_local_client_collection_performed": true,
+    "local_private_config_created": true,
+    "private_config": "config/demo.local.json contains the migrated deployment bindings without credentials, is mode 0600, is ignored, and is intentionally excluded from this receipt file inventory.",
+    "root_timer_migration": "Performed separately by root after this lane supplied and tested exact legacy migration support; see evidence/portability/client-telemetry-migration.json.",
+    "linux_scope": "Platform behavior is covered by local fixtures and explicit manual-mode paths; this receipt does not establish execution on a separate Linux client machine.",
+    "arm_installation_scope": "Installer parameters and guards were inspected and shell syntax checked. No ARM runtime installer was executed by this lane.",
+    "historical_artifacts": "Accepted presentation artifacts, HANDOFF.md, historical receipts and the legacy evidence-bound presenter test were preserved.",
+    "github_actions": "out of scope"
+  }
+}

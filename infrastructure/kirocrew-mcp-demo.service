@@ -1,0 +1,32 @@
+[Unit]
+Description=KiroCrew demo MCP authorization service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=mcp-demo
+Group=mcp-demo
+WorkingDirectory=/opt/kirocrew-demo/mcp-enforcement
+Environment=HOME=/var/lib/mcp-demo
+Environment=AWS_REGION=us-east-1
+Environment=AWS_SHARED_CREDENTIALS_FILE=/dev/null
+Environment=AWS_CONFIG_FILE=/dev/null
+Environment=DEMO_MCP_TOKEN_FILE=/etc/kirocrew-demo/mcp-token
+EnvironmentFile=/etc/kirocrew-demo/mcp.env
+ExecStart=/opt/kirocrew-demo/mcp-venv/bin/python /opt/kirocrew-demo/mcp-enforcement/server.py
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+
+[Install]
+WantedBy=multi-user.target

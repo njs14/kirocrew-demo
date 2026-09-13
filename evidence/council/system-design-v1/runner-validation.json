@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-13T16:40:59Z",
+  "runner": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/council/system-design-v1/run-council.py",
+  "runner_sha256": "41739c4686a8deea771bc52c770813f754d93d83cf355c1d6478e685746c2397",
+  "base_runner": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/council/arm-observability-v1/run-council.py",
+  "base_runner_sha256": "b60de76606abb5f3445a0bc522db326a04c3e27fcf1cd3d1dc2b816872e4877e",
+  "status": "pass",
+  "inference_started": false,
+  "actual_candidate_prepared": false,
+  "fixture_packet_removed": true,
+  "actual_html_inspected": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-system-design.html",
+  "actual_html_sha256": "bfc2516128526ab049a7c4c0b36994aae82d87c44790785ee9125da5d63a5712",
+  "image_fixture_sources": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/presentation/kirocrew-system-design",
+  "checks": [
+    {
+      "name": "clean_env_unchanged",
+      "status": "pass"
+    },
+    {
+      "name": "command_for_unchanged",
+      "status": "pass"
+    },
+    {
+      "name": "actual_html_structure_14_sections",
+      "status": "pass"
+    },
+    {
+      "name": "actual_decoded_assets_secret_scan",
+      "status": "pass"
+    },
+    {
+      "name": "grok_all_14_exact_jpegs",
+      "status": "pass"
+    },
+    {
+      "name": "grok_missing_14_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "grok_mismatched_14_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "grok_error_terminal_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "claude_all_14_exact_jpegs",
+      "status": "pass"
+    },
+    {
+      "name": "claude_missing_14_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "claude_mismatched_14_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "claude_error_terminal_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "decoded_markdown_quoted_json_secret_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "unknown_encoded_mime_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "unsupported_charset_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "synthetic_prepare_without_subprocess",
+      "status": "pass"
+    },
+    {
+      "name": "packet_exact_17_content_files_plus_manifest",
+      "status": "pass"
+    },
+    {
+      "name": "existing_output_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "existing_packet_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "wrong_manifest_confirmation_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "unexpected_packet_file_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "modified_packet_jpeg_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "duplicate_html_slide_id_rejected",
+      "status": "pass"
+    },
+    {
+      "name": "commented_missing_html_slide_rejected",
+      "status": "pass"
+    }
+  ],
+  "scope": "Local parser, preparation and receipt-gate fixtures; no external model calls. Launcher/environment functions unchanged. Exact review candidate preparation belongs to parent."
+}

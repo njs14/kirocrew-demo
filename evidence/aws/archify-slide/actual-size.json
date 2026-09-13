@@ -1,0 +1,25 @@
+{
+  "time": "2026-09-13T04:54:22.034Z",
+  "kind": "actual-slide-size-render",
+  "source": {
+    "path": "evidence/aws/archify-slide/kirocrew-ec2-slide.svg",
+    "bytes": 142235,
+    "sha256": "1ab1a45e71571fefd29273fd7700afed0a820b045b766ed888306c865278bbdd"
+  },
+  "output": {
+    "path": "evidence/aws/archify-slide/kirocrew-ec2-slide-1152x480.png",
+    "bytes": 39769,
+    "sha256": "451fbde58bdae4822efb8ee8bfd2e89f0e8379a3b1f6b42df17aa3a5335b384d"
+  },
+  "viewport": [
+    1152,
+    480
+  ],
+  "imageFit": "contain; canonical SVG geometry preserved",
+  "scale": 1.6,
+  "projectedFontPx": {
+    "nodeLabel": 17.6,
+    "nodeSublabel": 14.4
+  },
+  "scope": "Static diagram presentation asset; no browser viewer UI or control verification claims."
+}

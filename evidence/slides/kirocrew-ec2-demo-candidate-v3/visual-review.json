@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "time": "2026-09-13T04:41:46.229961+00:00",
+  "artifact": "output/kirocrew-ec2-demo-candidate-v3.pptx",
+  "sha256": "fe7708a0689906820be49bd06baa325c93fec3465856bdc0071c2daae307cc3e",
+  "visualReview": "passed",
+  "reviewer": "Codex deck_draft author, image-capable inspection",
+  "method": "Imported exact finalized PPTX and rendered all nine slides. Inspected each slide at 1280x720.",
+  "observations": [
+    "Accepted single endpoint-control screenshot is embedded unchanged.",
+    "Final Archify presentation crop hash matches embedded PNG bytes.",
+    "All titles, body copy and three native tables fit without overlap or clipping.",
+    "The topology is an overview at slide scale. Speaker notes transition to the full interactive artifact for node detail.",
+    "Native backend authentication, enforcement and full-session performance remain visibly pending.",
+    "Native desktop remote connection and local Gateway-off state are explicitly verified separately."
+  ],
+  "sourceAssets": [
+    {
+      "path": "evidence/browser/endpoint-slide.png",
+      "bytes": 85943,
+      "sha256": "4c64d4035f1c61b8bdd8d59cf5fb8e1abb318a754a73cc0865f5e4b603ecedc1"
+    },
+    {
+      "path": "evidence/aws/archify/kirocrew-ec2-live-presentation.png",
+      "bytes": 202649,
+      "sha256": "c19be95bd3582df21d0a059660d78b01c099b7fa2550781f3a304c797d78c68b"
+    }
+  ],
+  "embeddedImages": {
+    "ppt/media/image.png": "4c64d4035f1c61b8bdd8d59cf5fb8e1abb318a754a73cc0865f5e4b603ecedc1",
+    "ppt/media/image2.png": "c19be95bd3582df21d0a059660d78b01c099b7fa2550781f3a304c797d78c68b"
+  },
+  "renders": [
+    {
+      "slide": 1,
+      "path": "output/kirocrew-ec2-demo-candidate-v3-slides/slide-1.png",
+      "sha256": "041fcd3ea012d925b08edeb70da9a96000a3e89834f914b777449fb2483ffe41",
+      "bytes": 63172
+    },
+    {
+      "slide": 2,
+      "path": "output/kirocrew-ec2-demo-candidate-v3-slides/slide-2.png",
+      "sha256": "430a5fe6631a8c99bddd643e855a427029878fb1bae6b5b40210b86cd2c0b265",
+      "bytes": 162801
+    },
+    {
+      "slide": 3,
+      "path": "output/kirocrew-ec2-demo-candidate-v3-slides/slide-3.png",
+      "sha256": "5452a099d291058df3f8df4cf11cb5e5f0cbe737cced327f63c06a9dd54c6146",
+      "bytes": 85777
+    },
+    {
+      "slide": 4,
+      "path": "output/kirocrew-ec2-demo-candidate-v3-slides/slide-4.png",
+      "sha256": "e1d6f1f64bf2075f76712348ed5ecd15f04b44ff0c9bd48cf8e6b84506fb26cd",
+      "bytes": 102995
+    },
+    {
+      "slide": 5,
+      "path": "output/kirocrew-ec2-demo-candidate-v3-slides/slide-5.png",
+      "sha256": "896cb9a346d12a7128882735198316558dd4786694ead3830c22f188cb18711f",
+      "bytes": 93010
+    },
+    {
+      "slide": 6,
+      "path": "output/kirocrew-ec2-demo-candidate-v3-slides/slide-6.png",
+      "sha256": "4daa463084a838e961e0bf2e2b17c40046b835442469ee3220cce568bb09629a",
+      "bytes": 98969
+    },
+    {
+      "slide": 7,
+      "path": "output/kirocrew-ec2-demo-candidate-v3-slides/slide-7.png",
+      "sha256": "b266da6048ef4fdae1bcfdd59f406823914c16343a2107c0b85bb56e59ff9464",
+      "bytes": 81729
+    },
+    {
+      "slide": 8,
+      "path": "output/kirocrew-ec2-demo-candidate-v3-slides/slide-8.png",
+      "sha256": "45d6153781c3cf4225bc93c3a7f0a72f1844c222a392c683fcf00c3106a4b6f1",
+      "bytes": 95022
+    },
+    {
+      "slide": 9,
+      "path": "output/kirocrew-ec2-demo-candidate-v3-slides/slide-9.png",
+      "sha256": "500c63d4049af195e8041d9f3a14ac6a3bb657cd5f2cabea8034154f91255827",
+      "bytes": 104238
+    }
+  ],
+  "nativePowerPointPlaybackVerified": false,
+  "councilReviewPerformed": false,
+  "noAiSlopPassPerformed": false
+}

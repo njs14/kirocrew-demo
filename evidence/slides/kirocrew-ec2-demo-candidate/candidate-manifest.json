@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "created": "2026-09-13T04:35:01.895Z",
+  "artifact": "output/kirocrew-ec2-demo-candidate.pptx",
+  "sha256": "33332cd50e3f206247d3a3f84be4020580d3da9bc4f4600838cac3684b74a902",
+  "slides": 9,
+  "state": {
+    "nativeVerified": false,
+    "clientVerified": true,
+    "nativeReceipt": "Native Kiro CLI sign-in and backend session verification pending.",
+    "clientReceipt": "Native desktop connected through SSH. Local Gateway is off.",
+    "topologyImage": "evidence/aws/archify/kirocrew-ec2-live.png"
+  },
+  "sourceBuilder": ".build/slides/build-ec2-deck.mjs",
+  "renderDirectory": "output/kirocrew-ec2-demo-candidate-slides",
+  "nativePowerPointPlaybackVerified": false
+}

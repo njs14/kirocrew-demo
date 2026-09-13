@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-13T14:54:51.897625+00:00",
+  "reviewer": "independent telemetry_review agent",
+  "scope": "Read-only source and supplied runtime-evidence review. Offline tests were rerun independently. No cloud, SSH, UI, service or configuration mutations were performed by this reviewer.",
+  "verdict": "no_blocking_findings",
+  "unresolved_findings": [],
+  "source_sha256": {
+    "scripts/demo-telemetry.py": "a2c1ac469d5578d481b9a84032095e19ebba43b4bb0417aebbf24319529115cd",
+    "infrastructure/observability-collector/collector.py": "744f58aac5c8c773dd64a1091bd5f8bbeed2357402df6f6e7ca3d9a14e9194ea",
+    "infrastructure/observability-collector/install.sh": "e0f75b1a7c52b75d76fcd622d142215c82dc0b1ef27fce07884ff89658d819ae",
+    "infrastructure/observability-collector/kirocrew-demo-observability.service": "72fbb8ee0c76f8c82a26aa9528c96b370a1154cb893e4f0f4fbc38c7bae35c51",
+    "infrastructure/observability-collector/kirocrew-demo-observability.timer": "c23fe500d0af81997c9a9b6a6b4b106b9aa0e50fa2ffd64f08179cc98e36e058",
+    "infrastructure/observability/app/app.json": "34e474700da3868d828fdaeba2af60cd71801defe9b93e9a6548131fea571cee",
+    "infrastructure/observability/app/backend/server.py": "33a46c42b29de99d41cbe581fa5e86c3946a279d8506932a5fec8429d720c80e",
+    "infrastructure/observability/app/ui/dist/index.mjs": "a652b81dea5a32ff5772f48b27875fc8ca810f36c0d4743a7800c584682f67eb",
+    "infrastructure/observability/stage-app.sh": "5b7e18b8c3794a958092808798c7ac68ec12be1784465f9ce28044a3e229c1dd",
+    "infrastructure/set-demo-telemetry.py": "2e324099fe7862d1e69a3011b5a1f2368d157e52679a2d986e912c6131938494",
+    "infrastructure/kirocrew-demo.service": "662c10170325a0a2e0025e2007d48c650e5ddf88343f0475f50404cfc97360df",
+    "infrastructure/kirocrew-demo-wrapper.sh": "66b0dab6068a0ae354c1f7b893d12897887bae1f70c13947aebea81eead9e649",
+    "infrastructure/kirocrew-demo-client-command": "66b0dab6068a0ae354c1f7b893d12897887bae1f70c13947aebea81eead9e649",
+    "infrastructure/observability-collector/test_collector.py": "c33d275d07cf1ea0172ceff375afdaea1d72919dc59f3d6f2c2485fd8be8e5f4",
+    "infrastructure/observability/tests/test_app.py": "885d3ea85935574c75e9dc9bdd5ad9648892d06090629e1931af654d0c57e346",
+    "infrastructure/observability/tests/test_ui.mjs": "0fbd66e4d7b7547e2692cf77ee43b7b52ad364e9f1f837c729d752f8c2c5d963"
+  },
+  "receipt_sha256": {
+    "infrastructure/observability-collector/implementation-receipt.json": "544d93025d08b3f2c803a198b64771a80c9850930e2041ec0912e6e075cc6127",
+    "infrastructure/observability/APP-TEST-RECEIPT.json": "db0b56e216a5d34281726e36b790c1df525b4c39e90b628ce41ad23597efe15b",
+    "evidence/aws/arm-20260913/observability-runtime-receipt.json": "580f30e31638d8bf6ac27d2863a292888e6abf0b265da9a87e5b7144b560963e",
+    "evidence/aws/arm-20260913/observability-api-readback.json": "d7d60f596efdfef322c84f0d79e63bb06f307c2c47efd4664ad58c2812f098e0"
+  },
+  "independent_checks": {
+    "collector_tests": {
+      "passed": 24,
+      "failed": 0,
+      "command": "/usr/bin/python3 -m unittest discover -s infrastructure/observability-collector -p test_*.py -v"
+    },
+    "app_http_schema_and_spawn_tests": {
+      "passed": 16,
+      "failed": 0,
+      "runtime": "Installed KiroCrew Nightly bundled Python 3.12 with actual proxy SDK"
+    },
+    "ui_regression_tests": {
+      "passed": 4,
+      "failed": 0,
+      "command": "node --experimental-vm-modules --test infrastructure/observability/tests/test_ui.mjs",
+      "warning": "Node emits its expected experimental VM modules warning"
+    },
+    "implementation_receipt_hashes_match": true,
+    "runtime_source_hashes_match": true,
+    "runtime_api_readback_hash_matches": true,
+    "listed_screenshot_files_exist": true
+  },
+  "resolved_findings": [
+    "Client stop queries and verifies the exact live launchd job even if its plist is absent; it requires confirmed absence before reporting success and rejects unrelated jobs or unknown state.",
+    "The UI describes port 5599 as SSH tunnel listener reachability, limiting the claim to the actual local TCP probe.",
+    "The UI advances sample age once per second and marks retained samples last known after refresh failures; the Current badge cannot remain green indefinitely.",
+    "Version 1.0.1 uses loopback port 9102, which is within the actual Gateway spawn range; manifest and backend agree, and the supplied runtime receipt records live health and signed data success.",
+    "The runtime receipt originally queried an incorrect IMDS guard unit name. The corrected receipt reads kirocrew-imds-guard and records active/exited, matching the Gateway dependency."
+  ],
+  "security_and_scope": [
+    "Collectors read bounded counters, executable identities for process selection and fixed systemd properties; no command arguments, environments, credentials, sessions or raw log text enter samples.",
+    "Client ingestion enforces a fixed numeric/boolean schema, bounded length, clock window and increasing timestamps. Storage uses root ownership, crew read access, no-follow checks, locking and atomic replacement.",
+    "SSH upload requires the pinned ARM host-key alias and strict verification; the fixed receiver opens no ingestion listener.",
+    "The app uses its own declared API scope and the actual Nightly HMAC verifier. It reads only fixed bounded regular files and rebuilds allowlisted responses. Only fixed health data is unsigned; there is no mutation endpoint.",
+    "The native telemetry patch changes seven known telemetry fields, preserves other configuration sections, makes a private backup, retains local exports with seven-day/64 MiB limits, clears OTLP export and disables the vendor beacon. These changes match the user request.",
+    "Gateway service/wrapper configuration keeps the beacon opt-out without forcing native metric collection off."
+  ],
+  "supplied_runtime_evidence": {
+    "independently_reexecuted_by_reviewer": false,
+    "recorded_at": "2026-09-13T14:53:11.569006+00:00",
+    "app_health_http": 200,
+    "unsigned_app_data_http": 401,
+    "unauthenticated_gateway_app_http": 403,
+    "correct_imds_guard_active": true,
+    "client_and_server_samples_current": true,
+    "desktop_restart_retained_gateway_identity": true,
+    "sample_store_modes": "root:crew 0640 per supplied runtime readback",
+    "client_timer_interval_seconds": 60
+  },
+  "evidence_limits": [
+    "Runtime observations and screenshots were supplied by root; this reviewer inspected their receipts and source consistency but did not repeat cloud, SSH or browser operations or perform visual screenshot review.",
+    "Native Kiro CLI authentication remains pending. No completed native agent turn, tool approval, SEL correlation or sandbox execution is established by telemetry.",
+    "Custom collection events are fixed health transitions and collection errors, not native security audit records.",
+    "TCP reachability is not application authentication or proof of an agent response. Client scheduler CPU and server one-second CPU use different sampling methods.",
+    "Application HMAC read signatures can be repeated within the SDK 60-second freshness window.",
+    "The installed custom app is crew-owned under the standard App Kit lifecycle; root-owned collector files are protected separately. This is not immutable or tamper-proof audit storage."
+  ]
+}

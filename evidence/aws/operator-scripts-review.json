@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-09-13T04:49:46.935Z",
+  "reviewer": "Codex deployment_review subagent; bounded independent read-only source and offline behavioral review",
+  "status": "no_remaining_actionable_defects_in_reviewed_candidate",
+  "candidate_sha256": {
+    "scripts/demo-cloud.py": "f0a7519ed7caee871b97e3fffc986804258f477c94aeee34422e988b8cc2b188",
+    "infrastructure/RUNBOOK.md": "27a0d1d56e2b28602718a14b80f1ab8b30b4e2439d894d191fc049a6a9a1d8fb",
+    "scripts/native-backend-demo.py": "c859ac80e4adc29a5943504e015df637c5ebf19a5fe6e597eece57be89601267",
+    "scripts/native-backend-demo.README.md": "711f87eaa57ac24628b884aaeda63cbc274a85f22d2e3ca7989a56fca27bbfd8",
+    "native-demo.sh": "a54838bfced6474606751c6ec37c9224b0eace03cfed4b5146aee424260290b8"
+  },
+  "scope": [
+    "Existing-demo lifecycle mutation guards, account and resource identity checks, CIDR updates and SSH configuration preservation",
+    "Runbook lifecycle, rollback, cleanup and evidence boundaries",
+    "Native backend runner manual once-only approval flow, exact-input checks, result/SEL/audit correlation, failure handling and sanitization",
+    "Native launcher runtime selection, argument forwarding and clean environment"
+  ],
+  "resolved_findings": [
+    {
+      "id": "start-before-cidr-update",
+      "priority": "P2",
+      "path": "scripts/demo-cloud.py",
+      "line": 348,
+      "status": "resolved",
+      "resolution": "CIDR update and verification now precede start-instances. A failed update prevents compute start and local SSH/tunnel changes."
+    },
+    {
+      "id": "cleanup-bare-stack-name",
+      "priority": "P2",
+      "path": "infrastructure/RUNBOOK.md",
+      "line": 132,
+      "status": "resolved",
+      "resolution": "Manual delete-stack and wait now use the exact recorded full StackId ARN, binding account and deployment identity."
+    },
+    {
+      "id": "nested-dictionary-key-sanitization",
+      "priority": "P2",
+      "path": "scripts/native-backend-demo.py",
+      "line": 95,
+      "status": "resolved",
+      "resolution": "Dictionary keys and values are sanitized, including nested JSON strings. Sensitive-field matching uses the original key; the fixed public canonical-identity limitation field is preserved."
+    }
+  ],
+  "open_findings": [],
+  "independently_executed_checks": [
+    "mocked_start_updates_cidr_before_compute",
+    "mocked_failed_cidr_aborts_before_start_or_local_mutation",
+    "offline_apply_rejected",
+    "wrong_account_stops_after_identity",
+    "SSH_other_bytes_preserved_and_weakened_checking_rejected",
+    "nested_JSON_keys_and_values_redacted",
+    "public_identity_limitation_field_preserved",
+    "exact_JSON_trace_required_no_extra_arguments",
+    "launcher_shell_syntax",
+    "cleanup_uses_recorded_stack_ARN"
+  ],
+  "source_review_observations": [
+    "Cloud mutations require --apply, while offline apply, status apply and cleanup-plan apply are refused. Cleanup itself remains a manual documented action.",
+    "The helper checks the fixed account, stack/instance binding, instance type, project tags, sole security-group attachment, exact TCP22 IPv4 /32 ingress and agreement with the CloudFormation parameter before operational mutation.",
+    "SSH edits change only the shared HostName line and preserve other bytes. Dedicated known-host settings and strict checking are required. Local edits use backups, concurrent-change checks and atomic replacement.",
+    "Native approvals require an explicit operator decision for the current request ID and card digest, exact trace-only JSON arguments, unchanged pending card and visible input. There is no automatic approval or persistent trust grant.",
+    "An interactive permission card during crew_denied is rejected for containment and immediately fails the run. That manual rejection does not count as Crew-denial proof.",
+    "Native success requires exact tool-call-ID and trace joins, independent MCP audit correlation, stable service identity, native SEL evidence and valid SEL chain. The canonical identity limitation is disclosed rather than inferred from a display title.",
+    "The native launcher passes arguments without shell reinterpretation and removes inherited AWS/Python environment overrides."
+  ],
+  "limitations": [
+    "No cloud mutation, model request, SSH connection, login or service operation was performed during this operator-script review.",
+    "The start/failure ordering checks invoked the main function only with mocked cloud, local-file and tunnel boundaries. They do not establish successful real stop/start, changed-IP recovery or rollback.",
+    "Live native backend execution remains a separate acceptance step. Offline code checks do not establish native Crew, MCP, AWS or sandbox behavior.",
+    "Parameterized approval cards do not expose canonical MCP server/tool identity. The runner requires manual card review and does not claim display titles provide authoritative identity.",
+    "Crew denial SEL lacks a direct trace/tool-call-ID field. Its verdict uses the explicitly documented isolated session/phase correlation, plus a trace-bearing host blocked row and independent healthy MCP journal interval.",
+    "Other subagent synthetic evaluator tests were assessed through their reports and source inspection; this reviewer independently executed only the checks listed above.",
+    "Existing deployment-final-review.json remains unchanged."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "created": "2026-09-13T05:01:08.232Z",
+  "artifact": "output/kirocrew-ec2-demo-preflight.pptx",
+  "sha256": "f5d8db9cde05b949a45ce73940b0784bab355ac0929f7649c95ed75b4012effb",
+  "slides": 9,
+  "state": {
+    "nativeVerified": false,
+    "clientVerified": true,
+    "nativeReceipt": "Native Kiro CLI sign-in and backend session verification pending.",
+    "clientReceipt": "Native desktop connected through SSH. Local Gateway is off.",
+    "topologyImage": "evidence/aws/archify-slide/kirocrew-ec2-slide-1152x480.png"
+  },
+  "sourceBuilder": ".build/slides/build-ec2-deck.mjs",
+  "sourceBuilderSha256": "60548f24f8ebe06edd002670fe5769ee9d62661d24fdf064672c824e6f33a85d",
+  "sourceAssets": [
+    {
+      "path": "evidence/browser/endpoint-slide.png",
+      "bytes": 85943,
+      "sha256": "4c64d4035f1c61b8bdd8d59cf5fb8e1abb318a754a73cc0865f5e4b603ecedc1"
+    },
+    {
+      "path": "evidence/aws/archify-slide/kirocrew-ec2-slide-1152x480.png",
+      "bytes": 39769,
+      "sha256": "451fbde58bdae4822efb8ee8bfd2e89f0e8379a3b1f6b42df17aa3a5335b384d"
+    }
+  ],
+  "renderDirectory": "output/kirocrew-ec2-demo-preflight-slides",
+  "nativePowerPointPlaybackVerified": false
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=Collect KiroCrew demo host metrics once a minute
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=60s
+AccuracySec=1s
+Unit=kirocrew-demo-observability.service
+
+[Install]
+WantedBy=timers.target
+

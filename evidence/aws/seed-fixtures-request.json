@@ -1,0 +1,6 @@
+{
+  "name": "aws___run_script",
+  "arguments": {
+    "code": "bucket = 'kirocrew-demo-20260913-demobucket-pdjzgyu25xhb'\nobjects = {'allowed/sentinel.txt': 'KiroCrew EC2 demo: allowed fixture, September 13 2026.\\n', 'denied/sentinel.txt': 'KiroCrew EC2 demo: existing fixture protected by an explicit IAM deny.\\n'}\nrecords = []\nfor key, body in objects.items():\n    put = await call_boto3(service_name=\"s3\", operation_name=\"PutObject\", region_name=\"us-east-1\", params={\"Bucket\":bucket,\"Key\":key,\"Body\":body,\"ContentType\":\"text/plain\"})\n    head = await call_boto3(service_name=\"s3\", operation_name=\"HeadObject\", region_name=\"us-east-1\", params={\"Bucket\":bucket,\"Key\":key})\n    records.append({\"key\":key,\"put\":put,\"head\":head})\nresult = {\"bucket\":bucket,\"objects\":records}\nresult"
+  }
+}

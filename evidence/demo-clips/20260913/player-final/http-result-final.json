@@ -1,0 +1,116 @@
+{
+  "scope": "Final local recorded-demo server only",
+  "editionSha256": "754079b66dcc572f05af4345ab1f2e669e1a6458dad222abeeeaa3f49d6c2dec",
+  "buildReceiptSha256": "504c739fc33dd0387cbfb70ecd6a0440050c5a944405f432ae52bb4af2d1a8d5",
+  "passed": true,
+  "mediaCount": 6,
+  "evidenceCount": 10,
+  "results": [
+    {
+      "scene": "endpoint-reference",
+      "url": "/demo-clips/20260913-final/endpoint-reference/endpoint-reference.mp4",
+      "sha256": "992494ac45475d201b4fbce66ea8b0aa90741093ebf5e9a0a95c0e824cc0df37",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "scene": "admin-console",
+      "url": "/demo-clips/20260913-final/admin-console/admin-console.mp4",
+      "sha256": "3f7a1934580373a5fe7d322473ea582d8dcf19d80bc8341cb44c3496b1fc0b89",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "scene": "client-server-telemetry",
+      "url": "/demo-clips/20260913-final/client-server-telemetry/client-server-telemetry.mp4",
+      "sha256": "d932d6c3fd7011142e5cfdde5e58a625ab30e9f6b8dab9d93212f469411b85bc",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "scene": "gateway-instrumentation",
+      "url": "/demo-clips/20260913-final/gateway-instrumentation/gateway-instrumentation.mp4",
+      "sha256": "b9636107f91a45d88c1548db18c06db67f0ddce60c9ce6bbb8dee864084796f4",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "scene": "direct-mcp-aws",
+      "url": "/demo-clips/20260913-final/direct-mcp-aws/direct-mcp-aws.mp4",
+      "sha256": "9f8de84c75c69b1ac5ceef2e18a965d1344827bdee862f1734dc4916bf909da7",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "scene": "synthetic-controls",
+      "url": "/demo-clips/20260913-final/synthetic-controls/synthetic-controls.mp4",
+      "sha256": "480a0fa9b1037e88fd56494d6d54a48f34ba4e400b2cfd840cffa77005975137",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "evidence": "demo-clips/20260913-final/receipts/admin-light-capture.json",
+      "httpStatus": 200,
+      "sha256": "69c88aacf579e248132e1b398c12ac0f4117f2d0c7e6bc94adfc843437922304"
+    },
+    {
+      "evidence": "demo-clips/20260913-final/receipts/direct-mcp-aws.json",
+      "httpStatus": 200,
+      "sha256": "6412c535f5ba266018e31401d824fe22ff6c2c467691c277f24f965b051c0119"
+    },
+    {
+      "evidence": "demo-clips/20260913-final/receipts/direct-probe-capture.json",
+      "httpStatus": 200,
+      "sha256": "f789731452dd9e3019b3646022bc514ddd455b8d039154b6217527f48fbdd79d"
+    },
+    {
+      "evidence": "demo-clips/20260913-final/receipts/endpoint-capture.json",
+      "httpStatus": 200,
+      "sha256": "e2fb1589f468d3a1a7caee4c5f3ac8ca1e2c9a48b9234b32af1679cc7fb77e2d"
+    },
+    {
+      "evidence": "demo-clips/20260913-final/receipts/endpoint-validation.json",
+      "httpStatus": 200,
+      "sha256": "041e35f90d5205c0c82c9b63f8bcd9d7132687fd2c990bac777e0f4435627565"
+    },
+    {
+      "evidence": "demo-clips/20260913-final/receipts/native-telemetry-light-capture.json",
+      "httpStatus": 200,
+      "sha256": "be3abea48073f392189dc413c7960cd350df00aacc8bc26de32d19d10c1adc3f"
+    },
+    {
+      "evidence": "demo-clips/20260913-final/receipts/preflight.json",
+      "httpStatus": 200,
+      "sha256": "cde547a48312b86623d095583da5fa28afd5199a16ef658f279ae1cb945ee2a5"
+    },
+    {
+      "evidence": "demo-clips/20260913-final/receipts/synthetic-capture.json",
+      "httpStatus": 200,
+      "sha256": "0fe2899a19b6d944e5195e73bfe9632b09bfa17aa556eef41ac7929809d40246"
+    },
+    {
+      "evidence": "demo-clips/20260913-final/receipts/synthetic-controls.json",
+      "httpStatus": 200,
+      "sha256": "36c587f421aa5247123c5632f92ba5e9865422112b082d1f89c928fb8fa787f1"
+    },
+    {
+      "evidence": "demo-clips/20260913-final/receipts/telemetry-capture.json",
+      "httpStatus": 200,
+      "sha256": "a533d6070505c348a376fd7b8a64197d1bd07754bd3a71d32ceaf04ec6438f21"
+    }
+  ],
+  "deniedPaths": 5,
+  "allMediaBytesEqualPreviousCandidate": true
+}

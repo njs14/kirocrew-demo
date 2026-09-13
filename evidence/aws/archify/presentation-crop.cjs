@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const {chromium}=require('/Users/noahsutter/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const root=path.resolve(__dirname,'../../..');
+const source=path.join(__dirname,'kirocrew-ec2-live.svg'),derived=path.join(__dirname,'kirocrew-ec2-live-presentation.svg'),png=path.join(__dirname,'kirocrew-ec2-live-presentation.png');
+const s=fs.readFileSync(source,'utf8');const crop=[8,74,1364,584];
+const output='<svg xmlns="http://www.w3.org/2000/svg" width="1364" height="584" viewBox="'+crop.join(' ')+'">'+s+'</svg>';
+if(!output.includes(s))throw Error('Canonical SVG bytes not preserved');
+fs.writeFileSync(derived,output);
+const fp=file=>{const b=fs.readFileSync(file);return{path:path.relative(root,file),bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')}};
+(async()=>{const b=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});try{const p=await b.newPage({viewport:{width:1364,height:584},deviceScaleFactor:3,colorScheme:'light'});await p.goto('file://'+derived);await p.screenshot({path:png});fs.writeFileSync(path.join(__dirname,'presentation-crop.json'),JSON.stringify({time:new Date().toISOString(),kind:'derived-presentation-export',source:fp(source),derivedSvg:fp(derived),derivedPng:fp(png),viewBox:crop,renderedDimensions:[4092,1752],changes:'The canonical SVG is preserved byte-for-byte inside a new outer SVG viewport. Full topology, labels and authored geometry are retained; generic color legend and outer whitespace outside the crop are omitted.',canonicalDiagramUnchanged:true},null,2)+'\n');console.log(JSON.stringify({derivedSvg:fp(derived),derivedPng:fp(png)}))}finally{await b.close()}})();

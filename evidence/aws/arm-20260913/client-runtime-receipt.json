@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-13T14:53:11.569006+00:00",
+  "client_version": "0.7.0-nightly.20260913t061222",
+  "server_version": "0.7.0-nightly.20260912t060850",
+  "server_distribution": "Custom Linux ARM64 repack of frozen installed Nightly; not an official Linux release",
+  "selected_desktop_config": {
+    "runLocalGateway": false,
+    "port": null,
+    "remote": {
+      "host": "kirocrew-demo-admin",
+      "binPath": "/usr/local/bin/kirocrew-owner-token",
+      "remotePort": "5476",
+      "remotePath": "/opt/kirocrew/venv/bin:/usr/local/bin:/usr/bin:/bin"
+    }
+  },
+  "loopback_listeners": {
+    "5476": false,
+    "5599": true
+  },
+  "jobs": {
+    "com.kirocrew.demo-tunnel": {
+      "loaded": true,
+      "program_arguments": [
+        "/usr/bin/ssh",
+        "-F",
+        "/Users/noahsutter/.ssh/config",
+        "-N",
+        "-T",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ExitOnForwardFailure=yes",
+        "-L",
+        "127.0.0.1:5599:127.0.0.1:5476",
+        "kirocrew-demo"
+      ],
+      "start_interval": null,
+      "run_at_load": true
+    },
+    "com.kirocrew.demo-observability": {
+      "loaded": true,
+      "program_arguments": [
+        "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+        "/Users/noahsutter/git-projects/kirocrew-demo/scripts/demo-telemetry.py",
+        "collect-once",
+        "--apply"
+      ],
+      "start_interval": 60,
+      "run_at_load": true
+    }
+  },
+  "native_cua_observed": {
+    "gateway_connected": true,
+    "workspace": "/srv/kirocrew-demo/workspace",
+    "agent": "enforcement-demo",
+    "selected_backend": "Kiro CLI",
+    "custom_telemetry_both_sources_current": true,
+    "normal_restart_owner_token_refresh_succeeded": true
+  },
+  "owner_helper_sha256": "7750fe9d6e51c4568c8ac155137c23c3f29ec45faf9fbaf55c07fb0ca7b593a5",
+  "owner_auth_boundary": "Existing ubuntu administrator enters verified Gateway mount namespace, then drops to crew for stock token mint. No crew sudo permission or Nightly source patch.",
+  "restart_evidence": "observability-runtime-receipt.json",
+  "native_kiro_cli_authenticated": false,
+  "nightly_baseline_receipt": "evidence/nightly/client-20260913-verification.json"
+}

@@ -1,0 +1,14 @@
+KiroCrew EC2 demo
+
+Deck: output/kirocrew-ec2-demo.pptx
+Viewer: kirocrew-demo-live.html
+Walkthrough: WALKTHROUGH.md
+Cloud operations: infrastructure/RUNBOOK.md
+
+The laptop Gateway is off and the desktop connects to EC2 through port 5599.
+Direct MCP/AWS checks pass. Native backend sign-in and Crew enforcement remain
+pending. Start a fresh GitHub login with: python3 scripts/ec2-login.py
+
+Use ./native-demo.sh plan before the four native tool turns.
+For continuation, read HANDOFF.md and EC2-CONTINUATION-RECEIPT.json.
+The original accepted files and synthetic walkthrough remain preserved.

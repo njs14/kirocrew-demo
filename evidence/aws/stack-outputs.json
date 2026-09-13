@@ -1,0 +1,8 @@
+{
+  "InstanceRoleArn": "arn:aws:iam::770132776059:role/kirocrew-demo-20260913-DemoRole-dcdmeTwVkSzS",
+  "InstanceId": "i-020eb373045b56586",
+  "PublicIp": "100.57.5.32",
+  "DemoBucketName": "kirocrew-demo-20260913-demobucket-pdjzgyu25xhb",
+  "SecurityGroupId": "sg-08ac4789794115e39",
+  "InstanceRoleName": "kirocrew-demo-20260913-DemoRole-dcdmeTwVkSzS"
+}

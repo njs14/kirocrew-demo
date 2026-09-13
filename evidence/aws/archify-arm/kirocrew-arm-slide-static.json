@@ -1,0 +1,66 @@
+{
+  "time": "2026-09-13T14:33:45.500Z",
+  "kind": "non-browser-static-graphics-render",
+  "source": {
+    "path": "kirocrew-arm-slide.html",
+    "bytes": 797518,
+    "sha256": "67c31462e6d0fddb4979fd74e722ccdad3b51d733c1b4af9dbada5642e506f4c"
+  },
+  "svg": {
+    "path": "evidence/aws/archify-arm/kirocrew-arm-slide.svg",
+    "bytes": 285315,
+    "sha256": "633e563ee76d35c0fe55a125c9d924f56b7e02c0dc1651ef71a8ba821fcdbb05"
+  },
+  "png": {
+    "path": "evidence/aws/archify-arm/kirocrew-arm-slide.png",
+    "bytes": 122923,
+    "sha256": "a55bb004990d51645e3c4c91d78895d335dff1dfe076d291b25314c115c89d9e"
+  },
+  "actualSize": {
+    "path": "evidence/aws/archify-arm/kirocrew-arm-slide-1152x480.png",
+    "bytes": 51687,
+    "sha256": "c688b894b0194c7245295f88d2ac6b37ce65733721649e05db23f83e69b1bd42"
+  },
+  "authoredViewBox": [
+    0,
+    0,
+    720,
+    280
+  ],
+  "renderer": {
+    "aom": "3.15.0",
+    "archive": "3.8.9",
+    "cairo": "1.18.4",
+    "cgif": "0.5.3",
+    "exif": "0.6.26",
+    "expat": "2.8.3",
+    "ffi": "3.8.0",
+    "fontconfig": "2.18.3",
+    "freetype": "2.14.3",
+    "fribidi": "1.0.16",
+    "glib": "2.89.4",
+    "harfbuzz": "14.3.1",
+    "heif": "1.23.2",
+    "highway": "1.4.0",
+    "imagequant": "2.4.1",
+    "lcms": "2.19.1",
+    "mozjpeg": "0826579",
+    "pango": "1.58.2",
+    "pixman": "0.46.4",
+    "png": "1.6.58",
+    "proxy-libintl": "0.5",
+    "rsvg": "2.62.91",
+    "tiff": "4.7.2",
+    "uhdr": "2.0.2",
+    "vips": "8.18.6",
+    "webp": "1.6.0",
+    "xml2": "2.15.3",
+    "zlib-ng": "2.3.3",
+    "sharp": "0.35.4"
+  },
+  "method": "Extract exact authored SVG geometry from trusted HTML; embed generated stylesheet with light-theme CSS variables resolved and restore the authored body font inheritance on the standalone SVG; render with libvips/librsvg. No HTML scripts executed and no browser used.",
+  "limitations": [
+    "Static graphics rendering does not validate HTML viewer behavior, interaction or browser containment.",
+    "Browser file URL navigation was blocked by CUA policy; no browser/server reroute was attempted."
+  ]
+}

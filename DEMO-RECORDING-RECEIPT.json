@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 1,
+  "finishedAvailableWorkAt": "2026-09-13T18:37:07.021088+00:00",
+  "status": "six_recorded_scenes_delivered_with_two_pending_gates",
+  "allPlannedScenesComplete": false,
+  "edition": {
+    "slideCount": 20,
+    "preservedSlides": 14,
+    "recordedScenes": 6,
+    "totalClipSeconds": 162.64,
+    "sha256": "754079b66dcc572f05af4345ab1f2e669e1a6458dad222abeeeaa3f49d6c2dec",
+    "preview": "http://127.0.0.1:5606/#slide-15"
+  },
+  "scenes": [
+    {
+      "id": "endpoint-reference",
+      "title": "One endpoint-control boundary",
+      "recordedAt": "2026-09-13T18:14:49.325Z",
+      "duration": 24.84,
+      "scope": "Architecture reference and previously recorded deployment evidence.",
+      "sourceSha256": "780594e6adc6764e6bb6d63cbc132017a7d71c82123a813b177eb8f6daadf50c",
+      "media": [
+        {
+          "url": "endpoint-reference/endpoint-reference.mp4",
+          "type": "video/mp4",
+          "bytes": 1823896,
+          "sha256": "992494ac45475d201b4fbce66ea8b0aa90741093ebf5e9a0a95c0e824cc0df37",
+          "duration": 24.84,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ]
+    },
+    {
+      "id": "admin-console",
+      "title": "Navigate the admin console",
+      "recordedAt": "2026-09-13T18:16:15.405Z",
+      "duration": 23.24,
+      "scope": "Live owner-portal navigation. Native Kiro CLI authentication remains pending.",
+      "sourceSha256": "a86f0a3a50882adaf0e9af92f2322549f4608c9aabade5e07b60b54cf0b85f10",
+      "media": [
+        {
+          "url": "admin-console/admin-console.mp4",
+          "type": "video/mp4",
+          "bytes": 1603479,
+          "sha256": "3f7a1934580373a5fe7d322473ea582d8dcf19d80bc8341cb44c3496b1fc0b89",
+          "duration": 23.24,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ]
+    },
+    {
+      "id": "client-server-telemetry",
+      "title": "Compare client and server telemetry",
+      "recordedAt": "2026-09-13T18:09:22.466Z",
+      "duration": 22.52,
+      "scope": "Live custom telemetry dashboard. Collection events are separate from Crew security audit events.",
+      "sourceSha256": "af81ef7310f567a83bfa9d5e667ef5adec52c3ff6154155d60b8a1eb71847a10",
+      "media": [
+        {
+          "url": "client-server-telemetry/client-server-telemetry.mp4",
+          "type": "video/mp4",
+          "bytes": 891208,
+          "sha256": "d932d6c3fd7011142e5cfdde5e58a625ab30e9f6b8dab9d93212f469411b85bc",
+          "duration": 22.52,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ]
+    },
+    {
+      "id": "gateway-instrumentation",
+      "title": "Inspect native Gateway telemetry",
+      "recordedAt": "2026-09-13T18:16:52.471Z",
+      "duration": 20.68,
+      "scope": "Live native Gateway instrumentation. Zero completed backend turns; separate custom collectors provide the client/server view.",
+      "sourceSha256": "0cbe3222a6af50a5f480a9301bcd2026964a9f95f9eadce2359029e77b7d1abd",
+      "media": [
+        {
+          "url": "gateway-instrumentation/gateway-instrumentation.mp4",
+          "type": "video/mp4",
+          "bytes": 1057222,
+          "sha256": "b9636107f91a45d88c1548db18c06db67f0ddce60c9ce6bbb8dee864084796f4",
+          "duration": 20.68,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ]
+    },
+    {
+      "id": "direct-mcp-aws",
+      "title": "Follow a direct MCP request to AWS",
+      "recordedAt": "2026-09-13T18:21:23.913Z",
+      "duration": 25.56,
+      "scope": "Actual direct MCP/AWS execution from a standalone operator screen. Native Kiro CLI acceptance remains pending.",
+      "sourceSha256": "1517126754e6902caf0c76a01373a8f35efc8c20d5b7f8f31722fc83df907509",
+      "media": [
+        {
+          "url": "direct-mcp-aws/direct-mcp-aws.mp4",
+          "type": "video/mp4",
+          "bytes": 1187608,
+          "sha256": "9f8de84c75c69b1ac5ceef2e18a965d1344827bdee862f1734dc4916bf909da7",
+          "duration": 25.56,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ]
+    },
+    {
+      "id": "synthetic-controls",
+      "title": "Rehearse the synthetic endpoint controls",
+      "recordedAt": "2026-09-13T18:23:04.179Z",
+      "duration": 45.8,
+      "scope": "Actual execution of a local synthetic test runner. Approval is scripted; no native approval UI, backend MCP or AWS call occurs.",
+      "sourceSha256": "1d08a166621e906bc0a65552f985194500df298f996d838f0cb25294cc1ce6b2",
+      "media": [
+        {
+          "url": "synthetic-controls/synthetic-controls.mp4",
+          "type": "video/mp4",
+          "bytes": 1735170,
+          "sha256": "480a0fa9b1037e88fd56494d6d54a48f34ba4e400b2cfd840cffa77005975137",
+          "duration": 45.8,
+          "width": 1600,
+          "height": 1000,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 25.0,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ]
+    }
+  ],
+  "protectedArtifacts": {
+    "output/kirocrew-system-design.html": {
+      "sha256": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+      "unchanged": true
+    },
+    "output/kirocrew-system-design-notes.md": {
+      "sha256": "4e239721237aa0407979ae95eae7334588c992a1c0d858da316fe3b129ad2163",
+      "unchanged": true
+    },
+    "output/kirocrew-arm-observability-demo.pptx": {
+      "sha256": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13",
+      "unchanged": true
+    },
+    "ARM-CONTINUATION-RECEIPT.json": {
+      "sha256": "897eca8efc8156b8551fa584122d366039f652c2c0ba52df34e08863e3cce930",
+      "unchanged": true
+    },
+    "HANDOFF.md": {
+      "sha256": "5cb2ef0e7933e2fad20cbc36c0120bd3b83e3475d2d8b0cb2a3cc4ab6a805f01",
+      "unchanged": true
+    }
+  },
+  "validation": {
+    "ffmpegFullDecode": {
+      "passed": 6,
+      "failed": 0
+    },
+    "processorUnitTests": {
+      "passed": 10,
+      "failed": 0,
+      "scope": "isolated synthetic tooling fixtures"
+    },
+    "presenterUnitTests": {
+      "passed": 16,
+      "failed": 0,
+      "scope": "bounded command parser/server stubs"
+    },
+    "builderAndServerTests": {
+      "passed": 12,
+      "failed": 0,
+      "scope": "synthetic builder/media delivery fixtures"
+    },
+    "actualBrowserPlayback": {
+      "scenesPassed": 6,
+      "chapterSeeksPassed": 29,
+      "desktop": "1440x1000",
+      "mobile": "390x844",
+      "checks": [
+        "metadata",
+        "playback advancement",
+        "seek and pause",
+        "cue details",
+        "guided pause",
+        "overview and notes dialog pause",
+        "outgoing slide pause",
+        "keyboard guard",
+        "mobile target sizes",
+        "media byte ranges",
+        "evidence link opening"
+      ],
+      "uncaughtPageErrors": 0,
+      "checksPassed": 71,
+      "consoleErrors": 0,
+      "consoleWarnings": 0
+    },
+    "visualReview": {
+      "scope": "six contact sheets plus representative original-resolution action/result frames and final desktop/mobile screenshots",
+      "reviewer": "root; additional screenshot review by player owner",
+      "files": [
+        {
+          "path": "output/demo-clips/20260913-final/endpoint-reference/contact-sheet.jpg",
+          "sha256": "cdac98203471c45dda13eb75b7c706a37650da85cb8c5d8bfbdbfd01a2a8f864",
+          "bytes": 126722
+        },
+        {
+          "path": "output/demo-clips/20260913-final/admin-console/contact-sheet.jpg",
+          "sha256": "a71ba8f9de24b69dcc6c4ba6dea932c2d13951dba352e181a30190703f2e06bf",
+          "bytes": 105777
+        },
+        {
+          "path": "output/demo-clips/20260913-final/client-server-telemetry/contact-sheet.jpg",
+          "sha256": "908072db7ca152898f643af70e6c68c705b55bac2e812effac7c7f738002f3b6",
+          "bytes": 113864
+        },
+        {
+          "path": "output/demo-clips/20260913-final/gateway-instrumentation/contact-sheet.jpg",
+          "sha256": "824c07486f32a4c9cb18d78af2dae1957ad10d5be65ace3bed129a131011a279",
+          "bytes": 96429
+        },
+        {
+          "path": "output/demo-clips/20260913-final/direct-mcp-aws/contact-sheet.jpg",
+          "sha256": "2acae7533733ac74e787d0143d8ce4935fbd6a817e31e886349b723db4a6bf91",
+          "bytes": 128123
+        },
+        {
+          "path": "output/demo-clips/20260913-final/synthetic-controls/contact-sheet.jpg",
+          "sha256": "33a212f16287c7d8573548c0670cdcf6bbfd662f765748f1e2274888dc576c2a",
+          "bytes": 135952
+        },
+        {
+          "path": "evidence/demo-clips/20260913/key-frames/admin-console.png",
+          "sha256": "ab8e0abfdaa4fd762bd9ae84087321ecdf91447f257f91db0526edd28b2da5db",
+          "bytes": 846385
+        },
+        {
+          "path": "evidence/demo-clips/20260913/key-frames/gateway-instrumentation.png",
+          "sha256": "3f1dc34e8d1940ca22d26cc911a23a9d770ce787aa769ddf8b7d9d8e98c16d29",
+          "bytes": 323922
+        },
+        {
+          "path": "evidence/demo-clips/20260913/key-frames/synthetic-controls.png",
+          "sha256": "95f5b7155ef194abdab57da03b69738b484c8a061c54575aff94c0f0585ef046",
+          "bytes": 482731
+        },
+        {
+          "path": "evidence/demo-clips/20260913/player-final/desktop-telemetry.png",
+          "sha256": "a9efc3cc99250e2e5939c52d0ebfa1c1b403c85d7b54c7065170ffe3f39da9e7",
+          "bytes": 215022
+        },
+        {
+          "path": "evidence/demo-clips/20260913/player-final/desktop-direct-result.png",
+          "sha256": "fc720ae6b31dc66635a74d1e79aefc581bbbf94df4be845602d79fc16b526eb4",
+          "bytes": 238540
+        },
+        {
+          "path": "evidence/demo-clips/20260913/player-final/mobile-telemetry.png",
+          "sha256": "55ad86807d8762a06df926407b40d5a91e37b92d370ea61fe25a595e9d72d79e",
+          "bytes": 108164
+        }
+      ]
+    },
+    "independentReview": "pass_with_documented_scope_limits",
+    "noAiSlop": "passed; new writing only",
+    "archiveIntegrity": "passed"
+  },
+  "pending": [
+    {
+      "scene": "Client quit/relaunch with server survival and recovery",
+      "reason": "Mac remains locked; CUA native app inventory unavailable. Unlock request pending.",
+      "requiredNextAction": "Unlock the Mac, then record normal native quit/relaunch, fresh stopped/recovered client samples and unchanged EC2 Gateway process identity."
+    },
+    {
+      "scene": "Authenticated native Kiro CLI enforcement",
+      "reason": "Fresh server-side whoami returned signed out; recorded native startup log confirms sign-in failure.",
+      "requiredNextAction": "Complete native Kiro CLI sign-in and observe a completed backend turn before recording enforcement."
+    }
+  ],
+  "limits": [
+    "Direct MCP/AWS probe is not a native Kiro CLI turn",
+    "Synthetic approval is scripted and no backend or network call occurs",
+    "Dashboard recordings are dated stored samples, not a live replay connection",
+    "Actual document-hidden/pagehide transitions were not conclusively verified; handler code exists",
+    "Direct file:// browser validation was blocked by Playwright protocol policy; loopback HTTP playback is verified",
+    "No new Grok/Opus council verdict is claimed for this derivative"
+  ],
+  "restoration": {
+    "recordingProbePresenterStopped": true,
+    "rootRecordingBrowserSessionsClosed": true,
+    "acceptedPreview5605Preserved": true,
+    "finalPreview5606Running": true,
+    "localGatewayRemainedDisabled": true,
+    "temporaryBrowserDisplayAndDeveloperPreferencesRestoredBeforeClosure": true,
+    "nativeClientQuitAttempted": false
+  },
+  "artifacts": [
+    {
+      "path": "DEMO-RECORDING-PLAN.md",
+      "sha256": "921b6a0c180e13ba35c94ccef2cb59f88c1f0014186b4af22ce829faed646364",
+      "bytes": 5403
+    },
+    {
+      "path": "DEMO-RECORDING-GUIDE.md",
+      "sha256": "66939ee41103e9be352ea3bbd2e3838750c155be3c8846b4429ada11b544849d",
+      "bytes": 8267
+    },
+    {
+      "path": "output/kirocrew-recorded-demos.html",
+      "sha256": "754079b66dcc572f05af4345ab1f2e669e1a6458dad222abeeeaa3f49d6c2dec",
+      "bytes": 1804334
+    },
+    {
+      "path": "output/kirocrew-recorded-demos-notes.md",
+      "sha256": "ddb903a42f50df2759dfe968fb014295a6bd16f5f468e9daac4d14bff0a7d006",
+      "bytes": 34619
+    },
+    {
+      "path": "output/kirocrew-recorded-demos-manifest.json",
+      "sha256": "9123d61134a1d991ebd7666d01a92874ee97d59ec235ae5d95468523c1c4a53a",
+      "bytes": 17103
+    },
+    {
+      "path": "output/kirocrew-recorded-demos-build.json",
+      "sha256": "504c739fc33dd0387cbfb70ecd6a0440050c5a944405f432ae52bb4af2d1a8d5",
+      "bytes": 11364
+    },
+    {
+      "path": "output/kirocrew-recorded-demos-20260913.zip",
+      "sha256": "19cd124affabf654fe8997138d579b3fca4046269ebeaf2d699559faf46b09c1",
+      "bytes": 10549987
+    },
+    {
+      "path": "recordings/20260913/manifest-final.json",
+      "sha256": "25d8c15f977e2c443c27c11e57ad351c80d9f446763651b8a4afd5bac8b80b79",
+      "bytes": 11876
+    },
+    {
+      "path": "output/demo-clips/20260913-final/receipt.json",
+      "sha256": "24a60146a39d902d868a3e5f2a60687ebcc22e7267139edbff603e25cace16a1",
+      "bytes": 52266
+    },
+    {
+      "path": "evidence/demo-clips/20260913/final-independent-review.json",
+      "sha256": "5806b21afe186340cb84f306590e11f835060e12b64afc54ed48d1755561d0fd",
+      "bytes": 5407
+    },
+    {
+      "path": "evidence/demo-clips/20260913/no-ai-slop-review.json",
+      "sha256": "f0f36add2d8e15a2723e4a64d4ca6802d0529af0bbabed64a085fe6fe8f59bf2",
+      "bytes": 1776
+    },
+    {
+      "path": "evidence/demo-clips/20260913/player-final/browser-result-final.json",
+      "sha256": "41abb0431ec0fd0c8fb1f3eb2153e37f68ea906a363bcc9421420befed90cd63",
+      "bytes": 10426
+    },
+    {
+      "path": "evidence/demo-clips/20260913/player-final/http-result-final.json",
+      "sha256": "6916e190bd47fdb04d44de9dd49b1f8061d3403ae4537656a7fb37cf0d95872f",
+      "bytes": 4288
+    },
+    {
+      "path": "evidence/demo-clips/tooling/tooling-receipt.json",
+      "sha256": "dfb845afc92a863c4635cd8865201df06325aefc0e4b31e2dae8b7c692943c2b",
+      "bytes": 2685
+    },
+    {
+      "path": "evidence/demo-clips/20260913/player-final/final-browser-receipt.json",
+      "sha256": "ff50150184a5e13b2e45a43bc672e80cd3ffd7d160b1ce032481122569fef94e",
+      "bytes": 5619
+    }
+  ]
+}

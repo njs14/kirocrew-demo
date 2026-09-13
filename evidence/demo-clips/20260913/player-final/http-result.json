@@ -1,0 +1,108 @@
+{
+  "scope": "Local recorded-demo server only",
+  "editionSha256": "bf523340970805535d6946167ff5c004d8824a09ba744a22b15e9408130a7fa2",
+  "passed": true,
+  "mediaCount": 6,
+  "evidenceCount": 10,
+  "results": [
+    {
+      "scene": "endpoint-reference",
+      "url": "/demo-clips/20260913/endpoint-reference/endpoint-reference.mp4",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "scene": "admin-console",
+      "url": "/demo-clips/20260913/admin-console/admin-console.mp4",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "scene": "client-server-telemetry",
+      "url": "/demo-clips/20260913/client-server-telemetry/client-server-telemetry.mp4",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "scene": "gateway-instrumentation",
+      "url": "/demo-clips/20260913/gateway-instrumentation/gateway-instrumentation.mp4",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "scene": "direct-mcp-aws",
+      "url": "/demo-clips/20260913/direct-mcp-aws/direct-mcp-aws.mp4",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "scene": "synthetic-controls",
+      "url": "/demo-clips/20260913/synthetic-controls/synthetic-controls.mp4",
+      "head": true,
+      "firstRange": true,
+      "suffixRange": true,
+      "openRange": true
+    },
+    {
+      "evidence": "demo-clips/20260913/receipts/admin-light-capture.json",
+      "httpStatus": 200,
+      "sha256": "69c88aacf579e248132e1b398c12ac0f4117f2d0c7e6bc94adfc843437922304"
+    },
+    {
+      "evidence": "demo-clips/20260913/receipts/direct-mcp-aws.json",
+      "httpStatus": 200,
+      "sha256": "6412c535f5ba266018e31401d824fe22ff6c2c467691c277f24f965b051c0119"
+    },
+    {
+      "evidence": "demo-clips/20260913/receipts/direct-probe-capture.json",
+      "httpStatus": 200,
+      "sha256": "f789731452dd9e3019b3646022bc514ddd455b8d039154b6217527f48fbdd79d"
+    },
+    {
+      "evidence": "demo-clips/20260913/receipts/endpoint-capture.json",
+      "httpStatus": 200,
+      "sha256": "e2fb1589f468d3a1a7caee4c5f3ac8ca1e2c9a48b9234b32af1679cc7fb77e2d"
+    },
+    {
+      "evidence": "demo-clips/20260913/receipts/endpoint-validation.json",
+      "httpStatus": 200,
+      "sha256": "041e35f90d5205c0c82c9b63f8bcd9d7132687fd2c990bac777e0f4435627565"
+    },
+    {
+      "evidence": "demo-clips/20260913/receipts/native-telemetry-light-capture.json",
+      "httpStatus": 200,
+      "sha256": "be3abea48073f392189dc413c7960cd350df00aacc8bc26de32d19d10c1adc3f"
+    },
+    {
+      "evidence": "demo-clips/20260913/receipts/preflight.json",
+      "httpStatus": 200,
+      "sha256": "cde547a48312b86623d095583da5fa28afd5199a16ef658f279ae1cb945ee2a5"
+    },
+    {
+      "evidence": "demo-clips/20260913/receipts/synthetic-capture.json",
+      "httpStatus": 200,
+      "sha256": "0fe2899a19b6d944e5195e73bfe9632b09bfa17aa556eef41ac7929809d40246"
+    },
+    {
+      "evidence": "demo-clips/20260913/receipts/synthetic-controls.json",
+      "httpStatus": 200,
+      "sha256": "36c587f421aa5247123c5632f92ba5e9865422112b082d1f89c928fb8fa787f1"
+    },
+    {
+      "evidence": "demo-clips/20260913/receipts/telemetry-capture.json",
+      "httpStatus": 200,
+      "sha256": "a533d6070505c348a376fd7b8a64197d1bd07754bd3a71d32ceaf04ec6438f21"
+    }
+  ],
+  "deniedPaths": 5
+}

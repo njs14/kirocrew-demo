@@ -1,0 +1,231 @@
+{
+  "observed_at": "2026-09-13T14:50:25.857122+00:00",
+  "/api/telemetry/collection": {
+    "http_status": 200,
+    "result": {
+      "enabled": true,
+      "env_pinned": false,
+      "env_var": "KIROCREW_TELEMETRY",
+      "overlay_override": false,
+      "otlp_configured": false,
+      "metrics_dir": "/var/lib/kirocrew/metrics"
+    }
+  },
+  "/api/telemetry/beacon": {
+    "http_status": 200,
+    "result": {
+      "enabled": false,
+      "would_send": false,
+      "reason": "opted out via KIROCREW_TELEMETRY_DISABLED",
+      "reason_code": "env_opt_out",
+      "endpoint_configured": true,
+      "env_override": true,
+      "env_var": "KIROCREW_TELEMETRY_DISABLED",
+      "overlay_override": false,
+      "governance_override": false
+    }
+  },
+  "/api/telemetry/startup": {
+    "http_status": 200,
+    "result": {
+      "enabled": true,
+      "env_pinned": false,
+      "env_var": "KIROCREW_TELEMETRY",
+      "window_days": 14,
+      "metrics_dir": "/var/lib/kirocrew/metrics",
+      "shard_count": 2,
+      "other": [
+        {
+          "count": 1,
+          "name": "kirocrew.gateway.boot.duration",
+          "kind": "histogram"
+        },
+        {
+          "count": 4468,
+          "name": "kirocrew.gateway.request.duration",
+          "kind": "histogram"
+        },
+        {
+          "name": "kirocrew.session.pool.decision",
+          "kind": "counter"
+        },
+        {
+          "name": "kirocrew.process.cpu.seconds",
+          "kind": "counter"
+        },
+        {
+          "name": "kirocrew.process.gc.collected",
+          "kind": "counter"
+        },
+        {
+          "name": "kirocrew.process.gc.collections",
+          "kind": "counter"
+        },
+        {
+          "name": "kirocrew.process.gc.uncollectable",
+          "kind": "counter"
+        },
+        {
+          "name": "kirocrew.inventory.config.toggle",
+          "kind": "gauge",
+          "latest": 0.0
+        },
+        {
+          "name": "kirocrew.inventory.crons.active",
+          "kind": "gauge",
+          "latest": 0.0
+        },
+        {
+          "name": "kirocrew.inventory.knowledge.documents",
+          "kind": "gauge",
+          "latest": 0.0
+        },
+        {
+          "name": "kirocrew.inventory.lessons",
+          "kind": "gauge",
+          "latest": 0.0
+        },
+        {
+          "name": "kirocrew.inventory.mcp.servers",
+          "kind": "gauge",
+          "latest": 2.0
+        },
+        {
+          "name": "kirocrew.inventory.memory.migrated",
+          "kind": "gauge",
+          "latest": 1.0
+        },
+        {
+          "name": "kirocrew.inventory.monitor_loops.active",
+          "kind": "gauge",
+          "latest": 0.0
+        },
+        {
+          "name": "kirocrew.inventory.skills.installed",
+          "kind": "gauge",
+          "latest": 39.0
+        },
+        {
+          "name": "kirocrew.process.memory.peak_rss_bytes",
+          "kind": "gauge",
+          "latest": 216629248.0
+        },
+        {
+          "name": "kirocrew.process.memory.rss_bytes",
+          "kind": "gauge",
+          "latest": 216961024.0
+        },
+        {
+          "name": "kirocrew.process.open_fds",
+          "kind": "gauge",
+          "latest": 62.0
+        },
+        {
+          "name": "kirocrew.process.threads.os",
+          "kind": "gauge",
+          "latest": 28.0
+        },
+        {
+          "name": "kirocrew.process.threads.python",
+          "kind": "gauge",
+          "latest": 24.0
+        }
+      ]
+    }
+  },
+  "/apps/demo-observability/api/snapshot": {
+    "http_status": 200,
+    "result": {
+      "schema_version": 1,
+      "generated_at": "2026-09-13T14:50:26.300675Z",
+      "mode": "custom_demo_collectors",
+      "stale_after_seconds": 180,
+      "sources": {
+        "client": {
+          "source": "client",
+          "collector": "kirocrew-demo-custom",
+          "collection_source": "macOS process and loopback probes, uploaded over SSH",
+          "collected_at": "2026-09-13T14:49:34Z",
+          "age_seconds": 52.3,
+          "freshness": "current",
+          "status": "ok",
+          "metrics": {
+            "process_count": 5,
+            "cpu_percent": 46.2,
+            "rss_mib": 443.66
+          },
+          "checks": {
+            "client_running": true,
+            "remote_gateway_reachable": true,
+            "local_gateway_off": true
+          },
+          "errors": []
+        },
+        "server": {
+          "source": "server",
+          "collector": "kirocrew-demo-custom",
+          "collection_source": "EC2 host, systemd main-process and loopback probes",
+          "collected_at": "2026-09-13T14:49:49Z",
+          "age_seconds": 37.3,
+          "freshness": "current",
+          "status": "ok",
+          "metrics": {
+            "cpu_percent": 1.23,
+            "memory_used_mib": 858.86,
+            "memory_total_mib": 15759.8,
+            "memory_available_mib": 14900.94,
+            "disk_used_gib": 4.452,
+            "disk_total_gib": 37.704,
+            "gateway_cpu_percent": 2.98,
+            "gateway_rss_mib": 206.9,
+            "mcp_cpu_percent": 1.0,
+            "mcp_rss_mib": 87.59
+          },
+          "checks": {
+            "gateway_service_active": true,
+            "mcp_service_active": true,
+            "gateway_loopback_reachable": true,
+            "mcp_loopback_reachable": true
+          },
+          "errors": []
+        }
+      },
+      "events": [
+        {
+          "source": "client",
+          "at": "2026-09-13T14:49:34Z",
+          "kind": "status_changed",
+          "level": "info",
+          "code": "checks_changed",
+          "message": "Health checks changed"
+        },
+        {
+          "source": "client",
+          "at": "2026-09-13T14:44:42Z",
+          "kind": "status_changed",
+          "level": "warning",
+          "code": "checks_changed",
+          "message": "Health checks changed"
+        },
+        {
+          "source": "client",
+          "at": "2026-09-13T14:34:59Z",
+          "kind": "collected",
+          "level": "info",
+          "code": "first_sample",
+          "message": "First sample collected"
+        },
+        {
+          "source": "server",
+          "at": "2026-09-13T14:31:23Z",
+          "kind": "collected",
+          "level": "info",
+          "code": "first_sample",
+          "message": "First sample collected"
+        }
+      ],
+      "events_available": true,
+      "events_limit": 200
+    }
+  }
+}

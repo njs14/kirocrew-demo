@@ -1,0 +1,89 @@
+{
+  "artifacts": [
+    {
+      "path": "scripts/native-backend-demo.py",
+      "sha256": "253c634609c3a0015d5f8472423ab1cb8606d0240e8c86be6d50680ec39a9a95"
+    },
+    {
+      "path": "scripts/native-backend-demo.README.md",
+      "sha256": "4a3bd989e6a94ace178f436f26119c9fbd67e2aae70dcdc47f0c3d2666289969"
+    },
+    {
+      "path": "native-demo.sh",
+      "sha256": "a54838bfced6474606751c6ec37c9224b0eace03cfed4b5146aee424260290b8"
+    }
+  ],
+  "backend_session_executed": false,
+  "checks": [
+    {
+      "name": "exact_admin_alias_and_owner_wrapper_command",
+      "passed": true
+    },
+    {
+      "name": "owner_url_token_parsed_in_memory",
+      "passed": true
+    },
+    {
+      "name": "raw_jwt_fallback_parsed_in_memory",
+      "passed": true
+    },
+    {
+      "name": "ambiguous_tokens_fail_closed",
+      "passed": true
+    },
+    {
+      "name": "missing_token_fails_closed",
+      "passed": true
+    },
+    {
+      "name": "default_admin_alias_selected",
+      "passed": true
+    },
+    {
+      "name": "unused_crew_alias_option_removed",
+      "passed": true
+    },
+    {
+      "name": "runner_routes_bootstrap_through_admin_host",
+      "passed": true
+    },
+    {
+      "name": "no_token_url_or_token_bytes_logged",
+      "passed": true
+    }
+  ],
+  "checks_run": 9,
+  "credential_boundary": "Synthetic token fixtures stayed in memory; no fixture bytes, token URLs, auth cookies or email saved. Existing administrator wrapper owns namespace entry and privilege drop; runner changes no sudoers or service controls.",
+  "historical_receipts": "Preserved; this additive receipt supersedes only the runner owner-bootstrap command binding.",
+  "independent_review": {
+    "live_behavior_verified": false,
+    "readme_sha256": "4a3bd989e6a94ace178f436f26119c9fbd67e2aae70dcdc47f0c3d2666289969",
+    "reviewer": "/root/remote_gateway/native_evidence_review",
+    "runner_sha256": "253c634609c3a0015d5f8472423ab1cb8606d0240e8c86be6d50680ec39a9a95",
+    "scope": "Read-only source and AST inspection of owner bootstrap routing, unchanged read-only SSH calls, token-output handling and README.",
+    "verdict": "no_actionable_findings"
+  },
+  "kind": "native_runner_owner_bootstrap_update",
+  "network_calls": 0,
+  "owner_bootstrap": {
+    "alias_source": "args.admin_host",
+    "remote_argv": [
+      "/usr/local/bin/kirocrew-owner-token",
+      "token",
+      "--ttl",
+      "30m"
+    ],
+    "removed_unused_option": "--ssh-host",
+    "ssh_alias_default": "kirocrew-demo-admin"
+  },
+  "owner_tokens_minted": 0,
+  "remaining_validation": [
+    "Actual owner bootstrap and API cookie exchange on the ARM Gateway are not claimed by this receipt.",
+    "Plain Kiro CLI remote authentication and native demo execution remain pending. A KAS GitHub card is not plain Kiro CLI login evidence."
+  ],
+  "schema_version": 1,
+  "scope": "Offline AST/import and SSH shim checks only; no SSH process, HTTP, owner token mint, model or backend session.",
+  "ssh_processes": 0,
+  "verdict": "offline_checks_passed",
+  "verified_at": "2026-09-13T14:35:12.540783+00:00"
+}

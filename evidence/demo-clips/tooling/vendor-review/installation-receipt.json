@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/digitalsamba/claude-code-video-toolkit",
+  "ref": "225c80a1c3a57c82d319ea6c73e0eff513787ae8",
+  "path": ".claude/skills/ffmpeg",
+  "installedAt": "2026-09-13T18:12:33.233632+00:00",
+  "license": "MIT",
+  "scope": "Standalone FFmpeg documentation only; no toolkit executables, Remotion, cloud, or paid dependency installed",
+  "review": "Read SKILL.md and reference.md before installation. They contain local command examples only; embedded platform limits and codec availability must be verified before use. No examples were activated.",
+  "files": {
+    "reference.md": "2dea49f4aa09cec01504399225bcdb0f6edb5f1099e3f10e27228a8ba32d3ac0",
+    "LICENSE": "873922e47d1d974a6417ee28e69a55e1d186910b1141f85d265b637b70f62c67",
+    "SKILL.md": "20a0c1e35a683a6bdb2ba978cb822b950b3ead5d638e84ef711e021e52711d06"
+  }
+}

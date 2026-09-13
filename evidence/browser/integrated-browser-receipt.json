@@ -1,0 +1,436 @@
+{
+  "timestamp": "2026-09-13T03:44:03.002Z",
+  "browser": "152.0.7977.84",
+  "artifact": {
+    "path": "kirocrew-aws-remote.html",
+    "sha256": "aa8a5e9bd970a3a945caffe340fe0792aff72709017bdec54093c74bb86cb7cc",
+    "bytes": 2228358
+  },
+  "diagrams": [
+    {
+      "path": "kirocrew-security-layers-browser.html",
+      "sha256": "e47121b910829997265ecb42c9c248d14da1cc244b1575952be6b7b071b26d08",
+      "bytes": 805022
+    },
+    {
+      "path": "kirocrew-aws-deployment-browser.html",
+      "sha256": "c45720356c1289c2d2992eca5534ae169e29dd5d2e8b6675093bebd80bef9e46",
+      "bytes": 843995
+    }
+  ],
+  "viewports": [
+    {
+      "w": 1440,
+      "h": 900,
+      "view": "security",
+      "theme": "light",
+      "outer": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "inner": {
+        "width": 1440,
+        "height": 831,
+        "scrollWidth": 1440,
+        "scrollHeight": 831
+      },
+      "caveat": {
+        "top": 794.625,
+        "bottom": 812.625
+      }
+    },
+    {
+      "w": 1440,
+      "h": 900,
+      "view": "security",
+      "theme": "dark",
+      "outer": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "inner": {
+        "width": 1440,
+        "height": 831,
+        "scrollWidth": 1440,
+        "scrollHeight": 831
+      },
+      "caveat": {
+        "top": 794.625,
+        "bottom": 812.625
+      }
+    },
+    {
+      "w": 1440,
+      "h": 900,
+      "view": "aws",
+      "theme": "light",
+      "outer": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "inner": {
+        "width": 1440,
+        "height": 831,
+        "scrollWidth": 1440,
+        "scrollHeight": 831
+      },
+      "caveat": {
+        "top": 795.328125,
+        "bottom": 813.328125
+      }
+    },
+    {
+      "w": 1440,
+      "h": 900,
+      "view": "aws",
+      "theme": "dark",
+      "outer": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "inner": {
+        "width": 1440,
+        "height": 831,
+        "scrollWidth": 1440,
+        "scrollHeight": 831
+      },
+      "caveat": {
+        "top": 795.328125,
+        "bottom": 813.328125
+      }
+    },
+    {
+      "w": 1440,
+      "h": 900,
+      "view": "reference",
+      "outer": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 3525
+      },
+      "verticalScroll": "intentional reference document"
+    },
+    {
+      "w": 1600,
+      "h": 1000,
+      "view": "security",
+      "theme": "light",
+      "outer": {
+        "width": 1600,
+        "height": 1000,
+        "scrollWidth": 1600,
+        "scrollHeight": 1000
+      },
+      "inner": {
+        "width": 1600,
+        "height": 931,
+        "scrollWidth": 1600,
+        "scrollHeight": 931
+      },
+      "caveat": {
+        "top": 888.75,
+        "bottom": 906.75
+      }
+    },
+    {
+      "w": 1600,
+      "h": 1000,
+      "view": "security",
+      "theme": "dark",
+      "outer": {
+        "width": 1600,
+        "height": 1000,
+        "scrollWidth": 1600,
+        "scrollHeight": 1000
+      },
+      "inner": {
+        "width": 1600,
+        "height": 931,
+        "scrollWidth": 1600,
+        "scrollHeight": 931
+      },
+      "caveat": {
+        "top": 888.75,
+        "bottom": 906.75
+      }
+    },
+    {
+      "w": 1600,
+      "h": 1000,
+      "view": "aws",
+      "theme": "light",
+      "outer": {
+        "width": 1600,
+        "height": 1000,
+        "scrollWidth": 1600,
+        "scrollHeight": 1000
+      },
+      "inner": {
+        "width": 1600,
+        "height": 931,
+        "scrollWidth": 1600,
+        "scrollHeight": 931
+      },
+      "caveat": {
+        "top": 889.328125,
+        "bottom": 907.328125
+      }
+    },
+    {
+      "w": 1600,
+      "h": 1000,
+      "view": "aws",
+      "theme": "dark",
+      "outer": {
+        "width": 1600,
+        "height": 1000,
+        "scrollWidth": 1600,
+        "scrollHeight": 1000
+      },
+      "inner": {
+        "width": 1600,
+        "height": 931,
+        "scrollWidth": 1600,
+        "scrollHeight": 931
+      },
+      "caveat": {
+        "top": 889.328125,
+        "bottom": 907.328125
+      }
+    },
+    {
+      "w": 1600,
+      "h": 1000,
+      "view": "reference",
+      "outer": {
+        "width": 1600,
+        "height": 1000,
+        "scrollWidth": 1600,
+        "scrollHeight": 3525
+      },
+      "verticalScroll": "intentional reference document"
+    },
+    {
+      "w": 1920,
+      "h": 1080,
+      "view": "security",
+      "theme": "light",
+      "outer": {
+        "width": 1920,
+        "height": 1080,
+        "scrollWidth": 1920,
+        "scrollHeight": 1080
+      },
+      "inner": {
+        "width": 1920,
+        "height": 1011,
+        "scrollWidth": 1920,
+        "scrollHeight": 1011
+      },
+      "caveat": {
+        "top": 969.359375,
+        "bottom": 987.359375
+      }
+    },
+    {
+      "w": 1920,
+      "h": 1080,
+      "view": "security",
+      "theme": "dark",
+      "outer": {
+        "width": 1920,
+        "height": 1080,
+        "scrollWidth": 1920,
+        "scrollHeight": 1080
+      },
+      "inner": {
+        "width": 1920,
+        "height": 1011,
+        "scrollWidth": 1920,
+        "scrollHeight": 1011
+      },
+      "caveat": {
+        "top": 969.359375,
+        "bottom": 987.359375
+      }
+    },
+    {
+      "w": 1920,
+      "h": 1080,
+      "view": "aws",
+      "theme": "light",
+      "outer": {
+        "width": 1920,
+        "height": 1080,
+        "scrollWidth": 1920,
+        "scrollHeight": 1080
+      },
+      "inner": {
+        "width": 1920,
+        "height": 1011,
+        "scrollWidth": 1920,
+        "scrollHeight": 1011
+      },
+      "caveat": {
+        "top": 969.328125,
+        "bottom": 987.328125
+      }
+    },
+    {
+      "w": 1920,
+      "h": 1080,
+      "view": "aws",
+      "theme": "dark",
+      "outer": {
+        "width": 1920,
+        "height": 1080,
+        "scrollWidth": 1920,
+        "scrollHeight": 1080
+      },
+      "inner": {
+        "width": 1920,
+        "height": 1011,
+        "scrollWidth": 1920,
+        "scrollHeight": 1011
+      },
+      "caveat": {
+        "top": 969.328125,
+        "bottom": 987.328125
+      }
+    },
+    {
+      "w": 1920,
+      "h": 1080,
+      "view": "reference",
+      "outer": {
+        "width": 1920,
+        "height": 1080,
+        "scrollWidth": 1920,
+        "scrollHeight": 3525
+      },
+      "verticalScroll": "intentional reference document"
+    },
+    {
+      "w": 2048,
+      "h": 1320,
+      "view": "security",
+      "theme": "light",
+      "outer": {
+        "width": 2048,
+        "height": 1320,
+        "scrollWidth": 2048,
+        "scrollHeight": 1320
+      },
+      "inner": {
+        "width": 2048,
+        "height": 1251,
+        "scrollWidth": 2048,
+        "scrollHeight": 1251
+      },
+      "caveat": {
+        "top": 1209.25,
+        "bottom": 1227.25
+      }
+    },
+    {
+      "w": 2048,
+      "h": 1320,
+      "view": "security",
+      "theme": "dark",
+      "outer": {
+        "width": 2048,
+        "height": 1320,
+        "scrollWidth": 2048,
+        "scrollHeight": 1320
+      },
+      "inner": {
+        "width": 2048,
+        "height": 1251,
+        "scrollWidth": 2048,
+        "scrollHeight": 1251
+      },
+      "caveat": {
+        "top": 1209.25,
+        "bottom": 1227.25
+      }
+    },
+    {
+      "w": 2048,
+      "h": 1320,
+      "view": "aws",
+      "theme": "light",
+      "outer": {
+        "width": 2048,
+        "height": 1320,
+        "scrollWidth": 2048,
+        "scrollHeight": 1320
+      },
+      "inner": {
+        "width": 2048,
+        "height": 1251,
+        "scrollWidth": 2048,
+        "scrollHeight": 1251
+      },
+      "caveat": {
+        "top": 1209.328125,
+        "bottom": 1227.328125
+      }
+    },
+    {
+      "w": 2048,
+      "h": 1320,
+      "view": "aws",
+      "theme": "dark",
+      "outer": {
+        "width": 2048,
+        "height": 1320,
+        "scrollWidth": 2048,
+        "scrollHeight": 1320
+      },
+      "inner": {
+        "width": 2048,
+        "height": 1251,
+        "scrollWidth": 2048,
+        "scrollHeight": 1251
+      },
+      "caveat": {
+        "top": 1209.328125,
+        "bottom": 1227.328125
+      }
+    },
+    {
+      "w": 2048,
+      "h": 1320,
+      "view": "reference",
+      "outer": {
+        "width": 2048,
+        "height": 1320,
+        "scrollWidth": 2048,
+        "scrollHeight": 3525
+      },
+      "verticalScroll": "intentional reference document"
+    }
+  ],
+  "interactions": [
+    "Roving keyboard tabs, Home/End/arrow activation, 15 reference details expand and collapse",
+    "Find Endpoint, select result, focus endpoint and dismiss with Escape",
+    "Zoom in/out and reset camera",
+    "Presentation stage opens and Escape restores reader",
+    "security svg export downloaded",
+    "security png export downloaded",
+    "aws svg export downloaded",
+    "aws png export downloaded",
+    "Direct reference fragment loads correct view"
+  ],
+  "errors": [],
+  "status": "pass"
+}

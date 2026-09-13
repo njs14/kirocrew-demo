@@ -1,0 +1,46 @@
+[
+  {
+    "check": "speaker_notes_open",
+    "passed": true
+  },
+  {
+    "check": "original_screenshot_expands",
+    "passed": true
+  },
+  {
+    "check": "overview_has_14_slides",
+    "passed": true
+  },
+  {
+    "check": "overview_jumps_to_last_and_disables_next",
+    "passed": true
+  },
+  {
+    "check": "demo_notes_include_exact_probe_command",
+    "passed": true
+  },
+  {
+    "check": "home_returns_to_first",
+    "passed": true
+  },
+  {
+    "check": "arrow_advances",
+    "passed": true
+  },
+  {
+    "check": "notes_keyboard_shortcut",
+    "passed": true
+  },
+  {
+    "check": "fullscreen_enters",
+    "passed": true
+  },
+  {
+    "check": "fullscreen_exits",
+    "passed": true
+  },
+  {
+    "check": "mobile_navigation_resets_scroll",
+    "pass": true
+  }
+]

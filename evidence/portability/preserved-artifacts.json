@@ -1,0 +1,26 @@
+{
+  "output/kirocrew-system-design.html": {
+    "sha256": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+    "preserved": true
+  },
+  "output/kirocrew-system-design-notes.md": {
+    "sha256": "4e239721237aa0407979ae95eae7334588c992a1c0d858da316fe3b129ad2163",
+    "preserved": true
+  },
+  "output/kirocrew-arm-observability-demo.pptx": {
+    "sha256": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13",
+    "preserved": true
+  },
+  "HANDOFF.md": {
+    "sha256": "5cb2ef0e7933e2fad20cbc36c0120bd3b83e3475d2d8b0cb2a3cc4ab6a805f01",
+    "preserved": true
+  },
+  "ARM-CONTINUATION-RECEIPT.json": {
+    "sha256": "897eca8efc8156b8551fa584122d366039f652c2c0ba52df34e08863e3cce930",
+    "preserved": true
+  },
+  "output/kirocrew-recorded-demos.html": {
+    "sha256": "754079b66dcc572f05af4345ab1f2e669e1a6458dad222abeeeaa3f49d6c2dec",
+    "preserved": true
+  }
+}

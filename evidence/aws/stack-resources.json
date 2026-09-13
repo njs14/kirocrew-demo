@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "DemoBucket",
+        "Id": "kirocrew-demo-20260913-demobucket-pdjzgyu25xhb",
+        "Status": "CREATE_COMPLETE"
+    },
+    {
+        "Name": "DemoBucketPolicy",
+        "Id": "kirocrew-demo-20260913-demobucket-pdjzgyu25xhb",
+        "Status": "CREATE_COMPLETE"
+    },
+    {
+        "Name": "DemoInstance",
+        "Id": "i-020eb373045b56586",
+        "Status": "CREATE_COMPLETE"
+    },
+    {
+        "Name": "DemoInstanceProfile",
+        "Id": "kirocrew-demo-20260913-DemoInstanceProfile-gQvvZTBfIjzv",
+        "Status": "CREATE_COMPLETE"
+    },
+    {
+        "Name": "DemoRole",
+        "Id": "kirocrew-demo-20260913-DemoRole-dcdmeTwVkSzS",
+        "Status": "CREATE_COMPLETE"
+    },
+    {
+        "Name": "DemoSecurityGroup",
+        "Id": "sg-08ac4789794115e39",
+        "Status": "CREATE_COMPLETE"
+    }
+]

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "final_pptx_sha256": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13",
+  "checks": {
+    "final_sha_matches": true,
+    "package_passed": true,
+    "layout_zero_findings": true,
+    "fonts_passed": true,
+    "twelve_slide_reimport": true,
+    "three_native_tables": true
+  },
+  "root_read_full_final_copy": true,
+  "root_inspected_final_slides": [
+    3,
+    8,
+    10,
+    12
+  ],
+  "author_agent_inspected_all_final_slides": true,
+  "result": "no_blocking_findings",
+  "scope": "Final artifact and rendered-image acceptance after council decisions and No AI Slop. No native PowerPoint playback or new council inference."
+}

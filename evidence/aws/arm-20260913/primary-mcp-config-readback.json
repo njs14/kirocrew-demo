@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-09-13T14:57:00.290215+00:00",
+  "primary_aws_mcp": {
+    "enabled": true,
+    "endpoint": "https://aws-mcp.us-east-1.api.aws/mcp",
+    "endpoint_matches_config": true,
+    "region_metadata_matches_config": true
+  },
+  "aws_knowledge_mcp_config_present": false,
+  "aws_knowledge_plugin_config_present": false,
+  "runtime_limit": "Existing task tool registrations still expose AWS Knowledge names; these were not called. The requested primary MCP was used through the reviewed protocol client because tool registrations do not hot reload."
+}

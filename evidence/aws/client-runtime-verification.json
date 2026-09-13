@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-09-13T04:31:26.242277+00:00",
+  "runLocalGateway": false,
+  "remoteHostConfigured": {
+    "host": "kirocrew-demo",
+    "binPath": "/usr/local/bin/kirocrew-demo",
+    "remotePort": "5476",
+    "remotePath": "/opt/kirocrew/venv/bin:/usr/local/bin:/usr/bin:/bin"
+  },
+  "listeners": {
+    "5476": {
+      "listener_present": false,
+      "safe_listing": ""
+    },
+    "5599": {
+      "listener_present": true,
+      "safe_listing": "COMMAND   PID       USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nssh     20212 noahsutter    4u  IPv4 0xc6d4bffd012079d7      0t0  TCP 127.0.0.1:5599 (LISTEN)"
+    }
+  },
+  "native_ui_observation": {
+    "window": "Kiro Crew [:5599]",
+    "status": "Gateway connected",
+    "agent": "enforcement-demo",
+    "project": "/srv/kirocrew-demo/workspace",
+    "method": "CUA accessibility tree and author observation",
+    "backend_model_session_verified": false
+  },
+  "scope": "Remote desktop connection verified; backend authentication and native enforcement pending."
+}

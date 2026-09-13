@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-13T04:56:08.174596+00:00",
+  "revision": "council-legibility-and-scope",
+  "diagram_type": "architecture",
+  "output": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-ec2-slide.html",
+  "specification": {
+    "sha256": "1c628b2d6ff8d9f10193cc247e210dbe022f9617a377a993f2a6514840caad50",
+    "bytes": 2129
+  },
+  "artifact": {
+    "sha256": "489a1b3f5eaa86299106c33d818ca328d5778d291cd596499ec6920849f969e2",
+    "bytes": 797380
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  },
+  "browser_evidence": "passed",
+  "browser_receipt": "kirocrew-ec2-slide.visual-check.json",
+  "visual_review": "passed",
+  "correction_rounds": 0,
+  "interactions": [
+    "Gateway search, result selection, runtime focus, Escape dismissal",
+    "Presentation mode opened and Escape restored reader"
+  ],
+  "exports": [
+    {
+      "path": "evidence/aws/archify-slide/kirocrew-ec2-slide.svg",
+      "bytes": 142235,
+      "sha256": "1ab1a45e71571fefd29273fd7700afed0a820b045b766ed888306c865278bbdd"
+    },
+    {
+      "path": "evidence/aws/archify-slide/kirocrew-ec2-slide.png",
+      "bytes": 167059,
+      "sha256": "733a32bae83600704c3d52cc3339187407a8e6da9a57dda7ced9228b56b104db"
+    }
+  ],
+  "historical_visuals": "Accepted security diagram and wrapper not edited by this agent.",
+  "actual_slide_size": {
+    "time": "2026-09-13T04:54:22.034Z",
+    "kind": "actual-slide-size-render",
+    "source": {
+      "path": "evidence/aws/archify-slide/kirocrew-ec2-slide.svg",
+      "bytes": 142235,
+      "sha256": "1ab1a45e71571fefd29273fd7700afed0a820b045b766ed888306c865278bbdd"
+    },
+    "output": {
+      "path": "evidence/aws/archify-slide/kirocrew-ec2-slide-1152x480.png",
+      "bytes": 39769,
+      "sha256": "451fbde58bdae4822efb8ee8bfd2e89f0e8379a3b1f6b42df17aa3a5335b384d"
+    },
+    "viewport": [
+      1152,
+      480
+    ],
+    "imageFit": "contain; canonical SVG geometry preserved",
+    "scale": 1.6,
+    "projectedFontPx": {
+      "nodeLabel": 17.6,
+      "nodeSublabel": 14.4
+    },
+    "scope": "Static diagram presentation asset; no browser viewer UI or control verification claims."
+  },
+  "scope": [
+    "Concise topology authored for Slide 3, not the standalone full-detail browser view.",
+    "Four primary nodes retain laptop Gateway-off state, an EC2 host with Crew execution and separately privileged MCP, and the S3 target.",
+    "No native authentication/enforcement result or L0\u2013L5 scope claim is present.",
+    "Standalone HTML is a preview/export source; slide-format composition intentionally leaves unused document space on tall reader viewports."
+  ],
+  "perceptual_review": {
+    "reviewer": "image-capable author agent",
+    "artifact_sha256": "489a1b3f5eaa86299106c33d818ca328d5778d291cd596499ec6920849f969e2",
+    "screenshots_reviewed": [
+      "kirocrew-ec2-slide.visual-check.1440x900.light.png",
+      "kirocrew-ec2-slide.visual-check.2048x1320.dark.png",
+      "evidence/aws/archify-slide/kirocrew-ec2-slide-1152x480.png"
+    ],
+    "scope": "Presentation composition at the actual 1152\u00d7480 embed size plus light/dark node and edge checks.",
+    "observations": [
+      "Main labels are 17.6px and supporting labels 14.4px at actual slide embed scale.",
+      "Gateway + Kiro CLI is unambiguous and all four node labels are readable at actual size.",
+      "Both Crew and MCP are visibly on the EC2 host, within distinct privilege boundaries.",
+      "No content, legend, or labels were clipped to satisfy the slide fit."
+    ]
+  },
+  "root_review": {
+    "status": "accepted",
+    "scope": "Exact 1152\u00d7480 PNG",
+    "sha256": "451fbde58bdae4822efb8ee8bfd2e89f0e8379a3b1f6b42df17aa3a5335b384d",
+    "observations": "Labels readable; host and privilege boundaries clear; no clipping.",
+    "recorded_at": "2026-09-13T04:56:32.874008+00:00"
+  }
+}

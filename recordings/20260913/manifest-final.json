@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "title": "KiroCrew recorded walkthroughs",
+  "scenes": [
+    {
+      "id": "endpoint-reference",
+      "title": "One endpoint-control boundary",
+      "description": "Expand the preserved endpoint diagram, then return to the recorded ARM deployment view.",
+      "evidenceScope": "Architecture reference and previously recorded deployment evidence.",
+      "recordedAt": "2026-09-13T18:14:49.325Z",
+      "source": {
+        "kind": "browser-recording",
+        "raw": "raw/01-endpoint-reference.webm",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0,
+      "end": 24.84,
+      "cues": [
+        {
+          "time": 2.7,
+          "label": "Read the reference scope",
+          "detail": "The diagram describes the execution boundary. Its September 11 reference label remains visible.",
+          "evidence": "receipts/endpoint-validation.json"
+        },
+        {
+          "time": 6.5,
+          "label": "Inspect the single enclosure",
+          "detail": "Gateway, backend, workspace and endpoint controls remain in one box.",
+          "evidence": "receipts/endpoint-validation.json"
+        },
+        {
+          "time": 18.7,
+          "label": "Move to the ARM deployment",
+          "detail": "The next slide describes recorded ARM deployment evidence and marks the native MCP path as pending.",
+          "evidence": "receipts/endpoint-capture.json"
+        }
+      ]
+    },
+    {
+      "id": "admin-console",
+      "title": "Navigate the admin console",
+      "description": "Read the remote Gateway overview, inspect the selected backend, filter its sign-in error, and open observability.",
+      "evidenceScope": "Live owner-portal navigation. Native Kiro CLI authentication remains pending.",
+      "recordedAt": "2026-09-13T18:16:15.405Z",
+      "source": {
+        "kind": "browser-recording",
+        "raw": "raw/02-admin-console-light.webm",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0,
+      "end": 23.24,
+      "cues": [
+        {
+          "time": 1,
+          "label": "Read the Gateway overview",
+          "detail": "The running Gateway reports uptime and zero completed sessions. This page shows the remote server nightly.",
+          "evidence": "receipts/preflight.json"
+        },
+        {
+          "time": 6,
+          "label": "Inspect the backend selection",
+          "detail": "Kiro CLI is selected. The GitHub card uses a separate KAS identity; the fresh CLI authentication check is false.",
+          "evidence": "receipts/preflight.json"
+        },
+        {
+          "time": 13,
+          "label": "Inspect the native startup failure",
+          "detail": "The log filter exposes the actual Kiro CLI not-logged-in error. No successful native turn is claimed.",
+          "evidence": "receipts/admin-light-capture.json"
+        },
+        {
+          "time": 19,
+          "label": "Open the telemetry app",
+          "detail": "Demo Observability combines the bounded Mac and EC2 collector samples.",
+          "evidence": "receipts/admin-light-capture.json"
+        }
+      ]
+    },
+    {
+      "id": "client-server-telemetry",
+      "title": "Compare client and server telemetry",
+      "description": "Refresh stored samples, expand process measurements, and filter real collection events by source.",
+      "evidenceScope": "Live custom telemetry dashboard. Collection events are separate from Crew security audit events.",
+      "recordedAt": "2026-09-13T18:09:22.466Z",
+      "source": {
+        "kind": "browser-recording",
+        "raw": "raw/03-client-server-telemetry.webm",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0,
+      "end": 22.52,
+      "cues": [
+        {
+          "time": 1,
+          "label": "Compare both sources",
+          "detail": "The client reports Local Gateway off while the EC2 Gateway and MCP checks are healthy. Sample times are displayed in the browser time zone.",
+          "evidence": "receipts/preflight.json"
+        },
+        {
+          "time": 3,
+          "label": "Refresh stored samples",
+          "detail": "Refresh reads the latest stored samples. The collectors run separately every 60 seconds.",
+          "evidence": "receipts/telemetry-capture.json"
+        },
+        {
+          "time": 5.5,
+          "label": "Inspect Mac process metrics",
+          "detail": "The expanded client measurements describe local processes and probes.",
+          "evidence": "receipts/telemetry-capture.json"
+        },
+        {
+          "time": 9,
+          "label": "Inspect EC2 services",
+          "detail": "The server detail adds Gateway and MCP main-process CPU and memory.",
+          "evidence": "receipts/telemetry-capture.json"
+        },
+        {
+          "time": 12.5,
+          "label": "Filter client events",
+          "detail": "Client filtering retains health changes and collection errors, including recorded historical events.",
+          "evidence": "receipts/telemetry-capture.json"
+        },
+        {
+          "time": 16,
+          "label": "Filter server events",
+          "detail": "The table now shows only server collection events.",
+          "evidence": "receipts/telemetry-capture.json"
+        },
+        {
+          "time": 20,
+          "label": "Return to all events",
+          "detail": "All restores both sources. These fixed collection labels exclude prompts and credentials.",
+          "evidence": "receipts/telemetry-capture.json"
+        }
+      ]
+    },
+    {
+      "id": "gateway-instrumentation",
+      "title": "Inspect native Gateway telemetry",
+      "description": "Read the configured metrics switch, then inspect Gateway instruments and startup measurements.",
+      "evidenceScope": "Live native Gateway instrumentation. Zero completed backend turns; separate custom collectors provide the client/server view.",
+      "recordedAt": "2026-09-13T18:16:52.471Z",
+      "source": {
+        "kind": "browser-recording",
+        "raw": "raw/04-gateway-instrumentation-light.webm",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0,
+      "end": 20.68,
+      "cues": [
+        {
+          "time": 1,
+          "label": "Read the telemetry settings",
+          "detail": "Record metrics is enabled. The environment disables anonymous reporting. This take does not change either setting.",
+          "evidence": "receipts/preflight.json"
+        },
+        {
+          "time": 6.5,
+          "label": "Inspect Gateway instruments",
+          "detail": "Request and process instruments contain measurements. The top summary still shows zero completed turns.",
+          "evidence": "receipts/native-telemetry-light-capture.json"
+        },
+        {
+          "time": 12.5,
+          "label": "Inspect startup measurements",
+          "detail": "The Startup tab displays the Gateway instrumentation already collected by this running server.",
+          "evidence": "receipts/native-telemetry-light-capture.json"
+        },
+        {
+          "time": 18,
+          "label": "Return to latency",
+          "detail": "The Latency tab restores the instruments view.",
+          "evidence": "receipts/native-telemetry-light-capture.json"
+        }
+      ]
+    },
+    {
+      "id": "direct-mcp-aws",
+      "title": "Follow a direct MCP request to AWS",
+      "description": "Start the bounded probe, read its three outcomes, and inspect the fresh receipt.",
+      "evidenceScope": "Actual direct MCP/AWS execution from a standalone operator screen. Native Kiro CLI acceptance remains pending.",
+      "recordedAt": "2026-09-13T18:21:23.913Z",
+      "source": {
+        "kind": "browser-recording",
+        "raw": "raw/05-direct-mcp-aws.webm",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0,
+      "end": 25.56,
+      "cues": [
+        {
+          "time": 1,
+          "label": "Read the execution scope",
+          "detail": "The fixed command invokes the EC2 MCP service directly. It does not run through a native Kiro CLI turn.",
+          "evidence": "receipts/direct-probe-capture.json"
+        },
+        {
+          "time": 3.7,
+          "label": "Run the bounded probe",
+          "detail": "The button starts the actual command. The following outcomes come from its completed result.",
+          "evidence": "receipts/direct-mcp-aws.json"
+        },
+        {
+          "time": 7,
+          "label": "Compare three outcomes",
+          "detail": "S3 returned the expected 55-byte object and digest. MCP rejected a disallowed tool before AWS dispatch. IAM returned AccessDenied with an AWS request ID.",
+          "evidence": "receipts/direct-mcp-aws.json"
+        },
+        {
+          "time": 16,
+          "label": "Inspect the receipt",
+          "detail": "The receipt records timestamps, trace IDs, the object digest and AWS request IDs. Native backend verification remains false.",
+          "evidence": "receipts/direct-mcp-aws.json"
+        },
+        {
+          "time": 22,
+          "label": "Return to the result cards",
+          "detail": "These outcomes establish the bounded direct probe only.",
+          "evidence": "receipts/direct-mcp-aws.json"
+        }
+      ]
+    },
+    {
+      "id": "synthetic-controls",
+      "title": "Rehearse the synthetic endpoint controls",
+      "description": "Run the isolated control test runner, inspect the results, and open its receipt.",
+      "evidenceScope": "Actual execution of a local synthetic test runner. Approval is scripted; no native approval UI, backend MCP or AWS call occurs.",
+      "recordedAt": "2026-09-13T18:23:04.179Z",
+      "source": {
+        "kind": "browser-recording",
+        "raw": "raw/06-synthetic-controls.webm",
+        "description": "Actual browser interactions recorded with Playwright CLI; silent, original timing."
+      },
+      "start": 0,
+      "end": 45.8,
+      "cues": [
+        {
+          "time": 1,
+          "label": "Read the rehearsal scope",
+          "detail": "This disposable local run models endpoint controls. It does not verify native KiroCrew enforcement.",
+          "evidence": "receipts/synthetic-capture.json"
+        },
+        {
+          "time": 4.2,
+          "label": "Run the frozen control test runner",
+          "detail": "The button invokes the existing isolated rehearsal. The recorded wait preserves the command’s actual runtime.",
+          "evidence": "receipts/synthetic-controls.json"
+        },
+        {
+          "time": 28,
+          "label": "Inspect the control results",
+          "detail": "The test runner covers allow, scripted approval, deny, protected paths, command gating, Policy/Profile intersection and redaction.",
+          "evidence": "receipts/synthetic-controls.json"
+        },
+        {
+          "time": 32,
+          "label": "Read the SEL checks",
+          "detail": "The test runner verifies 7 of 7 entries, detects the tampered fixture at 6 of 7, then restores and verifies 7 of 7.",
+          "evidence": "receipts/synthetic-controls.json"
+        },
+        {
+          "time": 36.5,
+          "label": "Inspect the command receipt",
+          "detail": "The fresh receipt identifies the isolated synthetic run and keeps native backend verification false.",
+          "evidence": "receipts/synthetic-controls.json"
+        },
+        {
+          "time": 42,
+          "label": "Return to the rehearsal results",
+          "detail": "Use this scene to explain the controls while keeping native runtime acceptance pending.",
+          "evidence": "receipts/synthetic-controls.json"
+        }
+      ]
+    }
+  ]
+}

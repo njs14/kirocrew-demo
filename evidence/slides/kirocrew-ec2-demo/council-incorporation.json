@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "time": "2026-09-13T05:05:37.408375+00:00",
+  "reviewed_candidate_sha256": "fe7708a0689906820be49bd06baa325c93fec3465856bdc0071c2daae307cc3e",
+  "final_artifact": {
+    "path": "output/kirocrew-ec2-demo.pptx",
+    "sha256": "eaf91801fa8f43e2192df5f229b9d7ef677b9d49a6f9552a629c43b5e6113a46",
+    "bytes": 159660
+  },
+  "decisions": {
+    "path": "evidence/council/candidate-v3/DECISIONS.md",
+    "sha256": "e9c43e8b46848a8718c4ae2043260600ea73919892b884e1a3a12929bdc64224",
+    "bytes": 3401
+  },
+  "council_receipt": {
+    "path": "evidence/council/candidate-v3/council-verified-receipt.json",
+    "sha256": "4585a9a49dae103b1aa35e3aa6e151c81f99a3544aeabf1918fb1611eb5cbb8a",
+    "bytes": 9189
+  },
+  "applied_changes": [
+    {
+      "id": "slide3-readability",
+      "slides": [
+        3
+      ],
+      "change": "Replaced dense topology with concise Archify image, inspected at 1152x480 and within final slide."
+    },
+    {
+      "id": "slide3-control-scope",
+      "slides": [
+        2,
+        3
+      ],
+      "change": "Deployment diagram omits unverified L0-L5/SEL outcomes. Accepted control map stays on explicitly labeled reference slide."
+    },
+    {
+      "id": "on-slide-scope",
+      "slides": [
+        1,
+        2,
+        7
+      ],
+      "change": "Added direct-probe success and pending native sign-in/session language. Caption names the checks verified by this demo."
+    },
+    {
+      "id": "current-live-path",
+      "slides": [
+        5,
+        8
+      ],
+      "change": "Live route uses verified client/workspace and three-call direct probe. Later native turns require individual approval for routed calls and automatic crew_denied before MCP arrival."
+    },
+    {
+      "id": "metadata-and-role-scope",
+      "slides": [
+        4
+      ],
+      "change": "Names crew UID metadata blocking and instance role access for mcp-demo, including two S3 prefixes and SSM core permissions."
+    },
+    {
+      "id": "host-ownership",
+      "slides": [
+        3
+      ],
+      "change": "Outer diagram boundary says EC2 host and encloses both Crew execution and separate MCP privilege."
+    },
+    {
+      "id": "receipt-provenance",
+      "slides": [
+        6
+      ],
+      "change": "Shows original direct-probe identity/time, unauthenticated 401, discovery count and IAM request ID. Notes identify the fresh documented-command receipt separately."
+    },
+    {
+      "id": "version-placement",
+      "slides": [
+        7
+      ],
+      "change": "Crew dependency lock appears with Crew package. Kiro CLI artifact integrity is separate from pending authentication. Notes add 24 deployed module hash/ownership checks."
+    }
+  ],
+  "sequence": [
+    {
+      "step": 1,
+      "action": "Apply accepted council decisions",
+      "source": {
+        "path": ".build/slides/build-ec2-deck.council-incorporated.mjs",
+        "sha256": "2700f029bcdc0e5af98ddbf8c48477bcd1f1fdce4ba2bfbbe25eeb3cc42b840a",
+        "bytes": 19040
+      }
+    },
+    {
+      "step": 2,
+      "action": "Read revised full draft, apply no-ai-slop edit, check eval.md",
+      "edits": {
+        "path": ".build/slides/ec2-no-ai-edits.json",
+        "sha256": "b577eed13a51d29c83cacc526f4cfdec3c15fbe8eab7bcbbdb6587671131724d",
+        "bytes": 3495
+      },
+      "evaluation": {
+        "path": "evidence/slides/kirocrew-ec2-demo/no-ai-slop.md",
+        "sha256": "d53ed36d078cec4437202aa77cfc36734e46daeaec83b84fbcc4dfddb5d0ca17",
+        "bytes": 3250
+      }
+    },
+    {
+      "step": 3,
+      "action": "Finalize, reimport, render and visually inspect all nine slides",
+      "validation": {
+        "path": "evidence/slides/kirocrew-ec2-demo/finalization.json",
+        "sha256": "5be5d3f00354630006c7853b16c050c380c96a4320a20d9a8fe3ba17a286fe58",
+        "bytes": 4054
+      },
+      "visual": {
+        "path": "evidence/slides/kirocrew-ec2-demo/visual-review.json",
+        "sha256": "e305b7ac282aae10fc245c8c5cfe4f0821b545b5ab77444707a47ed8296efe55",
+        "bytes": 3847
+      }
+    }
+  ],
+  "full_copy": {
+    "path": "output/kirocrew-ec2-demo-copy.md",
+    "sha256": "1590ffd176587e26f1231b536d77a39b9dce8db49febfcb8e199a65337de3b58",
+    "bytes": 12198
+  },
+  "new_evidence": [
+    {
+      "path": "evidence/aws/walkthrough-direct-probe.json",
+      "sha256": "1f8ff02ed43d580aab11227e4d52fa4538335e4cc2818076c3bec50d6eddcd2f",
+      "bytes": 2199
+    },
+    {
+      "path": "evidence/aws/deployed-nightly-verification.json",
+      "sha256": "ffc2ac9e4c495c62a904a3883880e22a4601d700725fee7e2f8bb9fb7cd9cc3d",
+      "bytes": 7859
+    }
+  ],
+  "author_incorporation_verified": true,
+  "final_bytes_reviewed_by_council": false,
+  "native_backend_verified": false,
+  "limitation": "Council reviewed candidate-v3 and returned changes required. Final bytes incorporate the root author decisions and received fresh author validation, not a second council approval."
+}

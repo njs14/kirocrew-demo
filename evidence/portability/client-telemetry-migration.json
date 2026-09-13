@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "scope": "Existing local telemetry timer migrated to explicit configuration; no cloud infrastructure change.",
+  "events": [
+    {
+      "schema_version": 1,
+      "collected_at": "2026-09-13T19:10:09Z",
+      "uploaded": true,
+      "code": "uploaded"
+    },
+    {
+      "applied": true,
+      "client_timer": "com.kirocrew.demo-observability",
+      "interval_seconds": 60
+    }
+  ],
+  "checks": {
+    "loaded": true,
+    "configuration_bound": true,
+    "config_mode": "0o600",
+    "interval_seconds": 60
+  }
+}

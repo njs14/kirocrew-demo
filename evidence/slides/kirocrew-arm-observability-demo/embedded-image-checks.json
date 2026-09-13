@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "artifact_sha256": "37c82c82a00f16694f82fd11d2eda4c6188ce49de233b0c52448c47b820e0c13",
+  "all_original_bytes_preserved": true,
+  "images": [
+    {
+      "path": "evidence/browser/endpoint-slide.png",
+      "bytes": 85943,
+      "sha256": "4c64d4035f1c61b8bdd8d59cf5fb8e1abb318a754a73cc0865f5e4b603ecedc1",
+      "embedded_unchanged": true,
+      "media_path": "ppt/media/image.png"
+    },
+    {
+      "path": "evidence/aws/archify-arm/kirocrew-arm-slide-council-1152x480.png",
+      "bytes": 61292,
+      "sha256": "e2d4e021f9b31bd3ebdc3d7d2e0339fbd3a9ae709bb935b4f223280d3ccb6b59",
+      "embedded_unchanged": true,
+      "media_path": "ppt/media/image2.png"
+    },
+    {
+      "path": "output/admin-console/09-native-telemetry.jpg",
+      "bytes": 58431,
+      "sha256": "ce3695a785c868db8024f5be73dd09277912a0b517d91ebf2beb01779fe1775d",
+      "embedded_unchanged": true,
+      "media_path": "ppt/media/image.jpeg"
+    },
+    {
+      "path": "output/admin-console/11-client-server-telemetry.jpg",
+      "bytes": 78171,
+      "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698",
+      "embedded_unchanged": true,
+      "media_path": "ppt/media/image2.jpeg"
+    },
+    {
+      "path": "output/admin-console/12-collection-logs.jpg",
+      "bytes": 81268,
+      "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63",
+      "embedded_unchanged": true,
+      "media_path": "ppt/media/image3.jpeg"
+    }
+  ],
+  "native_crop_checks": [
+    {
+      "slide": 8,
+      "expected": {
+        "l": "23300",
+        "t": "42500",
+        "r": "2000",
+        "b": "17000"
+      },
+      "actual": {
+        "l": "23300",
+        "t": "42500",
+        "r": "2000",
+        "b": "17000"
+      },
+      "passed": true
+    },
+    {
+      "slide": 9,
+      "expected": {
+        "l": "7900",
+        "t": "8600",
+        "r": "2600",
+        "b": "27800"
+      },
+      "actual": {
+        "l": "7900",
+        "t": "8600",
+        "r": "2600",
+        "b": "27800"
+      },
+      "passed": true
+    },
+    {
+      "slide": 10,
+      "expected": {
+        "l": "8000",
+        "t": "38900",
+        "r": "2500",
+        "b": "16300"
+      },
+      "actual": {
+        "l": "8000",
+        "t": "38900",
+        "r": "2500",
+        "b": "16300"
+      },
+      "passed": true
+    }
+  ],
+  "exact_notes_match": true,
+  "preserved_prior_artifacts": {
+    "output/kirocrew-ec2-demo.pptx": "eaf91801fa8f43e2192df5f229b9d7ef677b9d49a6f9552a629c43b5e6113a46",
+    "output/kirocrew-ec2-demo-copy.md": "1590ffd176587e26f1231b536d77a39b9dce8db49febfcb8e199a65337de3b58",
+    "output/kirocrew-arm-observability-demo-candidate-v2.pptx": "99d10eee8723b3998c40f52e902602661138e7388f0d6d3db8e2d5ef13f63dd9"
+  }
+}

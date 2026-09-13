@@ -1,0 +1,13 @@
+{
+  "bucket": "kirocrew-demo-20260913-demobucket-pdjzgyu25xhb",
+  "objects": {
+    "allowed/sentinel.txt": {
+      "bytes": 55,
+      "sha256": "34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160"
+    },
+    "denied/sentinel.txt": {
+      "bytes": 71,
+      "sha256": "20f839307fbef4ed8df39a5be476f6289c3794bc03a81d505aaf6f98cf1b0488"
+    }
+  }
+}

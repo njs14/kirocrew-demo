@@ -1,0 +1,19 @@
+{
+  "artifact_sha256": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+  "passed": true,
+  "checks": {
+    "fourteen_slide_sections": true,
+    "unique_dom_ids": true,
+    "six_original_evidence_images": true,
+    "no_remote_subresources": true,
+    "embedded_download_kirocrew-arm-observability-demo.pptx": true,
+    "embedded_download_kirocrew-system-design-notes.md": true,
+    "original_pptx_unchanged": true,
+    "prior_arm_receipt_unchanged": true,
+    "navigation_code_unchanged": true,
+    "build_manifest_matches_html": true,
+    "desktop_layouts_pass": true,
+    "mobile_layouts_pass": true
+  },
+  "printing_exercised": false
+}

@@ -1,0 +1,91 @@
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:770132776059:stack/kirocrew-demo-20260913/72ef8b10-af28-11f1-b3b3-0affd5886c7b",
+            "StackName": "kirocrew-demo-20260913",
+            "Description": "KiroCrew demo in us-east-1: one t3a.small, SSH restricted to one IPv4 /32, IMDSv2, isolated Crew/MCP users, and S3 allow/deny evidence. Public IPv4 avoids NAT/LB cost. S3 is retained on deletion.",
+            "Parameters": [
+                {
+                    "ParameterKey": "KeyName",
+                    "ParameterValue": "kirocrew-demo-20260913"
+                },
+                {
+                    "ParameterKey": "AllowedCidr",
+                    "ParameterValue": "24.60.107.229/32"
+                },
+                {
+                    "ParameterKey": "VpcId",
+                    "ParameterValue": "vpc-07b9dae1b0889f755"
+                },
+                {
+                    "ParameterKey": "ImageId",
+                    "ParameterValue": "ami-025d99823a4caad37"
+                },
+                {
+                    "ParameterKey": "SubnetId",
+                    "ParameterValue": "subnet-0e97cd68883d3d479"
+                }
+            ],
+            "CreationTime": "2026-09-13T04:06:08.751000+00:00",
+            "RollbackConfiguration": {},
+            "StackStatus": "CREATE_COMPLETE",
+            "DisableRollback": false,
+            "DeploymentConfig": {
+                "Mode": "STANDARD",
+                "DisableRollback": false
+            },
+            "NotificationARNs": [],
+            "Capabilities": [
+                "CAPABILITY_IAM"
+            ],
+            "Outputs": [
+                {
+                    "OutputKey": "InstanceRoleArn",
+                    "OutputValue": "arn:aws:iam::770132776059:role/kirocrew-demo-20260913-DemoRole-dcdmeTwVkSzS",
+                    "Description": "Instance role ARN."
+                },
+                {
+                    "OutputKey": "InstanceId",
+                    "OutputValue": "i-020eb373045b56586",
+                    "Description": "EC2 instance ID."
+                },
+                {
+                    "OutputKey": "PublicIp",
+                    "OutputValue": "100.57.5.32",
+                    "Description": "Public IPv4 address; changes after a stop/start."
+                },
+                {
+                    "OutputKey": "DemoBucketName",
+                    "OutputValue": "kirocrew-demo-20260913-demobucket-pdjzgyu25xhb",
+                    "Description": "Private demo bucket retained on stack deletion."
+                },
+                {
+                    "OutputKey": "SecurityGroupId",
+                    "OutputValue": "sg-08ac4789794115e39",
+                    "Description": "Security group with one inbound TCP 22 /32 rule."
+                },
+                {
+                    "OutputKey": "InstanceRoleName",
+                    "OutputValue": "kirocrew-demo-20260913-DemoRole-dcdmeTwVkSzS",
+                    "Description": "Instance role used by the host and MCP process."
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "kirocrew-demo"
+                }
+            ],
+            "EnableTerminationProtection": false,
+            "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+            },
+            "LastOperations": [
+                {
+                    "OperationType": "CREATE_STACK",
+                    "OperationId": "72f0c390-af28-11f1-b3b3-0affd5886c7b"
+                }
+            ]
+        }
+    ]
+}

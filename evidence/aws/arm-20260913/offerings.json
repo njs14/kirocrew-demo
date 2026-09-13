@@ -1,0 +1,9 @@
+{
+  "InstanceTypeOfferings": [
+    {
+      "InstanceType": "t4g.xlarge",
+      "LocationType": "availability-zone",
+      "Location": "us-east-1a"
+    }
+  ]
+}

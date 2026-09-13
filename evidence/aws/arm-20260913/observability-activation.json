@@ -1,0 +1,26 @@
+{
+  "observed_at": "2026-09-13T14:37:06.869649+00:00",
+  "actions": [
+    {
+      "path": "/api/apps/install",
+      "http_status": 201,
+      "result": {
+        "ok": true,
+        "name": "demo-observability"
+      }
+    },
+    {
+      "path": "/api/security/trusted-apps/demo-observability",
+      "http_status": 200,
+      "result": {}
+    },
+    {
+      "path": "/api/apps/demo-observability/enable",
+      "http_status": 200,
+      "result": {
+        "ok": true,
+        "name": "demo-observability"
+      }
+    }
+  ]
+}

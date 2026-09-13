@@ -1,0 +1,6 @@
+{
+  "name": "aws___run_script",
+  "arguments": {
+    "code": "identity = await call_boto3(service_name='sts', operation_name='GetCallerIdentity', region_name='us-east-1')\nvpcs = await call_boto3(service_name='ec2', operation_name='DescribeVpcs', region_name='us-east-1')\nresult = {'identity': identity, 'vpcs': vpcs}\nresult"
+  }
+}

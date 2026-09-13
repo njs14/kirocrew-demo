@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-13T19:08:31.960855+00:00",
+  "scope": "Portable CloudFormation module; fixture tests and static template lint. No AWS resources deployed or modified.",
+  "files": {
+    "infrastructure/portable-demo.json": "871dc5c43e6dae04ced4f3e455a53cc28d501814828e762933cb353f7a42398f",
+    "scripts/deploy-demo.py": "a99897ec8059fe279a7d8a97a613513a3c96b5a020f24e6db00adccf104410d8",
+    "scripts/tests/test_deploy_demo.py": "28d30edb94d44d33b4ff949c130c937c27cd41cea810c2f60c35c0ad1c41c222",
+    "config/cloudformation-public.example.json": "2bb784725871e4137f57994e65a46384f4726062728dc7ff234ee684aceaee58",
+    "config/cloudformation-private.example.json": "50ea0072d19884d7c9b909a6c041d4b1c9297d241b5c1df76714dde1511971a3",
+    "docs/DEPLOYMENT.md": "94b50291be2c61b7afe60f51301323e977e976f1c6325cf103af4ddc38e93c2a"
+  },
+  "historicalFilesPreserved": {
+    "infrastructure/ec2-demo.json": "aed6ca2da847fcccd91d74fc73d1317373d87a6a5ad45a3930bd773bb2700e22",
+    "infrastructure/bootstrap.sh": "46c2f99747f3a04d48e47f41b2e880f9be10fe3d425b75b4981717dd8c9459d6"
+  },
+  "checks": {
+    "unitTests": {
+      "command": "python3 -m unittest discover -s scripts/tests -p test_deploy_demo.py -v",
+      "count": 21,
+      "exitCode": 0,
+      "output": "test_effective_table_explicit_then_main (test_deploy_demo.DeploymentTests.test_effective_table_explicit_then_main) ... ok\ntest_execute_binds_template_parameters_stack_and_status (test_deploy_demo.DeploymentTests.test_execute_binds_template_parameters_stack_and_status) ... ok\ntest_explicit_network_required_and_strict_parameter_list (test_deploy_demo.DeploymentTests.test_explicit_network_required_and_strict_parameter_list) ... ok\ntest_historical_and_unrelated_stacks_are_rejected (test_deploy_demo.DeploymentTests.test_historical_and_unrelated_stacks_are_rejected) ... ok\ntest_invalid_admin_and_noncanonical_egress_rejected (test_deploy_demo.DeploymentTests.test_invalid_admin_and_noncanonical_egress_rejected) ... ok\ntest_longest_prefix_catches_blackhole_hidden_by_default (test_deploy_demo.DeploymentTests.test_longest_prefix_catches_blackhole_hidden_by_default) ... ok\ntest_mutation_requires_apply_and_create_does_not_execute (test_deploy_demo.DeploymentTests.test_mutation_requires_apply_and_create_does_not_execute) ... ok\ntest_narrow_existing_routes_do_not_require_default (test_deploy_demo.DeploymentTests.test_narrow_existing_routes_do_not_require_default) ... ok\ntest_nat_administration_path_needs_review (test_deploy_demo.DeploymentTests.test_nat_administration_path_needs_review) ... ok\ntest_new_bootstrap_requires_http_but_existing_update_can_disable (test_deploy_demo.DeploymentTests.test_new_bootstrap_requires_http_but_existing_update_can_disable) ... ok\ntest_pending_create_and_replacement_still_require_http (test_deploy_demo.DeploymentTests.test_pending_create_and_replacement_still_require_http) ... ok\ntest_plan_reads_explicit_network_and_does_not_mutate (test_deploy_demo.DeploymentTests.test_plan_reads_explicit_network_and_does_not_mutate) ... ok\ntest_private_igw_and_missing_routes_are_reported_without_network_changes (test_deploy_demo.DeploymentTests.test_private_igw_and_missing_routes_are_reported_without_network_changes) ... ok\ntest_private_nat_and_local_admin_supported (test_deploy_demo.DeploymentTests.test_private_nat_and_local_admin_supported) ... ok\ntest_private_route_warning_stops_apply_until_acknowledged (test_deploy_demo.DeploymentTests.test_private_route_warning_stops_apply_until_acknowledged) ... ok\ntest_private_transit_route_supported_without_nat_requirement (test_deploy_demo.DeploymentTests.test_private_transit_route_supported_without_nat_requirement) ... ok\ntest_replacement_and_removal_require_explicit_acknowledgement (test_deploy_demo.DeploymentTests.test_replacement_and_removal_require_explicit_acknowledgement) ... ok\ntest_review_in_progress_has_create_semantics_and_no_get_template (test_deploy_demo.DeploymentTests.test_review_in_progress_has_create_semantics_and_no_get_template) ... ok\ntest_subnet_mismatch_dns_and_architecture_fail (test_deploy_demo.DeploymentTests.test_subnet_mismatch_dns_and_architecture_fail) ... ok\ntest_template_has_one_host_no_created_network_and_exact_bootstrap (test_deploy_demo.DeploymentTests.test_template_has_one_host_no_created_network_and_exact_bootstrap) ... ok\ntest_wrong_ami_owner_rejected (test_deploy_demo.DeploymentTests.test_wrong_ami_owner_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.027s\n\nOK\n"
+    },
+    "cfnLint": {
+      "command": "cfn-lint infrastructure/portable-demo.json",
+      "version": "cfn-lint 1.56.2",
+      "exitCode": 0,
+      "output": ""
+    },
+    "awsValidateTemplate": {
+      "status": "passed",
+      "executor": "root agent",
+      "region": "us-east-1",
+      "reportedParameters": 11,
+      "capability": "CAPABILITY_IAM",
+      "scope": "Read-only AWS template validation, reported by root; not a stack deployment or bootstrap test."
+    }
+  },
+  "reviewFixes": [
+    "Pending CREATE and replacement instances require HTTP for stock apt bootstrap.",
+    "An administrator return route through NAT now requires network review."
+  ],
+  "limitations": [
+    "Network routes and NACL entries are inspected, not end-to-end tested.",
+    "Unmodified bootstrap requires AmazonProvidedDNS and stock apt/snap repository access.",
+    "Restricted egress CIDRs do not configure proxies or mirrors.",
+    "CLI currently verifies Canonical commercial-partition AMIs only.",
+    "Native Kiro CLI sign-in and runtime installation remain separate from infrastructure creation."
+  ],
+  "primarySources": [
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-ec2-instance-networkinterface.html",
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-rules.html",
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_CreateChangeSet.html",
+    "https://docs.aws.amazon.com/vpc/latest/userguide/subnet-route-tables.html",
+    "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat.html",
+    "https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-create-vpc.html",
+    "https://ubuntu.com/aws/docs/aws-how-to/instances/find-ubuntu-images/"
+  ]
+}

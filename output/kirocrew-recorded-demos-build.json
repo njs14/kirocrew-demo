@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-09-13T18:32:55.924385+00:00",
+  "edition": "output/kirocrew-recorded-demos.html",
+  "editionSha256": "754079b66dcc572f05af4345ab1f2e669e1a6458dad222abeeeaa3f49d6c2dec",
+  "notes": "output/kirocrew-recorded-demos-notes.md",
+  "notesSha256": "ddb903a42f50df2759dfe968fb014295a6bd16f5f468e9daac4d14bff0a7d006",
+  "processedManifest": "output/demo-clips/20260913-final/manifest.json",
+  "processedManifestSha256": "9a3a6c269e4ad9a58de4ca1f489a4806935ec0baf8350b36654382acdfd6e860",
+  "source": {
+    "path": "output/kirocrew-system-design.html",
+    "sha256": "171a4c0624772b52941612abeb3e9a4ae6c4d8ca260d44bb9b9d50521d8cbd8b",
+    "slides": [
+      {
+        "index": 1,
+        "sha256": "8d5379920896911f509b3a694ee93eea27a75500748fb49f38e55885a55fc0e7"
+      },
+      {
+        "index": 2,
+        "sha256": "9d0ded5dffd10dcd0bd7d0a9f16b922ce2b1ae77778854969f52d36d0dc9499f"
+      },
+      {
+        "index": 3,
+        "sha256": "35d5263b2ee658192d4e115a3eb76394f21ae8e3611556e1c838690ce82358ff"
+      },
+      {
+        "index": 4,
+        "sha256": "01107af990dbd491b2b21feab9c6683112af8455d67db3a6f5e91e2e11068ff5"
+      },
+      {
+        "index": 5,
+        "sha256": "e6109d69750018d2d8b43d7ead98924d16eddde238ba64e408054a7a7fd85d78"
+      },
+      {
+        "index": 6,
+        "sha256": "6e33416be2673dd670fe70dae802a26e67edda67d6886b88793e36f793173fbe"
+      },
+      {
+        "index": 7,
+        "sha256": "8338fdbd1815637acad8ee7361801426707908a737ba53b3b2e1ef08e4d1a272"
+      },
+      {
+        "index": 8,
+        "sha256": "ad785717d371dc87be87057e90325b8e6aba9eac5adb5bf87db8f751244509e4"
+      },
+      {
+        "index": 9,
+        "sha256": "138f9db6de093774316a12f4717538bc20816c424ec44f1c2271b85d7335efe3"
+      },
+      {
+        "index": 10,
+        "sha256": "305f248658d14675f1c7117810f7e1fbf763137e78f4c6af35d03a1c8ae73372"
+      },
+      {
+        "index": 11,
+        "sha256": "2d8af9d95797b47f87ebef2c59c2775a6d810f396a1407da33297a4c3aa645f2"
+      },
+      {
+        "index": 12,
+        "sha256": "9927f333aaf050c935d7a054f56d30fca3fbabc9a45ff01304ab9bf95a856f70"
+      },
+      {
+        "index": 13,
+        "sha256": "b2c4a5bcc6f232544489f5fba5ac9b3972f7ca095c1ed35f4867e34492379f7a"
+      },
+      {
+        "index": 14,
+        "sha256": "332bc91c3c35605f959e54c19d05d6b7729e1a15c3038bdb23471be534252645"
+      }
+    ],
+    "preservedSlides": 14,
+    "allOriginalSlideBytesPreserved": true
+  },
+  "slideCount": 20,
+  "synthetic": false,
+  "reviewScope": "Prior model council covers its frozen source candidate only; this derivative has no final council verdict.",
+  "publicManifest": "output/kirocrew-recorded-demos-manifest.json",
+  "serveFiles": {
+    "/demo-clips/20260913-final/endpoint-reference/endpoint-reference.mp4": {
+      "path": "output/demo-clips/20260913-final/endpoint-reference/endpoint-reference.mp4",
+      "bytes": 1823896,
+      "sha256": "992494ac45475d201b4fbce66ea8b0aa90741093ebf5e9a0a95c0e824cc0df37"
+    },
+    "/demo-clips/20260913-final/endpoint-reference/poster.jpg": {
+      "path": "output/demo-clips/20260913-final/endpoint-reference/poster.jpg",
+      "bytes": 116572,
+      "sha256": "95480ff54dad831f638d19259fa24a158bbef08feafb79735adcab86c6ba0a2d"
+    },
+    "/demo-clips/20260913-final/endpoint-reference/contact-sheet.jpg": {
+      "path": "output/demo-clips/20260913-final/endpoint-reference/contact-sheet.jpg",
+      "bytes": 126722,
+      "sha256": "cdac98203471c45dda13eb75b7c706a37650da85cb8c5d8bfbdbfd01a2a8f864"
+    },
+    "/demo-clips/20260913-final/receipts/endpoint-validation.json": {
+      "path": "output/demo-clips/20260913-final/receipts/endpoint-validation.json",
+      "bytes": 2855,
+      "sha256": "041e35f90d5205c0c82c9b63f8bcd9d7132687fd2c990bac777e0f4435627565"
+    },
+    "/demo-clips/20260913-final/receipts/endpoint-capture.json": {
+      "path": "output/demo-clips/20260913-final/receipts/endpoint-capture.json",
+      "bytes": 1314,
+      "sha256": "e2fb1589f468d3a1a7caee4c5f3ac8ca1e2c9a48b9234b32af1679cc7fb77e2d"
+    },
+    "/demo-clips/20260913-final/admin-console/admin-console.mp4": {
+      "path": "output/demo-clips/20260913-final/admin-console/admin-console.mp4",
+      "bytes": 1603479,
+      "sha256": "3f7a1934580373a5fe7d322473ea582d8dcf19d80bc8341cb44c3496b1fc0b89"
+    },
+    "/demo-clips/20260913-final/admin-console/poster.jpg": {
+      "path": "output/demo-clips/20260913-final/admin-console/poster.jpg",
+      "bytes": 95614,
+      "sha256": "162286f9b42f49a71cb6bc501d037d30056e7611293e9c0328eada2b0028b91b"
+    },
+    "/demo-clips/20260913-final/admin-console/contact-sheet.jpg": {
+      "path": "output/demo-clips/20260913-final/admin-console/contact-sheet.jpg",
+      "bytes": 105777,
+      "sha256": "a71ba8f9de24b69dcc6c4ba6dea932c2d13951dba352e181a30190703f2e06bf"
+    },
+    "/demo-clips/20260913-final/receipts/preflight.json": {
+      "path": "output/demo-clips/20260913-final/receipts/preflight.json",
+      "bytes": 1885,
+      "sha256": "cde547a48312b86623d095583da5fa28afd5199a16ef658f279ae1cb945ee2a5"
+    },
+    "/demo-clips/20260913-final/receipts/admin-light-capture.json": {
+      "path": "output/demo-clips/20260913-final/receipts/admin-light-capture.json",
+      "bytes": 544,
+      "sha256": "69c88aacf579e248132e1b398c12ac0f4117f2d0c7e6bc94adfc843437922304"
+    },
+    "/demo-clips/20260913-final/client-server-telemetry/client-server-telemetry.mp4": {
+      "path": "output/demo-clips/20260913-final/client-server-telemetry/client-server-telemetry.mp4",
+      "bytes": 891208,
+      "sha256": "d932d6c3fd7011142e5cfdde5e58a625ab30e9f6b8dab9d93212f469411b85bc"
+    },
+    "/demo-clips/20260913-final/client-server-telemetry/poster.jpg": {
+      "path": "output/demo-clips/20260913-final/client-server-telemetry/poster.jpg",
+      "bytes": 134425,
+      "sha256": "c557e57d2186620e6200490d46b3eee4ed984b6e26162717e616ba9b6c07e6df"
+    },
+    "/demo-clips/20260913-final/client-server-telemetry/contact-sheet.jpg": {
+      "path": "output/demo-clips/20260913-final/client-server-telemetry/contact-sheet.jpg",
+      "bytes": 113864,
+      "sha256": "908072db7ca152898f643af70e6c68c705b55bac2e812effac7c7f738002f3b6"
+    },
+    "/demo-clips/20260913-final/receipts/telemetry-capture.json": {
+      "path": "output/demo-clips/20260913-final/receipts/telemetry-capture.json",
+      "bytes": 826,
+      "sha256": "a533d6070505c348a376fd7b8a64197d1bd07754bd3a71d32ceaf04ec6438f21"
+    },
+    "/demo-clips/20260913-final/gateway-instrumentation/gateway-instrumentation.mp4": {
+      "path": "output/demo-clips/20260913-final/gateway-instrumentation/gateway-instrumentation.mp4",
+      "bytes": 1057222,
+      "sha256": "b9636107f91a45d88c1548db18c06db67f0ddce60c9ce6bbb8dee864084796f4"
+    },
+    "/demo-clips/20260913-final/gateway-instrumentation/poster.jpg": {
+      "path": "output/demo-clips/20260913-final/gateway-instrumentation/poster.jpg",
+      "bytes": 139023,
+      "sha256": "80f5373f81e57d0fdb9c5cc5d27afd65c26b529d0128197eead35db69b93c081"
+    },
+    "/demo-clips/20260913-final/gateway-instrumentation/contact-sheet.jpg": {
+      "path": "output/demo-clips/20260913-final/gateway-instrumentation/contact-sheet.jpg",
+      "bytes": 96429,
+      "sha256": "824c07486f32a4c9cb18d78af2dae1957ad10d5be65ace3bed129a131011a279"
+    },
+    "/demo-clips/20260913-final/receipts/native-telemetry-light-capture.json": {
+      "path": "output/demo-clips/20260913-final/receipts/native-telemetry-light-capture.json",
+      "bytes": 563,
+      "sha256": "be3abea48073f392189dc413c7960cd350df00aacc8bc26de32d19d10c1adc3f"
+    },
+    "/demo-clips/20260913-final/direct-mcp-aws/direct-mcp-aws.mp4": {
+      "path": "output/demo-clips/20260913-final/direct-mcp-aws/direct-mcp-aws.mp4",
+      "bytes": 1187608,
+      "sha256": "9f8de84c75c69b1ac5ceef2e18a965d1344827bdee862f1734dc4916bf909da7"
+    },
+    "/demo-clips/20260913-final/direct-mcp-aws/poster.jpg": {
+      "path": "output/demo-clips/20260913-final/direct-mcp-aws/poster.jpg",
+      "bytes": 114602,
+      "sha256": "fdbb1759dbbff99f3102885c7d98d6974c3bd3d4b0998b5d07653c58bfb59bf5"
+    },
+    "/demo-clips/20260913-final/direct-mcp-aws/contact-sheet.jpg": {
+      "path": "output/demo-clips/20260913-final/direct-mcp-aws/contact-sheet.jpg",
+      "bytes": 128123,
+      "sha256": "2acae7533733ac74e787d0143d8ce4935fbd6a817e31e886349b723db4a6bf91"
+    },
+    "/demo-clips/20260913-final/receipts/direct-probe-capture.json": {
+      "path": "output/demo-clips/20260913-final/receipts/direct-probe-capture.json",
+      "bytes": 682,
+      "sha256": "f789731452dd9e3019b3646022bc514ddd455b8d039154b6217527f48fbdd79d"
+    },
+    "/demo-clips/20260913-final/receipts/direct-mcp-aws.json": {
+      "path": "output/demo-clips/20260913-final/receipts/direct-mcp-aws.json",
+      "bytes": 3302,
+      "sha256": "6412c535f5ba266018e31401d824fe22ff6c2c467691c277f24f965b051c0119"
+    },
+    "/demo-clips/20260913-final/synthetic-controls/synthetic-controls.mp4": {
+      "path": "output/demo-clips/20260913-final/synthetic-controls/synthetic-controls.mp4",
+      "bytes": 1735170,
+      "sha256": "480a0fa9b1037e88fd56494d6d54a48f34ba4e400b2cfd840cffa77005975137"
+    },
+    "/demo-clips/20260913-final/synthetic-controls/poster.jpg": {
+      "path": "output/demo-clips/20260913-final/synthetic-controls/poster.jpg",
+      "bytes": 141770,
+      "sha256": "e3dcae738551ae3d99f1b80ab2f0b63bd3527a1456ef32b7f8a17b964ff4b9fb"
+    },
+    "/demo-clips/20260913-final/synthetic-controls/contact-sheet.jpg": {
+      "path": "output/demo-clips/20260913-final/synthetic-controls/contact-sheet.jpg",
+      "bytes": 135952,
+      "sha256": "33a212f16287c7d8573548c0670cdcf6bbfd662f765748f1e2274888dc576c2a"
+    },
+    "/demo-clips/20260913-final/receipts/synthetic-capture.json": {
+      "path": "output/demo-clips/20260913-final/receipts/synthetic-capture.json",
+      "bytes": 707,
+      "sha256": "0fe2899a19b6d944e5195e73bfe9632b09bfa17aa556eef41ac7929809d40246"
+    },
+    "/demo-clips/20260913-final/receipts/synthetic-controls.json": {
+      "path": "output/demo-clips/20260913-final/receipts/synthetic-controls.json",
+      "bytes": 2831,
+      "sha256": "36c587f421aa5247123c5632f92ba5e9865422112b082d1f89c928fb8fa787f1"
+    },
+    "/kirocrew-recorded-demos-notes.md": {
+      "path": "output/kirocrew-recorded-demos-notes.md",
+      "bytes": 34619,
+      "sha256": "ddb903a42f50df2759dfe968fb014295a6bd16f5f468e9daac4d14bff0a7d006"
+    },
+    "/kirocrew-recorded-demos.html": {
+      "path": "output/kirocrew-recorded-demos.html",
+      "bytes": 1804334,
+      "sha256": "754079b66dcc572f05af4345ab1f2e669e1a6458dad222abeeeaa3f49d6c2dec"
+    },
+    "/kirocrew-recorded-demos-manifest.json": {
+      "path": "output/kirocrew-recorded-demos-manifest.json",
+      "bytes": 17103,
+      "sha256": "9123d61134a1d991ebd7666d01a92874ee97d59ec235ae5d95468523c1c4a53a"
+    }
+  },
+  "buildInputs": {
+    "scripts/build-recorded-demo-presentation.py": "4b271074f028fdcf56f37fdf233eecac83405265efff734c5b20c90f20cd3dfb",
+    "presentation/demo-player.js": "7a0768ab1b0da7b71a6f9ba806ee1775fbe2b511f052a6a0337fb76eb1461613",
+    "presentation/demo-player.css": "99ffc46cb25eea7538d3ae84258469bb50f154a8a44b2e28fa39b058cb4c83a8",
+    "output/kirocrew-system-design-notes.md": "4e239721237aa0407979ae95eae7334588c992a1c0d858da316fe3b129ad2163"
+  }
+}

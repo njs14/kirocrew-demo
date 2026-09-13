@@ -1,0 +1,543 @@
+{
+  "schema": 1,
+  "verified_utc": "2026-09-13T15:07:52.351831+00:00",
+  "candidate_id": "arm-observability-v1",
+  "candidate_source": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-arm-observability-demo-candidate-v2.pptx",
+  "candidate_sha256": "99d10eee8723b3998c40f52e902602661138e7388f0d6d3db8e2d5ef13f63dd9",
+  "manifest_sha256": "f99ba433ccb533fe0142ebad8810b58a6b159a127696913331d9f2f118a511f8",
+  "packet": "/private/tmp/kirocrew-council-arm-observability-v1-f99ba433ccb5",
+  "packet_and_source_unchanged": true,
+  "file_checks": [
+    {
+      "file": "deck.pptx",
+      "sha256": "99d10eee8723b3998c40f52e902602661138e7388f0d6d3db8e2d5ef13f63dd9",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "evidence-summary.md",
+      "sha256": "a1528ed40d806c64028679491da1d12997453ff26e20a756f32e6bd53c114f4b",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "notes.md",
+      "sha256": "902613be6ae49e1a00da212f2291f305ac8ca5d390fef700572938d5c0c9c5bb",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-1.png",
+      "sha256": "19247a9b300da68e9d3db6febf3ddd74c1029aa0538a06987bf1e875dd1e2a60",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-10.png",
+      "sha256": "3cbe2c4e6bff1713cf9424b9f59c78c2e218dd8329a8e018b4b6441e1e7dbf4a",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-11.png",
+      "sha256": "0eaf143be799934a02d1983f73dcf6ca1d00be2f722b88c0c9940da3fab80a4c",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-12.png",
+      "sha256": "b7595bafc79b2bb09e8f4d7d02b182ed4273eed081476df6203789285ae0695d",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-2.png",
+      "sha256": "ef7ebb461d550e570b91f4c59934a945de2c5d95125e5af15e8ea617787dc821",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-3.png",
+      "sha256": "7d90a099ba409c881b5c4701d9bbe719872cd74d333b91a3fe01830ceacae934",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-4.png",
+      "sha256": "e926ef6341a0b34f0b76f58db66efc91bb802fb4c3569c9466438fbda0f0850c",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-5.png",
+      "sha256": "2f0f0fd0f2579a3826bd576611f6ff6c83d9a13a6ec06549bd23c2dead3498b6",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-6.png",
+      "sha256": "5950e313854b40f5a499f031e3aa8197ef9a9a74989bdfe773d2556182d6ed27",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-7.png",
+      "sha256": "2f1c6c8c9c0e4bf1d3cafb66a096f15ae76e607f629f6fd534f45a3d59cf6a7a",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-8.png",
+      "sha256": "4768469a4baaf8b5509134b2939b2bf0043de6b1d741fdd979da47b357b22fae",
+      "packet_matches": true,
+      "source_matches": true
+    },
+    {
+      "file": "slide-9.png",
+      "sha256": "de139348d8f49428a3706659ebf618b182601576f037bc8756a6bee630bcf737",
+      "packet_matches": true,
+      "source_matches": true
+    }
+  ],
+  "reviewers": {
+    "grok": {
+      "requested_model": "grok-4.6",
+      "response_model_ids": [
+        "grok-4.6"
+      ],
+      "usage_model_ids": [
+        "grok-4.6-build"
+      ],
+      "requested_effort": "xhigh",
+      "effort_verification": "explicit launch configuration; provider wire effort is not independently visible",
+      "review_evidence_complete": true,
+      "verdict": "CHANGES REQUIRED",
+      "terminal_success": true,
+      "exit_code": 0,
+      "duration_seconds": 258.9,
+      "image_reads": [
+        {
+          "file": "slide-1.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "19247a9b300da68e9d3db6febf3ddd74c1029aa0538a06987bf1e875dd1e2a60"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-2.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "ef7ebb461d550e570b91f4c59934a945de2c5d95125e5af15e8ea617787dc821"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-3.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "7d90a099ba409c881b5c4701d9bbe719872cd74d333b91a3fe01830ceacae934"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-4.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "e926ef6341a0b34f0b76f58db66efc91bb802fb4c3569c9466438fbda0f0850c"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-5.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "2f0f0fd0f2579a3826bd576611f6ff6c83d9a13a6ec06549bd23c2dead3498b6"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-6.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "5950e313854b40f5a499f031e3aa8197ef9a9a74989bdfe773d2556182d6ed27"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-7.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "2f1c6c8c9c0e4bf1d3cafb66a096f15ae76e607f629f6fd534f45a3d59cf6a7a"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-8.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "4768469a4baaf8b5509134b2939b2bf0043de6b1d741fdd979da47b357b22fae"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-9.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "de139348d8f49428a3706659ebf618b182601576f037bc8756a6bee630bcf737"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-10.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "3cbe2c4e6bff1713cf9424b9f59c78c2e218dd8329a8e018b4b6441e1e7dbf4a"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-11.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "0eaf143be799934a02d1983f73dcf6ca1d00be2f722b88c0c9940da3fab80a4c"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-12.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "b7595bafc79b2bb09e8f4d7d02b182ed4273eed081476df6203789285ae0695d"
+          ],
+          "exact_packet_png_payload_observed": true
+        }
+      ],
+      "observed_tool_calls": [
+        {
+          "name": "read_file",
+          "file": "manifest.json"
+        },
+        {
+          "name": "read_file",
+          "file": "notes.md"
+        },
+        {
+          "name": "read_file",
+          "file": "evidence-summary.md"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-1.png"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-2.png"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-3.png"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-4.png"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-5.png"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-6.png"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-7.png"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-8.png"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-9.png"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-10.png"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-11.png"
+        },
+        {
+          "name": "read_file",
+          "file": "slide-12.png"
+        }
+      ],
+      "artifact_hashes": {
+        "grok-receipt.json": "21304b45f618d0c51d6036ac84c442142974892133f50db67201b8ac79f11deb",
+        "grok-raw.jsonl": "9cf8970f8df291a9886d40c4c0c577a69bad3e68b087479e7a54061cb1c61806",
+        "grok-stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "grok-launch.json": "bb2df8005b1c26528192fd59b85d254a78ed509c3a36504952a61e1eb7d4495c",
+        "grok-review.md": "8decd813278e86d1723cbecdd6394ea25ea06ac4c8dfded8b7d3821c76c885c6"
+      }
+    },
+    "claude": {
+      "requested_model": "claude-opus-5",
+      "response_model_ids": [
+        "claude-opus-5"
+      ],
+      "usage_model_ids": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-5"
+      ],
+      "requested_effort": "xhigh",
+      "effort_verification": "explicit launch configuration; provider wire effort is not independently visible",
+      "review_evidence_complete": true,
+      "verdict": "CHANGES REQUIRED",
+      "terminal_success": true,
+      "exit_code": 0,
+      "duration_seconds": 190.1,
+      "image_reads": [
+        {
+          "file": "slide-1.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "19247a9b300da68e9d3db6febf3ddd74c1029aa0538a06987bf1e875dd1e2a60"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-2.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "ef7ebb461d550e570b91f4c59934a945de2c5d95125e5af15e8ea617787dc821"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-3.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "7d90a099ba409c881b5c4701d9bbe719872cd74d333b91a3fe01830ceacae934"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-4.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "e926ef6341a0b34f0b76f58db66efc91bb802fb4c3569c9466438fbda0f0850c"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-5.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "2f0f0fd0f2579a3826bd576611f6ff6c83d9a13a6ec06549bd23c2dead3498b6"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-6.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "5950e313854b40f5a499f031e3aa8197ef9a9a74989bdfe773d2556182d6ed27"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-7.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "2f1c6c8c9c0e4bf1d3cafb66a096f15ae76e607f629f6fd534f45a3d59cf6a7a"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-8.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "4768469a4baaf8b5509134b2939b2bf0043de6b1d741fdd979da47b357b22fae"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-9.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "de139348d8f49428a3706659ebf618b182601576f037bc8756a6bee630bcf737"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-10.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "3cbe2c4e6bff1713cf9424b9f59c78c2e218dd8329a8e018b4b6441e1e7dbf4a"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-11.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "0eaf143be799934a02d1983f73dcf6ca1d00be2f722b88c0c9940da3fab80a4c"
+          ],
+          "exact_packet_png_payload_observed": true
+        },
+        {
+          "file": "slide-12.png",
+          "read_requested": true,
+          "successful_result_observed": true,
+          "explicit_image_payload_observed": true,
+          "image_payload_sha256": [
+            "b7595bafc79b2bb09e8f4d7d02b182ed4273eed081476df6203789285ae0695d"
+          ],
+          "exact_packet_png_payload_observed": true
+        }
+      ],
+      "observed_tool_calls": [
+        {
+          "name": "Read",
+          "file": "manifest.json"
+        },
+        {
+          "name": "Read",
+          "file": "notes.md"
+        },
+        {
+          "name": "Read",
+          "file": "evidence-summary.md"
+        },
+        {
+          "name": "Read",
+          "file": "slide-1.png"
+        },
+        {
+          "name": "Read",
+          "file": "slide-2.png"
+        },
+        {
+          "name": "Read",
+          "file": "slide-3.png"
+        },
+        {
+          "name": "Read",
+          "file": "slide-4.png"
+        },
+        {
+          "name": "Read",
+          "file": "slide-5.png"
+        },
+        {
+          "name": "Read",
+          "file": "slide-6.png"
+        },
+        {
+          "name": "Read",
+          "file": "slide-7.png"
+        },
+        {
+          "name": "Read",
+          "file": "slide-8.png"
+        },
+        {
+          "name": "Read",
+          "file": "slide-9.png"
+        },
+        {
+          "name": "Read",
+          "file": "slide-10.png"
+        },
+        {
+          "name": "Read",
+          "file": "slide-11.png"
+        },
+        {
+          "name": "Read",
+          "file": "slide-12.png"
+        }
+      ],
+      "artifact_hashes": {
+        "claude-receipt.json": "bc822eb3e03072f218db5cb59673f903c500e80a90df3195426b918e00bcd3cf",
+        "claude-raw.jsonl": "e5e2e82d5392cafd6523d0e78d24bd60fee0cc9f0c247dceeeccbef5f95443dc",
+        "claude-stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "claude-launch.json": "551f94ad444b2c1a02b811ec76174c783e7563e1e62fe8a97487e6b8783b5086",
+        "claude-review.md": "17f6e58916a59d913ba67efe2553a9e377b9481628b88ee8f821603a30023760"
+      }
+    }
+  },
+  "raw_council_receipt_sha256": "72dc38e73a2fc5bef3eb9d331bbcc2a4315556e90042d0bef3489ed48f107838",
+  "runner_sha256": "b60de76606abb5f3445a0bc522db326a04c3e27fcf1cd3d1dc2b816872e4877e",
+  "review_synthesis": "council-synthesis.md",
+  "decisions_owner": "root",
+  "decisions_incorporated_by_this_task": false,
+  "no_ai_slop_pass_by_this_task": false,
+  "live_aws_verified_by_reviewers": false,
+  "pptx_opened_or_rendered_by_reviewers": false,
+  "image_byte_binding_verified_by_dispatcher": true,
+  "native_backend_authentication_pending_in_reviewed_candidate": true,
+  "limitations": [
+    "Exact response models and xhigh launch flags verified; provider internal effort is not independently visible.",
+    "Grok usage alias grok-4.6-build; Claude usage includes Haiku helper accounting as well as Opus 5. All observed review response IDs are exact requested models.",
+    "Reviewers only received frozen PNG/text/notes and sanitized evidence summary; they did not inspect underlying runtime receipts or live state.",
+    "Later deck bytes are outside the scope of this frozen-candidate review."
+  ],
+  "independent_integrity_review": {
+    "agent": "/root/council_preflight/dispatch_review",
+    "outcome": "PASS",
+    "artifact": "receipt-integrity-review.md",
+    "sha256": "10155b8b297ff2f671b110741155ab492e57ac8216a47535b7d09441e31dd2f9",
+    "additional_inference": false
+  },
+  "review_synthesis_sha256": "c99f1119cd3c46863ba1d3962098e188a8a8494a161c1722315c56691b8034ae"
+}

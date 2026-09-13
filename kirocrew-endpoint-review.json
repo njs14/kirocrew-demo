@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "visual_review": "passed",
+  "correction_rounds": 1,
+  "reviewer": "/root/endpoint_visual_review",
+  "requestedByUser": true,
+  "scope": "Actual static light/dark PNG inspection; architecture source, SVG postprocessor and 15-control reference review. Followup inspected final changed areas in both PNGs. Browser behavior and deployment not verified.",
+  "findings": [
+    {
+      "severity": "minor",
+      "finding": "Cyan endpoint border conflicted with the generic Frontend legend key.",
+      "resolution": "Removed redundant generic legend; reviewer confirmed resolution in both final PNGs.",
+      "status": "resolved"
+    }
+  ],
+  "additionalCorrection": "Applied pre-tool coverage footnote to L1 as well as L2; reviewer confirmed fit and clarity.",
+  "blockingFindings": 0,
+  "conclusion": "One coherent endpoint enclosure. Owner bands, runtime strip and six-layer grid remain clear and labels fit in both themes. External authorization and proposed integrations remain distinct.",
+  "finalArtifacts": [
+    {
+      "name": "kirocrew-security-layers.html",
+      "sha256": "602c595aa2caa1a89ea1387e50c2a11a4c576e922ce027e95c43c05ac9362fe9",
+      "bytes": 806216
+    },
+    {
+      "name": "kirocrew-aws-remote-preview.png",
+      "sha256": "dce92f1993fb53af9bdd4f51077a82ab6ea552bc6d6e6af48b763b42fd57ab1a",
+      "bytes": 322973
+    },
+    {
+      "name": "kirocrew-security-layers-dark-preview.png",
+      "sha256": "40f1d65e6678b46aa8d49fa813a2171e90a379529c4b07d3bcfc333085521981",
+      "bytes": 331601
+    }
+  ],
+  "browser_evidence": "skipped (Chromium unavailable)"
+}

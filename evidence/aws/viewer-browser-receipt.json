@@ -1,0 +1,510 @@
+{
+  "schema": 1,
+  "timestamp": "2026-09-13T04:56:33.130Z",
+  "browser": "152.0.7977.84",
+  "artifact": {
+    "path": "kirocrew-demo-live.html",
+    "bytes": 2164991,
+    "sha256": "488556e0e09919043ba616da0d340c9b0ceff4f130c2bd17799f7d2da43e8d87"
+  },
+  "diagrams": [
+    {
+      "path": "kirocrew-security-layers-browser.html",
+      "bytes": 805022,
+      "sha256": "e47121b910829997265ecb42c9c248d14da1cc244b1575952be6b7b071b26d08"
+    },
+    {
+      "path": "kirocrew-ec2-live.html",
+      "bytes": 809098,
+      "sha256": "4f8547905863a4303ad5117f3d876c11c638eded381f9562a5824f935d9b9fef"
+    }
+  ],
+  "measurements": [
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "ec2",
+      "theme": "light",
+      "outer": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "inner": {
+        "width": 1440,
+        "height": 824,
+        "scrollWidth": 1440,
+        "scrollHeight": 824
+      },
+      "svg": {
+        "left": 255,
+        "top": 54,
+        "right": 1185,
+        "bottom": 566.171875,
+        "width": 930,
+        "height": 512.171875
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "ec2",
+      "theme": "dark",
+      "outer": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "inner": {
+        "width": 1440,
+        "height": 824,
+        "scrollWidth": 1440,
+        "scrollHeight": 824
+      },
+      "svg": {
+        "left": 255,
+        "top": 54,
+        "right": 1185,
+        "bottom": 566.171875,
+        "width": 930,
+        "height": 512.171875
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "security",
+      "theme": "light",
+      "outer": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "inner": {
+        "width": 1440,
+        "height": 824,
+        "scrollWidth": 1440,
+        "scrollHeight": 824
+      },
+      "svg": {
+        "left": 294,
+        "top": 80,
+        "right": 1146,
+        "bottom": 715.90625,
+        "width": 852,
+        "height": 635.90625
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "security",
+      "theme": "dark",
+      "outer": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "inner": {
+        "width": 1440,
+        "height": 824,
+        "scrollWidth": 1440,
+        "scrollHeight": 824
+      },
+      "svg": {
+        "left": 294,
+        "top": 80,
+        "right": 1146,
+        "bottom": 715.90625,
+        "width": 852,
+        "height": 635.90625
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "reference",
+      "outer": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1309
+      },
+      "verticalScroll": "intentional reference document"
+    },
+    {
+      "width": 1600,
+      "height": 1000,
+      "view": "ec2",
+      "theme": "light",
+      "outer": {
+        "width": 1600,
+        "height": 1000,
+        "scrollWidth": 1600,
+        "scrollHeight": 1000
+      },
+      "inner": {
+        "width": 1600,
+        "height": 924,
+        "scrollWidth": 1600,
+        "scrollHeight": 924
+      },
+      "svg": {
+        "left": 322.5,
+        "top": 94,
+        "right": 1277.5,
+        "bottom": 619.9375,
+        "width": 955,
+        "height": 525.9375
+      }
+    },
+    {
+      "width": 1600,
+      "height": 1000,
+      "view": "ec2",
+      "theme": "dark",
+      "outer": {
+        "width": 1600,
+        "height": 1000,
+        "scrollWidth": 1600,
+        "scrollHeight": 1000
+      },
+      "inner": {
+        "width": 1600,
+        "height": 924,
+        "scrollWidth": 1600,
+        "scrollHeight": 924
+      },
+      "svg": {
+        "left": 322.5,
+        "top": 94,
+        "right": 1277.5,
+        "bottom": 619.9375,
+        "width": 955,
+        "height": 525.9375
+      }
+    },
+    {
+      "width": 1600,
+      "height": 1000,
+      "view": "security",
+      "theme": "light",
+      "outer": {
+        "width": 1600,
+        "height": 1000,
+        "scrollWidth": 1600,
+        "scrollHeight": 1000
+      },
+      "inner": {
+        "width": 1600,
+        "height": 924,
+        "scrollWidth": 1600,
+        "scrollHeight": 924
+      },
+      "svg": {
+        "left": 323,
+        "top": 94,
+        "right": 1277,
+        "bottom": 806.03125,
+        "width": 954,
+        "height": 712.03125
+      }
+    },
+    {
+      "width": 1600,
+      "height": 1000,
+      "view": "security",
+      "theme": "dark",
+      "outer": {
+        "width": 1600,
+        "height": 1000,
+        "scrollWidth": 1600,
+        "scrollHeight": 1000
+      },
+      "inner": {
+        "width": 1600,
+        "height": 924,
+        "scrollWidth": 1600,
+        "scrollHeight": 924
+      },
+      "svg": {
+        "left": 323,
+        "top": 94,
+        "right": 1277,
+        "bottom": 806.03125,
+        "width": 954,
+        "height": 712.03125
+      }
+    },
+    {
+      "width": 1600,
+      "height": 1000,
+      "view": "reference",
+      "outer": {
+        "width": 1600,
+        "height": 1000,
+        "scrollWidth": 1600,
+        "scrollHeight": 1309
+      },
+      "verticalScroll": "intentional reference document"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "ec2",
+      "theme": "light",
+      "outer": {
+        "width": 1920,
+        "height": 1080,
+        "scrollWidth": 1920,
+        "scrollHeight": 1080
+      },
+      "inner": {
+        "width": 1920,
+        "height": 1004,
+        "scrollWidth": 1920,
+        "scrollHeight": 1004
+      },
+      "svg": {
+        "left": 410,
+        "top": 94,
+        "right": 1510,
+        "bottom": 699.796875,
+        "width": 1100,
+        "height": 605.796875
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "ec2",
+      "theme": "dark",
+      "outer": {
+        "width": 1920,
+        "height": 1080,
+        "scrollWidth": 1920,
+        "scrollHeight": 1080
+      },
+      "inner": {
+        "width": 1920,
+        "height": 1004,
+        "scrollWidth": 1920,
+        "scrollHeight": 1004
+      },
+      "svg": {
+        "left": 410,
+        "top": 94,
+        "right": 1510,
+        "bottom": 699.796875,
+        "width": 1100,
+        "height": 605.796875
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "security",
+      "theme": "light",
+      "outer": {
+        "width": 1920,
+        "height": 1080,
+        "scrollWidth": 1920,
+        "scrollHeight": 1080
+      },
+      "inner": {
+        "width": 1920,
+        "height": 1004,
+        "scrollWidth": 1920,
+        "scrollHeight": 1004
+      },
+      "svg": {
+        "left": 429.5,
+        "top": 94,
+        "right": 1490.5,
+        "bottom": 885.890625,
+        "width": 1061,
+        "height": 791.890625
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "security",
+      "theme": "dark",
+      "outer": {
+        "width": 1920,
+        "height": 1080,
+        "scrollWidth": 1920,
+        "scrollHeight": 1080
+      },
+      "inner": {
+        "width": 1920,
+        "height": 1004,
+        "scrollWidth": 1920,
+        "scrollHeight": 1004
+      },
+      "svg": {
+        "left": 429.5,
+        "top": 94,
+        "right": 1490.5,
+        "bottom": 885.890625,
+        "width": 1061,
+        "height": 791.890625
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "reference",
+      "outer": {
+        "width": 1920,
+        "height": 1080,
+        "scrollWidth": 1920,
+        "scrollHeight": 1309
+      },
+      "verticalScroll": "intentional reference document"
+    },
+    {
+      "width": 2048,
+      "height": 1320,
+      "view": "ec2",
+      "theme": "light",
+      "outer": {
+        "width": 2048,
+        "height": 1320,
+        "scrollWidth": 2048,
+        "scrollHeight": 1320
+      },
+      "inner": {
+        "width": 2048,
+        "height": 1244,
+        "scrollWidth": 2048,
+        "scrollHeight": 1244
+      },
+      "svg": {
+        "left": 250.5,
+        "top": 112,
+        "right": 1797.5,
+        "bottom": 963.96875,
+        "width": 1547,
+        "height": 851.96875
+      }
+    },
+    {
+      "width": 2048,
+      "height": 1320,
+      "view": "ec2",
+      "theme": "dark",
+      "outer": {
+        "width": 2048,
+        "height": 1320,
+        "scrollWidth": 2048,
+        "scrollHeight": 1320
+      },
+      "inner": {
+        "width": 2048,
+        "height": 1244,
+        "scrollWidth": 2048,
+        "scrollHeight": 1244
+      },
+      "svg": {
+        "left": 250.5,
+        "top": 112,
+        "right": 1797.5,
+        "bottom": 963.96875,
+        "width": 1547,
+        "height": 851.96875
+      }
+    },
+    {
+      "width": 2048,
+      "height": 1320,
+      "view": "security",
+      "theme": "light",
+      "outer": {
+        "width": 2048,
+        "height": 1320,
+        "scrollWidth": 2048,
+        "scrollHeight": 1320
+      },
+      "inner": {
+        "width": 2048,
+        "height": 1244,
+        "scrollWidth": 2048,
+        "scrollHeight": 1244
+      },
+      "svg": {
+        "left": 339.5,
+        "top": 104,
+        "right": 1708.5,
+        "bottom": 1125.78125,
+        "width": 1369,
+        "height": 1021.78125
+      }
+    },
+    {
+      "width": 2048,
+      "height": 1320,
+      "view": "security",
+      "theme": "dark",
+      "outer": {
+        "width": 2048,
+        "height": 1320,
+        "scrollWidth": 2048,
+        "scrollHeight": 1320
+      },
+      "inner": {
+        "width": 2048,
+        "height": 1244,
+        "scrollWidth": 2048,
+        "scrollHeight": 1244
+      },
+      "svg": {
+        "left": 339.5,
+        "top": 104,
+        "right": 1708.5,
+        "bottom": 1125.78125,
+        "width": 1369,
+        "height": 1021.78125
+      }
+    },
+    {
+      "width": 2048,
+      "height": 1320,
+      "view": "reference",
+      "outer": {
+        "width": 2048,
+        "height": 1320,
+        "scrollWidth": 2048,
+        "scrollHeight": 1320
+      },
+      "verticalScroll": "intentional reference document"
+    }
+  ],
+  "interactions": [
+    "Default EC2 view and exact embedded document byte equality",
+    "Roving tab focus and ArrowRight, ArrowLeft, Home and End activation",
+    "Both evidence details open and close; reference screenshot includes all content",
+    "ec2 frame search, node focus and presentation Escape work inside wrapper",
+    "security frame search, node focus and presentation Escape work inside wrapper",
+    "Direct evidence fragment and invalid-fragment EC2 fallback"
+  ],
+  "errors": [],
+  "screenshots": [
+    "evidence/aws/viewer-ec2-1440-light.png",
+    "evidence/aws/viewer-ec2-1440-dark.png",
+    "evidence/aws/viewer-security-1440-light.png",
+    "evidence/aws/viewer-security-1440-dark.png",
+    "evidence/aws/viewer-ec2-2048-light.png",
+    "evidence/aws/viewer-ec2-2048-dark.png",
+    "evidence/aws/viewer-security-2048-light.png",
+    "evidence/aws/viewer-security-2048-dark.png",
+    "evidence/aws/viewer-reference.png"
+  ],
+  "status": "pass",
+  "scope": "New wrapper integration, embedded byte equality, reduced-frame containment and viewer interaction checks. Existing diagram geometry was not modified."
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-13T04:56:08.174596+00:00",
+  "revision": "council-legibility-and-scope",
+  "diagram_type": "architecture",
+  "output": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-ec2-live.html",
+  "specification": {
+    "sha256": "b0fe61ca2fb257e54e999c0bb031edb2f275e4f13a625257a0a1e6f242d674e9",
+    "bytes": 4718
+  },
+  "artifact": {
+    "sha256": "4f8547905863a4303ad5117f3d876c11c638eded381f9562a5824f935d9b9fef",
+    "bytes": 809098
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  },
+  "browser_evidence": "passed",
+  "browser_receipt": "kirocrew-ec2-live.visual-check.json",
+  "visual_review": "passed",
+  "correction_rounds": 0,
+  "interactions": [
+    "Gateway search, result selection, runtime focus, Escape dismissal",
+    "Presentation mode opened and Escape restored reader"
+  ],
+  "exports": [
+    {
+      "path": "evidence/aws/archify/kirocrew-ec2-live.svg",
+      "bytes": 152134,
+      "sha256": "d324e70dbb76c924fbcf3800f12e93321f34536a01b426de4cc6f082b437cd49"
+    },
+    {
+      "path": "evidence/aws/archify/kirocrew-ec2-live.png",
+      "bytes": 426298,
+      "sha256": "99382e00aa855fd5d0773f0864b1bb9fdab0f72206c9e0afbec75dfaffb5a8ed"
+    }
+  ],
+  "historical_visuals": "Accepted security diagram and wrapper not edited by this agent.",
+  "scope": [
+    "Detailed browser topology of actual CloudFormation EC2 demo.",
+    "Crew demo configuration labels only interactive approval and a configured deny rule; native backend execution remains unverified.",
+    "The outer boundary explicitly names the EC2 host and contains both Crew execution and the MCP service.",
+    "Accepted L0\u2013L5 security reference remains separate and unchanged."
+  ],
+  "perceptual_review": {
+    "reviewer": "image-capable author agent",
+    "artifact_sha256": "4f8547905863a4303ad5117f3d876c11c638eded381f9562a5824f935d9b9fef",
+    "screenshots_reviewed": [
+      "kirocrew-ec2-live.visual-check.1440x900.light.png",
+      "kirocrew-ec2-live.visual-check.2048x1320.dark.png"
+    ],
+    "observations": [
+      "Both themes have readable node and relationship text without overlap.",
+      "The large viewport remains balanced with necessary evidence cards.",
+      "MCP is visibly on the same EC2 host, outside the Crew execution endpoint.",
+      "No native backend verification or universal L0\u2013L5 claim appears in the demo control node."
+    ]
+  },
+  "sources": [
+    {
+      "path": "infrastructure/ec2-demo.json",
+      "bytes": 14193,
+      "sha256": "778016a3c8fb7d45933e651ace1634a9148b9ead7960797ae208a795752602ea"
+    },
+    {
+      "path": "infrastructure/kirocrew-demo.service",
+      "bytes": 1094,
+      "sha256": "662c10170325a0a2e0025e2007d48c650e5ddf88343f0475f50404cfc97360df"
+    },
+    {
+      "path": "infrastructure/kirocrew-mcp-demo.service",
+      "bytes": 850,
+      "sha256": "027ec03ceffdf0fcb38b9961bd35211572f564e0f249904feb111f0624461d01"
+    },
+    {
+      "path": "evidence/aws/security-group.json",
+      "bytes": 2920,
+      "sha256": "d65380f161ce9f6cccea8a3f0a8e23bf9a1c9bde6c19b3654141d9708bda2442"
+    },
+    {
+      "path": "evidence/aws/mcp-live-receipt.json",
+      "bytes": 2199,
+      "sha256": "8072fbe3b4048296b49436b8f23e4772ad3c3e4aba605305efd8901aa2843442"
+    },
+    {
+      "path": "evidence/aws/iam-demo-policy.json",
+      "bytes": 862,
+      "sha256": "8faf681201a0af63edeae2052e89ac85c312c074c4f4eadf9b635625c73c50db"
+    },
+    {
+      "path": "evidence/aws/client-runtime-verification.json",
+      "bytes": 1034,
+      "sha256": "827ac43582525486362fce86f0602dd8fdab70f21661e2c0002e10c2ce5f8783"
+    }
+  ],
+  "slide_use": "Use the concise kirocrew-ec2-slide asset; the dense full-diagram presentation crop is superseded for the deck."
+}

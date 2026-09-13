@@ -1,0 +1,8 @@
+{
+  "status": "blocked",
+  "verified": false,
+  "tool": "playwright-cli open",
+  "attemptedUrl": "file:///Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-recorded-demos.html#slide-19",
+  "message": "Access to \"file:\" protocol is blocked.",
+  "scope": "The tool rejected navigation before opening the local file. Direct-file playback remains unverified. No workaround attempted."
+}

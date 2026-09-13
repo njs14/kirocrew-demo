@@ -1,0 +1,20 @@
+{
+  "observed_at": "2026-09-13T15:19:31.168209+00:00",
+  "host": "i-0fde6de3f0ea5a9d0",
+  "backend": "Kiro CLI 2.21.4",
+  "flow": "Fresh normal app.kiro.dev sign-in with SSH loopback callback; GitHub option presented to user",
+  "helper_exit_code": 1,
+  "helper_result": "The remote login ended without an authenticated account.",
+  "plain_cli_readback": {
+    "authenticated": false,
+    "exit_code": 1
+  },
+  "callback_port": 3128,
+  "callback_listeners_remaining": {
+    "127.0.0.1": false,
+    "::1": false
+  },
+  "credential_or_session_transfer": false,
+  "oauth_url_recorded": false,
+  "next_step": "When ready to complete sign-in, run python3 scripts/ec2-login.py for a new URL. Keep that terminal open until it confirms the EC2 CLI result; then run native-demo.sh. The separate KAS GitHub card is not this result."
+}

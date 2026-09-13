@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="demo-nonce" content="__DEMO_NONCE__"><title>Direct MCP/AWS probe · Demo operator</title><link rel="stylesheet" href="/styles.css"><script defer src="/app.js"></script></head>
+<body><main>
+<header><div><p class="eyebrow">KIROCREW DEMO · OPERATOR SCREEN</p><h1 id="screen-title">Direct MCP/AWS probe</h1><p id="screen-description" class="description">Run the fixed three-outcome check on the ARM server and inspect its receipt.</p></div><div class="clock"><span>LOCAL RECORDING AID</span><strong id="server-clock">Waiting for local server</strong><small>Standalone operator screen</small></div></header>
+<nav aria-label="Demo scenarios"><button id="tab-direct" class="tab selected" aria-pressed="true">Direct MCP/AWS probe</button><button id="tab-synthetic" class="tab" aria-pressed="false">Local synthetic control rehearsal</button></nav>
+<div class="boundary"><strong>Native backend proof remains pending</strong><code>native_backend_verified = false</code><span id="boundary-detail">This command invokes the remote MCP service directly. Native Kiro CLI acceptance is a separate step.</span></div>
+<section class="toolbar" aria-label="Run controls"><div><span id="run-status" class="status idle">Ready</span><p id="run-progress">No command has been run in this screen.</p></div><button id="start-run" class="primary">Start bounded probe</button></section>
+<section id="direct-results" class="cards" aria-label="Probe outcomes">
+<article id="card-read_allowed" class="result-card"><div class="card-top"><span class="number">01</span><span class="outcome">Awaiting run</span></div><h2>Allowed S3 read</h2><p>Read the fixed sentinel and verify its SHA-256.</p><dl class="result-fields"></dl></article>
+<article id="card-mcp_denied" class="result-card"><div class="card-top"><span class="number">02</span><span class="outcome">Awaiting run</span></div><h2>MCP grant denial</h2><p>Deny the tool before an AWS request is sent.</p><dl class="result-fields"></dl></article>
+<article id="card-iam_denied" class="result-card"><div class="card-top"><span class="number">03</span><span class="outcome">Awaiting run</span></div><h2>AWS IAM denial</h2><p>Receive AccessDenied with an AWS request ID.</p><dl class="result-fields"></dl></article>
+</section>
+<section id="synthetic-results" hidden><div class="synthetic-note"><strong>Scripted approval in an isolated harness</strong><span>Actual Crew control functions; synthetic requests. No model, native callback, MCP or AWS call. Approval is supplied by the rehearsal script.</span></div><div id="synthetic-steps" class="steps"></div></section>
+<section class="receipt-panel" aria-label="Receipt"><div><p class="eyebrow">RUN RECEIPT</p><h2 id="receipt-heading">Evidence appears after the command finishes</h2><p id="receipt-summary">The direct probe returns one JSON receipt when the command finishes.</p></div><div class="receipt-actions"><a id="receipt-download" hidden target="_blank" rel="noopener">Open sanitized JSON receipt ↗</a><button id="receipt-toggle" hidden>Inspect receipt fields</button></div><pre id="receipt-json" hidden></pre><dl id="receipt-meta"></dl></section>
+<footer><span id="footer-scope">Fixed command · remote MCP service · real S3 requests</span><span>Loopback 127.0.0.1:5607 · 90-second limit · one run at a time</span></footer>
+</main></body></html>

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "verified_at_utc": "2026-09-13T15:11:47.368927+00:00",
+  "status": "static_passed_browser_blocked",
+  "scope": "Static artifact checks only. The parent recorded a direct-file browser URL-policy block on prior guide bytes; this revision was not opened.",
+  "artifacts": [
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-walkthrough.html",
+      "sha256": "94fef71b10965ac734136c352a7d011a1d36ac1ba97680b49f33a9d89fb72b62",
+      "bytes": 1258022
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-walkthrough.md",
+      "sha256": "c680b69118b916646416e6c09eba63dfa0cfcab1b851144ba07d881d2d441bea",
+      "bytes": 16314
+    },
+    {
+      "path": "/Users/noahsutter/git-projects/kirocrew-demo/output/kirocrew-admin-findings.md",
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71",
+      "bytes": 7075
+    }
+  ],
+  "checks": {
+    "thirteen_sections": true,
+    "unique_section_ids": true,
+    "all_screenshots_present": true,
+    "all_screenshots_embedded_unchanged": true,
+    "all_navigation_targets_exist": true,
+    "no_external_asset_urls": true,
+    "no_missing_markdown_images": true,
+    "inline_javascript_node_syntax_passed": true,
+    "all_markdown_file_links_resolve": true,
+    "all_screenshots_match_original_browser_capture_hashes": true,
+    "native_64mib_strict_cap_claim_removed": true
+  },
+  "javascript": {
+    "path": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/admin-console/walkthrough-inline-script.js",
+    "sha256": "778691f54ce8769327e94098efd617adbba4ab8ca779dee75b6ecf433728a824",
+    "command": "node --check evidence/admin-console/walkthrough-inline-script.js",
+    "exit_code": 0
+  },
+  "browser_receipt": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/admin-console/browser-receipt.json",
+  "limits": [
+    "Responsive layout, table-of-contents interaction and screenshot-dialog keyboard behavior remain unverified after the recorded browser URL-policy block. No browser attempt or alternate route was used for this rebuild."
+  ]
+}

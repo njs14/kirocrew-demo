@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-09-13T14:57:53.630543+00:00",
+  "region": "us-east-1",
+  "security_group": "sg-08ac4789794115e39",
+  "current_client_public_ipv4": "24.60.107.229",
+  "ingress": [
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 22,
+      "ToPort": 22,
+      "UserIdGroupPairs": [],
+      "IpRanges": [
+        {
+          "Description": "SSH forwarding and administration from the current client IP only",
+          "CidrIp": "24.60.107.229/32"
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": []
+    }
+  ],
+  "only_ssh_from_current_client_ipv4": true,
+  "new_public_app_or_mcp_ingress": false
+}

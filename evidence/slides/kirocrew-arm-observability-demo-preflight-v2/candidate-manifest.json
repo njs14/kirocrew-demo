@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "created": "2026-09-13T14:37:39.814Z",
+  "artifact": "output/kirocrew-arm-observability-demo-preflight-v2.pptx",
+  "sha256": "6d1e5b5b5c9d572910565e06931dc9ee99c6b787e02f5dda19bd2d8c50142d71",
+  "slides": 12,
+  "state": {
+    "nativeVerified": false,
+    "clientVerified": false,
+    "nativeReceipt": "Native Kiro CLI sign-in and backend session verification pending.",
+    "clientReceipt": "Native desktop connected through SSH. Local Gateway is off.",
+    "topologyImage": "evidence/aws/archify-arm/kirocrew-arm-slide-1152x480.png",
+    "telemetryVerified": false,
+    "nativeTelemetryImage": null,
+    "customObservabilityImage": null,
+    "observabilityFlowImage": null
+  },
+  "sourceBuilder": ".build/slides/build-arm-observability-deck.mjs",
+  "sourceBuilderSha256": "304a0de446fe9e499d85fbe493eb23505987a3f2314f5b4bba030955436e54e1",
+  "sourceAssets": [
+    {
+      "path": "evidence/browser/endpoint-slide.png",
+      "bytes": 85943,
+      "sha256": "4c64d4035f1c61b8bdd8d59cf5fb8e1abb318a754a73cc0865f5e4b603ecedc1"
+    },
+    {
+      "path": "evidence/aws/archify-arm/kirocrew-arm-slide-1152x480.png",
+      "bytes": 51687,
+      "sha256": "c688b894b0194c7245295f88d2ac6b37ce65733721649e05db23f83e69b1bd42"
+    }
+  ],
+  "renderDirectory": "output/kirocrew-arm-observability-demo-preflight-v2-slides",
+  "nativePowerPointPlaybackVerified": false
+}
