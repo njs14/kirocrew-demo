@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "kind": "post_council_no_ai_slop_review",
+  "created_utc": "2026-09-14T01:08:49.628683+00:00",
+  "scope": "No AI Slop editing after adopted H1-H8 changes, followed by final text and source checks. This is not an external-model review or a browser-layout verdict.",
+  "skill": {
+    "name": "no-ai-slop:no-ai-slop",
+    "version": "1.0.6",
+    "source_path": "/Users/noahsutter/.codex/plugins/cache/openai-curated-remote/no-ai-slop/1.0.6/skills/no-ai-slop/SKILL.md",
+    "sha256": "73f87f7f79bd3540c4d8494b5c43d37d25584be6886212e1516fdd8d1c539846"
+  },
+  "council_decisions": {
+    "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+    "bytes": 6868,
+    "sha256": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30"
+  },
+  "outputs": [
+    {
+      "path": "output/kirocrew-native-controls.html",
+      "bytes": 639250,
+      "sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c"
+    },
+    {
+      "path": "output/kirocrew-native-controls-notes.md",
+      "bytes": 25826,
+      "sha256": "415e0f99e8add71613d140907955f2be5a29f7813f6f419fa97fd35bd15df164"
+    },
+    {
+      "path": "output/kirocrew-native-controls-manifest.json",
+      "bytes": 35002,
+      "sha256": "7262516697502200db5122b8ea968c7f9230f92f4e43a8d900b69854deb39dda"
+    },
+    {
+      "path": "output/kirocrew-native-controls-build.json",
+      "bytes": 34634,
+      "sha256": "f01a3d2539a64ec3ca42e3abd72257c2308735650653e9ba8b8265a7f8761248"
+    }
+  ],
+  "builder": {
+    "path": "scripts/build-native-control-presentation.py",
+    "bytes": 79472,
+    "sha256": "048a0b3b79c8f504e1fe64a4210f26ba5a937710dd580143772063184a43a7ef"
+  },
+  "sequence": [
+    "Read both completed external reviews and root-adopted H1-H8 synthesis",
+    "Applied substantive H1-H8 slide and notes changes",
+    "Independent read-only No AI Slop review by /root/native_control_deck/deck_copy_review",
+    "Applied concise edition-scoped wording and bounded-reconciliation refinements",
+    "Applied final timeout wording from the exact scoped receipt and self-reviewed the final generated text"
+  ],
+  "refinements": [
+    "Name unfinished work on the slide and bind it to this edition; the prior IMDS approval expired unanswered.",
+    "Use four bounded outcomes reconciled, with the complete MCP journal and service-continuity checks distinguished from the incomplete original passive collector.",
+    "Describe the recorded owner session in past tense; retain anonymous EC2 helper versus authenticated Mac session scope.",
+    "Keep literal control names, false helper-verification field, combined-receipt attribution, removed marker-rule status, Eastern timezone and no-per-request-STS limit."
+  ],
+  "checks": {
+    "pass_completed_after_substantive_council_changes": true,
+    "meaning_and_evidence_limits_preserved": true,
+    "no_added_native_success_claims": true,
+    "no_recording_pixels_or_audio_changed": true,
+    "final_text_checked": true
+  },
+  "independent_copy_review": {
+    "agent": "/root/native_control_deck/deck_copy_review",
+    "result": "Remaining H1-H8 copy faithful and concise after four narrow refinements",
+    "scope": "Read-only builder-copy review; no rendering, video playback or live-system inspection"
+  },
+  "remaining_validation": "Root browser delta and separate exact-candidate independent static review."
+}

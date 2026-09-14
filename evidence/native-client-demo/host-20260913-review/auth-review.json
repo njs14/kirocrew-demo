@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "kind": "independent_native_host_auth_review",
+  "reviewer": "/root/native_final_review",
+  "recorded_at": "2026-09-14T00:18:21.597268+00:00",
+  "verdict": "bounded_gateway_token_auth_denial_supported",
+  "material_findings": [],
+  "reviewed_receipt": {
+    "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+    "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
+  },
+  "source_sha256": {
+    "capture_events": {
+      "path": ".build/native-host-auth-20260913-ui1/events.jsonl",
+      "sha256": "dd87756cb5a1567ed5f2c90ee0596ac264b56172790329cf86c4cbabeb74f33c"
+    },
+    "capture_receipt": {
+      "path": ".build/native-host-auth-20260913-ui1/receipt.json",
+      "sha256": "639e652a2db0a7a9f3ef5022e25e97f00932b9cb237005ed59f764654f02c5b4"
+    },
+    "native_observations": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-observations.json",
+      "sha256": "2616eeb2a2ce0c8081bbe49bc55cdb31c3c297819633a10b4cb084b29e72ceed"
+    },
+    "preflight": {
+      "path": "evidence/native-client-demo/host-20260913-resumed/preflight.json",
+      "sha256": "9b00264d8504088ab4e92de6e341ee3e92b0342af7f25ba7c3f08e7b26421ac4"
+    },
+    "public_history": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "sha256": "663302446418b5ec7d52330ecaec42a2ee57ef4598af1e3ef5034990b6398603"
+    },
+    "token_auth_source": {
+      "path": ".build/installed-nightly/kiro_crew/dashboard/token_auth.py",
+      "sha256": "2ce2dd02498a6494edfc604b51436e016c62ada2f2be944499579ce09e822cda"
+    }
+  },
+  "checks": {
+    "all_six_source_hashes_match": true,
+    "live_source_read_matches_exact_prepared_helper": true,
+    "both_distinct_approvals_in_live_events": true,
+    "exact_public_history_execute_input_joins_live_tool_result_id": true,
+    "unique_matching_token_required_sel_in_approval_result_interval": true,
+    "public_history_has_no_unrecognized_tool_rows": true,
+    "deployed_token_auth_source_matches_preflight": true
+  },
+  "native_execute_tool_call_id": "toolu_bdrk_0159BsH9v4wTh4Zrako473xV",
+  "native_source_read_tool_call_id": "toolu_bdrk_01VdSiWnn4TeweZHbmkb41kF",
+  "native_approved_request_ids": [
+    "0e6a0e66-62e9-4192-808d-de2f406c676c",
+    "111c83b1-5dde-47f5-9775-d61733fbc89c"
+  ],
+  "auth_sel_event_id": "090c2f546320493a",
+  "first_enforcer": "gateway_token_auth",
+  "observed_http_status": 403,
+  "tool_calls": 2,
+  "scope": "Read-only local verification of retained native broadcasts, exact public fixture history, scoped auth row, helper source and deployed-source hashes. No UI, live helper, AWS, SSH, approval or policy action.",
+  "limits": [
+    "Source read and helper execution were separate native calls, each approved once.",
+    "The native execute call joins exact persisted input and live result by tool-call ID; SEL attribution uses the unique route/caller/reason and temporal interval, without a direct SEL-to-tool trace ID.",
+    "Anonymous Gateway token authentication is supported; restricted human-role RBAC and immutable managed policy are not established.",
+    "The helper source enforces real/effective UID999 before the request; the result does not itself report numeric UID.",
+    "No pending-approval process overlap or independent per-row SEL signature verification is claimed.",
+    "This review does not independently inspect native footage or create a media acceptance verdict."
+  ]
+}

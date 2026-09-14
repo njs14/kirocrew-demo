@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-14T00:35:26.843355+00:00",
+  "kind": "recorded-preview-presentation-query-compatibility",
+  "sources": [
+    {
+      "path": "scripts/serve-recorded-demos.py",
+      "bytes": 8532,
+      "sha256": "3ed2f61d96c23ba4d5ec382d34be2d7f178fe2efb36609a8d413a1c2b7427aaf"
+    },
+    {
+      "path": "scripts/tests/test_recorded_demo_server.py",
+      "bytes": 5958,
+      "sha256": "0b7da6d9108a1f01681347146890ed7f433af5ef4d4a063bc762795cb07f2baf"
+    }
+  ],
+  "frozen_diagram_verified_unchanged": {
+    "path": "kirocrew-native-controls-diagram.html",
+    "bytes": 810648,
+    "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb"
+  },
+  "behavior": {
+    "allowed": "Exact raw present=1 query on an already allowlisted item whose actual file suffix is .html; GET and HEAD, including the root edition alias.",
+    "rejected": "Unknown or extra query parameters, encoded query variants, presentation queries on media/JSON, unknown or private routes, literal fragments, traversal, bad Host, changed file identity and symlink substitution.",
+    "unchanged": "No-query HTML/media and Range handling; initial hash binding and secure_open path guards."
+  },
+  "tests": {
+    "command": "python3 -m unittest discover -s scripts/tests -p test_recorded_demo_server.py -v",
+    "exit_code": 0,
+    "tests_run": 6,
+    "failures": 0,
+    "errors": 0,
+    "fixture_scope": "Temporary synthetic files and ephemeral loopback HTTP server only. No existing preview process, UI, cloud, authentication or live demo data touched."
+  },
+  "read_only_review": {
+    "status": "passed",
+    "reviewer": "telemetry_diagram_facts",
+    "material_findings": [],
+    "scope": "Inspected exact query condition and focused HTTP tests; existing descriptor walk, startup digest, per-request identity and range handling remain shared."
+  }
+}

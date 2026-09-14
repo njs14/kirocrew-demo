@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "kind": "accepted_admin_tour_before_host_captures",
+  "preservedAt": "2026-09-14T00:03:36.972372+00:00",
+  "scope": "Exact accepted tour, generator and review/build/serve receipts before adding later host-control captures. Screenshot and evidence source hashes remain recorded in the unchanged copied build receipt. Original screenshot bytes remain at their recorded paths. This archive does not rebind historical links.",
+  "files": [
+    {
+      "original": "scripts/build-native-admin-tour.py",
+      "preserved": "evidence/admin-console/accepted-before-host-20260913/scripts/build-native-admin-tour.py",
+      "bytes": 36572,
+      "sha256": "85f7fed2af711db16e8f1d79f47017c8bf4d90b8c0ff2b3314f01d3e6216a9b5"
+    },
+    {
+      "original": "output/kirocrew-admin-tour.html",
+      "preserved": "evidence/admin-console/accepted-before-host-20260913/output/kirocrew-admin-tour.html",
+      "bytes": 1620826,
+      "sha256": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97"
+    },
+    {
+      "original": "output/kirocrew-admin-tour.md",
+      "preserved": "evidence/admin-console/accepted-before-host-20260913/output/kirocrew-admin-tour.md",
+      "bytes": 13310,
+      "sha256": "57aed2784de1c3ea19a588dd1a525910a5ccd6f283055a0dbf4bb3dd5deca19f"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/tour-build.json",
+      "preserved": "evidence/admin-console/accepted-before-host-20260913/evidence/admin-console/native-20260913/tour-build.json",
+      "bytes": 10343,
+      "sha256": "a9f49d568662b158ad87215014cf32010815f01b022ab874725ca5f9cad99627"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/tour-serve.json",
+      "preserved": "evidence/admin-console/accepted-before-host-20260913/evidence/admin-console/native-20260913/tour-serve.json",
+      "bytes": 12014,
+      "sha256": "3dd9d53aa394d9f36e2602ae827ca76cc3ce5b6c3e14055a59e0456e45da6289"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/browser-review.json",
+      "preserved": "evidence/admin-console/accepted-before-host-20260913/evidence/admin-console/native-20260913/browser-review.json",
+      "bytes": 1443,
+      "sha256": "e0125ad771dbda8952b77b6b415550a072bb4a47e863f945277e882fbcb3a518"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/browser-review-v1.json",
+      "preserved": "evidence/admin-console/accepted-before-host-20260913/evidence/admin-console/native-20260913/browser-review-v1.json",
+      "bytes": 6129,
+      "sha256": "2e7f545b397bd04f631beabb6dd235276d27df5a884e86857b696456176bfad6"
+    }
+  ]
+}

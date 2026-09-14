@@ -1,0 +1,371 @@
+{
+  "schema": 1,
+  "kind": "independent_host_edition_final_integration_review",
+  "created_at": "2026-09-14T01:12:17.323899+00:00",
+  "reviewer": "/root/native_final_review",
+  "verdict": "ship_reviewed_host_edition_with_three_unfinished_cases",
+  "material_findings": [],
+  "artifact_bindings": [
+    {
+      "path": "output/kirocrew-native-controls.html",
+      "sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c",
+      "bytes": 639250
+    },
+    {
+      "path": "output/kirocrew-native-controls-notes.md",
+      "sha256": "415e0f99e8add71613d140907955f2be5a29f7813f6f419fa97fd35bd15df164",
+      "bytes": 25826
+    },
+    {
+      "path": "output/kirocrew-native-controls-manifest.json",
+      "sha256": "7262516697502200db5122b8ea968c7f9230f92f4e43a8d900b69854deb39dda",
+      "bytes": 35002
+    },
+    {
+      "path": "output/kirocrew-native-controls-build.json",
+      "sha256": "f01a3d2539a64ec3ca42e3abd72257c2308735650653e9ba8b8265a7f8761248",
+      "bytes": 34634
+    },
+    {
+      "path": "output/kirocrew-admin-tour.html",
+      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87",
+      "bytes": 2516369
+    },
+    {
+      "path": "output/kirocrew-admin-tour.md",
+      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108",
+      "bytes": 18384
+    },
+    {
+      "path": "output/kirocrew-native-admin-findings.md",
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39",
+      "bytes": 9214
+    },
+    {
+      "path": "evidence/admin-console/native-20260913/tour-build.json",
+      "sha256": "bb458337d82be7c57700431e8cf7282ec462fbef8b45a8ea1fe7bff9f3cc9f5f",
+      "bytes": 15583
+    },
+    {
+      "path": "kirocrew-native-controls-diagram.html",
+      "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb",
+      "bytes": 810648
+    },
+    {
+      "path": "kirocrew-native-controls-diagram.architecture.json",
+      "sha256": "a7504c4668e148c630bc6889047e75b8b73db2fb897c41ca12d83d529abd4aa0",
+      "bytes": 4888
+    }
+  ],
+  "helper_source_bindings": [
+    {
+      "path": "scripts/build-native-control-presentation.py",
+      "sha256": "048a0b3b79c8f504e1fe64a4210f26ba5a937710dd580143772063184a43a7ef",
+      "bytes": 79472
+    },
+    {
+      "path": "scripts/build-recorded-demo-presentation.py",
+      "sha256": "4b271074f028fdcf56f37fdf233eecac83405265efff734c5b20c90f20cd3dfb",
+      "bytes": 18573
+    },
+    {
+      "path": "presentation/slides.css",
+      "sha256": "4fff4b0514279836ad7ed05fe94d08d4996c90ea9555bfa0425b74230753e7ce",
+      "bytes": 14964
+    },
+    {
+      "path": "presentation/slide-runtime.js",
+      "sha256": "a90bfa3c9feb9de983fe91b01b70995424d21c7190f83b357fb702a090c9e2d9",
+      "bytes": 13367
+    },
+    {
+      "path": "presentation/demo-player.css",
+      "sha256": "99ffc46cb25eea7538d3ae84258469bb50f154a8a44b2e28fa39b058cb4c83a8",
+      "bytes": 3640
+    },
+    {
+      "path": "presentation/demo-player.js",
+      "sha256": "7a0768ab1b0da7b71a6f9ba806ee1775fbe2b511f052a6a0337fb76eb1461613",
+      "bytes": 5111
+    },
+    {
+      "path": "scripts/build-native-admin-tour.py",
+      "sha256": "4205168e4d3ed75dbea4a522cb039373d5b4080a2566fad0487674b6969168c2",
+      "bytes": 44645
+    },
+    {
+      "path": "scripts/serve-recorded-demos.py",
+      "sha256": "3ed2f61d96c23ba4d5ec382d34be2d7f178fe2efb36609a8d413a1c2b7427aaf",
+      "bytes": 8532
+    },
+    {
+      "path": "scripts/export-native-publication.py",
+      "sha256": "85799cb5b9c8f02623297698f61c7cfb51a29303185a183e79581d080d47e6a1",
+      "bytes": 13680
+    },
+    {
+      "path": "scripts/analyze-native-host-evidence.py",
+      "sha256": "9b4b7e1d247537622cc0d808c755348416d69c087219e6f702de99e5902228a9",
+      "bytes": 17288
+    },
+    {
+      "path": "scripts/read-native-host-fixture-history.py",
+      "sha256": "7c9ef2c2b00af4bc461c7903bd3a566767b1f1775ea6d2543811279bb2068500",
+      "bytes": 7304
+    },
+    {
+      "path": "infrastructure/host-controls/setup.py",
+      "sha256": "e3c807ded35eb7045bed411efa88db94e7baf5646276f3a1aeb4646031d792d9",
+      "bytes": 17115
+    },
+    {
+      "path": "infrastructure/host-controls/amend-prompt.py",
+      "sha256": "cd75e17d7700c57bcdd1ede0425e423767b37d3a6aaabfab8c712b92cbdfbdb1",
+      "bytes": 8646
+    }
+  ],
+  "review_receipt_bindings": [
+    {
+      "path": "evidence/native-client-demo/host-20260913-review/host-evidence-review.json",
+      "sha256": "5e9817f6ca6720497319c5ca15894d9001e72b0a012dbe73ac6efbf380428dce",
+      "bytes": 12342
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204",
+      "bytes": 3477
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-review/final-integration-pending-review.json",
+      "sha256": "bf716645b24baa64ff50ad8ca0ef6cb0d529e18a7dca2578d24324c7ea728d4e",
+      "bytes": 4484
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-publication/review.json",
+      "sha256": "99ab900f03d9d68e00b00c01a9111ea9f9372ff924d7fd344fb8de57aed0f60f",
+      "bytes": 15105
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/incorporation.json",
+      "sha256": "21bf6aebf1d5c0510518a0b752e9c708d41e784dd1ab3a00311bc39a49bd2718",
+      "bytes": 5673
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/post-council-no-ai-slop.json",
+      "sha256": "37bc52e51a89a071a7b9fb541c17e65d2a5433404c0c85fc417584b3e40c92b7",
+      "bytes": 3398
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11",
+      "bytes": 12729
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "sha256": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30",
+      "bytes": 6868
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/publication-provenance.json",
+      "sha256": "9ec09c089575adc722c43160abe13a1038440ba4d25937fbb95ac417d8cd1541",
+      "bytes": 2007
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/incorporation-baseline/manifest.json",
+      "sha256": "7ba9158076a8849712fcc4aae2e88ee47e82aa3a5499c703d810f11f8f8a240a",
+      "bytes": 13611
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/final-review.json",
+      "sha256": "97a6e8928b9ec4512a2f6a08cd811e8a67248dfde72083455c99f7795e61ecbc",
+      "bytes": 5458
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-candidate/browser/playback-review.json",
+      "sha256": "6223a98783bf28caeba2cea18a0ebec397ff8bbfa440968af380ea6aa7b6cb14",
+      "bytes": 1369
+    },
+    {
+      "path": "evidence/admin-console/native-20260913/browser-host/review.json",
+      "sha256": "d41782b5bfac85b4ba657c54c1eee2d8eac2f32789c47cd7b3d9a0caa3216813",
+      "bytes": 2493
+    },
+    {
+      "path": "evidence/native-client-demo/archify-host-20260913/browser/final-review.json",
+      "sha256": "4d351ae3f0cedd44afc8e492f1d0f89ec92664b0f925156fab778f74d048361c",
+      "bytes": 1867
+    },
+    {
+      "path": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "sha256": "caeca579dc6c8a82e8799d6274c121af21c46cdc4420935bd0ec31b14a6db01b",
+      "bytes": 20791
+    },
+    {
+      "path": "evidence/native-client-demo/archify-host-20260913/preview-query-compat.json",
+      "sha256": "892293ceb26c2e955951df0a9fb19f436a3482c82ba796971697953f3b094973",
+      "bytes": 1879
+    },
+    {
+      "path": "evidence/native-client-demo/accepted-before-host-20260913/manifest.json",
+      "sha256": "2aca7794855b15ac443025fb0b31e95d3c2cb3c6eadb5cec1ddbd89c149acf92",
+      "bytes": 1668
+    },
+    {
+      "path": "evidence/admin-console/accepted-before-host-20260913/preservation.json",
+      "sha256": "507e09dee1caaca58be019671fa778925de4a803f87c4385a3d899f4fbdb44de",
+      "bytes": 2621
+    }
+  ],
+  "static_validation": {
+    "independent_hash_checks": 129,
+    "served_route_size_hash_checks": 89,
+    "supporting_receipt_checks": 25,
+    "processed_input_checks": 7,
+    "build_input_checks": 6,
+    "relative_reference_checks": 56,
+    "missing_or_unallowlisted_references": 0,
+    "duplicate_html_ids": 0,
+    "slide_count": 14,
+    "video_count": 8,
+    "matrix_body_rows": [
+      4,
+      4
+    ],
+    "single_endpoint_control_box_count": 1,
+    "all_passed": true
+  },
+  "council_incorporation": {
+    "original_html_sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335",
+    "original_verdicts": [
+      "CHANGES REQUIRED",
+      "CHANGES REQUIRED"
+    ],
+    "response_models": [
+      "grok-4.6",
+      "claude-opus-5"
+    ],
+    "requested_effort": "xhigh",
+    "effort_verification": "explicit launch flags; provider wire effort not independently observed",
+    "independent_packet_boundary_review": {
+      "agent": "/root/native_final_review/council_publication_boundary",
+      "verdict": "no_material_findings",
+      "read_counts_per_model": 18,
+      "text_inputs_per_model": 4,
+      "png_inputs_per_model": 14,
+      "decoded_image_payload_matches": 42,
+      "frozen_packet_archive_files": 19,
+      "credential_pattern_matches": 0,
+      "scope": "Packet-local model reads, text/image identity, raw-output provenance and privacy; no inference performed by the reviewer."
+    },
+    "implemented_decisions": {
+      "H1": "Slide4 names sensitive-path read, protected-path write and IMDS execution, with unanswered prior approval and no completed IMDS/firewall result.",
+      "H2": "Slide4 uses correlated Gateway attribution; slide12 visibly distinguishes anonymous EC2 loopback helper from authenticated Mac, retains native_enforcement_verified:false and separate evidence.",
+      "H3": "Slide11 is post-denial summary inspection with collapsed history, separate Crew receipts and temporary marker-rule removal.",
+      "H4": "Slide13 has three full coverage rows, expansion controls outside crops, unfinished path tests and separate shell Denied Commands/Crew MCP auto_deny_tools labels.",
+      "H5": "Matrices use four rows each and distinct row-specific notes.",
+      "H6": "Cover uses September13 Eastern Time UTC-4; recorded source UTC timestamps remain unchanged.",
+      "H7": "IAM footer explicitly limits role attribution to instance-profile receipts, with no per-request STS identity.",
+      "H8": "Crew footer states duration, editable owner authority and bounded reconciliation versus incomplete original collector; architecture notes retain receipt-backed SSH/us-east-1 context."
+    },
+    "post_council_no_ai_slop": "Completed after substantive changes; independent copy feedback and author final-text pass bound by separate receipt.",
+    "external_models_reviewed_final_derivative": false,
+    "scope": "Both original external verdicts remain preserved. This independent local integration review closes the derivative; it does not rewrite or upgrade external approvals."
+  },
+  "evidence_claims": {
+    "supported_host_cases": [
+      "Exact public workspace read and result; no approval-callback exercise.",
+      "Configured command-rule denial established by persisted native history and scoped SEL, separately from post-denial assistant-summary footage.",
+      "Anonymous Gateway token-auth denial supported by exact helper/source/approvals/result plus unique bounded route/caller/reason/time SEL correlation; no direct SEL-to-tool trace ID."
+    ],
+    "unfinished_cases": [
+      "Sensitive-path read",
+      "Protected-path write",
+      "IMDS execution"
+    ],
+    "pending_continuation": "Prior IMDS execution approval expired unanswered after ten minutes. A later slot was idle with zero events and no submitted prompt. Neither produces a helper execution or metadata-firewall result.",
+    "other_limits": [
+      "Two initial model-only refusals are not server enforcement results.",
+      "Owner configuration remains editable; no immutable enterprise policy floor or restricted human-role RBAC is established.",
+      "No pending-approval PID overlap, independent per-row SEL signature verification or full original collector acceptance is established.",
+      "Original four-turn MCP collector remains incomplete; separate bounded reconciliation and authority reviews support those outcomes.",
+      "Temporary command marker is removed; cleanup does not prove every unrelated historical custom-rule byte.",
+      "Admin health collection, Gateway metrics, SEL evidence and MCP audit are separate scopes."
+    ]
+  },
+  "preservation": {
+    "accepted_native_output_archive_files_matched": 4,
+    "accepted_admin_archive_files_matched": 7,
+    "pre_incorporation_output_files_matched": 4,
+    "original_host_council_files_matched": 58,
+    "unchanged_video_scene_count": 8,
+    "source_media_posters_cues_durations_timing_preserved": true,
+    "all_scene_metadata_equal_except_anonymous_presentation_label": true,
+    "inline_script_count": 2,
+    "inline_scripts_byte_identical": true,
+    "presentation_runtime_and_css_files_unchanged": true,
+    "private_full_collector_sources_remain_ignored": true
+  },
+  "visual_and_browser_validation": {
+    "method": "Read-only inspection of original saved browser screenshots and exact receipt/data bindings; reviewer did not operate live UI.",
+    "independently_viewed_final_full_size_slides": [
+      3,
+      4,
+      11,
+      12,
+      13
+    ],
+    "other_nine_slides_inspected_in_bound_contact_sheet": true,
+    "no_material_clipping_or_overlap": true,
+    "admin_posture_crop_complete_rows": 3,
+    "single_endpoint_box_visible": true,
+    "root_final_browser_pass": true,
+    "prior_browser_playbacks": 8,
+    "prior_chapter_seeks": 25,
+    "carried_forward_basis": "Exact unchanged eight media/cue records and both inline scripts; root separately exercised final auth play/seek, outgoing-slide pause and admin expansion.",
+    "tour": "Nine stops, all19 embedded original image bytes and19 evidence-source hashes match; exact f1246 browser receipt remains valid.",
+    "diagram": "Exact3d9424 standalone diagram preserves one EC2 enclosure; final light/dark screenshots independently viewed, with root focus/reload receipt bound.",
+    "unverified_browser_scope": [
+      "Direct-file playback",
+      "Pagehide/visibility pausing",
+      "Browser print/PDF export",
+      "Mobile layout"
+    ]
+  },
+  "admin_builder_review": {
+    "sha256": "4205168e4d3ed75dbea4a522cb039373d5b4080a2566fad0487674b6969168c2",
+    "verdict": "no_material_findings",
+    "checks": [
+      "Added capture inputs reject absolute/traversal/symlink paths; actual image/source hashes checked; copy escaped.",
+      "Public source additions restricted to scoped reviewed JSON; private collector originals rejected.",
+      "Browser receipt is parsed and compared with rendered bytes before output writes.",
+      "Read-only validate-only run with host capture group and exact host browser receipt reproduced f1246, nine stops/19 images and all static checks."
+    ]
+  },
+  "publication_boundary": {
+    "earlier_integration_scan": {
+      "candidate_union_paths": 287,
+      "candidate_bytes": 29793832,
+      "text_files_scanned": 181,
+      "credential_pattern_matches": 0,
+      "actions_paths": 0
+    },
+    "host_council_five_private_exclusions_ignored_and_untracked": true,
+    "scope": "Pattern scan and council packet review are bounded observations, not a universal secret-free guarantee or final Git-index publication verdict. Root publication reviewer owns the final candidate path/hash scan; this review did not stage or commit."
+  },
+  "operations_performed": [
+    "Read-only source/diff/receipt inspection",
+    "Offline hash/link/embedded-image identity checks",
+    "Read-only admin validate-only rendering",
+    "Local saved screenshot inspection",
+    "Writes restricted to this reviewer directory"
+  ],
+  "operations_not_performed": [
+    "Live UI control",
+    "AWS or SSH operations",
+    "Helper or metadata probe execution",
+    "Native approval actions",
+    "Artifact generation or modification",
+    "Model inference",
+    "Git staging or commit"
+  ]
+}

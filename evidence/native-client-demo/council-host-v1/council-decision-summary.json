@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-09-14T00:44:42.323442+00:00",
+  "candidate": {
+    "name": "host-controls-v1",
+    "html_sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335",
+    "notes_sha256": "b4a9e1c3f2bc83687278ae2ce6fff9726df33a9d46a7ed90565fd19fe58baa9d",
+    "manifest_sha256": "0c3d937e477caf927c8af2e7f82ee501a7cedaba368a9478df2e06efe8c81d2d",
+    "council_receipt_sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11",
+    "slide_count": 14,
+    "clip_count": 8
+  },
+  "reviewers": {
+    "claude": {
+      "response_model_ids": [
+        "claude-opus-5"
+      ],
+      "usage_model_ids": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-5"
+      ],
+      "requested_effort": "xhigh",
+      "effort_verification": "explicit_launch_configuration_only",
+      "exact_png_payloads_observed": 14,
+      "review_sha256": "8b07a39ec00086623caf4ae160c8f0b9d573368590b6aaf5a65f8bb980ec45a7",
+      "verdict": "CHANGES REQUIRED"
+    },
+    "grok": {
+      "response_model_ids": [
+        "grok-4.6"
+      ],
+      "usage_model_ids": [
+        "grok-4.6-build"
+      ],
+      "requested_effort": "xhigh",
+      "effort_verification": "explicit_launch_configuration_only",
+      "exact_png_payloads_observed": 14,
+      "review_sha256": "bc1df5d620c159399462a65e09eae775772d72aacbe59e1dbc988591dcc518e3",
+      "verdict": "CHANGES REQUIRED"
+    }
+  },
+  "packet_unchanged_after_reviews": true,
+  "sources_unchanged_after_reviews": true,
+  "decisions": [
+    {
+      "id": "H1",
+      "support": [
+        "grok",
+        "claude"
+      ],
+      "decision": "Name the three pending host cases on slide4",
+      "change": "Sensitive-path read, protected-path write and IMDS execution. State that no completed IMDS/firewall result is accepted, bounded to the recorded interval.",
+      "reason": "A count and shot-list link disappear as actionable context in a static/printed presentation.",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "H2",
+      "support": [
+        "grok",
+        "claude"
+      ],
+      "decision": "Make the anonymous authentication boundary explicit",
+      "change": "The EC2 helper sends an anonymous loopback request while the Mac session remains authenticated. Label matrix attribution as correlated Gateway-token evidence; retain native_enforcement_verified:false in visible text.",
+      "reason": "HTTP403 alone and the collapsed native output do not explain which identity or enforcer was tested.",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "H3",
+      "support": [
+        "grok",
+        "claude"
+      ],
+      "decision": "Say the command marker rule was temporary and removed",
+      "change": "Add a short slide11 note: temporary demo rule, removed after the take. Keep post-denial summary-inspection coverage explicit.",
+      "reason": "Replay shows the earlier configuration, not a standing current rule.",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "H4",
+      "support": [
+        "grok",
+        "claude"
+      ],
+      "decision": "Repair the posture crop and label configured controls",
+      "change": "Show three complete rows, keep Expand outside the crop, and state that sensitive/protected-path native denials are pending. Name shell Denied Commands separately from the Crew MCP auto_deny_tools hook.",
+      "reason": "Truncation and a clipped extra row harm legibility, while catalog names can be mistaken for executed tests.",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "H5",
+      "support": [
+        "claude"
+      ],
+      "decision": "Balance the two matrix slides and split duplicate notes",
+      "change": "Use4/4 or5/3 rows if it improves spacing; make slide3 andslide4 presenter notes specific to their rows.",
+      "reason": "Current6/2 distribution crowds slide3 and duplicates its notes verbatim.",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "H6",
+      "support": [
+        "grok",
+        "claude"
+      ],
+      "decision": "State the recording timezone",
+      "change": "Label the cover September13,2026 Eastern Time, or use UTC13\u201314September consistently.",
+      "reason": "The command/auth captures cross midnightUTC but remain September13 in America/New_York; the existing date is not intrinsically wrong.",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "H7",
+      "support": [
+        "claude"
+      ],
+      "decision": "Keep the role-attribution limit near the IAM scene",
+      "change": "Use a concise footer: role from instance-profile receipts; no per-request STS identity.",
+      "reason": "This tempers model prose inside the actual recorded poster without changing footage.",
+      "status": "accepted_pending_implementation"
+    },
+    {
+      "id": "H8",
+      "support": [
+        "claude"
+      ],
+      "decision": "Align the Crew-scene footer and missing setup references",
+      "change": "Keep duration/evidence-scope display consistent and make the original incomplete-collector versus completeMCP-journal distinction concise. Add receipt-backed SSH/us-east-1 context to notes if those diagram labels remain.",
+      "reason": "This is a documentation/consistency issue; both reviewers accepted the bounded coreMCP layering.",
+      "status": "accepted_pending_implementation"
+    }
+  ],
+  "root_adopted_decisions": true,
+  "incorporation_complete": false,
+  "post_incorporation_no_ai_slop_complete": false,
+  "limits": [
+    "External council viewed all14 screenshot pixels, finalnotes and concisepublic evidence summary; it did not playvideos, inspect everyframe, visit liveAWS/backend or open fulladmin/diagram artifacts.",
+    "Reviewer evidencecomplete is not deck acceptance; both verdicts require revisions.",
+    "Any changed finaldeckbytes need explicit incorporation/delta review; this council applies only to the bound originalcandidate.",
+    "Command film is post-denial summary inspection. Authfilm is executionapproval to assistantsummary, with separately reviewed two-call source/execute evidence.",
+    "Sensitive-path, protected-write and IMDS outcomes remain unproven in the bounded captured interval.",
+    "Original MCP collector remains incomplete; independently reconciled bounded outcomes and servicejournal checks remain separate."
+  ],
+  "root_adoption_recorded_utc": "2026-09-14T00:45:21.951552+00:00",
+  "incorporation_owner": "/root/native_control_deck",
+  "follow_through": {
+    "deck_worker": "Apply accepted copy/layout changes, then No AI Slop; write new incorporation/editorial receipts only",
+    "root": "Inspect changed browser slides and complete final local review",
+    "external_model_review_of_edited_bytes": false,
+    "additional_model_invocation_required": false
+  }
+}

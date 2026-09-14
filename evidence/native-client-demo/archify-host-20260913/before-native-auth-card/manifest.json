@@ -1,0 +1,92 @@
+[
+  {
+    "source": "kirocrew-native-controls-diagram.architecture.json",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/kirocrew-native-controls-diagram.architecture.json",
+    "bytes": 4909,
+    "sha256": "f89ef8a4560ba1dfff4f59b9fde66971cfa05ce74255bb4872bc8e4d6ee6cf0b"
+  },
+  {
+    "source": "kirocrew-native-controls-diagram.html",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/kirocrew-native-controls-diagram.html",
+    "bytes": 809226,
+    "sha256": "a86ae423c4765b8c93a64a191fa43998593ecbe1b5e0f04c1666e88b17f1745a"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram-static.json",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram-static.json",
+    "bytes": 2209,
+    "sha256": "f57464b528906853da70fb283523cef398f0c5d066b7aed88f687f70e9572973"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/preview-build.json",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/preview-build.json",
+    "bytes": 404,
+    "sha256": "9ccf0811ea6b51e23dc93aa2cdcc8f0609374019e331687c6d88035d2e9df974"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram.png",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram.png",
+    "bytes": 503219,
+    "sha256": "23af4101ef32b4b33415f233c2b87e2082b4185e611c17ed081c91deccfb243e"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/delivery.json",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/delivery.json",
+    "bytes": 719,
+    "sha256": "005aa4ff3ccd9f80a5107d0c7e953775915b2ac5c5d1df1813052600cd09d245"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram.svg",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram.svg",
+    "bytes": 295663,
+    "sha256": "4cafb803d0beb9c06022c91be1b1cd4fed6518b1fd3888c0059e883d825a505a"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+    "bytes": 10595,
+    "sha256": "f359ccea7b8a72414da5f14a6214b3cda467d7dff9f09ccf352837fb9700c646"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/source-bindings.json",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/source-bindings.json",
+    "bytes": 2572,
+    "sha256": "e0831f6a61bd1d1f516abde6bf27fbbfdc192bf42d4b49cf15237299764a9f97"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/render-static.cjs",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/render-static.cjs",
+    "bytes": 3084,
+    "sha256": "71e67b32a7c7cb570a65c09f8535347313bb39d0c6c6a0442be7d9539f729278"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/validation.json",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/validation.json",
+    "bytes": 1926,
+    "sha256": "a9886ce7f5fe1b05f03040681df261e1874be5c4081494fc51e521c87a00685f"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/validation-initial-failure.json",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/validation-initial-failure.json",
+    "bytes": 2056,
+    "sha256": "8e092d5588c5f024a670cf643c71dd5c8375a57e9e35c1cd4b9c5bededebacd3"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/prior-artifacts.json",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/prior-artifacts.json",
+    "bytes": 2406,
+    "sha256": "d5b41cd328e63f0118b6a28a6b854f88fc804e0c9fde8d37909b4176ca45615b"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram-1152x480.png",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram-1152x480.png",
+    "bytes": 61446,
+    "sha256": "56b629e20c07f6aee71acef2a48999ac34ebfcf9594dc7984a19071abdf4d22c"
+  },
+  {
+    "source": "evidence/native-client-demo/archify-host-20260913/validation-repair-1.json",
+    "archive": "evidence/native-client-demo/archify-host-20260913/before-native-auth-card/evidence/native-client-demo/archify-host-20260913/validation-repair-1.json",
+    "bytes": 1169,
+    "sha256": "a63e125827be380a28e1e708fcd453acf29e69d7bd598656ce366814ab4c243b"
+  }
+]

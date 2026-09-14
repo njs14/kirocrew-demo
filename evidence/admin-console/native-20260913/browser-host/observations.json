@@ -1,0 +1,128 @@
+{
+  "stops": [
+    {
+      "number": 1,
+      "brokenImages": 1,
+      "hash": "#host",
+      "heading": [
+        "Locate the execution host"
+      ],
+      "height": 720,
+      "overflow": false,
+      "visibleArticles": 1,
+      "width": 1280
+    },
+    {
+      "number": 2,
+      "brokenImages": 1,
+      "hash": "#posture",
+      "heading": [
+        "Read the configured controls"
+      ],
+      "height": 720,
+      "overflow": false,
+      "visibleArticles": 1,
+      "width": 1280
+    },
+    {
+      "number": 3,
+      "brokenImages": 1,
+      "hash": "#rules",
+      "heading": [
+        "Inspect the command rules"
+      ],
+      "height": 720,
+      "overflow": false,
+      "visibleArticles": 1,
+      "width": 1280
+    },
+    {
+      "number": 4,
+      "brokenImages": 1,
+      "hash": "#approval",
+      "heading": [
+        "Read the active approval mode"
+      ],
+      "height": 720,
+      "overflow": false,
+      "visibleArticles": 1,
+      "width": 1280
+    },
+    {
+      "number": 5,
+      "brokenImages": 1,
+      "hash": "#governance",
+      "heading": [
+        "Check who owns the policy"
+      ],
+      "height": 720,
+      "overflow": false,
+      "visibleArticles": 1,
+      "width": 1280
+    },
+    {
+      "number": 6,
+      "brokenImages": 1,
+      "hash": "#audit",
+      "heading": [
+        "Understand what SEL coverage lists"
+      ],
+      "height": 720,
+      "overflow": false,
+      "visibleArticles": 1,
+      "width": 1280
+    },
+    {
+      "number": 7,
+      "brokenImages": 1,
+      "hash": "#backend",
+      "heading": [
+        "Separate backend choice from sign-in"
+      ],
+      "height": 720,
+      "overflow": false,
+      "visibleArticles": 1,
+      "width": 1280
+    },
+    {
+      "number": 8,
+      "brokenImages": 1,
+      "hash": "#metrics",
+      "heading": [
+        "Read Gateway instrumentation"
+      ],
+      "height": 720,
+      "overflow": false,
+      "visibleArticles": 1,
+      "width": 1280
+    },
+    {
+      "number": 9,
+      "brokenImages": 1,
+      "hash": "#collection",
+      "heading": [
+        "Read client and server health together"
+      ],
+      "height": 720,
+      "overflow": false,
+      "visibleArticles": 1,
+      "width": 1280
+    }
+  ],
+  "final": {
+    "dialogClosed": true,
+    "embeddedImages": 19,
+    "loadedImages": 19,
+    "visibleBrokenImages": 0
+  },
+  "zoom": {
+    "actual": true,
+    "dialogOpen": true,
+    "image": {
+      "naturalHeight": 1324,
+      "naturalWidth": 1555
+    }
+  },
+  "escapeClosed": true,
+  "diagnostic": "Initial all-image warning was the hidden zoom placeholder with no src; all 19 content screenshots load."
+}

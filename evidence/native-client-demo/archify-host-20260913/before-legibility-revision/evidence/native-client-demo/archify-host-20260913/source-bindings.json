@@ -1,0 +1,87 @@
+[
+  {
+    "path": "output/kirocrew-native-controls.html",
+    "bytes": 617949,
+    "sha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e"
+  },
+  {
+    "path": "output/kirocrew-native-controls-notes.md",
+    "bytes": 12450,
+    "sha256": "f0519134f8d9083a830d67a4d395243638e51edf5dfafdb40d315ecfa58f2d1e"
+  },
+  {
+    "path": "docs/NATIVE-CLIENT-DEMO.md",
+    "bytes": 17271,
+    "sha256": "ffb8468cb5ee2a152ba8c55c464dfd4bab7a48eeba7b2f9c830ed83350ad4b87"
+  },
+  {
+    "path": "docs/HOST-CONTROL-SCENARIOS.md",
+    "bytes": 20263,
+    "sha256": "7518ab9b6742de6a08e40f8ce4fb6a9ec89d6d2106f526fdd8df551256887ca7"
+  },
+  {
+    "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+    "bytes": 14113,
+    "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+  },
+  {
+    "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+    "bytes": 2040,
+    "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+  },
+  {
+    "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+    "bytes": 6242,
+    "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
+  },
+  {
+    "path": "evidence/native-client-demo/20260913-ui2/authority-arm-readback.json",
+    "bytes": 7122,
+    "sha256": "9566995b485d6e92c7efa77d6a9870829820a38ccecfb28c359889618ed2e955"
+  },
+  {
+    "path": "evidence/native-client-demo/20260913-ui2/authority-aws-readback.json",
+    "bytes": 2778,
+    "sha256": "e86828024125b1a8ac51c6d53862a19cc5de231038cdbfe2902df58dbdba548c"
+  },
+  {
+    "path": "evidence/native-client-demo/20260913/authenticated.json",
+    "bytes": 482,
+    "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
+  },
+  {
+    "path": "evidence/native-client-demo/20260913/runtime-preflight.json",
+    "bytes": 622,
+    "sha256": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499"
+  },
+  {
+    "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+    "bytes": 8346,
+    "sha256": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7"
+  },
+  {
+    "path": "evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+    "bytes": 8740,
+    "sha256": "88bc23a85ab8db45a0d24ee34f711f46f263245e1a83f4e89c623e21dd9c2455"
+  },
+  {
+    "path": "evidence/native-client-demo/host-20260913-ui3/command-sel-interval.json",
+    "bytes": 4080,
+    "sha256": "1d8828366a71eec12359d233a86182c8f1614e718c869652bea115a101dd828b"
+  },
+  {
+    "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+    "bytes": 4509,
+    "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
+  },
+  {
+    "path": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+    "bytes": 3477,
+    "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204"
+  },
+  {
+    "path": "evidence/native-client-demo/host-20260913-ui3/auth-observations.json",
+    "bytes": 19026,
+    "sha256": "2616eeb2a2ce0c8081bbe49bc55cdb31c3c297819633a10b4cb084b29e72ceed"
+  }
+]

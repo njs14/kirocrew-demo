@@ -1,0 +1,15 @@
+{
+  "applied": false,
+  "backup_created": false,
+  "error": "amendment_failed",
+  "kind": "host_prompt_amendment",
+  "new_sha256": "df1389d82c7335953a9168a9f811bc3358a5ccc2f79c61dd23768edfbbe4dacb",
+  "old_sha256": "fcf983f70a7a37cf698138a3f9cb3be930961685bdeb1961ebe112f7c1283ec3",
+  "only_prompt_changed": true,
+  "probe_executed": false,
+  "recorded_at": "2026-09-14T00:04:15.377913+00:00",
+  "local_apply_source_sha256": "6b761f6aeadca54ad995211785af0a4d4a76177cd0688a62c8916bbf3dc257b5",
+  "proposal_sha256": "95f34685aee5bd3aa8e22dc3deced286ed5fd4bfe518dc26d344719a8ec77c0c",
+  "ssh_returncode": 1,
+  "authorization": "Root inspected exact prompt diff and amendment helper, then authorized prompt-only same-host apply after tests."
+}

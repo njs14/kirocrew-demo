@@ -1,0 +1,324 @@
+{
+  "kind": "host_council_incorporation_baseline",
+  "created_utc": "2026-09-14T00:50:34.279709+00:00",
+  "candidate_html_sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335",
+  "preserved_outputs": [
+    {
+      "source": "output/kirocrew-native-controls.html",
+      "snapshot": "evidence/native-client-demo/council-host-v1/incorporation-baseline/kirocrew-native-controls.html",
+      "bytes": 637689,
+      "sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335"
+    },
+    {
+      "source": "output/kirocrew-native-controls-notes.md",
+      "snapshot": "evidence/native-client-demo/council-host-v1/incorporation-baseline/kirocrew-native-controls-notes.md",
+      "bytes": 24439,
+      "sha256": "b4a9e1c3f2bc83687278ae2ce6fff9726df33a9d46a7ed90565fd19fe58baa9d"
+    },
+    {
+      "source": "output/kirocrew-native-controls-manifest.json",
+      "snapshot": "evidence/native-client-demo/council-host-v1/incorporation-baseline/kirocrew-native-controls-manifest.json",
+      "bytes": 33465,
+      "sha256": "51cc9d04ad9332424d98ee7343e7d66c4ec3bbdb76b6eaf469faedc3e8ef7ff4"
+    },
+    {
+      "source": "output/kirocrew-native-controls-build.json",
+      "snapshot": "evidence/native-client-demo/council-host-v1/incorporation-baseline/kirocrew-native-controls-build.json",
+      "bytes": 31655,
+      "sha256": "ecc7bf48851561444da5b8c5eccb373c7f5eb9567347c149820727ca4369f57e"
+    }
+  ],
+  "preserved_existing_council_files": [
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-launch.json",
+      "bytes": 1893,
+      "sha256": "b5a258e756514fdd70d36704397a87fa0bd6777a17ea3125141f67b9ecd4201e"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-raw.jsonl",
+      "bytes": 8873547,
+      "sha256": "b12148b21d8f86cf6ac558fb438f116f303b49ca25f58ce9d0c64ed2f0f6512b"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-receipt.json",
+      "bytes": 5500,
+      "sha256": "0287289f4cc8f0cbfc872f587c4ec140fed5fa8a4a029ea8751d7ff05b426a44"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-review.md",
+      "bytes": 6332,
+      "sha256": "8b07a39ec00086623caf4ae160c8f0b9d573368590b6aaf5a65f8bb980ec45a7"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "bytes": 12729,
+      "sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-launch.json",
+      "bytes": 2022,
+      "sha256": "7a320b26a8ca407743cb98bed32eb09ed9981fae7bd59a94e9245e681f513b17"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-raw.jsonl",
+      "bytes": 4569015,
+      "sha256": "7d42123b6033f82ef62ab03575b2ee363315122b373d861f87a865404126e974"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-receipt.json",
+      "bytes": 5463,
+      "sha256": "64c83a3efd3880892322b0aa98bb3407a3a04ac7c6c5eb64607174a5e82c35c3"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-review.md",
+      "bytes": 4879,
+      "sha256": "bc1df5d620c159399462a65e09eae775772d72aacbe59e1dbc988591dcc518e3"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/prompt.txt",
+      "bytes": 3332,
+      "sha256": "242e5ccfd594ce86d808e529696617e6e4a3d85a8432a445c2680b327ac5477f"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/prepared.json",
+      "bytes": 3023,
+      "sha256": "f32125823fc623f66fa862a2ebe3756df5ee4e043c745d720d5577533590cb3b"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/capture-binding.json",
+      "bytes": 9663,
+      "sha256": "9cc84397287680c4f45f44f1ddf6987b15d1f5b2f0c5dd7d56d32e05600e5123"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "bytes": 6868,
+      "sha256": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.md",
+      "bytes": 5025,
+      "sha256": "88502951c3ac7a27aa0edd7de4f88f92d59600d92ea2db32e341b7e4808ef85c"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/evidence-summary.draft.md",
+      "bytes": 11297,
+      "sha256": "3ad4915e8e98f0746750960f9d58f37324cb42eefa690e6c186b119eb30a2e32"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/evidence-summary.md",
+      "bytes": 14631,
+      "sha256": "0a77f8cd275f7c48b16b7ea1c00bbd61b99717be3313477b19525c9f3cf7851d"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/final-inputs.json",
+      "bytes": 3711,
+      "sha256": "76cef1dd4adf88bd57c8ed19ea69ef84acce86c028c6e95653e8f4740aa6757e"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/capture-receipt.json",
+      "bytes": 9663,
+      "sha256": "9cc84397287680c4f45f44f1ddf6987b15d1f5b2f0c5dd7d56d32e05600e5123"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/evidence-summary.md",
+      "bytes": 14631,
+      "sha256": "0a77f8cd275f7c48b16b7ea1c00bbd61b99717be3313477b19525c9f3cf7851d"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/manifest.json",
+      "bytes": 2814,
+      "sha256": "0c3d937e477caf927c8af2e7f82ee501a7cedaba368a9478df2e06efe8c81d2d"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/notes.md",
+      "bytes": 24439,
+      "sha256": "b4a9e1c3f2bc83687278ae2ce6fff9726df33a9d46a7ed90565fd19fe58baa9d"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/presentation.html",
+      "bytes": 637689,
+      "sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-1.png",
+      "bytes": 169351,
+      "sha256": "190404d22c19840b91537aa2beb52b20307e7c0ff46d0213aa908db34548a7f4"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-10.png",
+      "bytes": 244401,
+      "sha256": "3cd41127dde31c9437e876f679190e12976d8dc3bd2cb2cb94a0d975dd8d52aa"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-11.png",
+      "bytes": 240133,
+      "sha256": "a7eff9c3e1e4ae3126a5a622672f349c1aee83d4882f9c498d6078b76f85eb8f"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-12.png",
+      "bytes": 280413,
+      "sha256": "5214deb4e8146e40e559875024f93cc63d79002eccc9f386014e26cca678da07"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-13.png",
+      "bytes": 250270,
+      "sha256": "1de6db2ceeddf7f0fd9f529b5a6906a9cf0dd277aeaaf5daad7b193d25f8bae0"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-14.png",
+      "bytes": 241532,
+      "sha256": "0547dd0b2c92d5b9d7648c225db5dba3dbfaed40730d2142b88ea42572b79610"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-2.png",
+      "bytes": 248457,
+      "sha256": "67eacf5427028fa84037b7c2bd4805889eb36e01534e2bcf113a7ba3f0f436f3"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-3.png",
+      "bytes": 227102,
+      "sha256": "8632751f8ba6deeecd2c0b3bcafaf65a04a64b8aa0747a4d4d9e67f28ef4b20e"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-4.png",
+      "bytes": 179474,
+      "sha256": "9444d1839b709eb0b70e204e0d1242c512b935c0c30cc711183f82299f2adeb1"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-5.png",
+      "bytes": 228670,
+      "sha256": "d0e6e0c6451e75ec90fb5cf4b89ae65221b5dc802f50e5f08b2ece2bb2cb1ebc"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-6.png",
+      "bytes": 238160,
+      "sha256": "3eadf56d2f919f49b1fbddf9458e57b463cdad3d0358671aa01f93ab04600f66"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-7.png",
+      "bytes": 236957,
+      "sha256": "9b4ea041e794c4b8cd8c0b33e5fff2c0eb5d1a621e41893b1cf591a6ed7504bc"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-8.png",
+      "bytes": 231695,
+      "sha256": "d02f9a0d1ae6b4c870c0c9ca683fdb1f8f7dc11935043689963f4fa2c91b9411"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet/slide-9.png",
+      "bytes": 220791,
+      "sha256": "dfbd3d70f0b99dfd5d14d37f982594ad7f0e825528e9d660c587d18aab6f1877"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet-archive.json",
+      "bytes": 3344,
+      "sha256": "4f00427fe0cda16bbd845b63f475f656d057eb08f4e0944eacf88d770bfa57f3"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/output-scan.json",
+      "bytes": 5431,
+      "sha256": "950040089c647f524f37f73fb8aec566b4ed6545f098f285324460bff58c1a38"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/publication-provenance.json",
+      "bytes": 2007,
+      "sha256": "9ec09c089575adc722c43160abe13a1038440ba4d25937fbb95ac417d8cd1541"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/publication-provenance.md",
+      "bytes": 960,
+      "sha256": "6eb6e7ab5c4826ae061cc06257f5f4a44b39f4b03f99928a5543329737f7a766"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/receipt-integrity-review.json",
+      "bytes": 2063,
+      "sha256": "a8324dab74dedcdc098d3526eb7d7668812ff47b602565a8428e9fc56fa3a203"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/scope-preparation.json",
+      "bytes": 2755,
+      "sha256": "56c17c9ef8309cfd8198afab6ce8e22723eaf4ee2c598396dbd017d7deda6ab6"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-01.png",
+      "bytes": 169351,
+      "sha256": "190404d22c19840b91537aa2beb52b20307e7c0ff46d0213aa908db34548a7f4"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-02.png",
+      "bytes": 248457,
+      "sha256": "67eacf5427028fa84037b7c2bd4805889eb36e01534e2bcf113a7ba3f0f436f3"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-03.png",
+      "bytes": 227102,
+      "sha256": "8632751f8ba6deeecd2c0b3bcafaf65a04a64b8aa0747a4d4d9e67f28ef4b20e"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-04.png",
+      "bytes": 179474,
+      "sha256": "9444d1839b709eb0b70e204e0d1242c512b935c0c30cc711183f82299f2adeb1"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-05.png",
+      "bytes": 228670,
+      "sha256": "d0e6e0c6451e75ec90fb5cf4b89ae65221b5dc802f50e5f08b2ece2bb2cb1ebc"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-06.png",
+      "bytes": 238160,
+      "sha256": "3eadf56d2f919f49b1fbddf9458e57b463cdad3d0358671aa01f93ab04600f66"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-07.png",
+      "bytes": 236957,
+      "sha256": "9b4ea041e794c4b8cd8c0b33e5fff2c0eb5d1a621e41893b1cf591a6ed7504bc"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-08.png",
+      "bytes": 231695,
+      "sha256": "d02f9a0d1ae6b4c870c0c9ca683fdb1f8f7dc11935043689963f4fa2c91b9411"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-09.png",
+      "bytes": 220791,
+      "sha256": "dfbd3d70f0b99dfd5d14d37f982594ad7f0e825528e9d660c587d18aab6f1877"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-10.png",
+      "bytes": 244401,
+      "sha256": "3cd41127dde31c9437e876f679190e12976d8dc3bd2cb2cb94a0d975dd8d52aa"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-11.png",
+      "bytes": 240133,
+      "sha256": "a7eff9c3e1e4ae3126a5a622672f349c1aee83d4882f9c498d6078b76f85eb8f"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-12.png",
+      "bytes": 280413,
+      "sha256": "5214deb4e8146e40e559875024f93cc63d79002eccc9f386014e26cca678da07"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-13.png",
+      "bytes": 250270,
+      "sha256": "1de6db2ceeddf7f0fd9f529b5a6906a9cf0dd277aeaaf5daad7b193d25f8bae0"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/slides-png/slide-14.png",
+      "bytes": 241532,
+      "sha256": "0547dd0b2c92d5b9d7648c225db5dba3dbfaed40730d2142b88ea42572b79610"
+    }
+  ],
+  "scope": "Byte preservation before the adopted H1-H8 presentation changes. No source candidate, review or dispatch file was modified."
+}

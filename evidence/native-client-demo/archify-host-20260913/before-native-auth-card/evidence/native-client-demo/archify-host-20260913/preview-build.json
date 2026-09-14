@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "edition": "kirocrew-native-controls-diagram.html",
+  "editionSha256": "a86ae423c4765b8c93a64a191fa43998593ecbe1b5e0f04c1666e88b17f1745a",
+  "serveFiles": {
+    "/kirocrew-native-controls-diagram.html": {
+      "path": "kirocrew-native-controls-diagram.html",
+      "bytes": 809226,
+      "sha256": "a86ae423c4765b8c93a64a191fa43998593ecbe1b5e0f04c1666e88b17f1745a"
+    }
+  }
+}

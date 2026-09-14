@@ -46,3 +46,9 @@ evidence/native-client-demo/host-20260913-ui2/receipt.json
 output/admin-console-native-20260913/02-sel-coverage.png
 output/admin-console-native-20260913/04-teardown-rule-coverage.png
 output/admin-console-native-20260913/08-native-crew-denial.png
+# Host council raw streams remain private; published provenance records their hashes.
+evidence/native-client-demo/council-host-v1/candidate/prepared.json
+evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-raw.jsonl
+evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-raw.jsonl
+evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-stderr.txt
+evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-stderr.txt

@@ -1,0 +1,8 @@
+{
+  "assessment": "First attempt produced no preflight receipt; retry omitted the process pseudo-file read.",
+  "failure": "ssh_command_failed",
+  "kind": "read_only_preflight_failure",
+  "native_tools_executed": false,
+  "phase": "unnecessary_proc_status_size_check",
+  "runtime_mutated": false
+}

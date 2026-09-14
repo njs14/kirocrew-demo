@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-14T00:42:38.696998+00:00",
+  "purpose": "Preserve the exact original reviewed candidate; reviewers run only in the outside-HOME temporary packet",
+  "source_packet": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew-native-council-host-controls-v1-0c3d937e477c",
+  "manifest_sha256": "0c3d937e477caf927c8af2e7f82ee501a7cedaba368a9478df2e06efe8c81d2d",
+  "all_archived_bytes_identical": true,
+  "files": [
+    {
+      "file": "capture-receipt.json",
+      "bytes": 9663,
+      "sha256": "9cc84397287680c4f45f44f1ddf6987b15d1f5b2f0c5dd7d56d32e05600e5123"
+    },
+    {
+      "file": "evidence-summary.md",
+      "bytes": 14631,
+      "sha256": "0a77f8cd275f7c48b16b7ea1c00bbd61b99717be3313477b19525c9f3cf7851d"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 2814,
+      "sha256": "0c3d937e477caf927c8af2e7f82ee501a7cedaba368a9478df2e06efe8c81d2d"
+    },
+    {
+      "file": "notes.md",
+      "bytes": 24439,
+      "sha256": "b4a9e1c3f2bc83687278ae2ce6fff9726df33a9d46a7ed90565fd19fe58baa9d"
+    },
+    {
+      "file": "presentation.html",
+      "bytes": 637689,
+      "sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335"
+    },
+    {
+      "file": "slide-1.png",
+      "bytes": 169351,
+      "sha256": "190404d22c19840b91537aa2beb52b20307e7c0ff46d0213aa908db34548a7f4"
+    },
+    {
+      "file": "slide-10.png",
+      "bytes": 244401,
+      "sha256": "3cd41127dde31c9437e876f679190e12976d8dc3bd2cb2cb94a0d975dd8d52aa"
+    },
+    {
+      "file": "slide-11.png",
+      "bytes": 240133,
+      "sha256": "a7eff9c3e1e4ae3126a5a622672f349c1aee83d4882f9c498d6078b76f85eb8f"
+    },
+    {
+      "file": "slide-12.png",
+      "bytes": 280413,
+      "sha256": "5214deb4e8146e40e559875024f93cc63d79002eccc9f386014e26cca678da07"
+    },
+    {
+      "file": "slide-13.png",
+      "bytes": 250270,
+      "sha256": "1de6db2ceeddf7f0fd9f529b5a6906a9cf0dd277aeaaf5daad7b193d25f8bae0"
+    },
+    {
+      "file": "slide-14.png",
+      "bytes": 241532,
+      "sha256": "0547dd0b2c92d5b9d7648c225db5dba3dbfaed40730d2142b88ea42572b79610"
+    },
+    {
+      "file": "slide-2.png",
+      "bytes": 248457,
+      "sha256": "67eacf5427028fa84037b7c2bd4805889eb36e01534e2bcf113a7ba3f0f436f3"
+    },
+    {
+      "file": "slide-3.png",
+      "bytes": 227102,
+      "sha256": "8632751f8ba6deeecd2c0b3bcafaf65a04a64b8aa0747a4d4d9e67f28ef4b20e"
+    },
+    {
+      "file": "slide-4.png",
+      "bytes": 179474,
+      "sha256": "9444d1839b709eb0b70e204e0d1242c512b935c0c30cc711183f82299f2adeb1"
+    },
+    {
+      "file": "slide-5.png",
+      "bytes": 228670,
+      "sha256": "d0e6e0c6451e75ec90fb5cf4b89ae65221b5dc802f50e5f08b2ece2bb2cb1ebc"
+    },
+    {
+      "file": "slide-6.png",
+      "bytes": 238160,
+      "sha256": "3eadf56d2f919f49b1fbddf9458e57b463cdad3d0358671aa01f93ab04600f66"
+    },
+    {
+      "file": "slide-7.png",
+      "bytes": 236957,
+      "sha256": "9b4ea041e794c4b8cd8c0b33e5fff2c0eb5d1a621e41893b1cf591a6ed7504bc"
+    },
+    {
+      "file": "slide-8.png",
+      "bytes": 231695,
+      "sha256": "d02f9a0d1ae6b4c870c0c9ca683fdb1f8f7dc11935043689963f4fa2c91b9411"
+    },
+    {
+      "file": "slide-9.png",
+      "bytes": 220791,
+      "sha256": "dfbd3d70f0b99dfd5d14d37f982594ad7f0e825528e9d660c587d18aab6f1877"
+    }
+  ],
+  "inference_started_by_archive": false
+}

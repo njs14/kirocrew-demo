@@ -1,0 +1,80 @@
+[
+  {
+    "test": "admin-expanded-image",
+    "result": {
+      "height": 1324,
+      "loaded": true,
+      "width": 1555
+    }
+  },
+  {
+    "test": "final-auth-play",
+    "result": [
+      {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.075737
+      }
+    ]
+  },
+  {
+    "test": "final-auth-seek",
+    "result": [
+      {
+        "error": null,
+        "paused": true,
+        "ready": 1,
+        "time": 17
+      }
+    ]
+  },
+  {
+    "test": "final-auth-seek-decoded",
+    "result": [
+      {
+        "error": null,
+        "paused": true,
+        "ready": 4,
+        "time": 17
+      }
+    ]
+  },
+  {
+    "test": "outgoing-slide-pauses",
+    "result": [
+      {
+        "error": null,
+        "paused": true
+      },
+      {
+        "error": null,
+        "paused": true
+      },
+      {
+        "error": null,
+        "paused": true
+      },
+      {
+        "error": null,
+        "paused": true
+      },
+      {
+        "error": null,
+        "paused": true
+      },
+      {
+        "error": null,
+        "paused": true
+      },
+      {
+        "error": null,
+        "paused": true
+      },
+      {
+        "error": null,
+        "paused": true
+      }
+    ]
+  }
+]

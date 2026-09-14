@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-09-13T22:24:15.061555+00:00",
+  "edition": "output/kirocrew-native-controls.html",
+  "editionSha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e",
+  "notes": "output/kirocrew-native-controls-notes.md",
+  "notesSha256": "f0519134f8d9083a830d67a4d395243638e51edf5dfafdb40d315ecfa58f2d1e",
+  "publicManifest": "output/kirocrew-native-controls-manifest.json",
+  "slideCount": 10,
+  "sceneCount": 5,
+  "synthetic": false,
+  "singleEndpointControlBoxCount": 1,
+  "processedManifests": {
+    "output/native-client-clips-20260913/manifest.json": "2683eef05ff8d2a347e8c2494ca15ffe8eb991effeb48fce12b98055cdf3e59e",
+    "output/native-memory-clip-20260913/manifest.json": "3565112184e648433a295349127b60181e80cd6517f67a46604edf66477b127d",
+    "docs/HOST-CONTROL-SCENARIOS.md": "9b5094ccd215128f9a69dc2cbcfdcdb96c34faa0433361cc255a4bbfc8669935",
+    "evidence/admin-console/native-20260913/tour-build.json": "a9f49d568662b158ad87215014cf32010815f01b022ab874725ca5f9cad99627"
+  },
+  "supportingReceipts": [
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "url": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "url": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "url": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "url": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-memory-assignment.json",
+      "url": "evidence/native-client-demo/media-review-memory-assignment.json",
+      "sha256": "68e609282f6cf097fc9ed3f88a1228f4703fee5311a5945cfa98a9dfc78cc167"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913/authenticated.json",
+      "url": "evidence/native-client-demo/20260913/authenticated.json",
+      "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "url": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "sha256": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499"
+    },
+    {
+      "path": "evidence/native-client-demo/poster-review-v2.json",
+      "url": "evidence/native-client-demo/poster-review-v2.json",
+      "sha256": "0489c07e6174363188760877260778e6b47cf72c462d3589224574872885649a"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "url": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "sha256": "8090b4a69f0c4f76021d6cf1c869f352c188aaa61c31382f3b4e0b19f0ea8a6c"
+    },
+    {
+      "path": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "url": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "sha256": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1"
+    }
+  ],
+  "serveFiles": {
+    "/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4": {
+      "path": "output/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+      "bytes": 1136859,
+      "sha256": "3bcd32eab9989b73a1b85845bd1294d02f4a3de6e622808f839b676fa8bc731a"
+    },
+    "/native-client-clips-20260913/native-allowed-read/poster.jpg": {
+      "path": "output/native-client-clips-20260913/native-allowed-read/poster.jpg",
+      "bytes": 200388,
+      "sha256": "132b18bce72c27c560dfdf61d973a0c922de9a8c95994f174e0dbcac1821e98d"
+    },
+    "/native-client-clips-20260913/native-allowed-read/contact-sheet.jpg": {
+      "path": "output/native-client-clips-20260913/native-allowed-read/contact-sheet.jpg",
+      "bytes": 112453,
+      "sha256": "bcb7f08a4a92be535490b37fadd3d03aab78090502f44873212a00e74789bf7a"
+    },
+    "/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4": {
+      "path": "output/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+      "bytes": 1983357,
+      "sha256": "92f089ffc6d408310cda808387c748d187e75daf9d6314d0322b32ba43fe917e"
+    },
+    "/native-client-clips-20260913/native-crew-denial/poster.jpg": {
+      "path": "output/native-client-clips-20260913/native-crew-denial/poster.jpg",
+      "bytes": 227591,
+      "sha256": "d74da469fa069a9672be8d716d36259258b521ba5c7360c165407ccae99fb65a"
+    },
+    "/native-client-clips-20260913/native-crew-denial/contact-sheet.jpg": {
+      "path": "output/native-client-clips-20260913/native-crew-denial/contact-sheet.jpg",
+      "bytes": 148417,
+      "sha256": "c55171f636dd94a2890d2fd020c19fa9ab12d05085b30207f602549e316dc18c"
+    },
+    "/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4": {
+      "path": "output/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+      "bytes": 2047715,
+      "sha256": "9895ac8db2f08902a6086be866676e3e1273373e876d402f21cd788b101fb7a2"
+    },
+    "/native-client-clips-20260913/native-mcp-denial/poster.jpg": {
+      "path": "output/native-client-clips-20260913/native-mcp-denial/poster.jpg",
+      "bytes": 234538,
+      "sha256": "90dac171aeab9b9abf0031ba84b58b4ac37fc24d6114195490a838c6e430511d"
+    },
+    "/native-client-clips-20260913/native-mcp-denial/contact-sheet.jpg": {
+      "path": "output/native-client-clips-20260913/native-mcp-denial/contact-sheet.jpg",
+      "bytes": 155597,
+      "sha256": "7049a091cba27cf307d89249e5fbb3008fa25a7a8656a43827b6c4a07374bf91"
+    },
+    "/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4": {
+      "path": "output/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+      "bytes": 2207810,
+      "sha256": "56c8166490123442d83c89f5694b644898355f53c97649a4275a10d2d676067e"
+    },
+    "/native-client-clips-20260913/native-iam-denial/poster.jpg": {
+      "path": "output/native-client-clips-20260913/native-iam-denial/poster.jpg",
+      "bytes": 205600,
+      "sha256": "a7c77c80e53dd36d7e643cad757755875abe56e6125ff4f2c0e41eec17c5ff9f"
+    },
+    "/native-client-clips-20260913/native-iam-denial/contact-sheet.jpg": {
+      "path": "output/native-client-clips-20260913/native-iam-denial/contact-sheet.jpg",
+      "bytes": 147279,
+      "sha256": "5735ac378d6149c37ea49a97afc6050dc201dc334476085bdcdaa621ce7ff60b"
+    },
+    "/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4": {
+      "path": "output/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+      "bytes": 407034,
+      "sha256": "4ab78129747a1db40c05ed3115969756e70e5e9a122a709beee6c4e0e6d26c19"
+    },
+    "/native-memory-clip-20260913/native-memory-assignment-refusal/poster.jpg": {
+      "path": "output/native-memory-clip-20260913/native-memory-assignment-refusal/poster.jpg",
+      "bytes": 152476,
+      "sha256": "2abf516c8994a53d5a102d4b57c967bff0e2270b7e3b8d82524fae5289ea68fc"
+    },
+    "/native-memory-clip-20260913/native-memory-assignment-refusal/contact-sheet.jpg": {
+      "path": "output/native-memory-clip-20260913/native-memory-assignment-refusal/contact-sheet.jpg",
+      "bytes": 101129,
+      "sha256": "70710b24084c9bef74d647f5aa9653d2b362038649df628b3910029fe18a9c05"
+    },
+    "/evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "bytes": 14113,
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    },
+    "/evidence/native-client-demo/20260913-ui2-reconciled-final/review.json": {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "bytes": 2040,
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+    },
+    "/evidence/native-client-demo/20260913-ui2/authority-attribution-review.json": {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "bytes": 6242,
+      "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
+    },
+    "/evidence/native-client-demo/media-review-mcp-controls.json": {
+      "path": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "bytes": 10273,
+      "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d"
+    },
+    "/evidence/native-client-demo/media-review-memory-assignment.json": {
+      "path": "evidence/native-client-demo/media-review-memory-assignment.json",
+      "bytes": 4551,
+      "sha256": "68e609282f6cf097fc9ed3f88a1228f4703fee5311a5945cfa98a9dfc78cc167"
+    },
+    "/evidence/native-client-demo/20260913/authenticated.json": {
+      "path": "evidence/native-client-demo/20260913/authenticated.json",
+      "bytes": 482,
+      "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
+    },
+    "/evidence/native-client-demo/20260913/runtime-preflight.json": {
+      "path": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "bytes": 622,
+      "sha256": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499"
+    },
+    "/evidence/native-client-demo/poster-review-v2.json": {
+      "path": "evidence/native-client-demo/poster-review-v2.json",
+      "bytes": 14034,
+      "sha256": "0489c07e6174363188760877260778e6b47cf72c462d3589224574872885649a"
+    },
+    "/evidence/native-client-demo/host-20260913/assignment-diagnostic.json": {
+      "path": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "bytes": 2500,
+      "sha256": "8090b4a69f0c4f76021d6cf1c869f352c188aaa61c31382f3b4e0b19f0ea8a6c"
+    },
+    "/evidence/native-client-demo/council-native-v1/council-decision-summary.json": {
+      "path": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "bytes": 5530,
+      "sha256": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1"
+    },
+    "/docs/HOST-CONTROL-SCENARIOS.md": {
+      "path": "docs/HOST-CONTROL-SCENARIOS.md",
+      "bytes": 16905,
+      "sha256": "9b5094ccd215128f9a69dc2cbcfdcdb96c34faa0433361cc255a4bbfc8669935"
+    },
+    "/kirocrew-admin-tour.html": {
+      "path": "output/kirocrew-admin-tour.html",
+      "bytes": 1620826,
+      "sha256": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97"
+    },
+    "/kirocrew-admin-tour.md": {
+      "path": "output/kirocrew-admin-tour.md",
+      "bytes": 13310,
+      "sha256": "57aed2784de1c3ea19a588dd1a525910a5ccd6f283055a0dbf4bb3dd5deca19f"
+    },
+    "/docs/NATIVE-CLIENT-DEMO.md": {
+      "path": "docs/NATIVE-CLIENT-DEMO.md",
+      "bytes": 14780,
+      "sha256": "82a605627290787303b6e7366643529f73d449b70c6e9d09d1e521b33d687391"
+    },
+    "/infrastructure/mcp-enforcement/README.md": {
+      "path": "infrastructure/mcp-enforcement/README.md",
+      "bytes": 11222,
+      "sha256": "68a0c13a955baec04a34e25f382bde6eea1d8701c6fb12a8d356589526b45910"
+    },
+    "/infrastructure/observability/APP-INSTALL.md": {
+      "path": "infrastructure/observability/APP-INSTALL.md",
+      "bytes": 6803,
+      "sha256": "98d682cadc364ec25f98e85cb3709f2b1fc19a13ed792abb3a6efb19c28a907e"
+    },
+    "/evidence/admin-console/browser-receipt.json": {
+      "path": "evidence/admin-console/browser-receipt.json",
+      "bytes": 3664,
+      "sha256": "7ec5239c3cb55087dbab974ab64a3c485fdf6038a4136952a4a933f3dc5cd317"
+    },
+    "/kirocrew-admin-findings.md": {
+      "path": "output/kirocrew-admin-findings.md",
+      "bytes": 7075,
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    },
+    "/evidence/native-client-demo/20260913-ui2/receipt-publication.json": {
+      "path": "evidence/native-client-demo/20260913-ui2/receipt-publication.json",
+      "bytes": 11079,
+      "sha256": "1e81f02d2237afbd0d6394b178def71134a8be79bd50f26b23f79af42983ee2e"
+    },
+    "/admin-console-native-20260913/07-gateway-overview.png": {
+      "path": "output/admin-console-native-20260913/07-gateway-overview.png",
+      "bytes": 74217,
+      "sha256": "d4094b575c6cb8ac5678f050bb894df36f82fe47ff38c659aa52d0376c1967fb"
+    },
+    "/admin-console/02-arm-performance.jpg": {
+      "path": "output/admin-console/02-arm-performance.jpg",
+      "bytes": 51458,
+      "sha256": "368456a4d432f80a3c79ed34117b2bb8b24182cbcdcb917acea7e8308dd891ba"
+    },
+    "/admin-console-native-20260913/01-live-security-posture.png": {
+      "path": "output/admin-console-native-20260913/01-live-security-posture.png",
+      "bytes": 111407,
+      "sha256": "9b0a9a96268e198b8a6c1ebc4b97177fa5348ed10292766f8d71bdb93817d44f"
+    },
+    "/admin-console-native-20260913/03-denied-command-categories.png": {
+      "path": "output/admin-console-native-20260913/03-denied-command-categories.png",
+      "bytes": 107657,
+      "sha256": "318d8ec1d2ec81d30c01676e7441262b1c45522baecb6a2cc721cafb0ddfa57b"
+    },
+    "/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png": {
+      "path": "output/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "bytes": 138288,
+      "sha256": "4ce5b3632c2eb1ca3d769c9acc2f9e38edb74629a9af2dca79090a1cfac92d9e"
+    },
+    "/admin-console-native-20260913/05-approval-duration.png": {
+      "path": "output/admin-console-native-20260913/05-approval-duration.png",
+      "bytes": 88046,
+      "sha256": "0827e2d83fcf36745c9325b6e967bf100678fa1f6536c741da29a79e59fbb71f"
+    },
+    "/admin-console-native-20260913/06-governance-status.png": {
+      "path": "output/admin-console-native-20260913/06-governance-status.png",
+      "bytes": 89720,
+      "sha256": "0963be9afa8c60e73ce18b2e779202529cf88b4261708050fdfd7b1292f468d6"
+    },
+    "/admin-console-native-20260913/02-sel-coverage-viewport.png": {
+      "path": "output/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "bytes": 132207,
+      "sha256": "8f6f13d46a0fe51af91f23bd9ffc3d3fc5276b78f24274ba61c0cc003c3c6e5e"
+    },
+    "/admin-console/07-agent-backend.jpg": {
+      "path": "output/admin-console/07-agent-backend.jpg",
+      "bytes": 82406,
+      "sha256": "35735f35bed62fee253dd3d4d1471acd2ea32c072a4421d6906db0b422e73ccf"
+    },
+    "/admin-console/08-telemetry-controls.jpg": {
+      "path": "output/admin-console/08-telemetry-controls.jpg",
+      "bytes": 70977,
+      "sha256": "16ca6e0c062799f6e7510dce429a9853a515be0f558e7a93e21ca9bfa65a09b1"
+    },
+    "/admin-console-native-20260913/10-native-turn-telemetry.png": {
+      "path": "output/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "bytes": 83630,
+      "sha256": "680e9f08a55db92372b13356f697010fe674532741da467b2b93be9d61fbd8aa"
+    },
+    "/admin-console/11-client-server-telemetry.jpg": {
+      "path": "output/admin-console/11-client-server-telemetry.jpg",
+      "bytes": 78171,
+      "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698"
+    },
+    "/admin-console/12-collection-logs.jpg": {
+      "path": "output/admin-console/12-collection-logs.jpg",
+      "bytes": 81268,
+      "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63"
+    },
+    "/evidence/admin-console/native-20260913/tour-build.json": {
+      "path": "evidence/admin-console/native-20260913/tour-build.json",
+      "bytes": 10343,
+      "sha256": "a9f49d568662b158ad87215014cf32010815f01b022ab874725ca5f9cad99627"
+    },
+    "/output/kirocrew-admin-findings.md": {
+      "path": "output/kirocrew-admin-findings.md",
+      "bytes": 7075,
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    },
+    "/kirocrew-native-controls-notes.md": {
+      "path": "output/kirocrew-native-controls-notes.md",
+      "bytes": 12450,
+      "sha256": "f0519134f8d9083a830d67a4d395243638e51edf5dfafdb40d315ecfa58f2d1e"
+    },
+    "/kirocrew-native-controls-manifest.json": {
+      "path": "output/kirocrew-native-controls-manifest.json",
+      "bytes": 17685,
+      "sha256": "b2cd4b1ff302ac88f6b9291e406d104e569933b34511b9edc395dafa020b11a5"
+    },
+    "/kirocrew-native-controls.html": {
+      "path": "output/kirocrew-native-controls.html",
+      "bytes": 617949,
+      "sha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e"
+    }
+  },
+  "buildInputs": {
+    "scripts/build-native-control-presentation.py": "9e3ddcdd116423291215192e87602da59bbe486fd116da62dc43957becafa1b9",
+    "scripts/build-recorded-demo-presentation.py": "4b271074f028fdcf56f37fdf233eecac83405265efff734c5b20c90f20cd3dfb",
+    "presentation/slides.css": "4fff4b0514279836ad7ed05fe94d08d4996c90ea9555bfa0425b74230753e7ce",
+    "presentation/slide-runtime.js": "a90bfa3c9feb9de983fe91b01b70995424d21c7190f83b357fb702a090c9e2d9",
+    "presentation/demo-player.css": "99ffc46cb25eea7538d3ae84258469bb50f154a8a44b2e28fa39b058cb4c83a8",
+    "presentation/demo-player.js": "7a0768ab1b0da7b71a6f9ba806ee1775fbe2b511f052a6a0337fb76eb1461613"
+  },
+  "checks": {
+    "assetHashes": true,
+    "sceneIdsUnique": true,
+    "chapterBounds": true,
+    "noSyntheticScenes": true,
+    "singleEndpointControlBox": true,
+    "noLiveExecutionCode": true
+  },
+  "reviewScope": "Artifact integrity and visible recorded behavior. Enforcement acceptance and model council apply only through their separate exact-candidate receipts.",
+  "browserReview": "Required separately for this edition hash",
+  "editorialReview": "No AI Slop self-review applied to slide copy and notes"
+}

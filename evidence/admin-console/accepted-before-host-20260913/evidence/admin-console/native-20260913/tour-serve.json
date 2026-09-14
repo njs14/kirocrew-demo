@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-admin-tour-serve",
+  "createdAt": "2026-09-13T22:23:44.404608+00:00",
+  "edition": "output/kirocrew-admin-tour.html",
+  "editionSha256": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97",
+  "sourceBuild": "evidence/admin-console/native-20260913/tour-build.json",
+  "sourceBuildSha256": "a9f49d568662b158ad87215014cf32010815f01b022ab874725ca5f9cad99627",
+  "serveFiles": {
+    "/admin-console-native-20260913/01-live-security-posture.png": {
+      "path": "output/admin-console-native-20260913/01-live-security-posture.png",
+      "bytes": 111407,
+      "sha256": "9b0a9a96268e198b8a6c1ebc4b97177fa5348ed10292766f8d71bdb93817d44f"
+    },
+    "/admin-console-native-20260913/02-sel-coverage-viewport.png": {
+      "path": "output/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "bytes": 132207,
+      "sha256": "8f6f13d46a0fe51af91f23bd9ffc3d3fc5276b78f24274ba61c0cc003c3c6e5e"
+    },
+    "/admin-console-native-20260913/03-denied-command-categories.png": {
+      "path": "output/admin-console-native-20260913/03-denied-command-categories.png",
+      "bytes": 107657,
+      "sha256": "318d8ec1d2ec81d30c01676e7441262b1c45522baecb6a2cc721cafb0ddfa57b"
+    },
+    "/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png": {
+      "path": "output/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "bytes": 138288,
+      "sha256": "4ce5b3632c2eb1ca3d769c9acc2f9e38edb74629a9af2dca79090a1cfac92d9e"
+    },
+    "/admin-console-native-20260913/05-approval-duration.png": {
+      "path": "output/admin-console-native-20260913/05-approval-duration.png",
+      "bytes": 88046,
+      "sha256": "0827e2d83fcf36745c9325b6e967bf100678fa1f6536c741da29a79e59fbb71f"
+    },
+    "/admin-console-native-20260913/06-governance-status.png": {
+      "path": "output/admin-console-native-20260913/06-governance-status.png",
+      "bytes": 89720,
+      "sha256": "0963be9afa8c60e73ce18b2e779202529cf88b4261708050fdfd7b1292f468d6"
+    },
+    "/admin-console-native-20260913/07-gateway-overview.png": {
+      "path": "output/admin-console-native-20260913/07-gateway-overview.png",
+      "bytes": 74217,
+      "sha256": "d4094b575c6cb8ac5678f050bb894df36f82fe47ff38c659aa52d0376c1967fb"
+    },
+    "/admin-console-native-20260913/10-native-turn-telemetry.png": {
+      "path": "output/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "bytes": 83630,
+      "sha256": "680e9f08a55db92372b13356f697010fe674532741da467b2b93be9d61fbd8aa"
+    },
+    "/admin-console/02-arm-performance.jpg": {
+      "path": "output/admin-console/02-arm-performance.jpg",
+      "bytes": 51458,
+      "sha256": "368456a4d432f80a3c79ed34117b2bb8b24182cbcdcb917acea7e8308dd891ba"
+    },
+    "/admin-console/07-agent-backend.jpg": {
+      "path": "output/admin-console/07-agent-backend.jpg",
+      "bytes": 82406,
+      "sha256": "35735f35bed62fee253dd3d4d1471acd2ea32c072a4421d6906db0b422e73ccf"
+    },
+    "/admin-console/08-telemetry-controls.jpg": {
+      "path": "output/admin-console/08-telemetry-controls.jpg",
+      "bytes": 70977,
+      "sha256": "16ca6e0c062799f6e7510dce429a9853a515be0f558e7a93e21ca9bfa65a09b1"
+    },
+    "/admin-console/11-client-server-telemetry.jpg": {
+      "path": "output/admin-console/11-client-server-telemetry.jpg",
+      "bytes": 78171,
+      "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698"
+    },
+    "/admin-console/12-collection-logs.jpg": {
+      "path": "output/admin-console/12-collection-logs.jpg",
+      "bytes": 81268,
+      "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63"
+    },
+    "/docs/NATIVE-CLIENT-DEMO.md": {
+      "path": "docs/NATIVE-CLIENT-DEMO.md",
+      "bytes": 14780,
+      "sha256": "82a605627290787303b6e7366643529f73d449b70c6e9d09d1e521b33d687391"
+    },
+    "/evidence/admin-console/browser-receipt.json": {
+      "path": "evidence/admin-console/browser-receipt.json",
+      "bytes": 3664,
+      "sha256": "7ec5239c3cb55087dbab974ab64a3c485fdf6038a4136952a4a933f3dc5cd317"
+    },
+    "/evidence/admin-console/native-20260913/tour-build.json": {
+      "path": "evidence/admin-console/native-20260913/tour-build.json",
+      "bytes": 10343,
+      "sha256": "a9f49d568662b158ad87215014cf32010815f01b022ab874725ca5f9cad99627"
+    },
+    "/evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "bytes": 14113,
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    },
+    "/evidence/native-client-demo/20260913-ui2-reconciled-final/review.json": {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "bytes": 2040,
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+    },
+    "/evidence/native-client-demo/20260913-ui2/authority-attribution-review.json": {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "bytes": 6242,
+      "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
+    },
+    "/evidence/native-client-demo/20260913-ui2/receipt-publication.json": {
+      "path": "evidence/native-client-demo/20260913-ui2/receipt-publication.json",
+      "bytes": 11079,
+      "sha256": "1e81f02d2237afbd0d6394b178def71134a8be79bd50f26b23f79af42983ee2e"
+    },
+    "/evidence/native-client-demo/20260913/authenticated.json": {
+      "path": "evidence/native-client-demo/20260913/authenticated.json",
+      "bytes": 482,
+      "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
+    },
+    "/evidence/native-client-demo/media-review-mcp-controls.json": {
+      "path": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "bytes": 10273,
+      "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d"
+    },
+    "/infrastructure/mcp-enforcement/README.md": {
+      "path": "infrastructure/mcp-enforcement/README.md",
+      "bytes": 11222,
+      "sha256": "68a0c13a955baec04a34e25f382bde6eea1d8701c6fb12a8d356589526b45910"
+    },
+    "/infrastructure/observability/APP-INSTALL.md": {
+      "path": "infrastructure/observability/APP-INSTALL.md",
+      "bytes": 6803,
+      "sha256": "98d682cadc364ec25f98e85cb3709f2b1fc19a13ed792abb3a6efb19c28a907e"
+    },
+    "/kirocrew-admin-findings.md": {
+      "path": "output/kirocrew-admin-findings.md",
+      "bytes": 7075,
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    },
+    "/kirocrew-admin-tour.html": {
+      "path": "output/kirocrew-admin-tour.html",
+      "bytes": 1620826,
+      "sha256": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97"
+    },
+    "/kirocrew-admin-tour.md": {
+      "path": "output/kirocrew-admin-tour.md",
+      "bytes": 13310,
+      "sha256": "57aed2784de1c3ea19a588dd1a525910a5ccd6f283055a0dbf4bb3dd5deca19f"
+    },
+    "/output/admin-console-native-20260913/01-live-security-posture.png": {
+      "path": "output/admin-console-native-20260913/01-live-security-posture.png",
+      "bytes": 111407,
+      "sha256": "9b0a9a96268e198b8a6c1ebc4b97177fa5348ed10292766f8d71bdb93817d44f"
+    },
+    "/output/admin-console-native-20260913/02-sel-coverage-viewport.png": {
+      "path": "output/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "bytes": 132207,
+      "sha256": "8f6f13d46a0fe51af91f23bd9ffc3d3fc5276b78f24274ba61c0cc003c3c6e5e"
+    },
+    "/output/admin-console-native-20260913/03-denied-command-categories.png": {
+      "path": "output/admin-console-native-20260913/03-denied-command-categories.png",
+      "bytes": 107657,
+      "sha256": "318d8ec1d2ec81d30c01676e7441262b1c45522baecb6a2cc721cafb0ddfa57b"
+    },
+    "/output/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png": {
+      "path": "output/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "bytes": 138288,
+      "sha256": "4ce5b3632c2eb1ca3d769c9acc2f9e38edb74629a9af2dca79090a1cfac92d9e"
+    },
+    "/output/admin-console-native-20260913/05-approval-duration.png": {
+      "path": "output/admin-console-native-20260913/05-approval-duration.png",
+      "bytes": 88046,
+      "sha256": "0827e2d83fcf36745c9325b6e967bf100678fa1f6536c741da29a79e59fbb71f"
+    },
+    "/output/admin-console-native-20260913/06-governance-status.png": {
+      "path": "output/admin-console-native-20260913/06-governance-status.png",
+      "bytes": 89720,
+      "sha256": "0963be9afa8c60e73ce18b2e779202529cf88b4261708050fdfd7b1292f468d6"
+    },
+    "/output/admin-console-native-20260913/07-gateway-overview.png": {
+      "path": "output/admin-console-native-20260913/07-gateway-overview.png",
+      "bytes": 74217,
+      "sha256": "d4094b575c6cb8ac5678f050bb894df36f82fe47ff38c659aa52d0376c1967fb"
+    },
+    "/output/admin-console-native-20260913/10-native-turn-telemetry.png": {
+      "path": "output/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "bytes": 83630,
+      "sha256": "680e9f08a55db92372b13356f697010fe674532741da467b2b93be9d61fbd8aa"
+    },
+    "/output/admin-console/02-arm-performance.jpg": {
+      "path": "output/admin-console/02-arm-performance.jpg",
+      "bytes": 51458,
+      "sha256": "368456a4d432f80a3c79ed34117b2bb8b24182cbcdcb917acea7e8308dd891ba"
+    },
+    "/output/admin-console/07-agent-backend.jpg": {
+      "path": "output/admin-console/07-agent-backend.jpg",
+      "bytes": 82406,
+      "sha256": "35735f35bed62fee253dd3d4d1471acd2ea32c072a4421d6906db0b422e73ccf"
+    },
+    "/output/admin-console/08-telemetry-controls.jpg": {
+      "path": "output/admin-console/08-telemetry-controls.jpg",
+      "bytes": 70977,
+      "sha256": "16ca6e0c062799f6e7510dce429a9853a515be0f558e7a93e21ca9bfa65a09b1"
+    },
+    "/output/admin-console/11-client-server-telemetry.jpg": {
+      "path": "output/admin-console/11-client-server-telemetry.jpg",
+      "bytes": 78171,
+      "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698"
+    },
+    "/output/admin-console/12-collection-logs.jpg": {
+      "path": "output/admin-console/12-collection-logs.jpg",
+      "bytes": 81268,
+      "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63"
+    },
+    "/output/kirocrew-admin-findings.md": {
+      "path": "output/kirocrew-admin-findings.md",
+      "bytes": 7075,
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    },
+    "/output/kirocrew-admin-tour.html": {
+      "path": "output/kirocrew-admin-tour.html",
+      "bytes": 1620826,
+      "sha256": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97"
+    },
+    "/output/kirocrew-admin-tour.md": {
+      "path": "output/kirocrew-admin-tour.md",
+      "bytes": 13310,
+      "sha256": "57aed2784de1c3ea19a588dd1a525910a5ccd6f283055a0dbf4bb3dd5deca19f"
+    }
+  },
+  "scope": "Only this tour, directly linked original screenshots, guide documents and scoped outcome evidence. The incomplete collector is linked through its hash-bound publication export. Broad original collector snapshots, raw media and recursive directory serving are excluded.",
+  "excludedCaptures": [
+    "output/admin-console-native-20260913/02-sel-coverage.png",
+    "output/admin-console-native-20260913/04-teardown-rule-coverage.png",
+    "output/admin-console-native-20260913/08-native-crew-denial.png",
+    "output/admin-console-native-20260913/09-native-iam-denial.png",
+    "output/admin-console/09-native-telemetry.jpg"
+  ],
+  "excludedPrivateSources": [
+    "evidence/native-client-demo/20260913-ui2/baseline.json",
+    "evidence/native-client-demo/20260913-ui2/receipt.json",
+    "evidence/native-client-demo/host-20260913-ui1/baseline.json",
+    "evidence/native-client-demo/host-20260913-ui1/receipt.json",
+    "evidence/native-client-demo/host-20260913-ui2/baseline.json",
+    "evidence/native-client-demo/host-20260913-ui2/receipt.json"
+  ]
+}

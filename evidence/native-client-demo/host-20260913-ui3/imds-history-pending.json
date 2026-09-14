@@ -1,0 +1,108 @@
+{
+  "approval_submitted": false,
+  "automatic_acceptance": false,
+  "expected_public_source_sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+  "fixture": "imds",
+  "has_more": false,
+  "kind": "read_only_native_public_fixture_history",
+  "message_count": 8,
+  "native_prompt_submitted": false,
+  "next_before": 0,
+  "observed_at": "2026-09-14T00:12:03.530926+00:00",
+  "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py",
+  "read_only": true,
+  "reader_sha256": "b9f927386563cc00618e8326453a822660203479d8e9b5c2f79d440ba507eb88",
+  "running": true,
+  "selected_native_rows": [
+    {
+      "done": true,
+      "input": {
+        "operations": [
+          {
+            "mode": "Line",
+            "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py"
+          }
+        ]
+      },
+      "kind": "read",
+      "original_input_sha256": "47d833919990dd5ba5446b6c0a429aaf89cf206b0cb44530235038278548e026",
+      "output_sha256": "ada05be541a9c4803ba82c5af6f0627e0877c69255f769a799ad80da713d900c",
+      "request_id": null,
+      "resolved": null,
+      "result_type": "exact_public_helper_source",
+      "role": "tool",
+      "source_sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+      "timestamp": "2026-09-14T00:09:07.646690+00:00",
+      "tool_call_id": "toolu_bdrk_01STvYND7onQ9PV3afmdxw2i"
+    },
+    {
+      "done": null,
+      "input": {
+        "operations": [
+          {
+            "mode": "Line",
+            "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py"
+          }
+        ]
+      },
+      "kind": null,
+      "original_input_sha256": "47d833919990dd5ba5446b6c0a429aaf89cf206b0cb44530235038278548e026",
+      "request_id": "5b095d5c-b89e-429b-9984-dc7b08ea8048",
+      "resolved": "approved",
+      "role": "permission",
+      "timestamp": "2026-09-14T00:09:07.661745+00:00",
+      "tool_call_id": "toolu_bdrk_01STvYND7onQ9PV3afmdxw2i"
+    },
+    {
+      "done": true,
+      "input": {
+        "operations": [
+          {
+            "mode": "Line",
+            "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py"
+          }
+        ]
+      },
+      "kind": "",
+      "original_input_sha256": "47d833919990dd5ba5446b6c0a429aaf89cf206b0cb44530235038278548e026",
+      "output_sha256": "ada05be541a9c4803ba82c5af6f0627e0877c69255f769a799ad80da713d900c",
+      "request_id": null,
+      "resolved": null,
+      "result_type": "exact_public_helper_source",
+      "role": "tool",
+      "source_sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+      "timestamp": "2026-09-14T00:09:19.642689+00:00",
+      "tool_call_id": "toolu_bdrk_01STvYND7onQ9PV3afmdxw2i"
+    },
+    {
+      "done": null,
+      "input": {
+        "command": "/usr/bin/python3 /opt/kirocrew-demo/host-controls/imds-tcp.py"
+      },
+      "kind": "execute",
+      "original_input_sha256": "32a07016121138f51272bf4bcffa3d5d2b8a03639ad8c6913b128634515cfcc4",
+      "request_id": null,
+      "resolved": null,
+      "role": "tool",
+      "timestamp": "2026-09-14T00:09:23.260960+00:00",
+      "tool_call_id": "toolu_bdrk_017SorLLgNg6bszLDro7ypDn"
+    },
+    {
+      "done": null,
+      "input": {
+        "command": "/usr/bin/python3 /opt/kirocrew-demo/host-controls/imds-tcp.py"
+      },
+      "kind": null,
+      "original_input_sha256": "32a07016121138f51272bf4bcffa3d5d2b8a03639ad8c6913b128634515cfcc4",
+      "request_id": "ee23b765-4f4e-4fbf-b47e-10b933c0f69a",
+      "resolved": null,
+      "role": "permission",
+      "timestamp": "2026-09-14T00:09:23.279364+00:00",
+      "tool_call_id": "toolu_bdrk_017SorLLgNg6bszLDro7ypDn"
+    }
+  ],
+  "slot": "chat-7-1789344506",
+  "source_response_sha256": "20428ab42a1b2578257d055c453afe69d18a0a505ed20e9b33763cb4a368e14d",
+  "total": 8,
+  "unrecognized_tool_rows": []
+}

@@ -1,0 +1,121 @@
+{
+  "created_utc": "2026-09-14T00:46:33.689883+00:00",
+  "scope": "Text-pattern scan of council metadata and raw/model outputs; binary screenshot pixels are excluded and this is not an OCR scan",
+  "files": [
+    {
+      "path": "evidence/native-client-demo/council-host-v1/scope-preparation.json",
+      "sha256": "56c17c9ef8309cfd8198afab6ce8e22723eaf4ee2c598396dbd017d7deda6ab6",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/capture-binding.json",
+      "sha256": "9cc84397287680c4f45f44f1ddf6987b15d1f5b2f0c5dd7d56d32e05600e5123",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.md",
+      "sha256": "88502951c3ac7a27aa0edd7de4f88f92d59600d92ea2db32e341b7e4808ef85c",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/publication-provenance.md",
+      "sha256": "6eb6e7ab5c4826ae061cc06257f5f4a44b39f4b03f99928a5543329737f7a766",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/evidence-summary.draft.md",
+      "sha256": "3ad4915e8e98f0746750960f9d58f37324cb42eefa690e6c186b119eb30a2e32",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/receipt-integrity-review.json",
+      "sha256": "a8324dab74dedcdc098d3526eb7d7668812ff47b602565a8428e9fc56fa3a203",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/frozen-packet-archive.json",
+      "sha256": "4f00427fe0cda16bbd845b63f475f656d057eb08f4e0944eacf88d770bfa57f3",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/final-inputs.json",
+      "sha256": "76cef1dd4adf88bd57c8ed19ea69ef84acce86c028c6e95653e8f4740aa6757e",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/publication-provenance.json",
+      "sha256": "9ec09c089575adc722c43160abe13a1038440ba4d25937fbb95ac417d8cd1541",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/evidence-summary.md",
+      "sha256": "0a77f8cd275f7c48b16b7ea1c00bbd61b99717be3313477b19525c9f3cf7851d",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "sha256": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-receipt.json",
+      "sha256": "64c83a3efd3880892322b0aa98bb3407a3a04ac7c6c5eb64607174a5e82c35c3",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-review.md",
+      "sha256": "8b07a39ec00086623caf4ae160c8f0b9d573368590b6aaf5a65f8bb980ec45a7",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/prompt.txt",
+      "sha256": "242e5ccfd594ce86d808e529696617e6e4a3d85a8432a445c2680b327ac5477f",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-raw.jsonl",
+      "sha256": "b12148b21d8f86cf6ac558fb438f116f303b49ca25f58ce9d0c64ed2f0f6512b",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-raw.jsonl",
+      "sha256": "7d42123b6033f82ef62ab03575b2ee363315122b373d861f87a865404126e974",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-launch.json",
+      "sha256": "7a320b26a8ca407743cb98bed32eb09ed9981fae7bd59a94e9245e681f513b17",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-review.md",
+      "sha256": "bc1df5d620c159399462a65e09eae775772d72aacbe59e1dbc988591dcc518e3",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-launch.json",
+      "sha256": "b5a258e756514fdd70d36704397a87fa0bd6777a17ea3125141f67b9ecd4201e",
+      "credential_pattern_matches": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-receipt.json",
+      "sha256": "0287289f4cc8f0cbfc872f587c4ec140fed5fa8a4a029ea8751d7ff05b426a44",
+      "credential_pattern_matches": 0
+    }
+  ]
+}

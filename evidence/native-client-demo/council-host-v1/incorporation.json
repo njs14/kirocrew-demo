@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "kind": "host_council_decision_incorporation",
+  "created_utc": "2026-09-14T01:08:49.628683+00:00",
+  "original_candidate": {
+    "html_sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335",
+    "baseline": {
+      "path": "evidence/native-client-demo/council-host-v1/incorporation-baseline/manifest.json",
+      "bytes": 13611,
+      "sha256": "7ba9158076a8849712fcc4aae2e88ee47e82aa3a5499c703d810f11f8f8a240a"
+    }
+  },
+  "source_decisions": {
+    "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+    "bytes": 6868,
+    "sha256": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30"
+  },
+  "original_external_receipt": {
+    "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+    "bytes": 12729,
+    "sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11"
+  },
+  "outputs": [
+    {
+      "path": "output/kirocrew-native-controls.html",
+      "bytes": 639250,
+      "sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c"
+    },
+    {
+      "path": "output/kirocrew-native-controls-notes.md",
+      "bytes": 25826,
+      "sha256": "415e0f99e8add71613d140907955f2be5a29f7813f6f419fa97fd35bd15df164"
+    },
+    {
+      "path": "output/kirocrew-native-controls-manifest.json",
+      "bytes": 35002,
+      "sha256": "7262516697502200db5122b8ea968c7f9230f92f4e43a8d900b69854deb39dda"
+    },
+    {
+      "path": "output/kirocrew-native-controls-build.json",
+      "bytes": 34634,
+      "sha256": "f01a3d2539a64ec3ca42e3abd72257c2308735650653e9ba8b8265a7f8761248"
+    }
+  ],
+  "builder": {
+    "path": "scripts/build-native-control-presentation.py",
+    "bytes": 79472,
+    "sha256": "048a0b3b79c8f504e1fe64a4210f26ba5a937710dd580143772063184a43a7ef"
+  },
+  "decisions": [
+    {
+      "id": "H1",
+      "slides": [
+        4
+      ],
+      "status": "implemented",
+      "change": "Names all three unfinished tests; states no completed IMDS execution or firewall result; binds the unanswered-approval timeout."
+    },
+    {
+      "id": "H2",
+      "slides": [
+        4,
+        12
+      ],
+      "status": "implemented",
+      "change": "Matrix names correlated Gateway evidence; scene identifies anonymous EC2 loopback helper and authenticated Mac session; visible false helper flag and combined-receipt scope."
+    },
+    {
+      "id": "H3",
+      "slides": [
+        11
+      ],
+      "status": "implemented",
+      "change": "States the temporary marker rule was removed after its take while preserving post-denial summary-only coverage."
+    },
+    {
+      "id": "H4",
+      "slides": [
+        13
+      ],
+      "status": "implemented",
+      "change": "Shows three full configured-coverage rows with separate expansion buttons; identifies unfinished path-denial tests, shell Denied Commands and the Crew MCP auto_deny_tools hook."
+    },
+    {
+      "id": "H5",
+      "slides": [
+        3,
+        4
+      ],
+      "status": "implemented",
+      "change": "Balances maps four/four and gives each page notes specific to its rows."
+    },
+    {
+      "id": "H6",
+      "slides": [
+        1
+      ],
+      "status": "implemented",
+      "change": "Uses September13,2026 Eastern Time (UTC-4), with UTC retained in raw source timestamps."
+    },
+    {
+      "id": "H7",
+      "slides": [
+        8
+      ],
+      "status": "implemented",
+      "change": "Adds instance-profile receipt attribution and the absence of per-request STS identity."
+    },
+    {
+      "id": "H8",
+      "slides": [
+        2,
+        6
+      ],
+      "status": "implemented",
+      "change": "Retains strong bounded MCP reconciliation, distinguishes the original incomplete collector, and adds SSH tunnel/us-east-1 setup context to notes."
+    }
+  ],
+  "post_council_no_ai_slop": {
+    "path": "evidence/native-client-demo/council-host-v1/post-council-no-ai-slop.json",
+    "bytes": 3398,
+    "sha256": "37bc52e51a89a071a7b9fb541c17e65d2a5433404c0c85fc417584b3e40c92b7"
+  },
+  "preservation": {
+    "four_pre_change_outputs_preserved": true,
+    "existing_council_files_checked_unchanged": 58,
+    "all_eight_media_posters_cues_provenance_and_cut_metadata_unchanged": true,
+    "shared_runtime_inputs_unchanged": {
+      "scripts/build-recorded-demo-presentation.py": true,
+      "presentation/slides.css": true,
+      "presentation/slide-runtime.js": true,
+      "presentation/demo-player.css": true,
+      "presentation/demo-player.js": true
+    }
+  },
+  "local_checks": {
+    "slide_count": 14,
+    "scene_count": 8,
+    "matrix_rows": [
+      4,
+      4
+    ],
+    "single_endpoint_control_box": 1,
+    "bound_route_hashes_and_sizes": 89,
+    "supporting_receipt_hashes": 25,
+    "all_H1_H8_static_content_checks_passed": true,
+    "source_compiles": true
+  },
+  "milestone_scope": {
+    "unfinished_cases": [
+      "Sensitive-path read",
+      "Protected-path write",
+      "IMDS execution"
+    ],
+    "imds_status": "Prior execution approval expired unanswered; no helper execution or firewall result observed.",
+    "new_native_success_claims": false,
+    "full_native_acceptance": false
+  },
+  "review_boundary": {
+    "external_model_verdicts_preserved": "Both original verdicts remain CHANGES REQUIRED for the preceding exact candidate.",
+    "external_models_reviewed_these_revised_bytes": false,
+    "incorporation_and_editorial_pass_complete": true,
+    "independent_final_static_review": "Separate exact-candidate review in progress.",
+    "root_browser_delta": "Pending in presentation-host-final/browser; original media/runtime playback can be carried forward only with unchanged hashes."
+  }
+}

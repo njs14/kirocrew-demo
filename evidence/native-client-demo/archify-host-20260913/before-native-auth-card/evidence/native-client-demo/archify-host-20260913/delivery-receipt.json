@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-14T00:09:26.006651+00:00",
+  "kind": "native-evidence-architecture-derivative",
+  "diagram_type": "architecture",
+  "specification": {
+    "path": "kirocrew-native-controls-diagram.architecture.json",
+    "bytes": 4909,
+    "sha256": "f89ef8a4560ba1dfff4f59b9fde66971cfa05ce74255bb4872bc8e4d6ee6cf0b"
+  },
+  "artifact": {
+    "path": "kirocrew-native-controls-diagram.html",
+    "bytes": 809226,
+    "sha256": "a86ae423c4765b8c93a64a191fa43998593ecbe1b5e0f04c1666e88b17f1745a"
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  },
+  "delivery_receipt": {
+    "path": "evidence/native-client-demo/archify-host-20260913/delivery.json",
+    "bytes": 719,
+    "sha256": "005aa4ff3ccd9f80a5107d0c7e953775915b2ac5c5d1df1813052600cd09d245"
+  },
+  "validation_receipt": {
+    "path": "evidence/native-client-demo/archify-host-20260913/validation.json",
+    "bytes": 1926,
+    "sha256": "a9886ce7f5fe1b05f03040681df261e1874be5c4081494fc51e521c87a00685f"
+  },
+  "static_graphics": {
+    "svg": {
+      "path": "evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram.svg",
+      "bytes": 295663,
+      "sha256": "4cafb803d0beb9c06022c91be1b1cd4fed6518b1fd3888c0059e883d825a505a"
+    },
+    "png": {
+      "path": "evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram.png",
+      "bytes": 503219,
+      "sha256": "23af4101ef32b4b33415f233c2b87e2082b4185e611c17ed081c91deccfb243e"
+    },
+    "actualSize": {
+      "path": "evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram-1152x480.png",
+      "bytes": 61446,
+      "sha256": "56b629e20c07f6aee71acef2a48999ac34ebfcf9594dc7984a19071abdf4d22c"
+    }
+  },
+  "static_graphics_receipt": {
+    "path": "evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram-static.json",
+    "bytes": 2209,
+    "sha256": "f57464b528906853da70fb283523cef398f0c5d066b7aed88f687f70e9572973"
+  },
+  "renderer_script": {
+    "path": "evidence/native-client-demo/archify-host-20260913/render-static.cjs",
+    "bytes": 3084,
+    "sha256": "71e67b32a7c7cb570a65c09f8535347313bb39d0c6c6a0442be7d9539f729278"
+  },
+  "browser_evidence": {
+    "status": "not_run",
+    "reason": "Delegated scope forbids UI operations; parent owns browser QA. No automated visual-check or alternate browser/server route used. A previous CUA local-file URL block remains a separate environmental limitation.",
+    "automated_receipt": null,
+    "manual_record": null
+  },
+  "visual_review": {
+    "status": "passed",
+    "scope": "Non-browser light-theme native SVG raster rendering, displayed at 2048×1128 from the 4140×2280 export. Single endpoint enclosure, native MCP path, separate service/role nodes, labels and legend inspected. HTML cards, interactions, dark theme and four-viewport containment remain for parent browser QA.",
+    "reviewer": "image-capable author agent",
+    "correction_rounds": 2,
+    "corrections": [
+      "Diagnosed Crew hook label overlap repaired using labelDy +24.",
+      "Diagnosed filesystem label overlap repaired using labelDy +24."
+    ]
+  },
+  "sources": [
+    {
+      "path": "output/kirocrew-native-controls.html",
+      "bytes": 617949,
+      "sha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e"
+    },
+    {
+      "path": "output/kirocrew-native-controls-notes.md",
+      "bytes": 12450,
+      "sha256": "f0519134f8d9083a830d67a4d395243638e51edf5dfafdb40d315ecfa58f2d1e"
+    },
+    {
+      "path": "docs/NATIVE-CLIENT-DEMO.md",
+      "bytes": 17271,
+      "sha256": "ffb8468cb5ee2a152ba8c55c464dfd4bab7a48eeba7b2f9c830ed83350ad4b87"
+    },
+    {
+      "path": "docs/HOST-CONTROL-SCENARIOS.md",
+      "bytes": 20263,
+      "sha256": "7518ab9b6742de6a08e40f8ce4fb6a9ec89d6d2106f526fdd8df551256887ca7"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "bytes": 14113,
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "bytes": 2040,
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "bytes": 6242,
+      "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-arm-readback.json",
+      "bytes": 7122,
+      "sha256": "9566995b485d6e92c7efa77d6a9870829820a38ccecfb28c359889618ed2e955"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-aws-readback.json",
+      "bytes": 2778,
+      "sha256": "e86828024125b1a8ac51c6d53862a19cc5de231038cdbfe2902df58dbdba548c"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913/authenticated.json",
+      "bytes": 482,
+      "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "bytes": 622,
+      "sha256": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+      "bytes": 8346,
+      "sha256": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+      "bytes": 8740,
+      "sha256": "88bc23a85ab8db45a0d24ee34f711f46f263245e1a83f4e89c623e21dd9c2455"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-sel-interval.json",
+      "bytes": 4080,
+      "sha256": "1d8828366a71eec12359d233a86182c8f1614e718c869652bea115a101dd828b"
+    }
+  ],
+  "prior_artifacts_verified_unchanged": [
+    {
+      "path": "kirocrew-arm-slide.architecture.json",
+      "bytes": 2431,
+      "sha256": "8384bc846d972493c179bba18d69c0f3a9a50eb42a5b17d10462aad427c84e7b"
+    },
+    {
+      "path": "kirocrew-arm-live.architecture.json",
+      "bytes": 4922,
+      "sha256": "bc251957a76f815ccdc5482f6874e543becebe479df7f29be9868a4f36a155e0"
+    },
+    {
+      "path": "kirocrew-arm-observability.architecture.json",
+      "bytes": 4099,
+      "sha256": "7f4f41cacffdee0b147ca42ae4708efb3a56b19f75bb487fe99f6623b6345b6f"
+    },
+    {
+      "path": "kirocrew-arm-observability.html",
+      "bytes": 805591,
+      "sha256": "3709efdab5e2d4bf734d8c02d4beea21b34aad9da21de60c8deb98879d76f5ec"
+    },
+    {
+      "path": "kirocrew-arm-slide.html",
+      "bytes": 797878,
+      "sha256": "30d612a4f2f09f196ba7c35fe1247f11c6fe678fb8df3c45a4294cd7185b4479"
+    },
+    {
+      "path": "kirocrew-arm-live.html",
+      "bytes": 809583,
+      "sha256": "9fc9c2b8b01cc0009150fa94659361d0cba9a23c7bef2c77507d6aaa64160a7c"
+    },
+    {
+      "path": "kirocrew-ec2-live.architecture.json",
+      "bytes": 4718,
+      "sha256": "b0fe61ca2fb257e54e999c0bb031edb2f275e4f13a625257a0a1e6f242d674e9"
+    },
+    {
+      "path": "kirocrew-ec2-slide.architecture.json",
+      "bytes": 2129,
+      "sha256": "1c628b2d6ff8d9f10193cc247e210dbe022f9617a377a993f2a6514840caad50"
+    },
+    {
+      "path": "kirocrew-ec2-slide.visual-check.html",
+      "bytes": 1952,
+      "sha256": "eab790823e2a24c7026cb30ee6bb93857e944b53fb14248c4dc68f2e578a80be"
+    },
+    {
+      "path": "kirocrew-ec2-live.html",
+      "bytes": 809098,
+      "sha256": "4f8547905863a4303ad5117f3d876c11c638eded381f9562a5824f935d9b9fef"
+    },
+    {
+      "path": "kirocrew-ec2-live.visual-check.html",
+      "bytes": 1946,
+      "sha256": "3ec9c0f7586c449e20af2714765e95264267861b86821ada1a725ddf6aba999c"
+    },
+    {
+      "path": "kirocrew-ec2-slide.html",
+      "bytes": 797380,
+      "sha256": "489a1b3f5eaa86299106c33d818ca328d5778d291cd596499ec6920849f969e2"
+    },
+    {
+      "path": "output/kirocrew-native-controls.html",
+      "bytes": 617949,
+      "sha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e"
+    },
+    {
+      "path": "evidence/aws/archify-arm/delivery-receipt.json",
+      "bytes": 13849,
+      "sha256": "78b8961954d44fcb858ab5ebea5271c016a1398f1eac432487f4f6652b5eab80"
+    },
+    {
+      "path": "evidence/aws/archify-arm/council-delivery-receipt.json",
+      "bytes": 13849,
+      "sha256": "78b8961954d44fcb858ab5ebea5271c016a1398f1eac432487f4f6652b5eab80"
+    }
+  ],
+  "parent_owned_inputs_changed": [],
+  "evidence_scope": {
+    "native_path": "Mac approval UI → remote Gateway/original Kiro CLI → MCP → S3 observed for four bounded reviewed MCP turns.",
+    "single_endpoint": "One EC2 enclosure includes Gateway/Kiro CLI, policy and host rules, remote workspace, separately identified MCP service and attached instance-role identity.",
+    "native_mcp_results": [
+      "Allowed S3 fixture read:55 bytes and expected digest.",
+      "Crew hook denied crew_denied before service arrival.",
+      "Fixed MCP tool grant denied before AWS dispatch.",
+      "S3 AccessDenied/403 with matching AWS request ID and authority review."
+    ],
+    "new_host_observations": [
+      "Allowed public workspace fs_read observed; no approval callback was exercised.",
+      "Custom command rule caused native blocked row plus isolated SEL hook_deny."
+    ],
+    "pending_host_scope": [
+      "Anonymous server authentication helper execution and attribution",
+      "Sensitive-path read enforcement",
+      "Protected-path write enforcement",
+      "Native IMDS helper execution/firewall attribution"
+    ],
+    "authority": "Owner privileges; Crew configuration editable; fixed MCP grants under separate UID; IAM evaluates S3 access; no enterprise governance floor or restricted-human-role result.",
+    "limits": [
+      "Original MCP passive collector remains incomplete; final reconciliation recovers four bounded outcomes.",
+      "Crew deny joins an isolated native turn and SEL hook denial, without a direct trace-to-tool-call join.",
+      "No independent per-row SEL signature verification or per-request STS identity was captured.",
+      "No claim that process sampling overlapped an approval wait.",
+      "No blanket full-native-enforcement claim."
+    ]
+  },
+  "ownership": "Only new diagram specification, HTML and dedicated archify-host-20260913 evidence written. Prior ARM/x86 diagrams and receipts, accepted deck, docs, cloud and UI unchanged by this task."
+}

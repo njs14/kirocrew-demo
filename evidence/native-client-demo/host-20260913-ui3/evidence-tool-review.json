@@ -1,0 +1,28 @@
+{
+  "created": "2026-09-14T00:20:15.429544+00:00",
+  "findings_resolved": [
+    "SEL time window must bracket an accepted completed turn.",
+    "All original/refined functional inputs and native operation kinds must agree before named-fixture attribution.",
+    "Redacted inputs retain generic hook observation without exact fixture acceptance.",
+    "Missing tool-call broadcasts with permission/result/blocked evidence remain partial native activity rather than model-only responses."
+  ],
+  "kind": "native_host_evidence_tool_review",
+  "reviewer": "independent passive_collector_review agent",
+  "scope": [
+    "Scripts classify this recorded2026-09-13 fixture run and do not configure runtime defaults.",
+    "Review establishes source and offline evidence-boundary behavior; live observations have separate receipts.",
+    "No original private capture, existing collector/reconciler or earlier accepted evidence was overwritten."
+  ],
+  "source_sha256": {
+    "scripts/analyze-native-host-evidence.py": "9b4b7e1d247537622cc0d808c755348416d69c087219e6f702de99e5902228a9",
+    "scripts/read-native-host-fixture-history.py": "7c9ef2c2b00af4bc461c7903bd3a566767b1f1775ea6d2543811279bb2068500",
+    "scripts/tests/test_native_host_evidence.py": "8f9dc929eb7d58f0a769e6403c44165b0a86edaa85b7b1e37f8300e1720b5596"
+  },
+  "validation": {
+    "command": "python3 -m unittest discover -s scripts/tests -p test_native_host_evidence.py -v",
+    "offline_only": true,
+    "runtime": "Python3.14 stdlib-only tests; aiohttp is needed only for the actual read-only HTTP reader",
+    "tests_passed": 14
+  },
+  "verdict": "pass"
+}

@@ -1,0 +1,93 @@
+{
+  "automatic_acceptance": false,
+  "correlation": "Same native execute tool-call ID across exact persisted input and live result; the unique loopback Token required SEL for the fixed route falls between its approval broadcast and first result broadcast. SEL has no direct tool-call/request trace link.",
+  "created": "2026-09-14T00:16:30.190308+00:00",
+  "exact_native_execute_input": {
+    "command": "/usr/bin/python3 /opt/kirocrew-demo/host-controls/anonymous-http.py"
+  },
+  "execute_approval_received_at": "2026-09-14T00:07:16.725578+00:00",
+  "execute_result_received_at": "2026-09-14T00:07:16.806176+00:00",
+  "first_enforcer": "gateway_token_auth",
+  "kind": "reviewable_native_host_auth_correlation",
+  "limits": [
+    "Source read and helper execution each required a distinct Allow once. This was two native tool calls, not one.",
+    "Temporal/route correlation is bounded evidence; no direct SEL-to-tool trace ID is available.",
+    "The helper discarded response bodies and did not print headers, tokens, cookies or credentials.",
+    "Preparation readback and native source read do not independently prove an immutable host or absence of concurrent privileged changes.",
+    "No process snapshot is claimed to overlap pending approval.",
+    "Standalone configured Gateway authentication is demonstrated; centrally managed immutable policy acceptance remains outside this proof."
+  ],
+  "matching_auth_sel": [
+    {
+      "agent": "",
+      "caller_identity": "127.0.0.1",
+      "downstream_service": "",
+      "entry_hash": "769cd26c20bf672dc504531d7eed63787516b1a4aebe7a455bb83cb91e0f4ead",
+      "error": "Token required",
+      "event_id": "090c2f546320493a",
+      "event_type": "api_access",
+      "metadata": {},
+      "operation": "dashboard.token_auth",
+      "outcome": "denied",
+      "prev_hash": "4fb785b1b1d37c0dae46f66416f73eb3fa6b1e4cb1546f58b88082e515653633",
+      "request_id": "",
+      "resources": "/api/security/posture",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T00:07:16.773503+00:00",
+      "tool_kind": ""
+    }
+  ],
+  "native_approved_request_ids": [
+    "0e6a0e66-62e9-4192-808d-de2f406c676c",
+    "111c83b1-5dde-47f5-9775-d61733fbc89c"
+  ],
+  "native_execute_tool_call_id": "toolu_bdrk_0159BsH9v4wTh4Zrako473xV",
+  "native_helper_result": {
+    "authorization_sent": false,
+    "cookies_sent": false,
+    "elapsed_ms": 3,
+    "http_status": 403,
+    "native_enforcement_verified": false,
+    "probe": "anonymous_gateway_posture",
+    "response_body_read": false
+  },
+  "native_source_read_matches_preflight_sha256": "9e4e087e4ad6dece270695832ea4a37155dea0cbdbbda45a3ea73f3ef284d4b6",
+  "native_source_read_tool_call_id": "toolu_bdrk_01VdSiWnn4TeweZHbmkb41kF",
+  "original_capture_preserved": true,
+  "outcome": "native_anonymous_gateway_auth_denial_observed",
+  "review_status": "pending_independent_review",
+  "sel_recent_page_anchor_retained": true,
+  "slot": "chat-6-1789344355",
+  "source_basis": {
+    "deny_http_status": "dashboard/token_auth.py:3103-3115",
+    "helper_uid_guard": "Native-read exact source checks both os.getuid() and os.geteuid() equal999 before its fixed request. The helper result does not report numeric UID.",
+    "missing_token_branch": "dashboard/token_auth.py:2617-2627",
+    "sel_logging": "dashboard/token_auth.py:3124-3132"
+  },
+  "source_sha256": {
+    "capture_events": {
+      "path": ".build/native-host-auth-20260913-ui1/events.jsonl",
+      "sha256": "dd87756cb5a1567ed5f2c90ee0596ac264b56172790329cf86c4cbabeb74f33c"
+    },
+    "capture_receipt": {
+      "path": ".build/native-host-auth-20260913-ui1/receipt.json",
+      "sha256": "639e652a2db0a7a9f3ef5022e25e97f00932b9cb237005ed59f764654f02c5b4"
+    },
+    "native_observations": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-observations.json",
+      "sha256": "2616eeb2a2ce0c8081bbe49bc55cdb31c3c297819633a10b4cb084b29e72ceed"
+    },
+    "preflight": {
+      "path": "evidence/native-client-demo/host-20260913-resumed/preflight.json",
+      "sha256": "9b00264d8504088ab4e92de6e341ee3e92b0342af7f25ba7c3f08e7b26421ac4"
+    },
+    "public_history": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "sha256": "663302446418b5ec7d52330ecaec42a2ee57ef4598af1e3ef5034990b6398603"
+    },
+    "token_auth_source": {
+      "path": ".build/installed-nightly/kiro_crew/dashboard/token_auth.py",
+      "sha256": "2ce2dd02498a6494edfc604b51436e016c62ada2f2be944499579ce09e822cda"
+    }
+  }
+}

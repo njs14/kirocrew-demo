@@ -1,0 +1,61 @@
+{
+  "base_head": "d6880b65d0c395f7c3427d53909508bf560a1893",
+  "environment": "Local macOS; host tests used mocked operations and temporary files, server tests used an ephemeral loopback fixture. PYTHONDONTWRITEBYTECODE=1.",
+  "execution_role": "independent read-only reviewer",
+  "executor": "/root/native_publication_review/native_publication_readonly",
+  "hashes_rechecked_when_recorded": true,
+  "kind": "final_host_source_tests",
+  "limits": [
+    "No native UI, AWS, SSH, authentication, live demo probe or model council was run.",
+    "This is source/fixture verification, not browser playback or native enforcement acceptance.",
+    "Presentation/admin builders are being revised after council and are outside this exact test receipt. Final artifact/source binding follows the root freeze signal."
+  ],
+  "live_actions": false,
+  "recorded_at": "2026-09-14T00:49:07.160434+00:00",
+  "results": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts/tests -p test_host_controls.py -v",
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "passed": 24
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts/tests -p test_native_publication.py -v",
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "passed": 20
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts/tests -p test_native_host_evidence.py -v",
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "passed": 14
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts/tests -p test_recorded_demo_server.py -v",
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "passed": 6
+    }
+  ],
+  "schema": 1,
+  "scope": "Requested changed host utilities, prompt amendment, scoped publication exporter, native evidence/history reader and local preview server tests.",
+  "source_and_test_sha256": {
+    "infrastructure/host-controls/amend-prompt.py": "cd75e17d7700c57bcdd1ede0425e423767b37d3a6aaabfab8c712b92cbdfbdb1",
+    "infrastructure/host-controls/setup.py": "e3c807ded35eb7045bed411efa88db94e7baf5646276f3a1aeb4646031d792d9",
+    "scripts/analyze-native-host-evidence.py": "9b4b7e1d247537622cc0d808c755348416d69c087219e6f702de99e5902228a9",
+    "scripts/export-native-publication.py": "85799cb5b9c8f02623297698f61c7cfb51a29303185a183e79581d080d47e6a1",
+    "scripts/read-native-host-fixture-history.py": "7c9ef2c2b00af4bc461c7903bd3a566767b1f1775ea6d2543811279bb2068500",
+    "scripts/serve-recorded-demos.py": "3ed2f61d96c23ba4d5ec382d34be2d7f178fe2efb36609a8d413a1c2b7427aaf",
+    "scripts/tests/test_host_controls.py": "c602a22dafd8eda6e795565f0281e60700c6b8a6aa7171f45cb0d8da70fc8a4a",
+    "scripts/tests/test_native_host_evidence.py": "8f9dc929eb7d58f0a769e6403c44165b0a86edaa85b7b1e37f8300e1720b5596",
+    "scripts/tests/test_native_publication.py": "c0491e8cd6603e634bf27218112cd136266ecac95f741b456b41a13eea38b880",
+    "scripts/tests/test_recorded_demo_server.py": "0b7da6d9108a1f01681347146890ed7f433af5ef4d4a063bc762795cb07f2baf"
+  },
+  "status": "passed",
+  "total_passed": 64
+}

@@ -1,20 +1,23 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-09-13T22:24:15.061555+00:00",
+  "builtAt": "2026-09-14T01:05:10.886146+00:00",
   "edition": "output/kirocrew-native-controls.html",
-  "editionSha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e",
+  "editionSha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c",
   "notes": "output/kirocrew-native-controls-notes.md",
-  "notesSha256": "f0519134f8d9083a830d67a4d395243638e51edf5dfafdb40d315ecfa58f2d1e",
+  "notesSha256": "415e0f99e8add71613d140907955f2be5a29f7813f6f419fa97fd35bd15df164",
   "publicManifest": "output/kirocrew-native-controls-manifest.json",
-  "slideCount": 10,
-  "sceneCount": 5,
+  "slideCount": 14,
+  "sceneCount": 8,
   "synthetic": false,
   "singleEndpointControlBoxCount": 1,
   "processedManifests": {
     "output/native-client-clips-20260913/manifest.json": "2683eef05ff8d2a347e8c2494ca15ffe8eb991effeb48fce12b98055cdf3e59e",
     "output/native-memory-clip-20260913/manifest.json": "3565112184e648433a295349127b60181e80cd6517f67a46604edf66477b127d",
-    "docs/HOST-CONTROL-SCENARIOS.md": "9b5094ccd215128f9a69dc2cbcfdcdb96c34faa0433361cc255a4bbfc8669935",
-    "evidence/admin-console/native-20260913/tour-build.json": "a9f49d568662b158ad87215014cf32010815f01b022ab874725ca5f9cad99627"
+    "output/native-host-clips-20260913/manifest.json": "0539ebc7f303cefe42d4fa554aa986d9ff431e4a3448d9dc10447cf9064b2e52",
+    "docs/HOST-CONTROL-SCENARIOS.md": "6d8e0210da6e135ece4d368d3d4891627563b6c4af119cd422e1f94d1d67c9a1",
+    "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json": "a109b7b10371b8bfab24dcca4588dcf2f4a248dcb13eea29346a41f5363b67ec",
+    "kirocrew-native-controls-diagram.html": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb",
+    "evidence/admin-console/native-20260913/tour-build.json": "bb458337d82be7c57700431e8cf7282ec462fbef8b45a8ea1fe7bff9f3cc9f5f"
   },
   "supportingReceipts": [
     {
@@ -66,6 +69,81 @@
       "path": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
       "url": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
       "sha256": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "sha256": "9f757015d7bd9da89c7e694a315c0d73e7004e743f0404cd0cd487d88c742302"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "sha256": "63a86c6d6e8be4e14efe5dbe31962eab4d921c104cf40a1d6bbef770c3a54436"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "url": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "sha256": "663302446418b5ec7d52330ecaec42a2ee57ef4598af1e3ef5034990b6398603"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-host-controls.json",
+      "url": "evidence/native-client-demo/media-review-host-controls.json",
+      "sha256": "bc649485a4d7d99c09d1793837a9977072ac0d63092d1a9cba0e0b85bf8432a2"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "url": "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "sha256": "f1a2e27eba4e90e473a659114773a29db9a4c8bdd4dae24f4a56b8d02bf42f46"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "sha256": "3eae37afdfc7d513f702a336d1e6ce70f07f36209151630b0271f314bfc146e1"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "sha256": "a30dd5e1cb270195a4a36392d647e37b3133dbc83913bf164f694eac9b39fcda"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "sha256": "f05b5336c8d2578089664011b2717997fe3b6888386a8f48fc9ff70107dbddd3"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "url": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "sha256": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "url": "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11"
+    },
+    {
+      "path": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "url": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "sha256": "caeca579dc6c8a82e8799d6274c121af21c46cdc4420935bd0ec31b14a6db01b"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+      "url": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+      "sha256": "3532f590c516fd5fd7aaa937e101fa216b2403e5cfb53ad8cb425f848a1caf83"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+      "url": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+      "sha256": "8437471934f673b0aa312104b99bc84144c6c9293e616b2abb858f68438c25f0"
     }
   ],
   "serveFiles": {
@@ -144,6 +222,51 @@
       "bytes": 101129,
       "sha256": "70710b24084c9bef74d647f5aa9653d2b362038649df628b3910029fe18a9c05"
     },
+    "/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4": {
+      "path": "output/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4",
+      "bytes": 1197687,
+      "sha256": "2a086d947a5530b53d03332698b909c6f40092298da3721bc7e3eeb74940b946"
+    },
+    "/native-host-clips-20260913/native-host-workspace-read/poster.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-workspace-read/poster.jpg",
+      "bytes": 195626,
+      "sha256": "3cb1b2a63da5a12475b733bd8fbc37d788f0bb5d11545ff21b9a6aa6b76f49fd"
+    },
+    "/native-host-clips-20260913/native-host-workspace-read/contact-sheet.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-workspace-read/contact-sheet.jpg",
+      "bytes": 108671,
+      "sha256": "df7f2793848c5e0dab8ae6a2c4a73586d925ec89fe54dbe715a7dfe166713932"
+    },
+    "/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4": {
+      "path": "output/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+      "bytes": 523705,
+      "sha256": "f3156ac900f643e06fbe4309ac563b880e6076250daa690c244bf4ea9b3f85ea"
+    },
+    "/native-host-clips-20260913/native-host-command-denial-summary/poster.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-command-denial-summary/poster.jpg",
+      "bytes": 194096,
+      "sha256": "1ae25cf1b7e924f7476e86bdd922fadfce3711aa888a154f20afc328b2a1e341"
+    },
+    "/native-host-clips-20260913/native-host-command-denial-summary/contact-sheet.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-command-denial-summary/contact-sheet.jpg",
+      "bytes": 121337,
+      "sha256": "b33b410664e7c3781222c4e986a4f49ad9ffcd3380f4bddc6c0a7abc55208820"
+    },
+    "/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4": {
+      "path": "output/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+      "bytes": 2207528,
+      "sha256": "0bc81f03f539f0614fa49a65ae3b27ef53f00bf26f35c7573684652cf1e87ada"
+    },
+    "/native-host-clips-20260913/native-host-anonymous-http403/poster.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-anonymous-http403/poster.jpg",
+      "bytes": 273116,
+      "sha256": "e8afb8f9325657f3af4430cb71f6629d23d06db56af4d7edbc235f163df9e417"
+    },
+    "/native-host-clips-20260913/native-host-anonymous-http403/contact-sheet.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-anonymous-http403/contact-sheet.jpg",
+      "bytes": 182119,
+      "sha256": "5476b424b3838bbd287a4c5fbb81c8619d87960269b008e67d28c6ebcdd7bf98"
+    },
     "/evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": {
       "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
       "bytes": 14113,
@@ -194,25 +317,110 @@
       "bytes": 5530,
       "sha256": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1"
     },
+    "/evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "bytes": 8811,
+      "sha256": "9f757015d7bd9da89c7e694a315c0d73e7004e743f0404cd0cd487d88c742302"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "bytes": 8261,
+      "sha256": "63a86c6d6e8be4e14efe5dbe31962eab4d921c104cf40a1d6bbef770c3a54436"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/auth-correlation.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "bytes": 4509,
+      "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
+    },
+    "/evidence/native-client-demo/host-20260913-review/auth-review.json": {
+      "path": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "bytes": 3477,
+      "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/auth-public-history.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "bytes": 5133,
+      "sha256": "663302446418b5ec7d52330ecaec42a2ee57ef4598af1e3ef5034990b6398603"
+    },
+    "/evidence/native-client-demo/media-review-host-controls.json": {
+      "path": "evidence/native-client-demo/media-review-host-controls.json",
+      "bytes": 12899,
+      "sha256": "bc649485a4d7d99c09d1793837a9977072ac0d63092d1a9cba0e0b85bf8432a2"
+    },
+    "/evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json": {
+      "path": "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "bytes": 8355,
+      "sha256": "f1a2e27eba4e90e473a659114773a29db9a4c8bdd4dae24f4a56b8d02bf42f46"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "bytes": 2060,
+      "sha256": "3eae37afdfc7d513f702a336d1e6ce70f07f36209151630b0271f314bfc146e1"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "bytes": 1619,
+      "sha256": "a30dd5e1cb270195a4a36392d647e37b3133dbc83913bf164f694eac9b39fcda"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "bytes": 2257,
+      "sha256": "f05b5336c8d2578089664011b2717997fe3b6888386a8f48fc9ff70107dbddd3"
+    },
+    "/evidence/native-client-demo/council-host-v1/council-decision-summary.json": {
+      "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "bytes": 6868,
+      "sha256": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30"
+    },
+    "/evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json": {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "bytes": 12729,
+      "sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11"
+    },
+    "/evidence/native-client-demo/archify-host-20260913/delivery-receipt.json": {
+      "path": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "bytes": 20791,
+      "sha256": "caeca579dc6c8a82e8799d6274c121af21c46cdc4420935bd0ec31b14a6db01b"
+    },
+    "/evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+      "bytes": 4206,
+      "sha256": "3532f590c516fd5fd7aaa937e101fa216b2403e5cfb53ad8cb425f848a1caf83"
+    },
+    "/evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+      "bytes": 1539,
+      "sha256": "8437471934f673b0aa312104b99bc84144c6c9293e616b2abb858f68438c25f0"
+    },
     "/docs/HOST-CONTROL-SCENARIOS.md": {
       "path": "docs/HOST-CONTROL-SCENARIOS.md",
-      "bytes": 16905,
-      "sha256": "9b5094ccd215128f9a69dc2cbcfdcdb96c34faa0433361cc255a4bbfc8669935"
+      "bytes": 21906,
+      "sha256": "6d8e0210da6e135ece4d368d3d4891627563b6c4af119cd422e1f94d1d67c9a1"
+    },
+    "/kirocrew-native-controls-diagram.html": {
+      "path": "kirocrew-native-controls-diagram.html",
+      "bytes": 810648,
+      "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb"
+    },
+    "/evidence/native-client-demo/archify-host-20260913/asset-dependencies.json": {
+      "path": "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json",
+      "bytes": 699,
+      "sha256": "a109b7b10371b8bfab24dcca4588dcf2f4a248dcb13eea29346a41f5363b67ec"
     },
     "/kirocrew-admin-tour.html": {
       "path": "output/kirocrew-admin-tour.html",
-      "bytes": 1620826,
-      "sha256": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97"
+      "bytes": 2516369,
+      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87"
     },
     "/kirocrew-admin-tour.md": {
       "path": "output/kirocrew-admin-tour.md",
-      "bytes": 13310,
-      "sha256": "57aed2784de1c3ea19a588dd1a525910a5ccd6f283055a0dbf4bb3dd5deca19f"
+      "bytes": 18384,
+      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108"
     },
     "/docs/NATIVE-CLIENT-DEMO.md": {
       "path": "docs/NATIVE-CLIENT-DEMO.md",
-      "bytes": 14780,
-      "sha256": "82a605627290787303b6e7366643529f73d449b70c6e9d09d1e521b33d687391"
+      "bytes": 21658,
+      "sha256": "92c76b60e2d306156e13e6a84146b7f80c3abab61eda1bf4769bc6a5db036b63"
     },
     "/infrastructure/mcp-enforcement/README.md": {
       "path": "infrastructure/mcp-enforcement/README.md",
@@ -239,6 +447,26 @@
       "bytes": 11079,
       "sha256": "1e81f02d2237afbd0d6394b178def71134a8be79bd50f26b23f79af42983ee2e"
     },
+    "/evidence/native-client-demo/host-20260913-ui3/initial-observations.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+      "bytes": 8346,
+      "sha256": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/command-observations.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+      "bytes": 8740,
+      "sha256": "88bc23a85ab8db45a0d24ee34f711f46f263245e1a83f4e89c623e21dd9c2455"
+    },
+    "/evidence/native-client-demo/host-20260913-review/initial-review.json": {
+      "path": "evidence/native-client-demo/host-20260913-review/initial-review.json",
+      "bytes": 7194,
+      "sha256": "ff855dbecb4bdb852200521040f4d5e523b1f50d7035fb3ec808395f4e3314e9"
+    },
+    "/kirocrew-native-admin-findings.md": {
+      "path": "output/kirocrew-native-admin-findings.md",
+      "bytes": 9214,
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
+    },
     "/admin-console-native-20260913/07-gateway-overview.png": {
       "path": "output/admin-console-native-20260913/07-gateway-overview.png",
       "bytes": 74217,
@@ -263,6 +491,16 @@
       "path": "output/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
       "bytes": 138288,
       "sha256": "4ce5b3632c2eb1ca3d769c9acc2f9e38edb74629a9af2dca79090a1cfac92d9e"
+    },
+    "/admin-console-host-20260913/01-command-rule-active.jpg": {
+      "path": "output/admin-console-host-20260913/01-command-rule-active.jpg",
+      "bytes": 112473,
+      "sha256": "ed8fd2f5e10d6acc5ebec1d2cdbe5b70a86b73201565b18c71b6d1e7aecbdd00"
+    },
+    "/admin-console-host-20260913/02-command-rule-removed.jpg": {
+      "path": "output/admin-console-host-20260913/02-command-rule-removed.jpg",
+      "bytes": 107638,
+      "sha256": "f0994d88918d6f00ceeb6fcb3823905d98e481495016a9a543041efec93e51d3"
     },
     "/admin-console-native-20260913/05-approval-duration.png": {
       "path": "output/admin-console-native-20260913/05-approval-duration.png",
@@ -294,6 +532,16 @@
       "bytes": 83630,
       "sha256": "680e9f08a55db92372b13356f697010fe674532741da467b2b93be9d61fbd8aa"
     },
+    "/admin-console-host-20260913/03-command-turn-metrics.jpg": {
+      "path": "output/admin-console-host-20260913/03-command-turn-metrics.jpg",
+      "bytes": 89769,
+      "sha256": "0daf14b482ab41bc35214d12fce77d07397dd027ddf650f33e82d01bc4357b52"
+    },
+    "/admin-console-host-20260913/04-anonymous-turn-metrics.jpg": {
+      "path": "output/admin-console-host-20260913/04-anonymous-turn-metrics.jpg",
+      "bytes": 89892,
+      "sha256": "5148ca90307b13698a6b91f17689e094b60cfa5e6887b2af1a62cadcfe043705"
+    },
     "/admin-console/11-client-server-telemetry.jpg": {
       "path": "output/admin-console/11-client-server-telemetry.jpg",
       "bytes": 78171,
@@ -304,34 +552,49 @@
       "bytes": 81268,
       "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63"
     },
+    "/admin-console-host-20260913/05-client-server-health.jpg": {
+      "path": "output/admin-console-host-20260913/05-client-server-health.jpg",
+      "bytes": 146893,
+      "sha256": "e9cf198282a847b9e4681c2cd0191e4061d5a17b51fad6f7f753682981e5dded"
+    },
+    "/admin-console-host-20260913/06-server-collection-logs.jpg": {
+      "path": "output/admin-console-host-20260913/06-server-collection-logs.jpg",
+      "bytes": 118292,
+      "sha256": "a24e67be86372e9c76ac4602af6832520c46deea4f587360c929ff7355d40734"
+    },
     "/evidence/admin-console/native-20260913/tour-build.json": {
       "path": "evidence/admin-console/native-20260913/tour-build.json",
-      "bytes": 10343,
-      "sha256": "a9f49d568662b158ad87215014cf32010815f01b022ab874725ca5f9cad99627"
+      "bytes": 15583,
+      "sha256": "bb458337d82be7c57700431e8cf7282ec462fbef8b45a8ea1fe7bff9f3cc9f5f"
     },
     "/output/kirocrew-admin-findings.md": {
       "path": "output/kirocrew-admin-findings.md",
       "bytes": 7075,
       "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
     },
+    "/output/kirocrew-native-admin-findings.md": {
+      "path": "output/kirocrew-native-admin-findings.md",
+      "bytes": 9214,
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
+    },
     "/kirocrew-native-controls-notes.md": {
       "path": "output/kirocrew-native-controls-notes.md",
-      "bytes": 12450,
-      "sha256": "f0519134f8d9083a830d67a4d395243638e51edf5dfafdb40d315ecfa58f2d1e"
+      "bytes": 25826,
+      "sha256": "415e0f99e8add71613d140907955f2be5a29f7813f6f419fa97fd35bd15df164"
     },
     "/kirocrew-native-controls-manifest.json": {
       "path": "output/kirocrew-native-controls-manifest.json",
-      "bytes": 17685,
-      "sha256": "b2cd4b1ff302ac88f6b9291e406d104e569933b34511b9edc395dafa020b11a5"
+      "bytes": 35002,
+      "sha256": "7262516697502200db5122b8ea968c7f9230f92f4e43a8d900b69854deb39dda"
     },
     "/kirocrew-native-controls.html": {
       "path": "output/kirocrew-native-controls.html",
-      "bytes": 617949,
-      "sha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e"
+      "bytes": 639250,
+      "sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c"
     }
   },
   "buildInputs": {
-    "scripts/build-native-control-presentation.py": "9e3ddcdd116423291215192e87602da59bbe486fd116da62dc43957becafa1b9",
+    "scripts/build-native-control-presentation.py": "048a0b3b79c8f504e1fe64a4210f26ba5a937710dd580143772063184a43a7ef",
     "scripts/build-recorded-demo-presentation.py": "4b271074f028fdcf56f37fdf233eecac83405265efff734c5b20c90f20cd3dfb",
     "presentation/slides.css": "4fff4b0514279836ad7ed05fe94d08d4996c90ea9555bfa0425b74230753e7ce",
     "presentation/slide-runtime.js": "a90bfa3c9feb9de983fe91b01b70995424d21c7190f83b357fb702a090c9e2d9",
@@ -348,5 +611,21 @@
   },
   "reviewScope": "Artifact integrity and visible recorded behavior. Enforcement acceptance and model council apply only through their separate exact-candidate receipts.",
   "browserReview": "Required separately for this edition hash",
-  "editorialReview": "No AI Slop self-review applied to slide copy and notes"
+  "editorialReview": "No AI Slop self-review applied to slide copy and notes",
+  "editionParameters": {
+    "pendingControls": [
+      "Sensitive-path read",
+      "Protected-path write",
+      "IMDS execution"
+    ],
+    "limitations": [
+      "The earlier sensitive-path and anonymous-helper attempts ended in model-only responses, with no native tool execution. The later anonymous-helper execution has separate reviewed authentication evidence. Sensitive-path enforcement remains pending.",
+      "The command clip starts after the denial and shows an assistant summary with collapsed tool history. Persisted native history and scoped SEL establish the configured Crew rule as the enforcer; the request-to-denial recording is missing.",
+      "The authentication excerpt starts at execution approval. The earlier source read required its own Allow once. The clip ends with the assistant's HTTP 403 summary; its native Output stays collapsed. Separate exact-input, native-result and Gateway evidence support attribution.",
+      "The IMDS helper's source read completed. Its execution approval expired unanswered after ten minutes; no helper execution or metadata firewall result was observed. The earlier pending-at-observer-expiry receipt remains preserved as a historical snapshot.",
+      "The custom marker-command rule was removed after its take. The recording describes that earlier configuration; replay does not mean the rule remains active. The cleanup receipt verifies the exact marker rule is absent, but does not establish full preservation of every unrelated prior custom rule."
+    ],
+    "recordingCoverageOverrides": {},
+    "diagramBuild": "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json"
+  }
 }

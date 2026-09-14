@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "reviewed_at": "2026-09-14T01:09:49.904299+00:00",
+  "artifact": {
+    "path": "output/kirocrew-native-controls.html",
+    "sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c",
+    "bytes": 639250
+  },
+  "build": {
+    "path": "output/kirocrew-native-controls-build.json",
+    "sha256": "f01a3d2539a64ec3ca42e3abd72257c2308735650653e9ba8b8265a7f8761248",
+    "bytes": 34634
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "method": "Actual CUA in-app browser screenshots, read-only DOM inspection and UI control actions.",
+  "observations": {
+    "path": "evidence/native-client-demo/presentation-host-final/browser/observations.json",
+    "sha256": "5dffa7332086227b4a50dc2a0964e4e4c1d4088abc76932e1332a4f9d87b65c8",
+    "bytes": 3774
+  },
+  "interactions": {
+    "path": "evidence/native-client-demo/presentation-host-final/browser/interaction-observations.json",
+    "sha256": "c70749304b8bed061f6dfa83c2a2b602103bfe6ce1dfbe77eba5f5c6413e90c1",
+    "bytes": 1212
+  },
+  "screenshots": [
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-01.jpg",
+      "sha256": "d7c0c9997aaee93ab9e95c3202dbf5da4f17714b7014f93cfb48032a63496b4a",
+      "bytes": 49357
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-02.jpg",
+      "sha256": "12146293e1c46ab6a209a6ab62cdbc290ac66f7e038acc8d22e4ccc37b06a838",
+      "bytes": 73991
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-03.jpg",
+      "sha256": "f81e3b15be0530e161ed7410b82a09ba72cc2f38aeba0b07b5e16f48a4efc2bb",
+      "bytes": 59845
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-04.jpg",
+      "sha256": "b116c00d22e3572f64f97cf6861bdbb685dcf94d79c6d2affb42909b37e337ff",
+      "bytes": 79056
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-05.jpg",
+      "sha256": "4f4943e83d14707d2b489cefa18c994b6247500f2144c09b21252bf078add2d8",
+      "bytes": 69015
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-06.jpg",
+      "sha256": "94014613977edfffa78f3227ffe08ed5a27f951a10ba03cd6b1bb0dbda7181e9",
+      "bytes": 72758
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-07.jpg",
+      "sha256": "f922c290e01b23880323337a59bad7e0c6ac3af0ca1deb096acc685bb2c3e86f",
+      "bytes": 71157
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-08.jpg",
+      "sha256": "0e1b5d8bf6eca4fda7e6937571cee8add621505b5c0c326fdc3fead68b256907",
+      "bytes": 70343
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-09.jpg",
+      "sha256": "65c976796814623b4d7bd61432e604d994ff27792e0219a6765bfc54163292bc",
+      "bytes": 69614
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-10.jpg",
+      "sha256": "5aa270b03266d45605e6c4ad8ffda93c518511b921d9276420c6d2518dde8729",
+      "bytes": 74987
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-11.jpg",
+      "sha256": "8ac7a7f392d54c972a120ef9a38dd9b1e57b19f32580ccf72629309b200e210c",
+      "bytes": 74847
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-12.jpg",
+      "sha256": "f3ee27d08a149225293700a0037f3acd60dfea8c2aea0564d1439ef34502af90",
+      "bytes": 84877
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-13.jpg",
+      "sha256": "857436f29262d3a910919e1701f2a66afb7364bd9009c5ca10d54a4cdb688ec8",
+      "bytes": 81925
+    },
+    {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/slides/slide-14.jpg",
+      "sha256": "913b163b866f0fd43eff99e02f19b622ca1f962f7638b88833fa6dea0888072d",
+      "bytes": 64057
+    }
+  ],
+  "visual_review": {
+    "all14_slides_inspected": true,
+    "critical_revised_slides_full_size": [
+      3,
+      4,
+      11,
+      12,
+      13
+    ],
+    "other_slides_contact": {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/other-slides-contact.jpg",
+      "sha256": "316edb9133c946866b726d69bd817f731b20c6834c82ccab7ba6ba14ebbd0d59",
+      "bytes": 326934
+    },
+    "no_material_clipping_or_overlap": true,
+    "single_endpoint_box_preserved": true
+  },
+  "playback": {
+    "prior_exact_candidate_review": {
+      "path": "evidence/native-client-demo/presentation-host-candidate/browser/playback-review.json",
+      "sha256": "6223a98783bf28caeba2cea18a0ebec397ff8bbfa440968af380ea6aa7b6cb14",
+      "bytes": 1369
+    },
+    "unchanged_media_and_cues": true,
+    "inline_scripts_unchanged": true,
+    "all8_prior_plays_and25_seeks_carried_forward": true,
+    "final_auth_play_and_decoded_seek": true,
+    "outgoing_slide_pauses_all_videos": true,
+    "admin_full_image_expansion": true,
+    "console_warnings_errors_observed": 0
+  },
+  "passed": true,
+  "limits": [
+    "Direct file playback, pagehide/visibility pausing and browser print/PDF export were not tested in this pass.",
+    "Browser checks validate presentation behavior; enforcement follows separately reviewed native and server evidence.",
+    "Three host executions remain unfinished."
+  ]
+}

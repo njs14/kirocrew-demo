@@ -1,0 +1,26 @@
+[
+  {
+    "original": {
+      "path": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "bytes": 20434,
+      "sha256": "b48461899089cc7e7221f88636db082e58b032b41ee08ba4df1777e1c583cbe8"
+    },
+    "archive": {
+      "path": "evidence/native-client-demo/archify-host-20260913/before-final-native-state-rebind/delivery-receipt.json",
+      "bytes": 20434,
+      "sha256": "b48461899089cc7e7221f88636db082e58b032b41ee08ba4df1777e1c583cbe8"
+    }
+  },
+  {
+    "original": {
+      "path": "evidence/native-client-demo/archify-host-20260913/source-bindings.json",
+      "bytes": 3148,
+      "sha256": "ed95b1dd7dddc15cbb8cf1a8b912e2950f3720a2e7f13b8cf1844c6e16458658"
+    },
+    "archive": {
+      "path": "evidence/native-client-demo/archify-host-20260913/before-final-native-state-rebind/source-bindings.json",
+      "bytes": 3148,
+      "sha256": "ed95b1dd7dddc15cbb8cf1a8b912e2950f3720a2e7f13b8cf1844c6e16458658"
+    }
+  }
+]

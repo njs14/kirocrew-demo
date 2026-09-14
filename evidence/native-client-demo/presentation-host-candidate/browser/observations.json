@@ -1,0 +1,184 @@
+[
+  {
+    "number": 1,
+    "file": "slides/slide-01.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-1",
+    "slideOverflow": false,
+    "title": "Server controlsfor a Mac client",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 2,
+    "file": "slides/slide-02.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-2",
+    "slideOverflow": false,
+    "title": "Execution and host controls stay on EC2",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 3,
+    "file": "slides/slide-03.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-3",
+    "slideOverflow": false,
+    "title": "The control decideswhere the request stops",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 4,
+    "file": "slides/slide-04.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-4",
+    "slideOverflow": false,
+    "title": "The control decideswhere the request stops",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 5,
+    "file": "slides/slide-05.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-5",
+    "slideOverflow": false,
+    "title": "A permitted S3 read",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 6,
+    "file": "slides/slide-06.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-6",
+    "slideOverflow": false,
+    "title": "Crew blocks a tool call",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 7,
+    "file": "slides/slide-07.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-7",
+    "slideOverflow": false,
+    "title": "The MCP service refuses the grant",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 8,
+    "file": "slides/slide-08.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-8",
+    "slideOverflow": false,
+    "title": "AWS refuses the S3 read",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 9,
+    "file": "slides/slide-09.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-9",
+    "slideOverflow": false,
+    "title": "Private memory requires an assigned conversation",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 10,
+    "file": "slides/slide-10.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-10",
+    "slideOverflow": false,
+    "title": "Read the permitted workspace canary",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 11,
+    "file": "slides/slide-11.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-11",
+    "slideOverflow": false,
+    "title": "Inspect the command denial summary",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 12,
+    "file": "slides/slide-12.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-12",
+    "slideOverflow": false,
+    "title": "Approve the helper; read the 403 summary",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 13,
+    "file": "slides/slide-13.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-13",
+    "slideOverflow": false,
+    "title": "Admin settings and logs have different jobs",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "number": 14,
+    "file": "slides/slide-14.jpg",
+    "brokenVisibleImages": 0,
+    "horizontalOverflow": false,
+    "id": "slide-14",
+    "slideOverflow": false,
+    "title": "The recordings and evidence stay together",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    }
+  }
+]

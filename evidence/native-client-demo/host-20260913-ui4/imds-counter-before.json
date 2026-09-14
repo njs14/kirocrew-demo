@@ -1,0 +1,33 @@
+{
+  "guard_service": {
+    "ExecMainStartTimestamp": "Sun 2026-09-13 13:59:18 UTC",
+    "InvocationID": "138f3ff113504c54b19917a431420d0e",
+    "NRestarts": "0"
+  },
+  "matching_rules": [
+    {
+      "bytes": 120,
+      "output_rule_index": 1,
+      "packets": 2,
+      "rule": [
+        "-A",
+        "OUTPUT",
+        "-d",
+        "169.254.169.254/32",
+        "-m",
+        "owner",
+        "--uid-owner",
+        "999",
+        "-j",
+        "REJECT",
+        "--reject-with",
+        "icmp-admin-prohibited"
+      ]
+    }
+  ],
+  "observed_at": "2026-09-14T00:54:56.536627+00:00",
+  "probe_packets_sent": false,
+  "read_only": true,
+  "reader_script_sha256": "0fc82a8720853515f084a15c66a671154d1f15df29f08bceda798084c6927f85",
+  "source_preflight_sha256": "46699bc04d42e3e4572950ba703e1ac0c004e094e209254604b8c31ae52c26ef"
+}

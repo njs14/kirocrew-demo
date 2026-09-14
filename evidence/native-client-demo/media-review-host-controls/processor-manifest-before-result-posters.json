@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "title": "Native client: host controls and permitted read",
+  "generatedAt": "2026-09-14T00:14:04.950789+00:00",
+  "scenes": [
+    {
+      "id": "native-host-workspace-read",
+      "title": "Read the permitted workspace canary",
+      "description": "Submit one bounded fs_read request for the prepared public canary in the server workspace. The native tool returns the canary; the operator expands its Output tab.",
+      "evidenceScope": "Actual macOS native client recording of a permitted host filesystem read, from the composed request through the native tool result. No permission card or approval callback was observed. This establishes the allowed-read baseline, not a host denial.",
+      "recordedAt": "2026-09-13T23:51:02Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Original timing preserved; subsequent assistant-only refusals are outside this cut."
+      },
+      "start": 26.0,
+      "end": 65.0,
+      "duration": 38.988681,
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Request one public canary read",
+          "detail": "The composer contains the complete fs_read request, constrained to the prepared workspace fixture and one tool call."
+        },
+        {
+          "time": 16.0,
+          "label": "The native filesystem tool completes",
+          "detail": "The green fs_read row identifies allowed-canary.txt. The joined native transcript records the single read and exact public canary output."
+        },
+        {
+          "time": 21.0,
+          "label": "Read the returned canary",
+          "detail": "The client reports PUBLIC KIROCREW HOST CONTROL CANARY - NO CREDENTIALS."
+        },
+        {
+          "time": 34.0,
+          "label": "Inspect the actual tool output",
+          "detail": "The expanded Output tab shows the same canary returned by fs_read. No approval card occurred in this attempt."
+        }
+      ],
+      "media": [
+        {
+          "url": "native-host-workspace-read/native-host-workspace-read.mp4",
+          "type": "video/mp4",
+          "bytes": 1197687,
+          "sha256": "2a086d947a5530b53d03332698b909c6f40092298da3721bc7e3eeb74940b946",
+          "duration": 38.988681,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 54.579943799605005,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-host-workspace-read/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 158326,
+        "sha256": "3d1a4a613587932d028068e99bd12a81c0e6ef5ccf541ca74180ba603fd24a5f"
+      },
+      "contactSheet": {
+        "url": "native-host-workspace-read/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 108671,
+        "sha256": "df7f2793848c5e0dab8ae6a2c4a73586d925ec89fe54dbe715a7dfe166713932"
+      },
+      "frames": [
+        {
+          "url": "native-host-workspace-read/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 19213,
+          "sha256": "620604e551f4dd21f484947810b214dc8979a293afce7bd19ab0a0ec908a940d",
+          "time": 1.5595472400000001
+        },
+        {
+          "url": "native-host-workspace-read/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 15287,
+          "sha256": "1b6ce2b50d15335ad95ab210abcefa9c2851ac88d3e25db44d91c17db54a2fa8",
+          "time": 7.7977362
+        },
+        {
+          "url": "native-host-workspace-read/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 15470,
+          "sha256": "b1bb5ed8f17320f7df53d14bb70507daf6473482fba8ea568aae1696ebe69761",
+          "time": 14.81569878
+        },
+        {
+          "url": "native-host-workspace-read/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 20066,
+          "sha256": "f0a4783209de7969241c54c33cb6eb8ad942342582740149f581be2c3cfe831f",
+          "time": 21.83366136
+        },
+        {
+          "url": "native-host-workspace-read/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 20098,
+          "sha256": "596e565ce8481079f2b869a4ce347ed21f59c051735b11dad41e65ef24a3863b",
+          "time": 28.85162394
+        },
+        {
+          "url": "native-host-workspace-read/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 22582,
+          "sha256": "68cde70a4a4f852d2a43b72c19a8370a94725921528dd4dd36fe4120455d69c6",
+          "time": 35.86958652
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "170241703dbf53a4446fdb853d70e3f15f0d2275cbd9cb85226a45b5b59b599c",
+        "sourceDuration": 480.111667,
+        "cut": {
+          "start": 26.0,
+          "end": 65.0
+        },
+        "recordedAt": "2026-09-13T23:51:02Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "native-host-command-denial-summary",
+      "title": "Inspect the command denial summary",
+      "description": "Inspect the completed native conversation containing the exact harmless marker command and the assistant's denial summary. The tool history remains collapsed in this recording.",
+      "evidenceScope": "Result inspection only. The command completed before this recording began; the cut shows the assistant summary, not the attempted action or an expanded blocked-tool row. A separate persisted native history and isolated hook_deny receipt establish the configured Crew command rule as the enforcer.",
+      "recordedAt": "2026-09-14T00:00:31Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous inspection of a completed native conversation after execution. Original timing preserved; the recording gap is explicit."
+      },
+      "start": 48.0,
+      "end": 66.0,
+      "duration": 18.004361,
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Inspect the exact command request",
+          "detail": "The completed conversation shows the harmless marker command in its submitted prompt. Execution took place before recording began."
+        },
+        {
+          "time": 8.0,
+          "label": "Read the denial summary",
+          "detail": "The assistant reports the command was blocked. The tool steps are collapsed here; the separate native blocked row and hook_deny receipt provide attribution."
+        },
+        {
+          "time": 14.0,
+          "label": "Keep the recording gap visible",
+          "detail": "This clip is result inspection, not a recorded request-to-block sequence. No tool expansion or missing action has been reconstructed."
+        }
+      ],
+      "media": [
+        {
+          "url": "native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+          "type": "video/mp4",
+          "bytes": 523705,
+          "sha256": "f3156ac900f643e06fbe4309ac563b880e6076250daa690c244bf4ea9b3f85ea",
+          "duration": 18.004361,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 54.153887252312295,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-host-command-denial-summary/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 192907,
+        "sha256": "a1eecd2dab5ec3b669643214c85d4a054ba1d2fb5b7a585ae4fafe72e82dd3e8"
+      },
+      "contactSheet": {
+        "url": "native-host-command-denial-summary/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 121337,
+        "sha256": "b33b410664e7c3781222c4e986a4f49ad9ffcd3380f4bddc6c0a7abc55208820"
+      },
+      "frames": [
+        {
+          "url": "native-host-command-denial-summary/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 20759,
+          "sha256": "cd4983592a1660f39172b83fc0335c821ca99b0f4cb236289ec434c13ec60485",
+          "time": 0.72017444
+        },
+        {
+          "url": "native-host-command-denial-summary/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 20765,
+          "sha256": "b875f65dcfe68e4c31b91d568bb64fd9b3f8ca41d6d30342654268d4dfadb5b8",
+          "time": 3.6008722
+        },
+        {
+          "url": "native-host-command-denial-summary/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 20810,
+          "sha256": "d80b02fe16fa873832588255a18e110af2852ea8b9ed8ed39c315b9a02ce92b1",
+          "time": 6.8416571799999994
+        },
+        {
+          "url": "native-host-command-denial-summary/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 20802,
+          "sha256": "aa98dd02c03d0f2d5da04f7e23a2a01a31dccaecda47e0b7c4d02d41014d818e",
+          "time": 10.082442160000001
+        },
+        {
+          "url": "native-host-command-denial-summary/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 20801,
+          "sha256": "8c0c75872c0152b2550d47afb5f4590b4ac78bb6accf59611698ac6c945d9136",
+          "time": 13.32322714
+        },
+        {
+          "url": "native-host-command-denial-summary/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 20779,
+          "sha256": "a9f16bcd5109dea6b4aa2b59f9fed9ed7c2f1e9d9d3b81900d84d43be5667ea3",
+          "time": 16.56401212
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "d3ab780e6b297ab966e87c17c618532061046f87f8ee13f5b3bddff1cb0eb15f",
+        "sourceDuration": 420.021667,
+        "cut": {
+          "start": 48.0,
+          "end": 66.0
+        },
+        "recordedAt": "2026-09-14T00:00:31Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "native-host-anonymous-http403",
+      "title": "Approve the helper; observe HTTP 403",
+      "description": "Approve the inspected anonymous loopback helper once, then read the HTTP 403 result returned in the native conversation. The original request and a separate one-time helper-read approval occurred before this excerpt.",
+      "evidenceScope": "Continuous execution-approval-to-result recording in the actual macOS client. The exact helper command is visible, its permission card clears, and the assistant reports HTTP 403 with no authorization header, cookies or response-body read. The actual tool Output remains collapsed. The helper field native_enforcement_verified stays false; gateway attribution requires separate correlated evidence.",
+      "recordedAt": "2026-09-14T00:00:31Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac capture beginning at the execute_bash permission card. Prior request and helper-read approval are outside this cut; original timing retained."
+      },
+      "start": 398.0,
+      "end": 420.0,
+      "duration": 22.00533,
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Inspect the command awaiting approval",
+          "detail": "The native card names the exact anonymous-http.py helper and offers Allow once. The helper was already read under its own one-time approval before this excerpt."
+        },
+        {
+          "time": 9.0,
+          "label": "The approved execution completes",
+          "detail": "The execution card clears and the native conversation starts reporting the result. No persistent trust setting is used."
+        },
+        {
+          "time": 17.0,
+          "label": "Read the HTTP 403 result",
+          "detail": "The reported JSON shows HTTP403, no authorization header or cookies, and no response-body read. Its native_enforcement_verified:false field remains visible; consult correlated evidence for attribution."
+        }
+      ],
+      "media": [
+        {
+          "url": "native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+          "type": "video/mp4",
+          "bytes": 2207528,
+          "sha256": "0bc81f03f539f0614fa49a65ae3b27ef53f00bf26f35c7573684652cf1e87ada",
+          "duration": 22.00533,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 52.48895114218485,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-host-anonymous-http403/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 294735,
+        "sha256": "a6636034493dcb07e25892215f3a8120aca3771ff4adc775d8739c16f15dd884"
+      },
+      "contactSheet": {
+        "url": "native-host-anonymous-http403/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 182119,
+        "sha256": "5476b424b3838bbd287a4c5fbb81c8619d87960269b008e67d28c6ebcdd7bf98"
+      },
+      "frames": [
+        {
+          "url": "native-host-anonymous-http403/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 32064,
+          "sha256": "c513906574d379a0dea145250d02a3646097d5ea67967caf1d9d6b1471793f5f",
+          "time": 0.8802132
+        },
+        {
+          "url": "native-host-anonymous-http403/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 32052,
+          "sha256": "3a7372cee152607300dca9172a61b6402029bc2d01ce164fb185220dad1704fe",
+          "time": 4.401066
+        },
+        {
+          "url": "native-host-anonymous-http403/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 35501,
+          "sha256": "2e1ccdfbaa9c931216309fa10a52b6ad431b3abe7042aa33f34b2a77d034feca",
+          "time": 8.3620254
+        },
+        {
+          "url": "native-host-anonymous-http403/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 29750,
+          "sha256": "0efb89bf353411dce39766cde7af46f5b9e605e155165a876074c814ab6bfa25",
+          "time": 12.322984800000002
+        },
+        {
+          "url": "native-host-anonymous-http403/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 28967,
+          "sha256": "83934525d3528c3a869ef7512e3a44acd20880bd09b86e8439f9c648fc2ea5bb",
+          "time": 16.2839442
+        },
+        {
+          "url": "native-host-anonymous-http403/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 29033,
+          "sha256": "0dcabe04a0d30a5ac5c6f7a5c5c0941df6235b5f0a8d5f6d3d1cfd4274055246",
+          "time": 20.2449036
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "d3ab780e6b297ab966e87c17c618532061046f87f8ee13f5b3bddff1cb0eb15f",
+        "sourceDuration": 420.021667,
+        "cut": {
+          "start": 398.0,
+          "end": 420.0
+        },
+        "recordedAt": "2026-09-14T00:00:31Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    }
+  ],
+  "evidence": []
+}

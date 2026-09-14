@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-native-controls-diagram.architecture.json",
+  "output": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-native-controls-diagram.html",
+  "specification": {
+    "sha256": "f89ef8a4560ba1dfff4f59b9fde66971cfa05ce74255bb4872bc8e4d6ee6cf0b",
+    "bytes": 4909
+  },
+  "artifact": {
+    "sha256": "a86ae423c4765b8c93a64a191fa43998593ecbe1b5e0f04c1666e88b17f1745a",
+    "bytes": 809226
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}

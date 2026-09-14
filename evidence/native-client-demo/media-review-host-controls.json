@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-14T00:29:13.796839+00:00",
+  "reviewType": "native_host_control_media_review",
+  "status": "media_encoded_decoded_and_sampled_frames_reviewed",
+  "enforcementAcceptance": "not_evaluated_by_media_review",
+  "browserPlaybackAndSeek": "pending_root_review",
+  "sources": [
+    {
+      "path": "recordings/native-client-20260913/raw/host-control-take-03.mov",
+      "sha256": "170241703dbf53a4446fdb853d70e3f15f0d2275cbd9cb85226a45b5b59b599c",
+      "durationSeconds": 480.111667,
+      "recordedAt": "2026-09-13T23:51:02Z",
+      "width": 2560,
+      "height": 1720,
+      "audio": false
+    },
+    {
+      "path": "recordings/native-client-20260913/raw/host-control-take-04.mov",
+      "sha256": "d3ab780e6b297ab966e87c17c618532061046f87f8ee13f5b3bddff1cb0eb15f",
+      "durationSeconds": 420.021667,
+      "recordedAt": "2026-09-14T00:00:31Z",
+      "width": 2560,
+      "height": 1720,
+      "audio": false
+    }
+  ],
+  "inputManifest": {
+    "path": "recordings/native-client-20260913/cuts-host-controls.json",
+    "sha256": "8cc92b833181deadc15770af6152b315cf88ae6a46cdfaf14a5f50eabe21ce45",
+    "bytes": 6551
+  },
+  "outputManifest": {
+    "path": "output/native-host-clips-20260913/manifest.json",
+    "sha256": "0539ebc7f303cefe42d4fa554aa986d9ff431e4a3448d9dc10447cf9064b2e52",
+    "bytes": 15500
+  },
+  "processorReceipt": {
+    "path": "output/native-host-clips-20260913/receipt.json",
+    "sha256": "29f0171be73105641e1ce7bc74708f69d464394782783a195e1046873adcdc1b",
+    "bytes": 27943
+  },
+  "posterAndMetadataRevision": {
+    "path": "evidence/native-client-demo/media-review-host-controls/result-poster-and-metadata-revision.json",
+    "sha256": "b2523809ba4a58681e87212ab19671d3bfb54594ae2409feedddf49505e12c8d",
+    "bytes": 8243
+  },
+  "observationReceipts": [
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+      "sha256": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7",
+      "bytes": 8346
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+      "sha256": "88bc23a85ab8db45a0d24ee34f711f46f263245e1a83f4e89c623e21dd9c2455",
+      "bytes": 8740
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "sha256": "663302446418b5ec7d52330ecaec42a2ee57ef4598af1e3ef5034990b6398603",
+      "bytes": 5133
+    }
+  ],
+  "scenes": [
+    {
+      "id": "native-host-workspace-read",
+      "title": "Read the permitted workspace canary",
+      "recordingCoverage": "request_to_result",
+      "outcomeClass": "native_allowed",
+      "start": 26.0,
+      "end": 65.0,
+      "duration": 38.988681,
+      "media": [
+        {
+          "url": "native-host-workspace-read/native-host-workspace-read.mp4",
+          "type": "video/mp4",
+          "bytes": 1197687,
+          "sha256": "2a086d947a5530b53d03332698b909c6f40092298da3721bc7e3eeb74940b946",
+          "duration": 38.988681,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 54.579943799605005,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-host-workspace-read/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 195626,
+        "sha256": "3cb1b2a63da5a12475b733bd8fbc37d788f0bb5d11545ff21b9a6aa6b76f49fd",
+        "time": 34
+      },
+      "contactSheet": {
+        "url": "native-host-workspace-read/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 108671,
+        "sha256": "df7f2793848c5e0dab8ae6a2c4a73586d925ec89fe54dbe715a7dfe166713932"
+      },
+      "provenance": {
+        "sourceSha256": "170241703dbf53a4446fdb853d70e3f15f0d2275cbd9cb85226a45b5b59b599c",
+        "sourceDuration": 480.111667,
+        "cut": {
+          "start": 26.0,
+          "end": 65.0
+        },
+        "recordedAt": "2026-09-13T23:51:02Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "native-host-command-denial-summary",
+      "title": "Inspect the command denial summary",
+      "recordingCoverage": "result_inspection",
+      "outcomeClass": "server_hook_denied",
+      "start": 48.0,
+      "end": 66.0,
+      "duration": 18.004361,
+      "media": [
+        {
+          "url": "native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+          "type": "video/mp4",
+          "bytes": 523705,
+          "sha256": "f3156ac900f643e06fbe4309ac563b880e6076250daa690c244bf4ea9b3f85ea",
+          "duration": 18.004361,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 54.153887252312295,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-host-command-denial-summary/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 194096,
+        "sha256": "1ae25cf1b7e924f7476e86bdd922fadfce3711aa888a154f20afc328b2a1e341",
+        "time": 10
+      },
+      "contactSheet": {
+        "url": "native-host-command-denial-summary/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 121337,
+        "sha256": "b33b410664e7c3781222c4e986a4f49ad9ffcd3380f4bddc6c0a7abc55208820"
+      },
+      "provenance": {
+        "sourceSha256": "d3ab780e6b297ab966e87c17c618532061046f87f8ee13f5b3bddff1cb0eb15f",
+        "sourceDuration": 420.021667,
+        "cut": {
+          "start": 48.0,
+          "end": 66.0
+        },
+        "recordedAt": "2026-09-14T00:00:31Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "native-host-anonymous-http403",
+      "title": "Approve the helper; observe HTTP 403",
+      "recordingCoverage": "approval_to_result",
+      "outcomeClass": "unknown",
+      "start": 398.0,
+      "end": 420.0,
+      "duration": 22.00533,
+      "media": [
+        {
+          "url": "native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+          "type": "video/mp4",
+          "bytes": 2207528,
+          "sha256": "0bc81f03f539f0614fa49a65ae3b27ef53f00bf26f35c7573684652cf1e87ada",
+          "duration": 22.00533,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 52.48895114218485,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-host-anonymous-http403/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 273116,
+        "sha256": "e8afb8f9325657f3af4430cb71f6629d23d06db56af4d7edbc235f163df9e417",
+        "time": 17
+      },
+      "contactSheet": {
+        "url": "native-host-anonymous-http403/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 182119,
+        "sha256": "5476b424b3838bbd287a4c5fbb81c8619d87960269b008e67d28c6ebcdd7bf98"
+      },
+      "provenance": {
+        "sourceSha256": "d3ab780e6b297ab966e87c17c618532061046f87f8ee13f5b3bddff1cb0eb15f",
+        "sourceDuration": 420.021667,
+        "cut": {
+          "start": 398.0,
+          "end": 420.0
+        },
+        "recordedAt": "2026-09-14T00:00:31Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    }
+  ],
+  "encodingChecks": [
+    "source hashes unchanged",
+    "manifest hash unchanged",
+    "script hash unchanged",
+    "cuts and cues bounded by source",
+    "all media fully decoded",
+    "MP4 H.264 yuv420p faststart",
+    "no retiming or padding",
+    "local receipt files copied and source hashes unchanged"
+  ],
+  "visualReview": {
+    "method": "Full-source take03/take04 contact sheets at 15-second samples; selected full-size source transition frames; six-sample contact sheet for every processed clip; own-result posters at the original 1920-pixel encoded width. An independent agent reviewed the source cuts and their limitation labels. Not every frame was manually inspected.",
+    "observedByScene": {
+      "native-host-workspace-read": "Composer, submit, native fs_read completion, assistant canary reply, then expanded actual tool Output with the same public canary. No permission card.",
+      "native-host-command-denial-summary": "Completed native prompt and assistant denial summary; Worked through 2 steps remains collapsed. This is a static interval of the original recording, with no synthesized freeze. No attempted action or expanded blocked-tool row appears.",
+      "native-host-anonymous-http403": "Exact helper command with an Allow once approval card; the card clears, then its own assistant JSON reports HTTP 403. The original request and prior helper-read approval are outside the cut. Actual tool Output stays collapsed; native_enforcement_verified:false remains legible."
+    },
+    "resultPosterSeconds": {
+      "native-host-workspace-read": {
+        "clip": 34,
+        "source": 60.0
+      },
+      "native-host-command-denial-summary": {
+        "clip": 10,
+        "source": 58.0
+      },
+      "native-host-anonymous-http403": {
+        "clip": 17,
+        "source": 415.0
+      }
+    },
+    "blackdetect": "No full-black intervals of at least 0.1 second were reported in the allowed 26\u201365 or auth 398\u2013420 source cuts. Command source samples and its processed contact sheet show the stable completed summary.",
+    "sensitiveContent": "No credentials or unrelated private content were identified in inspected cut frames. Public fixture paths and harmless marker text remain visible.",
+    "timing": "Continuous source cuts; no inserted frames, synthetic freeze, padding, speed change, compositing, overlays, or audio.",
+    "independentProcessedMediaReview": {
+      "status": "passed_sampled_visual_review",
+      "reviewer": "native_media_visual_review",
+      "observed": "All three exported contact sheets and result posters show their own outcomes. Workspace read has actual expanded Output. Command shows summary inspection only. Auth shows the execution approval followed by its own assistant JSON; the prior source read and original request remain outside the cut. No secrets, unrelated apps, black gaps, cropping or composite outcomes identified in samples.",
+      "limits": "Independent reviewer did not replay or decode the MP4s. Full decode was performed by the processor."
+    }
+  },
+  "excludedObservations": [
+    {
+      "source": {
+        "path": "recordings/native-client-20260913/raw/host-control-take-05.mov",
+        "sha256": "79c713934e5599781d90d1980b70a910d4b7642aeb7f3f952e0ebccbff422061",
+        "bytes": 32884034
+      },
+      "recordedAt": "2026-09-14T00:07:54Z",
+      "durationSeconds": 107.9,
+      "observed": "Samples at 0, 5, 10, 15, 20 and 30 seconds show the collapsed auth summary; 60 seconds shows the new IMDS composer; 90 and 105 seconds show pending execution approval. No completed IMDS result was inspected.",
+      "disposition": "Not included in the three clips."
+    },
+    {
+      "source": "host-control-take-03.mov",
+      "observed": "The following sensitive-path read and first helper request were model-only refusals with no native tool attempt.",
+      "disposition": "Excluded from accepted enforcement footage."
+    }
+  ],
+  "limitations": [
+    "The denied command turn ended at 2026-09-14T00:00:21.709678Z, before take04 creation at 00:00:31Z. The video is summary inspection only; the persisted native blocked row and isolated hook_deny provide separate enforcement evidence.",
+    "The auth clip begins at execution approval, after the prompt and separately approved helper read. Its reported 403 matches native public helper output, but this media review does not attribute a 403 to a specific gate.",
+    "The helper field native_enforcement_verified:false is preserved and must not be silently changed.",
+    "No sensitive-path filesystem denial, protected agent-file denial, or completed IMDS control is established by these three clips.",
+    "Browser playback, seeking, and root joined acceptance are separate from this media review."
+  ],
+  "metadataCopyRevision": {
+    "path": "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+    "sha256": "f1a2e27eba4e90e473a659114773a29db9a4c8bdd4dae24f4a56b8d02bf42f46",
+    "bytes": 8355
+  },
+  "processorInputSnapshot": {
+    "path": "evidence/native-client-demo/media-review-host-controls/metadata-copy-v2-before/cuts-host-controls.json",
+    "sha256": "488c13eb4dcdb25d8ecbd24d93067ec62b4f5a5ffc4dcbedf6e105b0e183a928",
+    "bytes": 6553
+  },
+  "historicalMediaReviewSnapshot": {
+    "path": "evidence/native-client-demo/media-review-host-controls/metadata-copy-v2-before/media-review-host-controls.json",
+    "sha256": "367feb092840ca302df918152c1f28f5e71604c5674c6557bbd193c6361bfe02",
+    "bytes": 12143
+  }
+}

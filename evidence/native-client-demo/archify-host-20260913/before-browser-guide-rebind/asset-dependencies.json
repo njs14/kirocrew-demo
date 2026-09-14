@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "artifact": {
+    "path": "kirocrew-native-controls-diagram.html",
+    "bytes": 810648,
+    "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb"
+  },
+  "required_asset_files": [
+    "kirocrew-native-controls-diagram.html"
+  ],
+  "external_asset_dependencies": [],
+  "inline_script_count": 4,
+  "inline_style_count": 2,
+  "embedded_resource_count": 0,
+  "embedded_css_url_count": 34,
+  "navigation_links": [],
+  "scope": "Static resource scan inherited from hash-bound base; entire HTML outside its SVG is verified byte-identical. SVG derivative adds only text and masks, with no external href/src/url resources. No browser or network execution."
+}

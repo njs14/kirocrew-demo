@@ -133,11 +133,16 @@ def make_handler(allowed):
                 self.send_error(403)
                 return
             parsed = urlsplit(self.path)
-            if parsed.scheme or parsed.netloc or parsed.query or parsed.fragment or "\\" in parsed.path:
+            if parsed.scheme or parsed.netloc or parsed.fragment or "\\" in parsed.path:
                 self.send_error(404)
                 return
             item = allowed.get(parsed.path)
             if item is None:
+                self.send_error(404)
+                return
+            # Archify persists presentation mode in the URL; only that exact
+            # query may address an already allowlisted HTML artifact.
+            if parsed.query and (parsed.query != "present=1" or Path(item["path"]).suffix.lower() != ".html"):
                 self.send_error(404)
                 return
             try:

@@ -1,0 +1,59 @@
+{
+  "kind": "native_admin_host_edition_browser_review",
+  "reviewed_at": "2026-09-14T00:31:12.118793+00:00",
+  "status": "passed",
+  "artifact": "output/kirocrew-admin-tour.html",
+  "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87",
+  "capture_method": "Actual CUA browser navigation and original JPEG captures",
+  "checks": {
+    "nine_stop_navigation": true,
+    "all_19_content_images_loaded": true,
+    "no_horizontal_overflow": true,
+    "new_server_screenshot_zoom": true,
+    "actual_pixels": true,
+    "escape_closes_zoom": true
+  },
+  "observations_sha256": "62c52dd5dd41972d68bd5509013f7e6398521b1cbaafa5de48a536993c381993",
+  "captures": [
+    {
+      "path": "evidence/admin-console/native-20260913/browser-host/stop-01.jpg",
+      "sha256": "a632e02810ad39b28dcc089559ac6d1b8c0ad88b6b66e5c894193a2b271be2e7"
+    },
+    {
+      "path": "evidence/admin-console/native-20260913/browser-host/stop-02.jpg",
+      "sha256": "337b1951cdef55303538ce63e3e162d4d3cc2d60cfffdde4ece9a02ca989712b"
+    },
+    {
+      "path": "evidence/admin-console/native-20260913/browser-host/stop-03.jpg",
+      "sha256": "f617fc2ae959c21a348b6a69bbe343ea349841c0505ac5a8470a7a7b521a1fca"
+    },
+    {
+      "path": "evidence/admin-console/native-20260913/browser-host/stop-04.jpg",
+      "sha256": "7f1124234a520dc8a81d25d8f21337b4079b40026c42e609434e9cefcf373472"
+    },
+    {
+      "path": "evidence/admin-console/native-20260913/browser-host/stop-05.jpg",
+      "sha256": "33d5fe0ee79ba50cff0be7c6c872afc358402201ba21169683fb686f1c430875"
+    },
+    {
+      "path": "evidence/admin-console/native-20260913/browser-host/stop-06.jpg",
+      "sha256": "c99628bf718ef99105f677c2f28d0e5dc72b5dcf9870ebcb4458894ab033e3c1"
+    },
+    {
+      "path": "evidence/admin-console/native-20260913/browser-host/stop-07.jpg",
+      "sha256": "8d9b1b0ce9cd7b069863932e0d98310ef3a7f60b0500b5904844915beab7192c"
+    },
+    {
+      "path": "evidence/admin-console/native-20260913/browser-host/stop-08.jpg",
+      "sha256": "95f77cc88310fcc340aa1cc1cfbb49ad6cdaa2935d324f68244ac6af90a18cc3"
+    },
+    {
+      "path": "evidence/admin-console/native-20260913/browser-host/stop-09.jpg",
+      "sha256": "d1be88dd0558758c78132b63ea3bed8f029e505f5ea2840c09789f349683b0a8"
+    }
+  ],
+  "limits": [
+    "This is browser behavior and screenshot presentation review, not native tool or security enforcement evidence.",
+    "The empty hidden zoom placeholder was excluded from content-image checks."
+  ]
+}

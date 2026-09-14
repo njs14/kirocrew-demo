@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 1,
+  "title": "KiroCrew native control demonstrations",
+  "synthetic": false,
+  "scenes": [
+    {
+      "id": "native-allowed-read",
+      "title": "A permitted S3 read",
+      "description": "Send one fixed read_allowed request and allow it once. The client displays the AWS response with a request ID, byte count and digest.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "duration": 25.998058,
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 44.0,
+          "end": 70.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 1136859,
+          "sha256": "3bcd32eab9989b73a1b85845bd1294d02f4a3de6e622808f839b676fa8bc731a",
+          "duration": 25.998058,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 3.0,
+          "label": "Submit the allowed read",
+          "detail": "The Mac client sends read_allowed with its unique trace ID."
+        },
+        {
+          "time": 9.0,
+          "label": "Inspect the permission request",
+          "detail": "The UI asks to run the exact MCP tool once."
+        },
+        {
+          "time": 18.0,
+          "label": "Read the result",
+          "detail": "The client displays ok:true, layer:aws and the S3 result identifiers."
+        }
+      ],
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 200388,
+        "sha256": "132b18bce72c27c560dfdf61d973a0c922de9a8c95994f174e0dbcac1821e98d",
+        "time": 22,
+        "url": "native-client-clips-20260913/native-allowed-read/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 112453,
+        "sha256": "bcb7f08a4a92be535490b37fadd3d03aab78090502f44873212a00e74789bf7a",
+        "url": "native-client-clips-20260913/native-allowed-read/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Permitted read",
+        "enforcer": "MCP service and AWS",
+        "outcome": "Returns the fixture digest"
+      }
+    },
+    {
+      "id": "native-crew-denial",
+      "title": "Crew blocks a tool call",
+      "description": "Send one crew_denied request. The client displays a tool blocked row and reports the Crew policy refusal without an approval dialog.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "duration": 28.014062,
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 96.0,
+          "end": 124.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 1983357,
+          "sha256": "92f089ffc6d408310cda808387c748d187e75daf9d6314d0322b32ba43fe917e",
+          "duration": 28.014062,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 6.0,
+          "label": "Submit the denied tool",
+          "detail": "The Mac client requests crew_denied with its unique trace ID."
+        },
+        {
+          "time": 12.0,
+          "label": "See the policy block",
+          "detail": "The native client shows Tool call blocked for crew_denied."
+        },
+        {
+          "time": 20.0,
+          "label": "Read the refusal",
+          "detail": "The final response reports the Crew policy denial and stops."
+        }
+      ],
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 227591,
+        "sha256": "d74da469fa069a9672be8d716d36259258b521ba5c7360c165407ccae99fb65a",
+        "time": 17,
+        "url": "native-client-clips-20260913/native-crew-denial/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 148417,
+        "sha256": "c55171f636dd94a2890d2fd020c19fa9ab12d05085b30207f602549e316dc18c",
+        "url": "native-client-clips-20260913/native-crew-denial/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Tool permission",
+        "enforcer": "Crew on EC2",
+        "outcome": "Blocks crew_denied"
+      }
+    },
+    {
+      "id": "native-mcp-denial",
+      "title": "The MCP service refuses the grant",
+      "description": "Send one mcp_denied request and allow it once. The client displays tool_grant_denied from the MCP service.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "duration": 29.001064,
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 160.0,
+          "end": 189.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 2047715,
+          "sha256": "9895ac8db2f08902a6086be866676e3e1273373e876d402f21cd788b101fb7a2",
+          "duration": 29.001064,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.515572173649396,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 6.0,
+          "label": "Submit the MCP request",
+          "detail": "The Mac client requests mcp_denied with its unique trace ID."
+        },
+        {
+          "time": 11.0,
+          "label": "Inspect the permission request",
+          "detail": "The client presents Allow once for the exact tool call."
+        },
+        {
+          "time": 23.0,
+          "label": "Read the MCP refusal",
+          "detail": "The client displays ok:false, layer:mcp and tool_grant_denied."
+        }
+      ],
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 234538,
+        "sha256": "90dac171aeab9b9abf0031ba84b58b4ac37fc24d6114195490a838c6e430511d",
+        "time": 23,
+        "url": "native-client-clips-20260913/native-mcp-denial/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 155597,
+        "sha256": "7049a091cba27cf307d89249e5fbb3008fa25a7a8656a43827b6c4a07374bf91",
+        "url": "native-client-clips-20260913/native-mcp-denial/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "MCP grant",
+        "enforcer": "Fixed-grant MCP service",
+        "outcome": "Returns tool_grant_denied"
+      }
+    },
+    {
+      "id": "native-iam-denial",
+      "title": "AWS refuses the S3 read",
+      "description": "Send one iam_denied request and allow it once. The client displays AccessDenied, HTTP403 and an AWS request ID.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "duration": 34.020076,
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 188.0,
+          "end": 222.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 2207810,
+          "sha256": "56c8166490123442d83c89f5694b644898355f53c97649a4275a10d2d676067e",
+          "duration": 34.020076,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 2.0,
+          "label": "Submit the AWS request",
+          "detail": "The Mac client requests iam_denied with its unique trace ID."
+        },
+        {
+          "time": 12.0,
+          "label": "Inspect the permission request",
+          "detail": "The client presents Allow once for the exact tool call."
+        },
+        {
+          "time": 28.0,
+          "label": "Read the AWS refusal",
+          "detail": "The client displays AccessDenied, HTTP403, layer:aws and an AWS request ID."
+        }
+      ],
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 205600,
+        "sha256": "a7c77c80e53dd36d7e643cad757755875abe56e6125ff4f2c0e41eec17c5ff9f",
+        "time": 28,
+        "url": "native-client-clips-20260913/native-iam-denial/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 147279,
+        "sha256": "5735ac378d6149c37ea49a97afc6050dc201dc334476085bdcdaa621ce7ff60b",
+        "url": "native-client-clips-20260913/native-iam-denial/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "AWS permission",
+        "enforcer": "IAM",
+        "outcome": "Returns S3 AccessDenied"
+      }
+    },
+    {
+      "id": "native-memory-assignment-refusal",
+      "title": "Unassigned conversation refused private memory",
+      "description": "Submit a harmless fixture-read request from a conversation switched to the host-controls agent. The client immediately reports that the conversation has no verified private-memory assignment.",
+      "evidenceScope": "Actual macOS native client observation of the conversation-to-memory identity-binding guard. The request stops before a tool turn. This is not an RBAC test, a filesystem denial or proof of host-tool enforcement.",
+      "duration": 14.001002,
+      "recordedAt": "2026-09-13T21:40:04Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture of an unexpected assignment guard during host-control preparation. Original timing preserved."
+      },
+      "provenance": {
+        "sourceSha256": "672c79f461f47c6f0389af0a908e9553fcbe9878b4c475f1e8216e353154d88e",
+        "sourceDuration": 362.431667,
+        "cut": {
+          "start": 16.0,
+          "end": 30.0
+        },
+        "recordedAt": "2026-09-13T21:40:04Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 407034,
+          "sha256": "4ab78129747a1db40c05ed3115969756e70e5e9a122a709beee6c4e0e6d26c19",
+          "duration": 14.001002,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 50.92658814350439,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 2.0,
+          "label": "Submit the fixture request",
+          "detail": "The composer contains one bounded fs_read request for the prepared public canary."
+        },
+        {
+          "time": 6.0,
+          "label": "Read the assignment refusal",
+          "detail": "The client reports no verified assignment to private memory and retains the conversation\u2019s V1 context."
+        },
+        {
+          "time": 10.0,
+          "label": "Locate the control boundary",
+          "detail": "The refusal occurs before a tool turn. The source-backed diagnostic identifies a conversation-to-private-memory assignment guard; the filesystem request has not been tested."
+        }
+      ],
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 152476,
+        "sha256": "2abf516c8994a53d5a102d4b57c967bff0e2270b7e3b8d82524fae5289ea68fc",
+        "time": 8,
+        "url": "native-memory-clip-20260913/native-memory-assignment-refusal/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 101129,
+        "sha256": "70710b24084c9bef74d647f5aa9653d2b362038649df628b3910029fe18a9c05",
+        "url": "native-memory-clip-20260913/native-memory-assignment-refusal/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Private memory binding",
+        "enforcer": "EC2 conversation guard",
+        "outcome": "Refuses an unassigned conversation"
+      }
+    }
+  ],
+  "supportingReceipts": [
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "url": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "url": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "url": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "url": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-memory-assignment.json",
+      "url": "evidence/native-client-demo/media-review-memory-assignment.json",
+      "sha256": "68e609282f6cf097fc9ed3f88a1228f4703fee5311a5945cfa98a9dfc78cc167"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913/authenticated.json",
+      "url": "evidence/native-client-demo/20260913/authenticated.json",
+      "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "url": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "sha256": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499"
+    },
+    {
+      "path": "evidence/native-client-demo/poster-review-v2.json",
+      "url": "evidence/native-client-demo/poster-review-v2.json",
+      "sha256": "0489c07e6174363188760877260778e6b47cf72c462d3589224574872885649a"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "url": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "sha256": "8090b4a69f0c4f76021d6cf1c869f352c188aaa61c31382f3b4e0b19f0ea8a6c"
+    },
+    {
+      "path": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "url": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "sha256": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1"
+    }
+  ],
+  "adminTour": "kirocrew-admin-tour.html",
+  "reviewScope": "Artifact integrity and visible recorded behavior. Enforcement acceptance and model council apply only through their separate exact-candidate receipts."
+}

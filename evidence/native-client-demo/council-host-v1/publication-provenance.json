@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-09-14T00:46:33.472578+00:00",
+  "authorization": "Root instructed publication reviewer to exclude the current host council raw streams/stderr and transient prepared receipt from Git staging; earlier accepted council artifacts remain unchanged",
+  "privately_retained_exclusions": [
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-raw.jsonl",
+      "sha256": "7d42123b6033f82ef62ab03575b2ee363315122b373d861f87a865404126e974",
+      "bytes": 4569015
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-raw.jsonl",
+      "sha256": "b12148b21d8f86cf6ac558fb438f116f303b49ca25f58ce9d0c64ed2f0f6512b",
+      "bytes": 8873547
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/prepared.json",
+      "sha256": "f32125823fc623f66fa862a2ebe3756df5ee4e043c745d720d5577533590cb3b",
+      "bytes": 3023
+    }
+  ],
+  "fresh_clone_available": [
+    "Frozen original candidate packet and archive manifest",
+    "Human-readable Grok and Opus review verdicts",
+    "Structured launch and model/image/prompt/candidate integrity receipts",
+    "Recorded review prompt and council-decision summary",
+    "Capture conversion/source provenance"
+  ],
+  "fresh_clone_limit": "Published hashes bind the locally audited raw outputs, but a fresh clone cannot independently rerun raw-stream parsing without privately retained originals. No raw-output availability in the clone is claimed.",
+  "inference_started": false,
+  "deletions_performed": false
+}

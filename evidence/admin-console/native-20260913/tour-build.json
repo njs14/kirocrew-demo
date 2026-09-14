@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "kind": "native_admin_tour_build",
-  "built_at_utc": "2026-09-13T22:23:15.530299+00:00",
+  "built_at_utc": "2026-09-14T01:03:58.811636+00:00",
   "status": "static_and_browser_passed",
-  "builder_sha256": "85f7fed2af711db16e8f1d79f47017c8bf4d90b8c0ff2b3314f01d3e6216a9b5",
+  "builder_sha256": "4205168e4d3ed75dbea4a522cb039373d5b4080a2566fad0487674b6969168c2",
   "stop_count": 9,
-  "screenshot_count": 13,
+  "screenshot_count": 19,
   "static_checks": {
     "unique_ids": true,
     "all_anchor_targets_exist": true,
@@ -69,6 +69,28 @@
       "mime_type": "image/jpeg",
       "capture_label": "September 13, 2026 \u00b7 evening capture",
       "capture_group": "fresh_security_tour",
+      "stop": "rules"
+    },
+    {
+      "path": "output/admin-console-host-20260913/01-command-rule-active.jpg",
+      "sha256": "ed8fd2f5e10d6acc5ebec1d2cdbe5b70a86b73201565b18c71b6d1e7aecbdd00",
+      "bytes": 112473,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
+      "stop": "rules"
+    },
+    {
+      "path": "output/admin-console-host-20260913/02-command-rule-removed.jpg",
+      "sha256": "f0994d88918d6f00ceeb6fcb3823905d98e481495016a9a543041efec93e51d3",
+      "bytes": 107638,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
       "stop": "rules"
     },
     {
@@ -138,6 +160,28 @@
       "stop": "metrics"
     },
     {
+      "path": "output/admin-console-host-20260913/03-command-turn-metrics.jpg",
+      "sha256": "0daf14b482ab41bc35214d12fce77d07397dd027ddf650f33e82d01bc4357b52",
+      "bytes": 89769,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
+      "stop": "metrics"
+    },
+    {
+      "path": "output/admin-console-host-20260913/04-anonymous-turn-metrics.jpg",
+      "sha256": "5148ca90307b13698a6b91f17689e094b60cfa5e6887b2af1a62cadcfe043705",
+      "bytes": 89892,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
+      "stop": "metrics"
+    },
+    {
       "path": "output/admin-console/11-client-server-telemetry.jpg",
       "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698",
       "bytes": 78171,
@@ -158,6 +202,28 @@
       "capture_label": "September 13, 2026 \u00b7 earlier baseline",
       "capture_group": "accepted_earlier_baseline",
       "stop": "collection"
+    },
+    {
+      "path": "output/admin-console-host-20260913/05-client-server-health.jpg",
+      "sha256": "e9cf198282a847b9e4681c2cd0191e4061d5a17b51fad6f7f753682981e5dded",
+      "bytes": 146893,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
+      "stop": "collection"
+    },
+    {
+      "path": "output/admin-console-host-20260913/06-server-collection-logs.jpg",
+      "sha256": "a24e67be86372e9c76ac4602af6832520c46deea4f587360c929ff7355d40734",
+      "bytes": 118292,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
+      "stop": "collection"
     }
   ],
   "sources": [
@@ -169,7 +235,7 @@
     {
       "label": "Native Mac recording guide",
       "path": "docs/NATIVE-CLIENT-DEMO.md",
-      "sha256": "82a605627290787303b6e7366643529f73d449b70c6e9d09d1e521b33d687391"
+      "sha256": "92c76b60e2d306156e13e6a84146b7f80c3abab61eda1bf4769bc6a5db036b63"
     },
     {
       "label": "MCP and IAM enforcement contract",
@@ -215,18 +281,58 @@
       "label": "Native MCP clip review",
       "path": "evidence/native-client-demo/media-review-mcp-controls.json",
       "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d"
+    },
+    {
+      "label": "Later host workspace-read observations",
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+      "sha256": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7"
+    },
+    {
+      "label": "Later native command-rule observations",
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+      "sha256": "88bc23a85ab8db45a0d24ee34f711f46f263245e1a83f4e89c623e21dd9c2455"
+    },
+    {
+      "label": "Independent initial host review",
+      "path": "evidence/native-client-demo/host-20260913-review/initial-review.json",
+      "sha256": "ff855dbecb4bdb852200521040f4d5e523b1f50d7035fb3ec808395f4e3314e9"
+    },
+    {
+      "label": "Anonymous Gateway authentication correlation",
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
+    },
+    {
+      "label": "Independent anonymous Gateway authentication review",
+      "path": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204"
+    },
+    {
+      "label": "Temporary command-rule cleanup readback",
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "sha256": "3eae37afdfc7d513f702a336d1e6ce70f07f36209151630b0271f314bfc146e1"
+    },
+    {
+      "label": "Current native admin findings",
+      "path": "output/kirocrew-native-admin-findings.md",
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
+    },
+    {
+      "label": "Host-control scenario guide",
+      "path": "docs/HOST-CONTROL-SCENARIOS.md",
+      "sha256": "6d8e0210da6e135ece4d368d3d4891627563b6c4af119cd422e1f94d1d67c9a1"
     }
   ],
   "outputs": [
     {
       "path": "output/kirocrew-admin-tour.html",
-      "sha256": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97",
-      "bytes": 1620826
+      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87",
+      "bytes": 2516369
     },
     {
       "path": "output/kirocrew-admin-tour.md",
-      "sha256": "57aed2784de1c3ea19a588dd1a525910a5ccd6f283055a0dbf4bb3dd5deca19f",
-      "bytes": 13310
+      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108",
+      "bytes": 18384
     }
   ],
   "native_proof_links": [
@@ -243,9 +349,9 @@
   },
   "browser_review": {
     "current_candidate": "passed",
-    "reviewed_candidate_sha256": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97",
-    "review_path": "evidence/admin-console/native-20260913/browser-review.json",
-    "review_sha256": "e0125ad771dbda8952b77b6b415550a072bb4a47e863f945277e882fbcb3a518",
+    "reviewed_candidate_sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87",
+    "review_path": "evidence/admin-console/native-20260913/browser-host/review.json",
+    "review_sha256": "d41782b5bfac85b4ba657c54c1eee2d8eac2f32789c47cd7b3d9a0caa3216813",
     "recorded_status": "passed",
     "scope": "Browser approval applies only when its recorded HTML hash matches this build. Prior navigation, zoom, keyboard and sticky layout approval remains bound to the earlier candidate."
   },
@@ -255,5 +361,24 @@
     "Browser layout, stop navigation and zoom require a separate observed browser receipt.",
     "Earlier host, backend and telemetry images retain their earlier-baseline scope."
   ],
-  "editorial_review": "No AI Slop self-review applied to captions, explanations and status claims."
+  "editorial_review": "No AI Slop self-review applied to captions, explanations and status claims.",
+  "capture_groups": [
+    {
+      "path": "evidence/admin-console/native-20260913/host-captures.json",
+      "sha256": "dfaf5df98ebbec220a75aae5103a07020d76b0e4c7b7395dd5843e74f2b0a5b3",
+      "group_id": "host-20260913-evening",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "stop_ids": [
+        "collection",
+        "metrics",
+        "rules"
+      ],
+      "scope": "Appended original screenshots and reviewed copy; this input does not change native outcome verdicts."
+    }
+  ],
+  "builder_source_review": {
+    "path": "evidence/admin-console/native-20260913/builder-source-review.json",
+    "sha256": "85f74ab3750a0b6fce52a69792f56ad287703e58164c55fde27966feecca6cb8",
+    "reviewed_builder_sha256": "4205168e4d3ed75dbea4a522cb039373d5b4080a2566fad0487674b6969168c2"
+  }
 }

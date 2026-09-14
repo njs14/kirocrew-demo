@@ -1,0 +1,187 @@
+{
+  "html_sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c",
+  "observations": [
+    {
+      "brokenVisibleImages": 0,
+      "heading": "Server controlsfor a Mac client",
+      "horizontalOverflow": false,
+      "id": "slide-1",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "Execution and host controls stay on EC2",
+      "horizontalOverflow": false,
+      "id": "slide-2",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "The control decideswhere the request stops",
+      "horizontalOverflow": false,
+      "id": "slide-3",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "The control decideswhere the request stops",
+      "horizontalOverflow": false,
+      "id": "slide-4",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "A permitted S3 read",
+      "horizontalOverflow": false,
+      "id": "slide-5",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "Crew blocks a tool call",
+      "horizontalOverflow": false,
+      "id": "slide-6",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "The MCP service refuses the grant",
+      "horizontalOverflow": false,
+      "id": "slide-7",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "AWS refuses the S3 read",
+      "horizontalOverflow": false,
+      "id": "slide-8",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "Private memory requires an assigned conversation",
+      "horizontalOverflow": false,
+      "id": "slide-9",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "Read the permitted workspace canary",
+      "horizontalOverflow": false,
+      "id": "slide-10",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "Inspect the command denial summary",
+      "horizontalOverflow": false,
+      "id": "slide-11",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "Approve the helper; read the 403 summary",
+      "horizontalOverflow": false,
+      "id": "slide-12",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "Admin settings and logs have different jobs",
+      "horizontalOverflow": false,
+      "id": "slide-13",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "brokenVisibleImages": 0,
+      "heading": "The recordings and evidence stay together",
+      "horizontalOverflow": false,
+      "id": "slide-14",
+      "slideOverflow": [
+        false
+      ],
+      "viewport": [
+        1280,
+        720
+      ]
+    }
+  ]
+}

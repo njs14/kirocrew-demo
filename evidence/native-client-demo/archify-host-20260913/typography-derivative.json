@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "kind": "bounded-typography-derivative",
+  "source": {
+    "path": "evidence/native-client-demo/archify-host-20260913/before-legibility-revision/kirocrew-native-controls-diagram.html",
+    "bytes": 809205,
+    "sha256": "ea2f39161c4302740dfaec66601976f6ba2ba9926de58b5c1f35806a33824e5f"
+  },
+  "output": {
+    "path": "evidence/native-client-demo/archify-host-20260913/typography-candidate.html",
+    "bytes": 810648,
+    "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb"
+  },
+  "script": {
+    "path": "evidence/native-client-demo/archify-host-20260913/enlarge-typography.py",
+    "bytes": 7253,
+    "sha256": "2a112b1b35af95a048934e8532bfb11a2a17d6899fc7843e20a650d8240c82ea"
+  },
+  "parameters": {
+    "node_font": 20,
+    "sublabel_font": 16,
+    "edge_font": 16,
+    "boundary_font": 16
+  },
+  "node_count": 8,
+  "edge_count": 7,
+  "endpoint_boundary_count": 1,
+  "node_route_boundary_geometry_unchanged": true,
+  "semantic_text_and_cards_unchanged": true,
+  "text_fit_checks": [
+    {
+      "node": "native-desktop-client",
+      "kind": "label",
+      "text": "Mac client",
+      "font": 20,
+      "width": 124.0,
+      "available_width": 198.0
+    },
+    {
+      "node": "native-desktop-client",
+      "kind": "sublabel",
+      "text": "Local Gateway off \u00b7",
+      "font": 16,
+      "width": 188.48,
+      "available_width": 198.0
+    },
+    {
+      "node": "native-desktop-client",
+      "kind": "sublabel",
+      "text": "approval UI",
+      "font": 16,
+      "width": 109.12,
+      "available_width": 198.0
+    },
+    {
+      "node": "native-crew-runtime",
+      "kind": "label",
+      "text": "Gateway + Kiro CLI",
+      "font": 20,
+      "width": 223.2,
+      "available_width": 268.0
+    },
+    {
+      "node": "native-crew-runtime",
+      "kind": "sublabel",
+      "text": "Original CLI 2.21.4 \u00b7",
+      "font": 16,
+      "width": 208.32,
+      "available_width": 268.0
+    },
+    {
+      "node": "native-crew-runtime",
+      "kind": "sublabel",
+      "text": "signed in",
+      "font": 16,
+      "width": 89.28,
+      "available_width": 268.0
+    },
+    {
+      "node": "native-endpoint-controls",
+      "kind": "label",
+      "text": "Crew policy + host",
+      "font": 20,
+      "width": 223.2,
+      "available_width": 268.0
+    },
+    {
+      "node": "native-endpoint-controls",
+      "kind": "label",
+      "text": "rules",
+      "font": 20,
+      "width": 62.0,
+      "available_width": 268.0
+    },
+    {
+      "node": "native-endpoint-controls",
+      "kind": "sublabel",
+      "text": "Owner-editable",
+      "font": 16,
+      "width": 138.88,
+      "available_width": 268.0
+    },
+    {
+      "node": "native-endpoint-controls",
+      "kind": "sublabel",
+      "text": "configuration \u00b7 interactive",
+      "font": 16,
+      "width": 267.84,
+      "available_width": 268.0
+    },
+    {
+      "node": "native-remote-workspace",
+      "kind": "label",
+      "text": "Remote workspace",
+      "font": 20,
+      "width": 198.4,
+      "available_width": 268.0
+    },
+    {
+      "node": "native-remote-workspace",
+      "kind": "sublabel",
+      "text": "Remote files \u00b7",
+      "font": 16,
+      "width": 138.88,
+      "available_width": 268.0
+    },
+    {
+      "node": "native-remote-workspace",
+      "kind": "sublabel",
+      "text": "crew-writable",
+      "font": 16,
+      "width": 128.96,
+      "available_width": 268.0
+    },
+    {
+      "node": "native-demo-mcp",
+      "kind": "label",
+      "text": "Demo MCP service",
+      "font": 20,
+      "width": 198.4,
+      "available_width": 232.0
+    },
+    {
+      "node": "native-demo-mcp",
+      "kind": "sublabel",
+      "text": "Separate mcp-demo UID \u00b7",
+      "font": 16,
+      "width": 228.16,
+      "available_width": 232.0
+    },
+    {
+      "node": "native-demo-mcp",
+      "kind": "sublabel",
+      "text": "fixed grants",
+      "font": 16,
+      "width": 119.03999999999999,
+      "available_width": 232.0
+    },
+    {
+      "node": "native-instance-role",
+      "kind": "label",
+      "text": "EC2 instance role",
+      "font": 20,
+      "width": 210.79999999999998,
+      "available_width": 232.0
+    },
+    {
+      "node": "native-instance-role",
+      "kind": "sublabel",
+      "text": "MCP AWS identity \u00b7 IAM",
+      "font": 16,
+      "width": 218.24,
+      "available_width": 232.0
+    },
+    {
+      "node": "native-instance-role",
+      "kind": "sublabel",
+      "text": "policy",
+      "font": 16,
+      "width": 59.519999999999996,
+      "available_width": 232.0
+    },
+    {
+      "node": "native-s3-allowed",
+      "kind": "label",
+      "text": "S3",
+      "font": 20,
+      "width": 24.8,
+      "available_width": 132.0
+    },
+    {
+      "node": "native-s3-allowed",
+      "kind": "label",
+      "text": "allowed/*",
+      "font": 20,
+      "width": 111.6,
+      "available_width": 132.0
+    },
+    {
+      "node": "native-s3-allowed",
+      "kind": "sublabel",
+      "text": "Native read",
+      "font": 16,
+      "width": 109.12,
+      "available_width": 132.0
+    },
+    {
+      "node": "native-s3-allowed",
+      "kind": "sublabel",
+      "text": "observed",
+      "font": 16,
+      "width": 79.36,
+      "available_width": 132.0
+    },
+    {
+      "node": "native-s3-denied",
+      "kind": "label",
+      "text": "S3",
+      "font": 20,
+      "width": 24.8,
+      "available_width": 132.0
+    },
+    {
+      "node": "native-s3-denied",
+      "kind": "label",
+      "text": "denied/*",
+      "font": 20,
+      "width": 99.2,
+      "available_width": 132.0
+    },
+    {
+      "node": "native-s3-denied",
+      "kind": "sublabel",
+      "text": "Native",
+      "font": 16,
+      "width": 59.519999999999996,
+      "available_width": 132.0
+    },
+    {
+      "node": "native-s3-denied",
+      "kind": "sublabel",
+      "text": "AccessDenied",
+      "font": 16,
+      "width": 119.03999999999999,
+      "available_width": 132.0
+    }
+  ],
+  "stage_projection": {
+    "source": "Parent screenshot stage-dark.jpg; 280-unit runtime node appears about209px wide",
+    "assumed_svg_scale": 0.7464285714285714,
+    "predicted_node_px": 14.928571428571429,
+    "predicted_subtitle_and_edge_px": 11.942857142857143,
+    "status": "Prediction only; parent must verify actual SVG screen transform in browser."
+  },
+  "scope": "Explicit SVG font attributes, word wrapping, baseline spacing and matching text masks only. No CSS-only font overrides, node movement, route changes, hidden overflow, smaller text, or browser execution."
+}

@@ -1,0 +1,223 @@
+{
+  "acceptance": "not_evaluated",
+  "collection_complete": false,
+  "collector_sha256": "ae535152cad2325aea28622288e1270b8f8432306ebee2012d5b20ec3aa9a3e0",
+  "conversation_summary": {
+    "slot_before": {
+      "captured_message_count": 0,
+      "has_more": false,
+      "message_content_exported": false,
+      "running": false,
+      "stopping": false,
+      "total": 0
+    }
+  },
+  "exporter_sha256": "85799cb5b9c8f02623297698f61c7cfb51a29303185a183e79581d080d47e6a1",
+  "helper_sha256": "429357edf4cc2a3b1ab719f733b0dae667220a6ef288c2a82ad3548ae22beac8",
+  "kind": "native_client_publication_export",
+  "mcp_service_before": {
+    "ActiveState": "active",
+    "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+    "MainPID": "2833",
+    "NRestarts": "0",
+    "SubState": "running"
+  },
+  "native_events": {
+    "bytes": 16408,
+    "events": 25,
+    "path": "../../../../.build/native-host-auth-20260913-ui1/events.jsonl",
+    "path_base": "publication_directory",
+    "relationship": "later same-run companion; not baseline-time evidence",
+    "retention": "private companion; reviewed scoped derivatives are indexed separately",
+    "scope": "exact source slot",
+    "sha256": "dd87756cb5a1567ed5f2c90ee0596ac264b56172790329cf86c4cbabeb74f33c"
+  },
+  "permission_triggered_process_snapshots": [],
+  "private_sel_counts": {
+    "sel_before": {
+      "other_callers": 1000,
+      "target_session": 0,
+      "total": 1000
+    }
+  },
+  "private_source": {
+    "bytes": 682912,
+    "path": "../../../../.build/native-host-auth-20260913-ui1/baseline.json",
+    "path_base": "publication_directory",
+    "retention": "privately_retained_ignored",
+    "sha256": "f12a121597a725dd75f869148a3d39f78dd81cf7867e39b6547b400419d68b18"
+  },
+  "processes_before": [
+    {
+      "comm": "python",
+      "cwd": "/opt/kirocrew-demo/mcp-enforcement",
+      "exe": "/usr/bin/python3.12",
+      "pid": 2833,
+      "ppid": 1,
+      "uid": 997
+    },
+    {
+      "comm": "systemd",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd",
+      "pid": 3557,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "(sd-pam)",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd-executor",
+      "pid": 3558,
+      "ppid": 3557,
+      "uid": 999
+    },
+    {
+      "comm": "sshd",
+      "cwd": "/",
+      "exe": "/usr/sbin/sshd",
+      "pid": 3613,
+      "ppid": 3552,
+      "uid": 999
+    },
+    {
+      "comm": "kirocrew",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 4991,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8461,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8462,
+      "ppid": 8461,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 75248,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 75249,
+      "ppid": 75248,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 75256,
+      "ppid": 75249,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 86275,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 86276,
+      "ppid": 86275,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 86283,
+      "ppid": 86276,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 103736,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 103737,
+      "ppid": 103736,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 103744,
+      "ppid": 103737,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 106149,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 106150,
+      "ppid": 106149,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 106157,
+      "ppid": 106150,
+      "uid": 999
+    }
+  ],
+  "publication_notes": [
+    "The hash-bound original snapshot is privately retained and excluded from Git; its bytes were not changed.",
+    "Broad SEL pages, their error details and complete conversation snapshots are omitted by an explicit field allowlist.",
+    "SEL summary counts describe the private source, not additional exported event evidence.",
+    "Use the scoped native events.jsonl and separately recovered SEL interval for offline outcome analysis.",
+    "This export is a publication boundary, not a new collection, integrity verification or enforcement acceptance verdict.",
+    "Relative private-source paths resolve from this publication directory; original capture files were not copied into it."
+  ],
+  "ready_at": "2026-09-14T00:06:13.786609+00:00",
+  "run_id": "host-auth-20260913-ui1",
+  "schema": 1,
+  "sel_checkpoint": {
+    "anchor_event_id": "fbf61f485ab5414d",
+    "anchor_sha256": "bd6f66b9b4ba720b35df2de22f61c808f322c16e0f2791c7a045b7dcf5d40dfd",
+    "baseline_count": 1000
+  },
+  "slot": "chat-6-1789344355",
+  "source_kind": "passive_native_client_baseline",
+  "started": "2026-09-14T00:06:04.507453+00:00"
+}

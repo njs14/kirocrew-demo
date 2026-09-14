@@ -1,0 +1,13 @@
+{
+  "name": "host-controls-demo",
+  "description": "Native server host-control demonstrations using harmless fixtures",
+  "prompt": "Perform only the exact requested control demonstration once. Read only the named public canary, never other files in its directory. Do not read credentials or session state. Do not retry or use another route after a refusal. Do not run a helper if a preceding security gate denies it. Report the actual tool result and stop.",
+  "tools": [
+    "fs_read",
+    "fs_write",
+    "execute_bash"
+  ],
+  "allowedTools": [],
+  "includeMcpJson": false,
+  "mcpServers": {}
+}

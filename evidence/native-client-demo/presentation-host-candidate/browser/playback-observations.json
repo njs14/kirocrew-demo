@@ -1,0 +1,442 @@
+{
+  "candidate_sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335",
+  "observations": [
+    {
+      "slide": 5,
+      "stage": "play",
+      "state": [
+        {
+          "duration": 25.998058,
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "time": 14.934425
+        }
+      ]
+    },
+    {
+      "slide": 5,
+      "stage": "0:03 Submit the allowed read",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 3
+        }
+      ]
+    },
+    {
+      "slide": 5,
+      "stage": "0:09 Inspect the permission request",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 9
+        }
+      ]
+    },
+    {
+      "slide": 5,
+      "stage": "0:18 Read the result",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 18
+        }
+      ]
+    },
+    {
+      "slide": 6,
+      "stage": "play",
+      "state": [
+        {
+          "duration": 28.014062,
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "time": 0.239834
+        }
+      ]
+    },
+    {
+      "slide": 6,
+      "stage": "0:06 Submit the denied tool",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 6
+        }
+      ]
+    },
+    {
+      "slide": 6,
+      "stage": "0:12 See the policy block",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 12
+        }
+      ]
+    },
+    {
+      "slide": 6,
+      "stage": "0:20 Read the refusal",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 20
+        }
+      ]
+    },
+    {
+      "slide": 7,
+      "stage": "play",
+      "state": [
+        {
+          "duration": 29.001064,
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "time": 0.237734
+        }
+      ]
+    },
+    {
+      "slide": 7,
+      "stage": "0:06 Submit the MCP request",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 6
+        }
+      ]
+    },
+    {
+      "slide": 7,
+      "stage": "0:11 Inspect the permission request",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 11
+        }
+      ]
+    },
+    {
+      "slide": 7,
+      "stage": "0:23 Read the MCP refusal",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 23
+        }
+      ]
+    },
+    {
+      "slide": 8,
+      "stage": "play",
+      "state": [
+        {
+          "duration": 34.020076,
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "time": 0.241735
+        }
+      ]
+    },
+    {
+      "slide": 8,
+      "stage": "0:02 Submit the AWS request",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 2
+        }
+      ]
+    },
+    {
+      "slide": 8,
+      "stage": "0:12 Inspect the permission request",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 12
+        }
+      ]
+    },
+    {
+      "slide": 8,
+      "stage": "0:28 Read the AWS refusal",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 28
+        }
+      ]
+    },
+    {
+      "slide": 9,
+      "stage": "play",
+      "state": [
+        {
+          "duration": 14.001002,
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "time": 0.238074
+        }
+      ]
+    },
+    {
+      "slide": 9,
+      "stage": "0:02 Submit the fixture request",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 2
+        }
+      ]
+    },
+    {
+      "slide": 9,
+      "stage": "0:06 Read the assignment refusal",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 6
+        }
+      ]
+    },
+    {
+      "slide": 9,
+      "stage": "0:10 Locate the control boundary",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 10
+        }
+      ]
+    },
+    {
+      "slide": 10,
+      "stage": "play",
+      "state": [
+        {
+          "duration": 38.988681,
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "time": 0.257003
+        }
+      ]
+    },
+    {
+      "slide": 10,
+      "stage": "0:01 Request one public canary read",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 1
+        }
+      ]
+    },
+    {
+      "slide": 10,
+      "stage": "0:16 The native filesystem tool completes",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 16
+        }
+      ]
+    },
+    {
+      "slide": 10,
+      "stage": "0:21 Read the returned canary",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 21
+        }
+      ]
+    },
+    {
+      "slide": 10,
+      "stage": "0:34 Inspect the actual tool output",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 34
+        }
+      ]
+    },
+    {
+      "slide": 11,
+      "stage": "play",
+      "state": [
+        {
+          "duration": 18.004361,
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "time": 0.241027
+        }
+      ]
+    },
+    {
+      "slide": 11,
+      "stage": "0:01 Inspect the exact command request",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 1
+        }
+      ]
+    },
+    {
+      "slide": 11,
+      "stage": "0:08 Read the denial summary",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 8
+        }
+      ]
+    },
+    {
+      "slide": 11,
+      "stage": "0:14 Keep the recording gap visible",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 14
+        }
+      ]
+    },
+    {
+      "slide": 12,
+      "stage": "play",
+      "state": [
+        {
+          "duration": 22.00533,
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "time": 0.240213
+        }
+      ]
+    },
+    {
+      "slide": 12,
+      "stage": "0:01 Inspect the command awaiting approval",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 1
+        }
+      ]
+    },
+    {
+      "slide": 12,
+      "stage": "0:09 The approved execution completes",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 9
+        }
+      ]
+    },
+    {
+      "slide": 12,
+      "stage": "0:17 Read the HTTP 403 result",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "time": 17
+        }
+      ]
+    },
+    {
+      "slide": 12,
+      "stage": "guided-pause",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "time": 1
+        }
+      ]
+    },
+    {
+      "slide": 12,
+      "stage": "notes-pauses",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "time": 0.261847
+        }
+      ]
+    },
+    {
+      "slide": 12,
+      "stage": "overview-pauses",
+      "state": [
+        {
+          "error": null,
+          "paused": true,
+          "time": 0.273833
+        }
+      ]
+    }
+  ]
+}

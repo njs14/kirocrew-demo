@@ -1,0 +1,96 @@
+{
+  "caller_identity": "dashboard:chat-7-1789344506",
+  "events": [
+    {
+      "agent": "host-controls-demo",
+      "caller_identity": "dashboard:chat-7-1789344506",
+      "entry_hash": "d801bf7bb7c59ab059e09c19cf90c277b376776ea534f2e1972de09d74996d36",
+      "error": "",
+      "event_id": "23344e90141c4b20",
+      "event_type": "tool_invocation",
+      "operation": "Running: /usr/bin/python3 [OPAQUE REDACTED].py",
+      "outcome": "rejected",
+      "prev_hash": "346eab57876edd22bc37a44a9404a945e1493a3a0cd835d0f9468a02c6835cf8",
+      "request_id": "ee23b765-4f4e-4fbf-b47e-10b933c0f69a",
+      "resources": "",
+      "source": "dashboard",
+      "source_file": "security_events.jsonl",
+      "source_line": 3073,
+      "timestamp": "2026-09-14T00:19:23.301043+00:00",
+      "tool_kind": ""
+    },
+    {
+      "agent": "host-controls-demo",
+      "caller_identity": "dashboard:chat-7-1789344506",
+      "entry_hash": "2060279a9ff97b0508be243ff844e4a5f14acb1b3558295e02da6c7d731465c8",
+      "error": "",
+      "event_id": "7271435a38ae4907",
+      "event_type": "tool_invocation",
+      "operation": "/usr/bin/python3 [OPAQUE REDACTED].py",
+      "outcome": "refined",
+      "prev_hash": "d801bf7bb7c59ab059e09c19cf90c277b376776ea534f2e1972de09d74996d36",
+      "request_id": "",
+      "resources": "",
+      "source": "dashboard",
+      "source_file": "security_events.jsonl",
+      "source_line": 3074,
+      "timestamp": "2026-09-14T00:19:23.308973+00:00",
+      "tool_kind": "execute"
+    }
+  ],
+  "files": [
+    {
+      "device": 66305,
+      "earliest_timestamp": "2026-09-13T14:06:32.279106+00:00",
+      "inode": 327177,
+      "latest_timestamp": "2026-09-13T19:10:08.810285+00:00",
+      "path": "security_events.[OPAQUE REDACTED].jsonl",
+      "rows": 59099,
+      "snapshot_bytes": 33554845,
+      "snapshot_sha256": "a423c4bbae481dbf841d52340a30135bcbf543611a70d0cf3886015b56cc48f4"
+    },
+    {
+      "device": 66305,
+      "earliest_timestamp": "2026-09-13T19:10:09.834654+00:00",
+      "inode": 328939,
+      "latest_timestamp": "2026-09-14T00:05:21.953862+00:00",
+      "path": "security_events.[OPAQUE REDACTED].jsonl",
+      "rows": 58869,
+      "snapshot_bytes": 33554580,
+      "snapshot_sha256": "3db73f55d97571831b15a49aed34e72931462915c0f13c903bf8d7d51dd2ebde"
+    },
+    {
+      "device": 66305,
+      "earliest_timestamp": "2026-09-14T00:05:22.627958+00:00",
+      "inode": 331253,
+      "latest_timestamp": "2026-09-14T00:56:45.241516+00:00",
+      "path": "security_events.jsonl",
+      "rows": 10685,
+      "snapshot_bytes": 6093021,
+      "snapshot_sha256": "6a29958803ba67897b82bc484ee81606a873dfaefe582ace98de40b553dea88e"
+    }
+  ],
+  "kind": "read_only_sel_interval",
+  "limitations": [
+    "Retained log bytes were scanned without opening or exporting the HMAC key.",
+    "This is a timestamp-bounded retained-log scan, not a restoration of the original recent-page anchor."
+  ],
+  "other_window_outcomes": {
+    "api_access:denied": 134,
+    "api_access:granted": 4,
+    "api_access:ok": 49,
+    "tool_invocation:completed": 6,
+    "tool_invocation:denied": 2,
+    "tool_invocation:failed": 4,
+    "tool_invocation:invoked": 14,
+    "tool_invocation:not_found": 1,
+    "tool_invocation:success": 6
+  },
+  "reader_script_sha256": "002a29e7a30fe849a3e7949b68a439e9d1c3e980aac7b31de5f4047145689daf",
+  "retained_timestamps_bracket_window": true,
+  "scan_complete": true,
+  "scanned_bytes": 73202446,
+  "since": "2026-09-14T00:19:00+00:00",
+  "until": "2026-09-14T00:20:00+00:00",
+  "window_event_count": 222
+}

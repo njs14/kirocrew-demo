@@ -1,0 +1,745 @@
+{
+  "acceptance": "not_evaluated",
+  "captured_events": 25,
+  "collection_complete": true,
+  "collector_sha256": "ae535152cad2325aea28622288e1270b8f8432306ebee2012d5b20ec3aa9a3e0",
+  "conversation_summary": {
+    "slot_after": {
+      "captured_message_count": 10,
+      "has_more": false,
+      "message_content_exported": false,
+      "running": false,
+      "stopping": false,
+      "total": 11
+    },
+    "slot_before": {
+      "captured_message_count": 0,
+      "has_more": false,
+      "message_content_exported": false,
+      "running": false,
+      "stopping": false,
+      "total": 0
+    }
+  },
+  "exporter_sha256": "85799cb5b9c8f02623297698f61c7cfb51a29303185a183e79581d080d47e6a1",
+  "finish_requested_at": "2026-09-14T00:07:53.938604+00:00",
+  "finished": "2026-09-14T00:08:00.848496+00:00",
+  "helper_sha256": "429357edf4cc2a3b1ab719f733b0dae667220a6ef288c2a82ad3548ae22beac8",
+  "kind": "native_client_publication_export",
+  "mcp_audit": {
+    "collection_succeeded": true,
+    "end_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=9dfa;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=66ca92be7;t=65b64236927b1;x=f168a3ff8cc189d4",
+    "events": [],
+    "ignored_non_audit_rows": 0,
+    "publication_scope": {
+      "omitted_other_trace_count": 0,
+      "original_event_count": 0,
+      "run_event_count": 0
+    },
+    "start_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=9dfa;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=66ca92be7;t=65b64236927b1;x=f168a3ff8cc189d4"
+  },
+  "mcp_service_after": {
+    "ActiveState": "active",
+    "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+    "MainPID": "2833",
+    "NRestarts": "0",
+    "SubState": "running"
+  },
+  "mcp_service_before": {
+    "ActiveState": "active",
+    "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+    "MainPID": "2833",
+    "NRestarts": "0",
+    "SubState": "running"
+  },
+  "native_events": {
+    "bytes": 16408,
+    "events": 25,
+    "path": "../../../../.build/native-host-auth-20260913-ui1/events.jsonl",
+    "path_base": "publication_directory",
+    "relationship": "scoped companion for this capture",
+    "retention": "private companion; reviewed scoped derivatives are indexed separately",
+    "scope": "exact source slot",
+    "sha256": "dd87756cb5a1567ed5f2c90ee0596ac264b56172790329cf86c4cbabeb74f33c"
+  },
+  "new_session_sel": [
+    {
+      "agent": "host-controls-demo",
+      "caller_identity": "dashboard:chat-6-1789344355",
+      "entry_hash": "99222d9ae9db63195ecff8db3387a5ca7d393abad1b7a102a7dc5f074e4999a9",
+      "error": "",
+      "event_id": "3627f8bb5f5544be",
+      "event_type": "tool_invocation",
+      "operation": "/usr/bin/python3 [OPAQUE REDACTED].py",
+      "outcome": "refined",
+      "prev_hash": "769cd26c20bf672dc504531d7eed63787516b1a4aebe7a455bb83cb91e0f4ead",
+      "request_id": "",
+      "resources": "",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T00:07:16.798373+00:00",
+      "tool_kind": "execute"
+    },
+    {
+      "agent": "host-controls-demo",
+      "caller_identity": "dashboard:chat-6-1789344355",
+      "entry_hash": "0fb7b83c9590294b985bea0c317858b9ab7bb957c2cb5d529d878b758ae70cd7",
+      "error": "",
+      "event_id": "c2d60f64bda84a4d",
+      "event_type": "tool_invocation",
+      "operation": "Running: /usr/bin/python3 [OPAQUE REDACTED].py",
+      "outcome": "approved",
+      "prev_hash": "cb4e13dd0712d0c66d68e767503007ec9e7dd8d65370c5caa17f422c71fd84de",
+      "request_id": "0e6a0e66-62e9-4192-808d-de2f406c676c",
+      "resources": "",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T00:07:16.716484+00:00",
+      "tool_kind": ""
+    },
+    {
+      "agent": "host-controls-demo",
+      "caller_identity": "dashboard:chat-6-1789344355",
+      "entry_hash": "654eaabc77e1639384e2c7fa4eb7d9531a549807ac35b7569d663857ec682c0f",
+      "error": "",
+      "event_id": "ff26723e96204668",
+      "event_type": "tool_invocation",
+      "operation": "/usr/bin/python3 [OPAQUE REDACTED].py",
+      "outcome": "invoked",
+      "prev_hash": "6331e26c3e3d7652166f7af45d6ea732ecafee602e5badb982e21d03458d060a",
+      "request_id": "",
+      "resources": "",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T00:07:01.046218+00:00",
+      "tool_kind": "execute"
+    },
+    {
+      "agent": "host-controls-demo",
+      "caller_identity": "dashboard:chat-6-1789344355",
+      "entry_hash": "4833c5295255caab9475fcdf96467849647f54ae445243797447897a44ea0512",
+      "error": "",
+      "event_id": "d69a1cd92a064537",
+      "event_type": "tool_invocation",
+      "operation": "Reading anonymous-http.py:1",
+      "outcome": "refined",
+      "prev_hash": "41ade6a378c07b40de7f47372ab21d80a095ac80ff2fd6ef0c3a826d3d07ede8",
+      "request_id": "",
+      "resources": "",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T00:06:55.377700+00:00",
+      "tool_kind": "read"
+    },
+    {
+      "agent": "host-controls-demo",
+      "caller_identity": "dashboard:chat-6-1789344355",
+      "entry_hash": "41ade6a378c07b40de7f47372ab21d80a095ac80ff2fd6ef0c3a826d3d07ede8",
+      "error": "",
+      "event_id": "1351f17d37a34548",
+      "event_type": "tool_invocation",
+      "operation": "Reading anonymous-http.py:1",
+      "outcome": "approved",
+      "prev_hash": "89bb6d4cceae38e9b40f7310a29804a739f5b91c87f0c4d0e71626a77393f03c",
+      "request_id": "111c83b1-5dde-47f5-9775-d61733fbc89c",
+      "resources": "",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T00:06:55.369131+00:00",
+      "tool_kind": ""
+    },
+    {
+      "agent": "host-controls-demo",
+      "caller_identity": "dashboard:chat-6-1789344355",
+      "entry_hash": "677c9ecd2c0d3c8cb2880a5a9aa9a532b7ed167147cfa0632a292863a4bada11",
+      "error": "",
+      "event_id": "91e0cb7cdfac488d",
+      "event_type": "tool_invocation",
+      "operation": "Reading anonymous-http.py:1",
+      "outcome": "invoked",
+      "prev_hash": "6e7875e5c2016c4d19300432bdc2ea1940a4edbfd0577035f8f42b40f2199415",
+      "request_id": "",
+      "resources": "",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T00:06:41.120474+00:00",
+      "tool_kind": "read"
+    }
+  ],
+  "permission_triggered_process_snapshots": [
+    {
+      "approval_pending_during_sampling": "not_verified",
+      "finished": "2026-09-14T00:06:41.906754+00:00",
+      "processes": [
+        {
+          "comm": "python",
+          "cwd": "/opt/kirocrew-demo/mcp-enforcement",
+          "exe": "/usr/bin/python3.12",
+          "pid": 2833,
+          "ppid": 1,
+          "uid": 997
+        },
+        {
+          "comm": "systemd",
+          "cwd": "/",
+          "exe": "/usr/lib/systemd/systemd",
+          "pid": 3557,
+          "ppid": 1,
+          "uid": 999
+        },
+        {
+          "comm": "(sd-pam)",
+          "cwd": "/",
+          "exe": "/usr/lib/systemd/systemd-executor",
+          "pid": 3558,
+          "ppid": 3557,
+          "uid": 999
+        },
+        {
+          "comm": "sshd",
+          "cwd": "/",
+          "exe": "/usr/sbin/sshd",
+          "pid": 3613,
+          "ppid": 3552,
+          "uid": 999
+        },
+        {
+          "comm": "kirocrew",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/bin/python3.12",
+          "pid": 4991,
+          "ppid": 1,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "[OPAQUE REDACTED]",
+          "exe": "/usr/bin/python3.12",
+          "pid": 8461,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "[OPAQUE REDACTED]",
+          "exe": "/usr/bin/python3.12",
+          "pid": 8462,
+          "ppid": 8461,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "/var/lib/kirocrew/workspace",
+          "exe": "/usr/bin/python3.12",
+          "pid": 75248,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli",
+          "cwd": "/var/lib/kirocrew/workspace",
+          "exe": "/usr/local/bin/kiro-cli",
+          "pid": 75249,
+          "ppid": 75248,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli-chat",
+          "cwd": "/var/lib/kirocrew/workspace",
+          "exe": "/usr/local/bin/kiro-cli-chat",
+          "pid": 75256,
+          "ppid": 75249,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "[OPAQUE REDACTED]",
+          "exe": "/usr/bin/python3.12",
+          "pid": 86275,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli",
+          "cwd": "[OPAQUE REDACTED]",
+          "exe": "/usr/local/bin/kiro-cli",
+          "pid": 86276,
+          "ppid": 86275,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli-chat",
+          "cwd": "[OPAQUE REDACTED]",
+          "exe": "/usr/local/bin/kiro-cli-chat",
+          "pid": 86283,
+          "ppid": 86276,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/bin/python3.12",
+          "pid": 103736,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli",
+          "pid": 103737,
+          "ppid": 103736,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli-chat",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli-chat",
+          "pid": 103744,
+          "ppid": 103737,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/bin/python3.12",
+          "pid": 106149,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli",
+          "pid": 106150,
+          "ppid": 106149,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli-chat",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli-chat",
+          "pid": 106157,
+          "ppid": 106150,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/bin/python3.12",
+          "pid": 108380,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli",
+          "pid": 108381,
+          "ppid": 108380,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli-chat",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli-chat",
+          "pid": 108388,
+          "ppid": 108381,
+          "uid": 999
+        }
+      ],
+      "request_id": "111c83b1-5dde-47f5-9775-d61733fbc89c",
+      "started": "2026-09-14T00:06:41.178012+00:00"
+    },
+    {
+      "approval_pending_during_sampling": "not_verified",
+      "finished": "2026-09-14T00:07:01.842444+00:00",
+      "processes": [
+        {
+          "comm": "python",
+          "cwd": "/opt/kirocrew-demo/mcp-enforcement",
+          "exe": "/usr/bin/python3.12",
+          "pid": 2833,
+          "ppid": 1,
+          "uid": 997
+        },
+        {
+          "comm": "systemd",
+          "cwd": "/",
+          "exe": "/usr/lib/systemd/systemd",
+          "pid": 3557,
+          "ppid": 1,
+          "uid": 999
+        },
+        {
+          "comm": "(sd-pam)",
+          "cwd": "/",
+          "exe": "/usr/lib/systemd/systemd-executor",
+          "pid": 3558,
+          "ppid": 3557,
+          "uid": 999
+        },
+        {
+          "comm": "sshd",
+          "cwd": "/",
+          "exe": "/usr/sbin/sshd",
+          "pid": 3613,
+          "ppid": 3552,
+          "uid": 999
+        },
+        {
+          "comm": "kirocrew",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/bin/python3.12",
+          "pid": 4991,
+          "ppid": 1,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "[OPAQUE REDACTED]",
+          "exe": "/usr/bin/python3.12",
+          "pid": 8461,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "[OPAQUE REDACTED]",
+          "exe": "/usr/bin/python3.12",
+          "pid": 8462,
+          "ppid": 8461,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "/var/lib/kirocrew/workspace",
+          "exe": "/usr/bin/python3.12",
+          "pid": 75248,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli",
+          "cwd": "/var/lib/kirocrew/workspace",
+          "exe": "/usr/local/bin/kiro-cli",
+          "pid": 75249,
+          "ppid": 75248,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli-chat",
+          "cwd": "/var/lib/kirocrew/workspace",
+          "exe": "/usr/local/bin/kiro-cli-chat",
+          "pid": 75256,
+          "ppid": 75249,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "[OPAQUE REDACTED]",
+          "exe": "/usr/bin/python3.12",
+          "pid": 86275,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli",
+          "cwd": "[OPAQUE REDACTED]",
+          "exe": "/usr/local/bin/kiro-cli",
+          "pid": 86276,
+          "ppid": 86275,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli-chat",
+          "cwd": "[OPAQUE REDACTED]",
+          "exe": "/usr/local/bin/kiro-cli-chat",
+          "pid": 86283,
+          "ppid": 86276,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/bin/python3.12",
+          "pid": 103736,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli",
+          "pid": 103737,
+          "ppid": 103736,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli-chat",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli-chat",
+          "pid": 103744,
+          "ppid": 103737,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/bin/python3.12",
+          "pid": 106149,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli",
+          "pid": 106150,
+          "ppid": 106149,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli-chat",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli-chat",
+          "pid": 106157,
+          "ppid": 106150,
+          "uid": 999
+        },
+        {
+          "comm": "python3",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/bin/python3.12",
+          "pid": 108380,
+          "ppid": 4991,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli",
+          "pid": 108381,
+          "ppid": 108380,
+          "uid": 999
+        },
+        {
+          "comm": "kiro-cli-chat",
+          "cwd": "/srv/kirocrew-demo/workspace",
+          "exe": "/usr/local/bin/kiro-cli-chat",
+          "pid": 108388,
+          "ppid": 108381,
+          "uid": 999
+        }
+      ],
+      "request_id": "0e6a0e66-62e9-4192-808d-de2f406c676c",
+      "started": "2026-09-14T00:07:01.109099+00:00"
+    }
+  ],
+  "private_sel_counts": {
+    "new_sel_interval": {
+      "other_callers": 447,
+      "target_session": 6,
+      "total": 453
+    },
+    "sel_after": {
+      "other_callers": 994,
+      "target_session": 6,
+      "total": 1000
+    },
+    "sel_before": {
+      "other_callers": 1000,
+      "target_session": 0,
+      "total": 1000
+    }
+  },
+  "private_source": {
+    "bytes": 1694113,
+    "path": "../../../../.build/native-host-auth-20260913-ui1/receipt.json",
+    "path_base": "publication_directory",
+    "retention": "privately_retained_ignored",
+    "sha256": "639e652a2db0a7a9f3ef5022e25e97f00932b9cb237005ed59f764654f02c5b4"
+  },
+  "processes_before": [
+    {
+      "comm": "python",
+      "cwd": "/opt/kirocrew-demo/mcp-enforcement",
+      "exe": "/usr/bin/python3.12",
+      "pid": 2833,
+      "ppid": 1,
+      "uid": 997
+    },
+    {
+      "comm": "systemd",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd",
+      "pid": 3557,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "(sd-pam)",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd-executor",
+      "pid": 3558,
+      "ppid": 3557,
+      "uid": 999
+    },
+    {
+      "comm": "sshd",
+      "cwd": "/",
+      "exe": "/usr/sbin/sshd",
+      "pid": 3613,
+      "ppid": 3552,
+      "uid": 999
+    },
+    {
+      "comm": "kirocrew",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 4991,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8461,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8462,
+      "ppid": 8461,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 75248,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 75249,
+      "ppid": 75248,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 75256,
+      "ppid": 75249,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 86275,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 86276,
+      "ppid": 86275,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 86283,
+      "ppid": 86276,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 103736,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 103737,
+      "ppid": 103736,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 103744,
+      "ppid": 103737,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 106149,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 106150,
+      "ppid": 106149,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 106157,
+      "ppid": 106150,
+      "uid": 999
+    }
+  ],
+  "publication_notes": [
+    "The hash-bound original snapshot is privately retained and excluded from Git; its bytes were not changed.",
+    "Broad SEL pages, their error details and complete conversation snapshots are omitted by an explicit field allowlist.",
+    "SEL summary counts describe the private source, not additional exported event evidence.",
+    "Use the scoped native events.jsonl and separately recovered SEL interval for offline outcome analysis.",
+    "This export is a publication boundary, not a new collection, integrity verification or enforcement acceptance verdict.",
+    "Relative private-source paths resolve from this publication directory; original capture files were not copied into it."
+  ],
+  "run_id": "host-auth-20260913-ui1",
+  "schema": 1,
+  "sel_checkpoint": {
+    "anchor_event_id": "fbf61f485ab5414d",
+    "anchor_sha256": "bd6f66b9b4ba720b35df2de22f61c808f322c16e0f2791c7a045b7dcf5d40dfd",
+    "baseline_count": 1000
+  },
+  "sel_integrity_after": {
+    "integrity": "ok",
+    "tampered": 0,
+    "total": 118623,
+    "valid": 118623
+  },
+  "sel_window": {
+    "anchor_event_id": "fbf61f485ab5414d",
+    "anchor_index": 453,
+    "complete": true,
+    "event_count": 453,
+    "method": "exact_newest_baseline_anchor_retained"
+  },
+  "service_stable": true,
+  "slot": "chat-6-1789344355",
+  "source_kind": "passive_native_client_evidence",
+  "started": "2026-09-14T00:06:04.507453+00:00",
+  "stream_finished": "2026-09-14T00:08:00.843546+00:00",
+  "stream_quiet_interval_seconds": 1.0
+}

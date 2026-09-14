@@ -1,6 +1,6 @@
 # KiroCrew native client demos and admin tour
 
-The current [10-slide presentation](output/kirocrew-native-controls.html) contains five real macOS KiroCrew clips. Four show a user reaching the EC2 Crew, MCP and AWS controls; the fifth shows the server refusing an unassigned conversation before private-memory access. The separate [admin screenshot tour](output/kirocrew-admin-tour.html) explains the controls, four completed turns and client/server collection data.
+The current [14-slide presentation](output/kirocrew-native-controls.html) contains eight native Mac recordings. Five original clips cover Crew/MCP/IAM decisions and private-memory assignment. Three additions show an allowed workspace read, a command-denial response summary and the anonymous helper's execute approval through the HTTP 403 summary. Recording count is separate from the number of fully verified control outcomes. The separate [admin screenshot tour](output/kirocrew-admin-tour.html) explains the controls, four completed turns and client/server collection data.
 
 The endpoint client scope is macOS. EC2 runs the Gateway, original Kiro CLI backend, workspace and separate MCP service. Keep the single endpoint-control box around the remote execution host. The Mac's local Gateway stays off.
 
@@ -24,31 +24,31 @@ Use the published collector exports for the [MCP run](evidence/native-client-dem
 
 The Crew deny is remote configuration that Crew can edit in this demo. The separately protected MCP service and AWS role enforce their own boundaries. The Mac uses an owner connection, and no enterprise governance policy is active. The private-memory clip establishes conversation assignment; restricted human-role authorization and immutable enterprise policy remain untested.
 
-## Six prepared host takes
+## Host takes after the Mac was unlocked
 
-The fixtures, fixed helpers and separate `host-controls-demo` agent are installed and reviewed. These six native outcomes remain unrecorded because the Mac locked before the corrected session's first prompt.
+The first resumed native workspace read succeeded. A separate harmless marker command reached the server and was automatically denied by its configured rule. Its footage shows the assistant's response summary only. The request was submitted before the observer and recording started, and the expanded tool output and policy reason are not visible. Two other attempts stopped in model responses before any tool ran. A later anonymous helper run completed after separate read/execute approvals and returned HTTP 403. Sensitive-path read, protected-path write and metadata TCP isolation remain unfinished. The IMDS execution approval expired unanswered after ten minutes, with no helper execution or firewall result observed. A fresh slot failed screenshot readiness and received no prompt.
 
-| Take | Bounded client action | Required decision evidence |
+| Take | Current observation | Required decision evidence |
 | --- | --- | --- |
-| Allowed workspace read | Read the prepared public workspace canary once with `fs_read`. | Actual request and returned marker match the fixture. |
-| Anonymous server authentication | Run the fixed no-argument loopback HTTP helper once. | Rejected authentication status and matching server context. |
-| Sensitive-path read | Read the public canary under Crew's `.aws` directory once. | Automatic path denial and matching server event; the canary exists. |
+| Allowed workspace read | One native `fs_read` returned the prepared public canary. | Exact tool request and marker result are captured. No permission event appeared; this is not an approval-callback test. |
+| Anonymous server authentication | A later request approved the exact helper read and execution separately, then returned HTTP 403. | The clip starts at execute approval and ends at the assistant's 403 summary; source-read approval and expanded tool output are outside the excerpt. Matched token-auth evidence supports the outcome. |
+| Sensitive-path read | First request received a model-only refusal; no file tool ran. | Actual native read of the exact prepared canary, automatic path denial and matching server event. |
 | Protected-path write | Request a new harmless marker under the dedicated agent fixture directory. | Automatic write denial and marker absent before and after. |
-| Server command rule | Request the harmless command containing the exact custom deny marker. | Enabled rule, automatic denial and matching event. |
-| Metadata connection isolation | Run the fixed IPv4 IMDS TCP helper once, sending zero application bytes. | Actual process UID, effective host rule and connection result. A timeout alone leaves attribution unresolved. |
+| Server command rule | Persisted native history contains the exact blocked `printf` request and matching isolated-turn `hook_deny`. | Assistant response-summary inspection footage is recorded; expanded tool output and policy reason are not visible. A complete prompt-to-denial recording remains a separate gap. |
+| Metadata connection isolation | Helper read was approved; the execute approval expired unanswered after ten minutes. No helper execution or probe result was observed. | Actual process UID, effective host rule and connection result. A connection timeout alone leaves attribution unresolved. |
 
-The corrected blank session is `chat-4-1789335946` in **Host control demos**, with `host-controls-demo` assigned at creation and workspace `/srv/kirocrew-demo/workspace`. Recheck that state after the Mac is unlocked. The [unused capture](evidence/native-client-demo/host-20260913-ui2/capture-status.json) and observer are finalized with zero captured events and zero session messages. Start a fresh observer and raw recording before sending the first prompt. The earlier `chat-3-1789335506` refusal remains a separate identity-binding observation.
+The folder-created `chat-4-1789335946` completed the workspace read and two model-only refusals. The command denial occurred in `chat-5-1789343728`. Read the [resumed host appendix](docs/NATIVE-CLIENT-DEMO.md#resumed-host-observations) for the exact evidence and capture limits. The earlier [zero-event capture](evidence/native-client-demo/host-20260913-ui2/capture-status.json) and private-memory refusal retain their original scope. The [IMDS timeout correlation](evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json) records the expired approval; the [unused fresh-slot observer](evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json) records zero events and no submitted prompt. For the remaining cases, confirm that actual screenshots show the current folder-created chat and reviewed `host-controls-demo` instructions, then start a fresh observer and raw recording before sending its first prompt.
 
-Use the exact prompts and acceptance checks in [the host-control shot list](docs/HOST-CONTROL-SCENARIOS.md). The custom rule `KIROCREW_DEMO_COMMAND_CONTROL_20260913` was added through the admin UI for these takes. Remove only that added rule after recording and retain the cleanup receipt. Keep the 112 built-in rules unchanged. Restricted human identity, filesystem profiles and namespace-write demonstrations need separate setup before they become recording candidates.
+Use the exact prompts and acceptance checks in [the host-control shot list](docs/HOST-CONTROL-SCENARIOS.md). The custom rule `KIROCREW_DEMO_COMMAND_CONTROL_20260913` was added through the admin UI and removed after the take. The [cleanup readback](evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json) confirms the exact marker and rule ID are absent, with no built-in IDs disabled. A repeat command take needs a newly added bounded marker rule and its own cleanup; keep built-in rules enabled. Restricted human identity, filesystem profiles and namespace-write demonstrations need separate setup before they become recording candidates.
 
 ## Finish the presentation walkthrough
 
-1. Resume the six host takes after the Mac is unlocked. Verify the session, services, fixture hashes and exact enabled custom rule. Approve only the bounded request shown in the native client; preserve any substituted tool, missing input or unexpected result as a failed take.
+1. Complete the three remaining host cases and decide whether to recapture the command denial from prompt submission. Verify the session, services and fixture hashes. The prior custom marker has been removed; only a repeat command take needs a new bounded rule. Approve only the bounded request shown in the native client; preserve any substituted tool, missing input or unexpected result as a failed take.
 2. Correlate each result with the relevant server evidence. Record the first control that stopped it. A hook denial before helper execution leaves the later filesystem or network boundary untested.
 3. Export reviewed continuous cuts with FFmpeg, source hashes, posters and timestamped cues. Preserve all raw failure takes privately and keep their receipts. Append completed scenes with `scripts/build-native-control-presentation.py --manifest`; use the existing processed manifests as inputs.
 4. Walk through the separate admin tour. Explain configured coverage, policy authority, backend status, Gateway turn metrics and custom client/server collection events. The latter do not contain all SEL or MCP decisions.
 5. Verify playback, cue seeking, keyboard controls and evidence delivery for the final edition. Complete the requested Grok 4.6 xhigh and Opus 5 xhigh council review on a frozen candidate, incorporate agreed findings, then apply No AI Slop and verify the edited output.
-6. Update the status and delivery receipts, remove the temporary command rule, and publish the reviewed artifacts to the existing private repository. GitHub Actions remain out of scope.
+6. Update the status and delivery receipts, verify any new temporary-rule cleanup, and publish the reviewed artifacts to the existing private repository. GitHub Actions remain out of scope.
 
 Keep the accepted deck, PowerPoint, diagrams and earlier receipts unchanged. New infrastructure uses explicit CloudFormation parameters for an existing VPC and subnet; this recording work does not add network infrastructure or redeploy the accepted stack.
 
@@ -60,4 +60,4 @@ The [prior plan](docs/history/DEMO-RECORDING-PLAN-before-native-focus.md), [reco
 
 ## What changed
 
-Recorded five native control clips and linked their evidence. Added six prepared host takes with explicit remaining checks, the corrected session setup and temporary-rule cleanup. Made the new presentation and separate admin screenshot tour the current entry points.
+Preserved the five-clip edition and added the resumed workspace success and bounded command-denial evidence. Distinguished two model-only refusals from server decisions, added the later anonymous-helper 403 with read/execute approvals, and retained three pending cases and the command request-capture gap. Replaced the earlier pending IMDS status with its unanswered approval timeout and recorded the unused fresh slot.

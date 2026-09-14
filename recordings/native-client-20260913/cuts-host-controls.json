@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "title": "Native client: host controls and permitted read",
+  "scenes": [
+    {
+      "id": "native-host-workspace-read",
+      "title": "Read the permitted workspace canary",
+      "description": "Submit one bounded fs_read request for the prepared public canary in the server workspace. The native tool returns the canary; the operator expands its Output tab.",
+      "evidenceScope": "Actual macOS native client recording of a permitted host filesystem read, from the composed request through the native tool result. No permission card or approval callback was observed. This establishes the allowed-read baseline, not a host denial.",
+      "recordedAt": "2026-09-13T23:51:02Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/host-control-take-03.mov",
+        "description": "Continuous native Mac window capture. Original timing preserved; subsequent assistant-only refusals are outside this cut."
+      },
+      "start": 26,
+      "end": 65,
+      "cues": [
+        {
+          "time": 1,
+          "label": "Request one public canary read",
+          "detail": "The composer contains the complete fs_read request, constrained to the prepared workspace fixture and one tool call."
+        },
+        {
+          "time": 16,
+          "label": "The native filesystem tool completes",
+          "detail": "The green fs_read row identifies allowed-canary.txt. The joined native transcript records the single read and exact public canary output."
+        },
+        {
+          "time": 21,
+          "label": "Read the returned canary",
+          "detail": "The client reports PUBLIC KIROCREW HOST CONTROL CANARY - NO CREDENTIALS."
+        },
+        {
+          "time": 34,
+          "label": "Inspect the actual tool output",
+          "detail": "The expanded Output tab shows the same canary returned by fs_read. No approval card occurred in this attempt."
+        }
+      ],
+      "recordingCoverage": "request_to_result",
+      "outcomeClass": "native_allowed",
+      "presentation": {
+        "control": "Permitted workspace read",
+        "enforcer": "Remote built-in tool",
+        "outcome": "Public canary returned"
+      }
+    },
+    {
+      "id": "native-host-command-denial-summary",
+      "title": "Inspect the command denial summary",
+      "description": "Inspect the completed native conversation containing the exact harmless marker command and the assistant's denial summary. The tool history remains collapsed in this recording.",
+      "evidenceScope": "Result inspection only. The denial occurred before this recording began; the cut shows the assistant summary, not the attempted action or an expanded blocked-tool row. A separate persisted native history and isolated hook_deny receipt establish the configured Crew command rule as the enforcer.",
+      "recordedAt": "2026-09-14T00:00:31Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/host-control-take-04.mov",
+        "description": "Continuous inspection of a completed native conversation after the denial. Original timing preserved; the recording gap is explicit."
+      },
+      "start": 48,
+      "end": 66,
+      "recordingCoverage": "result_inspection",
+      "outcomeClass": "server_hook_denied",
+      "presentation": {
+        "control": "Configured command rule",
+        "enforcer": "Crew hook, joined receipt",
+        "outcome": "Denied; summary inspection"
+      },
+      "cues": [
+        {
+          "time": 1,
+          "label": "Inspect the exact command request",
+          "detail": "The completed conversation shows the harmless marker command in its submitted prompt. The denial occurred before recording began."
+        },
+        {
+          "time": 8,
+          "label": "Read the denial summary",
+          "detail": "The assistant reports the command was blocked. The tool steps are collapsed here; the separate native blocked row and hook_deny receipt provide attribution."
+        },
+        {
+          "time": 14,
+          "label": "Keep the recording gap visible",
+          "detail": "This clip is result inspection, not a recorded request-to-block sequence. No tool expansion or missing action has been reconstructed."
+        }
+      ]
+    },
+    {
+      "id": "native-host-anonymous-http403",
+      "title": "Approve the helper; observe HTTP 403",
+      "description": "Approve the inspected anonymous loopback helper once, then read the HTTP 403 result returned in the native conversation. The original request and a separate one-time helper-read approval occurred before this excerpt.",
+      "evidenceScope": "Continuous execution-approval-to-result recording in the actual macOS client. The exact helper command is visible, its permission card clears, and the assistant reports HTTP 403 with no authorization header, cookies or response-body read. The actual tool Output remains collapsed. The helper field native_enforcement_verified stays false; gateway attribution requires separate correlated evidence.",
+      "recordedAt": "2026-09-14T00:00:31Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/host-control-take-04.mov",
+        "description": "Continuous native Mac capture beginning at the execute_bash permission card. Prior request and helper-read approval are outside this cut; original timing retained."
+      },
+      "start": 398,
+      "end": 420,
+      "recordingCoverage": "approval_to_result",
+      "outcomeClass": "unknown",
+      "presentation": {
+        "control": "Anonymous gateway request",
+        "enforcer": "HTTP 403 observed; see joined receipt",
+        "outcome": "No authorization header or cookies"
+      },
+      "cues": [
+        {
+          "time": 1,
+          "label": "Inspect the command awaiting approval",
+          "detail": "The native card names the exact anonymous-http.py helper and offers Allow once. The helper was already read under its own one-time approval before this excerpt."
+        },
+        {
+          "time": 9,
+          "label": "The approved execution completes",
+          "detail": "The execution card clears and the native conversation starts reporting the result. No persistent trust setting is used."
+        },
+        {
+          "time": 17,
+          "label": "Read the HTTP 403 result",
+          "detail": "The reported JSON shows HTTP403, no authorization header or cookies, and no response-body read. Its native_enforcement_verified:false field remains visible; consult correlated evidence for attribution."
+        }
+      ]
+    }
+  ]
+}

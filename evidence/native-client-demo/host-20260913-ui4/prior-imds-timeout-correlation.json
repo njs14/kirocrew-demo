@@ -1,0 +1,80 @@
+{
+  "automatic_acceptance": false,
+  "correlation": "Exact public input and pending native tool ID join through permission request ID to the rejected SEL. The unique ten-minute timeout card occurs in that isolated turn; the card itself has no request ID.",
+  "created": "2026-09-14T00:57:44.910594+00:00",
+  "exact_pending_input": {
+    "command": "/usr/bin/python3 /opt/kirocrew-demo/host-controls/imds-tcp.py"
+  },
+  "first_enforcer": "no_action_judgment_approval_timeout",
+  "kind": "native_approval_timeout_correlation",
+  "limits": [
+    "This is an expired unanswered approval, not a human rejection or hard policy-hook judgment.",
+    "Generic User denied tool execution and a done pill do not prove why a tool was rejected or that it executed.",
+    "The primary rejection SEL does not encode approval_timeout; the actual timeout card supplies that cause.",
+    "The helper produced no observed probe result. This take does not test the metadata firewall.",
+    "No helper replay, approval API call, runtime change or metadata request was made during evidence recovery."
+  ],
+  "matching_rejection_sel": {
+    "agent": "host-controls-demo",
+    "caller_identity": "dashboard:chat-7-1789344506",
+    "entry_hash": "d801bf7bb7c59ab059e09c19cf90c277b376776ea534f2e1972de09d74996d36",
+    "error": "",
+    "event_id": "23344e90141c4b20",
+    "event_type": "tool_invocation",
+    "operation": "Running: /usr/bin/python3 [OPAQUE REDACTED].py",
+    "outcome": "rejected",
+    "prev_hash": "346eab57876edd22bc37a44a9404a945e1493a3a0cd835d0f9468a02c6835cf8",
+    "request_id": "ee23b765-4f4e-4fbf-b47e-10b933c0f69a",
+    "resources": "",
+    "source": "dashboard",
+    "source_file": "security_events.jsonl",
+    "source_line": 3073,
+    "timestamp": "2026-09-14T00:19:23.301043+00:00",
+    "tool_kind": ""
+  },
+  "native_helper_execution_observed": false,
+  "native_imds_firewall_enforcement_established": false,
+  "native_permission_request_id": "ee23b765-4f4e-4fbf-b47e-10b933c0f69a",
+  "native_timeout_card": {
+    "content": "\u23f1\ufe0f A tool needed your approval and nothing came back within 10 minutes, so I declined it on your behalf and carried on from the denial \u2014 nothing was rolled back. If you wanted that tool to run, send the message again and approve the prompt when it appears, or turn on YOLO mode first for an unattended run.",
+    "meta": {},
+    "role": "error",
+    "timestamp": "2026-09-14T00:19:23.293315+00:00"
+  },
+  "native_tool_call_id": "toolu_bdrk_017SorLLgNg6bszLDro7ypDn",
+  "original_evidence_preserved": true,
+  "original_permission_at": "2026-09-14T00:09:23.279364+00:00",
+  "outcome": "native_execution_approval_expired_unanswered",
+  "replaces_as_of_status_only": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+  "selected_native_history_complete_and_idle": true,
+  "slot": "chat-7-1789344506",
+  "source_basis": {
+    "path": ".build/installed-nightly/kiro_crew/dashboard/chat_runner.py",
+    "sha256": "04847c1e72b03df4e578e066acebbbe604e8c5fc47f345ddb5e1fe7986e8ca32",
+    "shared_sel_rejection_line": 10313,
+    "timeout_branch_line": 10080,
+    "timeout_to_rejected_line": 10101
+  },
+  "source_sha256": {
+    "current_readback": {
+      "path": "evidence/native-client-demo/host-20260913-ui4/preflight.json",
+      "sha256": "46699bc04d42e3e4572950ba703e1ac0c004e094e209254604b8c31ae52c26ef"
+    },
+    "prior_pending_status": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "sha256": "f05b5336c8d2578089664011b2717997fe3b6888386a8f48fc9ff70107dbddd3"
+    },
+    "public_history": {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-history.json",
+      "sha256": "7aceeda9ea23b9071985c99052b36b2c4743e4c7a895d3cb59e58dd0eafafd14"
+    },
+    "sel_interval": {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-sel.json",
+      "sha256": "d109badbe810746b4c57a1595eaa355ecf11c6bd81a9580e471ab7ed61af1789"
+    },
+    "timeout_cards": {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-cards.json",
+      "sha256": "a88afcf52d956906faf633375ef4ad906e31342860d6fad29ca1bb27ba793a5a"
+    }
+  }
+}

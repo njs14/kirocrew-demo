@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import copy
 from datetime import datetime, timezone
 import hashlib
 import html
@@ -137,6 +138,99 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def checked_relative_file(value, base=ROOT):
+    """Accept a regular, non-symlink file under the selected checkout folder."""
+    if not isinstance(value, str) or "\\" in value:
+        raise ValueError("Expected a checkout-relative file path")
+    relative = Path(value)
+    if relative.is_absolute() or any(part in {"", ".", ".."} for part in value.split("/")):
+        raise ValueError("Expected a checkout-relative file path")
+    current = base
+    for part in relative.parts:
+        current = current / part
+        if current.is_symlink():
+            raise ValueError(f"Symlink input is not supported: {value}")
+    if not current.is_file():
+        raise ValueError(f"Missing regular input: {value}")
+    current.resolve().relative_to(base.resolve())
+    return current
+
+
+def checked_public_source(value):
+    """Limit added links to scoped demo evidence; each source still needs review."""
+    if not isinstance(value, str):
+        raise ValueError("Expected a scoped evidence path")
+    parts = value.split("/")
+    if (len(parts) < 3 or parts[:2] not in [["evidence", "native-client-demo"], ["evidence", "admin-console"]]
+            or any(part.startswith(".") or part == "raw" for part in parts)
+            or any(token in parts[-1] for token in (".local.", "preflight"))):
+        raise ValueError("Added sources must be reviewed JSON receipts in the native-client-demo or admin-console evidence folders")
+    path = checked_relative_file(value)
+    if path.suffix != ".json":
+        raise ValueError("Added evidence links must name reviewed JSON receipts")
+    if "native-client-demo" in path.parts and path.name in {"baseline.json", "receipt.json"}:
+        raise ValueError("Use the publication export, not a private collector original")
+    return path
+
+
+def load_capture_group(manifest_path, stops):
+    """Append inspected captures to existing stops; evidence links never grant a verdict.
+
+    The JSON input contains schemaVersion=1, groupId, captureLabel, and stops.
+    Each stop names an existing id and shots with output-relative file, sha256,
+    caption and alt. Optional body/cue replace that stop's reviewed prose. An
+    optional sources array contains label/path/sha256 for publishable receipts.
+    """
+    relative = manifest_path.absolute().relative_to(ROOT).as_posix()
+    manifest_path = checked_relative_file(relative)
+    data = json.loads(manifest_path.read_text())
+    if data.get("schemaVersion") != 1 or not re.fullmatch(r"[a-z0-9][a-z0-9-]*", data.get("groupId", "")):
+        raise ValueError("Capture group needs schemaVersion=1 and a lowercase groupId")
+    label = data.get("captureLabel")
+    if not isinstance(label, str) or not label.strip():
+        raise ValueError("Capture group needs a dated captureLabel")
+    updates = data.get("stops")
+    if not isinstance(updates, list) or not updates:
+        raise ValueError("Capture group needs at least one stop with inspected screenshots")
+    by_id = {stop["id"]: stop for stop in stops}
+    seen = set()
+    for update in updates:
+        stop_id = update.get("id")
+        if stop_id not in by_id or stop_id in seen:
+            raise ValueError("Capture group stop ids must be existing and unique")
+        seen.add(stop_id)
+        shots = update.get("shots")
+        if not isinstance(shots, list) or not shots:
+            raise ValueError("Each capture group stop needs actual screenshots")
+        for item in shots:
+            path = checked_relative_file(item.get("file"), OUT)
+            if not re.fullmatch(r"[0-9a-f]{64}", item.get("sha256", "")) or sha(path) != item["sha256"]:
+                raise ValueError(f"Screenshot differs from its inspected capture hash: {path.name}")
+            if any(not isinstance(item.get(key), str) or not item[key].strip() for key in ("caption", "alt")):
+                raise ValueError("Each inspected screenshot needs a caption and alt text")
+            by_id[stop_id]["shots"].append({"file": item["file"], "caption": item["caption"], "alt": item["alt"],
+                                          "capture_label": label, "capture_group": data["groupId"]})
+        if "body" in update:
+            if not isinstance(update["body"], list) or not update["body"] or any(not isinstance(p, str) or not p.strip() for p in update["body"]):
+                raise ValueError("Stop body must contain nonempty reviewed paragraphs")
+            by_id[stop_id]["body"] = update["body"]
+        if "cue" in update:
+            if not isinstance(update["cue"], str) or not update["cue"].strip():
+                raise ValueError("Stop cue must contain reviewed text")
+            by_id[stop_id]["cue"] = update["cue"]
+    sources = []
+    for item in data.get("sources", []):
+        path = checked_public_source(item.get("path"))
+        if sha(path) != item.get("sha256"):
+            raise ValueError(f"Capture evidence changed after review: {path.name}")
+        if not isinstance(item.get("label"), str) or not item["label"].strip():
+            raise ValueError("Capture evidence needs a source label")
+        sources.append((item["label"], item["path"]))
+    return sources, {"path": relative, "sha256": sha(manifest_path), "group_id": data["groupId"],
+                     "capture_label": label, "stop_ids": sorted(seen),
+                     "scope": "Appended original screenshots and reviewed copy; this input does not change native outcome verdicts."}
+
+
 def image_info(item):
     path = OUT / item["file"]
     if path.is_symlink() or not path.is_file():
@@ -176,14 +270,29 @@ def image_info(item):
             "uri": f"data:{mime};base64," + base64.b64encode(data).decode()}
 
 
-def build(proof_paths):
+def build(proof_paths, capture_group=None, validate_only=False, browser_review_file=None):
+    stops = copy.deepcopy(STOPS)
     sources = list(SOURCES)
+    capture_metadata = None
+    status = STATUS
+    native_limits = NATIVE_LIMITS
+    evidence_intro = "The native recordings show the Mac requests and results. The final reconciliation and separate authority review support the allowed S3 read and the Crew, MCP and IAM denials. This screenshot tour explains the console’s observed views."
+    md_changes = "Added fresh security, command-rule, approval, governance, SEL-coverage and completed-turn telemetry captures. Updated the four native outcomes from the final reconciliation and authority review, while retaining the original collection failure and remaining limits. Earlier reference screenshots keep their capture dates."
+    footer_changes = "Added fresh security coverage, policy screens and completed-turn telemetry, explained the separate MCP/IAM authority, and retained earlier reference images with their capture dates."
+    if capture_group:
+        extra_sources, capture_metadata = load_capture_group(capture_group, stops)
+        sources.extend(extra_sources)
+        sources.append(("Current native admin findings", "output/kirocrew-native-admin-findings.md"))
+        sources.append(("Host-control scenario guide", "docs/HOST-CONTROL-SCENARIOS.md"))
+        status = "Earlier MCP/IAM run: " + STATUS
+        native_limits = "Earlier MCP/IAM collection: " + NATIVE_LIMITS
+        evidence_intro += " Later host observations, reviews and cleanup are linked separately below. Their results do not change the earlier collection verdict."
+        md_changes = "Retained the 13 accepted images and appended six later host captures: the temporary command rule before and after cleanup, command and authentication turn metrics, current client/server samples and filtered server collection events. The added captions distinguish configuration, runtime measurements and security decisions."
+        footer_changes = "Retained the earlier captures and added the temporary-rule cleanup, host-turn metrics and current client/server health views. Each native outcome remains tied to its own reviewed evidence."
     for i, path in enumerate(proof_paths, 1):
-        resolved = path.resolve(strict=True)
-        relative = resolved.relative_to(ROOT)
-        if not resolved.is_file() or path.is_symlink():
-            raise ValueError("Native receipt links must name regular files in this checkout")
-        sources.append((f"Native run receipt {i} (read its recorded verdict)", relative.as_posix()))
+        relative = path.absolute().relative_to(ROOT).as_posix()
+        checked_public_source(relative)
+        sources.append((f"Native run receipt {i} (read its recorded verdict)", relative))
     for _, path in sources:
         if not (ROOT / path).is_file():
             raise ValueError(f"Missing evidence source: {path}")
@@ -202,9 +311,9 @@ def build(proof_paths):
             or publication.get("collection_complete") != native["original_collection_complete"]):
         raise ValueError("The publication export does not match the retained original native receipt")
     images, cards = [], []
-    md = [f"# {TITLE}", "", "September 13, 2026 · macOS client / ARM EC2 server · owner console", "", INTRO, "", STATUS, "",
+    md = [f"# {TITLE}", "", "September 13, 2026 · macOS client / ARM EC2 server · owner console", "", INTRO, "", status, "",
           "Fresh security captures and earlier baseline screenshots are dated separately below. All image bytes are preserved. This tour is a guide to the console; native enforcement requires a separate recording and receipt.", ""]
-    for index, stop in enumerate(STOPS):
+    for index, stop in enumerate(stops):
         paragraphs = "".join(f"<p>{esc(text)}</p>" for text in stop["body"])
         figures = []
         md += [f"## {index + 1:02}. {stop['title']}", "", f"Open **{stop['path']}**.", "", f"Route: `{stop['route']}`", ""]
@@ -218,45 +327,54 @@ def build(proof_paths):
             image_id = f"image-{len(images)}"
             figures.append(f'<div class="figuretools"><span class="stamp">{esc(item["capture_label"])}</span><button type="button" data-zoom="{image_id}">Zoom image</button><a href="{esc(item["file"])}" target="_blank" rel="noopener">Open original</a></div><figure><button class="image-button" type="button" data-zoom="{image_id}" aria-label="Enlarge: {esc(item["alt"])}"><img id="{image_id}" src="{info["uri"]}" data-original="{esc(item["file"])}" alt="{esc(item["alt"])}" width="{info["width"]}" height="{info["height"]}"></button><figcaption>{esc(item["caption"])}</figcaption></figure>')
             md += [f"*{item['capture_label']}.* {item['caption']}", "", f"![{item['alt']}]({item['file']})", ""]
-        previous = f'<a href="#{STOPS[index-1]["id"]}">← Previous stop</a>' if index else "<span></span>"
-        following = f'<a href="#{STOPS[index+1]["id"]}">Next stop →</a>' if index + 1 < len(STOPS) else '<a href="#evidence">Read the evidence →</a>'
+        previous = f'<a href="#{stops[index-1]["id"]}">← Previous stop</a>' if index else "<span></span>"
+        following = f'<a href="#{stops[index+1]["id"]}">Next stop →</a>' if index + 1 < len(stops) else '<a href="#evidence">Read the evidence →</a>'
         cards.append(f'<article class="step" id="{stop["id"]}"><div class="copy"><div class="number">STOP {index+1:02}</div><h2 tabindex="-1">{esc(stop["title"])}</h2><div class="route">{esc(stop["path"])}<br><code>{esc(stop["route"])}</code></div>{paragraphs}<p class="cue"><strong>Presenter cue.</strong> {esc(stop["cue"])}</p></div>{"".join(figures)}<nav class="stopnav" aria-label="Adjacent stops">{previous}{following}</nav></article>')
     source_links = "".join(f'<li><a href="../{esc(path)}">{esc(label)}</a></li>' for label, path in sources)
-    md += ["## Evidence", "", NATIVE_LIMITS, ""] + [f"- [{label}](../{path})" for label, path in sources]
-    md += ["", "## What changed", "", "Added fresh security, command-rule, approval, governance, SEL-coverage and completed-turn telemetry captures. Updated the four native outcomes from the final reconciliation and authority review, while retaining the original collection failure and remaining limits. Earlier reference screenshots keep their capture dates.", ""]
-    navigation = "".join(f'<a href="#{stop["id"]}">{i+1:02} · {esc(stop["title"])}</a>' for i, stop in enumerate(STOPS))
-    choices = "".join(f'<option value="{i}">{i+1:02} · {esc(stop["title"])}</option>' for i, stop in enumerate(STOPS))
+    md += ["## Evidence", "", native_limits, ""] + [f"- [{label}](../{path})" for label, path in sources]
+    md += ["", "## What changed", "", md_changes, ""]
+    navigation = "".join(f'<a href="#{stop["id"]}">{i+1:02} · {esc(stop["title"])}</a>' for i, stop in enumerate(stops))
+    choices = "".join(f'<option value="{i}">{i+1:02} · {esc(stop["title"])}</option>' for i, stop in enumerate(stops))
     rendered = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A screenshot tour of the KiroCrew owner console, security controls and client/server telemetry."><title>{TITLE}</title><style>{STYLE}</style></head><body><div class="shell">
-<header><p class="eyebrow">KiroCrew · operator tour · September 13, 2026</p><h1>Inspect the server’s controls.<br>Read the evidence behind them.</h1><p class="intro">{esc(INTRO)}</p><p class="status">{esc(STATUS)} <a href="../evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json">Read the four-outcome reconciliation</a>.</p><p class="scope">Fresh security captures and earlier baseline images are dated separately. All screenshots are embedded unchanged. Native client enforcement requires a separate recording and receipt.</p></header>
+<header><p class="eyebrow">KiroCrew · operator tour · September 13, 2026</p><h1>Inspect the server’s controls.<br>Read the evidence behind them.</h1><p class="intro">{esc(INTRO)}</p><p class="status">{esc(status)} <a href="../evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json">Read the four-outcome reconciliation</a>.</p><p class="scope">Fresh security captures and earlier baseline images are dated separately. All screenshots are embedded unchanged. Native client enforcement requires a separate recording and receipt.</p></header>
 <div class="toolbar" aria-label="Tour navigation"><button id="previous" type="button">← Previous</button><label for="stop-choice" class="sr-only" hidden>Choose a stop</label><select id="stop-choice" aria-label="Choose a stop">{choices}</select><span id="counter" class="counter" aria-live="polite"></span><button id="next" type="button">Next →</button></div>
 <noscript><p class="nojs">Every stop is shown below. Use the stop links and Open original to inspect screenshots.</p></noscript>
 <div class="layout"><nav class="toc" aria-label="Tour stops">{navigation}</nav><main>{"".join(cards)}
-<section class="evidence" id="evidence"><h2>Read the supporting evidence</h2><p>The native recordings show the Mac requests and results. The final reconciliation and separate authority review support the allowed S3 read and the Crew, MCP and IAM denials. This screenshot tour explains the console’s observed views.</p><p>{esc(NATIVE_LIMITS)}</p><ul>{source_links}</ul><p><a href="kirocrew-admin-tour.md">Markdown walkthrough</a> · <a href="../evidence/admin-console/native-20260913/tour-build.json">Build and image manifest</a></p></section>
-<footer class="footer">Original screenshots · no generated product footage · use left/right arrows to move between stops · Escape closes image zoom.<p><strong>What changed.</strong> Added fresh security coverage, policy screens and completed-turn telemetry, explained the separate MCP/IAM authority, and retained earlier reference images with their capture dates.</p></footer></main></div></div>
+<section class="evidence" id="evidence"><h2>Read the supporting evidence</h2><p>{esc(evidence_intro)}</p><p>{esc(native_limits)}</p><ul>{source_links}</ul><p><a href="kirocrew-admin-tour.md">Markdown walkthrough</a> · <a href="../evidence/admin-console/native-20260913/tour-build.json">Build and image manifest</a></p></section>
+<footer class="footer">Original screenshots · no generated product footage · use left/right arrows to move between stops · Escape closes image zoom.<p><strong>What changed.</strong> {esc(footer_changes)}</p></footer></main></div></div>
 <dialog id="zoom-dialog" aria-label="Expanded console screenshot"><div class="dialogbar"><span id="zoom-title"></span><button id="actual-size" type="button" aria-pressed="false">Actual pixels</button><a id="zoom-original" href="#" target="_blank" rel="noopener">Open original</a><button id="close-zoom" type="button">Close · Esc</button></div><div class="zoomscroll" tabindex="0" role="region" aria-label="Screenshot pan area; use arrow keys at actual pixel size"><img id="zoom-image" alt=""></div></dialog>
 <script>{SCRIPT}</script></body></html>'''
-    EVIDENCE.mkdir(parents=True, exist_ok=True)
     outputs = [OUT / "kirocrew-admin-tour.html", OUT / "kirocrew-admin-tour.md"]
-    for path, text in zip(outputs, (rendered, "\n".join(md))):
-        path.write_text(text, encoding="utf-8")
     embedded = [hashlib.sha256(base64.b64decode(value, validate=True)).hexdigest() for value in re.findall(r'src="data:image/(?:png|jpeg);base64,([^"]+)"', rendered)]
     ids = re.findall(r'\bid="([^"]+)"', rendered)
     anchors = re.findall(r'href="#([^"#]+)"', rendered)
     checks = {"unique_ids": len(ids) == len(set(ids)), "all_anchor_targets_exist": set(anchors) <= set(ids),
               "all_screenshot_bytes_preserved": embedded == [item["sha256"] for item in images],
-              "all_stops_have_images": all(stop["shots"] for stop in STOPS),
+              "all_stops_have_images": all(stop["shots"] for stop in stops),
               "no_external_assets": not re.search(r'(?:src|href)="https?://', rendered),
               "no_video_or_fake_enforcement_frames": "<video" not in rendered and "<canvas" not in rendered,
               "native_auth_source_confirmed": auth["authenticated"] is True}
     if not all(checks.values()):
         raise ValueError(f"Tour static validation failed: {checks}")
-    browser_review_path = EVIDENCE / "browser-review.json"
+    browser_review_path = (checked_public_source(browser_review_file.absolute().relative_to(ROOT).as_posix())
+                           if browser_review_file else EVIDENCE / "browser-review.json")
     browser_review = json.loads(browser_review_path.read_text())
-    browser_matches = browser_review.get("status") == "passed" and browser_review.get("sha256") == sha(outputs[0])
+    if not isinstance(browser_review, dict):
+        raise ValueError("Browser review must be a JSON object")
+    rendered_sha256 = hashlib.sha256(rendered.encode("utf-8")).hexdigest()
+    browser_matches = browser_review.get("status") == "passed" and browser_review.get("sha256") == rendered_sha256
+    if validate_only:
+        print(json.dumps({"status": "validated_without_writes", "stops": len(stops), "screenshots": len(images),
+                          "html_sha256": rendered_sha256, "browser_review_matches": browser_matches,
+                          "capture_group": capture_metadata, "static_checks": checks}))
+        return
+    EVIDENCE.mkdir(parents=True, exist_ok=True)
+    for path, text in zip(outputs, (rendered, "\n".join(md))):
+        path.write_text(text, encoding="utf-8")
     receipt = {"schema": 1, "kind": "native_admin_tour_build", "built_at_utc": datetime.now(timezone.utc).isoformat(),
                "status": "static_and_browser_passed" if browser_matches else "static_passed_browser_review_pending", "builder_sha256": sha(Path(__file__)),
-               "stop_count": len(STOPS), "screenshot_count": len(images), "static_checks": checks,
+               "stop_count": len(stops), "screenshot_count": len(images), "static_checks": checks,
                "screenshots": [{key: value for key, value in item.items() if key != "uri"} for item in images],
                "sources": [{"label": label, "path": path, "sha256": sha(ROOT / path)} for label, path in sources],
                "outputs": [{"path": path.relative_to(ROOT).as_posix(), "sha256": sha(path), "bytes": path.stat().st_size} for path in outputs],
@@ -267,7 +385,7 @@ def build(proof_paths):
                                       "authority_verdict": authority["verdict"]},
                "browser_review": {"current_candidate": "passed" if browser_matches else "copy_delta_review_pending",
                                   "reviewed_candidate_sha256": browser_review.get("sha256"),
-                                  "review_path": "evidence/admin-console/native-20260913/browser-review.json",
+                                  "review_path": browser_review_path.relative_to(ROOT).as_posix(),
                                   "review_sha256": sha(browser_review_path),
                                   "recorded_status": browser_review.get("status"),
                                   "scope": "Browser approval applies only when its recorded HTML hash matches this build. Prior navigation, zoom, keyboard and sticky layout approval remains bound to the earlier candidate."},
@@ -276,11 +394,17 @@ def build(proof_paths):
                           "Browser layout, stop navigation and zoom require a separate observed browser receipt.",
                           "Earlier host, backend and telemetry images retain their earlier-baseline scope."],
                "editorial_review": "No AI Slop self-review applied to captions, explanations and status claims."}
+    if capture_metadata:
+        receipt["capture_groups"] = [capture_metadata]
     (EVIDENCE / "tour-build.json").write_text(json.dumps(receipt, indent=2) + "\n")
-    print(json.dumps({"status": receipt["status"], "stops": len(STOPS), "screenshots": len(images), "outputs": [str(path) for path in outputs]}))
+    print(json.dumps({"status": receipt["status"], "stops": len(stops), "screenshots": len(images), "outputs": [str(path) for path in outputs]}))
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--native-proof", type=Path, action="append", default=[], help="Optional existing sanitized native receipt to link; its presence never changes the tour verdict.")
-    build(parser.parse_args().native_proof)
+    parser.add_argument("--capture-group", type=Path, help="Optional hash-bound JSON group of inspected screenshots to append to existing stops. See load_capture_group for its schema.")
+    parser.add_argument("--validate-only", action="store_true", help="Validate inputs and report the proposed HTML hash without changing outputs or receipts.")
+    parser.add_argument("--browser-review", type=Path, help="Existing scoped browser receipt to bind; approval applies only if its exact HTML hash matches.")
+    args = parser.parse_args()
+    build(args.native_proof, args.capture_group, args.validate_only, args.browser_review)

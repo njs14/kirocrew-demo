@@ -124,6 +124,8 @@ class PublicationTests(unittest.TestCase):
         self.assertIn("no events.jsonl", result["publication_notes"][3])
         self.assertIn("capture-status.json when present", result["publication_notes"][3])
         self.assertNotIn("Use the scoped native events.jsonl", result["publication_notes"][3])
+        self.assertIn("does not exclude earlier native turns", result["publication_notes"][3])
+        self.assertNotIn("establishes no native turn", result["publication_notes"][3])
 
     def test_source_kind_must_match_filename(self):
         value = fixture("passive_native_client_baseline")
@@ -164,6 +166,76 @@ class PublicationTests(unittest.TestCase):
                 self.assertTrue((root / name.replace(".json", "-publication.json")).is_file())
             with self.assertRaisesRegex(ValueError, "fresh"):
                 exporter.export_run(root)
+
+    def test_separate_directory_contains_only_scoped_derivatives(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            source = root / "private"
+            source.mkdir()
+            originals = {}
+            for name, kind in (("baseline.json", "passive_native_client_baseline"),
+                               ("receipt.json", "passive_native_client_evidence")):
+                originals[name] = json.dumps(fixture(kind)).encode()
+                (source / name).write_bytes(originals[name])
+            events = json.dumps({"data": {"slot": "chat-demo", "content": "public"}}).encode()
+            (source / "events.jsonl").write_bytes(events)
+            output = root / "published" / "run"
+            exporter.export_run(source, output)
+            self.assertEqual({p.name for p in output.iterdir()}, {"baseline-publication.json", "receipt-publication.json"})
+            for name, raw in originals.items():
+                value = json.loads((output / name.replace(".json", "-publication.json")).read_text())
+                self.assertEqual((source / name).read_bytes(), raw)
+                self.assertEqual((output / value["private_source"]["path"]).resolve(), source / name)
+                self.assertEqual(value["private_source"]["sha256"], hashlib.sha256(raw).hexdigest())
+                self.assertEqual((output / value["native_events"]["path"]).resolve(), source / "events.jsonl")
+                self.assertIn("private companion", value["native_events"]["retention"])
+            self.assertEqual((source / "events.jsonl").read_bytes(), events)
+            with self.assertRaisesRegex(ValueError, "fresh output"):
+                exporter.export_run(source, output)
+
+    def test_separate_output_refuses_linked_ancestor(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            source = root / "private"
+            source.mkdir()
+            target = root / "target"
+            target.mkdir()
+            alias = root / "alias"
+            alias.symlink_to(target, target_is_directory=True)
+            with self.assertRaisesRegex(ValueError, "linked output ancestor"):
+                exporter.export_run(source, alias / "new")
+            self.assertEqual(list(target.iterdir()), [])
+
+    def test_separate_output_without_broadcasts_has_no_companion_claim(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            source = root / "private"
+            source.mkdir()
+            for name, kind in (("baseline.json", "passive_native_client_baseline"),
+                               ("receipt.json", "passive_native_client_evidence")):
+                (source / name).write_text(json.dumps(fixture(kind)))
+            output = root / "published"
+            exporter.export_run(source, output)
+            for path in output.iterdir():
+                value = json.loads(path.read_text())
+                self.assertFalse(value["native_events"]["present"])
+                self.assertIn("no companion captured", value["native_events"]["retention"])
+                self.assertNotIn("private companion", value["native_events"]["retention"])
+                self.assertIn("earlier native turns", value["publication_notes"][3])
+
+    def test_separate_output_identity_failure_creates_no_directory(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            source = root / "private"
+            source.mkdir()
+            (source / "baseline.json").write_text(json.dumps(fixture("passive_native_client_baseline")))
+            value = fixture()
+            value["slot"] = "another-slot"
+            (source / "receipt.json").write_text(json.dumps(value))
+            output = root / "published"
+            with self.assertRaisesRegex(ValueError, "identity mismatch"):
+                exporter.export_run(source, output)
+            self.assertFalse(output.exists())
 
     def test_source_and_destination_symlinks_are_refused(self):
         with tempfile.TemporaryDirectory() as directory:

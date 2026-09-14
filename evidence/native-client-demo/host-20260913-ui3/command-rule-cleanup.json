@@ -1,0 +1,41 @@
+{
+  "bound_source_files": {
+    "dashboard/token_auth.py": {
+      "sha256": "2ce2dd02498a6494edfc604b51436e016c62ada2f2be944499579ce09e822cda",
+      "uid": 0
+    },
+    "hooks.py": {
+      "sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+      "uid": 0
+    },
+    "security/paths.py": {
+      "sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+      "uid": 0
+    }
+  },
+  "builtin_count_from_static_source": 112,
+  "builtin_source_matches_local_installed_nightly": true,
+  "builtin_source_sha256": "e485cb5b1347af79cb25d14d6409d0ce57fe83a4e126f278c3cff89e728ec133",
+  "builtin_source_uid": 0,
+  "configuration_sha256": "f021311e414b0078524ab1971ca4005d19c8a16441ce2cd83fb205e652849a1f",
+  "disable_all": false,
+  "disabled_builtin_ids": [],
+  "exact_marker_absent": true,
+  "exact_rule_id_absent": true,
+  "kind": "read_only_command_rule_cleanup",
+  "limitations": [
+    "Readback verifies current absence and current remaining custom-rule count. The earlier preflight retained only demo-rule identities, not a digest of all other custom rules, so this receipt alone cannot prove every unrelated custom rule was preserved.",
+    "Builtin source is compared to the pinned local installed-nightly source; its full hash was not in the earlier preflight. Existing preflight-bound hooks, sensitive paths and token-auth sources were compared independently.",
+    "Static builtin count does not execute or reinitialize runtime policy."
+  ],
+  "observed_at": "2026-09-14T00:18:04.356515+00:00",
+  "preflight_bound_sources_unchanged": true,
+  "preflight_sha256": "9b00264d8504088ab4e92de6e341ee3e92b0342af7f25ba7c3f08e7b26421ac4",
+  "read_only": true,
+  "reader_script_sha256": "99548d73bc9284fd532a8f4a035139fbedb3f1298afcf5ed31b4a22602bedfd1",
+  "remaining_user_rules_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "removed_rule_id": "user-9590faaf660d",
+  "removed_rule_pattern": "KIROCREW_DEMO_COMMAND_CONTROL_20260913",
+  "runtime_mutated": false,
+  "user_added_count": 0
+}

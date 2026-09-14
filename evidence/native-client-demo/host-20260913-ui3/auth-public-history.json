@@ -1,0 +1,143 @@
+{
+  "approval_submitted": false,
+  "automatic_acceptance": false,
+  "expected_public_source_sha256": "9e4e087e4ad6dece270695832ea4a37155dea0cbdbbda45a3ea73f3ef284d4b6",
+  "fixture": "anonymous",
+  "has_more": false,
+  "kind": "read_only_native_public_fixture_history",
+  "message_count": 10,
+  "native_prompt_submitted": false,
+  "next_before": 0,
+  "observed_at": "2026-09-14T00:12:04.024268+00:00",
+  "path": "/opt/kirocrew-demo/host-controls/anonymous-http.py",
+  "read_only": true,
+  "reader_sha256": "b9f927386563cc00618e8326453a822660203479d8e9b5c2f79d440ba507eb88",
+  "running": false,
+  "selected_native_rows": [
+    {
+      "done": true,
+      "input": {
+        "operations": [
+          {
+            "mode": "Line",
+            "path": "/opt/kirocrew-demo/host-controls/anonymous-http.py"
+          }
+        ]
+      },
+      "kind": "read",
+      "original_input_sha256": "53e62a35fb03b76d0cc14411b33483fa1c32af80c5586ad710213025dc4b20f9",
+      "output_sha256": "218a183ea43442593a9021a93b9b055a7fc4bf5efcbaff8de67b0222a76ccde9",
+      "request_id": null,
+      "resolved": null,
+      "result_type": "exact_public_helper_source",
+      "role": "tool",
+      "source_sha256": "9e4e087e4ad6dece270695832ea4a37155dea0cbdbbda45a3ea73f3ef284d4b6",
+      "timestamp": "2026-09-14T00:06:41.120322+00:00",
+      "tool_call_id": "toolu_bdrk_01VdSiWnn4TeweZHbmkb41kF"
+    },
+    {
+      "done": null,
+      "input": {
+        "operations": [
+          {
+            "mode": "Line",
+            "path": "/opt/kirocrew-demo/host-controls/anonymous-http.py"
+          }
+        ]
+      },
+      "kind": null,
+      "original_input_sha256": "53e62a35fb03b76d0cc14411b33483fa1c32af80c5586ad710213025dc4b20f9",
+      "request_id": "111c83b1-5dde-47f5-9775-d61733fbc89c",
+      "resolved": "approved",
+      "role": "permission",
+      "timestamp": "2026-09-14T00:06:41.139014+00:00",
+      "tool_call_id": "toolu_bdrk_01VdSiWnn4TeweZHbmkb41kF"
+    },
+    {
+      "done": true,
+      "input": {
+        "operations": [
+          {
+            "mode": "Line",
+            "path": "/opt/kirocrew-demo/host-controls/anonymous-http.py"
+          }
+        ]
+      },
+      "kind": "",
+      "original_input_sha256": "53e62a35fb03b76d0cc14411b33483fa1c32af80c5586ad710213025dc4b20f9",
+      "output_sha256": "218a183ea43442593a9021a93b9b055a7fc4bf5efcbaff8de67b0222a76ccde9",
+      "request_id": null,
+      "resolved": null,
+      "result_type": "exact_public_helper_source",
+      "role": "tool",
+      "source_sha256": "9e4e087e4ad6dece270695832ea4a37155dea0cbdbbda45a3ea73f3ef284d4b6",
+      "timestamp": "2026-09-14T00:06:55.368936+00:00",
+      "tool_call_id": "toolu_bdrk_01VdSiWnn4TeweZHbmkb41kF"
+    },
+    {
+      "done": true,
+      "input": {
+        "command": "/usr/bin/python3 /opt/kirocrew-demo/host-controls/anonymous-http.py"
+      },
+      "kind": "execute",
+      "original_input_sha256": "b86e0c897e4c3807a79ba56bec88e61abe1582e68b3d5999dde8fcf013b90595",
+      "output_sha256": "31a3c8558cfbd7df8cf905353e7184400e803ce2a06d8708c688289179efb6d4",
+      "request_id": null,
+      "resolved": null,
+      "result": {
+        "authorization_sent": false,
+        "cookies_sent": false,
+        "elapsed_ms": 3,
+        "http_status": 403,
+        "native_enforcement_verified": false,
+        "probe": "anonymous_gateway_posture",
+        "response_body_read": false
+      },
+      "result_type": "native_public_helper_output",
+      "role": "tool",
+      "timestamp": "2026-09-14T00:07:01.046068+00:00",
+      "tool_call_id": "toolu_bdrk_0159BsH9v4wTh4Zrako473xV"
+    },
+    {
+      "done": null,
+      "input": {
+        "command": "/usr/bin/python3 /opt/kirocrew-demo/host-controls/anonymous-http.py"
+      },
+      "kind": null,
+      "original_input_sha256": "b86e0c897e4c3807a79ba56bec88e61abe1582e68b3d5999dde8fcf013b90595",
+      "request_id": "0e6a0e66-62e9-4192-808d-de2f406c676c",
+      "resolved": "approved",
+      "role": "permission",
+      "timestamp": "2026-09-14T00:07:01.068959+00:00",
+      "tool_call_id": "toolu_bdrk_0159BsH9v4wTh4Zrako473xV"
+    },
+    {
+      "done": true,
+      "input": {
+        "command": "/usr/bin/python3 /opt/kirocrew-demo/host-controls/anonymous-http.py"
+      },
+      "kind": "",
+      "original_input_sha256": "b86e0c897e4c3807a79ba56bec88e61abe1582e68b3d5999dde8fcf013b90595",
+      "output_sha256": "31a3c8558cfbd7df8cf905353e7184400e803ce2a06d8708c688289179efb6d4",
+      "request_id": null,
+      "resolved": null,
+      "result": {
+        "authorization_sent": false,
+        "cookies_sent": false,
+        "elapsed_ms": 3,
+        "http_status": 403,
+        "native_enforcement_verified": false,
+        "probe": "anonymous_gateway_posture",
+        "response_body_read": false
+      },
+      "result_type": "native_public_helper_output",
+      "role": "tool",
+      "timestamp": "2026-09-14T00:07:16.716291+00:00",
+      "tool_call_id": "toolu_bdrk_0159BsH9v4wTh4Zrako473xV"
+    }
+  ],
+  "slot": "chat-6-1789344355",
+  "source_response_sha256": "3e8858c9917eb3c4826b01bdae562c215ebafbb2e76c026169205adb650952aa",
+  "total": 11,
+  "unrecognized_tool_rows": []
+}

@@ -1,0 +1,47 @@
+{
+  "after_firewall_counter_collected": false,
+  "capture_failure": "capture_time_limit_reached",
+  "capture_finished": "2026-09-14T00:12:49.380712+00:00",
+  "collection_complete": false,
+  "created": "2026-09-14T00:20:15.427843+00:00",
+  "exact_pending_native_input": {
+    "command": "/usr/bin/python3 /opt/kirocrew-demo/host-controls/imds-tcp.py"
+  },
+  "firewall_enforcement_acceptance": false,
+  "first_enforcer": "not_established_pending_native_approval",
+  "kind": "native_imds_pending_status",
+  "limits": [
+    "This is an as-of pending observation, not a prediction of a future result.",
+    "The Mac locked before the operator could confirm execution approval. No approval was submitted through API or by this analysis.",
+    "The passive observer expired while the turn remained running. No absence claim is made for activity after its bounded capture.",
+    "The source read and fixed pre-counter do not establish native firewall enforcement."
+  ],
+  "native_execute_result_observed": false,
+  "native_pending_execute_tool_call_id": "toolu_bdrk_017SorLLgNg6bszLDro7ypDn",
+  "native_source_read_tool_call_id": "toolu_bdrk_01STvYND7onQ9PV3afmdxw2i",
+  "observed_history_at": "2026-09-14T00:12:03.530926+00:00",
+  "outcome": "native_source_read_completed_execute_pending_when_mac_locked",
+  "pending_permission_request_ids": [
+    "ee23b765-4f4e-4fbf-b47e-10b933c0f69a"
+  ],
+  "slot": "chat-7-1789344506",
+  "slot_running_at_history_read": true,
+  "source_sha256": {
+    "capture_events": {
+      "path": ".build/native-host-imds-20260913-ui1/events.jsonl",
+      "sha256": "8fb77b22e5ac0bd00b83c7864f7787235dd660752f0e0e2644e026dceca31855"
+    },
+    "capture_receipt": {
+      "path": ".build/native-host-imds-20260913-ui1/receipt.json",
+      "sha256": "f1852f05b1a6d0ad6ad0642a1cada9d5aac03aec033c2a3e4ce6a78b7eb5c519"
+    },
+    "counter_before": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/imds-counter-before-fresh.json",
+      "sha256": "78b7b03463130d97d508c852f67361e355a7734ce3ae7c70b1b49649c7a9e1d8"
+    },
+    "history_pending": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/imds-history-pending.json",
+      "sha256": "24d4206a25af8d082e671ca7603a43565d395e265727daf2e7ecbf7d891122af"
+    }
+  }
+}

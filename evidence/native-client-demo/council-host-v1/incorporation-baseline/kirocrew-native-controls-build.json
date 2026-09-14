@@ -1,0 +1,581 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-09-14T00:34:01.680659+00:00",
+  "edition": "output/kirocrew-native-controls.html",
+  "editionSha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335",
+  "notes": "output/kirocrew-native-controls-notes.md",
+  "notesSha256": "b4a9e1c3f2bc83687278ae2ce6fff9726df33a9d46a7ed90565fd19fe58baa9d",
+  "publicManifest": "output/kirocrew-native-controls-manifest.json",
+  "slideCount": 14,
+  "sceneCount": 8,
+  "synthetic": false,
+  "singleEndpointControlBoxCount": 1,
+  "processedManifests": {
+    "output/native-client-clips-20260913/manifest.json": "2683eef05ff8d2a347e8c2494ca15ffe8eb991effeb48fce12b98055cdf3e59e",
+    "output/native-memory-clip-20260913/manifest.json": "3565112184e648433a295349127b60181e80cd6517f67a46604edf66477b127d",
+    "output/native-host-clips-20260913/manifest.json": "0539ebc7f303cefe42d4fa554aa986d9ff431e4a3448d9dc10447cf9064b2e52",
+    "docs/HOST-CONTROL-SCENARIOS.md": "8ef67c164b8fb642c42304da30847365bded2dc9e9ccb942ac05c232fee57e66",
+    "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json": "a109b7b10371b8bfab24dcca4588dcf2f4a248dcb13eea29346a41f5363b67ec",
+    "kirocrew-native-controls-diagram.html": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb",
+    "evidence/admin-console/native-20260913/tour-build.json": "98031ce0e779f67ca4d64241ef7694cb5ef83f3d245d48d49f2f3476a6f2be35"
+  },
+  "supportingReceipts": [
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "url": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "url": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "url": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "url": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-memory-assignment.json",
+      "url": "evidence/native-client-demo/media-review-memory-assignment.json",
+      "sha256": "68e609282f6cf097fc9ed3f88a1228f4703fee5311a5945cfa98a9dfc78cc167"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913/authenticated.json",
+      "url": "evidence/native-client-demo/20260913/authenticated.json",
+      "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "url": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "sha256": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499"
+    },
+    {
+      "path": "evidence/native-client-demo/poster-review-v2.json",
+      "url": "evidence/native-client-demo/poster-review-v2.json",
+      "sha256": "0489c07e6174363188760877260778e6b47cf72c462d3589224574872885649a"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "url": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "sha256": "8090b4a69f0c4f76021d6cf1c869f352c188aaa61c31382f3b4e0b19f0ea8a6c"
+    },
+    {
+      "path": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "url": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "sha256": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "sha256": "9f757015d7bd9da89c7e694a315c0d73e7004e743f0404cd0cd487d88c742302"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "sha256": "63a86c6d6e8be4e14efe5dbe31962eab4d921c104cf40a1d6bbef770c3a54436"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "url": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "sha256": "663302446418b5ec7d52330ecaec42a2ee57ef4598af1e3ef5034990b6398603"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-host-controls.json",
+      "url": "evidence/native-client-demo/media-review-host-controls.json",
+      "sha256": "bc649485a4d7d99c09d1793837a9977072ac0d63092d1a9cba0e0b85bf8432a2"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "url": "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "sha256": "f1a2e27eba4e90e473a659114773a29db9a4c8bdd4dae24f4a56b8d02bf42f46"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "sha256": "3eae37afdfc7d513f702a336d1e6ce70f07f36209151630b0271f314bfc146e1"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "sha256": "a30dd5e1cb270195a4a36392d647e37b3133dbc83913bf164f694eac9b39fcda"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "sha256": "f05b5336c8d2578089664011b2717997fe3b6888386a8f48fc9ff70107dbddd3"
+    }
+  ],
+  "serveFiles": {
+    "/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4": {
+      "path": "output/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+      "bytes": 1136859,
+      "sha256": "3bcd32eab9989b73a1b85845bd1294d02f4a3de6e622808f839b676fa8bc731a"
+    },
+    "/native-client-clips-20260913/native-allowed-read/poster.jpg": {
+      "path": "output/native-client-clips-20260913/native-allowed-read/poster.jpg",
+      "bytes": 200388,
+      "sha256": "132b18bce72c27c560dfdf61d973a0c922de9a8c95994f174e0dbcac1821e98d"
+    },
+    "/native-client-clips-20260913/native-allowed-read/contact-sheet.jpg": {
+      "path": "output/native-client-clips-20260913/native-allowed-read/contact-sheet.jpg",
+      "bytes": 112453,
+      "sha256": "bcb7f08a4a92be535490b37fadd3d03aab78090502f44873212a00e74789bf7a"
+    },
+    "/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4": {
+      "path": "output/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+      "bytes": 1983357,
+      "sha256": "92f089ffc6d408310cda808387c748d187e75daf9d6314d0322b32ba43fe917e"
+    },
+    "/native-client-clips-20260913/native-crew-denial/poster.jpg": {
+      "path": "output/native-client-clips-20260913/native-crew-denial/poster.jpg",
+      "bytes": 227591,
+      "sha256": "d74da469fa069a9672be8d716d36259258b521ba5c7360c165407ccae99fb65a"
+    },
+    "/native-client-clips-20260913/native-crew-denial/contact-sheet.jpg": {
+      "path": "output/native-client-clips-20260913/native-crew-denial/contact-sheet.jpg",
+      "bytes": 148417,
+      "sha256": "c55171f636dd94a2890d2fd020c19fa9ab12d05085b30207f602549e316dc18c"
+    },
+    "/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4": {
+      "path": "output/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+      "bytes": 2047715,
+      "sha256": "9895ac8db2f08902a6086be866676e3e1273373e876d402f21cd788b101fb7a2"
+    },
+    "/native-client-clips-20260913/native-mcp-denial/poster.jpg": {
+      "path": "output/native-client-clips-20260913/native-mcp-denial/poster.jpg",
+      "bytes": 234538,
+      "sha256": "90dac171aeab9b9abf0031ba84b58b4ac37fc24d6114195490a838c6e430511d"
+    },
+    "/native-client-clips-20260913/native-mcp-denial/contact-sheet.jpg": {
+      "path": "output/native-client-clips-20260913/native-mcp-denial/contact-sheet.jpg",
+      "bytes": 155597,
+      "sha256": "7049a091cba27cf307d89249e5fbb3008fa25a7a8656a43827b6c4a07374bf91"
+    },
+    "/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4": {
+      "path": "output/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+      "bytes": 2207810,
+      "sha256": "56c8166490123442d83c89f5694b644898355f53c97649a4275a10d2d676067e"
+    },
+    "/native-client-clips-20260913/native-iam-denial/poster.jpg": {
+      "path": "output/native-client-clips-20260913/native-iam-denial/poster.jpg",
+      "bytes": 205600,
+      "sha256": "a7c77c80e53dd36d7e643cad757755875abe56e6125ff4f2c0e41eec17c5ff9f"
+    },
+    "/native-client-clips-20260913/native-iam-denial/contact-sheet.jpg": {
+      "path": "output/native-client-clips-20260913/native-iam-denial/contact-sheet.jpg",
+      "bytes": 147279,
+      "sha256": "5735ac378d6149c37ea49a97afc6050dc201dc334476085bdcdaa621ce7ff60b"
+    },
+    "/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4": {
+      "path": "output/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+      "bytes": 407034,
+      "sha256": "4ab78129747a1db40c05ed3115969756e70e5e9a122a709beee6c4e0e6d26c19"
+    },
+    "/native-memory-clip-20260913/native-memory-assignment-refusal/poster.jpg": {
+      "path": "output/native-memory-clip-20260913/native-memory-assignment-refusal/poster.jpg",
+      "bytes": 152476,
+      "sha256": "2abf516c8994a53d5a102d4b57c967bff0e2270b7e3b8d82524fae5289ea68fc"
+    },
+    "/native-memory-clip-20260913/native-memory-assignment-refusal/contact-sheet.jpg": {
+      "path": "output/native-memory-clip-20260913/native-memory-assignment-refusal/contact-sheet.jpg",
+      "bytes": 101129,
+      "sha256": "70710b24084c9bef74d647f5aa9653d2b362038649df628b3910029fe18a9c05"
+    },
+    "/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4": {
+      "path": "output/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4",
+      "bytes": 1197687,
+      "sha256": "2a086d947a5530b53d03332698b909c6f40092298da3721bc7e3eeb74940b946"
+    },
+    "/native-host-clips-20260913/native-host-workspace-read/poster.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-workspace-read/poster.jpg",
+      "bytes": 195626,
+      "sha256": "3cb1b2a63da5a12475b733bd8fbc37d788f0bb5d11545ff21b9a6aa6b76f49fd"
+    },
+    "/native-host-clips-20260913/native-host-workspace-read/contact-sheet.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-workspace-read/contact-sheet.jpg",
+      "bytes": 108671,
+      "sha256": "df7f2793848c5e0dab8ae6a2c4a73586d925ec89fe54dbe715a7dfe166713932"
+    },
+    "/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4": {
+      "path": "output/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+      "bytes": 523705,
+      "sha256": "f3156ac900f643e06fbe4309ac563b880e6076250daa690c244bf4ea9b3f85ea"
+    },
+    "/native-host-clips-20260913/native-host-command-denial-summary/poster.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-command-denial-summary/poster.jpg",
+      "bytes": 194096,
+      "sha256": "1ae25cf1b7e924f7476e86bdd922fadfce3711aa888a154f20afc328b2a1e341"
+    },
+    "/native-host-clips-20260913/native-host-command-denial-summary/contact-sheet.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-command-denial-summary/contact-sheet.jpg",
+      "bytes": 121337,
+      "sha256": "b33b410664e7c3781222c4e986a4f49ad9ffcd3380f4bddc6c0a7abc55208820"
+    },
+    "/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4": {
+      "path": "output/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+      "bytes": 2207528,
+      "sha256": "0bc81f03f539f0614fa49a65ae3b27ef53f00bf26f35c7573684652cf1e87ada"
+    },
+    "/native-host-clips-20260913/native-host-anonymous-http403/poster.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-anonymous-http403/poster.jpg",
+      "bytes": 273116,
+      "sha256": "e8afb8f9325657f3af4430cb71f6629d23d06db56af4d7edbc235f163df9e417"
+    },
+    "/native-host-clips-20260913/native-host-anonymous-http403/contact-sheet.jpg": {
+      "path": "output/native-host-clips-20260913/native-host-anonymous-http403/contact-sheet.jpg",
+      "bytes": 182119,
+      "sha256": "5476b424b3838bbd287a4c5fbb81c8619d87960269b008e67d28c6ebcdd7bf98"
+    },
+    "/evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "bytes": 14113,
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    },
+    "/evidence/native-client-demo/20260913-ui2-reconciled-final/review.json": {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "bytes": 2040,
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+    },
+    "/evidence/native-client-demo/20260913-ui2/authority-attribution-review.json": {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "bytes": 6242,
+      "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
+    },
+    "/evidence/native-client-demo/media-review-mcp-controls.json": {
+      "path": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "bytes": 10273,
+      "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d"
+    },
+    "/evidence/native-client-demo/media-review-memory-assignment.json": {
+      "path": "evidence/native-client-demo/media-review-memory-assignment.json",
+      "bytes": 4551,
+      "sha256": "68e609282f6cf097fc9ed3f88a1228f4703fee5311a5945cfa98a9dfc78cc167"
+    },
+    "/evidence/native-client-demo/20260913/authenticated.json": {
+      "path": "evidence/native-client-demo/20260913/authenticated.json",
+      "bytes": 482,
+      "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
+    },
+    "/evidence/native-client-demo/20260913/runtime-preflight.json": {
+      "path": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "bytes": 622,
+      "sha256": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499"
+    },
+    "/evidence/native-client-demo/poster-review-v2.json": {
+      "path": "evidence/native-client-demo/poster-review-v2.json",
+      "bytes": 14034,
+      "sha256": "0489c07e6174363188760877260778e6b47cf72c462d3589224574872885649a"
+    },
+    "/evidence/native-client-demo/host-20260913/assignment-diagnostic.json": {
+      "path": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "bytes": 2500,
+      "sha256": "8090b4a69f0c4f76021d6cf1c869f352c188aaa61c31382f3b4e0b19f0ea8a6c"
+    },
+    "/evidence/native-client-demo/council-native-v1/council-decision-summary.json": {
+      "path": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "bytes": 5530,
+      "sha256": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "bytes": 8811,
+      "sha256": "9f757015d7bd9da89c7e694a315c0d73e7004e743f0404cd0cd487d88c742302"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "bytes": 8261,
+      "sha256": "63a86c6d6e8be4e14efe5dbe31962eab4d921c104cf40a1d6bbef770c3a54436"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/auth-correlation.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "bytes": 4509,
+      "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
+    },
+    "/evidence/native-client-demo/host-20260913-review/auth-review.json": {
+      "path": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "bytes": 3477,
+      "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/auth-public-history.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "bytes": 5133,
+      "sha256": "663302446418b5ec7d52330ecaec42a2ee57ef4598af1e3ef5034990b6398603"
+    },
+    "/evidence/native-client-demo/media-review-host-controls.json": {
+      "path": "evidence/native-client-demo/media-review-host-controls.json",
+      "bytes": 12899,
+      "sha256": "bc649485a4d7d99c09d1793837a9977072ac0d63092d1a9cba0e0b85bf8432a2"
+    },
+    "/evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json": {
+      "path": "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "bytes": 8355,
+      "sha256": "f1a2e27eba4e90e473a659114773a29db9a4c8bdd4dae24f4a56b8d02bf42f46"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "bytes": 2060,
+      "sha256": "3eae37afdfc7d513f702a336d1e6ce70f07f36209151630b0271f314bfc146e1"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "bytes": 1619,
+      "sha256": "a30dd5e1cb270195a4a36392d647e37b3133dbc83913bf164f694eac9b39fcda"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "bytes": 2257,
+      "sha256": "f05b5336c8d2578089664011b2717997fe3b6888386a8f48fc9ff70107dbddd3"
+    },
+    "/docs/HOST-CONTROL-SCENARIOS.md": {
+      "path": "docs/HOST-CONTROL-SCENARIOS.md",
+      "bytes": 21479,
+      "sha256": "8ef67c164b8fb642c42304da30847365bded2dc9e9ccb942ac05c232fee57e66"
+    },
+    "/kirocrew-native-controls-diagram.html": {
+      "path": "kirocrew-native-controls-diagram.html",
+      "bytes": 810648,
+      "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb"
+    },
+    "/evidence/native-client-demo/archify-host-20260913/asset-dependencies.json": {
+      "path": "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json",
+      "bytes": 699,
+      "sha256": "a109b7b10371b8bfab24dcca4588dcf2f4a248dcb13eea29346a41f5363b67ec"
+    },
+    "/kirocrew-admin-tour.html": {
+      "path": "output/kirocrew-admin-tour.html",
+      "bytes": 2516369,
+      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87"
+    },
+    "/kirocrew-admin-tour.md": {
+      "path": "output/kirocrew-admin-tour.md",
+      "bytes": 18384,
+      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108"
+    },
+    "/docs/NATIVE-CLIENT-DEMO.md": {
+      "path": "docs/NATIVE-CLIENT-DEMO.md",
+      "bytes": 20557,
+      "sha256": "64dbf0e5965b00263c842033796c0a2b7edaf3b860cd8550d9c82e5da013a92f"
+    },
+    "/infrastructure/mcp-enforcement/README.md": {
+      "path": "infrastructure/mcp-enforcement/README.md",
+      "bytes": 11222,
+      "sha256": "68a0c13a955baec04a34e25f382bde6eea1d8701c6fb12a8d356589526b45910"
+    },
+    "/infrastructure/observability/APP-INSTALL.md": {
+      "path": "infrastructure/observability/APP-INSTALL.md",
+      "bytes": 6803,
+      "sha256": "98d682cadc364ec25f98e85cb3709f2b1fc19a13ed792abb3a6efb19c28a907e"
+    },
+    "/evidence/admin-console/browser-receipt.json": {
+      "path": "evidence/admin-console/browser-receipt.json",
+      "bytes": 3664,
+      "sha256": "7ec5239c3cb55087dbab974ab64a3c485fdf6038a4136952a4a933f3dc5cd317"
+    },
+    "/kirocrew-admin-findings.md": {
+      "path": "output/kirocrew-admin-findings.md",
+      "bytes": 7075,
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    },
+    "/evidence/native-client-demo/20260913-ui2/receipt-publication.json": {
+      "path": "evidence/native-client-demo/20260913-ui2/receipt-publication.json",
+      "bytes": 11079,
+      "sha256": "1e81f02d2237afbd0d6394b178def71134a8be79bd50f26b23f79af42983ee2e"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/initial-observations.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+      "bytes": 8346,
+      "sha256": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7"
+    },
+    "/evidence/native-client-demo/host-20260913-ui3/command-observations.json": {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+      "bytes": 8740,
+      "sha256": "88bc23a85ab8db45a0d24ee34f711f46f263245e1a83f4e89c623e21dd9c2455"
+    },
+    "/evidence/native-client-demo/host-20260913-review/initial-review.json": {
+      "path": "evidence/native-client-demo/host-20260913-review/initial-review.json",
+      "bytes": 7194,
+      "sha256": "ff855dbecb4bdb852200521040f4d5e523b1f50d7035fb3ec808395f4e3314e9"
+    },
+    "/kirocrew-native-admin-findings.md": {
+      "path": "output/kirocrew-native-admin-findings.md",
+      "bytes": 9214,
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
+    },
+    "/admin-console-native-20260913/07-gateway-overview.png": {
+      "path": "output/admin-console-native-20260913/07-gateway-overview.png",
+      "bytes": 74217,
+      "sha256": "d4094b575c6cb8ac5678f050bb894df36f82fe47ff38c659aa52d0376c1967fb"
+    },
+    "/admin-console/02-arm-performance.jpg": {
+      "path": "output/admin-console/02-arm-performance.jpg",
+      "bytes": 51458,
+      "sha256": "368456a4d432f80a3c79ed34117b2bb8b24182cbcdcb917acea7e8308dd891ba"
+    },
+    "/admin-console-native-20260913/01-live-security-posture.png": {
+      "path": "output/admin-console-native-20260913/01-live-security-posture.png",
+      "bytes": 111407,
+      "sha256": "9b0a9a96268e198b8a6c1ebc4b97177fa5348ed10292766f8d71bdb93817d44f"
+    },
+    "/admin-console-native-20260913/03-denied-command-categories.png": {
+      "path": "output/admin-console-native-20260913/03-denied-command-categories.png",
+      "bytes": 107657,
+      "sha256": "318d8ec1d2ec81d30c01676e7441262b1c45522baecb6a2cc721cafb0ddfa57b"
+    },
+    "/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png": {
+      "path": "output/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "bytes": 138288,
+      "sha256": "4ce5b3632c2eb1ca3d769c9acc2f9e38edb74629a9af2dca79090a1cfac92d9e"
+    },
+    "/admin-console-host-20260913/01-command-rule-active.jpg": {
+      "path": "output/admin-console-host-20260913/01-command-rule-active.jpg",
+      "bytes": 112473,
+      "sha256": "ed8fd2f5e10d6acc5ebec1d2cdbe5b70a86b73201565b18c71b6d1e7aecbdd00"
+    },
+    "/admin-console-host-20260913/02-command-rule-removed.jpg": {
+      "path": "output/admin-console-host-20260913/02-command-rule-removed.jpg",
+      "bytes": 107638,
+      "sha256": "f0994d88918d6f00ceeb6fcb3823905d98e481495016a9a543041efec93e51d3"
+    },
+    "/admin-console-native-20260913/05-approval-duration.png": {
+      "path": "output/admin-console-native-20260913/05-approval-duration.png",
+      "bytes": 88046,
+      "sha256": "0827e2d83fcf36745c9325b6e967bf100678fa1f6536c741da29a79e59fbb71f"
+    },
+    "/admin-console-native-20260913/06-governance-status.png": {
+      "path": "output/admin-console-native-20260913/06-governance-status.png",
+      "bytes": 89720,
+      "sha256": "0963be9afa8c60e73ce18b2e779202529cf88b4261708050fdfd7b1292f468d6"
+    },
+    "/admin-console-native-20260913/02-sel-coverage-viewport.png": {
+      "path": "output/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "bytes": 132207,
+      "sha256": "8f6f13d46a0fe51af91f23bd9ffc3d3fc5276b78f24274ba61c0cc003c3c6e5e"
+    },
+    "/admin-console/07-agent-backend.jpg": {
+      "path": "output/admin-console/07-agent-backend.jpg",
+      "bytes": 82406,
+      "sha256": "35735f35bed62fee253dd3d4d1471acd2ea32c072a4421d6906db0b422e73ccf"
+    },
+    "/admin-console/08-telemetry-controls.jpg": {
+      "path": "output/admin-console/08-telemetry-controls.jpg",
+      "bytes": 70977,
+      "sha256": "16ca6e0c062799f6e7510dce429a9853a515be0f558e7a93e21ca9bfa65a09b1"
+    },
+    "/admin-console-native-20260913/10-native-turn-telemetry.png": {
+      "path": "output/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "bytes": 83630,
+      "sha256": "680e9f08a55db92372b13356f697010fe674532741da467b2b93be9d61fbd8aa"
+    },
+    "/admin-console-host-20260913/03-command-turn-metrics.jpg": {
+      "path": "output/admin-console-host-20260913/03-command-turn-metrics.jpg",
+      "bytes": 89769,
+      "sha256": "0daf14b482ab41bc35214d12fce77d07397dd027ddf650f33e82d01bc4357b52"
+    },
+    "/admin-console-host-20260913/04-anonymous-turn-metrics.jpg": {
+      "path": "output/admin-console-host-20260913/04-anonymous-turn-metrics.jpg",
+      "bytes": 89892,
+      "sha256": "5148ca90307b13698a6b91f17689e094b60cfa5e6887b2af1a62cadcfe043705"
+    },
+    "/admin-console/11-client-server-telemetry.jpg": {
+      "path": "output/admin-console/11-client-server-telemetry.jpg",
+      "bytes": 78171,
+      "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698"
+    },
+    "/admin-console/12-collection-logs.jpg": {
+      "path": "output/admin-console/12-collection-logs.jpg",
+      "bytes": 81268,
+      "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63"
+    },
+    "/admin-console-host-20260913/05-client-server-health.jpg": {
+      "path": "output/admin-console-host-20260913/05-client-server-health.jpg",
+      "bytes": 146893,
+      "sha256": "e9cf198282a847b9e4681c2cd0191e4061d5a17b51fad6f7f753682981e5dded"
+    },
+    "/admin-console-host-20260913/06-server-collection-logs.jpg": {
+      "path": "output/admin-console-host-20260913/06-server-collection-logs.jpg",
+      "bytes": 118292,
+      "sha256": "a24e67be86372e9c76ac4602af6832520c46deea4f587360c929ff7355d40734"
+    },
+    "/evidence/admin-console/native-20260913/tour-build.json": {
+      "path": "evidence/admin-console/native-20260913/tour-build.json",
+      "bytes": 15288,
+      "sha256": "98031ce0e779f67ca4d64241ef7694cb5ef83f3d245d48d49f2f3476a6f2be35"
+    },
+    "/output/kirocrew-admin-findings.md": {
+      "path": "output/kirocrew-admin-findings.md",
+      "bytes": 7075,
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    },
+    "/output/kirocrew-native-admin-findings.md": {
+      "path": "output/kirocrew-native-admin-findings.md",
+      "bytes": 9214,
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
+    },
+    "/kirocrew-native-controls-notes.md": {
+      "path": "output/kirocrew-native-controls-notes.md",
+      "bytes": 24439,
+      "sha256": "b4a9e1c3f2bc83687278ae2ce6fff9726df33a9d46a7ed90565fd19fe58baa9d"
+    },
+    "/kirocrew-native-controls-manifest.json": {
+      "path": "output/kirocrew-native-controls-manifest.json",
+      "bytes": 33465,
+      "sha256": "51cc9d04ad9332424d98ee7343e7d66c4ec3bbdb76b6eaf469faedc3e8ef7ff4"
+    },
+    "/kirocrew-native-controls.html": {
+      "path": "output/kirocrew-native-controls.html",
+      "bytes": 637689,
+      "sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335"
+    }
+  },
+  "buildInputs": {
+    "scripts/build-native-control-presentation.py": "10b29487133403367f4720dff92c9c515dddda9f9c9978512e31ca4050b5c9e8",
+    "scripts/build-recorded-demo-presentation.py": "4b271074f028fdcf56f37fdf233eecac83405265efff734c5b20c90f20cd3dfb",
+    "presentation/slides.css": "4fff4b0514279836ad7ed05fe94d08d4996c90ea9555bfa0425b74230753e7ce",
+    "presentation/slide-runtime.js": "a90bfa3c9feb9de983fe91b01b70995424d21c7190f83b357fb702a090c9e2d9",
+    "presentation/demo-player.css": "99ffc46cb25eea7538d3ae84258469bb50f154a8a44b2e28fa39b058cb4c83a8",
+    "presentation/demo-player.js": "7a0768ab1b0da7b71a6f9ba806ee1775fbe2b511f052a6a0337fb76eb1461613"
+  },
+  "checks": {
+    "assetHashes": true,
+    "sceneIdsUnique": true,
+    "chapterBounds": true,
+    "noSyntheticScenes": true,
+    "singleEndpointControlBox": true,
+    "noLiveExecutionCode": true
+  },
+  "reviewScope": "Artifact integrity and visible recorded behavior. Enforcement acceptance and model council apply only through their separate exact-candidate receipts.",
+  "browserReview": "Required separately for this edition hash",
+  "editorialReview": "No AI Slop self-review applied to slide copy and notes",
+  "editionParameters": {
+    "pendingControls": [
+      "Sensitive-path read",
+      "Protected-path write",
+      "IMDS execution"
+    ],
+    "limitations": [
+      "The earlier sensitive-path and anonymous-helper attempts ended in model-only responses, with no native tool execution. The later anonymous-helper execution has separate reviewed authentication evidence. Sensitive-path enforcement remains pending.",
+      "The command clip starts after the denial and shows an assistant summary with collapsed tool history. Persisted native history and scoped SEL establish the configured Crew rule as the enforcer; the request-to-denial recording is missing.",
+      "The authentication excerpt starts at execution approval. The earlier source read required its own Allow once. The clip ends with the assistant's HTTP 403 summary; its native Output stays collapsed. Separate exact-input, native-result and Gateway evidence support attribution.",
+      "The IMDS helper source read completed, but execution was still awaiting approval when the observer expired. No firewall-enforcement outcome is accepted.",
+      "The custom marker-command rule was removed after its take. The recording describes that earlier configuration; replay does not mean the rule remains active. The cleanup receipt verifies the exact marker rule is absent, but does not establish full preservation of every unrelated prior custom rule."
+    ],
+    "recordingCoverageOverrides": {},
+    "diagramBuild": "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json"
+  }
+}

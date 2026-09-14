@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "reviewed_at": "2026-09-14T00:55:39.230174+00:00",
+  "html_sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335",
+  "observations": {
+    "path": "evidence/native-client-demo/presentation-host-candidate/browser/playback-observations.json",
+    "sha256": "ae91b29dfc78ff9a29b029b58f48f19078bc3c76ff1c4b3c776b2fdbb8a29562",
+    "bytes": 8035
+  },
+  "actual_browser": "Codex in-app browser through CUA",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "playback_count": 8,
+  "chapter_seek_count": 25,
+  "checks": {
+    "each_clip_played": true,
+    "chapter_time_matches_and_paused": true,
+    "guided_pause": true,
+    "notes_pauses_clip": true,
+    "overview_pauses_clip": true,
+    "media_errors": 0,
+    "observed_console_warnings_and_errors": 0
+  },
+  "media_manifest": {
+    "path": "evidence/native-client-demo/council-host-v1/incorporation-baseline/kirocrew-native-controls-manifest.json",
+    "sha256": "51cc9d04ad9332424d98ee7343e7d66c4ec3bbdb76b6eaf469faedc3e8ef7ff4",
+    "bytes": 33465
+  },
+  "scope": "Playback and chapter interactions in the loaded cc139 candidate. Subsequent HTML changes require separate final layout verification and exact unchanged media/player binding before carrying these results forward. Browser visibility/pagehide and direct-file playback were not tested.",
+  "passed": true
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "kind": "independent_host_pending_continuation_review",
+  "created_at": "2026-09-14T00:59:19.292832+00:00",
+  "reviewer": "/root/native_final_review",
+  "verdict": "bounded_timeout_and_unsubmitted_idle_capture_supported",
+  "material_findings": [],
+  "reviewed_receipts": [
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+      "sha256": "3532f590c516fd5fd7aaa937e101fa216b2403e5cfb53ad8cb425f848a1caf83",
+      "bytes": 4206
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+      "sha256": "8437471934f673b0aa312104b99bc84144c6c9293e616b2abb858f68438c25f0",
+      "bytes": 1539
+    }
+  ],
+  "verified_source_bindings": [
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/preflight.json",
+      "sha256": "46699bc04d42e3e4572950ba703e1ac0c004e094e209254604b8c31ae52c26ef",
+      "bytes": 5585
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "sha256": "f05b5336c8d2578089664011b2717997fe3b6888386a8f48fc9ff70107dbddd3",
+      "bytes": 2257
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-history.json",
+      "sha256": "7aceeda9ea23b9071985c99052b36b2c4743e4c7a895d3cb59e58dd0eafafd14",
+      "bytes": 4066
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-sel.json",
+      "sha256": "d109badbe810746b4c57a1595eaa355ecf11c6bd81a9580e471ab7ed61af1789",
+      "bytes": 3549
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-cards.json",
+      "sha256": "a88afcf52d956906faf633375ef4ad906e31342860d6fad29ca1bb27ba793a5a",
+      "bytes": 1842
+    },
+    {
+      "path": ".build/native-host-imds-20260913-ui2/baseline.json",
+      "sha256": "a2cafebd7fa152f56f3a8a32b06a46010231ecfcbcd5b9386fdbbbc7ef38ce23",
+      "bytes": 685757
+    },
+    {
+      "path": ".build/native-host-imds-20260913-ui2/control.json",
+      "sha256": "c7f90b1889b94edc32435c06ae283db65308d516efd76860d5b51d867ed2cdd3",
+      "bytes": 84
+    },
+    {
+      "path": ".build/native-host-imds-20260913-ui2/finish-request.json",
+      "sha256": "77e947be3698b64079e1cdd34612f4350a338c9f03360598f1c7529410f86581",
+      "bytes": 95
+    },
+    {
+      "path": ".build/native-host-imds-20260913-ui2/receipt.json",
+      "sha256": "2afec22320f5a48b34740ae7d30da8f16a6804a513caa592a82fdf5af6703526",
+      "bytes": 1413832
+    },
+    {
+      "path": ".build/installed-nightly/kiro_crew/dashboard/chat_runner.py",
+      "sha256": "04847c1e72b03df4e578e066acebbbe604e8c5fc47f345ddb5e1fe7986e8ca32",
+      "bytes": 722797
+    }
+  ],
+  "findings": [
+    "The exact prior execution input and tool ID join the rejected permission request to SEL request ee23b765-4f4e-4fbf-b47e-10b933c0f69a.",
+    "The unique native error card at 00:19:23.293315Z reports an unanswered ten-minute approval. The rejection SEL is 7.728 ms later; prior permission was 00:09:23.279364Z. The card itself lacks a request ID; isolated-turn correlation supplies the cause.",
+    "The source-matched chat_runner timeout branch selects rejected and an approval-timeout card; the shared rejection SEL does not encode that cause. Generic denied output and done state remain insufficient alone.",
+    "The later slot8 private receipt records a 33.483707-second idle interval, zero events, running false before and after, and no event file. The operator reports no prompt was submitted because native screenshots were stale.",
+    "Earlier pending receipt bytes remain unchanged. The new correlation updates its as-of approval status without establishing helper execution or a firewall outcome."
+  ],
+  "scope_limits": [
+    "This review is offline source, history and receipt review. No UI, AWS, SSH, live helper, approval or policy operation was performed.",
+    "No metadata request, completed IMDS helper result, firewall attribution, hard hook judgment or human rejection is established.",
+    "Native screenshot freshness was observed by the operator through CUA; no saved screenshot files or image hashes exist for that check. This reviewer did not independently inspect those transient images.",
+    "Full collector sources remain privately ignored; this receipt contains file bindings and selected nonprivate status facts only.",
+    "No activity-absence claim applies outside the bounded captured interval."
+  ]
+}

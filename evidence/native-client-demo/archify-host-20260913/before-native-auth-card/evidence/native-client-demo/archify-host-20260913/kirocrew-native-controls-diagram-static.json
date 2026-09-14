@@ -1,0 +1,66 @@
+{
+  "time": "2026-09-14T00:07:53.357Z",
+  "kind": "non-browser-static-graphics-render",
+  "source": {
+    "path": "kirocrew-native-controls-diagram.html",
+    "bytes": 809226,
+    "sha256": "a86ae423c4765b8c93a64a191fa43998593ecbe1b5e0f04c1666e88b17f1745a"
+  },
+  "svg": {
+    "path": "evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram.svg",
+    "bytes": 295663,
+    "sha256": "4cafb803d0beb9c06022c91be1b1cd4fed6518b1fd3888c0059e883d825a505a"
+  },
+  "png": {
+    "path": "evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram.png",
+    "bytes": 503219,
+    "sha256": "23af4101ef32b4b33415f233c2b87e2082b4185e611c17ed081c91deccfb243e"
+  },
+  "actualSize": {
+    "path": "evidence/native-client-demo/archify-host-20260913/kirocrew-native-controls-diagram-1152x480.png",
+    "bytes": 61446,
+    "sha256": "56b629e20c07f6aee71acef2a48999ac34ebfcf9594dc7984a19071abdf4d22c"
+  },
+  "authoredViewBox": [
+    0,
+    0,
+    1380,
+    760
+  ],
+  "renderer": {
+    "aom": "3.15.0",
+    "archive": "3.8.9",
+    "cairo": "1.18.4",
+    "cgif": "0.5.3",
+    "exif": "0.6.26",
+    "expat": "2.8.3",
+    "ffi": "3.8.0",
+    "fontconfig": "2.18.3",
+    "freetype": "2.14.3",
+    "fribidi": "1.0.16",
+    "glib": "2.89.4",
+    "harfbuzz": "14.3.1",
+    "heif": "1.23.2",
+    "highway": "1.4.0",
+    "imagequant": "2.4.1",
+    "lcms": "2.19.1",
+    "mozjpeg": "0826579",
+    "pango": "1.58.2",
+    "pixman": "0.46.4",
+    "png": "1.6.58",
+    "proxy-libintl": "0.5",
+    "rsvg": "2.62.91",
+    "tiff": "4.7.2",
+    "uhdr": "2.0.2",
+    "vips": "8.18.6",
+    "webp": "1.6.0",
+    "xml2": "2.15.3",
+    "zlib-ng": "2.3.3",
+    "sharp": "0.35.4"
+  },
+  "method": "Extract exact authored SVG geometry from trusted HTML; embed generated stylesheet with light-theme CSS variables resolved and restore the authored body font inheritance on the standalone SVG; render with libvips/librsvg. No HTML scripts executed and no browser used.",
+  "limitations": [
+    "Static graphics rendering does not validate HTML viewer behavior, interaction or browser containment.",
+    "Browser file URL navigation was blocked by CUA policy; no browser/server reroute was attempted."
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "configured_state": {
+    "approval_mode": "interactive",
+    "auto_approve_tool_count": 0,
+    "dangerouslySkipPermissions": false,
+    "host_agent_registered": true,
+    "sha256": "14e10cc77e6890e18cb5fa9d1885b2d48613cbf6dd405ffe8815699b55e8fbeb"
+  },
+  "denied_commands_state": {
+    "disable_all": false,
+    "disabled_builtin_count": 0,
+    "sha256": "f021311e414b0078524ab1971ca4005d19c8a16441ce2cd83fb205e652849a1f",
+    "user_added_count": 0
+  },
+  "fixture_files": {
+    "agent": {
+      "gid": 0,
+      "mode": "0o644",
+      "path": "/home/crew/.kiro/agents/host-controls-demo.json",
+      "sha256": "df1389d82c7335953a9168a9f811bc3358a5ccc2f79c61dd23768edfbbe4dacb",
+      "uid": 0
+    },
+    "allowed_canary": {
+      "gid": 988,
+      "mode": "0o600",
+      "path": "/srv/kirocrew-demo/workspace/.host-controls-demo/allowed-canary.txt",
+      "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+      "uid": 999
+    },
+    "anonymous-http.py": {
+      "gid": 0,
+      "mode": "0o755",
+      "path": "/opt/kirocrew-demo/host-controls/anonymous-http.py",
+      "sha256": "9e4e087e4ad6dece270695832ea4a37155dea0cbdbbda45a3ea73f3ef284d4b6",
+      "uid": 0
+    },
+    "imds-tcp.py": {
+      "gid": 0,
+      "mode": "0o755",
+      "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py",
+      "sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+      "uid": 0
+    },
+    "sensitive_canary": {
+      "gid": 988,
+      "mode": "0o600",
+      "path": "/home/crew/.aws/kirocrew-demo-control-canary.txt",
+      "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+      "uid": 999
+    }
+  },
+  "ipv4_metadata_counter": [
+    {
+      "bytes": 120,
+      "output_rule_index": 1,
+      "packets": 2,
+      "rule": [
+        "-A",
+        "OUTPUT",
+        "-d",
+        "169.254.169.254/32",
+        "-m",
+        "owner",
+        "--uid-owner",
+        "999",
+        "-j",
+        "REJECT",
+        "--reject-with",
+        "icmp-admin-prohibited"
+      ]
+    }
+  ],
+  "kind": "read_only_native_host_ui4_preflight",
+  "limitations": [
+    "Native screenshot remains frozen according to operator; no new prompt may be claimed.",
+    "This bounded readback does not exercise a native helper or establish enforcement.",
+    "No process environment, authentication key, metadata response, or /proc state was read."
+  ],
+  "native_tools_executed": false,
+  "original_bound_sources_unchanged": true,
+  "preparation_checks_passed": true,
+  "prior_preflight_sha256": "9b00264d8504088ab4e92de6e341ee3e92b0342af7f25ba7c3f08e7b26421ac4",
+  "probe_helpers_executed": false,
+  "protected_write_target": {
+    "absent": true,
+    "path": "/home/crew/.kiro/agents/.demo-host-controls/write-probe-host-ui4.txt"
+  },
+  "public_fixture_hashes_unchanged": true,
+  "read_only": true,
+  "reader_script_sha256": "0fc82a8720853515f084a15c66a671154d1f15df29f08bceda798084c6927f85",
+  "recorded_at": "2026-09-14T00:54:56.536627+00:00",
+  "recording_ready": false,
+  "reviewed_amended_agent_hash_matches": true,
+  "services": {
+    "kirocrew-demo.service": {
+      "ActiveState": "active",
+      "ExecMainStartTimestamp": "Sun 2026-09-13 14:26:10 UTC",
+      "InvocationID": "8408354919d849a4a427e29ed4dcb694",
+      "MainPID": "4991",
+      "NRestarts": "0",
+      "SubState": "running",
+      "User": "crew"
+    },
+    "kirocrew-imds-guard.service": {
+      "ActiveState": "active",
+      "ExecMainStartTimestamp": "Sun 2026-09-13 13:59:18 UTC",
+      "InvocationID": "138f3ff113504c54b19917a431420d0e",
+      "MainPID": "0",
+      "NRestarts": "0",
+      "SubState": "exited",
+      "User": ""
+    },
+    "kirocrew-mcp-demo.service": {
+      "ActiveState": "active",
+      "ExecMainStartTimestamp": "Sun 2026-09-13 14:06:30 UTC",
+      "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+      "MainPID": "2833",
+      "NRestarts": "0",
+      "SubState": "running",
+      "User": "mcp-demo"
+    }
+  },
+  "source_files": {
+    "dashboard/chat_runner.py": {
+      "gid": 0,
+      "mode": "0o644",
+      "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/dashboard/chat_runner.py",
+      "sha256": "04847c1e72b03df4e578e066acebbbe604e8c5fc47f345ddb5e1fe7986e8ca32",
+      "uid": 0
+    },
+    "dashboard/token_auth.py": {
+      "gid": 0,
+      "mode": "0o644",
+      "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/dashboard/token_auth.py",
+      "sha256": "2ce2dd02498a6494edfc604b51436e016c62ada2f2be944499579ce09e822cda",
+      "uid": 0
+    },
+    "hooks.py": {
+      "gid": 0,
+      "mode": "0o644",
+      "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/hooks.py",
+      "sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+      "uid": 0
+    },
+    "sandbox.py": {
+      "gid": 0,
+      "mode": "0o644",
+      "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/sandbox.py",
+      "sha256": "3fcb43313c4970f523a50ce7a508b8b9801e88bdc06a61947a649a67cf8902e9",
+      "uid": 0
+    },
+    "security/denied_rules.py": {
+      "gid": 0,
+      "mode": "0o644",
+      "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/security/denied_rules.py",
+      "sha256": "e485cb5b1347af79cb25d14d6409d0ce57fe83a4e126f278c3cff89e728ec133",
+      "uid": 0
+    },
+    "security/paths.py": {
+      "gid": 0,
+      "mode": "0o644",
+      "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/security/paths.py",
+      "sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+      "uid": 0
+    }
+  }
+}

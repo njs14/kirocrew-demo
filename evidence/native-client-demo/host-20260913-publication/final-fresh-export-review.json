@@ -1,0 +1,1084 @@
+{
+  "build": {
+    "path": "output/kirocrew-native-controls-build.json",
+    "sha256": "f01a3d2539a64ec3ca42e3abd72257c2308735650653e9ba8b8265a7f8761248"
+  },
+  "declared_routes": 89,
+  "denied_private_or_invalid_routes": [
+    {
+      "route": "/.git/config",
+      "status": 404
+    },
+    {
+      "route": "/.env",
+      "status": 404
+    },
+    {
+      "route": "/config/demo.local.json",
+      "status": 404
+    },
+    {
+      "route": "/config/local.json",
+      "status": 404
+    },
+    {
+      "route": "/scripts/serve-recorded-demos.py",
+      "status": 404
+    },
+    {
+      "route": "/.build/native-host-imds-20260913-ui2/receipt.json",
+      "status": 404
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913-ui2/receipt.json",
+      "status": 404
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui2/baseline.json",
+      "status": 404
+    },
+    {
+      "route": "/evidence/native-client-demo/council-host-v1/candidate/prepared.json",
+      "status": 404
+    },
+    {
+      "route": "/evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-raw.jsonl",
+      "status": 404
+    },
+    {
+      "route": "/evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-raw.jsonl",
+      "status": 404
+    },
+    {
+      "route": "/recordings/native-client-20260913/raw/",
+      "status": 404
+    },
+    {
+      "route": "/../.git/config",
+      "status": 404
+    },
+    {
+      "route": "/%2e%2e/.git/config",
+      "status": 404
+    },
+    {
+      "route": "/?unexpected=1",
+      "status": 404
+    }
+  ],
+  "effective_routes": 91,
+  "executor": "/root/native_publication_review",
+  "export": {
+    "basis": "Only the 89 declared serveFiles plus build receipt and reviewed server source were copied. No raw/config/private collector source copied.",
+    "copied_file_count": 89,
+    "paths": [
+      "docs/HOST-CONTROL-SCENARIOS.md",
+      "docs/NATIVE-CLIENT-DEMO.md",
+      "evidence/admin-console/browser-receipt.json",
+      "evidence/admin-console/native-20260913/tour-build.json",
+      "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "evidence/native-client-demo/20260913-ui2/receipt-publication.json",
+      "evidence/native-client-demo/20260913/authenticated.json",
+      "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json",
+      "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "evidence/native-client-demo/host-20260913-review/initial-review.json",
+      "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+      "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+      "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+      "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+      "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "evidence/native-client-demo/media-review-host-controls.json",
+      "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "evidence/native-client-demo/media-review-mcp-controls.json",
+      "evidence/native-client-demo/media-review-memory-assignment.json",
+      "evidence/native-client-demo/poster-review-v2.json",
+      "infrastructure/mcp-enforcement/README.md",
+      "infrastructure/observability/APP-INSTALL.md",
+      "kirocrew-native-controls-diagram.html",
+      "output/admin-console-host-20260913/01-command-rule-active.jpg",
+      "output/admin-console-host-20260913/02-command-rule-removed.jpg",
+      "output/admin-console-host-20260913/03-command-turn-metrics.jpg",
+      "output/admin-console-host-20260913/04-anonymous-turn-metrics.jpg",
+      "output/admin-console-host-20260913/05-client-server-health.jpg",
+      "output/admin-console-host-20260913/06-server-collection-logs.jpg",
+      "output/admin-console-native-20260913/01-live-security-posture.png",
+      "output/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "output/admin-console-native-20260913/03-denied-command-categories.png",
+      "output/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "output/admin-console-native-20260913/05-approval-duration.png",
+      "output/admin-console-native-20260913/06-governance-status.png",
+      "output/admin-console-native-20260913/07-gateway-overview.png",
+      "output/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "output/admin-console/02-arm-performance.jpg",
+      "output/admin-console/07-agent-backend.jpg",
+      "output/admin-console/08-telemetry-controls.jpg",
+      "output/admin-console/11-client-server-telemetry.jpg",
+      "output/admin-console/12-collection-logs.jpg",
+      "output/kirocrew-admin-findings.md",
+      "output/kirocrew-admin-tour.html",
+      "output/kirocrew-admin-tour.md",
+      "output/kirocrew-native-admin-findings.md",
+      "output/kirocrew-native-controls-build.json",
+      "output/kirocrew-native-controls-manifest.json",
+      "output/kirocrew-native-controls-notes.md",
+      "output/kirocrew-native-controls.html",
+      "output/native-client-clips-20260913/native-allowed-read/contact-sheet.jpg",
+      "output/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+      "output/native-client-clips-20260913/native-allowed-read/poster.jpg",
+      "output/native-client-clips-20260913/native-crew-denial/contact-sheet.jpg",
+      "output/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+      "output/native-client-clips-20260913/native-crew-denial/poster.jpg",
+      "output/native-client-clips-20260913/native-iam-denial/contact-sheet.jpg",
+      "output/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+      "output/native-client-clips-20260913/native-iam-denial/poster.jpg",
+      "output/native-client-clips-20260913/native-mcp-denial/contact-sheet.jpg",
+      "output/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+      "output/native-client-clips-20260913/native-mcp-denial/poster.jpg",
+      "output/native-host-clips-20260913/native-host-anonymous-http403/contact-sheet.jpg",
+      "output/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+      "output/native-host-clips-20260913/native-host-anonymous-http403/poster.jpg",
+      "output/native-host-clips-20260913/native-host-command-denial-summary/contact-sheet.jpg",
+      "output/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+      "output/native-host-clips-20260913/native-host-command-denial-summary/poster.jpg",
+      "output/native-host-clips-20260913/native-host-workspace-read/contact-sheet.jpg",
+      "output/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4",
+      "output/native-host-clips-20260913/native-host-workspace-read/poster.jpg",
+      "output/native-memory-clip-20260913/native-memory-assignment-refusal/contact-sheet.jpg",
+      "output/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+      "output/native-memory-clip-20260913/native-memory-assignment-refusal/poster.jpg",
+      "scripts/serve-recorded-demos.py"
+    ],
+    "private_local_directory": ".build/native-host-publication-export-20260913-final"
+  },
+  "invalid_host_status": 403,
+  "kind": "final_host_fresh_copy_serving_review",
+  "limits": [
+    "This proves local fresh-copy file serving and byte ranges, not a new browser playback or native enforcement run.",
+    "Embedded evidence may refer by path/hash to privately retained originals; those originals were not copied or served.",
+    "No AWS, UI, authentication, model inference, native action or Git staging occurred."
+  ],
+  "media_range_checks": [
+    {
+      "bytes": 64,
+      "content_range": "bytes 0-63/1136859",
+      "range": "bytes=0-63",
+      "route": "/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+      "sha256": "9cb14a3ba90400029fddc453275a585dcc89bb74bc24f44259d9bc57b5726a33",
+      "status": 206
+    },
+    {
+      "bytes": 32,
+      "content_range": "bytes 1136827-1136858/1136859",
+      "range": "bytes=-32",
+      "route": "/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+      "sha256": "adc261ce5e78cb8c2f53f4fe1557892f6d687e38015df2847884856708714d14",
+      "status": 206
+    },
+    {
+      "range": "unsatisfiable",
+      "route": "/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+      "status": 416
+    },
+    {
+      "bytes": 64,
+      "content_range": "bytes 0-63/1983357",
+      "range": "bytes=0-63",
+      "route": "/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+      "sha256": "ef842870d2baf254c4e7fdb5653e40c5b25c9425105fd14f8e73df14b3c12584",
+      "status": 206
+    },
+    {
+      "bytes": 32,
+      "content_range": "bytes 1983325-1983356/1983357",
+      "range": "bytes=-32",
+      "route": "/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+      "sha256": "3ab342877b4011c2f40c170dfd6859150bf88b266fb838dd2c81575ba2ce0494",
+      "status": 206
+    },
+    {
+      "range": "unsatisfiable",
+      "route": "/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+      "status": 416
+    },
+    {
+      "bytes": 64,
+      "content_range": "bytes 0-63/2207810",
+      "range": "bytes=0-63",
+      "route": "/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+      "sha256": "f208b5aa16541dd968653e8fd3b1d1d9f46d992570a9a61348a226392cc719c4",
+      "status": 206
+    },
+    {
+      "bytes": 32,
+      "content_range": "bytes 2207778-2207809/2207810",
+      "range": "bytes=-32",
+      "route": "/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+      "sha256": "54552ab30061ff25cc5a2f7e293e2878f9ca3a5132fd1b7417560e860acd32cd",
+      "status": 206
+    },
+    {
+      "range": "unsatisfiable",
+      "route": "/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+      "status": 416
+    },
+    {
+      "bytes": 64,
+      "content_range": "bytes 0-63/2047715",
+      "range": "bytes=0-63",
+      "route": "/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+      "sha256": "d39e8c6fbbf65c9e025978c3c190e8af0f17f1d6a3a0057e4fbdd7ecfa59a1c8",
+      "status": 206
+    },
+    {
+      "bytes": 32,
+      "content_range": "bytes 2047683-2047714/2047715",
+      "range": "bytes=-32",
+      "route": "/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+      "sha256": "56553701ab4408558011adb1d1e0681decb3dba836cc4d488596fe51b1c34f4c",
+      "status": 206
+    },
+    {
+      "range": "unsatisfiable",
+      "route": "/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+      "status": 416
+    },
+    {
+      "bytes": 64,
+      "content_range": "bytes 0-63/2207528",
+      "range": "bytes=0-63",
+      "route": "/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+      "sha256": "9b290f0a5079453acd4be12e6d7ab04bdaca95b1b169b693fa42705b4ae13ae6",
+      "status": 206
+    },
+    {
+      "bytes": 32,
+      "content_range": "bytes 2207496-2207527/2207528",
+      "range": "bytes=-32",
+      "route": "/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+      "sha256": "a0ff0ce8f1b8338e0de50480a80772c6dc113f5df2654a4169e771225366505a",
+      "status": 206
+    },
+    {
+      "range": "unsatisfiable",
+      "route": "/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+      "status": 416
+    },
+    {
+      "bytes": 64,
+      "content_range": "bytes 0-63/523705",
+      "range": "bytes=0-63",
+      "route": "/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+      "sha256": "cb3820ec429ccc4e124315436cb7d80b90538f7b9f0f34ff6ece1a55e87337e5",
+      "status": 206
+    },
+    {
+      "bytes": 32,
+      "content_range": "bytes 523673-523704/523705",
+      "range": "bytes=-32",
+      "route": "/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+      "sha256": "adc261ce5e78cb8c2f53f4fe1557892f6d687e38015df2847884856708714d14",
+      "status": 206
+    },
+    {
+      "range": "unsatisfiable",
+      "route": "/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+      "status": 416
+    },
+    {
+      "bytes": 64,
+      "content_range": "bytes 0-63/1197687",
+      "range": "bytes=0-63",
+      "route": "/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4",
+      "sha256": "bb3d2990fa83acad8b38c4d108377833911a84e240209a1c34fd5761bdd17af7",
+      "status": 206
+    },
+    {
+      "bytes": 32,
+      "content_range": "bytes 1197655-1197686/1197687",
+      "range": "bytes=-32",
+      "route": "/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4",
+      "sha256": "b1c3663b805f414b693fdd5d30a6ab628ba2ba570b9e5551b1765132545c94aa",
+      "status": 206
+    },
+    {
+      "range": "unsatisfiable",
+      "route": "/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4",
+      "status": 416
+    },
+    {
+      "bytes": 64,
+      "content_range": "bytes 0-63/407034",
+      "range": "bytes=0-63",
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+      "sha256": "7a036643ca295849d1d639e137cbb28e518502d803c3bf09a1029a7f825097a7",
+      "status": 206
+    },
+    {
+      "bytes": 32,
+      "content_range": "bytes 407002-407033/407034",
+      "range": "bytes=-32",
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+      "sha256": "7ce28246e5541bfd277ebc07388058801158383619d7d9da3905359d85b0938b",
+      "status": 206
+    },
+    {
+      "range": "unsatisfiable",
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+      "status": 416
+    }
+  ],
+  "presentation_query_status": 200,
+  "recorded_at": "2026-09-14T01:13:49.399096+00:00",
+  "routes": [
+    {
+      "bytes": 639250,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/kirocrew-native-controls.html",
+      "route": "/",
+      "sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c"
+    },
+    {
+      "bytes": 112473,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-host-20260913/01-command-rule-active.jpg",
+      "route": "/admin-console-host-20260913/01-command-rule-active.jpg",
+      "sha256": "ed8fd2f5e10d6acc5ebec1d2cdbe5b70a86b73201565b18c71b6d1e7aecbdd00"
+    },
+    {
+      "bytes": 107638,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-host-20260913/02-command-rule-removed.jpg",
+      "route": "/admin-console-host-20260913/02-command-rule-removed.jpg",
+      "sha256": "f0994d88918d6f00ceeb6fcb3823905d98e481495016a9a543041efec93e51d3"
+    },
+    {
+      "bytes": 89769,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-host-20260913/03-command-turn-metrics.jpg",
+      "route": "/admin-console-host-20260913/03-command-turn-metrics.jpg",
+      "sha256": "0daf14b482ab41bc35214d12fce77d07397dd027ddf650f33e82d01bc4357b52"
+    },
+    {
+      "bytes": 89892,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-host-20260913/04-anonymous-turn-metrics.jpg",
+      "route": "/admin-console-host-20260913/04-anonymous-turn-metrics.jpg",
+      "sha256": "5148ca90307b13698a6b91f17689e094b60cfa5e6887b2af1a62cadcfe043705"
+    },
+    {
+      "bytes": 146893,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-host-20260913/05-client-server-health.jpg",
+      "route": "/admin-console-host-20260913/05-client-server-health.jpg",
+      "sha256": "e9cf198282a847b9e4681c2cd0191e4061d5a17b51fad6f7f753682981e5dded"
+    },
+    {
+      "bytes": 118292,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-host-20260913/06-server-collection-logs.jpg",
+      "route": "/admin-console-host-20260913/06-server-collection-logs.jpg",
+      "sha256": "a24e67be86372e9c76ac4602af6832520c46deea4f587360c929ff7355d40734"
+    },
+    {
+      "bytes": 111407,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-native-20260913/01-live-security-posture.png",
+      "route": "/admin-console-native-20260913/01-live-security-posture.png",
+      "sha256": "9b0a9a96268e198b8a6c1ebc4b97177fa5348ed10292766f8d71bdb93817d44f"
+    },
+    {
+      "bytes": 132207,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "route": "/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "sha256": "8f6f13d46a0fe51af91f23bd9ffc3d3fc5276b78f24274ba61c0cc003c3c6e5e"
+    },
+    {
+      "bytes": 107657,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-native-20260913/03-denied-command-categories.png",
+      "route": "/admin-console-native-20260913/03-denied-command-categories.png",
+      "sha256": "318d8ec1d2ec81d30c01676e7441262b1c45522baecb6a2cc721cafb0ddfa57b"
+    },
+    {
+      "bytes": 138288,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "route": "/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "sha256": "4ce5b3632c2eb1ca3d769c9acc2f9e38edb74629a9af2dca79090a1cfac92d9e"
+    },
+    {
+      "bytes": 88046,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-native-20260913/05-approval-duration.png",
+      "route": "/admin-console-native-20260913/05-approval-duration.png",
+      "sha256": "0827e2d83fcf36745c9325b6e967bf100678fa1f6536c741da29a79e59fbb71f"
+    },
+    {
+      "bytes": 89720,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-native-20260913/06-governance-status.png",
+      "route": "/admin-console-native-20260913/06-governance-status.png",
+      "sha256": "0963be9afa8c60e73ce18b2e779202529cf88b4261708050fdfd7b1292f468d6"
+    },
+    {
+      "bytes": 74217,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-native-20260913/07-gateway-overview.png",
+      "route": "/admin-console-native-20260913/07-gateway-overview.png",
+      "sha256": "d4094b575c6cb8ac5678f050bb894df36f82fe47ff38c659aa52d0376c1967fb"
+    },
+    {
+      "bytes": 83630,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "route": "/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "sha256": "680e9f08a55db92372b13356f697010fe674532741da467b2b93be9d61fbd8aa"
+    },
+    {
+      "bytes": 51458,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console/02-arm-performance.jpg",
+      "route": "/admin-console/02-arm-performance.jpg",
+      "sha256": "368456a4d432f80a3c79ed34117b2bb8b24182cbcdcb917acea7e8308dd891ba"
+    },
+    {
+      "bytes": 82406,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console/07-agent-backend.jpg",
+      "route": "/admin-console/07-agent-backend.jpg",
+      "sha256": "35735f35bed62fee253dd3d4d1471acd2ea32c072a4421d6906db0b422e73ccf"
+    },
+    {
+      "bytes": 70977,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console/08-telemetry-controls.jpg",
+      "route": "/admin-console/08-telemetry-controls.jpg",
+      "sha256": "16ca6e0c062799f6e7510dce429a9853a515be0f558e7a93e21ca9bfa65a09b1"
+    },
+    {
+      "bytes": 78171,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console/11-client-server-telemetry.jpg",
+      "route": "/admin-console/11-client-server-telemetry.jpg",
+      "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698"
+    },
+    {
+      "bytes": 81268,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/admin-console/12-collection-logs.jpg",
+      "route": "/admin-console/12-collection-logs.jpg",
+      "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63"
+    },
+    {
+      "bytes": 21906,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "docs/HOST-CONTROL-SCENARIOS.md",
+      "route": "/docs/HOST-CONTROL-SCENARIOS.md",
+      "sha256": "6d8e0210da6e135ece4d368d3d4891627563b6c4af119cd422e1f94d1d67c9a1"
+    },
+    {
+      "bytes": 21658,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "docs/NATIVE-CLIENT-DEMO.md",
+      "route": "/docs/NATIVE-CLIENT-DEMO.md",
+      "sha256": "92c76b60e2d306156e13e6a84146b7f80c3abab61eda1bf4769bc6a5db036b63"
+    },
+    {
+      "bytes": 3664,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/admin-console/browser-receipt.json",
+      "route": "/evidence/admin-console/browser-receipt.json",
+      "sha256": "7ec5239c3cb55087dbab974ab64a3c485fdf6038a4136952a4a933f3dc5cd317"
+    },
+    {
+      "bytes": 15583,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/admin-console/native-20260913/tour-build.json",
+      "route": "/evidence/admin-console/native-20260913/tour-build.json",
+      "sha256": "bb458337d82be7c57700431e8cf7282ec462fbef8b45a8ea1fe7bff9f3cc9f5f"
+    },
+    {
+      "bytes": 14113,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "route": "/evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    },
+    {
+      "bytes": 2040,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "route": "/evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+    },
+    {
+      "bytes": 6242,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "route": "/evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
+    },
+    {
+      "bytes": 11079,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/20260913-ui2/receipt-publication.json",
+      "route": "/evidence/native-client-demo/20260913-ui2/receipt-publication.json",
+      "sha256": "1e81f02d2237afbd0d6394b178def71134a8be79bd50f26b23f79af42983ee2e"
+    },
+    {
+      "bytes": 482,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/20260913/authenticated.json",
+      "route": "/evidence/native-client-demo/20260913/authenticated.json",
+      "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
+    },
+    {
+      "bytes": 622,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "route": "/evidence/native-client-demo/20260913/runtime-preflight.json",
+      "sha256": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499"
+    },
+    {
+      "bytes": 699,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json",
+      "route": "/evidence/native-client-demo/archify-host-20260913/asset-dependencies.json",
+      "sha256": "a109b7b10371b8bfab24dcca4588dcf2f4a248dcb13eea29346a41f5363b67ec"
+    },
+    {
+      "bytes": 20791,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "route": "/evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "sha256": "caeca579dc6c8a82e8799d6274c121af21c46cdc4420935bd0ec31b14a6db01b"
+    },
+    {
+      "bytes": 12729,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "route": "/evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11"
+    },
+    {
+      "bytes": 6868,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "route": "/evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "sha256": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30"
+    },
+    {
+      "bytes": 5530,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "route": "/evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "sha256": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1"
+    },
+    {
+      "bytes": 3477,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "route": "/evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204"
+    },
+    {
+      "bytes": 7194,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-review/initial-review.json",
+      "route": "/evidence/native-client-demo/host-20260913-review/initial-review.json",
+      "sha256": "ff855dbecb4bdb852200521040f4d5e523b1f50d7035fb3ec808395f4e3314e9"
+    },
+    {
+      "bytes": 4509,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "route": "/evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
+    },
+    {
+      "bytes": 5133,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "route": "/evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "sha256": "663302446418b5ec7d52330ecaec42a2ee57ef4598af1e3ef5034990b6398603"
+    },
+    {
+      "bytes": 8261,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "route": "/evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "sha256": "63a86c6d6e8be4e14efe5dbe31962eab4d921c104cf40a1d6bbef770c3a54436"
+    },
+    {
+      "bytes": 8740,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+      "route": "/evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+      "sha256": "88bc23a85ab8db45a0d24ee34f711f46f263245e1a83f4e89c623e21dd9c2455"
+    },
+    {
+      "bytes": 2060,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "route": "/evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "sha256": "3eae37afdfc7d513f702a336d1e6ce70f07f36209151630b0271f314bfc146e1"
+    },
+    {
+      "bytes": 1619,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "route": "/evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "sha256": "a30dd5e1cb270195a4a36392d647e37b3133dbc83913bf164f694eac9b39fcda"
+    },
+    {
+      "bytes": 2257,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "route": "/evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "sha256": "f05b5336c8d2578089664011b2717997fe3b6888386a8f48fc9ff70107dbddd3"
+    },
+    {
+      "bytes": 8811,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "route": "/evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "sha256": "9f757015d7bd9da89c7e694a315c0d73e7004e743f0404cd0cd487d88c742302"
+    },
+    {
+      "bytes": 8346,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+      "route": "/evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+      "sha256": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7"
+    },
+    {
+      "bytes": 4206,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+      "route": "/evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+      "sha256": "3532f590c516fd5fd7aaa937e101fa216b2403e5cfb53ad8cb425f848a1caf83"
+    },
+    {
+      "bytes": 1539,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+      "route": "/evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+      "sha256": "8437471934f673b0aa312104b99bc84144c6c9293e616b2abb858f68438c25f0"
+    },
+    {
+      "bytes": 2500,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "route": "/evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "sha256": "8090b4a69f0c4f76021d6cf1c869f352c188aaa61c31382f3b4e0b19f0ea8a6c"
+    },
+    {
+      "bytes": 12899,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/media-review-host-controls.json",
+      "route": "/evidence/native-client-demo/media-review-host-controls.json",
+      "sha256": "bc649485a4d7d99c09d1793837a9977072ac0d63092d1a9cba0e0b85bf8432a2"
+    },
+    {
+      "bytes": 8355,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "route": "/evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "sha256": "f1a2e27eba4e90e473a659114773a29db9a4c8bdd4dae24f4a56b8d02bf42f46"
+    },
+    {
+      "bytes": 10273,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "route": "/evidence/native-client-demo/media-review-mcp-controls.json",
+      "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d"
+    },
+    {
+      "bytes": 4551,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/media-review-memory-assignment.json",
+      "route": "/evidence/native-client-demo/media-review-memory-assignment.json",
+      "sha256": "68e609282f6cf097fc9ed3f88a1228f4703fee5311a5945cfa98a9dfc78cc167"
+    },
+    {
+      "bytes": 14034,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "evidence/native-client-demo/poster-review-v2.json",
+      "route": "/evidence/native-client-demo/poster-review-v2.json",
+      "sha256": "0489c07e6174363188760877260778e6b47cf72c462d3589224574872885649a"
+    },
+    {
+      "bytes": 11222,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "infrastructure/mcp-enforcement/README.md",
+      "route": "/infrastructure/mcp-enforcement/README.md",
+      "sha256": "68a0c13a955baec04a34e25f382bde6eea1d8701c6fb12a8d356589526b45910"
+    },
+    {
+      "bytes": 6803,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "infrastructure/observability/APP-INSTALL.md",
+      "route": "/infrastructure/observability/APP-INSTALL.md",
+      "sha256": "98d682cadc364ec25f98e85cb3709f2b1fc19a13ed792abb3a6efb19c28a907e"
+    },
+    {
+      "bytes": 7075,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/kirocrew-admin-findings.md",
+      "route": "/kirocrew-admin-findings.md",
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    },
+    {
+      "bytes": 2516369,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/kirocrew-admin-tour.html",
+      "route": "/kirocrew-admin-tour.html",
+      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87"
+    },
+    {
+      "bytes": 18384,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/kirocrew-admin-tour.md",
+      "route": "/kirocrew-admin-tour.md",
+      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108"
+    },
+    {
+      "bytes": 9214,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/kirocrew-native-admin-findings.md",
+      "route": "/kirocrew-native-admin-findings.md",
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
+    },
+    {
+      "bytes": 34634,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/kirocrew-native-controls-build.json",
+      "route": "/kirocrew-native-controls-build.json",
+      "sha256": "f01a3d2539a64ec3ca42e3abd72257c2308735650653e9ba8b8265a7f8761248"
+    },
+    {
+      "bytes": 810648,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "kirocrew-native-controls-diagram.html",
+      "route": "/kirocrew-native-controls-diagram.html",
+      "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb"
+    },
+    {
+      "bytes": 35002,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/kirocrew-native-controls-manifest.json",
+      "route": "/kirocrew-native-controls-manifest.json",
+      "sha256": "7262516697502200db5122b8ea968c7f9230f92f4e43a8d900b69854deb39dda"
+    },
+    {
+      "bytes": 25826,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/kirocrew-native-controls-notes.md",
+      "route": "/kirocrew-native-controls-notes.md",
+      "sha256": "415e0f99e8add71613d140907955f2be5a29f7813f6f419fa97fd35bd15df164"
+    },
+    {
+      "bytes": 639250,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/kirocrew-native-controls.html",
+      "route": "/kirocrew-native-controls.html",
+      "sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c"
+    },
+    {
+      "bytes": 112453,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-allowed-read/contact-sheet.jpg",
+      "route": "/native-client-clips-20260913/native-allowed-read/contact-sheet.jpg",
+      "sha256": "bcb7f08a4a92be535490b37fadd3d03aab78090502f44873212a00e74789bf7a"
+    },
+    {
+      "bytes": 1136859,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+      "route": "/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+      "sha256": "3bcd32eab9989b73a1b85845bd1294d02f4a3de6e622808f839b676fa8bc731a"
+    },
+    {
+      "bytes": 200388,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-allowed-read/poster.jpg",
+      "route": "/native-client-clips-20260913/native-allowed-read/poster.jpg",
+      "sha256": "132b18bce72c27c560dfdf61d973a0c922de9a8c95994f174e0dbcac1821e98d"
+    },
+    {
+      "bytes": 148417,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-crew-denial/contact-sheet.jpg",
+      "route": "/native-client-clips-20260913/native-crew-denial/contact-sheet.jpg",
+      "sha256": "c55171f636dd94a2890d2fd020c19fa9ab12d05085b30207f602549e316dc18c"
+    },
+    {
+      "bytes": 1983357,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+      "route": "/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+      "sha256": "92f089ffc6d408310cda808387c748d187e75daf9d6314d0322b32ba43fe917e"
+    },
+    {
+      "bytes": 227591,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-crew-denial/poster.jpg",
+      "route": "/native-client-clips-20260913/native-crew-denial/poster.jpg",
+      "sha256": "d74da469fa069a9672be8d716d36259258b521ba5c7360c165407ccae99fb65a"
+    },
+    {
+      "bytes": 147279,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-iam-denial/contact-sheet.jpg",
+      "route": "/native-client-clips-20260913/native-iam-denial/contact-sheet.jpg",
+      "sha256": "5735ac378d6149c37ea49a97afc6050dc201dc334476085bdcdaa621ce7ff60b"
+    },
+    {
+      "bytes": 2207810,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+      "route": "/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+      "sha256": "56c8166490123442d83c89f5694b644898355f53c97649a4275a10d2d676067e"
+    },
+    {
+      "bytes": 205600,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-iam-denial/poster.jpg",
+      "route": "/native-client-clips-20260913/native-iam-denial/poster.jpg",
+      "sha256": "a7c77c80e53dd36d7e643cad757755875abe56e6125ff4f2c0e41eec17c5ff9f"
+    },
+    {
+      "bytes": 155597,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-mcp-denial/contact-sheet.jpg",
+      "route": "/native-client-clips-20260913/native-mcp-denial/contact-sheet.jpg",
+      "sha256": "7049a091cba27cf307d89249e5fbb3008fa25a7a8656a43827b6c4a07374bf91"
+    },
+    {
+      "bytes": 2047715,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+      "route": "/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+      "sha256": "9895ac8db2f08902a6086be866676e3e1273373e876d402f21cd788b101fb7a2"
+    },
+    {
+      "bytes": 234538,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-client-clips-20260913/native-mcp-denial/poster.jpg",
+      "route": "/native-client-clips-20260913/native-mcp-denial/poster.jpg",
+      "sha256": "90dac171aeab9b9abf0031ba84b58b4ac37fc24d6114195490a838c6e430511d"
+    },
+    {
+      "bytes": 182119,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-host-clips-20260913/native-host-anonymous-http403/contact-sheet.jpg",
+      "route": "/native-host-clips-20260913/native-host-anonymous-http403/contact-sheet.jpg",
+      "sha256": "5476b424b3838bbd287a4c5fbb81c8619d87960269b008e67d28c6ebcdd7bf98"
+    },
+    {
+      "bytes": 2207528,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+      "route": "/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+      "sha256": "0bc81f03f539f0614fa49a65ae3b27ef53f00bf26f35c7573684652cf1e87ada"
+    },
+    {
+      "bytes": 273116,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-host-clips-20260913/native-host-anonymous-http403/poster.jpg",
+      "route": "/native-host-clips-20260913/native-host-anonymous-http403/poster.jpg",
+      "sha256": "e8afb8f9325657f3af4430cb71f6629d23d06db56af4d7edbc235f163df9e417"
+    },
+    {
+      "bytes": 121337,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-host-clips-20260913/native-host-command-denial-summary/contact-sheet.jpg",
+      "route": "/native-host-clips-20260913/native-host-command-denial-summary/contact-sheet.jpg",
+      "sha256": "b33b410664e7c3781222c4e986a4f49ad9ffcd3380f4bddc6c0a7abc55208820"
+    },
+    {
+      "bytes": 523705,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+      "route": "/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+      "sha256": "f3156ac900f643e06fbe4309ac563b880e6076250daa690c244bf4ea9b3f85ea"
+    },
+    {
+      "bytes": 194096,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-host-clips-20260913/native-host-command-denial-summary/poster.jpg",
+      "route": "/native-host-clips-20260913/native-host-command-denial-summary/poster.jpg",
+      "sha256": "1ae25cf1b7e924f7476e86bdd922fadfce3711aa888a154f20afc328b2a1e341"
+    },
+    {
+      "bytes": 108671,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-host-clips-20260913/native-host-workspace-read/contact-sheet.jpg",
+      "route": "/native-host-clips-20260913/native-host-workspace-read/contact-sheet.jpg",
+      "sha256": "df7f2793848c5e0dab8ae6a2c4a73586d925ec89fe54dbe715a7dfe166713932"
+    },
+    {
+      "bytes": 1197687,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4",
+      "route": "/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4",
+      "sha256": "2a086d947a5530b53d03332698b909c6f40092298da3721bc7e3eeb74940b946"
+    },
+    {
+      "bytes": 195626,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-host-clips-20260913/native-host-workspace-read/poster.jpg",
+      "route": "/native-host-clips-20260913/native-host-workspace-read/poster.jpg",
+      "sha256": "3cb1b2a63da5a12475b733bd8fbc37d788f0bb5d11545ff21b9a6aa6b76f49fd"
+    },
+    {
+      "bytes": 101129,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-memory-clip-20260913/native-memory-assignment-refusal/contact-sheet.jpg",
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/contact-sheet.jpg",
+      "sha256": "70710b24084c9bef74d647f5aa9653d2b362038649df628b3910029fe18a9c05"
+    },
+    {
+      "bytes": 407034,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+      "sha256": "4ab78129747a1db40c05ed3115969756e70e5e9a122a709beee6c4e0e6d26c19"
+    },
+    {
+      "bytes": 152476,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/native-memory-clip-20260913/native-memory-assignment-refusal/poster.jpg",
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/poster.jpg",
+      "sha256": "2abf516c8994a53d5a102d4b57c967bff0e2270b7e3b8d82524fae5289ea68fc"
+    },
+    {
+      "bytes": 7075,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/kirocrew-admin-findings.md",
+      "route": "/output/kirocrew-admin-findings.md",
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    },
+    {
+      "bytes": 9214,
+      "get_status": 200,
+      "head_status": 200,
+      "path": "output/kirocrew-native-admin-findings.md",
+      "route": "/output/kirocrew-native-admin-findings.md",
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
+    }
+  ],
+  "schema": 1,
+  "server": {
+    "path": "scripts/serve-recorded-demos.py",
+    "sha256": "3ed2f61d96c23ba4d5ec382d34be2d7f178fe2efb36609a8d413a1c2b7427aaf"
+  },
+  "server_stopped": true,
+  "transport": "Ephemeral loopback HTTP server loaded from a fresh export copy; stopped after checks.",
+  "verdict": "ship"
+}

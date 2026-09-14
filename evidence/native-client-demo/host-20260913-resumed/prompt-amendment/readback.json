@@ -1,0 +1,48 @@
+{
+  "sources": {
+    "agent.py": {
+      "sha256": "29db2dc3af749c54fde7079e76b043ebb7aea660745cfc8f4983b05ae0661de6",
+      "uid": 0,
+      "gid": 0,
+      "mode": 420,
+      "bytes": 366452,
+      "matches_local_snapshot": true
+    },
+    "acp/harness/kiro.py": {
+      "sha256": "aa981e0855411cce77f8e656e8d21e935eb0600936567a90cc6516788f76479a",
+      "uid": 0,
+      "gid": 0,
+      "mode": 420,
+      "bytes": 7403,
+      "matches_local_snapshot": true
+    }
+  },
+  "files": {
+    "agent": {
+      "sha256": "df1389d82c7335953a9168a9f811bc3358a5ccc2f79c61dd23768edfbbe4dacb",
+      "uid": 0,
+      "gid": 0,
+      "mode": 420,
+      "bytes": 2556
+    },
+    "backup": {
+      "sha256": "fcf983f70a7a37cf698138a3f9cb3be930961685bdeb1961ebe112f7c1283ec3",
+      "uid": 0,
+      "gid": 0,
+      "mode": 384,
+      "bytes": 598
+    },
+    "product_lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "uid": 999,
+      "gid": 988,
+      "mode": 384,
+      "bytes": 0
+    }
+  },
+  "kind": "host_prompt_amendment_readback",
+  "read_only": true,
+  "recorded_at": "2026-09-14T00:07:29.121669+00:00",
+  "ssh_returncode": 0,
+  "probe_executed": false
+}

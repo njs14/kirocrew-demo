@@ -4,7 +4,7 @@ September 13, 2026 · macOS client / ARM EC2 server · owner console
 
 Inspect the server’s controls, understand their authority and read the client and server measurements. These are original captures of the owner console connected to the ARM EC2 Gateway. The Mac runs the client with its local Gateway off.
 
-The native Mac run recorded an allowed S3 read, a Crew policy refusal, an MCP grant refusal and IAM AccessDenied. The final reconciliation and authority review support those four bounded outcomes.
+Earlier MCP/IAM run: The native Mac run recorded an allowed S3 read, a Crew policy refusal, an MCP grant refusal and IAM AccessDenied. The final reconciliation and authority review support those four bounded outcomes.
 
 Fresh security captures and earlier baseline screenshots are dated separately below. All image bytes are preserved. This tour is a guide to the console; native enforcement requires a separate recording and receipt.
 
@@ -50,11 +50,15 @@ Open **Settings → Security → Denied Commands**.
 
 Route: `/settings/security/rules`
 
-The page groups 112 rules into nine categories. The expanded IaC teardown group describes four enabled rules for destructive CDK, Kubernetes, Pulumi and Terraform commands. The custom-deny form accepts a pattern and an explanation for the agent.
+The page groups 112 built-in rules into nine categories. The earlier expanded IaC teardown capture shows four enabled rules for destructive CDK, Kubernetes, Pulumi and Terraform commands. The custom-deny form accepts a pattern and an explanation for the agent.
 
-These are command-pattern controls. The demo’s auto_deny_tools entry for @aws-enforcement/crew_denied lives in the remote Gateway configuration separately; this screen does not manage that MCP tool deny. Crew can edit its configuration in this deployment.
+The later owner-console capture shows KIROCREW_DEMO_COMMAND_CONTROL_20260913 enabled as a temporary custom deny. The next capture shows that marker removed after the take. Both show 112 built-in rules and Disable all built-in denies switched off. These images record configuration; the separate native command receipt supports the observed automatic hook refusal.
 
-Presenter cue: Read a rule’s description and enabled state. Inspect coverage without changing the control during the tour.
+The cleanup readback confirms that the exact marker and its rule ID are absent, no built-in IDs are disabled, and the previously bound hook, path and token-auth sources are unchanged. Its earlier baseline did not hash all unrelated custom rules, so that receipt alone cannot prove every unrelated custom rule was preserved.
+
+The custom command pattern is separate from auto_deny_tools for @aws-enforcement/crew_denied in the remote Gateway configuration. This screen does not manage that MCP tool deny. Crew can edit its configuration in this deployment.
+
+Presenter cue: Compare the temporary marker before and after cleanup, then open the command decision and cleanup receipts. Keep the command rule separate from the MCP tool deny.
 
 *September 13, 2026 · evening capture.* Fresh category view: nine groups, 112 rules and the custom-deny form.
 
@@ -63,6 +67,14 @@ Presenter cue: Read a rule’s description and enabled state. Inspect coverage w
 *September 13, 2026 · evening capture.* Fresh expanded IaC teardown category: four enabled rule descriptions.
 
 ![The expanded IaC teardown category shows CDK destroy, Kubernetes namespace deletion, Pulumi destroy and Terraform destroy rules.](admin-console-native-20260913/04-teardown-rule-coverage-viewport.png)
+
+*September 13, 2026 · later evening capture (EDT).* Later owner-console capture: the temporary marker pattern is enabled. The built-in catalog remains at 112 rules and its global-disable switch is off.
+
+![Denied Commands shows 112 built-in rules and the enabled custom pattern KIROCREW_DEMO_COMMAND_CONTROL_20260913.](admin-console-host-20260913/01-command-rule-active.jpg)
+
+*September 13, 2026 · later evening capture (EDT).* After cleanup through Delete pattern, the custom marker is absent. The same view retains 112 built-in rules with the global-disable switch off.
+
+![Denied Commands shows an empty custom-deny list after the temporary marker was removed; 112 built-in rules remain listed.](admin-console-host-20260913/02-command-rule-removed.jpg)
 
 ## 04. Read the active approval mode
 
@@ -134,13 +146,15 @@ Open **Settings → Privacy; Developer → Telemetry**.
 
 Route: `/settings/privacy; /developer?tab=telemetry`
 
-The earlier Privacy capture has Record metrics enabled and the anonymous usage heartbeat disabled by the Gateway environment. The fresh Telemetry capture expands the dashboard session “MCP Tool Call Read Allowed” into four completed turns, at 5:24:51, 5:25:41, 5:26:51 and 5:27:21 PM on September 13.
+The earlier Privacy capture has Record metrics enabled and the anonymous usage heartbeat disabled by the Gateway environment. The retained MCP/IAM capture expands four completed turns with durations 12.3, 8.9, 14.2 and 17.7 seconds; its session total displays 0.5 credits after rounding.
 
-The four durations are 12.3, 8.9, 14.2 and 17.7 seconds. The session total displays 0.5 credits after rounding. Throughput is eight because it includes four background turns. The fault summary reads 0 faults of 4; that is a runtime fault measurement, not a count of policy denials.
+The later captures show nine dashboard turns and 14 background turns, for throughput 23. Their header reports p50 latency 3.5 seconds, p90 latency 17.4 seconds and 0 runtime faults of 9. These aggregates include different sessions and outcomes; they are not a count of passed security tests.
 
-The footer labels the metrics source local-only, no egress. That describes metric storage/export, not a network restriction on the agent or AWS requests. These rows establish recorded activity. The separately reviewed reconciliation and authority evidence establish the four specific allowed or denied outcomes.
+Blocked bash command demonstration expands to one turn at 8:00:21 PM, with 0.12 credits and 6.8 seconds. Anonymous loopback security posture probe expands to one turn at 8:07:21 PM, with 0.27 credits and 50.4 seconds. Both times are September 13. The authentication turn includes two separate once-only approvals, so its duration includes the approval workflow.
 
-Presenter cue: Read the named session’s four rows, then explain the background row and open the matched enforcement evidence.
+The footer labels the metrics source local-only, no egress. That describes metric storage/export, not a network restriction on the agent or AWS requests. These rows establish recorded activity. The native results and separately reviewed server evidence identify each allowed or denied outcome.
+
+Presenter cue: Read the named turn, timestamp and duration, then open its decision receipt. Explain why runtime faults, background throughput and policy refusals are different measurements.
 
 *September 13, 2026 · earlier baseline.* Earlier Privacy capture: metric recording on, anonymous heartbeat disabled by environment.
 
@@ -150,17 +164,29 @@ Presenter cue: Read the named session’s four rows, then explain the background
 
 ![Native Telemetry expands the MCP Tool Call Read Allowed session into four completed turns, with durations 12.3, 8.9, 14.2 and 17.7 seconds.](admin-console-native-20260913/10-native-turn-telemetry.png)
 
+*September 13, 2026 · later evening capture (EDT).* Later Native Telemetry: Blocked bash command demonstration contains one turn at 8:00:21 PM, with 0.12 credits and 6.8 seconds. Aggregate throughput 23 includes 14 background turns.
+
+![Native Telemetry expands the command-demonstration session into its one recorded turn and shows the aggregate runtime measurements.](admin-console-host-20260913/03-command-turn-metrics.jpg)
+
+*September 13, 2026 · later evening capture (EDT).* Later Native Telemetry: Anonymous loopback security posture probe contains one turn at 8:07:21 PM, with 0.27 credits and 50.4 seconds. Its security outcome is established separately.
+
+![Native Telemetry expands the anonymous-probe session into one recorded turn; the header shows 0 faults of 9 and throughput 23.](admin-console-host-20260913/04-anonymous-turn-metrics.jpg)
+
 ## 09. Read client and server health together
 
 Open **Apps → Demo Observability**.
 
 Route: `/apps/demo-observability`
 
-The two cards identify their source and sample time. Read Local Gateway off on the Mac card, then the EC2 Gateway and separate MCP service checks. The client’s tunnel check establishes a local TCP listener. “Current” means the sample is fresh.
+The cards identify their source and sample time. The later Mac sample is 20:16:02, with 3.7% KiroCrew process CPU and 967.1 MiB process memory. The EC2 sample is 20:16:26, with 0.7% host CPU and 12.6 GiB memory available. Both are marked Current.
 
-Collection logs record first samples, health changes and collection errors. The Client and Server buttons filter that event stream. This custom App Kit page does not ingest native tool decisions, SEL records or MCP denial logs. Mac process CPU and EC2 host CPU also use different sampling methods.
+Read Local Gateway off on the Mac card, then the EC2 Gateway and separate MCP service checks. The client tunnel check establishes a local TCP listener. Current means the sample is fresh. Mac process CPU and EC2 host CPU use different sampling methods.
 
-Presenter cue: Read timestamps and individual checks, then filter the collection events. Pair enforcement claims with their separate native/server receipts.
+The expanded server measurements show 235 MiB for the Gateway main process and 147.5 MiB for the MCP main process. With the Server filter selected, the collection log contains one First sample collected event at 10:31:23. The later screenshot has a new Mac sample at 20:17:04; do not treat the two captures as one simultaneous sample.
+
+Collection logs record first samples, health changes and collection errors. The Client and Server buttons filter that event stream. This custom App Kit page does not ingest native tool decisions, SEL records or MCP denial logs.
+
+Presenter cue: Read both timestamps and individual checks. Expand server measurements and filter Server, then use separate security receipts for enforcement claims.
 
 *September 13, 2026 · earlier baseline.* Earlier custom telemetry capture: both samples Current, local Gateway off and server checks Yes.
 
@@ -170,9 +196,17 @@ Presenter cue: Read timestamps and individual checks, then filter the collection
 
 ![Collection logs show source labels, timestamps, event levels and All, Client and Server filters.](admin-console/12-collection-logs.jpg)
 
+*September 13, 2026 · later evening capture (EDT).* Later collection view: both samples are Current, the Mac local Gateway is off, and the EC2 Gateway/MCP checks read Yes. Mac and server sample times are 20:16:02 and 20:16:26.
+
+![Demo Observability shows Current macOS and EC2 samples, local Gateway off, client 3.7% CPU and 967.1 MiB memory, and server 0.7% CPU with 12.6 GiB available.](admin-console-host-20260913/05-client-server-health.jpg)
+
+*September 13, 2026 · later evening capture (EDT).* Server measurements expanded: Gateway 235 MiB and MCP 147.5 MiB main-process memory. The Server filter displays one First sample collected event; this is a collection-health log.
+
+![Demo Observability shows expanded server process measurements and a Server-only collection log containing one First sample collected event at 10:31:23.](admin-console-host-20260913/06-server-collection-logs.jpg)
+
 ## Evidence
 
-The original collector receipt remains collection_complete=false because its recent SEL window lost the baseline anchor. Its exact bytes are retained locally; the linked publication export identifies the original by hash. A separate read-only recovery joined the retained rows. The generic reconciler keeps full_native_acceptance=false: it does not decide footage acceptance or every attribution check. Process sampling was not shown to overlap an approval, and SEL integrity relies on the original Gateway verification rather than independent per-row signatures.
+Earlier MCP/IAM collection: The original collector receipt remains collection_complete=false because its recent SEL window lost the baseline anchor. Its exact bytes are retained locally; the linked publication export identifies the original by hash. A separate read-only recovery joined the retained rows. The generic reconciler keeps full_native_acceptance=false: it does not decide footage acceptance or every attribution check. Process sampling was not shown to overlap an approval, and SEL integrity relies on the original Gateway verification rather than independent per-row signatures.
 
 - [Fresh EC2 CLI authentication](../evidence/native-client-demo/20260913/authenticated.json)
 - [Native Mac recording guide](../docs/NATIVE-CLIENT-DEMO.md)
@@ -185,7 +219,15 @@ The original collector receipt remains collection_complete=false because its rec
 - [MCP and IAM authority attribution review](../evidence/native-client-demo/20260913-ui2/authority-attribution-review.json)
 - [Publication export of the incomplete collector receipt](../evidence/native-client-demo/20260913-ui2/receipt-publication.json)
 - [Native MCP clip review](../evidence/native-client-demo/media-review-mcp-controls.json)
+- [Later host workspace-read observations](../evidence/native-client-demo/host-20260913-ui3/initial-observations.json)
+- [Later native command-rule observations](../evidence/native-client-demo/host-20260913-ui3/command-observations.json)
+- [Independent initial host review](../evidence/native-client-demo/host-20260913-review/initial-review.json)
+- [Anonymous Gateway authentication correlation](../evidence/native-client-demo/host-20260913-ui3/auth-correlation.json)
+- [Independent anonymous Gateway authentication review](../evidence/native-client-demo/host-20260913-review/auth-review.json)
+- [Temporary command-rule cleanup readback](../evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json)
+- [Current native admin findings](../output/kirocrew-native-admin-findings.md)
+- [Host-control scenario guide](../docs/HOST-CONTROL-SCENARIOS.md)
 
 ## What changed
 
-Added fresh security, command-rule, approval, governance, SEL-coverage and completed-turn telemetry captures. Updated the four native outcomes from the final reconciliation and authority review, while retaining the original collection failure and remaining limits. Earlier reference screenshots keep their capture dates.
+Retained the 13 accepted images and appended six later host captures: the temporary command rule before and after cleanup, command and authentication turn metrics, current client/server samples and filtered server collection events. The added captions distinguish configuration, runtime measurements and security decisions.

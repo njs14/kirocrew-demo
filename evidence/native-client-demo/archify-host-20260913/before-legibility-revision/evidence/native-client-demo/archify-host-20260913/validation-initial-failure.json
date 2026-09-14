@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "validate",
+  "stage": "render",
+  "type": "architecture",
+  "input": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-native-controls-diagram.architecture.json",
+  "error": "Architecture layout validation failed:\n- Label \"Crew tool hook\" overlaps component \"native-endpoint-controls\" — adjust labelDx/labelDy/labelSegment or set labelAt.\n  label rect: [491, 202, 77, 14]\n  component \"native-endpoint-controls\" rect: [390, 134, 280, 88]\n  Suggested fix: labelAt [530, 236] or labelDy +24 (below); or labelAt [530, 130] or labelDy -82 (above)\n- Label \"Filesystem tools\" overlaps component \"native-crew-runtime\" — adjust labelDx/labelDy/labelSegment or set labelAt.\n  label rect: [487, 386, 87, 14]\n  component \"native-crew-runtime\" rect: [390, 318, 280, 88]\n  Suggested fix: labelAt [530, 420] or labelDy +24 (below); or labelAt [530, 314] or labelDy -82 (above)",
+  "diagnostics": [
+    {
+      "code": "layout/constraint",
+      "severity": "error",
+      "message": "Label \"Crew tool hook\" overlaps component \"native-endpoint-controls\" — adjust labelDx/labelDy/labelSegment or set labelAt.\n  label rect: [491, 202, 77, 14]\n  component \"native-endpoint-controls\" rect: [390, 134, 280, 88]\n  Suggested fix: labelAt [530, 236] or labelDy +24 (below); or labelAt [530, 130] or labelDy -82 (above)",
+      "subject": {
+        "diagramType": "architecture"
+      },
+      "evidence": {},
+      "supportedFixes": []
+    },
+    {
+      "code": "layout/constraint",
+      "severity": "error",
+      "message": "Label \"Filesystem tools\" overlaps component \"native-crew-runtime\" — adjust labelDx/labelDy/labelSegment or set labelAt.\n  label rect: [487, 386, 87, 14]\n  component \"native-crew-runtime\" rect: [390, 318, 280, 88]\n  Suggested fix: labelAt [530, 420] or labelDy +24 (below); or labelAt [530, 314] or labelDy -82 (above)",
+      "subject": {
+        "diagramType": "architecture"
+      },
+      "evidence": {},
+      "supportedFixes": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "kind": "host_prompt_amendment_review",
+  "schema_version": 1,
+  "recorded_at": "2026-09-14T00:07:48.579677+00:00",
+  "verdict": "SHIP",
+  "scope": "Prompt-only fixture allowlist and independent-case clarification; no grants, tools, MCP, server guard, service, IAM or network policy change.",
+  "reviewer": "/root/additional_control_scenarios/host_controls_review",
+  "review_mode": "Independent read-only source and receipt review",
+  "review_findings": [],
+  "tests": {
+    "command": "python3 -m unittest discover -s scripts/tests -p test_host_controls.py -q",
+    "passed": 24,
+    "failed": 0,
+    "network_executed": false,
+    "coverage": [
+      "same-security-shape prompt delta",
+      "public fixture and fixed helper allowlist",
+      "injected marker refusal",
+      "exact old-agent drift refusal",
+      "exclusive root backup and atomic replace",
+      "backup collision preservation",
+      "symlink target refusal",
+      "product sidecar creation when absent",
+      "existing additive setup and fixed zero-body or zero-application-byte helpers"
+    ]
+  },
+  "reviewed_local_sha256": {
+    "infrastructure/host-controls/setup.py": "e3c807ded35eb7045bed411efa88db94e7baf5646276f3a1aeb4646031d792d9",
+    "infrastructure/host-controls/amend-prompt.py": "cd75e17d7700c57bcdd1ede0425e423767b37d3a6aaabfab8c712b92cbdfbdb1",
+    "scripts/tests/test_host_controls.py": "c602a22dafd8eda6e795565f0281e60700c6b8a6aa7171f45cb0d8da70fc8a4a"
+  },
+  "artifacts": {
+    "new-agent.json": "df1389d82c7335953a9168a9f811bc3358a5ccc2f79c61dd23768edfbbe4dacb",
+    "readback.json": "e045dfcc04aabdf25f005929331e9d11773db68c910b80bcf302d2f82712c92e",
+    "apply.json": "cf112df9bcd910c60e7391134b6c035466cf0781353dc7ec656999f87a1f92f8",
+    "prompt.diff": "e27f01085836154778f0ff3f82d0af35e1b83b055ffac879e65e53ea0e72e5ef",
+    "old-agent.json": "fcf983f70a7a37cf698138a3f9cb3be930961685bdeb1961ebe112f7c1283ec3",
+    "apply-retry.json": "12ad026323bcac150d609ec608f7a7233b221cb5895fbabddfcb5ef1e98f2998",
+    "proposal.json": "95f34685aee5bd3aa8e22dc3deced286ed5fd4bfe518dc26d344719a8ec77c0c"
+  },
+  "apply_result": "apply-retry.json",
+  "readback_result": "readback.json",
+  "historical_failure_preserved": "apply.json: exact product lock absent, failed before backup or target write",
+  "source_basis": [
+    "Installed remote agent.py matches local snapshot and creates .kirocrew-agents.lock on first writer.",
+    "Installed remote acp/harness/kiro.py matches local snapshot and starts kiro-cli acp --agent, whose startup reads the agent JSON."
+  ],
+  "limitations": [
+    "Prompt instructions authorize fixture operations but do not prove server enforcement.",
+    "Existing native processes can retain earlier prompts; fresh process/session required.",
+    "This setup subtask executed no native tool or diagnostic probe.",
+    "Root-owned exact original agent JSON backup is retained on the host; no automated restore was run."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "admin_tour_builder_source_review",
+  "reviewedAt": "2026-09-14T00:57:56.859346+00:00",
+  "verdict": "passed",
+  "reviewer": "/root/admin_tour_revision/tour_copy_review",
+  "source": {
+    "path": "scripts/build-native-admin-tour.py",
+    "sha256": "4205168e4d3ed75dbea4a522cb039373d5b4080a2566fad0487674b6969168c2"
+  },
+  "scope": "Exact current builder source and focused validation behavior; no UI, cloud, native proof or historical artifact changes.",
+  "resolvedFinding": {
+    "priorSourceSha256": "b6d9d6bad581d812ace5e39b24cbccfb9492eb7aa040e0635847a1a406a287bb",
+    "description": "Browser-review path and JSON validation previously followed output writes and was skipped by validate-only. The corrected source validates the review and compares its hash with rendered HTML before either branch."
+  },
+  "checks": {
+    "authorNoWriteInputChecks": 8,
+    "independentValidReviewMatchesRenderedHtml": true,
+    "independentMissingReviewRejectedBeforeWrites": true,
+    "independentExistingOutputHashesPreserved": true,
+    "scopedSourcePrivacyRestrictionsRetained": true,
+    "nativeEvidenceBoundariesRetained": true
+  },
+  "expectedHtmlSha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87",
+  "limits": [
+    "Source and validation review does not replace the separately bound browser review or native enforcement receipts."
+  ]
+}

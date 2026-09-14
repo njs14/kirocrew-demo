@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "kind": "admin_tour_host_capture_preparation",
+  "preparedAt": "2026-09-14T00:09:28.021069+00:00",
+  "status": "builder_ready_waiting_for_inspected_captures_and_reviewed_host_evidence",
+  "builder": {
+    "path": "scripts/build-native-admin-tour.py",
+    "sha256": "cf811cf20b96b0379f2dcb9d773b7382e827d575a255b258d27530d4f5afd71a"
+  },
+  "preservation": {
+    "path": "evidence/admin-console/accepted-before-host-20260913/preservation.json",
+    "sha256": "507e09dee1caaca58be019671fa778925de4a803f87c4385a3d899f4fbdb44de",
+    "acceptedHtmlSha256": "651074f112122d4274e004cd3537f73beaac34c6216b17c31446caa254e8ca97",
+    "unchangedAcceptedFiles": [
+      "output/kirocrew-admin-tour.html",
+      "output/kirocrew-admin-tour.md",
+      "evidence/admin-console/native-20260913/tour-build.json",
+      "evidence/admin-console/native-20260913/tour-serve.json",
+      "evidence/admin-console/native-20260913/browser-review.json",
+      "evidence/admin-console/native-20260913/browser-review-v1.json"
+    ]
+  },
+  "checks": {
+    "defaultValidateOnlyReproducesAcceptedHtml": true,
+    "validateOnlyDoesNotWriteOutputs": true,
+    "captureGroupsDoNotMutateDefaultStops": true,
+    "screenshotHashesRequired": true,
+    "unknownAndDuplicateStopsRejected": true,
+    "pathTraversalAndSymlinksRejected": true,
+    "privateAndOutOfScopeSourceLinksRejected": true,
+    "publicationExportAccepted": true
+  },
+  "independentReview": {
+    "agent": "/root/admin_tour_revision/tour_copy_review",
+    "verdict": "no_further_findings_after_source_path_fix",
+    "reviewedBuilderSha256": "cf811cf20b96b0379f2dcb9d773b7382e827d575a255b258d27530d4f5afd71a",
+    "scope": "Read-only input-boundary delta and claim-scope review; path tests used in-memory stubs."
+  },
+  "limits": [
+    "No fresh host screenshot was inserted during this preparation.",
+    "No new host-control outcome or browser acceptance was asserted.",
+    "A capture group requires review of its actual image bytes, captions and linked receipts. Hash equality and folder membership alone do not establish evidence acceptance."
+  ]
+}

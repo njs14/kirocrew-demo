@@ -1,0 +1,66 @@
+{
+  "checks": {
+    "five_paths_untracked": true,
+    "git_diff_check_exit_code": 0,
+    "historical_tracked_council_count": 200,
+    "historical_tracked_council_files_newly_ignored": 0
+  },
+  "gitignore": {
+    "path": ".gitignore",
+    "sha256": "cc995d2a5094394fc66f5825fda41949819bcbc60d25b82c91dffae8d34d1ee7"
+  },
+  "kind": "final_host_private_council_ignore_review",
+  "limits": [
+    "Raw sources are privately retained and are not available in a fresh clone. Published hashes bind local audited files.",
+    "This review makes no final artifact freeze or staged-tree claim."
+  ],
+  "private_files": [
+    {
+      "bytes": 3023,
+      "ignored": true,
+      "path": "evidence/native-client-demo/council-host-v1/candidate/prepared.json",
+      "present": true,
+      "sha256": "f32125823fc623f66fa862a2ebe3756df5ee4e043c745d720d5577533590cb3b",
+      "symlink": false
+    },
+    {
+      "bytes": 4569015,
+      "ignored": true,
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-raw.jsonl",
+      "present": true,
+      "sha256": "7d42123b6033f82ef62ab03575b2ee363315122b373d861f87a865404126e974",
+      "symlink": false
+    },
+    {
+      "bytes": 8873547,
+      "ignored": true,
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-raw.jsonl",
+      "present": true,
+      "sha256": "b12148b21d8f86cf6ac558fb438f116f303b49ca25f58ce9d0c64ed2f0f6512b",
+      "symlink": false
+    },
+    {
+      "bytes": 0,
+      "ignored": true,
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-stderr.txt",
+      "present": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "symlink": false
+    },
+    {
+      "bytes": 0,
+      "ignored": true,
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-stderr.txt",
+      "present": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "symlink": false
+    }
+  ],
+  "provenance": "evidence/native-client-demo/council-host-v1/publication-provenance.json",
+  "recorded_at": "2026-09-14T00:54:04.006760+00:00",
+  "reviewer": "/root/native_publication_review/native_publication_readonly",
+  "schema": 1,
+  "scope": "One comment and exactly five literal paths; no wildcard or historical council exclusion.",
+  "staging_performed": false,
+  "verdict": "ship"
+}

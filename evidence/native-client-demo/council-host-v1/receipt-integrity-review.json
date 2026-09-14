@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-09-14T00:45:21.952520+00:00",
+  "reviewer": "/root/native_deck_council/runner_readonly_review",
+  "verdict": "pass",
+  "candidate_manifest_sha256": "0c3d937e477caf927c8af2e7f82ee501a7cedaba368a9478df2e06efe8c81d2d",
+  "html_sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335",
+  "council_receipt_sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11",
+  "review_verdicts": {
+    "grok": "CHANGES REQUIRED",
+    "claude": "CHANGES REQUIRED"
+  },
+  "all_14_exact_png_payloads_per_reviewer": true,
+  "only_read_tools_and_packet_local_reads": true,
+  "all_supporting_packet_inputs_read": true,
+  "prompt_launch_policy_runner_bindings_match": true,
+  "sources_unchanged_at_integrity_review": true,
+  "single_successful_terminal_per_stream": true,
+  "stream_errors": 0,
+  "non_json_lines": 0,
+  "stderr_bytes": 0,
+  "review_text_matches_terminal": true,
+  "actual_response_models": {
+    "claude": [
+      "claude-opus-5"
+    ],
+    "grok": [
+      "grok-4.6"
+    ]
+  },
+  "usage_model_ids": {
+    "claude": [
+      "claude-haiku-4-5-20251001",
+      "claude-opus-5"
+    ],
+    "grok": [
+      "grok-4.6-build"
+    ]
+  },
+  "effort_verification": "xhigh explicit launch configuration; provider wire effort not independently visible",
+  "raw_stdout_sha256": {
+    "grok": "7d42123b6033f82ef62ab03575b2ee363315122b373d861f87a865404126e974",
+    "claude": "b12148b21d8f86cf6ac558fb438f116f303b49ca25f58ce9d0c64ed2f0f6512b"
+  },
+  "additional_inference": false,
+  "limits": [
+    "Successful council completion and integrity audit do not mean deck acceptance. Both reviewers requested changes.",
+    "External reviews bind original cc139d5d\u2026 HTML; later edited bytes require incorporation and delta review, without a claim of final exact-model approval.",
+    "Auditor checked JPEG/PNG source hashes and packet bindings but did not repeat decoded pixel equivalence.",
+    "No video playback, live AWS/backend or private collector/source material was accessed by the auditor."
+  ]
+}

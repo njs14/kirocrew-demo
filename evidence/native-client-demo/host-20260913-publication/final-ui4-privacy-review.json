@@ -1,0 +1,65 @@
+{
+  "checks": {
+    "credential_or_authentication_state_findings": 0,
+    "internal_hashes_and_correlation_ids_match": true,
+    "private_raw_sel_or_full_session_findings": 0,
+    "private_sources_present_regular_ignored_and_hash_matched": true,
+    "referenced_private_build_sources": 5
+  },
+  "files": [
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/imds-counter-before.json",
+      "sha256": "55a32110d0de26e1ec55d99b91ded95c3b28d3a92cbeb3ae0cd5463ead661e6e"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/initial-preflight-failure.json",
+      "sha256": "1460bce2e57d9465cc126d29caa39d7af207ac4ece6c3ab7ad4e87522a88acbc"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/preflight.json",
+      "sha256": "46699bc04d42e3e4572950ba703e1ac0c004e094e209254604b8c31ae52c26ef"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-cards.json",
+      "sha256": "a88afcf52d956906faf633375ef4ad906e31342860d6fad29ca1bb27ba793a5a"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+      "sha256": "3532f590c516fd5fd7aaa937e101fa216b2403e5cfb53ad8cb425f848a1caf83"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-history.json",
+      "sha256": "7aceeda9ea23b9071985c99052b36b2c4743e4c7a895d3cb59e58dd0eafafd14"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-sel.json",
+      "sha256": "d109badbe810746b4c57a1595eaa355ecf11c6bd81a9580e471ab7ed61af1789"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+      "sha256": "8437471934f673b0aa312104b99bc84144c6c9293e616b2abb858f68438c25f0"
+    }
+  ],
+  "kind": "final_host_ui4_publication_privacy_review",
+  "limits": [
+    "Correlation identifiers provide evidence joins and are not authentication state.",
+    "This is a scoped evidence/privacy review, not fresh native execution or firewall enforcement proof.",
+    "Privately retained .build sources are not available in a fresh clone."
+  ],
+  "live_actions": false,
+  "observed_outcomes": {
+    "preflight": "Read-only; no native or probe helper execution; recording_ready false.",
+    "slot7": "Expired unanswered approval. Automatic acceptance, helper execution and firewall enforcement are false.",
+    "slot8": "Zero captured events, no operator-submitted prompt, no execution, no event file."
+  },
+  "recorded_at": "2026-09-14T01:05:01.202179+00:00",
+  "reviewer": "/root/native_publication_review/native_publication_readonly",
+  "schema": 1,
+  "scope": [
+    "Eight scoped JSON files, no media.",
+    "Selected tool/permission rows bind only the public IMDS source read and expected helper command. No user prompt, assistant transcript or unrelated native input.",
+    "Two caller-matched SEL events and aggregate window/file metadata, without raw SEL pages or unrelated event bodies."
+  ],
+  "staging_performed": false,
+  "verdict": "ship"
+}

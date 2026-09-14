@@ -120,8 +120,9 @@ def project(source, source_bytes, source_name, event_bytes=None):
     caller = "dashboard:" + slot.removeprefix("dashboard:")
     notes = list(NOTES)
     if event_bytes is None:
-        notes[3] = ("This capture has no events.jsonl and establishes no native turn. "
-                    "Consult capture-status.json when present for the capture's disposition.")
+        notes[3] = ("This observer captured no events.jsonl broadcast stream. "
+                    "Review separately exported history or capture-status.json when present; "
+                    "an empty event stream does not exclude earlier native turns.")
     out = {
         "kind": "native_client_publication_export", "schema": 1,
         "source_kind": source["kind"], "run_id": run, "slot": slot,
@@ -198,24 +199,37 @@ def project(source, source_bytes, source_name, event_bytes=None):
     return out
 
 
-def export_run(directory):
+def export_run(directory, output_directory=None):
     directory = Path(directory).absolute()
     require(directory.is_dir() and not directory.is_symlink(), "run directory must be a real directory")
+    output = Path(output_directory).absolute() if output_directory is not None else directory
+    if output_directory is not None:
+        require(not output.exists() and not output.is_symlink(), "fresh output directory required")
+        require(not any(parent.is_symlink() for parent in output.parents), "linked output ancestor refused")
     events_path = directory / "events.jsonl"
     event_bytes = read_bytes(events_path) if events_path.exists() or events_path.is_symlink() else None
     prepared = []
     for name in ("baseline.json", "receipt.json"):
         source = directory / name
         source_bytes = read_bytes(source)
-        destination = source.with_name(source.stem + "-publication.json")
+        destination = output / (source.stem + "-publication.json")
         require(not destination.exists() and not destination.is_symlink(), "fresh publication outputs required")
         value = project(json.loads(source_bytes), source_bytes, name, event_bytes)
+        if output_directory is not None:
+            value["private_source"].update(path=os.path.relpath(source, output), path_base="publication_directory")
+            value["native_events"].update(path=os.path.relpath(events_path, output), path_base="publication_directory",
+                                           retention=("private companion; reviewed scoped derivatives are indexed separately" if event_bytes is not None
+                                                      else "no companion captured; reference records the expected location"))
+            value["publication_notes"].append("Relative private-source paths resolve from this publication directory; original capture files were not copied into it.")
+            check_publishable(value)
         prepared.append((source, source_bytes, destination, value))
     require(len({(value["run_id"], value["slot"]) for _, _, _, value in prepared}) == 1,
             "baseline and receipt run identity mismatch")
     # Check every input before creating either derivative. No original mutation.
     for source, original, _, _ in prepared:
         require(read_bytes(source) == original, "source changed during export")
+    if output_directory is not None:
+        output.mkdir(parents=True, mode=0o700)
     for source, original, destination, value in prepared:
         with destination.open("x", encoding="utf-8") as stream:
             json.dump(value, stream, indent=2, sort_keys=True)
@@ -229,9 +243,10 @@ def main():
     os.umask(0o077)
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-dir", type=Path, required=True)
+    parser.add_argument("--output-dir", type=Path, help="Fresh directory for derivatives only; private source references remain hash-bound and relative.")
     args = parser.parse_args()
     try:
-        print(json.dumps({"exports": export_run(args.run_dir)}, indent=2))
+        print(json.dumps({"exports": export_run(args.run_dir, args.output_dir)}, indent=2))
     except (ValueError, OSError) as error:
         print(json.dumps({"error": str(error) if isinstance(error, ValueError) else type(error).__name__}))
         return 1

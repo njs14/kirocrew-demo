@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-14T00:07:48.212636+00:00",
+  "reviewType": "native_host_source_cut_proposal",
+  "status": "source_frames_reviewed_before_encoding",
+  "source": {
+    "path": "recordings/native-client-20260913/raw/host-control-take-03.mov",
+    "sha256": "170241703dbf53a4446fdb853d70e3f15f0d2275cbd9cb85226a45b5b59b599c",
+    "bytes": 120600535,
+    "recordedAt": "2026-09-13T23:51:02Z",
+    "durationSeconds": 480.111667,
+    "width": 2560,
+    "height": 1720,
+    "audio": false
+  },
+  "proposedCut": {
+    "id": "native-host-workspace-read",
+    "start": 26,
+    "end": 65,
+    "durationSeconds": 39,
+    "resultPosterClipSecond": 34,
+    "resultPosterSourceSecond": 60
+  },
+  "inputManifest": {
+    "path": "recordings/native-client-20260913/cuts-host-controls.json",
+    "sha256": "9ef79375be49fab45bc757f4372d7f3caaba1599c87c30893db936ef7af5afce",
+    "bytes": 1947
+  },
+  "observationReceipt": {
+    "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+    "sha256": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7",
+    "bytes": 8346
+  },
+  "visualReview": {
+    "method": "Coarse full-source contact sheet at 15-second samples; source frames 24,28,30,31,32,34,37,40,41,42,44,48,50,52,56,60,64,68,72,76,80 seconds; second agent independently reviewed composer, send, tool and result frames. Not every frame manually inspected.",
+    "observed": "The complete bounded prompt is visible before send. The native fs_read row completes and the exact public canary appears in the assistant reply. At source60 the actual tool Output is expanded and shows the same canary.",
+    "blackdetect": "No >=0.1-second black interval reported in source26\u201365 using blackdetect=d=0.1:pix_th=0.10.",
+    "sensitiveContent": "No credentials or unrelated private content identified in inspected proposed-cut frames. Intended fixture path and public canary remain visible.",
+    "independentReview": "Agrees proposed39-second continuous cut and source60 poster. Historical interrupted chat remains in sidebar distinct from selected completed chat."
+  },
+  "limitations": [
+    "Permitted native host filesystem read baseline; no approval card, callback or denial observed.",
+    "The next two turns were model-only refusals with no native tool attempt. They are outside this cut and cannot support server enforcement claims.",
+    "No take04 media has been inspected: its finalization is pending root confirmation.",
+    "Processed-media decode, poster verification, browser playback and evidence-join acceptance remain separate work."
+  ]
+}

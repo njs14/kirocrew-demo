@@ -1,0 +1,248 @@
+{
+  "acceptance": "not_evaluated",
+  "captured_events": 0,
+  "collection_complete": false,
+  "collector_sha256": "ae535152cad2325aea28622288e1270b8f8432306ebee2012d5b20ec3aa9a3e0",
+  "conversation_summary": {
+    "slot_after": {
+      "captured_message_count": 0,
+      "has_more": false,
+      "message_content_exported": false,
+      "running": false,
+      "stopping": false,
+      "total": 0
+    },
+    "slot_before": {
+      "captured_message_count": 0,
+      "has_more": false,
+      "message_content_exported": false,
+      "running": false,
+      "stopping": false,
+      "total": 0
+    }
+  },
+  "exporter_sha256": "85799cb5b9c8f02623297698f61c7cfb51a29303185a183e79581d080d47e6a1",
+  "failure": "capture_time_limit_reached",
+  "finished": "2026-09-13T23:59:51.448315+00:00",
+  "helper_sha256": "429357edf4cc2a3b1ab719f733b0dae667220a6ef288c2a82ad3548ae22beac8",
+  "kind": "native_client_publication_export",
+  "mcp_audit": {
+    "collection_succeeded": true,
+    "end_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=9dfa;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=66ca92be7;t=65b64236927b1;x=f168a3ff8cc189d4",
+    "events": [],
+    "ignored_non_audit_rows": 0,
+    "publication_scope": {
+      "omitted_other_trace_count": 0,
+      "original_event_count": 0,
+      "run_event_count": 0
+    },
+    "start_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=9dfa;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=66ca92be7;t=65b64236927b1;x=f168a3ff8cc189d4"
+  },
+  "mcp_service_after": {
+    "ActiveState": "active",
+    "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+    "MainPID": "2833",
+    "NRestarts": "0",
+    "SubState": "running"
+  },
+  "mcp_service_before": {
+    "ActiveState": "active",
+    "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+    "MainPID": "2833",
+    "NRestarts": "0",
+    "SubState": "running"
+  },
+  "native_events": {
+    "events": 0,
+    "path": "../../../../.build/native-host-command-20260913-ui1/events.jsonl",
+    "path_base": "publication_directory",
+    "present": false,
+    "retention": "no companion captured; reference records the expected location"
+  },
+  "permission_triggered_process_snapshots": [],
+  "private_sel_counts": {
+    "new_sel_interval": {
+      "other_callers": 854,
+      "target_session": 0,
+      "total": 854
+    },
+    "sel_after": {
+      "other_callers": 1000,
+      "target_session": 0,
+      "total": 1000
+    },
+    "sel_before": {
+      "other_callers": 1000,
+      "target_session": 0,
+      "total": 1000
+    }
+  },
+  "private_source": {
+    "bytes": 1936186,
+    "path": "../../../../.build/native-host-command-20260913-ui1/receipt.json",
+    "path_base": "publication_directory",
+    "retention": "privately_retained_ignored",
+    "sha256": "5d528011ef42b780c2839c5abe426ba1b344d449e298fb685ae407bd62f4c613"
+  },
+  "processes_before": [
+    {
+      "comm": "python",
+      "cwd": "/opt/kirocrew-demo/mcp-enforcement",
+      "exe": "/usr/bin/python3.12",
+      "pid": 2833,
+      "ppid": 1,
+      "uid": 997
+    },
+    {
+      "comm": "systemd",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd",
+      "pid": 3557,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "(sd-pam)",
+      "cwd": "/",
+      "exe": "/usr/lib/systemd/systemd-executor",
+      "pid": 3558,
+      "ppid": 3557,
+      "uid": 999
+    },
+    {
+      "comm": "sshd",
+      "cwd": "/",
+      "exe": "/usr/sbin/sshd",
+      "pid": 3613,
+      "ppid": 3552,
+      "uid": 999
+    },
+    {
+      "comm": "kirocrew",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 4991,
+      "ppid": 1,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8461,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 8462,
+      "ppid": 8461,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 75248,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 75249,
+      "ppid": 75248,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/var/lib/kirocrew/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 75256,
+      "ppid": 75249,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/bin/python3.12",
+      "pid": 86275,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 86276,
+      "ppid": 86275,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "[OPAQUE REDACTED]",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 86283,
+      "ppid": 86276,
+      "uid": 999
+    },
+    {
+      "comm": "python3",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/bin/python3.12",
+      "pid": 103736,
+      "ppid": 4991,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli",
+      "pid": 103737,
+      "ppid": 103736,
+      "uid": 999
+    },
+    {
+      "comm": "kiro-cli-chat",
+      "cwd": "/srv/kirocrew-demo/workspace",
+      "exe": "/usr/local/bin/kiro-cli-chat",
+      "pid": 103744,
+      "ppid": 103737,
+      "uid": 999
+    }
+  ],
+  "publication_notes": [
+    "The hash-bound original snapshot is privately retained and excluded from Git; its bytes were not changed.",
+    "Broad SEL pages, their error details and complete conversation snapshots are omitted by an explicit field allowlist.",
+    "SEL summary counts describe the private source, not additional exported event evidence.",
+    "This observer captured no events.jsonl broadcast stream. Review separately exported history or capture-status.json when present; an empty event stream does not exclude earlier native turns.",
+    "This export is a publication boundary, not a new collection, integrity verification or enforcement acceptance verdict.",
+    "Relative private-source paths resolve from this publication directory; original capture files were not copied into it."
+  ],
+  "run_id": "host-command-20260913-ui1",
+  "schema": 1,
+  "sel_checkpoint": {
+    "anchor_event_id": "e9ff2c89f8774259",
+    "anchor_sha256": "bebe1456d4a2eb1ccfde31049007517bc144c00babe864898f08aa0e4e05095c",
+    "baseline_count": 1000
+  },
+  "sel_integrity_after": {
+    "integrity": "ok",
+    "tampered": 0,
+    "total": 116728,
+    "valid": 116728
+  },
+  "sel_window": {
+    "anchor_event_id": "e9ff2c89f8774259",
+    "anchor_index": 854,
+    "complete": true,
+    "event_count": 854,
+    "method": "exact_newest_baseline_anchor_retained"
+  },
+  "slot": "chat-5-1789343728",
+  "source_kind": "passive_native_client_evidence",
+  "started": "2026-09-13T23:55:37.275310+00:00"
+}

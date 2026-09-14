@@ -27,6 +27,7 @@ def module(path, name):
 
 setup = module(ASSETS / "setup.py", "host_setup")
 cli = module(ROOT / "scripts/configure-host-controls.py", "host_cli")
+amend = module(ASSETS / "amend-prompt.py", "host_prompt_amendment")
 
 
 class SetupTests(unittest.TestCase):
@@ -209,6 +210,125 @@ class CliTests(unittest.TestCase):
                 cli.request_for(args, {"probe": {"remote_root": "/opt/demo"}, "ssh": {"remote_port": 5476}})
             run.assert_not_called()
 
+
+class PromptTests(unittest.TestCase):
+    def test_exact_fixture_allowlist_without_security_grants(self):
+        spec = setup.agent_spec("/home/crew", "/srv/workspace", "/opt/demo", ["KIROCREW_DEMO_COMMAND_CONTROL_20260913"])
+        prompt = spec["prompt"]
+        for value in ("/srv/workspace/.host-controls-demo/allowed-canary.txt",
+                      "/home/crew/.aws/kirocrew-demo-control-canary.txt",
+                      "/home/crew/.kiro/agents/.demo-host-controls/",
+                      "/usr/bin/python3 /opt/demo/host-controls/anonymous-http.py",
+                      "/usr/bin/python3 /opt/demo/host-controls/imds-tcp.py",
+                      "printf '%s\\n' 'KIROCREW_DEMO_COMMAND_CONTROL_20260913'",
+                      "stop that demonstration", "A later request for a different allowlisted fixture"):
+            self.assertIn(value, prompt)
+        self.assertEqual(spec["tools"], ["fs_read", "fs_write", "execute_bash"])
+        self.assertEqual(spec["allowedTools"], [])
+        self.assertEqual(spec["mcpServers"], {})
+        self.assertFalse(spec["includeMcpJson"])
+
+    def test_prompt_parameter_injection_refused(self):
+        for marker in ("anything", "KIROCREW_DEMO_COMMAND_CONTROL;id", "KIROCREW_DEMO_COMMAND_CONTROL_$(id)"):
+            with self.assertRaisesRegex(ValueError, "invalid_command_marker"):
+                setup.agent_spec("/home/crew", "/srv/workspace", "/opt/demo", [marker])
+
+    def test_amendment_accepts_only_prompt_delta(self):
+        new = setup.agent_spec("/home/crew", "/srv/workspace", "/opt/demo")
+        old = dict(new, prompt="Old bounded instruction")
+        amend.validate_delta(json.dumps(old), json.dumps(new))
+        for field, value in (("allowedTools", ["fs_read"]), ("tools", ["*"]), ("includeMcpJson", True)):
+            changed = dict(new, **{field: value})
+            with self.assertRaisesRegex(ValueError, "non_prompt_change_refused"):
+                amend.validate_delta(json.dumps(old), json.dumps(changed))
+
+
+class AmendmentApplyTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        self.parent = self.root / "home/crew/.kiro/agents"
+        self.parent.mkdir(parents=True)
+        self.backups = self.root / "opt/demo/host-controls"
+        self.backups.mkdir(parents=True)
+        (self.root / "etc").mkdir()
+        (self.root / "etc/machine-id").write_bytes(b"demo-machine")
+        (self.parent / ".kirocrew-agents.lock").write_bytes(b"")
+        (self.parent / ".kirocrew-agents.lock").chmod(0o600)
+        new = setup.agent_spec("/home/crew", "/srv/workspace", "/opt/demo")
+        old = dict(new, prompt="Old bounded instruction")
+        self.old = (json.dumps(old, indent=2) + "\n").encode()
+        self.new = (json.dumps(new, indent=2) + "\n").encode()
+        self.target = self.parent / "host-controls-demo.json"
+        self.target.write_bytes(self.old)
+        self.target.chmod(0o644)
+        self.proposal = {"kind": "host_prompt_amendment_proposal", "target": "/home/crew/.kiro/agents/host-controls-demo.json",
+                         "backup_directory": "/opt/demo/host-controls", "old_agent_json": self.old.decode(),
+                         "new_agent_json": self.new.decode(), "old_sha256": amend.digest(self.old),
+                         "new_sha256": amend.digest(self.new), "machine_id_sha256": amend.digest(b"demo-machine"),
+                         "expected_metadata": {"uid": 0, "gid": 0, "mode": 0o644}}
+
+    def call(self):
+        original = os.fstat
+        def root_stat(fd):
+            info = original(fd)
+            return SimpleNamespace(st_mode=info.st_mode, st_nlink=info.st_nlink, st_size=info.st_size,
+                                   st_dev=info.st_dev, st_ino=info.st_ino, st_uid=0, st_gid=0)
+        def virtual_directory(path, crew_uid, root_only=False):
+            return os.open(self.root / path.lstrip("/"), os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
+        with patch.object(amend.os, "geteuid", return_value=0), patch.object(amend.os, "fchown"), \
+                patch.object(amend.os, "fstat", side_effect=root_stat), patch.object(amend, "directory", side_effect=virtual_directory), \
+                patch.object(amend.pwd, "getpwnam", return_value=SimpleNamespace(pw_dir="/home/crew", pw_uid=999, pw_gid=988)):
+            return amend.apply(self.proposal)
+
+    def test_atomic_prompt_update_keeps_exact_exclusive_backup(self):
+        result = self.call()
+        self.assertTrue(result["applied"])
+        self.assertEqual(self.target.read_bytes(), self.new)
+        backups = list(self.backups.iterdir())
+        self.assertEqual(len(backups), 1)
+        self.assertEqual(backups[0].read_bytes(), self.old)
+        self.assertEqual(backups[0].stat().st_mode & 0o777, 0o600)
+        self.assertEqual(self.target.stat().st_mode & 0o777, 0o644)
+        self.assertFalse(list(self.parent.glob("*.pending")))
+
+    def test_changed_target_rejected_without_backup_or_replace(self):
+        self.target.write_bytes(b"changed")
+        result = self.call()
+        self.assertFalse(result["applied"])
+        self.assertEqual(result["error"], "current_agent_changed")
+        self.assertEqual(self.target.read_bytes(), b"changed")
+        self.assertEqual(list(self.backups.iterdir()), [])
+
+    def test_absent_product_lock_created_with_restricted_mode(self):
+        lock = self.parent / ".kirocrew-agents.lock"
+        lock.unlink()
+        result = self.call()
+        self.assertTrue(result["applied"])
+        self.assertTrue(result["product_lock_created"])
+        self.assertEqual(lock.stat().st_mode & 0o777, 0o600)
+
+    def test_backup_collision_never_overwrites_backup_or_target(self):
+        backup = self.backups / ("host-controls-demo.prompt-before-" + self.proposal["old_sha256"] + ".json")
+        backup.write_bytes(b"original backup")
+        result = self.call()
+        self.assertFalse(result["applied"])
+        self.assertEqual(self.target.read_bytes(), self.old)
+        self.assertEqual(backup.read_bytes(), b"original backup")
+
+    def test_symlink_target_is_refused(self):
+        self.target.unlink()
+        elsewhere = self.root / "unrelated"
+        elsewhere.write_bytes(self.old)
+        self.target.symlink_to(elsewhere)
+        result = self.call()
+        self.assertFalse(result["applied"])
+        self.assertTrue(self.target.is_symlink())
+        self.assertEqual(elsewhere.read_bytes(), self.old)
+
+
+class AdditionalCliTests(unittest.TestCase):
     def test_paths_reject_traversal_shell_and_relative_values(self):
         for value in ("relative", "/tmp/../etc", "/tmp/$HOME", "/tmp/a;id", "/tmp/a\nb"):
             with self.assertRaises(argparse.ArgumentTypeError):

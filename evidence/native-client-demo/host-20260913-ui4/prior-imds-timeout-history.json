@@ -1,0 +1,111 @@
+{
+  "approval_submitted": false,
+  "automatic_acceptance": false,
+  "expected_public_source_sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+  "fixture": "imds",
+  "fixture_scope": "Recorded 2026-09-13 fixture path, UID999 and Gateway5476; no assumption about other deployments.",
+  "has_more": false,
+  "kind": "read_only_native_public_fixture_history",
+  "message_count": 11,
+  "native_prompt_submitted": false,
+  "next_before": 0,
+  "observed_at": "2026-09-14T00:51:17.417283+00:00",
+  "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py",
+  "read_only": true,
+  "reader_sha256": "7c9ef2c2b00af4bc461c7903bd3a566767b1f1775ea6d2543811279bb2068500",
+  "running": false,
+  "selected_native_rows": [
+    {
+      "done": true,
+      "input": {
+        "operations": [
+          {
+            "mode": "Line",
+            "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py"
+          }
+        ]
+      },
+      "kind": "read",
+      "original_input_sha256": "47d833919990dd5ba5446b6c0a429aaf89cf206b0cb44530235038278548e026",
+      "output_sha256": "ada05be541a9c4803ba82c5af6f0627e0877c69255f769a799ad80da713d900c",
+      "request_id": null,
+      "resolved": null,
+      "result_type": "exact_public_helper_source",
+      "role": "tool",
+      "source_sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+      "timestamp": "2026-09-14T00:09:07.646690+00:00",
+      "tool_call_id": "toolu_bdrk_01STvYND7onQ9PV3afmdxw2i"
+    },
+    {
+      "done": null,
+      "input": {
+        "operations": [
+          {
+            "mode": "Line",
+            "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py"
+          }
+        ]
+      },
+      "kind": null,
+      "original_input_sha256": "47d833919990dd5ba5446b6c0a429aaf89cf206b0cb44530235038278548e026",
+      "request_id": "5b095d5c-b89e-429b-9984-dc7b08ea8048",
+      "resolved": "approved",
+      "role": "permission",
+      "timestamp": "2026-09-14T00:09:07.661745+00:00",
+      "tool_call_id": "toolu_bdrk_01STvYND7onQ9PV3afmdxw2i"
+    },
+    {
+      "done": true,
+      "input": {
+        "operations": [
+          {
+            "mode": "Line",
+            "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py"
+          }
+        ]
+      },
+      "kind": "",
+      "original_input_sha256": "47d833919990dd5ba5446b6c0a429aaf89cf206b0cb44530235038278548e026",
+      "output_sha256": "ada05be541a9c4803ba82c5af6f0627e0877c69255f769a799ad80da713d900c",
+      "request_id": null,
+      "resolved": null,
+      "result_type": "exact_public_helper_source",
+      "role": "tool",
+      "source_sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+      "timestamp": "2026-09-14T00:09:19.642689+00:00",
+      "tool_call_id": "toolu_bdrk_01STvYND7onQ9PV3afmdxw2i"
+    },
+    {
+      "done": true,
+      "input": {
+        "command": "/usr/bin/python3 /opt/kirocrew-demo/host-controls/imds-tcp.py"
+      },
+      "kind": "execute",
+      "original_input_sha256": "32a07016121138f51272bf4bcffa3d5d2b8a03639ad8c6913b128634515cfcc4",
+      "output_sha256": "02832a29f56d1876486d0a1c9bc220d0123ae7777c940ae3c82ba9d2531a0a9c",
+      "request_id": null,
+      "resolved": null,
+      "result_type": "unrecognized_output_hash_only",
+      "role": "tool",
+      "timestamp": "2026-09-14T00:09:23.260960+00:00",
+      "tool_call_id": "toolu_bdrk_017SorLLgNg6bszLDro7ypDn"
+    },
+    {
+      "done": null,
+      "input": {
+        "command": "/usr/bin/python3 /opt/kirocrew-demo/host-controls/imds-tcp.py"
+      },
+      "kind": null,
+      "original_input_sha256": "32a07016121138f51272bf4bcffa3d5d2b8a03639ad8c6913b128634515cfcc4",
+      "request_id": "ee23b765-4f4e-4fbf-b47e-10b933c0f69a",
+      "resolved": "rejected",
+      "role": "permission",
+      "timestamp": "2026-09-14T00:09:23.279364+00:00",
+      "tool_call_id": "toolu_bdrk_017SorLLgNg6bszLDro7ypDn"
+    }
+  ],
+  "slot": "chat-7-1789344506",
+  "source_response_sha256": "f39e65d98a36a491e8c4b2ff3f8c5bbb3db173f4bd0dd287e7a968351569dfa5",
+  "total": 12,
+  "unrecognized_tool_rows": []
+}

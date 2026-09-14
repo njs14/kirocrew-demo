@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-14T00:16:00.925221+00:00",
+  "status": "result_posters_and_input_metadata_applied",
+  "originalManifestSnapshot": {
+    "path": "evidence/native-client-demo/media-review-host-controls/processor-manifest-before-result-posters.json",
+    "sha256": "7c414c8cc37e5e9eb0e0974504226635b37927258af45ba65791886696bf539d",
+    "bytes": 14638
+  },
+  "finalManifest": {
+    "path": "output/native-host-clips-20260913/manifest.json",
+    "sha256": "a57e20168db7acc5c4b6f2eebb3792f3838d18ca4553d0a56902bf0ef7f3cf05",
+    "bytes": 15502
+  },
+  "unchangedProcessorReceipt": {
+    "path": "output/native-host-clips-20260913/receipt.json",
+    "sha256": "29f0171be73105641e1ce7bc74708f69d464394782783a195e1046873adcdc1b",
+    "bytes": 27943
+  },
+  "inputManifest": {
+    "path": "recordings/native-client-20260913/cuts-host-controls.json",
+    "sha256": "488c13eb4dcdb25d8ecbd24d93067ec62b4f5a5ffc4dcbedf6e105b0e183a928",
+    "bytes": 6553
+  },
+  "historicalSourceProposalInputSnapshot": {
+    "path": "evidence/native-client-demo/media-review-host-controls/cuts-host-controls-source-proposal.json",
+    "sha256": "9ef79375be49fab45bc757f4372d7f3caaba1599c87c30893db936ef7af5afce",
+    "bytes": 1947
+  },
+  "changes": [
+    {
+      "id": "native-host-workspace-read",
+      "oldPoster": {
+        "url": "native-host-workspace-read/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 158326,
+        "sha256": "3d1a4a613587932d028068e99bd12a81c0e6ef5ccf541ca74180ba603fd24a5f"
+      },
+      "savedOldPoster": {
+        "path": "evidence/native-client-demo/media-review-host-controls/processor-original-posters/native-host-workspace-read.jpg",
+        "sha256": "3d1a4a613587932d028068e99bd12a81c0e6ef5ccf541ca74180ba603fd24a5f",
+        "bytes": 158326
+      },
+      "newPoster": {
+        "url": "native-host-workspace-read/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 195626,
+        "sha256": "3cb1b2a63da5a12475b733bd8fbc37d788f0bb5d11545ff21b9a6aa6b76f49fd",
+        "time": 34
+      },
+      "sourceFrameSecond": 60.0,
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4",
+        "-ss",
+        "34",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        ".build/native-host-media-review/result-posters/native-host-workspace-read.jpg"
+      ],
+      "metadataCopiedFromInput": {
+        "recordingCoverage": "request_to_result",
+        "outcomeClass": "native_allowed",
+        "presentation": {
+          "control": "Permitted workspace read",
+          "enforcer": "Remote built-in tool",
+          "outcome": "Public canary returned"
+        }
+      }
+    },
+    {
+      "id": "native-host-command-denial-summary",
+      "oldPoster": {
+        "url": "native-host-command-denial-summary/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 192907,
+        "sha256": "a1eecd2dab5ec3b669643214c85d4a054ba1d2fb5b7a585ae4fafe72e82dd3e8"
+      },
+      "savedOldPoster": {
+        "path": "evidence/native-client-demo/media-review-host-controls/processor-original-posters/native-host-command-denial-summary.jpg",
+        "sha256": "a1eecd2dab5ec3b669643214c85d4a054ba1d2fb5b7a585ae4fafe72e82dd3e8",
+        "bytes": 192907
+      },
+      "newPoster": {
+        "url": "native-host-command-denial-summary/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 194096,
+        "sha256": "1ae25cf1b7e924f7476e86bdd922fadfce3711aa888a154f20afc328b2a1e341",
+        "time": 10
+      },
+      "sourceFrameSecond": 58.0,
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+        "-ss",
+        "10",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        ".build/native-host-media-review/result-posters/native-host-command-denial-summary.jpg"
+      ],
+      "metadataCopiedFromInput": {
+        "recordingCoverage": "result_inspection",
+        "outcomeClass": "server_hook_denied",
+        "presentation": {
+          "control": "Configured command rule",
+          "enforcer": "Crew hook, joined receipt",
+          "outcome": "Denied; summary inspection"
+        }
+      }
+    },
+    {
+      "id": "native-host-anonymous-http403",
+      "oldPoster": {
+        "url": "native-host-anonymous-http403/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 294735,
+        "sha256": "a6636034493dcb07e25892215f3a8120aca3771ff4adc775d8739c16f15dd884"
+      },
+      "savedOldPoster": {
+        "path": "evidence/native-client-demo/media-review-host-controls/processor-original-posters/native-host-anonymous-http403.jpg",
+        "sha256": "a6636034493dcb07e25892215f3a8120aca3771ff4adc775d8739c16f15dd884",
+        "bytes": 294735
+      },
+      "newPoster": {
+        "url": "native-host-anonymous-http403/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 273116,
+        "sha256": "e8afb8f9325657f3af4430cb71f6629d23d06db56af4d7edbc235f163df9e417",
+        "time": 17
+      },
+      "sourceFrameSecond": 415.0,
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-i",
+        "output/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+        "-ss",
+        "17",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "2",
+        ".build/native-host-media-review/result-posters/native-host-anonymous-http403.jpg"
+      ],
+      "metadataCopiedFromInput": {
+        "recordingCoverage": "approval_to_result",
+        "outcomeClass": "unknown",
+        "presentation": {
+          "control": "Anonymous gateway request",
+          "enforcer": "HTTP 403 observed; see joined receipt",
+          "outcome": "No authorization header or cookies"
+        }
+      }
+    }
+  ],
+  "unchangedMedia": [
+    {
+      "url": "native-host-workspace-read/native-host-workspace-read.mp4",
+      "type": "video/mp4",
+      "bytes": 1197687,
+      "sha256": "2a086d947a5530b53d03332698b909c6f40092298da3721bc7e3eeb74940b946",
+      "duration": 38.988681,
+      "width": 1920,
+      "height": 1290,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "fps": 54.579943799605005,
+      "audio": false,
+      "decodeValidated": true
+    },
+    {
+      "url": "native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+      "type": "video/mp4",
+      "bytes": 523705,
+      "sha256": "f3156ac900f643e06fbe4309ac563b880e6076250daa690c244bf4ea9b3f85ea",
+      "duration": 18.004361,
+      "width": 1920,
+      "height": 1290,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "fps": 54.153887252312295,
+      "audio": false,
+      "decodeValidated": true
+    },
+    {
+      "url": "native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+      "type": "video/mp4",
+      "bytes": 2207528,
+      "sha256": "0bc81f03f539f0614fa49a65ae3b27ef53f00bf26f35c7573684652cf1e87ada",
+      "duration": 22.00533,
+      "width": 1920,
+      "height": 1290,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "fps": 52.48895114218485,
+      "audio": false,
+      "decodeValidated": true
+    }
+  ],
+  "checks": [
+    "Each poster extracted from its own unchanged MP4 at the documented clip-relative second.",
+    "Poster and metadata edits only; all media, source recordings, cuts, contact sheets and sampled frames unchanged.",
+    "Coverage, outcomeClass and presentation were copied from the already-validated input because the processor omits these optional fields.",
+    "Original processor manifest and original posters retained without modifying the processor receipt."
+  ],
+  "limits": [
+    "Posters for command and anonymous HTTP403 show the assistant summary; actual tool Output is collapsed in those cuts.",
+    "Authentication attribution remains outside this poster and metadata review.",
+    "Browser playback and seeking remain for root."
+  ]
+}

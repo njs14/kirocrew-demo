@@ -1,0 +1,26 @@
+{
+  "acceptance": "no_native_case_submitted",
+  "captured_events": 0,
+  "collection_complete": true,
+  "created": "2026-09-14T00:57:44.934333+00:00",
+  "finished": "2026-09-14T00:53:52.390407+00:00",
+  "kind": "unused_native_slot_observer",
+  "limits": [
+    "Complete passive idle collection is not a completed enforcement demonstration.",
+    "No absence claim is made for native activity outside this bounded capture.",
+    "No runtime or policy mutation was made by the collector."
+  ],
+  "native_prompt_submission_basis": "Operator explicitly held the prompt because screenshots did not reflect the current native UI state.",
+  "native_tool_execution_observed": false,
+  "native_turn_submitted_by_operator": false,
+  "original_event_file_exists": false,
+  "reason": "Native accessibility tree showed fresh slot8, but repeated actual window images remained stale; operator ended collection without submitting a prompt.",
+  "slot": "chat-8-1789347081",
+  "source_sha256": {
+    ".build/native-host-imds-20260913-ui2/baseline.json": "a2cafebd7fa152f56f3a8a32b06a46010231ecfcbcd5b9386fdbbbc7ef38ce23",
+    ".build/native-host-imds-20260913-ui2/control.json": "c7f90b1889b94edc32435c06ae283db65308d516efd76860d5b51d867ed2cdd3",
+    ".build/native-host-imds-20260913-ui2/finish-request.json": "77e947be3698b64079e1cdd34612f4350a338c9f03360598f1c7529410f86581",
+    ".build/native-host-imds-20260913-ui2/receipt.json": "2afec22320f5a48b34740ae7d30da8f16a6804a513caa592a82fdf5af6703526"
+  },
+  "started": "2026-09-14T00:53:18.906700+00:00"
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "path": "kirocrew-arm-slide.architecture.json",
+    "bytes": 2431,
+    "sha256": "8384bc846d972493c179bba18d69c0f3a9a50eb42a5b17d10462aad427c84e7b"
+  },
+  {
+    "path": "kirocrew-arm-live.architecture.json",
+    "bytes": 4922,
+    "sha256": "bc251957a76f815ccdc5482f6874e543becebe479df7f29be9868a4f36a155e0"
+  },
+  {
+    "path": "kirocrew-arm-observability.architecture.json",
+    "bytes": 4099,
+    "sha256": "7f4f41cacffdee0b147ca42ae4708efb3a56b19f75bb487fe99f6623b6345b6f"
+  },
+  {
+    "path": "kirocrew-arm-observability.html",
+    "bytes": 805591,
+    "sha256": "3709efdab5e2d4bf734d8c02d4beea21b34aad9da21de60c8deb98879d76f5ec"
+  },
+  {
+    "path": "kirocrew-arm-slide.html",
+    "bytes": 797878,
+    "sha256": "30d612a4f2f09f196ba7c35fe1247f11c6fe678fb8df3c45a4294cd7185b4479"
+  },
+  {
+    "path": "kirocrew-arm-live.html",
+    "bytes": 809583,
+    "sha256": "9fc9c2b8b01cc0009150fa94659361d0cba9a23c7bef2c77507d6aaa64160a7c"
+  },
+  {
+    "path": "kirocrew-ec2-live.architecture.json",
+    "bytes": 4718,
+    "sha256": "b0fe61ca2fb257e54e999c0bb031edb2f275e4f13a625257a0a1e6f242d674e9"
+  },
+  {
+    "path": "kirocrew-ec2-slide.architecture.json",
+    "bytes": 2129,
+    "sha256": "1c628b2d6ff8d9f10193cc247e210dbe022f9617a377a993f2a6514840caad50"
+  },
+  {
+    "path": "kirocrew-ec2-slide.visual-check.html",
+    "bytes": 1952,
+    "sha256": "eab790823e2a24c7026cb30ee6bb93857e944b53fb14248c4dc68f2e578a80be"
+  },
+  {
+    "path": "kirocrew-ec2-live.html",
+    "bytes": 809098,
+    "sha256": "4f8547905863a4303ad5117f3d876c11c638eded381f9562a5824f935d9b9fef"
+  },
+  {
+    "path": "kirocrew-ec2-live.visual-check.html",
+    "bytes": 1946,
+    "sha256": "3ec9c0f7586c449e20af2714765e95264267861b86821ada1a725ddf6aba999c"
+  },
+  {
+    "path": "kirocrew-ec2-slide.html",
+    "bytes": 797380,
+    "sha256": "489a1b3f5eaa86299106c33d818ca328d5778d291cd596499ec6920849f969e2"
+  },
+  {
+    "path": "output/kirocrew-native-controls.html",
+    "bytes": 617949,
+    "sha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e"
+  },
+  {
+    "path": "evidence/aws/archify-arm/delivery-receipt.json",
+    "bytes": 13849,
+    "sha256": "78b8961954d44fcb858ab5ebea5271c016a1398f1eac432487f4f6652b5eab80"
+  },
+  {
+    "path": "evidence/aws/archify-arm/council-delivery-receipt.json",
+    "bytes": 13849,
+    "sha256": "78b8961954d44fcb858ab5ebea5271c016a1398f1eac432487f4f6652b5eab80"
+  }
+]

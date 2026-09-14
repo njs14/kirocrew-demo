@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "accepted_native_control_artifact_snapshot",
+  "createdAt": "2026-09-14T00:03:27.556831+00:00",
+  "reason": "Preserve the accepted five-clip edition before adding native host demonstrations.",
+  "sourceEditionSha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e",
+  "files": [
+    {
+      "source": "output/kirocrew-native-controls.html",
+      "snapshot": "evidence/native-client-demo/accepted-before-host-20260913/kirocrew-native-controls.html",
+      "bytes": 617949,
+      "sha256": "e7387166b069747885bd207b24912885536e05a86ebced9a25a1459869bb714e"
+    },
+    {
+      "source": "output/kirocrew-native-controls-notes.md",
+      "snapshot": "evidence/native-client-demo/accepted-before-host-20260913/kirocrew-native-controls-notes.md",
+      "bytes": 12450,
+      "sha256": "f0519134f8d9083a830d67a4d395243638e51edf5dfafdb40d315ecfa58f2d1e"
+    },
+    {
+      "source": "output/kirocrew-native-controls-manifest.json",
+      "snapshot": "evidence/native-client-demo/accepted-before-host-20260913/kirocrew-native-controls-manifest.json",
+      "bytes": 17685,
+      "sha256": "b2cd4b1ff302ac88f6b9291e406d104e569933b34511b9edc395dafa020b11a5"
+    },
+    {
+      "source": "output/kirocrew-native-controls-build.json",
+      "snapshot": "evidence/native-client-demo/accepted-before-host-20260913/kirocrew-native-controls-build.json",
+      "bytes": 18105,
+      "sha256": "e78306e950064d10e3fd3ec41b3bec81e1f2c3f0a0a11be9626a3dab6b4246e5"
+    }
+  ],
+  "scope": "Exact four output bytes. This snapshot retains relative links; use the original build receipt and recorded media inputs to reconstruct playback."
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "title": "Native client: host controls and permitted read",
+  "scenes": [
+    {
+      "id": "native-host-workspace-read",
+      "title": "Read the permitted workspace canary",
+      "description": "Submit one bounded fs_read request for the prepared public canary in the server workspace. The native tool returns the canary; the operator expands its Output tab.",
+      "evidenceScope": "Actual macOS native client recording of a permitted host filesystem read, from the composed request through the native tool result. No permission card or approval callback was observed. This establishes the allowed-read baseline, not a host denial.",
+      "recordedAt": "2026-09-13T23:51:02Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/host-control-take-03.mov",
+        "description": "Continuous native Mac window capture. Original timing preserved; subsequent assistant-only refusals are outside this cut."
+      },
+      "start": 26,
+      "end": 65,
+      "cues": [
+        {
+          "time": 1,
+          "label": "Request one public canary read",
+          "detail": "The composer contains the complete fs_read request, constrained to the prepared workspace fixture and one tool call."
+        },
+        {
+          "time": 16,
+          "label": "The native filesystem tool completes",
+          "detail": "The green fs_read row identifies allowed-canary.txt. The joined native transcript records the single read and exact public canary output."
+        },
+        {
+          "time": 21,
+          "label": "Read the returned canary",
+          "detail": "The client reports PUBLIC KIROCREW HOST CONTROL CANARY - NO CREDENTIALS."
+        },
+        {
+          "time": 34,
+          "label": "Inspect the actual tool output",
+          "detail": "The expanded Output tab shows the same canary returned by fs_read. No approval card occurred in this attempt."
+        }
+      ]
+    }
+  ]
+}

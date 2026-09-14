@@ -1,0 +1,109 @@
+{
+  "caller_identity": "dashboard:chat-5-1789343728",
+  "events": [
+    {
+      "agent": "host-controls-demo",
+      "caller_identity": "dashboard:chat-5-1789343728",
+      "entry_hash": "95f94819974b0adef4beff54d7c67f601f1d1b2c2a3a016a003054e508291ddc",
+      "error": "",
+      "event_id": "580cb9cdb7d04cce",
+      "event_type": "tool_invocation",
+      "operation": "printf '%s\\n' 'KIROCREW_DEMO_COMMAND_CONTROL_20260913'",
+      "outcome": "invoked",
+      "prev_hash": "4e2126bfa3456f0cee3c792e4be8d995c76661861ee5f70966f73c2dc9c536c4",
+      "request_id": "",
+      "resources": "",
+      "source": "dashboard",
+      "source_file": "security_events.jsonl",
+      "source_line": 57735,
+      "timestamp": "2026-09-14T00:00:17.121055+00:00",
+      "tool_kind": "execute"
+    },
+    {
+      "agent": "host-controls-demo",
+      "caller_identity": "dashboard:chat-5-1789343728",
+      "entry_hash": "d6a515bb902d80065e74566314fc89de4b486c0e4f06ad77b5502f90467b1bc3",
+      "error": "hook_deny",
+      "event_id": "0895bbd779b34b77",
+      "event_type": "tool_invocation",
+      "operation": "Running: printf '%s\\n' 'KIROCREW_DEMO_COMMAND_CONTROL_20260913'",
+      "outcome": "denied",
+      "prev_hash": "eb672955402f5398632e5a1ef5dd20678e3e7d157d93d121a48c5c01284c93a6",
+      "request_id": "174689c5-84bc-465c-8f73-b12dfe26ead4",
+      "resources": "",
+      "source": "dashboard",
+      "source_file": "security_events.jsonl",
+      "source_line": 57737,
+      "timestamp": "2026-09-14T00:00:17.135461+00:00",
+      "tool_kind": ""
+    },
+    {
+      "agent": "host-controls-demo",
+      "caller_identity": "dashboard:chat-5-1789343728",
+      "entry_hash": "0102e1f4a2fd939f980e66c1e9e716c03a32d6018e1b9058a9d8f5b36649cafe",
+      "error": "",
+      "event_id": "274b8c24c7f24052",
+      "event_type": "tool_invocation",
+      "operation": "printf '%s\\n' 'KIROCREW_DEMO_COMMAND_CONTROL_20260913'",
+      "outcome": "refined",
+      "prev_hash": "d6a515bb902d80065e74566314fc89de4b486c0e4f06ad77b5502f90467b1bc3",
+      "request_id": "",
+      "resources": "",
+      "source": "dashboard",
+      "source_file": "security_events.jsonl",
+      "source_line": 57738,
+      "timestamp": "2026-09-14T00:00:17.148326+00:00",
+      "tool_kind": "execute"
+    }
+  ],
+  "files": [
+    {
+      "device": 66305,
+      "earliest_timestamp": "2026-09-13T14:06:32.279106+00:00",
+      "inode": 327177,
+      "latest_timestamp": "2026-09-13T19:10:08.810285+00:00",
+      "path": "security_events.[OPAQUE REDACTED].jsonl",
+      "rows": 59099,
+      "snapshot_bytes": 33554845,
+      "snapshot_sha256": "a423c4bbae481dbf841d52340a30135bcbf543611a70d0cf3886015b56cc48f4"
+    },
+    {
+      "device": 66305,
+      "earliest_timestamp": "2026-09-13T19:10:09.834654+00:00",
+      "inode": 328939,
+      "latest_timestamp": "2026-09-14T00:02:41.389096+00:00",
+      "path": "security_events.jsonl",
+      "rows": 58293,
+      "snapshot_bytes": 33226682,
+      "snapshot_sha256": "52e960b74ba059ee858f93ad9469f4a9f2489e50dce2584a9b3b9a6056278273"
+    }
+  ],
+  "kind": "read_only_sel_interval",
+  "limitations": [
+    "Retained log bytes were scanned without opening or exporting the HMAC key.",
+    "This is a timestamp-bounded retained-log scan, not a restoration of the original recent-page anchor."
+  ],
+  "other_window_outcomes": {
+    "api_access:allowed": 2,
+    "api_access:denied": 133,
+    "api_access:granted": 12,
+    "api_access:ok": 59,
+    "api_access:shell_unauth": 1,
+    "api_access:success": 1,
+    "deny_event:denied": 1,
+    "governance_decision:allowed": 8,
+    "tool_invocation:completed": 6,
+    "tool_invocation:denied": 4,
+    "tool_invocation:failed": 4,
+    "tool_invocation:invoked": 14,
+    "tool_invocation:missing": 2,
+    "tool_invocation:success": 7
+  },
+  "reader_script_sha256": "002a29e7a30fe849a3e7949b68a439e9d1c3e980aac7b31de5f4047145689daf",
+  "retained_timestamps_bracket_window": true,
+  "scan_complete": true,
+  "scanned_bytes": 66781527,
+  "since": "2026-09-14T00:00:00+00:00",
+  "until": "2026-09-14T00:01:00+00:00",
+  "window_event_count": 257
+}

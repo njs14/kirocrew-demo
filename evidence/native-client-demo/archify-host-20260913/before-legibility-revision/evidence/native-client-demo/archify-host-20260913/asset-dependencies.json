@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "artifact": {
+    "path": "kirocrew-native-controls-diagram.html",
+    "bytes": 809205,
+    "sha256": "ea2f39161c4302740dfaec66601976f6ba2ba9926de58b5c1f35806a33824e5f"
+  },
+  "required_asset_files": [
+    "kirocrew-native-controls-diagram.html"
+  ],
+  "external_asset_dependencies": [],
+  "inline_script_count": 4,
+  "inline_style_count": 2,
+  "embedded_resource_count": 0,
+  "embedded_css_url_count": 34,
+  "navigation_links": [],
+  "scope": "Static HTML resource-reference scan only. Diagram, style, scripts and fonts are embedded. No viewer execution or network request was performed."
+}
