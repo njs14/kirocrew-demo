@@ -1,0 +1,194 @@
+{
+  "base_commit": "d6880b65d0c395f7c3427d53909508bf560a1893",
+  "checks": {
+    "binary_files_byte_bound": 118,
+    "committed_working_bytes_match": true,
+    "credential_findings": 0,
+    "fresh_export_routes_verified": 91,
+    "media_range_checks_passed": 24,
+    "new_or_changed_files": 326,
+    "offline_tests_passed": 64,
+    "private_invalid_routes_returning_404": 15,
+    "symlinks": 0,
+    "tested_source_hashes_unchanged": true,
+    "text_files_scanned": 208,
+    "unsafe_private_raw_or_actions_paths": 0
+  },
+  "independent_asset_inventory": {
+    "declared_route_entries": 89,
+    "effective_routes": 91,
+    "hash_or_size_mismatches": 0,
+    "private_destination_paths": 0,
+    "reviewer": "/root/native_publication_review/native_publication_readonly",
+    "symlinks_or_symlink_ancestors": 0,
+    "verdict": "ship"
+  },
+  "kind": "final_host_publication_readiness_review",
+  "limits": [
+    "The binary scan is byte binding, not OCR; image/video content relies on recorded visual and media reviews. Pattern matching is not a guarantee about every possible secret format.",
+    "Private collector/raw council sources remain local and unavailable in a fresh clone. Published hashes attest to audited originals, and scoped exports remain available.",
+    "No new native enforcement, AWS operation, browser action, model run, staging, commit or push was performed by this reviewer. Root performed the primary commit.",
+    "Native sensitive-path and protected-write acceptance remain pending. IMDS ended in approval timeout without helper execution or firewall proof; the unused fresh slot recorded no turn.",
+    "GitHub Actions remain out of scope. The receipt follow-up will add metadata only and necessarily has a different tree from the bound main publication commit."
+  ],
+  "manifest": {
+    "bytes": 99649,
+    "path": "evidence/native-client-demo/host-20260913-publication/final-publication-manifest.json",
+    "sha256": "e3603571c2c98b2570831ea9b3c188e37f10bbda7b4d1ca0e26b9e2cc401a716"
+  },
+  "other_private_boundaries": [
+    ".build/ full host collector sources and fresh export copy",
+    "config/*.local.json and environment files",
+    "recordings/**/raw/",
+    "credential keys and database/session stores",
+    ".github/workflows/",
+    "six exact earlier collector sources and three rejected screenshots in .gitignore"
+  ],
+  "private_collector_provenance": "The ten host exports and six earlier exports retain unchanged ignored source hashes; exact prior reviews are included below. Original source data was not modified for publication.",
+  "private_council_exclusions": [
+    {
+      "bytes": 4569015,
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-raw.jsonl",
+      "sha256": "7d42123b6033f82ef62ab03575b2ee363315122b373d861f87a865404126e974"
+    },
+    {
+      "bytes": 8873547,
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-raw.jsonl",
+      "sha256": "b12148b21d8f86cf6ac558fb438f116f303b49ca25f58ce9d0c64ed2f0f6512b"
+    },
+    {
+      "bytes": 0,
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3023,
+      "path": "evidence/native-client-demo/council-host-v1/candidate/prepared.json",
+      "sha256": "f32125823fc623f66fa862a2ebe3756df5ee4e043c745d720d5577533590cb3b"
+    }
+  ],
+  "publication_commit": "f4653d49297199787e1b8a395e1c356d2c4ba28c",
+  "publication_tree": "83491b52e9c797a74b05d7657e55660e9b23991d",
+  "recorded_at": "2026-09-14T01:19:59.072012+00:00",
+  "reproduction": [
+    "Verify each file in final-publication-manifest.json against its committed Git blob and SHA-256.",
+    "For the receipt follow-up, load only paths from final-stage-allowlist.json. These three reports are intentionally excluded from the publication commit/tree binding.",
+    "The four exact offline test commands and tested source hashes are in final-source-tests.json.",
+    "The fresh-copy receipt records every served route hash and media range result from the reviewed allowlisted server."
+  ],
+  "review_receipts": [
+    {
+      "bytes": 3183,
+      "path": "evidence/native-client-demo/host-20260913-publication/final-source-tests.json",
+      "sha256": "094c8c24b1c204827c3f3bb0243fb6e91db3756496fc86c0c5f02c0c9c56c191"
+    },
+    {
+      "bytes": 2411,
+      "path": "evidence/native-client-demo/host-20260913-publication/final-ignore-review.json",
+      "sha256": "9b88c0255973eef99b447b464137c4eb16648dc090148e227d1b60cd16a9ed0e"
+    },
+    {
+      "bytes": 3059,
+      "path": "evidence/native-client-demo/host-20260913-publication/final-ui4-privacy-review.json",
+      "sha256": "1092037b0d566bdc17d297ac5b00d50d5b99de7686bfcebbab2dab3d15ec675c"
+    },
+    {
+      "bytes": 45769,
+      "path": "evidence/native-client-demo/host-20260913-publication/final-fresh-export-review.json",
+      "sha256": "ed623051c40a96e14b13361e5d10f28015a05cb71a10f1b2e0a4e5eb364422a4"
+    },
+    {
+      "bytes": 15105,
+      "path": "evidence/native-client-demo/host-20260913-publication/review.json",
+      "sha256": "99ab900f03d9d68e00b00c01a9111ea9f9372ff924d7fd344fb8de57aed0f60f"
+    },
+    {
+      "bytes": 16305,
+      "path": "evidence/native-client-demo/host-20260913-review/final-integration-review.json",
+      "sha256": "e916baa7ad8496ce3a72e12550e16ab68c0ba113d5a5e8070ec2d2552a2fa6e5"
+    },
+    {
+      "bytes": 5458,
+      "path": "evidence/native-client-demo/presentation-host-final/browser/final-review.json",
+      "sha256": "97a6e8928b9ec4512a2f6a08cd811e8a67248dfde72083455c99f7795e61ecbc"
+    },
+    {
+      "bytes": 5673,
+      "path": "evidence/native-client-demo/council-host-v1/incorporation.json",
+      "sha256": "21bf6aebf1d5c0510518a0b752e9c708d41e784dd1ab3a00311bc39a49bd2718"
+    },
+    {
+      "bytes": 3398,
+      "path": "evidence/native-client-demo/council-host-v1/post-council-no-ai-slop.json",
+      "sha256": "37bc52e51a89a071a7b9fb541c17e65d2a5433404c0c85fc417584b3e40c92b7"
+    },
+    {
+      "bytes": 2007,
+      "path": "evidence/native-client-demo/council-host-v1/publication-provenance.json",
+      "sha256": "9ec09c089575adc722c43160abe13a1038440ba4d25937fbb95ac417d8cd1541"
+    },
+    {
+      "bytes": 33265,
+      "path": "evidence/native-client-demo/current-status.json",
+      "sha256": "19171a4079811f57ac02a6e41d9756f410e1e0149361c336d6fb8269de9609ed"
+    }
+  ],
+  "reviewer": "/root/native_publication_review",
+  "scan": {
+    "assessment": "The seven matches are deliberately artificial privacy-regression fixtures, not observed credentials or logged fingerprints. The scoped JSON structural/privacy inventory and independent ui4 review found no full raw SEL pages, conversation snapshots or reusable authentication state.",
+    "patterns": {
+      "auth_assignment": "(?i)(?:access_token|refresh_token|client_secret|aws_secret_access_key|aws_session_token|password)[\\\"\\s:=]+[\\\"\\x27]?([A-Za-z0-9/+_=.-]{16,})",
+      "aws_access_key": "\\b(?:AKIA|ASIA)[A-Z0-9]{16}\\b",
+      "aws_signed_url": "X-Amz-(?:Credential|Signature)=",
+      "bearer_value": "(?i)bearer [A-Za-z0-9._~+/-]{20,}",
+      "credential_fingerprint": "\\b(?:expected|received)=[a-fA-F0-9]{8}\\b",
+      "github_token": "\\b(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,})\\b",
+      "jwt": "\\beyJ[A-Za-z0-9_-]{8,}\\.eyJ[A-Za-z0-9_-]{8,}\\.[A-Za-z0-9_-]{8,}\\b",
+      "login_device_code": "(?:user_code|device_code)[\\\"\\s:=]+[A-Z0-9]{4}-[A-Z0-9]{4}\\b",
+      "openai_anthropic_key": "\\bsk-(?:proj-|ant-api\\d+-)?[A-Za-z0-9_-]{24,}\\b",
+      "private_key": "-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----"
+    },
+    "reviewed_synthetic_fixture_matches": [
+      {
+        "count": 6,
+        "lines": [
+          21,
+          29,
+          86
+        ],
+        "path": "scripts/tests/test_native_publication.py",
+        "pattern": "credential_fingerprint"
+      },
+      {
+        "count": 1,
+        "lines": [
+          92
+        ],
+        "path": "scripts/tests/test_native_publication.py",
+        "pattern": "auth_assignment"
+      }
+    ]
+  },
+  "schema": 1,
+  "self_excluded_final_reports": [
+    "evidence/native-client-demo/host-20260913-publication/final-publication-manifest.json",
+    "evidence/native-client-demo/host-20260913-publication/final-stage-allowlist.json",
+    "evidence/native-client-demo/host-20260913-publication/final-publication-review.json"
+  ],
+  "stage_allowlist": {
+    "bytes": 29784,
+    "path": "evidence/native-client-demo/host-20260913-publication/final-stage-allowlist.json",
+    "sha256": "a2238f6c17f4933300f9828a39b33c1608517ad6fad76932839846fc884f10b0"
+  },
+  "verdict": "ship_private_repository_publication",
+  "whitespace": {
+    "default_diff_check_exit_code": 2,
+    "exception": "Root identified seven whitespace-only frozen artifact lines: two blank lines in each of the current and two archived SVGs, plus one trailing space in frozen generated notes line13. Artifacts were preserved to maintain bound hashes.",
+    "exception_scope": "Blank-at-end-of-line only; root separately checks with blank-at-eol disabled. No source code or semantic exception."
+  }
+}
