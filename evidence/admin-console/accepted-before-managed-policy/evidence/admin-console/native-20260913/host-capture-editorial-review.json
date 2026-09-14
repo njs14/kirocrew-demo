@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "host_admin_tour_editorial_review",
+  "recordedAt": "2026-09-14T00:26:09.819031+00:00",
+  "verdict": "no_material_findings",
+  "reviewer": "/root/admin_tour_revision/tour_copy_review",
+  "scope": "Read-only visual review of six original screenshots, captions, current findings and six linked host receipts; No AI Slop detect pass. Final rendered browser acceptance remains separate.",
+  "captureGroup": {
+    "path": "evidence/admin-console/native-20260913/host-captures.json",
+    "sha256": "dfaf5df98ebbec220a75aae5103a07020d76b0e4c7b7395dd5843e74f2b0a5b3"
+  },
+  "findings": {
+    "path": "output/kirocrew-native-admin-findings.md",
+    "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
+  },
+  "checks": [
+    "Six original screenshot hashes and six host receipt hashes match",
+    "112 built-ins before and after temporary marker cleanup; command pattern separate from auto_deny_tools",
+    "23 aggregate turns  = 9 dashboard  + 14 background; runtime faults are not denial counts",
+    "Authentication turn 50.4 seconds includes two once-only approvals; helper request 3 ms is separate",
+    "Client/server sample timestamps and main-process memory values remain distinct",
+    "Server-only collection event is health evidence, not SEL or tool-denial logs",
+    "Three bounded host outcomes; sensitive-path, protected-write and native metadata isolation remain unproved"
+  ],
+  "independentlyReviewedFindingsSha256": "6b692ce3a57f02ce7313ff0b7dcf4d25c023ad21c581e0968a98961affd64e26",
+  "authorDeltaAfterReview": "Clarified exact-HTML browser scope and linked the subsequent passed19-image review. No control or measurement claim changed."
+}

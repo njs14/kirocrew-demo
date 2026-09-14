@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "artifact": {
+        "bytes": 13380,
+        "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+        "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a"
+      },
+      "findings": [],
+      "scope": "ui3 native allowed read and managed MCP denial, with actual screenshots; no retained video.",
+      "verified": [
+        "All referenced hashes, file sizes, native history row hashes and runtime source hashes match.",
+        "Allowed read joins native and service evidence by trace, invocation ID, AWS request ID and fixture digest.",
+        "Denied native call joins its trace and explicit governance-blocked row; SEL confirms policy layer in the same isolated slot and time, with adjacent hash-chain linkage.",
+        "Zero denied arrivals is bounded by complete journal interval and stable MCP service identity.",
+        "Original screenshots support the UI observations; receipt excludes video, exact-tool sandbox, Seatbelt, enterprise SSO and registry enrollment."
+      ]
+    },
+    {
+      "artifact": {
+        "bytes": 7208,
+        "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+        "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+      },
+      "findings": [],
+      "scope": "ui4 fresh managed-denial take; media acceptance belongs to its separate clip review.",
+      "verified": [
+        "All referenced hashes and file sizes match.",
+        "Exactly one fresh initial call has tool ID toolu_bdrk_01JEubMiv3zYyjTMUrrQgdKM and trace managed-20260914-ui4-crew.",
+        "The matching native row explicitly reports governance blocking; SEL policy denial links to the denied request through prev_hash.",
+        "Completed service interval has zero audit events and zero ignored rows, identical start/end cursor and unchanged running service identity.",
+        "No permission prompt was collected; media acceptance, filmed allowed read and exact-tool sandbox claims are properly excluded."
+      ]
+    }
+  ],
+  "kind": "independent_native_managed_artifact_review",
+  "limitations": [
+    "This is review of the bound artifacts and their source evidence, not a new live enforcement run or video acceptance.",
+    "The governance SEL event has no direct native tool-call or trace ID; the artifacts state their isolated-slot/time/hash-chain correlation limits."
+  ],
+  "review_operations": {
+    "live_ssh_or_api_calls": false,
+    "native_ui_operations": false,
+    "source_and_artifact_reads_only": true,
+    "source_or_private_observer_edits": false
+  },
+  "reviewed_at": "2026-09-14T02:12:59.703831+00:00",
+  "reviewer": "/root/managed_mcp_setup/mcp_helper_review",
+  "reviewer_role": "independent_read_only_artifact_reviewer",
+  "schema_version": 1,
+  "verdict": "PASS"
+}

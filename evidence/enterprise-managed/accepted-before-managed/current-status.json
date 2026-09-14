@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "kind": "native_demo_status",
+  "updated_at": "2026-09-14T01:14:18.394104+00:00",
+  "status": "eight_recordings_reviewed_three_host_cases_unfinished",
+  "endpoint_client_scope": "macOS only",
+  "presentation": {
+    "path": "output/kirocrew-native-controls.html",
+    "slides": 14,
+    "native_clips": 8,
+    "exact_artifact_verdicts": "See separate build, browser and council receipts.",
+    "host_appendix": "Eight recordings: prior five, workspace read, command response-summary inspection and anonymous execute approval through the HTTP 403 summary. Each recording retains its own evidence scope.",
+    "build_state": "static_browser_and_integration_review_passed",
+    "browser_review": "evidence/native-client-demo/presentation-host-final/browser/final-review.json",
+    "integration_review": "evidence/native-client-demo/host-20260913-review/final-integration-review.json"
+  },
+  "admin_tour": {
+    "path": "output/kirocrew-admin-tour.html",
+    "stops": 9,
+    "original_screenshots": 19,
+    "browser_review": "evidence/admin-console/native-20260913/browser-host/review.json",
+    "current_findings": "output/kirocrew-native-admin-findings.md",
+    "build_state": "static_and_browser_passed",
+    "build_receipt": "evidence/admin-console/native-20260913/tour-build.json"
+  },
+  "recorded_outcomes": [
+    "Allowed S3 fixture read after native approval",
+    "Automatic Crew tool denial before MCP arrival",
+    "MCP grant denial before AWS dispatch",
+    "S3 IAM AccessDenied HTTP 403",
+    "Private-memory assignment refusal before a tool starts"
+  ],
+  "four_mcp_traces": [
+    "native-20260913-ui2-allow",
+    "native-20260913-ui2-crew",
+    "native-20260913-ui2-mcp",
+    "native-20260913-ui2-iam"
+  ],
+  "original_receipts_preserved": {
+    "collection_complete": false,
+    "reconciler_full_native_acceptance": false,
+    "bounded_four_outcomes_reconciled": true
+  },
+  "pending_host_takes": [
+    "Sensitive-path read",
+    "Protected-path write",
+    "IPv4 metadata TCP connection isolation"
+  ],
+  "pending_reason": "The IMDS execution approval expired unanswered after ten minutes; no helper execution or probe result was observed. A fresh slot failed screenshot readiness and received no prompt. Sensitive-path read, protected-path write and IMDS execution still need completed native takes.",
+  "temporary_rule": {
+    "pattern": "KIROCREW_DEMO_COMMAND_CONTROL_20260913",
+    "removed_rule_id": "user-9590faaf660d",
+    "status": "removed_after_recorded_take",
+    "receipt": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+    "builtin_state": "Global disable false; no disabled built-in IDs; 112-entry static catalog.",
+    "limit": "Earlier preflight did not hash all unrelated custom rules, so the cleanup receipt alone cannot prove every prior custom rule was preserved.",
+    "repeat_take": "Add a new bounded marker rule only for a repeated command take, record its ID and remove only that new rule afterward."
+  },
+  "limits": [
+    "Owner connection; restricted human-role RBAC untested.",
+    "Crew configuration remains Crew-writable; no immutable enterprise policy demonstrated.",
+    "Process snapshots do not establish overlap with pending approval.",
+    "The original memory refusal occurred before any file tool. Three resumed host cases remain unfinished; command footage shows only the assistant response summary, without request submission or expanded native tool output.",
+    "SEL integrity relies on original Gateway verification; no exported HMAC key or independent per-row signature check.",
+    "Telemetry and configured coverage counts alone do not establish security decisions.",
+    "Model-only refusals have no native tool attempt and do not establish server enforcement."
+  ],
+  "infrastructure": "Existing VPC and subnet parameters remain supported through CloudFormation; this recording extension does not add network infrastructure.",
+  "publication": "Existing private GitHub repository; GitHub Actions out of scope.",
+  "editorial_review": "No AI Slop applied to all four current Markdown guides. Independent documentation review passed, including the bounded IMDS timeout and unused fresh-slot update. The deck received a separate No AI Slop pass after council changes. Final presentation/browser and integration receipts are bound below.",
+  "private_source_receipts": {
+    "evidence/native-client-demo/20260913-ui2/baseline.json": "1fd8d89b115427ed0d31b9a8c6f7b16f2b1fcd9564196ab5d7df0c781b1aef2a",
+    "evidence/native-client-demo/20260913-ui2/receipt.json": "0b66f7888e1d4e7fc842650fa297c9d2785c856d48eb6e2cd8bf6f264c71448e",
+    "evidence/native-client-demo/host-20260913-ui1/baseline.json": "11d681803029e1ad652f3a1f006b6f389dc6bbe4b9d4ac1e8d22fb23ea2a343c",
+    "evidence/native-client-demo/host-20260913-ui1/receipt.json": "3dc90df39baf82bb026968b8ce34696eea32082be6bdd212fae4348e13b3a196",
+    "evidence/native-client-demo/host-20260913-ui2/baseline.json": "74f46816a104d5970057bc46e9522ed61ee7417fb38a5cb3d1fd457242c1672c",
+    "evidence/native-client-demo/host-20260913-ui2/receipt.json": "06b5c0bbf0c50946c03047604057f328f912ccf14c48c25cf580aeae3891ecdc",
+    ".build/native-host-imds-20260913-ui1/receipt.json": "f1852f05b1a6d0ad6ad0642a1cada9d5aac03aec033c2a3e4ce6a78b7eb5c519",
+    ".build/native-host-imds-20260913-ui1/baseline.json": "655521eccb1d035f7141b96461f5d61b1ad6910d1b510b129d9a29e6bec66107",
+    ".build/native-host-20260913-ui3/receipt.json": "b65f84f3f06e8e3b04daa5ae20290d3204bf221010120a21e08974a2b7e9c893",
+    ".build/native-host-20260913-ui3/baseline.json": "cfb171d3550d45a40eae60d069e05725cc914a20f78fd8eafbcfb92c658648fe",
+    ".build/native-host-command-20260913-ui2/receipt.json": "56c4c6241ce650569e8bcef8a54e54afea577d0018962a949a9760c86d740e64",
+    ".build/native-host-command-20260913-ui2/baseline.json": "a0911d5b7f0bbe19d2a168b9389a037a5fc4809f68ae8a88d5146a4df3d2f09b",
+    ".build/native-host-command-20260913-ui1/receipt.json": "5d528011ef42b780c2839c5abe426ba1b344d449e298fb685ae407bd62f4c613",
+    ".build/native-host-command-20260913-ui1/baseline.json": "5054bc2a54aea8157f48bde865d692c5ec8119bc3dcc25b4a0acc2e80e71a19e",
+    ".build/native-host-auth-20260913-ui1/receipt.json": "639e652a2db0a7a9f3ef5022e25e97f00932b9cb237005ed59f764654f02c5b4",
+    ".build/native-host-auth-20260913-ui1/baseline.json": "f12a121597a725dd75f869148a3d39f78dd81cf7867e39b6547b400419d68b18"
+  },
+  "publishable_source_receipts": {
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9",
+    "evidence/native-client-demo/20260913-ui2/authority-arm-readback.json": "9566995b485d6e92c7efa77d6a9870829820a38ccecfb28c359889618ed2e955",
+    "evidence/native-client-demo/20260913-ui2/authority-aws-readback.json": "e86828024125b1a8ac51c6d53862a19cc5de231038cdbfe2902df58dbdba548c",
+    "evidence/native-client-demo/media-review-mcp-controls.json": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d",
+    "evidence/native-client-demo/media-review-memory-assignment.json": "68e609282f6cf097fc9ed3f88a1228f4703fee5311a5945cfa98a9dfc78cc167",
+    "evidence/native-client-demo/host-20260913/assignment-diagnostic.json": "8090b4a69f0c4f76021d6cf1c869f352c188aaa61c31382f3b4e0b19f0ea8a6c",
+    "evidence/native-client-demo/host-20260913/setup-review.json": "62992da07dbc62b01dcb18316181d4878dd9b8269aaa9a66c792d6e6a835e55d",
+    "evidence/native-client-demo/host-20260913-ui2/capture-status.json": "8a4f6292fdc62ef285ff3bd2306ef72e58843c20a8346e7535f9556db5856617",
+    "evidence/native-client-demo/20260913-ui2/baseline-publication.json": "6316c5b3252acc3fc8a9b91f7436b6248c778c2824b45c5100e40c99fe9e08e3",
+    "evidence/native-client-demo/20260913-ui2/receipt-publication.json": "1e81f02d2237afbd0d6394b178def71134a8be79bd50f26b23f79af42983ee2e",
+    "evidence/native-client-demo/20260913-ui2/events.jsonl": "ef2a092a89bc95316e2eb916545e6b52c4578114edd24cdf144eb0facb60cfc9",
+    "evidence/native-client-demo/host-20260913-ui1/baseline-publication.json": "592ba16cb80113dab4875f12fc5c8d73e2b6304f2f1f5d82571ad44e8118e1eb",
+    "evidence/native-client-demo/host-20260913-ui1/receipt-publication.json": "9bddd53904ba1a5efddfd74b186edfe1bff662c5c6a3ba38f13c9ea93f42f78b",
+    "evidence/native-client-demo/host-20260913-ui1/events.jsonl": "68ec25c32af752887fdaa8102eb3919c7bdd36487269ffc0812dcadec1375359",
+    "evidence/native-client-demo/host-20260913-ui2/baseline-publication.json": "cee808fc689b58e4b916c39410d6a323c07af8ae9d35aa62aa6f6693a29bb5a3",
+    "evidence/native-client-demo/host-20260913-ui2/receipt-publication.json": "bd0b2201a0e95bdeafedf9b9935393718c8fbbc883b626af8e2b9f77920c2053",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/sel-interval.json": "81b9c450ee9f14761a8d943c7b9d0c79712da6d7f27910b8fbc1dfba9af06547",
+    "evidence/native-client-demo/host-20260913-ui3/initial-observations.json": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7",
+    "evidence/native-client-demo/host-20260913-ui3/command-observations.json": "88bc23a85ab8db45a0d24ee34f711f46f263245e1a83f4e89c623e21dd9c2455",
+    "evidence/native-client-demo/host-20260913-ui3/command-sel-interval.json": "1d8828366a71eec12359d233a86182c8f1614e718c869652bea115a101dd828b",
+    "evidence/native-client-demo/host-20260913-resumed/preflight.json": "9b00264d8504088ab4e92de6e341ee3e92b0342af7f25ba7c3f08e7b26421ac4",
+    "evidence/native-client-demo/host-20260913-resumed/prompt-amendment/apply-retry.json": "12ad026323bcac150d609ec608f7a7233b221cb5895fbabddfcb5ef1e98f2998",
+    "evidence/native-client-demo/host-20260913-resumed/prompt-amendment/review.json": "12be908d1748f9623fd769bef2a649f8d44a2202eb58eb66ac60c8a116690ffd",
+    "evidence/native-client-demo/host-20260913-resumed/prompt-amendment/readback.json": "e045dfcc04aabdf25f005929331e9d11773db68c910b80bcf302d2f82712c92e",
+    "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json": "663302446418b5ec7d52330ecaec42a2ee57ef4598af1e3ef5034990b6398603",
+    "evidence/native-client-demo/host-20260913-ui3/imds-history-pending.json": "24d4206a25af8d082e671ca7603a43565d395e265727daf2e7ecbf7d891122af",
+    "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543",
+    "evidence/native-client-demo/host-20260913-review/auth-review.json": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204",
+    "evidence/native-client-demo/host-20260913-ui3/auth-observations.json": "2616eeb2a2ce0c8081bbe49bc55cdb31c3c297819633a10b4cb084b29e72ceed",
+    "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json": "3eae37afdfc7d513f702a336d1e6ce70f07f36209151630b0271f314bfc146e1",
+    "output/native-host-clips-20260913/manifest.json": "0539ebc7f303cefe42d4fa554aa986d9ff431e4a3448d9dc10447cf9064b2e52",
+    "evidence/native-client-demo/media-review-host-controls.json": "bc649485a4d7d99c09d1793837a9977072ac0d63092d1a9cba0e0b85bf8432a2",
+    "evidence/native-client-demo/host-20260913-publication/imds-20260913-ui1/receipt-publication.json": "de6085dcaaab0b0b8d9ee15caf5b976d8ba08afecfacbeff000c3918c8bdc75a",
+    "evidence/native-client-demo/host-20260913-publication/imds-20260913-ui1/baseline-publication.json": "ae8955e2b83dbe80993c7e75612bb93177cc5170d8f0e455a1c1f3453810fbbd",
+    "evidence/native-client-demo/host-20260913-publication/20260913-ui3/receipt-publication.json": "7c61f0b4c3fa7b78eff72dd0e2fdc7bf3a0eff4fd6fd0e415ceacd95b6e03374",
+    "evidence/native-client-demo/host-20260913-publication/20260913-ui3/baseline-publication.json": "68a4f57fbec5a638df14f2326eb95955c1abbdc3056f1c1bf0cd44026219539d",
+    "evidence/native-client-demo/host-20260913-publication/command-20260913-ui2/receipt-publication.json": "f80df14356ccfa14ef827bc0f90b51efbb710e1efc5266c8fa9d8566ced69631",
+    "evidence/native-client-demo/host-20260913-publication/command-20260913-ui2/baseline-publication.json": "4a22dfd7df92dacb937470be578fccf70d7876d0a92f35f72abe0dfd8f53b28c",
+    "evidence/native-client-demo/host-20260913-publication/command-20260913-ui1/receipt-publication.json": "ce64e708e70946aec62cf8d05b87a6a6be18e8656bc14161a2b49758508d123a",
+    "evidence/native-client-demo/host-20260913-publication/command-20260913-ui1/baseline-publication.json": "4720421b09cca68df172203f8fc87c9c25e8d4e1eea447ce939532a4a0ab7587",
+    "evidence/native-client-demo/host-20260913-publication/auth-20260913-ui1/receipt-publication.json": "3006f81bad298586cd021a8e247e5c744d2ae2decde3e17b6a20ac9014330dde",
+    "evidence/native-client-demo/host-20260913-publication/auth-20260913-ui1/baseline-publication.json": "5c1e1bf241cb1626a451a6222e5170a5a5784eff9ee816ee1da47b4967ca8d26",
+    "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json": "3532f590c516fd5fd7aaa937e101fa216b2403e5cfb53ad8cb425f848a1caf83",
+    "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json": "8437471934f673b0aa312104b99bc84144c6c9293e616b2abb858f68438c25f0",
+    "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642",
+    "evidence/native-client-demo/20260913/authenticated.json": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1",
+    "evidence/native-client-demo/20260913/runtime-preflight.json": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499",
+    "evidence/native-client-demo/poster-review-v2.json": "0489c07e6174363188760877260778e6b47cf72c462d3589224574872885649a",
+    "evidence/native-client-demo/council-native-v1/council-decision-summary.json": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1",
+    "evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json": "9f757015d7bd9da89c7e694a315c0d73e7004e743f0404cd0cd487d88c742302",
+    "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json": "63a86c6d6e8be4e14efe5dbe31962eab4d921c104cf40a1d6bbef770c3a54436",
+    "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json": "f1a2e27eba4e90e473a659114773a29db9a4c8bdd4dae24f4a56b8d02bf42f46",
+    "evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json": "a30dd5e1cb270195a4a36392d647e37b3133dbc83913bf164f694eac9b39fcda",
+    "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json": "f05b5336c8d2578089664011b2717997fe3b6888386a8f48fc9ff70107dbddd3",
+    "evidence/native-client-demo/council-host-v1/council-decision-summary.json": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30",
+    "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11",
+    "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json": "caeca579dc6c8a82e8799d6274c121af21c46cdc4420935bd0ec31b14a6db01b",
+    "evidence/native-client-demo/host-20260913-review/host-evidence-review.json": "5e9817f6ca6720497319c5ca15894d9001e72b0a012dbe73ac6efbf380428dce",
+    "evidence/native-client-demo/host-20260913-review/final-integration-pending-review.json": "bf716645b24baa64ff50ad8ca0ef6cb0d529e18a7dca2578d24324c7ea728d4e",
+    "evidence/native-client-demo/host-20260913-publication/review.json": "99ab900f03d9d68e00b00c01a9111ea9f9372ff924d7fd344fb8de57aed0f60f",
+    "evidence/native-client-demo/council-host-v1/incorporation.json": "21bf6aebf1d5c0510518a0b752e9c708d41e784dd1ab3a00311bc39a49bd2718",
+    "evidence/native-client-demo/council-host-v1/post-council-no-ai-slop.json": "37bc52e51a89a071a7b9fb541c17e65d2a5433404c0c85fc417584b3e40c92b7",
+    "evidence/native-client-demo/council-host-v1/publication-provenance.json": "9ec09c089575adc722c43160abe13a1038440ba4d25937fbb95ac417d8cd1541",
+    "evidence/native-client-demo/council-host-v1/incorporation-baseline/manifest.json": "7ba9158076a8849712fcc4aae2e88ee47e82aa3a5499c703d810f11f8f8a240a",
+    "evidence/native-client-demo/presentation-host-final/browser/final-review.json": "97a6e8928b9ec4512a2f6a08cd811e8a67248dfde72083455c99f7795e61ecbc",
+    "evidence/native-client-demo/presentation-host-candidate/browser/playback-review.json": "6223a98783bf28caeba2cea18a0ebec397ff8bbfa440968af380ea6aa7b6cb14",
+    "evidence/admin-console/native-20260913/browser-host/review.json": "d41782b5bfac85b4ba657c54c1eee2d8eac2f32789c47cd7b3d9a0caa3216813",
+    "evidence/native-client-demo/archify-host-20260913/browser/final-review.json": "4d351ae3f0cedd44afc8e492f1d0f89ec92664b0f925156fab778f74d048361c",
+    "evidence/native-client-demo/archify-host-20260913/preview-query-compat.json": "892293ceb26c2e955951df0a9fb19f436a3482c82ba796971697953f3b094973",
+    "evidence/native-client-demo/accepted-before-host-20260913/manifest.json": "2aca7794855b15ac443025fb0b31e95d3c2cb3c6eadb5cec1ddbd89c149acf92",
+    "evidence/admin-console/accepted-before-host-20260913/preservation.json": "507e09dee1caaca58be019671fa778925de4a803f87c4385a3d899f4fbdb44de",
+    "evidence/native-client-demo/host-20260913-review/final-integration-review.json": "e916baa7ad8496ce3a72e12550e16ab68c0ba113d5a5e8070ec2d2552a2fa6e5"
+  },
+  "publication_boundary": "Full collector baseline and receipt originals remain byte-identical, ignored by Git and privately retained. Their hashes remain private-source references. Bounded baseline-publication.json and receipt-publication.json exports preserve original collection verdicts and describe scoped native events. The recovered SEL interval supplies bounded four-turn event evidence. Broad SEL pages and complete conversation snapshots are omitted from the exports. The unused host take has zero native events and no events.jsonl file. For resumed host takes, raw collector receipts and native-event companions remain under ignored .build paths. Published host exports retain their private-source hashes and point to reviewed scoped observations and exact public-fixture histories.",
+  "accepted_before_host": "evidence/native-client-demo/accepted-before-host-20260913/manifest.json",
+  "host_observations": [
+    {
+      "case": "Allowed workspace read",
+      "slot": "chat-4-1789335946",
+      "outcome": "One native fs_read returned the prepared public marker.",
+      "evidence": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+      "recording_scope": "Complete composed request through native tool output recorded and processed; no permission card.",
+      "limit": "No permission event appeared; this is not an approval-callback test."
+    },
+    {
+      "case": "Custom server command rule",
+      "slot": "chat-5-1789343728",
+      "outcome": "Exact marker printf request automatically blocked by the configured server rule.",
+      "evidence": "evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+      "recording_scope": "Assistant response-summary inspection only; request submission, expanded native tool output and policy reason are not visible.",
+      "limit": "Persisted native history and isolated-turn hook_deny establish the server decision; no direct trace join or full request-to-result footage."
+    },
+    {
+      "case": "Anonymous server authentication",
+      "slot": "chat-6-1789344355",
+      "outcome": "Separate once-only approvals to read and execute the exact public helper, followed by HTTP 403 in 3 ms without authorization/cookies or response-body access.",
+      "evidence": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "recording_scope": "Execution approval through assistant HTTP 403 summary only. Original request, separate helper-read approval and expanded tool Output are outside the excerpt.",
+      "limit": "Two calls and two approvals supported by native evidence. Gateway Token required SEL attribution uses bounded route/time correlation, not a direct tool trace. Helper native_enforcement_verified: false and generic automatic_acceptance: false remain unchanged.",
+      "independent_review": "evidence/native-client-demo/host-20260913-review/auth-review.json"
+    }
+  ],
+  "model_only_refusals": {
+    "cases": [
+      "Sensitive-path public canary read",
+      "Anonymous helper request"
+    ],
+    "native_tool_attempts": 0,
+    "host_enforcement_established": false,
+    "private_capture": ".build/native-host-20260913-ui3",
+    "published_observations": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json"
+  },
+  "prompt_amendment": {
+    "applied_at": "2026-09-14T00:05:39.805761+00:00",
+    "agent_sha256": "df1389d82c7335953a9168a9f811bc3358a5ccc2f79c61dd23768edfbbe4dacb",
+    "scope": "Only prompt changed; each exact allowlisted fixture request is a separate case. Tools, MCP and guards unchanged.",
+    "receipt": "evidence/native-client-demo/host-20260913-resumed/prompt-amendment/apply-retry.json",
+    "review": "evidence/native-client-demo/host-20260913-resumed/prompt-amendment/review.json",
+    "helper_commands": [
+      "/usr/bin/python3 /opt/kirocrew-demo/host-controls/anonymous-http.py",
+      "/usr/bin/python3 /opt/kirocrew-demo/host-controls/imds-tcp.py"
+    ]
+  },
+  "historical_unused_capture": {
+    "status": "finished_without_prompt",
+    "events": 0,
+    "session_messages_before": 0,
+    "session_messages_after": 0,
+    "receipt": "evidence/native-client-demo/host-20260913-ui2/capture-status.json",
+    "resume": "Superseded by the resumed host observations; keep this zero-event snapshot unchanged."
+  },
+  "documentation_sha256": {
+    "README.md": "10967557d615f2d43a53edbfe204471e4db4627da9b99b79b8411057fb4c80d9",
+    "DEMO-RECORDING-PLAN.md": "2f6dd4e601d7f0bf2d063aaeda6f18ffc9ac8caa3a070ba660a771d7530bab00",
+    "docs/NATIVE-CLIENT-DEMO.md": "92c76b60e2d306156e13e6a84146b7f80c3abab61eda1bf4769bc6a5db036b63",
+    "docs/HOST-CONTROL-SCENARIOS.md": "6d8e0210da6e135ece4d368d3d4891627563b6c4af119cd422e1f94d1d67c9a1"
+  },
+  "documentation_review": {
+    "verdict": "ship",
+    "reviewer": "/root/native_docs_status/native_docs_review",
+    "scope": "Current four Markdown guides, native evidence/capture limits, exact helper inputs and publication references, including the unanswered IMDS approval timeout and unused fresh slot. No UI or live runtime operation; build/preview validation belongs to root."
+  },
+  "artifact_bindings": {
+    "output/kirocrew-native-controls-build.json": {
+      "path": "output/kirocrew-native-controls-build.json",
+      "sha256": "f01a3d2539a64ec3ca42e3abd72257c2308735650653e9ba8b8265a7f8761248",
+      "bytes": 34634
+    },
+    "output/kirocrew-native-controls.html": {
+      "path": "output/kirocrew-native-controls.html",
+      "sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c",
+      "bytes": 639250
+    },
+    "output/kirocrew-native-controls-notes.md": {
+      "path": "output/kirocrew-native-controls-notes.md",
+      "sha256": "415e0f99e8add71613d140907955f2be5a29f7813f6f419fa97fd35bd15df164",
+      "bytes": 25826
+    },
+    "output/kirocrew-native-controls-manifest.json": {
+      "path": "output/kirocrew-native-controls-manifest.json",
+      "sha256": "7262516697502200db5122b8ea968c7f9230f92f4e43a8d900b69854deb39dda",
+      "bytes": 35002
+    },
+    "evidence/admin-console/native-20260913/tour-build.json": {
+      "path": "evidence/admin-console/native-20260913/tour-build.json",
+      "sha256": "bb458337d82be7c57700431e8cf7282ec462fbef8b45a8ea1fe7bff9f3cc9f5f",
+      "bytes": 15583
+    },
+    "output/kirocrew-admin-tour.html": {
+      "path": "output/kirocrew-admin-tour.html",
+      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87",
+      "bytes": 2516369
+    },
+    "output/kirocrew-admin-tour.md": {
+      "path": "output/kirocrew-admin-tour.md",
+      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108",
+      "bytes": 18384
+    },
+    "evidence/admin-console/native-20260913/browser-host/review.json": {
+      "path": "evidence/admin-console/native-20260913/browser-host/review.json",
+      "sha256": "d41782b5bfac85b4ba657c54c1eee2d8eac2f32789c47cd7b3d9a0caa3216813",
+      "bytes": 2493
+    },
+    "output/kirocrew-native-admin-findings.md": {
+      "path": "output/kirocrew-native-admin-findings.md",
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39",
+      "bytes": 9214
+    },
+    "evidence/native-client-demo/presentation-host-final/browser/final-review.json": {
+      "path": "evidence/native-client-demo/presentation-host-final/browser/final-review.json",
+      "sha256": "97a6e8928b9ec4512a2f6a08cd811e8a67248dfde72083455c99f7795e61ecbc",
+      "bytes": 5458
+    },
+    "evidence/native-client-demo/host-20260913-review/final-integration-review.json": {
+      "path": "evidence/native-client-demo/host-20260913-review/final-integration-review.json",
+      "sha256": "e916baa7ad8496ce3a72e12550e16ab68c0ba113d5a5e8070ec2d2552a2fa6e5",
+      "bytes": 16305
+    },
+    "kirocrew-native-controls-diagram.html": {
+      "path": "kirocrew-native-controls-diagram.html",
+      "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb",
+      "bytes": 810648
+    },
+    "kirocrew-native-controls-diagram.architecture.json": {
+      "path": "kirocrew-native-controls-diagram.architecture.json",
+      "sha256": "a7504c4668e148c630bc6889047e75b8b73db2fb897c41ca12d83d529abd4aa0",
+      "bytes": 4888
+    },
+    "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json": {
+      "path": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "sha256": "caeca579dc6c8a82e8799d6274c121af21c46cdc4420935bd0ec31b14a6db01b",
+      "bytes": 20791
+    },
+    "evidence/native-client-demo/archify-host-20260913/source-bindings.json": {
+      "path": "evidence/native-client-demo/archify-host-20260913/source-bindings.json",
+      "sha256": "dc678c9c395b8f4868bf76f4ced3186a8d35934a33d4e252746c337214f65a33",
+      "bytes": 3148
+    },
+    "evidence/native-client-demo/archify-host-20260913/browser/final-review.json": {
+      "path": "evidence/native-client-demo/archify-host-20260913/browser/final-review.json",
+      "sha256": "4d351ae3f0cedd44afc8e492f1d0f89ec92664b0f925156fab778f74d048361c",
+      "bytes": 1867
+    },
+    "evidence/native-client-demo/council-host-v1/incorporation.json": {
+      "path": "evidence/native-client-demo/council-host-v1/incorporation.json",
+      "sha256": "21bf6aebf1d5c0510518a0b752e9c708d41e784dd1ab3a00311bc39a49bd2718",
+      "bytes": 5673
+    },
+    "evidence/native-client-demo/council-host-v1/post-council-no-ai-slop.json": {
+      "path": "evidence/native-client-demo/council-host-v1/post-council-no-ai-slop.json",
+      "sha256": "37bc52e51a89a071a7b9fb541c17e65d2a5433404c0c85fc417584b3e40c92b7",
+      "bytes": 3398
+    },
+    "evidence/native-client-demo/council-host-v1/council-decision-summary.json": {
+      "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "sha256": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30",
+      "bytes": 6868
+    },
+    "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json": {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11",
+      "bytes": 12729
+    }
+  },
+  "artifact_binding_checks": {
+    "static_deck_files_verified": 89,
+    "static_deck_source_hashes_match": true,
+    "slide_count": 14,
+    "recording_count": 8,
+    "single_endpoint_control_box_count": 1,
+    "tour_stop_count": 9,
+    "tour_screenshot_count": 19,
+    "tour_browser_review_bound_to_exact_html": true,
+    "native_deck_browser_review": "passed_for_exact_final_html_and_build",
+    "build_input_hashes_verified": 6,
+    "supporting_receipt_hashes_verified": 25,
+    "native_deck_integration_review": "ship_reviewed_host_edition_with_three_unfinished_cases"
+  },
+  "prior_imds_approval": {
+    "slot": "chat-7-1789344506",
+    "tool_call_id": "toolu_bdrk_017SorLLgNg6bszLDro7ypDn",
+    "request_id": "ee23b765-4f4e-4fbf-b47e-10b933c0f69a",
+    "command": "/usr/bin/python3 /opt/kirocrew-demo/host-controls/imds-tcp.py",
+    "status": "execution_approval_expired_unanswered",
+    "next_action": "For another bounded take, verify current native session screenshots, then start a fresh observer and raw recording before submitting the exact public-fixture prompt.",
+    "passive_observer": {
+      "finished": "2026-09-14T00:12:49.380712+00:00",
+      "collection_complete": false,
+      "stop_reason": "time_limit",
+      "native_slot_running_at_last_snapshot": true,
+      "receipt": "evidence/native-client-demo/host-20260913-publication/imds-20260913-ui1/receipt-publication.json"
+    },
+    "historical_pending_evidence": "evidence/native-client-demo/host-20260913-ui3/imds-history-pending.json",
+    "evidence": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+    "expired_at": "2026-09-14T00:19:23.293315+00:00",
+    "native_helper_execution_observed": false,
+    "native_imds_firewall_enforcement_established": false,
+    "limit": "The timeout card supplies the unanswered approval cause. The joined SEL says rejected without encoding approval_timeout. No human rejection or automatic policy-hook denial is established.",
+    "independent_review": "evidence/native-client-demo/host-20260913-review/final-integration-pending-review.json"
+  },
+  "unused_fresh_native_slot": {
+    "slot": "chat-8-1789347081",
+    "status": "visual_readiness_failed_no_prompt_submitted",
+    "reason": "Accessibility data showed the fresh slot, but repeated actual window screenshots remained stale.",
+    "native_prompt_submitted": false,
+    "native_tool_execution_observed": false,
+    "captured_events": 0,
+    "collection_complete": true,
+    "evidence": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+    "limit": "Complete passive idle collection adds no enforcement outcome or clip.",
+    "independent_review": "evidence/native-client-demo/host-20260913-review/final-integration-pending-review.json"
+  },
+  "browser_validation": {
+    "receipt": "evidence/native-client-demo/presentation-host-final/browser/final-review.json",
+    "exact_final_html_reviewed": true,
+    "fresh_slide_captures": 14,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "prior_clip_plays_carried_forward": 8,
+    "prior_chapter_seeks_carried_forward": 25,
+    "carried_forward_basis": "Exact unchanged eight media/cue records and both inline scripts; original playback receipt retained.",
+    "final_interactions": "Authentication clip play and decoded seek, outgoing-slide video pause, and admin image expansion passed.",
+    "unverified_scope": [
+      "Direct-file playback",
+      "Pagehide/visibility pausing",
+      "Browser print/PDF export",
+      "Mobile layout"
+    ],
+    "limit": "Presentation checks do not add native enforcement outcomes."
+  },
+  "model_council": {
+    "original_candidate_html_sha256": "cc139d5d1d47dbc4ed79cb52ade4c972d14427071d5aff866d33ad9cc9070335",
+    "response_models": [
+      "grok-4.6",
+      "claude-opus-5"
+    ],
+    "requested_effort": "xhigh",
+    "effort_verification": "Explicit launch configuration; provider wire effort was not independently observed.",
+    "original_verdicts_preserved": [
+      "CHANGES REQUIRED",
+      "CHANGES REQUIRED"
+    ],
+    "incorporated_decisions": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8"
+    ],
+    "incorporation_receipt": "evidence/native-client-demo/council-host-v1/incorporation.json",
+    "post_incorporation_editorial_receipt": "evidence/native-client-demo/council-host-v1/post-council-no-ai-slop.json",
+    "external_models_reviewed_final_derivative": false,
+    "final_derivative_review": "evidence/native-client-demo/host-20260913-review/final-integration-review.json"
+  },
+  "diagram": {
+    "path": "kirocrew-native-controls-diagram.html",
+    "delivery_receipt": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+    "browser_review": "evidence/native-client-demo/archify-host-20260913/browser/final-review.json",
+    "single_endpoint_control_box": true,
+    "browser_state": "passed_for_exact_html_at_1280x720",
+    "limit": "Export formats, mobile rendering and the full desktop viewport matrix were not tested in this browser pass."
+  },
+  "independent_integration_review": {
+    "receipt": "evidence/native-client-demo/host-20260913-review/final-integration-review.json",
+    "verdict": "ship_reviewed_host_edition_with_three_unfinished_cases",
+    "material_findings": [],
+    "scope": "Exact final deck, admin tour, diagram, council incorporation, source/evidence bindings and preserved originals. Native execution remains limited to separately supported outcomes; three host cases remain unfinished.",
+    "publication_scope": "Final Git-index publication scan and remote publication verification are separate."
+  }
+}

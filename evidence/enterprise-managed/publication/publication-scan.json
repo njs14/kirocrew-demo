@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "scannedAt": "2026-09-14T03:32:51.026345+00:00",
+  "edition": "enterprise-managed",
+  "scope": "Exact staged Git blob bytes, including readable archive members; new publication receipt excluded from its own binding.",
+  "headBeforePublication": "baca619ca4e279ad62497bbe1601a7027cd73e64",
+  "treeBeforeReceipt": "2b283fdcc8922f2927e7077a99f01390f65f59db",
+  "treeAfterScan": "2b283fdcc8922f2927e7077a99f01390f65f59db",
+  "treeStable": true,
+  "receiptExcluded": "evidence/enterprise-managed/publication/publication-scan.json",
+  "fileCount": 2000,
+  "totalBytes": 195551730,
+  "indexManifestSha256": "8c2dc08f376a5b42087588a7b1933ed27ecf774c2938e88f542af5243f07dbdd",
+  "largestFiles": [
+    {
+      "path": "evidence/native-client-demo/council-native-v1/candidate/dispatch/claude-raw.jsonl",
+      "bytes": 5972802
+    },
+    {
+      "path": "evidence/council/arm-observability-v1/candidate/dispatch/claude-raw.jsonl",
+      "bytes": 4249818
+    },
+    {
+      "path": "output/kirocrew-admin-tour.html",
+      "bytes": 3679148
+    },
+    {
+      "path": "evidence/native-client-demo/council-native-v1/candidate/dispatch/grok-raw.jsonl",
+      "bytes": 3064488
+    },
+    {
+      "path": "evidence/council/system-design-v1/candidate/dispatch/claude-raw.jsonl",
+      "bytes": 2680957
+    },
+    {
+      "path": "evidence/admin-console/accepted-before-managed-policy/output/kirocrew-admin-tour.html",
+      "bytes": 2516369
+    },
+    {
+      "path": "evidence/council/candidate-v3/claude-auth-fix/claude-raw.jsonl",
+      "bytes": 2497899
+    },
+    {
+      "path": "evidence/accepted/kirocrew-aws-remote.html",
+      "bytes": 2230459
+    },
+    {
+      "path": "kirocrew-aws-remote.html",
+      "bytes": 2228358
+    },
+    {
+      "path": "evidence/council/arm-observability-v1/candidate/dispatch/grok-raw.jsonl",
+      "bytes": 2211507
+    }
+  ],
+  "filesAtLeast50MB": [],
+  "textFilesOrArchiveMembersScanned": 2114,
+  "textBytesScanned": 96776778,
+  "nonTextFilesOrMembers": 691,
+  "archiveCount": 13,
+  "archiveMembers": 805,
+  "patternCategories": [
+    "AWS_access_key",
+    "GitHub_token",
+    "Private_key",
+    "JWT",
+    "Credential_URL",
+    "Long_bearer_literal",
+    "Secret_literal"
+  ],
+  "patternHits": [
+    {
+      "category": "Credential_URL",
+      "path": "archify-source/archify/test/repository-evidence.test.mjs",
+      "count": 2,
+      "lines": [
+        216,
+        238
+      ],
+      "disposition": "Declared synthetic token URLs in tests that assert credential redaction; same exact fixture locations as the earlier publication scan."
+    },
+    {
+      "category": "AWS_access_key",
+      "path": "scripts/run-live-demo.py",
+      "count": 2,
+      "lines": [
+        162,
+        164
+      ],
+      "disposition": "Declared fake credential fixture and corresponding redaction assertion; same exact fixture locations as the earlier publication scan."
+    }
+  ],
+  "excludedPathViolations": [],
+  "smallBinaryFiles": [],
+  "symlinkCount": 0,
+  "gitlinkCount": 0,
+  "unmergedEntries": 0,
+  "stagedGitignoreSha256": "6ff68517499eaab7e3506786c8ff65dac02de47e91687c779c173f090e0e8b3f",
+  "whitespaceCheckExitCode": 2,
+  "whitespaceFindings": [
+    {
+      "path": "evidence/enterprise-managed/20260913/archify/kirocrew-managed-controls-diagram.svg",
+      "line": 134,
+      "category": "trailing whitespace.",
+      "disposition": "Preserved frozen artifact bytes and existing digests; declared by publication owner. Does not affect executable source or final notes."
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/archify/kirocrew-managed-controls-diagram.svg",
+      "line": 4942,
+      "category": "trailing whitespace.",
+      "disposition": "Preserved frozen artifact bytes and existing digests; declared by publication owner. Does not affect executable source or final notes."
+    },
+    {
+      "path": "evidence/enterprise-managed/accepted-before-managed/kirocrew-native-controls-notes.md",
+      "line": 13,
+      "category": "trailing whitespace.",
+      "disposition": "Preserved frozen artifact bytes and existing digests; declared by publication owner. Does not affect executable source or final notes."
+    },
+    {
+      "path": "evidence/enterprise-managed/council/incorporation-before/kirocrew-native-controls-notes.md",
+      "line": 13,
+      "category": "trailing whitespace.",
+      "disposition": "Preserved frozen artifact bytes and existing digests; declared by publication owner. Does not affect executable source or final notes."
+    }
+  ],
+  "verdict": "pass-with-declared-fixture-and-frozen-whitespace-exceptions",
+  "confirmedLiveCredentialFindings": 0,
+  "indexManifestFormat": {
+    "entryOrder": "Unmodified git ls-files --stage -z output order, excluding only receiptExcluded.",
+    "fields": {
+      "path": "UTF-8 string after TAB",
+      "mode": "six-character Git mode string",
+      "gitBlob": "Git object ID string",
+      "stage": "integer",
+      "bytes": "integer staged blob length",
+      "sha256": "lowercase SHA-256 of exact staged blob bytes"
+    },
+    "serialization": "json.dumps(entries, sort_keys=True, separators=(comma, colon)), Python default ensure_ascii=True, UTF-8 bytes, no trailing newline."
+  },
+  "whitespaceScope": "git diff --cached --check returned four trailing-whitespace findings in three frozen artifacts. These are explicit exceptions, not a clean whitespace verdict.",
+  "excludedCategoriesChecked": [
+    "GitHub Actions workflows",
+    "private-key and credential filenames",
+    "session and cookie state filenames",
+    "build caches and dependencies",
+    "raw recordings",
+    "disposable synthetic crew-home and workspace state",
+    "mutable latest-run pointer",
+    "local configuration and environment files",
+    "generated test XML",
+    "managed-edition council prepared inputs and raw provider streams"
+  ],
+  "archiveHandling": "ZIP-signature blobs inspected from staged memory without extracting files; thirteen PowerPoint OOXML containers and 805 members. No archive member exceeded the 25 MB scan limit.",
+  "historicalEvidence": "Previously tracked historical council raw text remains unchanged in the index and was included in text scanning. Managed-edition prepared inputs and raw streams are excluded.",
+  "limitations": [
+    "Pattern and file-structure checks do not prove the absence of every possible secret.",
+    "Raster images and video pixels are not OCR scanned in this exact-index pass; browser and visual review remain separately scoped.",
+    "Historical AWS resource identifiers and local path metadata remain in reviewed evidence; they are not authentication material.",
+    "Staging this new receipt changes the tree. The binding covers every other indexed path and excludes only this receipt."
+  ]
+}

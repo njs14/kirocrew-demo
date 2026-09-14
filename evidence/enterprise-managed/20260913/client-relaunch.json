@@ -1,0 +1,20 @@
+{
+  "kind": "native_client_relaunch",
+  "observed_at": "2026-09-14T01:50:44.740041+00:00",
+  "method": "Native app menu Quit, verified process absence, reopened through computer-use app control, observed Gateway connected at port5599",
+  "quit_observed_process_count": 0,
+  "quit_local_gateway_listener": false,
+  "quit_remote_tunnel_listener": true,
+  "running_native_process_count": 1,
+  "local_gateway_listener": false,
+  "remote_tunnel_listener": true,
+  "configured_runLocalGateway": false,
+  "ui_slot": "chat-9-1789350180",
+  "ui_agent": "enforcement-demo",
+  "ui_approval_mode": "Normal",
+  "policy_at_observation": "not yet installed",
+  "native_tool_executed": false,
+  "screenshot": "evidence/enterprise-managed/20260913/screenshots/native-after-relaunch.jpg",
+  "screenshot_sha256": "7cb3f1331e662f33143c0118d5b3a50f0a2c099e36b62cfa06546b32d8ae9bdf",
+  "secrets_saved": false
+}

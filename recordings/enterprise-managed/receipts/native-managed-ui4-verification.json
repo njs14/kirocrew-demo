@@ -1,0 +1,151 @@
+{
+  "collection_boundary": {
+    "captured_events": 12,
+    "collection_complete": true,
+    "final_slot_idle": true,
+    "fresh_initial_tool_call_count": 1,
+    "mcp_audit_collection_succeeded": true,
+    "mcp_audit_event_count": 0,
+    "mcp_journal_end_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=10028;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=a1bd8f319;t=65b67d298eee2;x=f168a3ff8cc189d4",
+    "mcp_journal_start_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=10028;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=a1bd8f319;t=65b67d298eee2;x=f168a3ff8cc189d4",
+    "mcp_service_identity": {
+      "ActiveState": "active",
+      "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+      "MainPID": "2833",
+      "NRestarts": "0",
+      "SubState": "running"
+    },
+    "mcp_service_stable": true,
+    "sel_anchor": {
+      "anchor_event_id": "7ed1b2108d294ab2",
+      "anchor_sha256": "e8766c1cef829f645897139bfdf6ca28d724d21ea9fa9c045d1946807e4f3d08",
+      "baseline_count": 1000
+    },
+    "sel_integrity": {
+      "detail": "",
+      "integrity": "ok",
+      "tampered": 0,
+      "total": 143549,
+      "valid": 143549
+    },
+    "sel_window": {
+      "anchor_event_id": "7ed1b2108d294ab2",
+      "anchor_index": 371,
+      "complete": true,
+      "event_count": 371,
+      "method": "exact_newest_baseline_anchor_retained"
+    }
+  },
+  "kind": "native_managed_policy_denial_verification",
+  "limitations": [
+    "This receipt verifies native tool and server-policy evidence; independent media review owns the recording, cut boundaries and visible controls.",
+    "The absence of service arrival is bounded by this completed journal interval and stable service identity.",
+    "No fresh allowed read, MCP service-denied call or IAM-denied call occurred in this take.",
+    "A policy-layer denial is not proof of enterprise SSO, Kiro CLI enterprise MCP registry enrollment, client Seatbelt enforcement, or root-resistant administration.",
+    "The collector legacy blocked-tool boolean does not recognize governance wording; exact native history and policy-layer SEL were checked directly."
+  ],
+  "managed_denial": {
+    "all_service_audit_arrivals_during_interval": 0,
+    "correlation": "The native tool ID joins the unique request trace to the explicit blocked row. SEL joins by isolated slot, exact tool, policy reason and timestamp, with adjacent prev_hash linkage to the denied request. SEL has no direct native tool-call or trace ID.",
+    "generic_cli_result": "User denied tool execution",
+    "generic_result_attribution": "The generic CLI text says user denied; the explicit native blocked row and policy-layer SEL event identify automatic governance enforcement.",
+    "matching_trace_service_arrivals": 0,
+    "native_display": "\ud83d\udeab Running: @aws-enforcement/crew_denied \u2014 Blocked by governance policy: policy denies: '@aws-enforcement/crew_denied' matches deny pattern '@aws-enforcement/crew_denied'",
+    "native_history_row_sha256": "b56d01a62999168a4e93617ab1d1af692ee0e9f288e36ffe13a5fc6c0e6f39eb",
+    "native_initial_tool_event_sha256": "83ae3dc30da479c2b0a3e76531bc20651ec091c6e35e069bc9713674aa582f14",
+    "sel_denial_request_id": "d29fc27e-ae7f-4491-b174-1e934391322d",
+    "sel_denied_tool_request": {
+      "agent": "enforcement-demo",
+      "caller_identity": "dashboard:chat-8-1789351177",
+      "entry_hash": "a38203a806dd20850ae5831dce0bf83556815c417606dd4d85b9f010a6c42fac",
+      "error": "hook_deny",
+      "event_id": "63bd9bc3d8de419b",
+      "event_type": "tool_invocation",
+      "metadata": {},
+      "operation": "Running: @aws-enforcement/crew_denied",
+      "outcome": "denied",
+      "prev_hash": "e97b495d6bd206c47af093573405aeed83f569018abfac5c832e109ea7779eb2",
+      "request_id": "d29fc27e-ae7f-4491-b174-1e934391322d",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T02:06:44.847260+00:00"
+    },
+    "sel_governance_decision": {
+      "agent": "enforcement-demo",
+      "caller_identity": "dashboard:chat-8-1789351177",
+      "entry_hash": "e97b495d6bd206c47af093573405aeed83f569018abfac5c832e109ea7779eb2",
+      "error": "",
+      "event_id": "23d3b26dc7ac49a0",
+      "event_type": "governance_decision",
+      "metadata": {
+        "layer": "policy",
+        "reason": "policy denies: '@aws-enforcement/crew_denied' matches deny pattern '@aws-enforcement/crew_denied'",
+        "rule": "rule1-deny",
+        "scope": ""
+      },
+      "operation": "@aws-enforcement/crew_denied",
+      "outcome": "denied",
+      "prev_hash": "5832b6193ece0fb4be133ae923d6f232aaebf901eeeaaff63bbade27713c17bd",
+      "request_id": "",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T02:06:44.847017+00:00"
+    },
+    "tool": "@aws-enforcement/crew_denied",
+    "tool_call_id": "toolu_bdrk_01JEubMiv3zYyjTMUrrQgdKM",
+    "trace_id": "managed-20260914-ui4-crew",
+    "user_permission_prompt_in_collected_history": false
+  },
+  "managed_floor": {
+    "exact_mutable_duplicate_removed_before_take": true,
+    "gateway_pid_observed": 133867,
+    "native_policy_layer_decision_observed_in_this_take": true,
+    "policy_sha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87",
+    "prior_verified_gateway_start": "42927304138"
+  },
+  "native_enforcement_verified": true,
+  "observed_interval": {
+    "finish_requested_at": "2026-09-14T02:07:32.052118+00:00",
+    "finished": "2026-09-14T02:07:39.555079+00:00",
+    "started": "2026-09-14T02:05:51.755052+00:00",
+    "stream_finished": "2026-09-14T02:07:39.552386+00:00"
+  },
+  "run_id": "managed-20260914-ui4",
+  "sandbox": {
+    "exact_tool_sandbox_enforcement_verified": false,
+    "in_this_observer": "not_collected"
+  },
+  "schema_version": 1,
+  "scope": "One fresh native crew_denied call in the existing original Kiro CLI conversation; the permitted read belongs to the earlier ui3 take.",
+  "slot": "chat-8-1789351177",
+  "sources": {
+    "mcp_verify": {
+      "bytes": 2275,
+      "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4"
+    },
+    "prior_managed_floor_and_allowed_read": {
+      "bytes": 13380,
+      "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a"
+    },
+    "private_baseline": {
+      "bytes": 690730,
+      "path": ".build/enterprise-managed-native-ui4/baseline.json",
+      "sha256": "66e5a2d3f8296a7d09f8d6ab4ff30fcd152058ab724a231925ae34c2fc5c9995"
+    },
+    "private_observer_events": {
+      "bytes": 6052,
+      "path": ".build/enterprise-managed-native-ui4/events.jsonl",
+      "sha256": "9a5b813c129f44f43fb9d5ade7584ba816aab10497115e280bc979262cd53c86"
+    },
+    "private_observer_receipt": {
+      "bytes": 1637889,
+      "path": ".build/enterprise-managed-native-ui4/receipt.json",
+      "sha256": "5b06f38d0330ef36a8891464b5728c1916ac7204ca180ee2b07db8164ce9dd11"
+    }
+  },
+  "verdict": "PASS_FOR_RECORDED_NATIVE_MANAGED_MCP_DENY",
+  "video": {
+    "acceptance": "separate_media_receipt",
+    "scope": "Only this fresh denied call may be bound to the ui4 clip. The earlier permitted read is not claimed as filmed here."
+  }
+}

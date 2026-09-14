@@ -1,23 +1,27 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-09-14T01:05:10.886146+00:00",
+  "builtAt": "2026-09-14T02:58:58.636830+00:00",
   "edition": "output/kirocrew-native-controls.html",
-  "editionSha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c",
+  "editionSha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
   "notes": "output/kirocrew-native-controls-notes.md",
-  "notesSha256": "415e0f99e8add71613d140907955f2be5a29f7813f6f419fa97fd35bd15df164",
+  "notesSha256": "0dda0d02f3b9bd13f51a995ef88b0704d23881712a95da37091255160ee3c111",
   "publicManifest": "output/kirocrew-native-controls-manifest.json",
-  "slideCount": 14,
-  "sceneCount": 8,
+  "slideCount": 16,
+  "sceneCount": 9,
   "synthetic": false,
   "singleEndpointControlBoxCount": 1,
   "processedManifests": {
     "output/native-client-clips-20260913/manifest.json": "2683eef05ff8d2a347e8c2494ca15ffe8eb991effeb48fce12b98055cdf3e59e",
     "output/native-memory-clip-20260913/manifest.json": "3565112184e648433a295349127b60181e80cd6517f67a46604edf66477b127d",
     "output/native-host-clips-20260913/manifest.json": "0539ebc7f303cefe42d4fa554aa986d9ff431e4a3448d9dc10447cf9064b2e52",
-    "docs/HOST-CONTROL-SCENARIOS.md": "6d8e0210da6e135ece4d368d3d4891627563b6c4af119cd422e1f94d1d67c9a1",
-    "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json": "a109b7b10371b8bfab24dcca4588dcf2f4a248dcb13eea29346a41f5363b67ec",
-    "kirocrew-native-controls-diagram.html": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb",
-    "evidence/admin-console/native-20260913/tour-build.json": "bb458337d82be7c57700431e8cf7282ec462fbef8b45a8ea1fe7bff9f3cc9f5f"
+    "output/native-managed-clip-20260914/manifest.json": "f2a0ca0d1e54e021ebe4bd0cb9c2e06119fade72f631901ec2c483bacd8b5afb",
+    "docs/HOST-CONTROL-SCENARIOS.md": "c5ae04a8b7bdea3f6bb35b58e7c2caf5cba13aa08a29740a06b4c597120cff73",
+    "evidence/enterprise-managed/20260913/archify/asset-dependencies.json": "80c071fdbccee7a21925514a4b566a981b99fce981eb78e4e1a4e611bbf73adf",
+    "kirocrew-managed-controls-diagram.html": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763",
+    "evidence/admin-console/native-20260913/tour-build.json": "acbcec28f25e0eaaae626de4d01f3d2559e59f2a164588e1606a5658a3d7e65a",
+    ".agents/skills/kirocrew-demo/SKILL.md": "df041ff167652ad63484a27138ac4f2aee1c665e00a28cbd868b0c9640abb166",
+    "docs/MANAGED-DEMO.md": "c4a1c0af079b08667071b4bf32567ae6bb9e8aea873e07033818bdc296341de9",
+    "docs/LIVE-SETUP.md": "3dd408177b5a7030d2c2c242e696bd3f7f29740ec1f1970856372f481a5fd09d"
   },
   "supportingReceipts": [
     {
@@ -144,6 +148,61 @@
       "path": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
       "url": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
       "sha256": "8437471934f673b0aa312104b99bc84144c6c9293e616b2abb858f68438c25f0"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/policy-plan.json",
+      "url": "evidence/enterprise-managed/20260913/policy-plan.json",
+      "sha256": "c1c5d3d9703a6d2bf18583bb54111a53332dd98bdce3868dd2bf9633498dd9e5"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+      "url": "evidence/enterprise-managed/20260913/managed-presentation.json",
+      "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/archify/delivery-receipt.json",
+      "url": "evidence/enterprise-managed/20260913/archify/delivery-receipt.json",
+      "sha256": "6afaef5379cb72d29f9ca06baff7dd1cddc5c68974341f548a649d81d0af9172"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "url": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "url": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "url": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "url": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+      "url": "evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+      "sha256": "5f325f568203ec997c7f94a0d3c2c01e358906bba83d9a95e1d80b692a82e0ce"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "url": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/client-relaunch.json",
+      "url": "evidence/enterprise-managed/20260913/client-relaunch.json",
+      "sha256": "5520f2939ab2dba5227e5daf90d535fa44eccd7fd5820adc3ce5b8182a187ea0"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/media-review.json",
+      "url": "evidence/enterprise-managed/20260913/media-review.json",
+      "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd"
     }
   ],
   "serveFiles": {
@@ -266,6 +325,26 @@
       "path": "output/native-host-clips-20260913/native-host-anonymous-http403/contact-sheet.jpg",
       "bytes": 182119,
       "sha256": "5476b424b3838bbd287a4c5fbb81c8619d87960269b008e67d28c6ebcdd7bf98"
+    },
+    "/native-managed-clip-20260914/native-managed-mcp-denial/native-managed-mcp-denial.mp4": {
+      "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/native-managed-mcp-denial.mp4",
+      "bytes": 2007186,
+      "sha256": "d3a8a2197d69bc42667434cfef0a0ea789cd3d4bde0aad74bdd4b9c84f4cabc1"
+    },
+    "/native-managed-clip-20260914/native-managed-mcp-denial/poster.jpg": {
+      "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/poster.jpg",
+      "bytes": 176636,
+      "sha256": "9d3f592d1362d4c3c77e6688139fefe48ce85b33d203660ecbfa8244e8c5ced1"
+    },
+    "/native-managed-clip-20260914/native-managed-mcp-denial/contact-sheet.jpg": {
+      "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/contact-sheet.jpg",
+      "bytes": 126675,
+      "sha256": "b525f61dacb0a9e9d5b60cce1d1fd1d117bf206d8ab14d2786e6724da826f1dd"
+    },
+    "/native-managed-clip-20260914/receipts/native-managed-ui4-verification.json": {
+      "path": "output/native-managed-clip-20260914/receipts/native-managed-ui4-verification.json",
+      "bytes": 7208,
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
     },
     "/evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": {
       "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
@@ -392,35 +471,120 @@
       "bytes": 1539,
       "sha256": "8437471934f673b0aa312104b99bc84144c6c9293e616b2abb858f68438c25f0"
     },
+    "/evidence/enterprise-managed/20260913/policy-plan.json": {
+      "path": "evidence/enterprise-managed/20260913/policy-plan.json",
+      "bytes": 7460,
+      "sha256": "c1c5d3d9703a6d2bf18583bb54111a53332dd98bdce3868dd2bf9633498dd9e5"
+    },
+    "/evidence/enterprise-managed/20260913/managed-presentation.json": {
+      "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+      "bytes": 8119,
+      "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452"
+    },
+    "/evidence/enterprise-managed/20260913/archify/delivery-receipt.json": {
+      "path": "evidence/enterprise-managed/20260913/archify/delivery-receipt.json",
+      "bytes": 6569,
+      "sha256": "6afaef5379cb72d29f9ca06baff7dd1cddc5c68974341f548a649d81d0af9172"
+    },
+    "/evidence/enterprise-managed/20260913/policy-verify.json": {
+      "path": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "bytes": 625,
+      "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
+    },
+    "/evidence/enterprise-managed/20260913/mcp-verify.json": {
+      "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "bytes": 2275,
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4"
+    },
+    "/evidence/enterprise-managed/20260913/native-managed-verification.json": {
+      "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "bytes": 13380,
+      "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a"
+    },
+    "/evidence/enterprise-managed/20260913/native-managed-ui4-verification.json": {
+      "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "bytes": 7208,
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+    },
+    "/evidence/enterprise-managed/20260913/native-managed-artifact-review.json": {
+      "path": "evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+      "bytes": 2854,
+      "sha256": "5f325f568203ec997c7f94a0d3c2c01e358906bba83d9a95e1d80b692a82e0ce"
+    },
+    "/evidence/enterprise-managed/20260913/host-runtime-check.json": {
+      "path": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "bytes": 5252,
+      "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7"
+    },
+    "/evidence/enterprise-managed/20260913/client-relaunch.json": {
+      "path": "evidence/enterprise-managed/20260913/client-relaunch.json",
+      "bytes": 889,
+      "sha256": "5520f2939ab2dba5227e5daf90d535fa44eccd7fd5820adc3ce5b8182a187ea0"
+    },
+    "/evidence/enterprise-managed/20260913/media-review.json": {
+      "path": "evidence/enterprise-managed/20260913/media-review.json",
+      "bytes": 8335,
+      "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/managed-governance.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/managed-governance.jpg",
+      "bytes": 124344,
+      "sha256": "54902bb87b5a77658200ca7a1cda676e7f3eb51d16c3c61df14b6f2cd240c6a7"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/mcp-manager-enabled.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-enabled.jpg",
+      "bytes": 74693,
+      "sha256": "03c50af7b54bafa8c2d6e5d14b81816f9665971fb548352ab4fb1943c560d8ce"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/mcp-manager-staged-restriction.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-staged-restriction.jpg",
+      "bytes": 88780,
+      "sha256": "f579fbb4e5d218ace76dfbe82c24e70deef272aa6a66b0e9e0e23228af705324"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/managed-command-locked.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/managed-command-locked.jpg",
+      "bytes": 168122,
+      "sha256": "1d29e47e9cd598234ecc939cb34a8cd38e248f1c936240042e7b9ccffc20771a"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/user-session-mcp-tools.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/user-session-mcp-tools.jpg",
+      "bytes": 156731,
+      "sha256": "f293022244e732ddbb151402cd4e2c090df93f10b648f39c58b242cf12c58771"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/user-approval-modes.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/user-approval-modes.jpg",
+      "bytes": 146122,
+      "sha256": "24c3f8a70b9a3f2bcf243d8b1f7c5f6ae3e8c17cc6dd09e775e9c2eb12014bb1"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/native-managed-recorded-denial.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/native-managed-recorded-denial.jpg",
+      "bytes": 103418,
+      "sha256": "480df161fc232da1308db9cbc37e0648b6b9d06c71ebef7d440e8029f66a2666"
+    },
     "/docs/HOST-CONTROL-SCENARIOS.md": {
       "path": "docs/HOST-CONTROL-SCENARIOS.md",
-      "bytes": 21906,
-      "sha256": "6d8e0210da6e135ece4d368d3d4891627563b6c4af119cd422e1f94d1d67c9a1"
+      "bytes": 22205,
+      "sha256": "c5ae04a8b7bdea3f6bb35b58e7c2caf5cba13aa08a29740a06b4c597120cff73"
     },
-    "/kirocrew-native-controls-diagram.html": {
-      "path": "kirocrew-native-controls-diagram.html",
-      "bytes": 810648,
-      "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb"
+    "/kirocrew-managed-controls-diagram.html": {
+      "path": "kirocrew-managed-controls-diagram.html",
+      "bytes": 810663,
+      "sha256": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763"
     },
-    "/evidence/native-client-demo/archify-host-20260913/asset-dependencies.json": {
-      "path": "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json",
-      "bytes": 699,
-      "sha256": "a109b7b10371b8bfab24dcca4588dcf2f4a248dcb13eea29346a41f5363b67ec"
+    "/evidence/enterprise-managed/20260913/archify/asset-dependencies.json": {
+      "path": "evidence/enterprise-managed/20260913/archify/asset-dependencies.json",
+      "bytes": 660,
+      "sha256": "80c071fdbccee7a21925514a4b566a981b99fce981eb78e4e1a4e611bbf73adf"
     },
     "/kirocrew-admin-tour.html": {
       "path": "output/kirocrew-admin-tour.html",
-      "bytes": 2516369,
-      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87"
+      "bytes": 3679148,
+      "sha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a"
     },
     "/kirocrew-admin-tour.md": {
       "path": "output/kirocrew-admin-tour.md",
-      "bytes": 18384,
-      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108"
-    },
-    "/docs/NATIVE-CLIENT-DEMO.md": {
-      "path": "docs/NATIVE-CLIENT-DEMO.md",
-      "bytes": 21658,
-      "sha256": "92c76b60e2d306156e13e6a84146b7f80c3abab61eda1bf4769bc6a5db036b63"
+      "bytes": 26723,
+      "sha256": "0ae7d24098fbd374356791d2e9bc823ce901d1c80b92d4c4d46853c0d3382294"
     },
     "/infrastructure/mcp-enforcement/README.md": {
       "path": "infrastructure/mcp-enforcement/README.md",
@@ -564,8 +728,8 @@
     },
     "/evidence/admin-console/native-20260913/tour-build.json": {
       "path": "evidence/admin-console/native-20260913/tour-build.json",
-      "bytes": 15583,
-      "sha256": "bb458337d82be7c57700431e8cf7282ec462fbef8b45a8ea1fe7bff9f3cc9f5f"
+      "bytes": 23280,
+      "sha256": "acbcec28f25e0eaaae626de4d01f3d2559e59f2a164588e1606a5658a3d7e65a"
     },
     "/output/kirocrew-admin-findings.md": {
       "path": "output/kirocrew-admin-findings.md",
@@ -577,24 +741,39 @@
       "bytes": 9214,
       "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
     },
+    "/.agents/skills/kirocrew-demo/SKILL.md": {
+      "path": ".agents/skills/kirocrew-demo/SKILL.md",
+      "bytes": 2662,
+      "sha256": "df041ff167652ad63484a27138ac4f2aee1c665e00a28cbd868b0c9640abb166"
+    },
+    "/docs/MANAGED-DEMO.md": {
+      "path": "docs/MANAGED-DEMO.md",
+      "bytes": 6765,
+      "sha256": "c4a1c0af079b08667071b4bf32567ae6bb9e8aea873e07033818bdc296341de9"
+    },
+    "/docs/LIVE-SETUP.md": {
+      "path": "docs/LIVE-SETUP.md",
+      "bytes": 14905,
+      "sha256": "3dd408177b5a7030d2c2c242e696bd3f7f29740ec1f1970856372f481a5fd09d"
+    },
     "/kirocrew-native-controls-notes.md": {
       "path": "output/kirocrew-native-controls-notes.md",
-      "bytes": 25826,
-      "sha256": "415e0f99e8add71613d140907955f2be5a29f7813f6f419fa97fd35bd15df164"
+      "bytes": 35044,
+      "sha256": "0dda0d02f3b9bd13f51a995ef88b0704d23881712a95da37091255160ee3c111"
     },
     "/kirocrew-native-controls-manifest.json": {
       "path": "output/kirocrew-native-controls-manifest.json",
-      "bytes": 35002,
-      "sha256": "7262516697502200db5122b8ea968c7f9230f92f4e43a8d900b69854deb39dda"
+      "bytes": 46081,
+      "sha256": "74e12ac4f7aff4d6b56d92ffd9f1093ecda96ac6fced2b859c372837156fc8ba"
     },
     "/kirocrew-native-controls.html": {
       "path": "output/kirocrew-native-controls.html",
-      "bytes": 639250,
-      "sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c"
+      "bytes": 2033388,
+      "sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b"
     }
   },
   "buildInputs": {
-    "scripts/build-native-control-presentation.py": "048a0b3b79c8f504e1fe64a4210f26ba5a937710dd580143772063184a43a7ef",
+    "scripts/build-native-control-presentation.py": "831312056d217d6961c0862cfa64429f21e50ac60cff0e6e66328c38fe6234b1",
     "scripts/build-recorded-demo-presentation.py": "4b271074f028fdcf56f37fdf233eecac83405265efff734c5b20c90f20cd3dfb",
     "presentation/slides.css": "4fff4b0514279836ad7ed05fe94d08d4996c90ea9555bfa0425b74230753e7ce",
     "presentation/slide-runtime.js": "a90bfa3c9feb9de983fe91b01b70995424d21c7190f83b357fb702a090c9e2d9",
@@ -611,7 +790,7 @@
   },
   "reviewScope": "Artifact integrity and visible recorded behavior. Enforcement acceptance and model council apply only through their separate exact-candidate receipts.",
   "browserReview": "Required separately for this edition hash",
-  "editorialReview": "No AI Slop self-review applied to slide copy and notes",
+  "editorialReview": "Post-council No AI Slop self-review applied to this managed-edition copy; exact incorporation receipt is separate.",
   "editionParameters": {
     "pendingControls": [
       "Sensitive-path read",
@@ -626,6 +805,6 @@
       "The custom marker-command rule was removed after its take. The recording describes that earlier configuration; replay does not mean the rule remains active. The cleanup receipt verifies the exact marker rule is absent, but does not establish full preservation of every unrelated prior custom rule."
     ],
     "recordingCoverageOverrides": {},
-    "diagramBuild": "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json"
+    "diagramBuild": "evidence/enterprise-managed/20260913/archify/asset-dependencies.json"
   }
 }

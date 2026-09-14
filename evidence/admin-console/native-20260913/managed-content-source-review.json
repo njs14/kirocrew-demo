@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "kind": "managed_admin_tour_content_source_review",
+  "reviewed_at_utc": "2026-09-14T02:35:21.076768+00:00",
+  "reviewer": "/root/admin_tour_revision/tour_copy_review",
+  "verdict": "SHIP",
+  "scope": "Read-only review of the exact managed tour builder, final publishable summary, eight safe supporting receipts and seven actual managed screenshots. Source/content approval only; fresh browser approval remains separate.",
+  "builder": {
+    "path": "scripts/build-native-admin-tour.py",
+    "sha256": "d16eaed14f5a325302b6be24c67453173759bb7b16c4e8e97aa8537ceca68ef5",
+    "bytes": 61934
+  },
+  "managed_summary": {
+    "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+    "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452",
+    "bytes": 8119
+  },
+  "candidate": {
+    "html_sha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a",
+    "stop_count": 10,
+    "screenshot_count": 26,
+    "managed_screenshot_count": 7,
+    "earlier_screenshot_count": 19
+  },
+  "findings": [],
+  "resolved_findings": [
+    {
+      "priority": "P2",
+      "issue": "Complete build receipt previously accessed a native field after HTML and Markdown writes.",
+      "resolution": "Complete receipt construction, in-memory output hashes and byte counts, and serialization now precede validate-only return and all writes.",
+      "regression": "An independent in-memory missing-full_native_acceptance probe rejected both validation and normal modes with zero simulated writes. No actual source receipt or output was mutated."
+    }
+  ],
+  "checks": {
+    "requested_validate_only_passed": true,
+    "existing_html_markdown_build_receipt_unchanged_by_validation": true,
+    "all_seven_screenshot_and_eight_safe_receipt_hashes_and_sizes_match_final_summary": true,
+    "actual_seven_managed_screenshots_visually_reviewed": true,
+    "nineteen_earlier_images_explicitly_dated_before_managed_policy": true,
+    "scoped_source_path_hash_and_private_path_guards_reviewed": true,
+    "browser_json_validation_and_exact_html_status_gate_before_writes": true,
+    "complete_build_receipt_validated_before_writes": true,
+    "unique_ids_anchor_targets_image_bytes_and_local_assets_pass": true,
+    "no_ai_slop_detect_review_completed": true
+  },
+  "claim_boundaries": [
+    "Active root-owned file policy and protected policy environment establish a floor against the crew account and owner-console settings; host root retains authority. No signed fleet policy, enterprise SSO or human-role RBAC is claimed.",
+    "The fresh filmed managed MCP denial and separate verified unfilmed allowed read are tied to their own reviewed receipts. Earlier MCP/IAM and host outcomes retain their earlier-policy scope.",
+    "The locked S3 command rule is configured coverage; this edition does not claim a managed S3 upload attempt. The owner-mutable duplicate hook was removed.",
+    "The MCP-manager restriction screenshot shows staging; copy says it was discarded. Crew availability, global Kiro availability, permission and the 0-of-4 deferred inventory remain distinct.",
+    "The user approval menu shows Normal, Reads and Trust; YOLO is absent. It is not described as a disabled visible option or as proof that Normal is forced.",
+    "The Linux cc floor, six separately observed CLI descendants and disposable crew-UID PTY probe do not prove exact-tool sandbox attribution or macOS Seatbelt/strict-tier isolation.",
+    "Earlier aggregate runtime metrics, runtime faults, security denials and separately timestamped collection-health samples retain distinct meanings.",
+    "Sensitive-path read, protected-path write and native IMDS recordings remain unfinished. The policy SEL join has no direct tool-call or trace-ID field."
+  ],
+  "browser_review": {
+    "path": "evidence/admin-console/native-20260913/browser-host/review.json",
+    "sha256": "d41782b5bfac85b4ba657c54c1eee2d8eac2f32789c47cd7b3d9a0caa3216813",
+    "matches_managed_candidate": false,
+    "conclusion": "Prior browser approval correctly remains bound to the earlier HTML. This review does not approve current managed browser layout, navigation, zoom or clip playback."
+  },
+  "reviewed_managed_inputs": [
+    {
+      "role": "governance",
+      "description": "Active Policy v1, file source, startup fetch and cc sandbox floor.",
+      "width": 1555,
+      "height": 1324,
+      "path": "evidence/enterprise-managed/20260913/screenshots/managed-governance.jpg",
+      "sha256": "54902bb87b5a77658200ca7a1cda676e7f3eb51d16c3c61df14b6f2cd240c6a7",
+      "bytes": 124344
+    },
+    {
+      "role": "mcp_enabled",
+      "description": "Crew-only aws-enforcement server enabled with four tools; global provider settings off.",
+      "width": 1555,
+      "height": 1324,
+      "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-enabled.jpg",
+      "sha256": "03c50af7b54bafa8c2d6e5d14b81816f9665971fb548352ab4fb1943c560d8ce",
+      "bytes": 74693
+    },
+    {
+      "role": "mcp_staged",
+      "description": "One pending local tool restriction with Apply and Discard. Discarded after capture; no mutation applied.",
+      "width": 1555,
+      "height": 1324,
+      "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-staged-restriction.jpg",
+      "sha256": "f579fbb4e5d218ace76dfbe82c24e70deef272aa6a66b0e9e0e23228af705324",
+      "bytes": 88780
+    },
+    {
+      "role": "managed_command",
+      "description": "S3 upload deny switch is on and disabled with organization-policy explanation.",
+      "width": 1555,
+      "height": 1324,
+      "path": "evidence/enterprise-managed/20260913/screenshots/managed-command-locked.jpg",
+      "sha256": "1d29e47e9cd598234ecc939cb34a8cd38e248f1c936240042e7b9ccffc20771a",
+      "bytes": 168122
+    },
+    {
+      "role": "session_mcp",
+      "description": "Actual web UI of the native session: aws-enforcement started; 0 of 4 specs loaded, deferred tools listed. No per-tool governance lock badge.",
+      "width": 1555,
+      "height": 1324,
+      "path": "evidence/enterprise-managed/20260913/screenshots/user-session-mcp-tools.jpg",
+      "sha256": "f293022244e732ddbb151402cd4e2c090df93f10b648f39c58b242cf12c58771",
+      "bytes": 156731
+    },
+    {
+      "role": "approval_modes",
+      "description": "Normal selected; Reads and Trust available; YOLO absent. No mode was changed.",
+      "width": 1555,
+      "height": 1324,
+      "path": "evidence/enterprise-managed/20260913/screenshots/user-approval-modes.jpg",
+      "sha256": "24c3f8a70b9a3f2bcf243d8b1f7c5f6ae3e8c17cc6dd09e775e9c2eb12014bb1",
+      "bytes": 146122
+    },
+    {
+      "role": "native_denial",
+      "description": "Actual macOS ui4 native host notice showing governance-policy denial.",
+      "width": 1144,
+      "height": 768,
+      "path": "evidence/enterprise-managed/20260913/screenshots/native-managed-recorded-denial.jpg",
+      "sha256": "480df161fc232da1308db9cbc37e0648b6b9d06c71ebef7d440e8029f66a2666",
+      "bytes": 103418
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff",
+      "bytes": 625
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4",
+      "bytes": 2275
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a",
+      "bytes": 13380
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012",
+      "bytes": 7208
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+      "sha256": "5f325f568203ec997c7f94a0d3c2c01e358906bba83d9a95e1d80b692a82e0ce",
+      "bytes": 2854
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7",
+      "bytes": 5252
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/client-relaunch.json",
+      "sha256": "5520f2939ab2dba5227e5daf90d535fa44eccd7fd5820adc3ce5b8182a187ea0",
+      "bytes": 889
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/media-review.json",
+      "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd",
+      "bytes": 8335
+    }
+  ],
+  "limits": [
+    "No live UI or AWS actions were performed.",
+    "No private original collector receipts or raw media were read.",
+    "No tour output was rebuilt. Only this review receipt was written.",
+    "Allowed source-folder membership is not a substitute for editorial or privacy review."
+  ]
+}

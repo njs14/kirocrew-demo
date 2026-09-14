@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "prepared_utc": "2026-09-14T01:48:27.266742+00:00",
+  "status": "awaiting_one_frozen_candidate_and_capture_receipt",
+  "inference_started": false,
+  "packet_prepared": false,
+  "expected_slide_count": [
+    14,
+    15,
+    16
+  ],
+  "runner_supports_dynamic_slide_count": [
+    1,
+    60
+  ],
+  "runner": "evidence/enterprise-managed/council/run-council.py",
+  "runner_sha256": "e6b5607241629c7ae8885bf78320c2e2ded282f1f4e501a3649b5057e2b0f775",
+  "launch_policy": "evidence/enterprise-managed/council/launch-policy.py",
+  "launch_policy_sha256": "9d2ec8086b50260ae6c6202c5c2c861a4b2828946ac68baefe081fce636a5540",
+  "source_runner": "scripts/run-native-deck-council.py",
+  "source_runner_sha256": "b03a335bfe95d3dda00cb7315e4a9f2e94251e4fd5d814228c58e89113de5f19",
+  "function_changes": [
+    "prompt_for"
+  ],
+  "launch_policy_byte_identical": true,
+  "models": {
+    "grok": "grok-4.6",
+    "claude": "claude-opus-5"
+  },
+  "effort": "xhigh",
+  "observed_cli_versions": {
+    "grok": "1.0.25 (f7e67d6988e2) stable",
+    "claude": "2.1.267"
+  },
+  "docs_note": "Skill references docs/DECK-COUNCIL.md, which is absent. Current helper source and historical receipts inspected directly. No extra approval inferred.",
+  "constraints": [
+    "No inference before root supplies final candidate and go.",
+    "No UI/live/AWS/auth changes.",
+    "No credential or session transfer.",
+    "Only new council evidence/preparation files owned.",
+    "One frozen review, root incorporation, then No AI Slop."
+  ]
+}

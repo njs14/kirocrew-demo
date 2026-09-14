@@ -1,0 +1,226 @@
+[
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-1",
+    "heading": "Server controlsfor a Mac client",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-2",
+    "heading": "Execution and host controls stay on EC2",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-3",
+    "heading": "Where each request stops",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-4",
+    "heading": "Where each request stops",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-5",
+    "heading": "A permitted S3 read",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-6",
+    "heading": "Crew blocks a tool call",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-7",
+    "heading": "The MCP service refuses the grant",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-8",
+    "heading": "AWS refuses the S3 read",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-9",
+    "heading": "Private memory requires an assigned conversation",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-10",
+    "heading": "Read the permitted workspace canary",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-11",
+    "heading": "Inspect the command denial summary",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-12",
+    "heading": "Approve the helper; read the 403 summary",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-13",
+    "heading": "A managed policy blocks a locally enabled tool",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-14",
+    "heading": "MCP availability and execution permission",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-15",
+    "heading": "Managed policy and admin evidence",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "bounds": [
+      1074,
+      604,
+      1074,
+      604
+    ],
+    "hash": "#slide-16",
+    "heading": "Reproduce the presentation or set up a host",
+    "viewport": [
+      1280,
+      720
+    ]
+  }
+]

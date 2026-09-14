@@ -161,14 +161,14 @@ def checked_public_source(value):
     if not isinstance(value, str):
         raise ValueError("Expected a scoped evidence path")
     parts = value.split("/")
-    if (len(parts) < 3 or parts[:2] not in [["evidence", "native-client-demo"], ["evidence", "admin-console"]]
+    if (len(parts) < 3 or parts[:2] not in [["evidence", "native-client-demo"], ["evidence", "admin-console"], ["evidence", "enterprise-managed"]]
             or any(part.startswith(".") or part == "raw" for part in parts)
             or any(token in parts[-1] for token in (".local.", "preflight"))):
-        raise ValueError("Added sources must be reviewed JSON receipts in the native-client-demo or admin-console evidence folders")
+        raise ValueError("Added sources must be reviewed JSON receipts in the scoped demo evidence folders")
     path = checked_relative_file(value)
     if path.suffix != ".json":
         raise ValueError("Added evidence links must name reviewed JSON receipts")
-    if "native-client-demo" in path.parts and path.name in {"baseline.json", "receipt.json"}:
+    if path.name in {"baseline.json", "receipt.json"}:
         raise ValueError("Use the publication export, not a private collector original")
     return path
 
@@ -231,10 +231,116 @@ def load_capture_group(manifest_path, stops):
                      "scope": "Appended original screenshots and reviewed copy; this input does not change native outcome verdicts."}
 
 
+def load_managed_summary(manifest_path, stops):
+    """Apply the reviewed managed-policy edition after the historical captures."""
+    relative = manifest_path.absolute().relative_to(ROOT).as_posix()
+    manifest_path = checked_public_source(relative)
+    data = json.loads(manifest_path.read_text())
+    if data.get("schema_version") != 1 or data.get("kind") != "managed_native_presentation":
+        raise ValueError("Expected the reviewed managed native presentation summary")
+    policy, native, client = (data.get(key, {}) for key in ("policy", "native", "client"))
+    if (policy.get("version") != 1 or policy.get("sandbox_floor") != "cc"
+            or policy.get("denied_approval_modes") != ["yolo"]
+            or policy.get("denied_mcp_tools") != ["@aws-enforcement/crew_denied"]
+            or policy.get("owner_mutable_duplicate_hook_removed") is not True
+            or policy.get("refresh") != "startup only" or policy.get("fail_closed") is not True
+            or native.get("allowed_read_verified") is not True or native.get("allowed_read_filmed") is not False
+            or native.get("managed_denial_verified") is not True or native.get("managed_denial_filmed") is not True
+            or client.get("local_gateway_off") is not True or client.get("quit_and_relaunch_verified") is not True):
+        raise ValueError("Managed summary no longer supports this edition's bounded claims")
+    descriptions = {
+        "governance": ("Active Policy v1 comes from a file, is fetched at startup and sets the cc sandbox floor. The panel lists one MCP deny and one denied approval mode.", "Governance Policy shows Policy v1, file source, startup-only refresh, cc sandbox floor and the configured policy lists."),
+        "managed_command": ("Search s3: the built-in upload deny is on and its switch is disabled. The lock and tooltip identify organization policy. This is a configured command rule, not a recorded S3 upload attempt.", "The S3 upload command rule is on with a disabled switch and an organization-policy explanation."),
+        "approval_modes": ("The user's approval menu has Normal selected, Reads and Trust available, and no YOLO item. No approval mode was changed.", "The session approval menu lists Normal, Reads and Trust; Normal is selected and YOLO is absent."),
+        "mcp_enabled": ("MCP Servers shows the Crew-only aws-enforcement server enabled with four tools. Enabled describes availability; the managed deny still applies when a tool is invoked.", "MCP Servers shows the enabled Crew-only aws-enforcement server with four tools."),
+        "mcp_staged": ("One local restriction is pending, with Apply and Discard available. It was discarded after this capture; no local restriction was applied.", "The MCP manager shows one staged tool restriction and the Apply and Discard buttons."),
+        "session_mcp": ("Session options lists aws-enforcement as started and shows 0/4 tool specifications loaded, with the four names deferred. The list has no per-tool governance lock badge.", "Session options shows aws-enforcement started, zero of four tool specifications loaded, and read_allowed, crew_denied, mcp_denied and iam_denied listed as deferred tools."),
+        "native_denial": ("The filmed macOS take expands the host notice for the automatic governance-policy refusal. The ui4 receipt joins this result to the policy-layer SEL decision and a complete MCP journal interval with no matching service arrival.", "The actual macOS client shows the expanded host notice identifying the automatic governance-policy block of crew_denied."),
+    }
+    images = data.get("screenshots")
+    if not isinstance(images, list) or len(images) != len(descriptions) or {item.get("role") for item in images} != set(descriptions):
+        raise ValueError("The managed edition requires exactly the seven inspected screenshot roles")
+    roles = {}
+    for item in images:
+        value = item.get("path")
+        if not isinstance(value, str) or not value.startswith("evidence/enterprise-managed/") or "/screenshots/" not in value:
+            raise ValueError("Managed screenshots must stay in their reviewed evidence screenshot folder")
+        path = checked_relative_file(value)
+        if path.suffix.lower() not in {".jpg", ".jpeg", ".png"} or sha(path) != item.get("sha256") or path.stat().st_size != item.get("bytes"):
+            raise ValueError("Managed screenshot differs from its reviewed bytes")
+        caption, alt = descriptions[item["role"]]
+        roles[item["role"]] = {"source": value, "file": "../" + value, "caption": caption, "alt": alt,
+                                "capture_label": "September 13, 2026 · late evening EDT · managed policy active",
+                                "capture_group": "managed-policy-20260913"}
+    source_labels = {
+        "policy-verify.json": "Active managed policy readback",
+        "mcp-verify.json": "MCP configuration and policy readback",
+        "native-managed-verification.json": "Managed native allowed read and automatic deny correlation (ui3; read not filmed)",
+        "native-managed-ui4-verification.json": "Filmed automatic managed MCP denial correlation (ui4)",
+        "native-managed-artifact-review.json": "Independent managed native artifact review",
+        "host-runtime-check.json": "Root-owned policy and separate service sandbox observations",
+        "client-relaunch.json": "Mac quit and relaunch with local Gateway off (before policy activation)",
+        "media-review.json": "Managed native clip review",
+    }
+    receipts = data.get("receipts")
+    if not isinstance(receipts, list) or len(receipts) != len(source_labels) or {Path(item.get("path", "")).name for item in receipts} != set(source_labels):
+        raise ValueError("Managed summary needs its complete reviewed receipt set")
+    sources = [("Managed policy, client state and screenshot summary", relative)]
+    for item in receipts:
+        path = checked_public_source(item.get("path"))
+        if sha(path) != item.get("sha256") or path.stat().st_size != item.get("bytes"):
+            raise ValueError("Managed receipt differs from its reviewed bytes")
+        sources.append((source_labels[path.name], item["path"]))
+    by_id = {stop["id"]: stop for stop in stops}
+    for stop in stops:
+        for item in stop["shots"]:
+            item["capture_label"] += " · before managed policy"
+            item["caption"] = "Before managed policy. " + item["caption"].replace("Fresh ", "Earlier ").replace("fresh ", "earlier ")
+    by_id["host"]["body"] = [
+        "The client is macOS Nightly September 13. The existing ARM EC2 host runs the September 12 server Nightly with Kiro CLI 2.21.4. The Mac quit and relaunched with its local Gateway off and the remote connection on port 5599. That continuity check preceded policy activation; the later native receipts verify execution after activation.",
+        "The retained Overview and Performance images predate managed policy. They identify the remote build, ARM Linux and the EC2 workspace; their uptime and activity counters belong to those capture times. Keep the Gateway, backend and workspace in the single endpoint-control box."]
+    by_id["posture"]["body"] = [
+        "The active file policy sets the Linux sandbox floor to cc. Its readback and the Governance Policy view establish the configured floor. A separate runtime check saw six Kiro CLI descendants with seccomp mode 2, NoNewPrivs enabled and a different mount namespace; it did not attribute those processes to the exact recorded tool calls.",
+        "The earlier posture image below shows Standard sandbox, Interactive approval and coverage counts of 143 credential paths, 23 protected paths and 112 built-in command rules. Those are pre-policy capture values. Coverage counts describe registries; they do not establish that a particular read, write or command was blocked."]
+    by_id["rules"]["body"] = [
+        "In the current Denied Commands view, search s3. The built-in S3 upload deny is on, and its disabled switch has a lock and an organization-policy explanation. The file policy also contains a managed marker command. This screenshot establishes the locked configuration; no managed S3 upload attempt was recorded.",
+        "Command patterns and MCP tool policy are separate controls. The root-owned file now denies the canonical tool @aws-enforcement/crew_denied. The duplicate owner-editable auto_deny_tools hook was removed before the managed native take. This command-rule screen does not manage that MCP deny.",
+        "The four older images retain the catalog, teardown coverage and temporary KIROCREW_DEMO_COMMAND_CONTROL_20260913 rule before and after cleanup. That earlier marker was removed; its cleanup and native refusal receipts retain their original scope."]
+    by_id["rules"]["cue"] = "Show the locked S3 upload rule, then identify the separate managed MCP deny. Date the old temporary-rule take before comparing it."
+    by_id["rules"]["route"] = "/settings/security/rules → search s3"
+    by_id["rules"]["shots"].insert(0, roles["managed_command"])
+    by_id["approval"].update({"title": "Read the user's approval choices", "path": "Native session → approval-mode menu; earlier Settings → Security → YOLO",
+        "route": "Open the session's approval-mode menu; earlier settings route /settings/security/approval",
+        "body": ["The current session menu has Normal selected. Reads and Trust remain available, while YOLO is absent. The managed file policy denies yolo; it does not force every session into Normal. No mode was changed during this inspection.",
+                 "The earlier settings image shows Interactive and a six-hour duration for the next auto-approve activation. That saved duration predates the managed policy and does not grant permission to use YOLO now."],
+        "cue": "Read what the user can choose now, then distinguish the old next-activation duration from the active policy."})
+    by_id["approval"]["shots"].insert(0, roles["approval_modes"])
+    by_id["governance"]["body"] = [
+        "The current viewer shows Policy v1, Source: file, startup-only fetch and a cc sandbox floor. The policy is loaded from /etc/kirocrew-demo/security-policy.json through a protected systemd environment, with fail-closed behavior configured. Changes require a Gateway restart to be fetched.",
+        "The root-owned policy file is not writable by the Crew service account. It sets a floor against that account and the owner console; host root retains authority. This deployment does not establish signed fleet policy, enterprise SSO or separate human roles. The portal displays the policy; it does not author the file.",
+        "The protected MCP service still enforces its own grants, and AWS evaluates the instance role. Those authorities remain outside this portal. The earlier standalone screenshot below is preserved to show the state before policy activation."]
+    by_id["governance"]["cue"] = "Read the policy source, refresh timing and floor. Name the service account it constrains, then the separate MCP-service and AWS authorities."
+    by_id["governance"]["shots"].insert(0, roles["governance"])
+    mcp = {"id": "mcp", "title": "See what the user can enable", "path": "Capabilities → MCP Servers; native session → Session options → MCP servers",
+        "route": "/capabilities?tab=mcp opened Services first; click the visible MCP Servers tab. In the session, open Session options → MCP servers.",
+        "body": ["The MCP manager shows the Crew-only aws-enforcement server enabled with four tools. Local controls can narrow the tools exposed to Crew. The second image records one staged restriction with Apply and Discard; it was discarded, so no restriction was applied.",
+                 "In the actual web view of the native session, aws-enforcement has a green started ring. Its inventory reports 0/4 specifications loaded and lists read_allowed, crew_denied, mcp_denied and iam_denied as deferred tools. Neither this list nor the manager has a per-tool governance lock badge.",
+                 "Enabled means available to the client. The canonical crew_denied invocation still met the root-managed deny. The filmed macOS host notice shows the automatic policy refusal; the ui4 receipt correlates it to policy-layer SEL evidence and a complete MCP journal interval with no matching service arrival. There was no approval card or operator refusal for this request.",
+                 "A separate managed allowed read succeeded and has a client-to-service evidence join, but that read was not filmed. The earlier MCP grant and IAM denial recordings predate this policy change and keep their original evidence scope."],
+        "cue": "Move from availability to deferred inventory to the actual native refusal. Use the receipt to identify the denying authority.",
+        "shots": [roles[key] for key in ("mcp_enabled", "mcp_staged", "session_mcp", "native_denial")]}
+    stops.insert(stops.index(by_id["governance"]) + 1, mcp)
+    by_id["audit"]["body"][0] = "The earlier expanded SEL row lists covered session-key surfaces, with 19 reported in the posture summary. Entries include Background, CLI, Cron and Dashboard. This capture predates managed policy."
+    by_id["backend"]["body"][1] = "The EC2 standalone CLI receipt records authenticated=true via SocialGitHub at 21:09 UTC. The original four-turn run and the later managed native receipts each establish their own results. The selected backend remains Kiro CLI 2.21.4. The card shown here is not evidence of enterprise SSO or the CLI's current sign-in by itself."
+    by_id["metrics"]["body"].insert(0, "These metric captures all precede managed policy. They explain the dashboard's measurements; they do not report a new managed-policy run.")
+    by_id["collection"]["body"].insert(0, "All four collection captures below precede managed policy. Their values are dated samples, retained to explain the client/server health view.")
+    return sources, {"path": relative, "sha256": sha(manifest_path), "observed_at": data["observed_at"],
+                     "policy_sha256": policy["policy_sha256"], "screenshot_roles": list(roles),
+                     "native_claim_scope": native, "scope": "Seven managed-policy captures plus 19 unchanged earlier images; earlier outcomes retain their original authority and collection limits."}
+
+
 def image_info(item):
-    path = OUT / item["file"]
-    if path.is_symlink() or not path.is_file():
-        raise ValueError(f"Missing regular screenshot: {path}")
+    path = checked_relative_file(item["source"]) if "source" in item else checked_relative_file(item["file"], OUT)
     data = path.read_bytes()
     if data[:8] == b"\x89PNG\r\n\x1a\n":
         width, height = struct.unpack(">II", data[16:24])
@@ -270,11 +376,14 @@ def image_info(item):
             "uri": f"data:{mime};base64," + base64.b64encode(data).decode()}
 
 
-def build(proof_paths, capture_group=None, validate_only=False, browser_review_file=None):
+def build(proof_paths, capture_group=None, validate_only=False, browser_review_file=None, managed_summary=None):
     stops = copy.deepcopy(STOPS)
     sources = list(SOURCES)
     capture_metadata = None
+    managed_metadata = None
     status = STATUS
+    status_link = ("Read the four-outcome reconciliation", "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json")
+    scope = "Fresh security captures and earlier baseline images are dated separately. All screenshots are embedded unchanged. Native client enforcement requires a separate recording and receipt."
     native_limits = NATIVE_LIMITS
     evidence_intro = "The native recordings show the Mac requests and results. The final reconciliation and separate authority review support the allowed S3 read and the Crew, MCP and IAM denials. This screenshot tour explains the console’s observed views."
     md_changes = "Added fresh security, command-rule, approval, governance, SEL-coverage and completed-turn telemetry captures. Updated the four native outcomes from the final reconciliation and authority review, while retaining the original collection failure and remaining limits. Earlier reference screenshots keep their capture dates."
@@ -289,6 +398,22 @@ def build(proof_paths, capture_group=None, validate_only=False, browser_review_f
         evidence_intro += " Later host observations, reviews and cleanup are linked separately below. Their results do not change the earlier collection verdict."
         md_changes = "Retained the 13 accepted images and appended six later host captures: the temporary command rule before and after cleanup, command and authentication turn metrics, current client/server samples and filtered server collection events. The added captions distinguish configuration, runtime measurements and security decisions."
         footer_changes = "Retained the earlier captures and added the temporary-rule cleanup, host-turn metrics and current client/server health views. Each native outcome remains tied to its own reviewed evidence."
+    if managed_summary:
+        if not capture_group:
+            raise ValueError("The managed edition requires the preceding host capture group")
+        extra_sources, managed_metadata = load_managed_summary(managed_summary, stops)
+        # The tour is independently reproducible from the frozen evidence. Live
+        # recording guides are owned and updated separately from this edition.
+        sources = [("Before managed policy: " + label, path) for label, path in sources
+                   if path not in {"docs/NATIVE-CLIENT-DEMO.md", "docs/HOST-CONTROL-SCENARIOS.md"}]
+        sources = extra_sources + sources
+        status = "Managed file policy is active on the EC2 Gateway. A fresh macOS take records its automatic MCP-tool refusal. A separate managed allowed read is verified in the receipts but was not filmed."
+        status_link = ("Read the filmed managed-denial correlation", "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json")
+        scope = "Ten stops, seven managed-policy captures and 19 unchanged images from before the change. Each image is dated. Configuration, Gateway metrics, collection health and security decisions have separate evidence."
+        evidence_intro = "The managed receipts establish the file policy, client state, allowed read and automatic MCP denial. The filmed take covers the managed denial. The earlier eight recordings and host observations retain their original evidence limits; they are not reclassified as managed-policy proof."
+        native_limits = "Host root retains authority. This deployment does not establish signed fleet policy, enterprise SSO or human-role RBAC. The Linux cc floor is not macOS Seatbelt or strict-tier isolation. Sensitive-path read, protected-path write and native IMDS recordings remain unfinished. The policy-layer SEL join uses the isolated session, tool, reason and interval; those SEL events have no direct tool-call or trace-ID field. Earlier MCP/IAM collection: " + NATIVE_LIMITS
+        md_changes = "Added the active file policy, locked S3 command rule, user approval menu, MCP availability and deferred inventory views, and the filmed native managed-denial result. Preserved all 19 earlier screenshots with pre-policy labels and added seven unchanged captures. The staged MCP restriction was discarded."
+        footer_changes = md_changes
     for i, path in enumerate(proof_paths, 1):
         relative = path.absolute().relative_to(ROOT).as_posix()
         checked_public_source(relative)
@@ -312,7 +437,7 @@ def build(proof_paths, capture_group=None, validate_only=False, browser_review_f
         raise ValueError("The publication export does not match the retained original native receipt")
     images, cards = [], []
     md = [f"# {TITLE}", "", "September 13, 2026 · macOS client / ARM EC2 server · owner console", "", INTRO, "", status, "",
-          "Fresh security captures and earlier baseline screenshots are dated separately below. All image bytes are preserved. This tour is a guide to the console; native enforcement requires a separate recording and receipt.", ""]
+          scope, ""]
     for index, stop in enumerate(stops):
         paragraphs = "".join(f"<p>{esc(text)}</p>" for text in stop["body"])
         figures = []
@@ -337,7 +462,7 @@ def build(proof_paths, capture_group=None, validate_only=False, browser_review_f
     choices = "".join(f'<option value="{i}">{i+1:02} · {esc(stop["title"])}</option>' for i, stop in enumerate(stops))
     rendered = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A screenshot tour of the KiroCrew owner console, security controls and client/server telemetry."><title>{TITLE}</title><style>{STYLE}</style></head><body><div class="shell">
-<header><p class="eyebrow">KiroCrew · operator tour · September 13, 2026</p><h1>Inspect the server’s controls.<br>Read the evidence behind them.</h1><p class="intro">{esc(INTRO)}</p><p class="status">{esc(status)} <a href="../evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json">Read the four-outcome reconciliation</a>.</p><p class="scope">Fresh security captures and earlier baseline images are dated separately. All screenshots are embedded unchanged. Native client enforcement requires a separate recording and receipt.</p></header>
+<header><p class="eyebrow">KiroCrew · operator tour · September 13, 2026</p><h1>Inspect the server’s controls.<br>Read the evidence behind them.</h1><p class="intro">{esc(INTRO)}</p><p class="status">{esc(status)} <a href="../{esc(status_link[1])}">{esc(status_link[0])}</a>.</p><p class="scope">{esc(scope)}</p></header>
 <div class="toolbar" aria-label="Tour navigation"><button id="previous" type="button">← Previous</button><label for="stop-choice" class="sr-only" hidden>Choose a stop</label><select id="stop-choice" aria-label="Choose a stop">{choices}</select><span id="counter" class="counter" aria-live="polite"></span><button id="next" type="button">Next →</button></div>
 <noscript><p class="nojs">Every stop is shown below. Use the stop links and Open original to inspect screenshots.</p></noscript>
 <div class="layout"><nav class="toc" aria-label="Tour stops">{navigation}</nav><main>{"".join(cards)}
@@ -364,20 +489,14 @@ def build(proof_paths, capture_group=None, validate_only=False, browser_review_f
         raise ValueError("Browser review must be a JSON object")
     rendered_sha256 = hashlib.sha256(rendered.encode("utf-8")).hexdigest()
     browser_matches = browser_review.get("status") == "passed" and browser_review.get("sha256") == rendered_sha256
-    if validate_only:
-        print(json.dumps({"status": "validated_without_writes", "stops": len(stops), "screenshots": len(images),
-                          "html_sha256": rendered_sha256, "browser_review_matches": browser_matches,
-                          "capture_group": capture_metadata, "static_checks": checks}))
-        return
-    EVIDENCE.mkdir(parents=True, exist_ok=True)
-    for path, text in zip(outputs, (rendered, "\n".join(md))):
-        path.write_text(text, encoding="utf-8")
+    output_texts = (rendered, "\n".join(md))
     receipt = {"schema": 1, "kind": "native_admin_tour_build", "built_at_utc": datetime.now(timezone.utc).isoformat(),
                "status": "static_and_browser_passed" if browser_matches else "static_passed_browser_review_pending", "builder_sha256": sha(Path(__file__)),
                "stop_count": len(stops), "screenshot_count": len(images), "static_checks": checks,
                "screenshots": [{key: value for key, value in item.items() if key != "uri"} for item in images],
                "sources": [{"label": label, "path": path, "sha256": sha(ROOT / path)} for label, path in sources],
-               "outputs": [{"path": path.relative_to(ROOT).as_posix(), "sha256": sha(path), "bytes": path.stat().st_size} for path in outputs],
+               "outputs": [{"path": path.relative_to(ROOT).as_posix(), "sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
+                            "bytes": len(text.encode("utf-8"))} for path, text in zip(outputs, output_texts)],
                "native_proof_links": [path for label, path in sources if "20260913-ui2" in path or label.startswith("Native run receipt")],
                "native_claim_scope": {"bounded_four_outcomes_reconciled": native["bounded_four_outcomes_reconciled"],
                                       "full_native_acceptance": native["full_native_acceptance"],
@@ -396,7 +515,20 @@ def build(proof_paths, capture_group=None, validate_only=False, browser_review_f
                "editorial_review": "No AI Slop self-review applied to captions, explanations and status claims."}
     if capture_metadata:
         receipt["capture_groups"] = [capture_metadata]
-    (EVIDENCE / "tour-build.json").write_text(json.dumps(receipt, indent=2) + "\n")
+    if managed_metadata:
+        receipt["managed_edition"] = managed_metadata
+        receipt["native_claim_scope"]["earlier_run_scope"] = "The four original outcomes predate managed policy."
+        receipt["native_claim_scope"]["managed"] = managed_metadata["native_claim_scope"]
+    receipt_text = json.dumps(receipt, indent=2) + "\n"
+    if validate_only:
+        print(json.dumps({"status": "validated_without_writes", "stops": len(stops), "screenshots": len(images),
+                          "html_sha256": rendered_sha256, "browser_review_matches": browser_matches,
+                          "capture_group": capture_metadata, "static_checks": checks}))
+        return
+    EVIDENCE.mkdir(parents=True, exist_ok=True)
+    for path, text in zip(outputs, output_texts):
+        path.write_text(text, encoding="utf-8")
+    (EVIDENCE / "tour-build.json").write_text(receipt_text)
     print(json.dumps({"status": receipt["status"], "stops": len(stops), "screenshots": len(images), "outputs": [str(path) for path in outputs]}))
 
 
@@ -406,5 +538,6 @@ if __name__ == "__main__":
     parser.add_argument("--capture-group", type=Path, help="Optional hash-bound JSON group of inspected screenshots to append to existing stops. See load_capture_group for its schema.")
     parser.add_argument("--validate-only", action="store_true", help="Validate inputs and report the proposed HTML hash without changing outputs or receipts.")
     parser.add_argument("--browser-review", type=Path, help="Existing scoped browser receipt to bind; approval applies only if its exact HTML hash matches.")
+    parser.add_argument("--managed-summary", type=Path, help="Reviewed managed-policy summary with exact screenshot roles and receipt hashes; applied after the earlier capture group.")
     args = parser.parse_args()
-    build(args.native_proof, args.capture_group, args.validate_only, args.browser_review)
+    build(args.native_proof, args.capture_group, args.validate_only, args.browser_review, args.managed_summary)

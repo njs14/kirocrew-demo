@@ -633,6 +633,91 @@
         "url": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
         "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
       }
+    },
+    {
+      "id": "native-managed-mcp-denial",
+      "title": "A managed policy blocks a locally enabled tool",
+      "description": "The user requests a locally enabled MCP tool from the Mac client. The Gateway managed policy denies it before the MCP service. The presenter expands the native host notice to inspect the exact governance-policy reason.",
+      "evidenceScope": "Actual macOS KiroCrew Nightly interaction through the EC2 Gateway and original Kiro CLI backend. This continuous cut films the ui4 denial only; the earlier ui3 turn visible above the composer is conversation history. The allowed control call was verified separately and is not filmed here. Native history, SEL correlation and the MCP audit interval are reviewed separately from media decoding.",
+      "duration": 40.000076,
+      "recordedAt": "2026-09-14T02:06:34Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Actual Mac KiroCrew Nightly window capture for the remote client on port5599. The complete request-to-result sequence is preserved at its recorded speed, followed by expansion of the policy reason."
+      },
+      "provenance": {
+        "sourceSha256": "02f4901143783b756f5ae153751ee6d2c2f40d3488cb837a8ca28b9588c03a80",
+        "sourceDuration": 90.015,
+        "cut": {
+          "start": 6.0,
+          "end": 46.0
+        },
+        "recordedAt": "2026-09-14T02:06:34Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 2007186,
+          "sha256": "d3a8a2197d69bc42667434cfef0a0ea789cd3d4bde0aad74bdd4b9c84f4cabc1",
+          "duration": 40.000076,
+          "width": 1920,
+          "height": 1340,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 53.79989823016143,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-managed-clip-20260914/native-managed-mcp-denial/native-managed-mcp-denial.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 0.0,
+          "label": "Submit the MCP request",
+          "detail": "The composed ui4 request names @aws-enforcement/crew_denied and trace managed-20260914-ui4-crew. The user sends this one harmless fixture.",
+          "evidence": "native-managed-clip-20260914/receipts/native-managed-ui4-verification.json"
+        },
+        {
+          "time": 7.0,
+          "label": "See the automatic block",
+          "detail": "Tool call blocked appears in the new turn. No Allow once dialog is shown for this denied call.",
+          "evidence": "native-managed-clip-20260914/receipts/native-managed-ui4-verification.json"
+        },
+        {
+          "time": 34.0,
+          "label": "Inspect the managed-policy reason",
+          "detail": "The expanded Kiro Crew host notice says Blocked by governance policy and identifies the exact @aws-enforcement/crew_denied deny rule.",
+          "evidence": "native-managed-clip-20260914/receipts/native-managed-ui4-verification.json"
+        }
+      ],
+      "recordingCoverage": "request_to_result",
+      "outcomeClass": "server_hook_denied",
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 176636,
+        "sha256": "9d3f592d1362d4c3c77e6688139fefe48ce85b33d203660ecbfa8244e8c5ced1",
+        "url": "native-managed-clip-20260914/native-managed-mcp-denial/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 126675,
+        "sha256": "b525f61dacb0a9e9d5b60cce1d1fd1d117bf206d8ab14d2786e6724da826f1dd",
+        "url": "native-managed-clip-20260914/native-managed-mcp-denial/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Managed MCP rule",
+        "enforcer": "EC2 Gateway policy",
+        "outcome": "Policy denied; no MCP arrival in reviewed interval"
+      },
+      "attributionReceipt": {
+        "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+        "url": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+        "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+      },
+      "policySha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87"
     }
   ],
   "supportingReceipts": [
@@ -760,10 +845,65 @@
       "path": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
       "url": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
       "sha256": "8437471934f673b0aa312104b99bc84144c6c9293e616b2abb858f68438c25f0"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/policy-plan.json",
+      "url": "evidence/enterprise-managed/20260913/policy-plan.json",
+      "sha256": "c1c5d3d9703a6d2bf18583bb54111a53332dd98bdce3868dd2bf9633498dd9e5"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+      "url": "evidence/enterprise-managed/20260913/managed-presentation.json",
+      "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/archify/delivery-receipt.json",
+      "url": "evidence/enterprise-managed/20260913/archify/delivery-receipt.json",
+      "sha256": "6afaef5379cb72d29f9ca06baff7dd1cddc5c68974341f548a649d81d0af9172"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "url": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "url": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "url": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "url": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+      "url": "evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+      "sha256": "5f325f568203ec997c7f94a0d3c2c01e358906bba83d9a95e1d80b692a82e0ce"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "url": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/client-relaunch.json",
+      "url": "evidence/enterprise-managed/20260913/client-relaunch.json",
+      "sha256": "5520f2939ab2dba5227e5daf90d535fa44eccd7fd5820adc3ce5b8182a187ea0"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/media-review.json",
+      "url": "evidence/enterprise-managed/20260913/media-review.json",
+      "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd"
     }
   ],
   "adminTour": "kirocrew-admin-tour.html",
-  "architectureDiagram": "../kirocrew-native-controls-diagram.html",
+  "architectureDiagram": "../kirocrew-managed-controls-diagram.html",
   "pendingControls": [
     "Sensitive-path read",
     "Protected-path write",
@@ -776,5 +916,81 @@
     "The IMDS helper's source read completed. Its execution approval expired unanswered after ten minutes; no helper execution or metadata firewall result was observed. The earlier pending-at-observer-expiry receipt remains preserved as a historical snapshot.",
     "The custom marker-command rule was removed after its take. The recording describes that earlier configuration; replay does not mean the rule remains active. The cleanup receipt verifies the exact marker rule is absent, but does not establish full preservation of every unrelated prior custom rule."
   ],
-  "reviewScope": "Artifact integrity and visible recorded behavior. Enforcement acceptance and model council apply only through their separate exact-candidate receipts."
+  "reviewScope": "Artifact integrity and visible recorded behavior. Enforcement acceptance and model council apply only through their separate exact-candidate receipts.",
+  "managedEdition": {
+    "receipt": {
+      "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+      "url": "evidence/enterprise-managed/20260913/managed-presentation.json",
+      "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452"
+    },
+    "evidenceSummaryAssembledAt": "2026-09-14T02:20:00Z",
+    "policySha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87",
+    "sceneId": "native-managed-mcp-denial",
+    "earlierClipsPredatePolicy": true,
+    "screenshots": {
+      "governance": {
+        "path": "evidence/enterprise-managed/20260913/screenshots/managed-governance.jpg",
+        "sha256": "54902bb87b5a77658200ca7a1cda676e7f3eb51d16c3c61df14b6f2cd240c6a7",
+        "bytes": 124344,
+        "width": 1555,
+        "height": 1324,
+        "description": "Active Policy v1, file source, startup fetch and cc sandbox floor.",
+        "url": "evidence/enterprise-managed/20260913/screenshots/managed-governance.jpg"
+      },
+      "mcp_enabled": {
+        "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-enabled.jpg",
+        "sha256": "03c50af7b54bafa8c2d6e5d14b81816f9665971fb548352ab4fb1943c560d8ce",
+        "bytes": 74693,
+        "width": 1555,
+        "height": 1324,
+        "description": "Crew-only aws-enforcement server enabled with four tools; global provider settings off.",
+        "url": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-enabled.jpg"
+      },
+      "mcp_staged": {
+        "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-staged-restriction.jpg",
+        "sha256": "f579fbb4e5d218ace76dfbe82c24e70deef272aa6a66b0e9e0e23228af705324",
+        "bytes": 88780,
+        "width": 1555,
+        "height": 1324,
+        "description": "One pending local tool restriction with Apply and Discard. Discarded after capture; no mutation applied.",
+        "url": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-staged-restriction.jpg"
+      },
+      "managed_command": {
+        "path": "evidence/enterprise-managed/20260913/screenshots/managed-command-locked.jpg",
+        "sha256": "1d29e47e9cd598234ecc939cb34a8cd38e248f1c936240042e7b9ccffc20771a",
+        "bytes": 168122,
+        "width": 1555,
+        "height": 1324,
+        "description": "S3 upload deny switch is on and disabled with organization-policy explanation.",
+        "url": "evidence/enterprise-managed/20260913/screenshots/managed-command-locked.jpg"
+      },
+      "session_mcp": {
+        "path": "evidence/enterprise-managed/20260913/screenshots/user-session-mcp-tools.jpg",
+        "sha256": "f293022244e732ddbb151402cd4e2c090df93f10b648f39c58b242cf12c58771",
+        "bytes": 156731,
+        "width": 1555,
+        "height": 1324,
+        "description": "Actual web UI of the native session: aws-enforcement started; 0 of 4 specs loaded, deferred tools listed. No per-tool governance lock badge.",
+        "url": "evidence/enterprise-managed/20260913/screenshots/user-session-mcp-tools.jpg"
+      },
+      "approval_modes": {
+        "path": "evidence/enterprise-managed/20260913/screenshots/user-approval-modes.jpg",
+        "sha256": "24c3f8a70b9a3f2bcf243d8b1f7c5f6ae3e8c17cc6dd09e775e9c2eb12014bb1",
+        "bytes": 146122,
+        "width": 1555,
+        "height": 1324,
+        "description": "Normal selected; Reads and Trust available; YOLO absent. No mode was changed.",
+        "url": "evidence/enterprise-managed/20260913/screenshots/user-approval-modes.jpg"
+      },
+      "native_denial": {
+        "path": "evidence/enterprise-managed/20260913/screenshots/native-managed-recorded-denial.jpg",
+        "sha256": "480df161fc232da1308db9cbc37e0648b6b9d06c71ebef7d440e8029f66a2666",
+        "bytes": 103418,
+        "width": 1144,
+        "height": 768,
+        "description": "Actual macOS ui4 native host notice showing governance-policy denial.",
+        "url": "evidence/enterprise-managed/20260913/screenshots/native-managed-recorded-denial.jpg"
+      }
+    }
+  }
 }

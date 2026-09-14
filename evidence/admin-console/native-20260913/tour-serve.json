@@ -1,46 +1,116 @@
 {
   "schemaVersion": 1,
   "kind": "native-admin-tour-serve",
-  "createdAt": "2026-09-14T01:03:59.598394+00:00",
+  "createdAt": "2026-09-14T02:36:17.920098+00:00",
   "edition": "output/kirocrew-admin-tour.html",
-  "editionSha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87",
+  "editionSha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a",
   "sourceBuild": "evidence/admin-console/native-20260913/tour-build.json",
-  "sourceBuildSha256": "bb458337d82be7c57700431e8cf7282ec462fbef8b45a8ea1fe7bff9f3cc9f5f",
+  "sourceBuildSha256": "acbcec28f25e0eaaae626de4d01f3d2559e59f2a164588e1606a5658a3d7e65a",
   "serveFiles": {
-    "/docs/HOST-CONTROL-SCENARIOS.md": {
-      "path": "docs/HOST-CONTROL-SCENARIOS.md",
-      "bytes": 21906,
-      "sha256": "6d8e0210da6e135ece4d368d3d4891627563b6c4af119cd422e1f94d1d67c9a1"
-    },
-    "/docs/NATIVE-CLIENT-DEMO.md": {
-      "path": "docs/NATIVE-CLIENT-DEMO.md",
-      "bytes": 21658,
-      "sha256": "92c76b60e2d306156e13e6a84146b7f80c3abab61eda1bf4769bc6a5db036b63"
-    },
     "/evidence/admin-console/browser-receipt.json": {
       "path": "evidence/admin-console/browser-receipt.json",
       "bytes": 3664,
       "sha256": "7ec5239c3cb55087dbab974ab64a3c485fdf6038a4136952a4a933f3dc5cd317"
     },
-    "/evidence/admin-console/native-20260913/browser-review.json": {
-      "path": "evidence/admin-console/native-20260913/browser-review.json",
-      "bytes": 1443,
-      "sha256": "e0125ad771dbda8952b77b6b415550a072bb4a47e863f945277e882fbcb3a518"
-    },
-    "/evidence/admin-console/native-20260913/host-capture-editorial-review.json": {
-      "path": "evidence/admin-console/native-20260913/host-capture-editorial-review.json",
-      "bytes": 1708,
-      "sha256": "e9cc3b2a7a8db72b1a6cf66285720ea4d5089d9aba867264d8c87333766c3760"
+    "/evidence/admin-console/native-20260913/browser-host/review.json": {
+      "path": "evidence/admin-console/native-20260913/browser-host/review.json",
+      "bytes": 2493,
+      "sha256": "d41782b5bfac85b4ba657c54c1eee2d8eac2f32789c47cd7b3d9a0caa3216813"
     },
     "/evidence/admin-console/native-20260913/host-captures.json": {
       "path": "evidence/admin-console/native-20260913/host-captures.json",
       "bytes": 9447,
       "sha256": "dfaf5df98ebbec220a75aae5103a07020d76b0e4c7b7395dd5843e74f2b0a5b3"
     },
+    "/evidence/admin-console/native-20260913/managed-content-source-review.json": {
+      "path": "evidence/admin-console/native-20260913/managed-content-source-review.json",
+      "bytes": 8908,
+      "sha256": "b5e2ee4e8cee39c1ef69bf316f3f60012c129c6d061bfb18e417ecb3afe2d1ef"
+    },
     "/evidence/admin-console/native-20260913/tour-build.json": {
       "path": "evidence/admin-console/native-20260913/tour-build.json",
-      "bytes": 15583,
-      "sha256": "bb458337d82be7c57700431e8cf7282ec462fbef8b45a8ea1fe7bff9f3cc9f5f"
+      "bytes": 23280,
+      "sha256": "acbcec28f25e0eaaae626de4d01f3d2559e59f2a164588e1606a5658a3d7e65a"
+    },
+    "/evidence/enterprise-managed/20260913/client-relaunch.json": {
+      "path": "evidence/enterprise-managed/20260913/client-relaunch.json",
+      "bytes": 889,
+      "sha256": "5520f2939ab2dba5227e5daf90d535fa44eccd7fd5820adc3ce5b8182a187ea0"
+    },
+    "/evidence/enterprise-managed/20260913/host-runtime-check.json": {
+      "path": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "bytes": 5252,
+      "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7"
+    },
+    "/evidence/enterprise-managed/20260913/managed-presentation.json": {
+      "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+      "bytes": 8119,
+      "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452"
+    },
+    "/evidence/enterprise-managed/20260913/mcp-verify.json": {
+      "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "bytes": 2275,
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4"
+    },
+    "/evidence/enterprise-managed/20260913/media-review.json": {
+      "path": "evidence/enterprise-managed/20260913/media-review.json",
+      "bytes": 8335,
+      "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd"
+    },
+    "/evidence/enterprise-managed/20260913/native-managed-artifact-review.json": {
+      "path": "evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+      "bytes": 2854,
+      "sha256": "5f325f568203ec997c7f94a0d3c2c01e358906bba83d9a95e1d80b692a82e0ce"
+    },
+    "/evidence/enterprise-managed/20260913/native-managed-ui4-verification.json": {
+      "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "bytes": 7208,
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+    },
+    "/evidence/enterprise-managed/20260913/native-managed-verification.json": {
+      "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "bytes": 13380,
+      "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a"
+    },
+    "/evidence/enterprise-managed/20260913/policy-verify.json": {
+      "path": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "bytes": 625,
+      "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/managed-command-locked.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/managed-command-locked.jpg",
+      "bytes": 168122,
+      "sha256": "1d29e47e9cd598234ecc939cb34a8cd38e248f1c936240042e7b9ccffc20771a"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/managed-governance.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/managed-governance.jpg",
+      "bytes": 124344,
+      "sha256": "54902bb87b5a77658200ca7a1cda676e7f3eb51d16c3c61df14b6f2cd240c6a7"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/mcp-manager-enabled.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-enabled.jpg",
+      "bytes": 74693,
+      "sha256": "03c50af7b54bafa8c2d6e5d14b81816f9665971fb548352ab4fb1943c560d8ce"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/mcp-manager-staged-restriction.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-staged-restriction.jpg",
+      "bytes": 88780,
+      "sha256": "f579fbb4e5d218ace76dfbe82c24e70deef272aa6a66b0e9e0e23228af705324"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/native-managed-recorded-denial.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/native-managed-recorded-denial.jpg",
+      "bytes": 103418,
+      "sha256": "480df161fc232da1308db9cbc37e0648b6b9d06c71ebef7d440e8029f66a2666"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/user-approval-modes.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/user-approval-modes.jpg",
+      "bytes": 146122,
+      "sha256": "24c3f8a70b9a3f2bcf243d8b1f7c5f6ae3e8c17cc6dd09e775e9c2eb12014bb1"
+    },
+    "/evidence/enterprise-managed/20260913/screenshots/user-session-mcp-tools.jpg": {
+      "path": "evidence/enterprise-managed/20260913/screenshots/user-session-mcp-tools.jpg",
+      "bytes": 156731,
+      "sha256": "f293022244e732ddbb151402cd4e2c090df93f10b648f39c58b242cf12c58771"
     },
     "/evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": {
       "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
@@ -314,23 +384,23 @@
     },
     "/output/kirocrew-admin-tour.html": {
       "path": "output/kirocrew-admin-tour.html",
-      "bytes": 2516369,
-      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87"
+      "bytes": 3679148,
+      "sha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a"
     },
     "/kirocrew-admin-tour.html": {
       "path": "output/kirocrew-admin-tour.html",
-      "bytes": 2516369,
-      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87"
+      "bytes": 3679148,
+      "sha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a"
     },
     "/output/kirocrew-admin-tour.md": {
       "path": "output/kirocrew-admin-tour.md",
-      "bytes": 18384,
-      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108"
+      "bytes": 26723,
+      "sha256": "0ae7d24098fbd374356791d2e9bc823ce901d1c80b92d4c4d46853c0d3382294"
     },
     "/kirocrew-admin-tour.md": {
       "path": "output/kirocrew-admin-tour.md",
-      "bytes": 18384,
-      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108"
+      "bytes": 26723,
+      "sha256": "0ae7d24098fbd374356791d2e9bc823ce901d1c80b92d4c4d46853c0d3382294"
     },
     "/output/kirocrew-native-admin-findings.md": {
       "path": "output/kirocrew-native-admin-findings.md",
@@ -341,32 +411,7 @@
       "path": "output/kirocrew-native-admin-findings.md",
       "bytes": 9214,
       "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
-    },
-    "/evidence/admin-console/native-20260913/browser-host/review.json": {
-      "path": "evidence/admin-console/native-20260913/browser-host/review.json",
-      "bytes": 2493,
-      "sha256": "d41782b5bfac85b4ba657c54c1eee2d8eac2f32789c47cd7b3d9a0caa3216813"
-    },
-    "/evidence/admin-console/native-20260913/builder-source-review.json": {
-      "path": "evidence/admin-console/native-20260913/builder-source-review.json",
-      "bytes": 1396,
-      "sha256": "85f74ab3750a0b6fce52a69792f56ad287703e58164c55fde27966feecca6cb8"
     }
   },
-  "scope": "Only this 19-image tour, its current findings, directly linked original screenshots, guide documents and scoped outcome evidence. Earlier incomplete collector evidence is linked through its publication export. Broad collector originals, raw media and recursive directory serving are excluded.",
-  "excludedCaptures": [
-    "output/admin-console-native-20260913/02-sel-coverage.png",
-    "output/admin-console-native-20260913/04-teardown-rule-coverage.png",
-    "output/admin-console-native-20260913/08-native-crew-denial.png",
-    "output/admin-console-native-20260913/09-native-iam-denial.png",
-    "output/admin-console/09-native-telemetry.jpg"
-  ],
-  "excludedPrivateSources": [
-    "evidence/native-client-demo/20260913-ui2/baseline.json",
-    "evidence/native-client-demo/20260913-ui2/receipt.json",
-    "evidence/native-client-demo/host-20260913-ui1/baseline.json",
-    "evidence/native-client-demo/host-20260913-ui1/receipt.json",
-    "evidence/native-client-demo/host-20260913-ui2/baseline.json",
-    "evidence/native-client-demo/host-20260913-ui2/receipt.json"
-  ]
+  "scope": "Only the26-image managed tour, directly linked original screenshots, reviewed evidence and dated earlier findings. Private collector originals, raw media and recursive directory serving are excluded."
 }

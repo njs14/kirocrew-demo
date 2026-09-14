@@ -1,0 +1,278 @@
+{
+  "collection_boundary": {
+    "captured_events": 25,
+    "collection_complete": true,
+    "final_slot_idle": true,
+    "mcp_audit_event_count": 3,
+    "mcp_journal_end_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=10028;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=a1bd8f319;t=65b67d298eee2;x=f168a3ff8cc189d4",
+    "mcp_journal_start_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=fe98;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=a135dc42c;t=65b67ca1dbff5;x=f168a3ff8cc189d4",
+    "mcp_service_identity": {
+      "ActiveState": "active",
+      "InvocationID": "cd7a520aeeda4784b6101b5e6c419af1",
+      "MainPID": "2833",
+      "NRestarts": "0",
+      "SubState": "running"
+    },
+    "mcp_service_stable": true,
+    "non_audit_journal_rows_ignored": 9,
+    "sel_anchor": {
+      "anchor_event_id": "8087307c914e40ff",
+      "anchor_sha256": "124c86f18b03175ea2018b9770c86ba49bbcba4663a081a9e99446e07ea720f0",
+      "baseline_count": 1000
+    },
+    "sel_integrity": {
+      "detail": "",
+      "integrity": "ok",
+      "tampered": 0,
+      "total": 142808,
+      "valid": 142808
+    },
+    "sel_window": {
+      "anchor_event_id": "8087307c914e40ff",
+      "anchor_index": 778,
+      "complete": true,
+      "event_count": 778,
+      "method": "exact_newest_baseline_anchor_retained"
+    }
+  },
+  "kind": "native_managed_policy_verification",
+  "limitations": [
+    "This verdict does not establish a client-side Seatbelt sandbox, enterprise SSO, Kiro CLI enterprise MCP registry enrollment, or root-resistant administration.",
+    "The service non-arrival claim is bounded by the complete recorded journal interval and unchanged MCP service identity.",
+    "The observer is not a video recording and does not independently identify who clicked the interactive approval.",
+    "The collector legacy native_blocked_tool_call_ids field does not recognize the new governance wording; this analysis inspected the explicit native history row and policy-layer SEL event instead.",
+    "No fresh MCP service-denied or IAM-denied calls were made in this take; their earlier footage retains its historical scope."
+  ],
+  "managed_denial": {
+    "correlation": "Native tool ID joins the request trace to its explicit governance-blocked row. SEL joins by exact isolated slot, tool, reason and timestamp; the governance event links to the adjacent denied request by prev_hash. SEL does not contain the native tool-call ID or trace ID.",
+    "crew_denied_service_arrivals_during_interval": 0,
+    "generic_cli_result": "User denied tool execution",
+    "generic_result_attribution": "The generic CLI text says user denied; the explicit native blocked row and policy-layer SEL decision identify automatic governance enforcement.",
+    "matching_trace_service_arrivals": 0,
+    "native_display": "\ud83d\udeab Running: @aws-enforcement/crew_denied \u2014 Blocked by governance policy: policy denies: '@aws-enforcement/crew_denied' matches deny pattern '@aws-enforcement/crew_denied'",
+    "native_history_row_sha256": "56dfbb96f9772bf9fe38bd55488e66a98073cd766ff8c039189ec003e417edd4",
+    "sel_denial_request_id": "868a402b-e118-456c-9d8f-17831b0370c6",
+    "sel_denied_tool_request": {
+      "agent": "enforcement-demo",
+      "caller_identity": "dashboard:chat-8-1789351177",
+      "entry_hash": "9d77ec1d9ac5dc1c1bd4271ce1dcc54dfdddb45b670f1e284a1605da0bd659b9",
+      "error": "hook_deny",
+      "event_id": "c3f5c6de7d6147db",
+      "event_type": "tool_invocation",
+      "metadata": {},
+      "operation": "Running: @aws-enforcement/crew_denied",
+      "outcome": "denied",
+      "prev_hash": "b2a1142aa8fc232f037885799816c04212c8f96702fee3d694513d4b7ee0ccda",
+      "request_id": "868a402b-e118-456c-9d8f-17831b0370c6",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T02:02:42.246453+00:00"
+    },
+    "sel_governance_decision": {
+      "agent": "enforcement-demo",
+      "caller_identity": "dashboard:chat-8-1789351177",
+      "entry_hash": "b2a1142aa8fc232f037885799816c04212c8f96702fee3d694513d4b7ee0ccda",
+      "error": "",
+      "event_id": "7e6045e41a134167",
+      "event_type": "governance_decision",
+      "metadata": {
+        "layer": "policy",
+        "reason": "policy denies: '@aws-enforcement/crew_denied' matches deny pattern '@aws-enforcement/crew_denied'",
+        "rule": "rule1-deny",
+        "scope": ""
+      },
+      "operation": "@aws-enforcement/crew_denied",
+      "outcome": "denied",
+      "prev_hash": "d0bb80a6058824059cace4fd10b26a80daf81688515d9622c58e2a0f76fa2f23",
+      "request_id": "",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T02:02:42.245649+00:00"
+    },
+    "tool": "@aws-enforcement/crew_denied",
+    "tool_call_id": "toolu_bdrk_01GgYnY5LTYNraNmMFeZcbeN",
+    "trace_id": "managed-20260914-ui3-crew",
+    "user_permission_prompt_in_collected_history": false
+  },
+  "managed_floor": {
+    "exact_mutable_duplicate_removed": true,
+    "file_distribution_active": true,
+    "gateway_pid": 133867,
+    "gateway_restarted_after_removal": true,
+    "gateway_service_start": "42927304138",
+    "governed_auto_approval_absent": true,
+    "policy_sha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87",
+    "root_protected_managed_files_verified": true,
+    "source_sha256": {
+      "agent.py": "29db2dc3af749c54fde7079e76b043ebb7aea660745cfc8f4983b05ae0661de6",
+      "config/loader.py": "8c939117d505987e860e7d33ad472acb8404689d5ab55a6c6b995c21f57a9aa5",
+      "dashboard/handlers/mcp_custom.py": "2aefc532339349fb637f4ddb2e054eafabaea41dab32ced8a0fb555f5f60cd89",
+      "dashboard/handlers/security.py": "f6350b8e00bc948c4f5e2179a05cc392f7cc71e343f3aa6193957c1c5d03e109",
+      "hooks.py": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+      "platform/governance.py": "7d9c5b109086b8c4a2d36c589d387e1fd562e7d2b407dc65d54d2e7d2fc09341",
+      "platform/policy_distribution.py": "b4f57a6163a61f7d1f5025f3472794d44484c0b83fc263b29d957845937df30e"
+    },
+    "unavailable_behavior": "fail_closed"
+  },
+  "native_enforcement_verified": true,
+  "observed_interval": {
+    "finish_requested_at": "2026-09-14T02:04:12.984937+00:00",
+    "finished": "2026-09-14T02:04:21.277945+00:00",
+    "started": "2026-09-14T02:00:49.852964+00:00",
+    "stream_finished": "2026-09-14T02:04:21.275007+00:00"
+  },
+  "permitted_read": {
+    "approval": "interactive_approved",
+    "native_history_row_sha256": [
+      "046a28ac3d5d8231c40b307d601b30963c1b3b3527c29cb0900f34c94594a52a",
+      "aeb9e813644d07622ff64e78e509b53b53114ce630f9d3f0e52a7f37cdca8735",
+      "59fb04bf2a7175144f1ed2393b8b2f2defa612ebfe378332e7fe20abf5fd029f"
+    ],
+    "native_result": {
+      "aws_request_id": "P573PSZY9VCT5ZDK",
+      "invocation_id": "30bc9008-a65f-4e10-a244-5bebb91f7e5c",
+      "layer": "aws",
+      "object_bytes": 55,
+      "object_sha256": "34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160",
+      "ok": true,
+      "principal": "kirocrew-demo-client",
+      "tool": "read_allowed",
+      "trace_id": "managed-20260914-ui3-allow"
+    },
+    "native_service_join": "Exact trace_id, invocation_id, AWS request ID and fixture digest.",
+    "permission_request_id": "9ed4674f-18e1-4680-a3fc-946094e08a7a",
+    "sel_approval": {
+      "agent": "enforcement-demo",
+      "caller_identity": "dashboard:chat-8-1789351177",
+      "entry_hash": "e29d0f1ce32b87708b75fd2dca789f13a1d90ff001aa17c64f2a11cbe2847fac",
+      "error": "",
+      "event_id": "b57a0fe77a0a4a47",
+      "event_type": "tool_invocation",
+      "metadata": {
+        "reason": "interactive"
+      },
+      "operation": "Running: @aws-enforcement/read_allowed",
+      "outcome": "approved",
+      "prev_hash": "dc13b98d4040a7c1cf45a750f4ec93e6fc767548bfb76ea8478b84be1a9e43a8",
+      "request_id": "9ed4674f-18e1-4680-a3fc-946094e08a7a",
+      "source": "dashboard",
+      "timestamp": "2026-09-14T02:02:13.086906+00:00"
+    },
+    "service_events": [
+      {
+        "event": "tool_decision",
+        "invocation_id": "30bc9008-a65f-4e10-a244-5bebb91f7e5c",
+        "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=10024;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=a1bd657fd;t=65b67d29653c6;x=8af56c544c8ce96e",
+        "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+        "journal_timestamp_us": "1789351333090246",
+        "layer": "mcp",
+        "outcome": "allowed",
+        "principal": "kirocrew-demo-client",
+        "service": "demo-mcp-enforcement",
+        "time": "2026-09-14T02:02:13.090170+00:00",
+        "tool": "read_allowed",
+        "trace_id": "managed-20260914-ui3-allow"
+      },
+      {
+        "event": "aws_dispatch",
+        "invocation_id": "30bc9008-a65f-4e10-a244-5bebb91f7e5c",
+        "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=10026;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=a1bd7bb40;t=65b67d297b70a;x=107a0abf93482e82",
+        "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+        "journal_timestamp_us": "1789351333181194",
+        "layer": "aws",
+        "outcome": "attempted",
+        "principal": "kirocrew-demo-client",
+        "service": "demo-mcp-enforcement",
+        "time": "2026-09-14T02:02:13.181064+00:00",
+        "tool": "read_allowed",
+        "trace_id": "managed-20260914-ui3-allow"
+      },
+      {
+        "aws_request_id": "P573PSZY9VCT5ZDK",
+        "event": "aws_result",
+        "invocation_id": "30bc9008-a65f-4e10-a244-5bebb91f7e5c",
+        "journal_cursor": "s=2520868ecca349a8b5cd931d51c53717;i=10027;b=4aee18e751fe4c1dadb43fbf3f6e320b;m=a1bd8e9b9;t=65b67d298e583;x=8741e763ed99e955",
+        "journal_invocation_id": "cd7a520aeeda4784b6101b5e6c419af1",
+        "journal_timestamp_us": "1789351333258627",
+        "layer": "aws",
+        "object_bytes": 55,
+        "object_sha256": "34ebbefeb5f66527fbc80083c3b695a63e675c2093fd5f3f079a7c5bfe4b9160",
+        "outcome": "allowed",
+        "principal": "kirocrew-demo-client",
+        "service": "demo-mcp-enforcement",
+        "time": "2026-09-14T02:02:13.258506+00:00",
+        "tool": "read_allowed",
+        "trace_id": "managed-20260914-ui3-allow"
+      }
+    ],
+    "tool": "@aws-enforcement/read_allowed",
+    "tool_call_id": "toolu_bdrk_01WdejFghZReUVmqYeWZEsGZ",
+    "trace_id": "managed-20260914-ui3-allow"
+  },
+  "run_id": "managed-20260914-ui3",
+  "sandbox": {
+    "exact_tool_sandbox_enforcement_verified": false,
+    "in_this_observer": "not_collected",
+    "observer_process_scope": "PID, PPID, UID, executable and working directory only; no namespace or seccomp fields.",
+    "separate_host_receipt_observation": "host-runtime-check.json observes native CLI processes with NoNewPrivs=1, Seccomp=2 and distinct mount namespaces before this take. Those process IDs are not the exact allow/deny tool processes."
+  },
+  "schema_version": 1,
+  "scope": "One permitted fixture read and one explicit policy denial in the existing native KiroCrew UI session, under the original Kiro CLI backend.",
+  "screenshots": {
+    "observed": "The original native UI shows the unique allow result, denied request trace and expanded governance block notice; Normal mode and enforcement-demo are visible.",
+    "reviewed_actual_native_images": [
+      {
+        "bytes": 110737,
+        "path": "evidence/enterprise-managed/20260913/screenshots/native-managed-denial.jpg",
+        "sha256": "ff31d01ff0fff02230be18b4fd20b99e7eb09c7673cd68a986bb07e5d79e4535"
+      },
+      {
+        "bytes": 110367,
+        "path": "evidence/enterprise-managed/20260913/screenshots/native-managed-denial-detail.jpg",
+        "sha256": "77de6a953951a86b7a0f868fe9007bef904002cb80fe616cfaef617205cd125b"
+      }
+    ]
+  },
+  "slot": "chat-8-1789351177",
+  "sources": {
+    "host_runtime_check": {
+      "bytes": 5252,
+      "path": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7"
+    },
+    "mcp_apply": {
+      "bytes": 775,
+      "path": "evidence/enterprise-managed/20260913/mcp-apply.json",
+      "sha256": "b56acede119c7b69c35a2cdc449e45fe27c51c2250c1db9c24b25ae476deabf5"
+    },
+    "mcp_verify": {
+      "bytes": 2275,
+      "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4"
+    },
+    "policy_verify": {
+      "bytes": 625,
+      "path": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
+    },
+    "private_baseline": {
+      "bytes": 679427,
+      "path": ".build/enterprise-managed-native-ui3/baseline.json",
+      "sha256": "c93426d96a7e2017f578e597f26dda1e2c149a145b71e3ba6b23fbd5174143da"
+    },
+    "private_observer_events": {
+      "bytes": 12156,
+      "path": ".build/enterprise-managed-native-ui3/events.jsonl",
+      "sha256": "affc4597c023522166218a85d08ae0bc9c977beb42e550cfeeb4b59b47d52120"
+    },
+    "private_observer_receipt": {
+      "bytes": 1905516,
+      "path": ".build/enterprise-managed-native-ui3/receipt.json",
+      "sha256": "47e7c31551ca03b8ee6ff899d950523b43568152c3319fb83665da41cd03a2e6"
+    }
+  },
+  "verdict": "PASS_FOR_RECORDED_NATIVE_ALLOW_AND_MANAGED_MCP_DENY",
+  "video": {
+    "accepted": false,
+    "note": "No raw MOV survives for this take. A separate future take must carry its own recording and evidence receipt.",
+    "status": "ui3_capture_not_retained"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "kind": "managed_deck_council_incorporation",
+  "written_at": "2026-09-14T03:01:28.417904+00:00",
+  "external_candidate": {
+    "html_sha256": "80cc88e8b845a607a9795b9da17840c3df5e96cda80e4c81d17638fd83888eab",
+    "verdicts": {
+      "grok": "CHANGES REQUIRED",
+      "claude": "CHANGES REQUIRED"
+    },
+    "reviews": {
+      "grok": {
+        "path": "evidence/enterprise-managed/council/candidate/review/dispatch/grok-review.md",
+        "sha256": "700c8d3fbef66c3527d88ffb57c7b5af1a0b50be12f6805ea506e9b77a0d99ad",
+        "bytes": 5280
+      },
+      "claude": {
+        "path": "evidence/enterprise-managed/council/candidate/review/dispatch/claude-review.md",
+        "sha256": "1ca75b11cc46c5536be2d186bcdf70878068c9e0c53ce408b958ee973bc05bb9",
+        "bytes": 6964
+      }
+    },
+    "verification": {
+      "path": "evidence/enterprise-managed/council/council-verified-receipt.json",
+      "sha256": "e46a50eb848a4d1819a0f533376a601cba64057648309b60ae7e985af34b108e",
+      "bytes": 14313
+    },
+    "scope": "Both models inspected all sixteen candidate PNG payloads and notes. Their original verdicts do not constitute exact-final-HTML acceptance or video/live-system review."
+  },
+  "parent_agreed_decisions": [
+    {
+      "id": "M1",
+      "slides": [
+        13
+      ],
+      "change": "Show the original expanded ui4 host notice with a verbatim readable policy reason. State that the duplicate mutable Crew hook was retired before the take and identify Policy v1.",
+      "scope": "Native image and all video/cue/source bytes unchanged; new crop is an SVG view of the original image."
+    },
+    {
+      "id": "M2",
+      "slides": [
+        15
+      ],
+      "change": "Explain CENTRAL POLICY DISTRIBUTION as the UI label for this local root-owned file and startup-only loading; state the loaded cc floor without exact-tool sandbox proof; label S3 cp as a locked setting with no native S3 upload take.",
+      "scope": "Crop includes only the cp row; host root retains management authority."
+    },
+    {
+      "id": "M3",
+      "slides": [
+        13,
+        15
+      ],
+      "change": "Display policy SHA prefix ca6c7e60 and dates. Date the Governance image save at01:52:51UTC before the ui4 take02:06:34UTC. Interpret source observed_at02:20 as summary assembly time.",
+      "scope": "No process-continuity claim through02:20. Original source receipt bytes/schema unchanged; ui4 continuity remains scoped to its receipt."
+    },
+    {
+      "id": "M4",
+      "slides": [
+        1,
+        2
+      ],
+      "change": "Name local MCP availability on the Mac. Add host-root file/service ownership and Crew-user availability/approval labels inside the existing EC2 enclosure.",
+      "scope": "Exactly one endpoint-control enclosure retained."
+    },
+    {
+      "id": "M5",
+      "slides": [
+        4,
+        13
+      ],
+      "change": "Use Policy denied; no MCP arrival in reviewed interval and retain explicit native-history plus policy-layer SEL attribution.",
+      "scope": "Journal absence is bounded and is not the sole policy proof."
+    },
+    {
+      "id": "M6",
+      "slides": [
+        14
+      ],
+      "change": "Tighten and enlarge actual Apply/Discard and session0/4 crops. Add exact clip paths to prevent neighboring image/chat content from bleeding into differently proportioned viewports.",
+      "scope": "Staged change remains discarded; configured/deferred inventory remains0/4 loaded; original pixels unchanged."
+    },
+    {
+      "id": "M7",
+      "slides": [
+        3,
+        4,
+        5,
+        6,
+        10,
+        16
+      ],
+      "change": "Shorten map titles and restore table/callout spacing. Show encoded-duration floor labels in m:ss, matching the player. Align reproduction content below the title and show --check before --output-dir.",
+      "scope": "No media timing or playback code changed."
+    },
+    {
+      "id": "M8",
+      "slides": [
+        3
+      ],
+      "change": "Strip trailing whitespace at the generated-notes boundary and apply the direct No AI Slop edit after substantive council changes.",
+      "scope": "No new model review round."
+    }
+  ],
+  "final_artifacts": {
+    "kirocrew-native-controls.html": {
+      "path": "output/kirocrew-native-controls.html",
+      "sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
+      "bytes": 2033388
+    },
+    "kirocrew-native-controls-build.json": {
+      "path": "output/kirocrew-native-controls-build.json",
+      "sha256": "6e4e80643de8dacaf7ed3d1c1a893e2dc1b52672d70c1ac6e3522a9d113f65f1",
+      "bytes": 44395
+    },
+    "kirocrew-native-controls-notes.md": {
+      "path": "output/kirocrew-native-controls-notes.md",
+      "sha256": "0dda0d02f3b9bd13f51a995ef88b0704d23881712a95da37091255160ee3c111",
+      "bytes": 35044
+    },
+    "kirocrew-native-controls-manifest.json": {
+      "path": "output/kirocrew-native-controls-manifest.json",
+      "sha256": "74e12ac4f7aff4d6b56d92ffd9f1093ecda96ac6fced2b859c372837156fc8ba",
+      "bytes": 46081
+    }
+  },
+  "builder": {
+    "path": "scripts/build-native-control-presentation.py",
+    "sha256": "831312056d217d6961c0862cfa64429f21e50ac60cff0e6e66328c38fe6234b1",
+    "bytes": 120736
+  },
+  "preservation": {
+    "path": "evidence/enterprise-managed/council/incorporation-before/manifest.json",
+    "sha256": "be72d962bd311cc046b25fd4473633240de56863b1a8dde705f1730f12684656",
+    "bytes": 11779
+  },
+  "checks": {
+    "slides": 16,
+    "videos": 9,
+    "single_endpoint_control_boxes": 1,
+    "all_113_serve_bindings_match": true,
+    "all_nine_media_cues_posters_and_provenance_unchanged": true,
+    "both_inline_player_scripts_unchanged": true,
+    "all_49_original_candidate_files_unchanged": true,
+    "notes_have_no_trailing_whitespace": true
+  },
+  "final_browser_review": "Separate parent-owned exact-artifact receipt; pending when this incorporation receipt was written."
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "number": 11,
+    "file": "slide-11.jpg",
+    "hash": "#slide-11",
+    "height": 720,
+    "horizontalOverflow": false,
+    "region": null,
+    "width": 1280
+  },
+  {
+    "number": 12,
+    "file": "slide-12.jpg",
+    "hash": "#slide-12",
+    "height": 720,
+    "horizontalOverflow": false,
+    "region": null,
+    "width": 1280
+  },
+  {
+    "number": 13,
+    "file": "slide-13.jpg",
+    "hash": "#slide-13",
+    "height": 720,
+    "horizontalOverflow": false,
+    "region": null,
+    "width": 1280
+  },
+  {
+    "number": 14,
+    "file": "slide-14.jpg",
+    "hash": "#slide-14",
+    "height": 720,
+    "horizontalOverflow": false,
+    "region": null,
+    "width": 1280
+  },
+  {
+    "number": 15,
+    "file": "slide-15.jpg",
+    "hash": "#slide-15",
+    "height": 720,
+    "horizontalOverflow": false,
+    "region": null,
+    "width": 1280
+  },
+  {
+    "number": 16,
+    "file": "slide-16.jpg",
+    "hash": "#slide-16",
+    "height": 720,
+    "horizontalOverflow": false,
+    "region": null,
+    "width": 1280
+  }
+]

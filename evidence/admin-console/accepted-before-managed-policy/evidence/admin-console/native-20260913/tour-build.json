@@ -1,0 +1,384 @@
+{
+  "schema": 1,
+  "kind": "native_admin_tour_build",
+  "built_at_utc": "2026-09-14T01:03:58.811636+00:00",
+  "status": "static_and_browser_passed",
+  "builder_sha256": "4205168e4d3ed75dbea4a522cb039373d5b4080a2566fad0487674b6969168c2",
+  "stop_count": 9,
+  "screenshot_count": 19,
+  "static_checks": {
+    "unique_ids": true,
+    "all_anchor_targets_exist": true,
+    "all_screenshot_bytes_preserved": true,
+    "all_stops_have_images": true,
+    "no_external_assets": true,
+    "no_video_or_fake_enforcement_frames": true,
+    "native_auth_source_confirmed": true
+  },
+  "screenshots": [
+    {
+      "path": "output/admin-console-native-20260913/07-gateway-overview.png",
+      "sha256": "d4094b575c6cb8ac5678f050bb894df36f82fe47ff38c659aa52d0376c1967fb",
+      "bytes": 74217,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_group": "fresh_security_tour",
+      "stop": "host"
+    },
+    {
+      "path": "output/admin-console/02-arm-performance.jpg",
+      "sha256": "368456a4d432f80a3c79ed34117b2bb8b24182cbcdcb917acea7e8308dd891ba",
+      "bytes": 51458,
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 earlier baseline",
+      "capture_group": "accepted_earlier_baseline",
+      "stop": "host"
+    },
+    {
+      "path": "output/admin-console-native-20260913/01-live-security-posture.png",
+      "sha256": "9b0a9a96268e198b8a6c1ebc4b97177fa5348ed10292766f8d71bdb93817d44f",
+      "bytes": 111407,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_group": "fresh_security_tour",
+      "stop": "posture"
+    },
+    {
+      "path": "output/admin-console-native-20260913/03-denied-command-categories.png",
+      "sha256": "318d8ec1d2ec81d30c01676e7441262b1c45522baecb6a2cc721cafb0ddfa57b",
+      "bytes": 107657,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_group": "fresh_security_tour",
+      "stop": "rules"
+    },
+    {
+      "path": "output/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "sha256": "4ce5b3632c2eb1ca3d769c9acc2f9e38edb74629a9af2dca79090a1cfac92d9e",
+      "bytes": 138288,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_group": "fresh_security_tour",
+      "stop": "rules"
+    },
+    {
+      "path": "output/admin-console-host-20260913/01-command-rule-active.jpg",
+      "sha256": "ed8fd2f5e10d6acc5ebec1d2cdbe5b70a86b73201565b18c71b6d1e7aecbdd00",
+      "bytes": 112473,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
+      "stop": "rules"
+    },
+    {
+      "path": "output/admin-console-host-20260913/02-command-rule-removed.jpg",
+      "sha256": "f0994d88918d6f00ceeb6fcb3823905d98e481495016a9a543041efec93e51d3",
+      "bytes": 107638,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
+      "stop": "rules"
+    },
+    {
+      "path": "output/admin-console-native-20260913/05-approval-duration.png",
+      "sha256": "0827e2d83fcf36745c9325b6e967bf100678fa1f6536c741da29a79e59fbb71f",
+      "bytes": 88046,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_group": "fresh_security_tour",
+      "stop": "approval"
+    },
+    {
+      "path": "output/admin-console-native-20260913/06-governance-status.png",
+      "sha256": "0963be9afa8c60e73ce18b2e779202529cf88b4261708050fdfd7b1292f468d6",
+      "bytes": 89720,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_group": "fresh_security_tour",
+      "stop": "governance"
+    },
+    {
+      "path": "output/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "sha256": "8f6f13d46a0fe51af91f23bd9ffc3d3fc5276b78f24274ba61c0cc003c3c6e5e",
+      "bytes": 132207,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_group": "fresh_security_tour",
+      "stop": "audit"
+    },
+    {
+      "path": "output/admin-console/07-agent-backend.jpg",
+      "sha256": "35735f35bed62fee253dd3d4d1471acd2ea32c072a4421d6906db0b422e73ccf",
+      "bytes": 82406,
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 earlier baseline",
+      "capture_group": "accepted_earlier_baseline",
+      "stop": "backend"
+    },
+    {
+      "path": "output/admin-console/08-telemetry-controls.jpg",
+      "sha256": "16ca6e0c062799f6e7510dce429a9853a515be0f558e7a93e21ca9bfa65a09b1",
+      "bytes": 70977,
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 earlier baseline",
+      "capture_group": "accepted_earlier_baseline",
+      "stop": "metrics"
+    },
+    {
+      "path": "output/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "sha256": "680e9f08a55db92372b13356f697010fe674532741da467b2b93be9d61fbd8aa",
+      "bytes": 83630,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_group": "fresh_security_tour",
+      "stop": "metrics"
+    },
+    {
+      "path": "output/admin-console-host-20260913/03-command-turn-metrics.jpg",
+      "sha256": "0daf14b482ab41bc35214d12fce77d07397dd027ddf650f33e82d01bc4357b52",
+      "bytes": 89769,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
+      "stop": "metrics"
+    },
+    {
+      "path": "output/admin-console-host-20260913/04-anonymous-turn-metrics.jpg",
+      "sha256": "5148ca90307b13698a6b91f17689e094b60cfa5e6887b2af1a62cadcfe043705",
+      "bytes": 89892,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
+      "stop": "metrics"
+    },
+    {
+      "path": "output/admin-console/11-client-server-telemetry.jpg",
+      "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698",
+      "bytes": 78171,
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 earlier baseline",
+      "capture_group": "accepted_earlier_baseline",
+      "stop": "collection"
+    },
+    {
+      "path": "output/admin-console/12-collection-logs.jpg",
+      "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63",
+      "bytes": 81268,
+      "width": 1280,
+      "height": 720,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 earlier baseline",
+      "capture_group": "accepted_earlier_baseline",
+      "stop": "collection"
+    },
+    {
+      "path": "output/admin-console-host-20260913/05-client-server-health.jpg",
+      "sha256": "e9cf198282a847b9e4681c2cd0191e4061d5a17b51fad6f7f753682981e5dded",
+      "bytes": 146893,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
+      "stop": "collection"
+    },
+    {
+      "path": "output/admin-console-host-20260913/06-server-collection-logs.jpg",
+      "sha256": "a24e67be86372e9c76ac4602af6832520c46deea4f587360c929ff7355d40734",
+      "bytes": 118292,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_group": "host-20260913-evening",
+      "stop": "collection"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Fresh EC2 CLI authentication",
+      "path": "evidence/native-client-demo/20260913/authenticated.json",
+      "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
+    },
+    {
+      "label": "Native Mac recording guide",
+      "path": "docs/NATIVE-CLIENT-DEMO.md",
+      "sha256": "92c76b60e2d306156e13e6a84146b7f80c3abab61eda1bf4769bc6a5db036b63"
+    },
+    {
+      "label": "MCP and IAM enforcement contract",
+      "path": "infrastructure/mcp-enforcement/README.md",
+      "sha256": "68a0c13a955baec04a34e25f382bde6eea1d8701c6fb12a8d356589526b45910"
+    },
+    {
+      "label": "Custom telemetry data contract",
+      "path": "infrastructure/observability/APP-INSTALL.md",
+      "sha256": "98d682cadc364ec25f98e85cb3709f2b1fc19a13ed792abb3a6efb19c28a907e"
+    },
+    {
+      "label": "Earlier screenshot capture receipt",
+      "path": "evidence/admin-console/browser-receipt.json",
+      "sha256": "7ec5239c3cb55087dbab974ab64a3c485fdf6038a4136952a4a933f3dc5cd317"
+    },
+    {
+      "label": "Earlier admin findings",
+      "path": "output/kirocrew-admin-findings.md",
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    },
+    {
+      "label": "Final four-outcome reconciliation",
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    },
+    {
+      "label": "Independent reconciliation review",
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+    },
+    {
+      "label": "MCP and IAM authority attribution review",
+      "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
+    },
+    {
+      "label": "Publication export of the incomplete collector receipt",
+      "path": "evidence/native-client-demo/20260913-ui2/receipt-publication.json",
+      "sha256": "1e81f02d2237afbd0d6394b178def71134a8be79bd50f26b23f79af42983ee2e"
+    },
+    {
+      "label": "Native MCP clip review",
+      "path": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d"
+    },
+    {
+      "label": "Later host workspace-read observations",
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+      "sha256": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7"
+    },
+    {
+      "label": "Later native command-rule observations",
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+      "sha256": "88bc23a85ab8db45a0d24ee34f711f46f263245e1a83f4e89c623e21dd9c2455"
+    },
+    {
+      "label": "Independent initial host review",
+      "path": "evidence/native-client-demo/host-20260913-review/initial-review.json",
+      "sha256": "ff855dbecb4bdb852200521040f4d5e523b1f50d7035fb3ec808395f4e3314e9"
+    },
+    {
+      "label": "Anonymous Gateway authentication correlation",
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
+    },
+    {
+      "label": "Independent anonymous Gateway authentication review",
+      "path": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204"
+    },
+    {
+      "label": "Temporary command-rule cleanup readback",
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "sha256": "3eae37afdfc7d513f702a336d1e6ce70f07f36209151630b0271f314bfc146e1"
+    },
+    {
+      "label": "Current native admin findings",
+      "path": "output/kirocrew-native-admin-findings.md",
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
+    },
+    {
+      "label": "Host-control scenario guide",
+      "path": "docs/HOST-CONTROL-SCENARIOS.md",
+      "sha256": "6d8e0210da6e135ece4d368d3d4891627563b6c4af119cd422e1f94d1d67c9a1"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "output/kirocrew-admin-tour.html",
+      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87",
+      "bytes": 2516369
+    },
+    {
+      "path": "output/kirocrew-admin-tour.md",
+      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108",
+      "bytes": 18384
+    }
+  ],
+  "native_proof_links": [
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+    "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+    "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+    "evidence/native-client-demo/20260913-ui2/receipt-publication.json"
+  ],
+  "native_claim_scope": {
+    "bounded_four_outcomes_reconciled": true,
+    "full_native_acceptance": false,
+    "original_collection_complete": false,
+    "authority_verdict": "bounded_attribution_supported"
+  },
+  "browser_review": {
+    "current_candidate": "passed",
+    "reviewed_candidate_sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87",
+    "review_path": "evidence/admin-console/native-20260913/browser-host/review.json",
+    "review_sha256": "d41782b5bfac85b4ba657c54c1eee2d8eac2f32789c47cd7b3d9a0caa3216813",
+    "recorded_status": "passed",
+    "scope": "Browser approval applies only when its recorded HTML hash matches this build. Prior navigation, zoom, keyboard and sticky layout approval remains bound to the earlier candidate."
+  },
+  "limits": [
+    "Screenshots preserve capture-time values; they do not poll the live portal.",
+    "The four native outcomes have bounded supporting receipts; broader native acceptance is not inferred from the screenshot tour.",
+    "Browser layout, stop navigation and zoom require a separate observed browser receipt.",
+    "Earlier host, backend and telemetry images retain their earlier-baseline scope."
+  ],
+  "editorial_review": "No AI Slop self-review applied to captions, explanations and status claims.",
+  "capture_groups": [
+    {
+      "path": "evidence/admin-console/native-20260913/host-captures.json",
+      "sha256": "dfaf5df98ebbec220a75aae5103a07020d76b0e4c7b7395dd5843e74f2b0a5b3",
+      "group_id": "host-20260913-evening",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "stop_ids": [
+        "collection",
+        "metrics",
+        "rules"
+      ],
+      "scope": "Appended original screenshots and reviewed copy; this input does not change native outcome verdicts."
+    }
+  ],
+  "builder_source_review": {
+    "path": "evidence/admin-console/native-20260913/builder-source-review.json",
+    "sha256": "85f74ab3750a0b6fce52a69792f56ad287703e58164c55fde27966feecca6cb8",
+    "reviewed_builder_sha256": "4205168e4d3ed75dbea4a522cb039373d5b4080a2566fad0487674b6969168c2"
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "kind": "managed_diagram_source_bindings",
+  "current_managed_sources": [
+    {
+      "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+      "bytes": 8119,
+      "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/policy-plan.json",
+      "bytes": 7460,
+      "sha256": "c1c5d3d9703a6d2bf18583bb54111a53332dd98bdce3868dd2bf9633498dd9e5"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "bytes": 625,
+      "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "bytes": 2275,
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "bytes": 13380,
+      "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "bytes": 7208,
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+      "bytes": 2854,
+      "sha256": "5f325f568203ec997c7f94a0d3c2c01e358906bba83d9a95e1d80b692a82e0ce"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "bytes": 5252,
+      "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/client-relaunch.json",
+      "bytes": 889,
+      "sha256": "5520f2939ab2dba5227e5daf90d535fa44eccd7fd5820adc3ce5b8182a187ea0"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/media-review.json",
+      "bytes": 8335,
+      "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd"
+    }
+  ],
+  "earlier_native_authorities": [
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "bytes": 14113,
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "bytes": 2040,
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-arm-readback.json",
+      "bytes": 7122,
+      "sha256": "9566995b485d6e92c7efa77d6a9870829820a38ccecfb28c359889618ed2e955"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-aws-readback.json",
+      "bytes": 2778,
+      "sha256": "e86828024125b1a8ac51c6d53862a19cc5de231038cdbfe2902df58dbdba548c"
+    }
+  ],
+  "frozen_summary_references_verified": [
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/managed-governance.jpg",
+      "bytes": 124344,
+      "sha256": "54902bb87b5a77658200ca7a1cda676e7f3eb51d16c3c61df14b6f2cd240c6a7"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-enabled.jpg",
+      "bytes": 74693,
+      "sha256": "03c50af7b54bafa8c2d6e5d14b81816f9665971fb548352ab4fb1943c560d8ce"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-staged-restriction.jpg",
+      "bytes": 88780,
+      "sha256": "f579fbb4e5d218ace76dfbe82c24e70deef272aa6a66b0e9e0e23228af705324"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/managed-command-locked.jpg",
+      "bytes": 168122,
+      "sha256": "1d29e47e9cd598234ecc939cb34a8cd38e248f1c936240042e7b9ccffc20771a"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/user-session-mcp-tools.jpg",
+      "bytes": 156731,
+      "sha256": "f293022244e732ddbb151402cd4e2c090df93f10b648f39c58b242cf12c58771"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/user-approval-modes.jpg",
+      "bytes": 146122,
+      "sha256": "24c3f8a70b9a3f2bcf243d8b1f7c5f6ae3e8c17cc6dd09e775e9c2eb12014bb1"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/native-managed-recorded-denial.jpg",
+      "bytes": 103418,
+      "sha256": "480df161fc232da1308db9cbc37e0648b6b9d06c71ebef7d440e8029f66a2666"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "bytes": 625,
+      "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "bytes": 2275,
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "bytes": 13380,
+      "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "bytes": 7208,
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+      "bytes": 2854,
+      "sha256": "5f325f568203ec997c7f94a0d3c2c01e358906bba83d9a95e1d80b692a82e0ce"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "bytes": 5252,
+      "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/client-relaunch.json",
+      "bytes": 889,
+      "sha256": "5520f2939ab2dba5227e5daf90d535fa44eccd7fd5820adc3ce5b8182a187ea0"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/media-review.json",
+      "bytes": 8335,
+      "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd"
+    },
+    {
+      "path": "output/native-managed-clip-20260914/manifest.json",
+      "bytes": 5417,
+      "sha256": "f2a0ca0d1e54e021ebe4bd0cb9c2e06119fade72f631901ec2c483bacd8b5afb"
+    }
+  ],
+  "scope": "Current managed facts are bound to deployed receipts. Earlier authority and refusal evidence retains its recorded date. No dependency on the new deck, mutable current-status file, or unfinished guide edits.",
+  "metadata_refresh": {
+    "kind": "poster_only_source_metadata_refresh",
+    "updated_at": "2026-09-14T02:32:12.145424+00:00",
+    "reason": "Parent-approved actual ui4 final-reason poster at 34 seconds replaces the earlier poster. The clip MP4, cues, managed facts and diagram bytes are unchanged.",
+    "changed_sources": [
+      {
+        "before": {
+          "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+          "bytes": 8119,
+          "sha256": "871f808d6ff8d5d5bc6c97f1afc2893bacc84f0248cdff879bf5f86b1223a77d"
+        },
+        "after": {
+          "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+          "bytes": 8119,
+          "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452"
+        }
+      },
+      {
+        "before": {
+          "path": "evidence/enterprise-managed/20260913/media-review.json",
+          "bytes": 6774,
+          "sha256": "d6a791b3ac3ee4a58cc08d494a5645cae50108c8066521e8d7a42ac5fd3406ec"
+        },
+        "after": {
+          "path": "evidence/enterprise-managed/20260913/media-review.json",
+          "bytes": 8335,
+          "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd"
+        }
+      },
+      {
+        "before": {
+          "path": "output/native-managed-clip-20260914/manifest.json",
+          "bytes": 5417,
+          "sha256": "a73e8adadd4e30cadc93fe0ab9d800b8a0c65084bc850cbad973e656bdb1702a"
+        },
+        "after": {
+          "path": "output/native-managed-clip-20260914/manifest.json",
+          "bytes": 5417,
+          "sha256": "f2a0ca0d1e54e021ebe4bd0cb9c2e06119fade72f631901ec2c483bacd8b5afb"
+        }
+      }
+    ],
+    "prior_metadata_archive": {
+      "path": "evidence/enterprise-managed/20260913/archify/before-poster-provenance-refresh/manifest.json",
+      "bytes": 1056,
+      "sha256": "d15346d5dc88d2983240012c6be6a04e69f3f509d5b89e3d2af13b3da7a46457"
+    },
+    "diagram_rerendered": false,
+    "additional_review_or_capture": false
+  }
+}

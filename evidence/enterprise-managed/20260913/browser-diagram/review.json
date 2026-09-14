@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "kind": "managed_diagram_browser_review",
+  "checked_at": "2026-09-14T02:44:39.760793+00:00",
+  "verdict": "pass",
+  "artifact": {
+    "path": "kirocrew-managed-controls-diagram.html",
+    "sha256": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763",
+    "bytes": 810663
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "checks": {
+    "nodes_observed": 8,
+    "relationships_observed": 7,
+    "single_endpoint_control_enclosure": true,
+    "managed_policy_focus_and_semantic_details": true,
+    "reset_view": true,
+    "presentation_stage": true,
+    "stage_visual_inspection": "All eight nodes and seven routes legible and inside expected layout."
+  },
+  "screenshots": [
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-diagram/managed-policy.jpg",
+      "sha256": "39c7b77bfcddd0bfccbb620d485b3b0ade3ecb2bff1eeb77447873717442d7cb",
+      "bytes": 72358
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-diagram/stage.jpg",
+      "sha256": "40b407f127d33a86688c74cb5249fb67b24c9d3854fe4301ea9f8f36fed9a332",
+      "bytes": 74221
+    }
+  ],
+  "limits": [
+    "Export formats and mobile layout were not tested in this pass.",
+    "Interactive diagram behavior does not establish live security enforcement."
+  ]
+}

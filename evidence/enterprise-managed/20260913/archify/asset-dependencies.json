@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "artifact": {
+    "path": "kirocrew-managed-controls-diagram.html",
+    "bytes": 810663,
+    "sha256": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763"
+  },
+  "required_asset_files": [
+    "kirocrew-managed-controls-diagram.html"
+  ],
+  "external_asset_dependencies": [],
+  "inline_script_count": 4,
+  "inline_style_count": 2,
+  "embedded_resource_count": 0,
+  "embedded_css_url_count": 34,
+  "navigation_links": [],
+  "scope": "Static HTML attribute and CSS resource scan. All dependencies are inline; no browser or network execution. SVG typography derivative preserves all HTML outside its SVG byte-for-byte."
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "kind": "managed_deck_post_council_no_ai_slop",
+  "written_at": "2026-09-14T03:01:28.417904+00:00",
+  "performed_after": "Substantive agreed council incorporation",
+  "method": "Direct self-edit and evaluation using the requested No AI Slop skill and eval.md; no additional model or evaluator round.",
+  "skill_path": "/Users/noahsutter/.codex/plugins/cache/openai-curated-remote/no-ai-slop/1.0.6/skills/no-ai-slop/SKILL.md",
+  "eval_path": "/Users/noahsutter/.codex/plugins/cache/openai-curated-remote/no-ai-slop/1.0.6/skills/no-ai-slop/eval.md",
+  "voice_preserved": [
+    "Literal control and tool names",
+    "Short technical explanations",
+    "Explicit recording and evidence limits",
+    "Direct reproduction commands"
+  ],
+  "what_changed": [
+    "Named local MCP availability and host-root authority directly.",
+    "Replaced the long map title and crowded unfinished-callout prose with concise labels.",
+    "Explained the local file policy, loaded floor and locked UI setting without suggesting broader tested enforcement.",
+    "Changed the02:20 wording to evidence-summary assembly time and kept capture chronology separate.",
+    "Used a labeled verbatim native excerpt; original UI wording and media remain unchanged.",
+    "Standardized duration labels and removed generated trailing whitespace."
+  ],
+  "evaluation": {
+    "editing_principles_1_to_10": "pass",
+    "words_to_cut": "pass; quoted native text and literal product/tool names retained where required",
+    "patterns_to_cut_1_to_8": "pass",
+    "final_read_1_to_5": "pass; complete edited HTML and notes are the bound delivered drafts, with this what_changed record",
+    "detect_only_check": "not_applicable"
+  },
+  "final_artifacts": {
+    "kirocrew-native-controls.html": {
+      "path": "output/kirocrew-native-controls.html",
+      "sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
+      "bytes": 2033388
+    },
+    "kirocrew-native-controls-build.json": {
+      "path": "output/kirocrew-native-controls-build.json",
+      "sha256": "6e4e80643de8dacaf7ed3d1c1a893e2dc1b52672d70c1ac6e3522a9d113f65f1",
+      "bytes": 44395
+    },
+    "kirocrew-native-controls-notes.md": {
+      "path": "output/kirocrew-native-controls-notes.md",
+      "sha256": "0dda0d02f3b9bd13f51a995ef88b0704d23881712a95da37091255160ee3c111",
+      "bytes": 35044
+    },
+    "kirocrew-native-controls-manifest.json": {
+      "path": "output/kirocrew-native-controls-manifest.json",
+      "sha256": "74e12ac4f7aff4d6b56d92ffd9f1093ecda96ac6fced2b859c372837156fc8ba",
+      "bytes": 46081
+    }
+  },
+  "incorporation": {
+    "path": "evidence/enterprise-managed/council/incorporation.json",
+    "sha256": "9ee08ea650ab5b8c53ce172d66dcb28bf6471d2417807a4df8dbf0630b81ed99",
+    "bytes": 5928
+  },
+  "scope": "Editorial review only. Final browser acceptance remains a separate exact-artifact receipt."
+}

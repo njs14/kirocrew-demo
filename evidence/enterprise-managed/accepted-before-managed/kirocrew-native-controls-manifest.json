@@ -1,0 +1,780 @@
+{
+  "schemaVersion": 1,
+  "title": "KiroCrew native control demonstrations",
+  "synthetic": false,
+  "scenes": [
+    {
+      "id": "native-allowed-read",
+      "title": "A permitted S3 read",
+      "description": "Send one fixed read_allowed request and allow it once. The client displays the AWS response with a request ID, byte count and digest.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "duration": 25.998058,
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 44.0,
+          "end": 70.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 1136859,
+          "sha256": "3bcd32eab9989b73a1b85845bd1294d02f4a3de6e622808f839b676fa8bc731a",
+          "duration": 25.998058,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 3.0,
+          "label": "Submit the allowed read",
+          "detail": "The Mac client sends read_allowed with its unique trace ID."
+        },
+        {
+          "time": 9.0,
+          "label": "Inspect the permission request",
+          "detail": "The UI asks to run the exact MCP tool once."
+        },
+        {
+          "time": 18.0,
+          "label": "Read the result",
+          "detail": "The client displays ok:true, layer:aws and the S3 result identifiers."
+        }
+      ],
+      "recordingCoverage": "unknown",
+      "outcomeClass": "unknown",
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 200388,
+        "sha256": "132b18bce72c27c560dfdf61d973a0c922de9a8c95994f174e0dbcac1821e98d",
+        "time": 22,
+        "url": "native-client-clips-20260913/native-allowed-read/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 112453,
+        "sha256": "bcb7f08a4a92be535490b37fadd3d03aab78090502f44873212a00e74789bf7a",
+        "url": "native-client-clips-20260913/native-allowed-read/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Permitted read",
+        "enforcer": "MCP service and AWS",
+        "outcome": "Returns the fixture digest"
+      }
+    },
+    {
+      "id": "native-crew-denial",
+      "title": "Crew blocks a tool call",
+      "description": "Send one crew_denied request. The client displays a tool blocked row and reports the Crew policy refusal without an approval dialog.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "duration": 28.014062,
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 96.0,
+          "end": 124.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 1983357,
+          "sha256": "92f089ffc6d408310cda808387c748d187e75daf9d6314d0322b32ba43fe917e",
+          "duration": 28.014062,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 6.0,
+          "label": "Submit the denied tool",
+          "detail": "The Mac client requests crew_denied with its unique trace ID."
+        },
+        {
+          "time": 12.0,
+          "label": "See the policy block",
+          "detail": "The native client shows Tool call blocked for crew_denied."
+        },
+        {
+          "time": 20.0,
+          "label": "Read the refusal",
+          "detail": "The final response reports the Crew policy denial and stops."
+        }
+      ],
+      "recordingCoverage": "unknown",
+      "outcomeClass": "unknown",
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 227591,
+        "sha256": "d74da469fa069a9672be8d716d36259258b521ba5c7360c165407ccae99fb65a",
+        "time": 17,
+        "url": "native-client-clips-20260913/native-crew-denial/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 148417,
+        "sha256": "c55171f636dd94a2890d2fd020c19fa9ab12d05085b30207f602549e316dc18c",
+        "url": "native-client-clips-20260913/native-crew-denial/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Tool permission",
+        "enforcer": "Crew on EC2",
+        "outcome": "Blocks crew_denied"
+      }
+    },
+    {
+      "id": "native-mcp-denial",
+      "title": "The MCP service refuses the grant",
+      "description": "Send one mcp_denied request and allow it once. The client displays tool_grant_denied from the MCP service.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "duration": 29.001064,
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 160.0,
+          "end": 189.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 2047715,
+          "sha256": "9895ac8db2f08902a6086be866676e3e1273373e876d402f21cd788b101fb7a2",
+          "duration": 29.001064,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.515572173649396,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 6.0,
+          "label": "Submit the MCP request",
+          "detail": "The Mac client requests mcp_denied with its unique trace ID."
+        },
+        {
+          "time": 11.0,
+          "label": "Inspect the permission request",
+          "detail": "The client presents Allow once for the exact tool call."
+        },
+        {
+          "time": 23.0,
+          "label": "Read the MCP refusal",
+          "detail": "The client displays ok:false, layer:mcp and tool_grant_denied."
+        }
+      ],
+      "recordingCoverage": "unknown",
+      "outcomeClass": "unknown",
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 234538,
+        "sha256": "90dac171aeab9b9abf0031ba84b58b4ac37fc24d6114195490a838c6e430511d",
+        "time": 23,
+        "url": "native-client-clips-20260913/native-mcp-denial/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 155597,
+        "sha256": "7049a091cba27cf307d89249e5fbb3008fa25a7a8656a43827b6c4a07374bf91",
+        "url": "native-client-clips-20260913/native-mcp-denial/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "MCP grant",
+        "enforcer": "Fixed-grant MCP service",
+        "outcome": "Returns tool_grant_denied"
+      }
+    },
+    {
+      "id": "native-iam-denial",
+      "title": "AWS refuses the S3 read",
+      "description": "Send one iam_denied request and allow it once. The client displays AccessDenied, HTTP403 and an AWS request ID.",
+      "evidenceScope": "Actual macOS Kiro Crew Nightly client turn through the EC2 Gateway and original Kiro CLI backend. Visible UI result; server receipt correlation is reviewed separately. This media review does not assert enforcement acceptance.",
+      "duration": 34.020076,
+      "recordedAt": "2026-09-13T21:23:50Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Each clip preserves one request-to-result sequence at the recorded speed."
+      },
+      "provenance": {
+        "sourceSha256": "f5ba02c11531c34f5097dc223ba37adb29c3cdb3ba05a669e32131e4c24cbcf7",
+        "sourceDuration": 299.991667,
+        "cut": {
+          "start": 188.0,
+          "end": 222.0
+        },
+        "recordedAt": "2026-09-13T21:23:50Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 2207810,
+          "sha256": "56c8166490123442d83c89f5694b644898355f53c97649a4275a10d2d676067e",
+          "duration": 34.020076,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 47.6189418012933,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 2.0,
+          "label": "Submit the AWS request",
+          "detail": "The Mac client requests iam_denied with its unique trace ID."
+        },
+        {
+          "time": 12.0,
+          "label": "Inspect the permission request",
+          "detail": "The client presents Allow once for the exact tool call."
+        },
+        {
+          "time": 28.0,
+          "label": "Read the AWS refusal",
+          "detail": "The client displays AccessDenied, HTTP403, layer:aws and an AWS request ID."
+        }
+      ],
+      "recordingCoverage": "unknown",
+      "outcomeClass": "unknown",
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 205600,
+        "sha256": "a7c77c80e53dd36d7e643cad757755875abe56e6125ff4f2c0e41eec17c5ff9f",
+        "time": 28,
+        "url": "native-client-clips-20260913/native-iam-denial/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 147279,
+        "sha256": "5735ac378d6149c37ea49a97afc6050dc201dc334476085bdcdaa621ce7ff60b",
+        "url": "native-client-clips-20260913/native-iam-denial/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "AWS permission",
+        "enforcer": "IAM",
+        "outcome": "Returns S3 AccessDenied"
+      }
+    },
+    {
+      "id": "native-memory-assignment-refusal",
+      "title": "Unassigned conversation refused private memory",
+      "description": "Submit a harmless fixture-read request from a conversation switched to the host-controls agent. The client immediately reports that the conversation has no verified private-memory assignment.",
+      "evidenceScope": "Actual macOS native client observation of the conversation-to-memory identity-binding guard. The request stops before a tool turn. This is not an RBAC test, a filesystem denial or proof of host-tool enforcement.",
+      "duration": 14.001002,
+      "recordedAt": "2026-09-13T21:40:04Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture of an unexpected assignment guard during host-control preparation. Original timing preserved."
+      },
+      "provenance": {
+        "sourceSha256": "672c79f461f47c6f0389af0a908e9553fcbe9878b4c475f1e8216e353154d88e",
+        "sourceDuration": 362.431667,
+        "cut": {
+          "start": 16.0,
+          "end": 30.0
+        },
+        "recordedAt": "2026-09-13T21:40:04Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 407034,
+          "sha256": "4ab78129747a1db40c05ed3115969756e70e5e9a122a709beee6c4e0e6d26c19",
+          "duration": 14.001002,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 50.92658814350439,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 2.0,
+          "label": "Submit the fixture request",
+          "detail": "The composer contains one bounded fs_read request for the prepared public canary."
+        },
+        {
+          "time": 6.0,
+          "label": "Read the assignment refusal",
+          "detail": "The client reports no verified assignment to private memory and retains the conversation\u2019s V1 context."
+        },
+        {
+          "time": 10.0,
+          "label": "Locate the control boundary",
+          "detail": "The refusal occurs before a tool turn. The source-backed diagnostic identifies a conversation-to-private-memory assignment guard; the filesystem request has not been tested."
+        }
+      ],
+      "recordingCoverage": "unknown",
+      "outcomeClass": "unknown",
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 152476,
+        "sha256": "2abf516c8994a53d5a102d4b57c967bff0e2270b7e3b8d82524fae5289ea68fc",
+        "time": 8,
+        "url": "native-memory-clip-20260913/native-memory-assignment-refusal/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 101129,
+        "sha256": "70710b24084c9bef74d647f5aa9653d2b362038649df628b3910029fe18a9c05",
+        "url": "native-memory-clip-20260913/native-memory-assignment-refusal/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Private memory binding",
+        "enforcer": "EC2 conversation guard",
+        "outcome": "Refuses an unassigned conversation"
+      }
+    },
+    {
+      "id": "native-host-workspace-read",
+      "title": "Read the permitted workspace canary",
+      "description": "Submit one bounded fs_read request for the prepared public canary in the server workspace. The native tool returns the canary; the operator expands its Output tab.",
+      "evidenceScope": "Actual macOS native client recording of a permitted host filesystem read, from the composed request through the native tool result. No permission card or approval callback was observed. This establishes the allowed-read baseline, not a host denial.",
+      "duration": 38.988681,
+      "recordedAt": "2026-09-13T23:51:02Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac window capture. Original timing preserved; subsequent assistant-only refusals are outside this cut."
+      },
+      "provenance": {
+        "sourceSha256": "170241703dbf53a4446fdb853d70e3f15f0d2275cbd9cb85226a45b5b59b599c",
+        "sourceDuration": 480.111667,
+        "cut": {
+          "start": 26.0,
+          "end": 65.0
+        },
+        "recordedAt": "2026-09-13T23:51:02Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 1197687,
+          "sha256": "2a086d947a5530b53d03332698b909c6f40092298da3721bc7e3eeb74940b946",
+          "duration": 38.988681,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 54.579943799605005,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Request one public canary read",
+          "detail": "The composer contains the complete fs_read request, constrained to the prepared workspace fixture and one tool call."
+        },
+        {
+          "time": 16.0,
+          "label": "The native filesystem tool completes",
+          "detail": "The green fs_read row identifies allowed-canary.txt. The joined native transcript records the single read and exact public canary output."
+        },
+        {
+          "time": 21.0,
+          "label": "Read the returned canary",
+          "detail": "The client reports PUBLIC KIROCREW HOST CONTROL CANARY - NO CREDENTIALS."
+        },
+        {
+          "time": 34.0,
+          "label": "Inspect the actual tool output",
+          "detail": "The expanded Output tab shows the same canary returned by fs_read. No approval card occurred in this attempt."
+        }
+      ],
+      "recordingCoverage": "request_to_result",
+      "outcomeClass": "native_allowed",
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 195626,
+        "sha256": "3cb1b2a63da5a12475b733bd8fbc37d788f0bb5d11545ff21b9a6aa6b76f49fd",
+        "time": 34,
+        "url": "native-host-clips-20260913/native-host-workspace-read/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 108671,
+        "sha256": "df7f2793848c5e0dab8ae6a2c4a73586d925ec89fe54dbe715a7dfe166713932",
+        "url": "native-host-clips-20260913/native-host-workspace-read/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Permitted workspace read",
+        "enforcer": "Remote built-in tool",
+        "outcome": "Public canary returned"
+      }
+    },
+    {
+      "id": "native-host-command-denial-summary",
+      "title": "Inspect the command denial summary",
+      "description": "Inspect the completed native conversation containing the exact harmless marker command and the assistant's denial summary. The tool history remains collapsed in this recording.",
+      "evidenceScope": "Result inspection only. The denial occurred before this recording began; the cut shows the assistant summary, not the attempted action or an expanded blocked-tool row. A separate persisted native history and isolated hook_deny receipt establish the configured Crew command rule as the enforcer.",
+      "duration": 18.004361,
+      "recordedAt": "2026-09-14T00:00:31Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous inspection of a completed native conversation after the denial. Original timing preserved; the recording gap is explicit."
+      },
+      "provenance": {
+        "sourceSha256": "d3ab780e6b297ab966e87c17c618532061046f87f8ee13f5b3bddff1cb0eb15f",
+        "sourceDuration": 420.021667,
+        "cut": {
+          "start": 48.0,
+          "end": 66.0
+        },
+        "recordedAt": "2026-09-14T00:00:31Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 523705,
+          "sha256": "f3156ac900f643e06fbe4309ac563b880e6076250daa690c244bf4ea9b3f85ea",
+          "duration": 18.004361,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 54.153887252312295,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Inspect the exact command request",
+          "detail": "The completed conversation shows the harmless marker command in its submitted prompt. The denial occurred before recording began."
+        },
+        {
+          "time": 8.0,
+          "label": "Read the denial summary",
+          "detail": "The assistant reports the command was blocked. The tool steps are collapsed here; the separate native blocked row and hook_deny receipt provide attribution."
+        },
+        {
+          "time": 14.0,
+          "label": "Keep the recording gap visible",
+          "detail": "This clip is result inspection, not a recorded request-to-block sequence. No tool expansion or missing action has been reconstructed."
+        }
+      ],
+      "recordingCoverage": "result_inspection",
+      "outcomeClass": "server_hook_denied",
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 194096,
+        "sha256": "1ae25cf1b7e924f7476e86bdd922fadfce3711aa888a154f20afc328b2a1e341",
+        "time": 10,
+        "url": "native-host-clips-20260913/native-host-command-denial-summary/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 121337,
+        "sha256": "b33b410664e7c3781222c4e986a4f49ad9ffcd3380f4bddc6c0a7abc55208820",
+        "url": "native-host-clips-20260913/native-host-command-denial-summary/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Configured command rule",
+        "enforcer": "Crew hook, separate receipt",
+        "outcome": "Assistant denial summary"
+      },
+      "attributionReceipt": {
+        "path": "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+        "url": "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+        "sha256": "63a86c6d6e8be4e14efe5dbe31962eab4d921c104cf40a1d6bbef770c3a54436"
+      }
+    },
+    {
+      "id": "native-host-anonymous-http403",
+      "title": "Approve the helper; observe HTTP 403",
+      "description": "Approve the inspected anonymous loopback helper once, then read the HTTP 403 result returned in the native conversation. The original request and a separate one-time helper-read approval occurred before this excerpt.",
+      "evidenceScope": "Continuous execution-approval-to-result recording in the actual macOS client. The exact helper command is visible, its permission card clears, and the assistant reports HTTP 403 with no authorization header, cookies or response-body read. The actual tool Output remains collapsed. The helper field native_enforcement_verified stays false; gateway attribution requires separate correlated evidence.",
+      "duration": 22.00533,
+      "recordedAt": "2026-09-14T00:00:31Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Continuous native Mac capture beginning at the execute_bash permission card. Prior request and helper-read approval are outside this cut; original timing retained."
+      },
+      "provenance": {
+        "sourceSha256": "d3ab780e6b297ab966e87c17c618532061046f87f8ee13f5b3bddff1cb0eb15f",
+        "sourceDuration": 420.021667,
+        "cut": {
+          "start": 398.0,
+          "end": 420.0
+        },
+        "recordedAt": "2026-09-14T00:00:31Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 2207528,
+          "sha256": "0bc81f03f539f0614fa49a65ae3b27ef53f00bf26f35c7573684652cf1e87ada",
+          "duration": 22.00533,
+          "width": 1920,
+          "height": 1290,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 52.48895114218485,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 1.0,
+          "label": "Inspect the command awaiting approval",
+          "detail": "The native card names the exact anonymous-http.py helper and offers Allow once. The helper was already read under its own one-time approval before this excerpt."
+        },
+        {
+          "time": 9.0,
+          "label": "The approved execution completes",
+          "detail": "The execution card clears and the native conversation starts reporting the result. No persistent trust setting is used."
+        },
+        {
+          "time": 17.0,
+          "label": "Read the HTTP 403 result",
+          "detail": "The reported JSON shows HTTP403, no authorization header or cookies, and no response-body read. Its native_enforcement_verified:false field remains visible; consult correlated evidence for attribution."
+        }
+      ],
+      "recordingCoverage": "approval_to_result",
+      "outcomeClass": "server_authentication_denied",
+      "poster": {
+        "type": "image/jpeg",
+        "bytes": 273116,
+        "sha256": "e8afb8f9325657f3af4430cb71f6629d23d06db56af4d7edbc235f163df9e417",
+        "time": 17,
+        "url": "native-host-clips-20260913/native-host-anonymous-http403/poster.jpg"
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 182119,
+        "sha256": "5476b424b3838bbd287a4c5fbb81c8619d87960269b008e67d28c6ebcdd7bf98",
+        "url": "native-host-clips-20260913/native-host-anonymous-http403/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Gateway authentication",
+        "enforcer": "EC2 Gateway token check; correlated receipt",
+        "outcome": "Assistant reports HTTP 403"
+      },
+      "attributionReceipt": {
+        "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+        "url": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+        "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
+      }
+    }
+  ],
+  "supportingReceipts": [
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "url": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "url": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "url": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "url": "evidence/native-client-demo/media-review-mcp-controls.json",
+      "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-memory-assignment.json",
+      "url": "evidence/native-client-demo/media-review-memory-assignment.json",
+      "sha256": "68e609282f6cf097fc9ed3f88a1228f4703fee5311a5945cfa98a9dfc78cc167"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913/authenticated.json",
+      "url": "evidence/native-client-demo/20260913/authenticated.json",
+      "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
+    },
+    {
+      "path": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "url": "evidence/native-client-demo/20260913/runtime-preflight.json",
+      "sha256": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499"
+    },
+    {
+      "path": "evidence/native-client-demo/poster-review-v2.json",
+      "url": "evidence/native-client-demo/poster-review-v2.json",
+      "sha256": "0489c07e6174363188760877260778e6b47cf72c462d3589224574872885649a"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "url": "evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "sha256": "8090b4a69f0c4f76021d6cf1c869f352c188aaa61c31382f3b4e0b19f0ea8a6c"
+    },
+    {
+      "path": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "url": "evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "sha256": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "sha256": "9f757015d7bd9da89c7e694a315c0d73e7004e743f0404cd0cd487d88c742302"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "sha256": "63a86c6d6e8be4e14efe5dbe31962eab4d921c104cf40a1d6bbef770c3a54436"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "url": "evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "sha256": "663302446418b5ec7d52330ecaec42a2ee57ef4598af1e3ef5034990b6398603"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-host-controls.json",
+      "url": "evidence/native-client-demo/media-review-host-controls.json",
+      "sha256": "bc649485a4d7d99c09d1793837a9977072ac0d63092d1a9cba0e0b85bf8432a2"
+    },
+    {
+      "path": "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "url": "evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "sha256": "f1a2e27eba4e90e473a659114773a29db9a4c8bdd4dae24f4a56b8d02bf42f46"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "sha256": "3eae37afdfc7d513f702a336d1e6ce70f07f36209151630b0271f314bfc146e1"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "sha256": "a30dd5e1cb270195a4a36392d647e37b3133dbc83913bf164f694eac9b39fcda"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "url": "evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "sha256": "f05b5336c8d2578089664011b2717997fe3b6888386a8f48fc9ff70107dbddd3"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "url": "evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "sha256": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30"
+    },
+    {
+      "path": "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "url": "evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11"
+    },
+    {
+      "path": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "url": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "sha256": "caeca579dc6c8a82e8799d6274c121af21c46cdc4420935bd0ec31b14a6db01b"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+      "url": "evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+      "sha256": "3532f590c516fd5fd7aaa937e101fa216b2403e5cfb53ad8cb425f848a1caf83"
+    },
+    {
+      "path": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+      "url": "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+      "sha256": "8437471934f673b0aa312104b99bc84144c6c9293e616b2abb858f68438c25f0"
+    }
+  ],
+  "adminTour": "kirocrew-admin-tour.html",
+  "architectureDiagram": "../kirocrew-native-controls-diagram.html",
+  "pendingControls": [
+    "Sensitive-path read",
+    "Protected-path write",
+    "IMDS execution"
+  ],
+  "limitations": [
+    "The earlier sensitive-path and anonymous-helper attempts ended in model-only responses, with no native tool execution. The later anonymous-helper execution has separate reviewed authentication evidence. Sensitive-path enforcement remains pending.",
+    "The command clip starts after the denial and shows an assistant summary with collapsed tool history. Persisted native history and scoped SEL establish the configured Crew rule as the enforcer; the request-to-denial recording is missing.",
+    "The authentication excerpt starts at execution approval. The earlier source read required its own Allow once. The clip ends with the assistant's HTTP 403 summary; its native Output stays collapsed. Separate exact-input, native-result and Gateway evidence support attribution.",
+    "The IMDS helper's source read completed. Its execution approval expired unanswered after ten minutes; no helper execution or metadata firewall result was observed. The earlier pending-at-observer-expiry receipt remains preserved as a historical snapshot.",
+    "The custom marker-command rule was removed after its take. The recording describes that earlier configuration; replay does not mean the rule remains active. The cleanup receipt verifies the exact marker rule is absent, but does not establish full preservation of every unrelated prior custom rule."
+  ],
+  "reviewScope": "Artifact integrity and visible recorded behavior. Enforcement acceptance and model council apply only through their separate exact-candidate receipts."
+}

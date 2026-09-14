@@ -1,0 +1,191 @@
+{
+  "binding": {
+    "crew_home": "/home/crew",
+    "crew_uid": 999,
+    "deployment": {
+      "account_id": "770132776059",
+      "instance_id": "i-0fde6de3f0ea5a9d0",
+      "region": "us-east-1",
+      "stack_name": "kirocrew-demo-20260913"
+    },
+    "device_allow": "",
+    "device_policy": "auto",
+    "gateway_config_sha256": "14e10cc77e6890e18cb5fa9d1885b2d48613cbf6dd405ffe8815699b55e8fbeb",
+    "gateway_config_uid": 999,
+    "installer_sha256": "fa8186e665c17f10ffcaebf9ccd1875c20bd18976fd49f1271696fa73aa29857",
+    "machine_id_sha256": "d1b470b94a19bccb4788ddc340199406391bde10f8181ba1a4071f3545f615ac",
+    "service": "kirocrew-demo.service",
+    "service_files": {
+      "/etc/systemd/system/kirocrew-demo.service": {
+        "bytes": 1094,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "662c10170325a0a2e0025e2007d48c650e5ddf88343f0475f50404cfc97360df",
+        "uid": 0
+      }
+    },
+    "source_root": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew",
+    "sources": {
+      "dashboard/handlers/terminal.py": {
+        "bytes": 113546,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "4c004ebeb71b4fa83e488614160286e2eb358f39a35cffc02b472710f666b83e",
+        "uid": 0
+      },
+      "hooks.py": {
+        "bytes": 257918,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+        "uid": 0
+      },
+      "platform/__init__.py": {
+        "bytes": 2109,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "e00927bfb2dfae091eff9b021b072987bd2abfb96352d1c599214c004b8ea421",
+        "uid": 0
+      },
+      "platform/bootstrap.py": {
+        "bytes": 12897,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "42799582a2cbdd0f2473910a15fc91b5d763cbbb9448c91844c1209b193129f9",
+        "uid": 0
+      },
+      "platform/context.py": {
+        "bytes": 46264,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "7856356d16b8925616229b84ce07413a67e882c0109f14cc9d085dcf871c916c",
+        "uid": 0
+      },
+      "platform/governance.py": {
+        "bytes": 235938,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "7d9c5b109086b8c4a2d36c589d387e1fd562e7d2b407dc65d54d2e7d2fc09341",
+        "uid": 0
+      },
+      "platform/governance_profiles.py": {
+        "bytes": 71035,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "102ab33ed14c8ecd1060d81a0de13214602b519291d8c25f331eae77cbfb4c73",
+        "uid": 0
+      },
+      "platform/policy_distribution.py": {
+        "bytes": 150606,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "b4f57a6163a61f7d1f5025f3472794d44484c0b83fc263b29d957845937df30e",
+        "uid": 0
+      },
+      "safety_override.py": {
+        "bytes": 107712,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "85f1ce3219571ce1f71ba94c9f95691e3eb07fa2b1be9fed396e9f273261011e",
+        "uid": 0
+      },
+      "sandbox.py": {
+        "bytes": 579148,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "3fcb43313c4970f523a50ce7a508b8b9801e88bdc06a61947a649a67cf8902e9",
+        "uid": 0
+      },
+      "security/denied_rules.py": {
+        "bytes": 147316,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "e485cb5b1347af79cb25d14d6409d0ce57fe83a4e126f278c3cff89e728ec133",
+        "uid": 0
+      },
+      "security/paths.py": {
+        "bytes": 141630,
+        "gid": 0,
+        "mode": "0o644",
+        "sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+        "uid": 0
+      }
+    },
+    "state_dir": "/var/lib/kirocrew",
+    "terminal_before": {
+      "dashboard_present": true,
+      "enabled": true,
+      "enabled_present": true,
+      "terminal_present": true
+    },
+    "unit_environment_sha256": "8da50e08ced203f04bfff3acf8a1578ecf72374a39ed492eb62a712d40f633f6"
+  },
+  "files": {
+    "/etc/kirocrew-demo/security-policy.json": {
+      "content": "{\n  \"approval_modes\": {\n    \"deny\": [\n      \"yolo\"\n    ],\n    \"mode\": \"deny\"\n  },\n  \"boot\": {},\n  \"commands\": {\n    \"deny\": [\n      \"*KIROCREW_MANAGED_COMMAND_CONTROL*\",\n      \"aws(?:\\\\s+--?[a-z-]+(?:[= ]\\\\S+)?)*\\\\s+s3(?:\\\\s+--?[a-z-]+(?:[= ]\\\\S+)?)*\\\\s+cp .* s3://.*\"\n    ],\n    \"mode\": \"deny\"\n  },\n  \"filesystem\": {\n    \"read\": {\n      \"deny\": [\n        \"/home/crew/.aws\",\n        \"/home/crew/.aws/**\"\n      ],\n      \"mode\": \"deny\"\n    },\n    \"write\": {\n      \"deny\": [\n        \"/etc/kirocrew-demo\",\n        \"/etc/kirocrew-demo/**\",\n        \"/etc/systemd/system\",\n        \"/etc/systemd/system/**\",\n        \"/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew\",\n        \"/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/**\",\n        \"/home/crew/.kiro/agents\",\n        \"/home/crew/.kiro/agents/**\"\n      ],\n      \"mode\": \"deny\"\n    }\n  },\n  \"mcp\": {\n    \"deny\": [\n      \"@aws-enforcement/crew_denied\"\n    ],\n    \"mode\": \"deny\"\n  },\n  \"sandbox\": {\n    \"min_level\": \"cc\"\n  },\n  \"version\": 1\n}\n",
+      "mode": "0o644",
+      "sha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87"
+    },
+    "/etc/systemd/system/kirocrew-demo.service.d/60-kirocrew-enterprise-policy.conf": {
+      "content": "[Service]\nEnvironment=KIROCREW_POLICY_URL=file:///etc/kirocrew-demo/security-policy.json\nEnvironment=KIROCREW_POLICY_ON_UNAVAILABLE=fail_closed\nDevicePolicy=strict\nDeviceAllow=\nDeviceAllow=/dev/null rw\nDeviceAllow=/dev/zero rw\nDeviceAllow=/dev/full rw\nDeviceAllow=/dev/random rw\nDeviceAllow=/dev/urandom rw\n",
+      "mode": "0o644",
+      "sha256": "b0b43b2480a0d1b4a1719e22f012eb8bc5a14d1622b561a1e557f1f94745657a"
+    }
+  },
+  "impact": [
+    "Current Gateway connections and in-flight native turns are interrupted only by activate.",
+    "Apply leaves the running process unchanged; activate reloads and restarts exactly the named service.",
+    "Policy integrity rests on root-owned files and ancestors; host root remains the administrator.",
+    "Only dashboard.terminal.enabled changes in ordinary configuration; the duplicate MCP deny hook is preserved.",
+    "Strict device policy allows five standard pseudo devices; native PTY denial and backend compatibility need live checks."
+  ],
+  "kind": "enterprise_policy_plan",
+  "native_enforcement_verified": false,
+  "parser_checks": [
+    {
+      "item": "@aws-enforcement/crew_denied",
+      "layer": "policy",
+      "permitted": false,
+      "scope": "mcp"
+    },
+    {
+      "item": "@aws-enforcement/read_allowed",
+      "layer": "policy",
+      "permitted": true,
+      "scope": "mcp"
+    },
+    {
+      "item": "@aws-enforcement/mcp_denied",
+      "layer": "policy",
+      "permitted": true,
+      "scope": "mcp"
+    },
+    {
+      "item": "@aws-enforcement/iam_denied",
+      "layer": "policy",
+      "permitted": true,
+      "scope": "mcp"
+    },
+    {
+      "item": "yolo",
+      "layer": "policy",
+      "permitted": false,
+      "scope": "approval_modes"
+    },
+    {
+      "item": "normal",
+      "layer": "policy",
+      "permitted": true,
+      "scope": "approval_modes"
+    },
+    {
+      "item": "printf '%s\\n' 'KIROCREW_MANAGED_COMMAND_CONTROL'",
+      "layer": "policy",
+      "permitted": false,
+      "scope": "commands"
+    }
+  ],
+  "plan_id": "b54f7009e2d5439d68a10fec70be25d573feb864fc22850b8536e36326b4672f",
+  "restart_required": true,
+  "schema_version": 1
+}

@@ -1,0 +1,29 @@
+{
+  "captured_at": "2026-09-14T01:54:28.041441+00:00",
+  "changes": [
+    "Aggregate repeated systemctl DeviceAllow rows before exact device-set verification.",
+    "Permit reviewed updated tools to inspect existing installations without replacing their root manifest; preserve all prior installation and runtime bindings apart from current tool code hash.",
+    "Keep exact current code binding for plan-to-apply."
+  ],
+  "checks": {
+    "command": "python3 -m unittest scripts/tests/test_enterprise_policy.py",
+    "compile_passed": true,
+    "diff_check_passed": true,
+    "offline_tests_passed": 44
+  },
+  "files": {
+    "infrastructure/enterprise-policy/manage.py": "6dd31b2e33276a08f711167894435d8d15cde4c8104725e8efdffb3f2288cfc3",
+    "infrastructure/enterprise-policy/policy.template.json": "5d862e815267a94c29b850495eba54f4d52716e68a9cdb222b2d370bc927b4b5",
+    "scripts/manage-enterprise-policy.py": "b46a23b1f1e40731bd1df36916bff047801083d7b63b21c60b461c140b3fd263",
+    "scripts/tests/test_enterprise_policy.py": "c2d0cdb322a292cff1e979dbaa8c183205c77474ac7ca8386603ccf79f8e3292"
+  },
+  "independent_review": {
+    "agent": "enterprise_policy_source_review",
+    "verdict": "SHIP"
+  },
+  "kind": "enterprise_policy_verifier_fix_review",
+  "prior_source_review": "evidence/enterprise-policy/source-review-20260914.json",
+  "schema_version": 1,
+  "scope": "Source and offline verification only. Root owns the original activation failure receipt and subsequent live readback. This lane did not alter the live installation or manifest.",
+  "verdict": "SHIP"
+}

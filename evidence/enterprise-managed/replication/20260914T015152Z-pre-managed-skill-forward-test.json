@@ -1,0 +1,415 @@
+{
+  "kind": "kirocrew_demo_skill_forward_test",
+  "source_commit": "baca619ca4e279ad62497bbe1601a7027cd73e64",
+  "scope": "Isolated local checkout, path with spaces; no network, global installs, AWS/SSH, UI automation, authentication or live-tree changes.",
+  "excluded_inputs": [
+    ".build",
+    "node_modules",
+    ".venv",
+    "config/demo.local.json",
+    "runtime archives",
+    "login state"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/doctor.py",
+        "--feature",
+        "playback"
+      ],
+      "exit_code": 0,
+      "output": {
+        "feature": "playback",
+        "platform": "darwin",
+        "project_root": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout",
+        "scope": "Local prerequisites and artifact hashes; no remote connection, authentication or native enforcement check.",
+        "passed": true,
+        "checks": [
+          {
+            "name": "python",
+            "passed": true,
+            "required": true,
+            "detail": "/Library/Developer/CommandLineTools/usr/bin/python3"
+          },
+          {
+            "name": "playback_platform",
+            "passed": true,
+            "required": true,
+            "detail": "Restricted preview server supports macOS and Linux."
+          },
+          {
+            "name": "presentation_artifacts",
+            "passed": true,
+            "required": true,
+            "detail": {
+              "build": "output/kirocrew-native-controls-build.json",
+              "files": 89,
+              "missing": [],
+              "changed": []
+            }
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/demo-dependencies.py",
+        "plan",
+        "--feature",
+        "playback"
+      ],
+      "exit_code": 0,
+      "output": {
+        "schema_version": 1,
+        "feature": "playback",
+        "project_root": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout",
+        "venv": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv",
+        "mode": "plan",
+        "network_or_install_performed": false,
+        "python": "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "steps": [],
+        "manual_steps": [],
+        "blockers": [],
+        "can_apply": true
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/demo-dependencies.py",
+        "plan",
+        "--feature",
+        "all",
+        "--with-browser"
+      ],
+      "exit_code": 0,
+      "output": {
+        "schema_version": 1,
+        "feature": "all",
+        "project_root": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout",
+        "venv": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv",
+        "mode": "plan",
+        "network_or_install_performed": false,
+        "python": "{managed_python}",
+        "steps": [
+          {
+            "id": "system_tools",
+            "argv": [
+              "/opt/homebrew/bin/brew",
+              "install",
+              "python@3.12"
+            ],
+            "scope": "Homebrew prefix; missing or incompatible selected tools only"
+          },
+          {
+            "id": "venv",
+            "argv": [
+              "{managed_python}",
+              "-m",
+              "venv",
+              "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv"
+            ],
+            "scope": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv"
+          },
+          {
+            "id": "python_packages",
+            "argv": [
+              "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv/bin/python3",
+              "-m",
+              "pip",
+              "install",
+              "--disable-pip-version-check",
+              "-r",
+              "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/requirements-demo.txt"
+            ],
+            "scope": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv"
+          },
+          {
+            "id": "node_packages",
+            "argv": [
+              "npm",
+              "ci",
+              "--ignore-scripts",
+              "--no-audit",
+              "--no-fund"
+            ],
+            "scope": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/node_modules"
+          },
+          {
+            "id": "chromium",
+            "argv": [
+              "node",
+              "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/node_modules/playwright/cli.js",
+              "install",
+              "chromium"
+            ],
+            "scope": "Playwright's per-user browser cache"
+          }
+        ],
+        "manual_steps": [
+          "Install KiroCrew Nightly through its product distribution; use --app-path for a nonstandard location.",
+          "Grant Screen Recording and Accessibility to the actual recording/automation app in macOS settings; verify a fresh visible capture before recording.",
+          "Authenticate the server's original Kiro CLI through its own sign-in after live setup; do not copy client credentials.",
+          "Select an existing AWS CLI credential provider/profile, account, VPC, subnet and trusted SSH key in config/demo.local.json; credentials stay outside the project."
+        ],
+        "blockers": [],
+        "can_apply": true
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/demo-dependencies.py",
+        "status",
+        "--feature",
+        "cloud"
+      ],
+      "exit_code": 1,
+      "output": {
+        "feature": "cloud",
+        "platform": "darwin",
+        "project_root": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout",
+        "scope": "Local prerequisites and artifact hashes; no remote connection, authentication or native enforcement check.",
+        "passed": false,
+        "checks": [
+          {
+            "name": "python",
+            "passed": false,
+            "required": true,
+            "detail": "Install Python 3.12+ and rerun this command."
+          },
+          {
+            "name": "aws",
+            "passed": true,
+            "required": true,
+            "detail": "aws-cli/2.36.43 Python/3.14.7 Darwin/27.0.0 source/arm64"
+          },
+          {
+            "name": "ssh",
+            "passed": true,
+            "required": true,
+            "detail": "/usr/bin/ssh"
+          },
+          {
+            "name": "venv_python",
+            "passed": false,
+            "required": true,
+            "detail": "The selected project venv must use Python 3.12+; choose a fresh --venv path if its interpreter is older."
+          },
+          {
+            "name": "python_packages",
+            "passed": false,
+            "required": true,
+            "detail": {
+              "venv": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv",
+              "missing_or_mismatched": [
+                "aiohttp==3.14.3",
+                "PyYAML==6.0.3"
+              ]
+            }
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/build-demo-presentation.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": {
+        "edition": "native-controls-20260913",
+        "recipeInputCount": 32,
+        "boundAssetCount": 65,
+        "sceneCount": 8,
+        "checks": "Recipe inputs and referenced asset hashes match. Full build and browser review are separate."
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        ".build/presentation export/scripts/serve-recorded-demos.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "output": "usage: serve-recorded-demos.py [-h] [--build BUILD] [--port PORT]\n\nServe one bound recorded-demo edition and its explicit assets on loopback.\n\noptional arguments:\n  -h, --help     show this help message and exit\n  --build BUILD\n  --port PORT",
+      "stderr": ""
+    }
+  ],
+  "export": {
+    "path": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.build/presentation export",
+    "slide_count": 14,
+    "scene_count": 8,
+    "edition_sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c",
+    "served_files": 89,
+    "missing_files": [],
+    "escaping_paths": [],
+    "existing_output_retry": "Refused with exit 2: Export destination already exists; choose a fresh directory"
+  },
+  "resolved_findings": [
+    "Playback unnecessarily required Python 3.12; narrowed upstream to 3.9 and now passes on default Mac Python 3.9.6.",
+    "Initially missing LIVE-SETUP.md has arrived and was read; all linked skill resources now exist.",
+    "Full dependency plan now routes VPC/subnet/EC2 KeyName to cloudformation.local.json and account/stack/profile/SSH to demo.local.json."
+  ],
+  "remaining_findings": [],
+  "limits": [
+    "No browser or HTTP listener was started under no-network scope.",
+    "No install/apply ran; existing host tools such as AWS CLI and Homebrew were observed only.",
+    "No remote deployment, sign-in or native enforcement acceptance is established."
+  ],
+  "tested_files": {
+    "scripts/demo-dependencies.py": "317ae3a0c663a0fa2625a5aabe6010ff236d4aeb64f7fb4d63f73cfb1002c69f",
+    "scripts/doctor.py": "86cf9bdfacb8339f9ba666d779662132f90426089ef49a081b803c193d1117c5",
+    "scripts/build-demo-presentation.py": "fb2b2a502ea77669eca25b9dfcada1f0e5866c5f90308e778a96ca0bcb5851b6",
+    "scripts/build-native-control-presentation.py": "8225e2a51baee52ed43a28c687d1c075db4b0f8aa331064afdc96fef36bee751",
+    "config/presentation-native.json": "aaacbf46e364048f4825e2fd82593baaf306dc8a213efe004c9fde0125f89d0d",
+    "docs/DEPENDENCIES.md": "2dc0c6f056abdca202dcdeebf8865504d5a0558ef9e8de67f88ce84e6abf5039",
+    "docs/LIVE-SETUP.md": "2a32997426a6cac573b3bfa749faca746ae43b5e513ccee9d203eb49758c20bd",
+    ".agents/skills/kirocrew-demo/SKILL.md": "3304377c3b9ae625a6b8a1eed5c431b3d1190b55bba45ebc0085778407109190",
+    ".agents/skills/kirocrew-demo/references/presentation.md": "f2f189ac1dd491fe12737e892b3b99fc78620fb07629c5d7de193df121f47c83",
+    ".agents/skills/kirocrew-demo/references/setup.md": "e5dfe2e0e6ec9d504fe913855236983a1a11b7e60ff34a10bc8a3cbafac99765",
+    ".agents/skills/kirocrew-demo/references/recording.md": "5ba3d804d36d9e81e0571d1631ccb3c0c57a0569d517efb2e56fb9d222fd268b",
+    ".agents/skills/kirocrew-demo/agents/openai.yaml": "c4bab77dff3beebff0c4345bd25aa4a54e3f831e0c7e6fb2adca59c825f29ec0"
+  },
+  "generated_at": "2026-09-14T01:51:52.837582+00:00",
+  "final_checks": [
+    {
+      "argv": [
+        "python3",
+        "scripts/doctor.py",
+        "--feature",
+        "playback"
+      ],
+      "exit_code": 0,
+      "output": {
+        "feature": "playback",
+        "platform": "darwin",
+        "project_root": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout",
+        "scope": "Local prerequisites and artifact hashes; no remote connection, authentication or native enforcement check.",
+        "passed": true,
+        "checks": [
+          {
+            "name": "python",
+            "passed": true,
+            "required": true,
+            "detail": "/Library/Developer/CommandLineTools/usr/bin/python3"
+          },
+          {
+            "name": "playback_platform",
+            "passed": true,
+            "required": true,
+            "detail": "Restricted preview server supports macOS and Linux."
+          },
+          {
+            "name": "presentation_artifacts",
+            "passed": true,
+            "required": true,
+            "detail": {
+              "build": "output/kirocrew-native-controls-build.json",
+              "files": 89,
+              "missing": [],
+              "changed": []
+            }
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/demo-dependencies.py",
+        "plan",
+        "--feature",
+        "all",
+        "--with-browser"
+      ],
+      "exit_code": 0,
+      "output": {
+        "schema_version": 1,
+        "feature": "all",
+        "project_root": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout",
+        "venv": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv",
+        "mode": "plan",
+        "network_or_install_performed": false,
+        "python": "{managed_python}",
+        "steps": [
+          {
+            "id": "system_tools",
+            "argv": [
+              "/opt/homebrew/bin/brew",
+              "install",
+              "python@3.12"
+            ],
+            "scope": "Homebrew prefix; missing or incompatible selected tools only"
+          },
+          {
+            "id": "venv",
+            "argv": [
+              "{managed_python}",
+              "-m",
+              "venv",
+              "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv"
+            ],
+            "scope": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv"
+          },
+          {
+            "id": "python_packages",
+            "argv": [
+              "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv/bin/python3",
+              "-m",
+              "pip",
+              "install",
+              "--disable-pip-version-check",
+              "-r",
+              "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/requirements-demo.txt"
+            ],
+            "scope": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/.venv"
+          },
+          {
+            "id": "node_packages",
+            "argv": [
+              "npm",
+              "ci",
+              "--ignore-scripts",
+              "--no-audit",
+              "--no-fund"
+            ],
+            "scope": "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/node_modules"
+          },
+          {
+            "id": "chromium",
+            "argv": [
+              "node",
+              "/private/var/folders/ns/6ms4sgcd3jbc071v7_b2j2640000gp/T/kirocrew skill forward b30px2g4/fresh checkout/node_modules/playwright/cli.js",
+              "install",
+              "chromium"
+            ],
+            "scope": "Playwright's per-user browser cache"
+          }
+        ],
+        "manual_steps": [
+          "Install KiroCrew Nightly through its product distribution; use --app-path for a nonstandard location.",
+          "Grant Screen Recording and Accessibility to the actual recording/automation app in macOS settings; verify a fresh visible capture before recording.",
+          "Authenticate the server's original Kiro CLI through its own sign-in after live setup; do not copy client credentials.",
+          "Select account, stack, AWS profile name and trusted SSH bindings in config/demo.local.json; set the existing VPC, subnet and EC2 KeyName in config/cloudformation.local.json. Credentials and private keys stay outside the project."
+        ],
+        "blockers": [],
+        "can_apply": true
+      },
+      "stderr": ""
+    }
+  ],
+  "skill_link_check": {
+    "links": 11,
+    "missing": []
+  }
+}

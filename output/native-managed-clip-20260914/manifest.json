@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "title": "Managed MCP policy in the native KiroCrew client",
+  "generatedAt": "2026-09-14T02:12:01.877092+00:00",
+  "scenes": [
+    {
+      "id": "native-managed-mcp-denial",
+      "title": "A managed policy blocks a locally enabled tool",
+      "description": "The user requests a locally enabled MCP tool from the Mac client. The Gateway managed policy denies it before the MCP service. The presenter expands the native host notice to inspect the exact governance-policy reason.",
+      "evidenceScope": "Actual macOS KiroCrew Nightly interaction through the EC2 Gateway and original Kiro CLI backend. This continuous cut films the ui4 denial only; the earlier ui3 turn visible above the composer is conversation history. The allowed control call was verified separately and is not filmed here. Native history, SEL correlation and the MCP audit interval are reviewed separately from media decoding.",
+      "recordedAt": "2026-09-14T02:06:34Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Actual Mac KiroCrew Nightly window capture for the remote client on port5599. The complete request-to-result sequence is preserved at its recorded speed, followed by expansion of the policy reason."
+      },
+      "start": 6.0,
+      "end": 46.0,
+      "duration": 40.000076,
+      "cues": [
+        {
+          "time": 0.0,
+          "label": "Submit the MCP request",
+          "detail": "The composed ui4 request names @aws-enforcement/crew_denied and trace managed-20260914-ui4-crew. The user sends this one harmless fixture.",
+          "evidence": "receipts/native-managed-ui4-verification.json"
+        },
+        {
+          "time": 7.0,
+          "label": "See the automatic block",
+          "detail": "Tool call blocked appears in the new turn. No Allow once dialog is shown for this denied call.",
+          "evidence": "receipts/native-managed-ui4-verification.json"
+        },
+        {
+          "time": 34.0,
+          "label": "Inspect the managed-policy reason",
+          "detail": "The expanded Kiro Crew host notice says Blocked by governance policy and identifies the exact @aws-enforcement/crew_denied deny rule.",
+          "evidence": "receipts/native-managed-ui4-verification.json"
+        }
+      ],
+      "media": [
+        {
+          "url": "native-managed-mcp-denial/native-managed-mcp-denial.mp4",
+          "type": "video/mp4",
+          "bytes": 2007186,
+          "sha256": "d3a8a2197d69bc42667434cfef0a0ea789cd3d4bde0aad74bdd4b9c84f4cabc1",
+          "duration": 40.000076,
+          "width": 1920,
+          "height": 1340,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 53.79989823016143,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-managed-mcp-denial/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 176636,
+        "sha256": "9d3f592d1362d4c3c77e6688139fefe48ce85b33d203660ecbfa8244e8c5ced1"
+      },
+      "contactSheet": {
+        "url": "native-managed-mcp-denial/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 126675,
+        "sha256": "b525f61dacb0a9e9d5b60cce1d1fd1d117bf206d8ab14d2786e6724da826f1dd"
+      },
+      "frames": [
+        {
+          "url": "native-managed-mcp-denial/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 21355,
+          "sha256": "a35324aafa2e9a859faa03cbe9e511dbd86903f36a210799bdfbdb617e870dcb",
+          "time": 1.60000304
+        },
+        {
+          "url": "native-managed-mcp-denial/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 22672,
+          "sha256": "502c197af9be0208c45da2ae3d99dd5ce7d68c375a549b0eb32f90322333b861",
+          "time": 8.0000152
+        },
+        {
+          "url": "native-managed-mcp-denial/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 21940,
+          "sha256": "c28bacb16fd75c6d212ab0dc340dd429654937b3c241774af8d01b438119e3fb",
+          "time": 15.20002888
+        },
+        {
+          "url": "native-managed-mcp-denial/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 23368,
+          "sha256": "add61c26d4ab683abc88514accf1a2063ae2ca871cfdf90a2a3d1577a3a46050",
+          "time": 22.400042560000003
+        },
+        {
+          "url": "native-managed-mcp-denial/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 21455,
+          "sha256": "23b3f8c5f717908b64b0393d8a0b8f370f77c68286a24b59405ae5c4f6e7365b",
+          "time": 29.60005624
+        },
+        {
+          "url": "native-managed-mcp-denial/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 17614,
+          "sha256": "f317249b5064fa285642e524dbcf60ed6497fe16f32d994e35eca6d428a81599",
+          "time": 36.80006992
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "02f4901143783b756f5ae153751ee6d2c2f40d3488cb837a8ca28b9588c03a80",
+        "sourceDuration": 90.015,
+        "cut": {
+          "start": 6.0,
+          "end": 46.0
+        },
+        "recordedAt": "2026-09-14T02:06:34Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "url": "receipts/native-managed-ui4-verification.json",
+      "type": "application/json",
+      "bytes": 7208,
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+    }
+  ]
+}

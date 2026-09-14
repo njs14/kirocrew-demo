@@ -1,5 +1,7 @@
 # Run the demo on another machine
 
+For the complete current setup sequence, use [LIVE-SETUP.md](LIVE-SETUP.md), [DEPENDENCIES.md](DEPENDENCIES.md) and [ARM-RUNTIME-BUNDLE.md](ARM-RUNTIME-BUNDLE.md). They replace the historical manual staging steps below with project commands. This document retains the shared configuration and connection contracts.
+
 The recordings play without an AWS account or KiroCrew installation. Live controls need a separately installed KiroCrew runtime and an existing deployment. Historical recordings and receipts describe the accepted deployment at their recorded time; copying this repository does not reproduce their results.
 
 ## Select one deployment explicitly

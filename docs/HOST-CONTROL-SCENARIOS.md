@@ -1,5 +1,7 @@
 # Native host control demonstrations
 
+> Current state: Read the [managed demo guide](MANAGED-DEMO.md) and its linked status before running this demo. The root-owned policy and fresh native managed-denial test supersede the earlier configuration described below. Historical results and unfinished host cases retain their recorded scope.
+
 These takes show a macOS KiroCrew user requesting an action and receiving the EC2 Gateway's decision. Use the native client for the request and any approval. Show the corresponding control and evidence in the admin console after the result. The Mac's local Gateway stays off.
 
 The separate `host-controls-demo` agent exposes only `fs_read`, `fs_write` and `execute_bash`. It has no MCP servers, no `allowedTools` grants and does not import the user's MCP configuration. Its instructions enumerate the exact public fixtures and fixed helper commands. Each new fixture request is an independent demonstration; stop the current case after a refusal, without a retry or alternate route. A prior case's refusal does not cancel a later, different allowlisted case. Interactive approval remains enabled. The existing `enforcement-demo` agent and its four MCP tools remain unchanged; continue to use the [four-turn MCP and IAM walkthrough](NATIVE-CLIENT-DEMO.md) for those layers.

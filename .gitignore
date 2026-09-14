@@ -52,3 +52,9 @@ evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-raw.jsonl
 evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-raw.jsonl
 evidence/native-client-demo/council-host-v1/candidate/dispatch/grok-stderr.txt
 evidence/native-client-demo/council-host-v1/candidate/dispatch/claude-stderr.txt
+# Managed-edition council private preparation and raw provider streams.
+evidence/enterprise-managed/council/**/prepared.json
+evidence/enterprise-managed/council/**/grok-raw.jsonl
+evidence/enterprise-managed/council/**/claude-raw.jsonl
+evidence/enterprise-managed/council/**/grok-stderr.txt
+evidence/enterprise-managed/council/**/claude-stderr.txt

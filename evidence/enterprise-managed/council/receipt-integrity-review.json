@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "reviewer": "/root/council_preflight/dispatch_review",
+  "scope": "Read-only integrity audit of the completed frozen managed-policy council, not another presentation review",
+  "verdict": "PASS",
+  "candidate_html_sha256": "80cc88e8b845a607a9795b9da17840c3df5e96cda80e4c81d17638fd83888eab",
+  "manifest_sha256": "a84aec60ebbec1f1434bbe631b4dfd4fc776746d23e58004401e331784e4ae8f",
+  "content_files_matching_manifest": 20,
+  "exact_response_models": ["grok-4.6", "claude-opus-5"],
+  "explicit_launch_effort": "xhigh",
+  "exact_png_payloads_per_reviewer": 16,
+  "raw_stderr_launch_hashes_verified": true,
+  "prompt_runner_bindings_verified": true,
+  "review_text_and_terminal_results_verified": true,
+  "public_assessment_chain_verified": true,
+  "actionable_integrity_issues": [],
+  "inference_started": false,
+  "files_changed_by_auditor": false,
+  "limits": [
+    "xhigh is verified from launch configuration, not independently visible provider-internal effort.",
+    "Usage accounting includes grok-4.6-build and a Claude Haiku entry; exact review response IDs are recorded separately.",
+    "Frozen-candidate audit does not cover subsequent source edits or video playback."
+  ]
+}

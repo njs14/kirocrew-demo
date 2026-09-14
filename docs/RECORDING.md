@@ -1,16 +1,20 @@
 # Local rehearsals and recorded demos
 
-The checked-in HTML edition plays the six reviewed recordings without KiroCrew,
-AWS credentials, Node.js or a Python package installation. From the checkout:
+The current native-controls edition plays its included recordings without KiroCrew,
+AWS credentials, Node.js or a Python package installation. Python 3.9 or newer is sufficient. From the checkout:
 
 ```sh
-python3 scripts/serve-recorded-demos.py
+python3 scripts/serve-recorded-demos.py --build output/kirocrew-native-controls-build.json --port 5612
 ```
 
 Open the URL printed by the server. It binds to loopback and serves the exact
 files listed in the build receipt. See `--help` for port and build-receipt
 options. The recordings show historical observations; playback does not test a
 new machine or deployment.
+
+Use the [project skill](../.agents/skills/kirocrew-demo/SKILL.md), [dependency manager](DEPENDENCIES.md), and [live setup sequence](LIVE-SETUP.md) for a new machine. The [MCP walkthrough](MCP-GOVERNANCE.md) distinguishes user tool availability from the server's policy decision. Record actual macOS client requests for enforcement demonstrations; reserve browser screenshots for the admin tour.
+
+On macOS, let a timed `screencapture -v -V<seconds>` recording finish normally. Sending SIGINT can discard the movie. Verify the file and decode it before treating a take as recorded. Start the passive observer on an existing idle session after any Gateway restart; a newly created empty client-only slot may not exist on the server yet.
 
 ## Rehearse real local control functions
 

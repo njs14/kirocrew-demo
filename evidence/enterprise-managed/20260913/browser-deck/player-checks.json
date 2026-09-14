@@ -1,0 +1,41 @@
+{
+  "play": {
+    "duration": 40.000076,
+    "decoded": [
+      1920,
+      1340
+    ],
+    "readyState": 4,
+    "paused": false
+  },
+  "cues": [
+    {
+      "duration": 40.000076,
+      "error": null,
+      "paused": true,
+      "readyState": 4,
+      "time": 0
+    },
+    {
+      "duration": 40.000076,
+      "error": null,
+      "paused": true,
+      "readyState": 4,
+      "time": 7
+    },
+    {
+      "duration": 40.000076,
+      "error": null,
+      "paused": true,
+      "readyState": 4,
+      "time": 34
+    }
+  ],
+  "beforeLeave": {
+    "playing": true
+  },
+  "afterLeave": {
+    "hash": "#slide-14",
+    "managedPaused": true
+  }
+}

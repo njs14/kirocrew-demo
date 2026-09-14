@@ -1,0 +1,219 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-14T02:50:13.520077+00:00",
+  "candidate": "enterprise-managed-v1",
+  "html_sha256": "80cc88e8b845a607a9795b9da17840c3df5e96cda80e4c81d17638fd83888eab",
+  "notes_sha256": "3848de8ebf15e0fa5fc6a669015b7f275a6cd354fc3b154778549f6a98fd0ed8",
+  "manifest_sha256": "a84aec60ebbec1f1434bbe631b4dfd4fc776746d23e58004401e331784e4ae8f",
+  "slide_count": 16,
+  "reviewers": {
+    "grok": {
+      "verdict": "CHANGES REQUIRED",
+      "response_model_ids": [
+        "grok-4.6"
+      ],
+      "usage_model_ids": [
+        "grok-4.6-build"
+      ],
+      "requested_effort": "xhigh",
+      "all_exact_png_payloads_verified": true,
+      "image_count": 16,
+      "exit_code": 0,
+      "terminal_success": true,
+      "duration_seconds": 274.9,
+      "observed_tool_calls": [
+        {
+          "tool": "read_file",
+          "file": "manifest.json"
+        },
+        {
+          "tool": "read_file",
+          "file": "capture-receipt.json"
+        },
+        {
+          "tool": "read_file",
+          "file": "notes.md"
+        },
+        {
+          "tool": "read_file",
+          "file": "evidence-summary.md"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-1.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-2.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-3.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-4.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-5.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-6.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-7.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-8.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-9.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-10.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-11.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-12.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-13.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-14.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-15.png"
+        },
+        {
+          "tool": "read_file",
+          "file": "slide-16.png"
+        }
+      ],
+      "review_sha256": "700c8d3fbef66c3527d88ffb57c7b5af1a0b50be12f6805ea506e9b77a0d99ad",
+      "receipt_sha256": "6c7b850f502ec62b4c5abce6df7517467b233c1f751a26686a966042a9f24903"
+    },
+    "claude": {
+      "verdict": "CHANGES REQUIRED",
+      "response_model_ids": [
+        "claude-opus-5"
+      ],
+      "usage_model_ids": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-5"
+      ],
+      "requested_effort": "xhigh",
+      "all_exact_png_payloads_verified": true,
+      "image_count": 16,
+      "exit_code": 0,
+      "terminal_success": true,
+      "duration_seconds": 252.2,
+      "observed_tool_calls": [
+        {
+          "tool": "Read",
+          "file": "manifest.json"
+        },
+        {
+          "tool": "Read",
+          "file": "capture-receipt.json"
+        },
+        {
+          "tool": "Read",
+          "file": "notes.md"
+        },
+        {
+          "tool": "Read",
+          "file": "evidence-summary.md"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-1.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-2.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-3.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-4.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-5.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-6.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-7.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-8.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-9.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-10.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-11.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-12.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-13.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-14.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-15.png"
+        },
+        {
+          "tool": "Read",
+          "file": "slide-16.png"
+        }
+      ],
+      "review_sha256": "1ca75b11cc46c5536be2d186bcdf70878068c9e0c53ce408b958ee973bc05bb9",
+      "receipt_sha256": "206cd6272930b9847e5f5d15cc1c81613a8039a6f446481e1c43f99d671efbac"
+    }
+  },
+  "packet_unchanged": true,
+  "sources_unchanged_at_dispatch_completion": true,
+  "verification_receipt_sha256": "e46a50eb848a4d1819a0f533376a601cba64057648309b60ae7e985af34b108e",
+  "synthesis_sha256": "9ae2fe432f779014b3af882c846b41843534c055c9e951daa9fbe150a053d0c5",
+  "private_file_ignore_checked": true,
+  "inference_started_by_verification": false,
+  "additional_review_rounds": 0,
+  "decisions_owner": "root",
+  "no_ai_slop_owner": "root"
+}

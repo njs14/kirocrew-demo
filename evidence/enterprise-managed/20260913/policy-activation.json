@@ -1,0 +1,8 @@
+{
+  "action": "activate",
+  "error": "managed_device_policy_not_active",
+  "kind": "enterprise_policy_error",
+  "mutation_may_have_started": true,
+  "native_enforcement_verified": false,
+  "recovery": "Inspect the managed files, retained before receipt and named service before retrying a failed mutation."
+}

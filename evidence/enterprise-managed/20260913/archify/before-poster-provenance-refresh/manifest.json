@@ -1,0 +1,29 @@
+{
+  "kind": "managed_diagram_metadata_before_poster_refresh",
+  "files": [
+    {
+      "source": {
+        "path": "evidence/enterprise-managed/20260913/archify/source-bindings.json",
+        "bytes": 6433,
+        "sha256": "0c8905353652ad83eadd9ee7fd31dcc33c0d1b213e0672cc03ca73a17b3bbd5b"
+      },
+      "archived": {
+        "path": "evidence/enterprise-managed/20260913/archify/before-poster-provenance-refresh/source-bindings.json",
+        "bytes": 6433,
+        "sha256": "0c8905353652ad83eadd9ee7fd31dcc33c0d1b213e0672cc03ca73a17b3bbd5b"
+      }
+    },
+    {
+      "source": {
+        "path": "evidence/enterprise-managed/20260913/archify/delivery-receipt.json",
+        "bytes": 5934,
+        "sha256": "01bcf8c636fc4618a12f67b26263ae74ec22cb9119d0c5ad912e1d50fbf39267"
+      },
+      "archived": {
+        "path": "evidence/enterprise-managed/20260913/archify/before-poster-provenance-refresh/delivery-receipt.json",
+        "bytes": 5934,
+        "sha256": "01bcf8c636fc4618a12f67b26263ae74ec22cb9119d0c5ad912e1d50fbf39267"
+      }
+    }
+  ]
+}

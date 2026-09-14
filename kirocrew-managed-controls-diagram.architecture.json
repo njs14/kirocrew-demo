@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "KiroCrew managed controls · us-east-1",
+    "locale": "en",
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1380,
+      760
+    ]
+  },
+  "components": [
+    {
+      "id": "native-desktop-client",
+      "type": "frontend",
+      "label": "Mac client",
+      "sublabel": "Local Gateway off · approval UI",
+      "pos": [
+        24,
+        318
+      ],
+      "size": [
+        210,
+        88
+      ]
+    },
+    {
+      "id": "native-crew-runtime",
+      "type": "backend",
+      "label": "Gateway + Kiro CLI",
+      "sublabel": "Original CLI 2.21.4 · signed in",
+      "pos": [
+        390,
+        318
+      ],
+      "size": [
+        280,
+        88
+      ]
+    },
+    {
+      "id": "native-endpoint-controls",
+      "type": "security",
+      "label": "Managed Crew policy",
+      "sublabel": "Root-owned cc floor · YOLO prohibited",
+      "pos": [
+        390,
+        134
+      ],
+      "size": [
+        280,
+        88
+      ]
+    },
+    {
+      "id": "native-remote-workspace",
+      "type": "database",
+      "label": "Remote workspace",
+      "sublabel": "Remote files · crew-writable",
+      "pos": [
+        390,
+        510
+      ],
+      "size": [
+        280,
+        88
+      ]
+    },
+    {
+      "id": "native-demo-mcp",
+      "type": "security",
+      "label": "Demo MCP service",
+      "sublabel": "Separate mcp-demo UID · fixed grants",
+      "pos": [
+        838,
+        318
+      ],
+      "size": [
+        244,
+        88
+      ]
+    },
+    {
+      "id": "native-instance-role",
+      "type": "cloud",
+      "label": "EC2 instance role",
+      "sublabel": "MCP AWS identity · IAM policy",
+      "pos": [
+        838,
+        510
+      ],
+      "size": [
+        244,
+        88
+      ]
+    },
+    {
+      "id": "native-s3-allowed",
+      "type": "database",
+      "label": "S3 allowed/*",
+      "sublabel": "Native read observed",
+      "pos": [
+        1212,
+        192
+      ],
+      "size": [
+        144,
+        88
+      ]
+    },
+    {
+      "id": "native-s3-denied",
+      "type": "database",
+      "label": "S3 denied/*",
+      "sublabel": "Earlier native deny",
+      "pos": [
+        1212,
+        444
+      ],
+      "size": [
+        144,
+        88
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "security-group",
+      "label": "EC2 endpoint-control boundary · ARM t4g.xlarge",
+      "wraps": [
+        "native-crew-runtime",
+        "native-endpoint-controls",
+        "native-remote-workspace",
+        "native-demo-mcp",
+        "native-instance-role"
+      ],
+      "pad": 44
+    }
+  ],
+  "connections": [
+    {
+      "id": "native-ssh-client",
+      "from": "native-desktop-client",
+      "to": "native-crew-runtime",
+      "label": "SSH · TCP 22",
+      "variant": "security"
+    },
+    {
+      "id": "native-crew-controls",
+      "from": "native-endpoint-controls",
+      "to": "native-crew-runtime",
+      "label": "Managed policy checks",
+      "variant": "security",
+      "labelDy": 24
+    },
+    {
+      "id": "native-workspace-io",
+      "from": "native-crew-runtime",
+      "to": "native-remote-workspace",
+      "label": "Filesystem tools",
+      "labelDy": 24
+    },
+    {
+      "id": "native-mcp-call",
+      "from": "native-crew-runtime",
+      "to": "native-demo-mcp",
+      "label": "MCP · native turns",
+      "variant": "emphasis"
+    },
+    {
+      "id": "native-role-credentials",
+      "from": "native-instance-role",
+      "to": "native-demo-mcp",
+      "label": "Role credentials",
+      "variant": "security"
+    },
+    {
+      "id": "native-s3-allow-call",
+      "from": "native-demo-mcp",
+      "to": "native-s3-allowed",
+      "label": "GetObject allowed",
+      "variant": "emphasis"
+    },
+    {
+      "id": "native-s3-deny-call",
+      "from": "native-demo-mcp",
+      "to": "native-s3-denied",
+      "label": "GetObject denied",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "rose",
+      "title": "Administrator-managed floor",
+      "items": [
+        "Root-owned file policy requires cc and prohibits YOLO.",
+        "Managed MCP deny and pinned S3 upload rule are active.",
+        "Owner MCP settings may narrow access; host root retains control."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Native MCP evidence",
+      "items": [
+        "Fresh S3 read: 55 bytes and the expected fixture digest.",
+        "Managed crew_denied stopped before MCP; a separate take is filmed.",
+        "MCP grants and IAM stay separate. Earlier refusals keep their dates."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Host evidence scope",
+      "items": [
+        "Linux seccomp and mount snapshots; a cgroup PTY probe returned EPERM.",
+        "Those observations do not prove the sandbox of each native tool.",
+        "Native sensitive read, protected write and IMDS execution remain unfinished."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "kind": "managed_architecture_delivery",
+  "created_at": "2026-09-14T02:25:47.648423+00:00",
+  "specification": {
+    "path": "kirocrew-managed-controls-diagram.architecture.json",
+    "bytes": 4977,
+    "sha256": "64a10b9878e2481f3b433a383723304915af32ad9d7359ef8e547ecb7bb8740a"
+  },
+  "artifact": {
+    "path": "kirocrew-managed-controls-diagram.html",
+    "bytes": 810663,
+    "sha256": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763"
+  },
+  "base_delivery": {
+    "path": "evidence/enterprise-managed/20260913/archify/base-delivery.json",
+    "bytes": 737,
+    "sha256": "06b02b17ef7d9578d970eac9860b957eb0296f39e70f302edce427824dcf9dda"
+  },
+  "base_artifact": {
+    "path": "evidence/enterprise-managed/20260913/archify/base.html",
+    "bytes": 809281,
+    "sha256": "6c7aaf6137439d18043b94e53c88beb598af26dc4211c1b7d69b75acc1eb2020"
+  },
+  "typography_derivative": {
+    "path": "evidence/enterprise-managed/20260913/archify/typography-derivative.json",
+    "bytes": 6204,
+    "sha256": "51e7497906c34b1ab45830d138b16a327b5e2a59b4ea319047f4b06614d6f7bc"
+  },
+  "final_artifact_check": {
+    "path": "evidence/enterprise-managed/20260913/archify/final-artifact-check.txt",
+    "bytes": 1840,
+    "sha256": "30c6c01d46a1ad671ce7e86c9a280226c186a9c829ccf5970c625ad6dbd5128d"
+  },
+  "validation": {
+    "checks_passed": 9,
+    "check_count": 9,
+    "quality_profile": "showcase",
+    "composition_errors": 0,
+    "composition_warnings": 0
+  },
+  "topology": {
+    "nodes": 8,
+    "routes": 7,
+    "endpoint_control_enclosures": 1,
+    "node_route_enclosure_geometry_byte_values_unchanged": true,
+    "accepted_reference": {
+      "path": "kirocrew-native-controls-diagram.html",
+      "bytes": 810648,
+      "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb"
+    }
+  },
+  "accepted_archive_manifest": {
+    "path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/manifest.json",
+    "bytes": 2275,
+    "sha256": "3596a88dac8bf969a15610b0c7a0f06d01140d6f52be7b092bcca7bf171fad2f"
+  },
+  "source_bindings": {
+    "path": "evidence/enterprise-managed/20260913/archify/source-bindings.json",
+    "bytes": 6433,
+    "sha256": "0c8905353652ad83eadd9ee7fd31dcc33c0d1b213e0672cc03ca73a17b3bbd5b"
+  },
+  "asset_dependencies": {
+    "path": "evidence/enterprise-managed/20260913/archify/asset-dependencies.json",
+    "bytes": 660,
+    "sha256": "80c071fdbccee7a21925514a4b566a981b99fce981eb78e4e1a4e611bbf73adf"
+  },
+  "static_export": {
+    "path": "evidence/enterprise-managed/20260913/archify/kirocrew-managed-controls-diagram-static.json",
+    "bytes": 2198,
+    "sha256": "aeec25002aa4c7e0e8de7eef04f861e0bb6585b38e8e371b0a857f546bb8e0c6"
+  },
+  "perceptual_static_review": {
+    "path": "evidence/enterprise-managed/20260913/archify/perceptual-static-review.json",
+    "bytes": 1191,
+    "sha256": "c416790edbe242bcb57e07dac729119fc0be2211537533eb71a618c5da9f66c4"
+  },
+  "browser_validation": {
+    "status": "not_run_in_this_lane",
+    "reason": "Parent owns the actual browser check. No browser/server reroute was attempted after the prior CUA file-URL policy block.",
+    "prior_native_browser_receipt_reused_as_managed_pass": false
+  },
+  "installed_archify_skill_modified": false,
+  "source_changes": "New managed derivative only: policy node wording, policy edge wording, dated earlier S3-denial subtitle and three evidence cards. Accepted native and historical ARM/x86 artifacts remain unchanged.",
+  "commands": [
+    "archify validate architecture kirocrew-managed-controls-diagram.architecture.json --quality showcase --json",
+    "archify deliver architecture kirocrew-managed-controls-diagram.architecture.json evidence/enterprise-managed/20260913/archify/base.html --quality showcase --json",
+    "python3 evidence/enterprise-managed/20260913/archify/enlarge-typography.py",
+    "check-render-output.mjs kirocrew-managed-controls-diagram.html",
+    "node evidence/enterprise-managed/20260913/archify/render-static.cjs kirocrew-managed-controls-diagram"
+  ],
+  "limits": [
+    "Browser interaction, dark/light rendering, cards, presentation mode and four-viewport coverage are not validated by these static checks; parent browser review is separate.",
+    "Only the fresh managed denial was filmed. The allowed read has native/service evidence but no retained ui3 video. Earlier MCP-grant and IAM-refusal clips predate the managed policy.",
+    "Native managed denial attribution uses the explicit host governance notice and policy SEL correlated by isolated slot/time and adjacent hash linkage; the governance event has no direct native tool ID.",
+    "Owner Crew-only MCP availability can narrow exposure. The captured restriction was staged and discarded; no applied local restriction test is claimed.",
+    "The pinned S3 upload deny and unavailable YOLO mode are policy/UI observations, not fresh native denial takes. Reads and Trust remain available.",
+    "Linux cc is not Seatbelt or strict isolation. CLI seccomp/mount snapshots and a disposable crew-UID child PTY EPERM do not establish exact-slot/tool sandbox enforcement.",
+    "Sensitive-path read, protected-path write and native IMDS execution recordings remain unfinished.",
+    "The client quit/relaunch receipt predates policy installation; the later native turns establish governed behavior.",
+    "Host root retains authority. No signed fleet policy, enterprise SSO, human-role RBAC or central MCP registry is claimed.",
+    "The current installer source differs from the hash in the retained policy plan. This artifact binds the deployed policy bytes and observations; it does not claim the present installer equals that deployed candidate."
+  ],
+  "receipt_generator": {
+    "path": "evidence/enterprise-managed/20260913/archify/bind-delivery.py",
+    "bytes": 11484,
+    "sha256": "59a80b3843c5c5e78fa2209c0e29330bc22524d94b235782632b0d9c96607ab4"
+  }
+}

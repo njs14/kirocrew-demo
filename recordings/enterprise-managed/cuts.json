@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "title": "Managed MCP policy in the native KiroCrew client",
+  "scenes": [
+    {
+      "id": "native-managed-mcp-denial",
+      "title": "A managed policy blocks a locally enabled tool",
+      "description": "The user requests a locally enabled MCP tool from the Mac client. The Gateway managed policy denies it before the MCP service. The presenter expands the native host notice to inspect the exact governance-policy reason.",
+      "evidenceScope": "Actual macOS KiroCrew Nightly interaction through the EC2 Gateway and original Kiro CLI backend. This continuous cut films the ui4 denial only; the earlier ui3 turn visible above the composer is conversation history. The allowed control call was verified separately and is not filmed here. Native history, SEL correlation and the MCP audit interval are reviewed separately from media decoding.",
+      "recordedAt": "2026-09-14T02:06:34Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/native-managed-denial.mov",
+        "description": "Actual Mac KiroCrew Nightly window capture for the remote client on port5599. The complete request-to-result sequence is preserved at its recorded speed, followed by expansion of the policy reason."
+      },
+      "start": 6,
+      "end": 46,
+      "cues": [
+        {
+          "time": 0,
+          "label": "Submit the MCP request",
+          "detail": "The composed ui4 request names @aws-enforcement/crew_denied and trace managed-20260914-ui4-crew. The user sends this one harmless fixture.",
+          "evidence": "receipts/native-managed-ui4-verification.json"
+        },
+        {
+          "time": 7,
+          "label": "See the automatic block",
+          "detail": "Tool call blocked appears in the new turn. No Allow once dialog is shown for this denied call.",
+          "evidence": "receipts/native-managed-ui4-verification.json"
+        },
+        {
+          "time": 34,
+          "label": "Inspect the managed-policy reason",
+          "detail": "The expanded Kiro Crew host notice says Blocked by governance policy and identifies the exact @aws-enforcement/crew_denied deny rule.",
+          "evidence": "receipts/native-managed-ui4-verification.json"
+        }
+      ]
+    }
+  ]
+}

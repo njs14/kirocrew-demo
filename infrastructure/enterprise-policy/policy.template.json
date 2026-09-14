@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "boot": {},
+  "sandbox": {"min_level": "cc"},
+  "approval_modes": {"mode": "deny", "deny": ["yolo"]},
+  "mcp": {"mode": "deny", "deny": ["@aws-enforcement/crew_denied"]},
+  "commands": {"mode": "deny", "deny": ["*KIROCREW_MANAGED_COMMAND_CONTROL*", "aws(?:\\s+--?[a-z-]+(?:[= ]\\S+)?)*\\s+s3(?:\\s+--?[a-z-]+(?:[= ]\\S+)?)*\\s+cp .* s3://.*"]},
+  "filesystem": {
+    "read": {"mode": "deny", "deny": ["__CREW_HOME__/.aws", "__CREW_HOME__/.aws/**"]},
+    "write": {"mode": "deny", "deny": ["/etc/kirocrew-demo", "/etc/kirocrew-demo/**", "/etc/systemd/system", "/etc/systemd/system/**", "__SOURCE_ROOT__", "__SOURCE_ROOT__/**", "__CREW_HOME__/.kiro/agents", "__CREW_HOME__/.kiro/agents/**"]}
+  }
+}

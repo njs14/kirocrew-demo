@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "dynamic_14": true,
+    "dynamic_15": true,
+    "dynamic_16": true,
+    "grok_exact_launch": true,
+    "claude_exact_launch": true,
+    "no_cloud_credentials_in_child_env": true
+  },
+  "passed": true,
+  "inference_started": false,
+  "packet_prepared": false
+}

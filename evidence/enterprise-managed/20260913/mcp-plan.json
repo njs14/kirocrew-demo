@@ -1,0 +1,57 @@
+{
+  "binding": {
+    "crew_uid": 999,
+    "deployment": {
+      "account_id": "770132776059",
+      "region": "us-east-1",
+      "stack_name": "kirocrew-demo-20260913"
+    },
+    "hashes": {
+      "agent": "48855b7e4b5c2adbbbf7a2ee31e0c181b2977340f1d0e36653c69756299b4d90",
+      "claude_global": null,
+      "config": "60367e61332c8a295f60774aeaee022b8e521213d079aab70ef7f812cbc60bbc",
+      "kiro_global": null,
+      "materialized": "8e8c76060364c47db4bc5528ed379dcaad2cf1b7980b021d70fa1a65a9860fc8",
+      "store": null
+    },
+    "helper_sha256": "fffd0e3ce2a39db400810977e0f93d0954181e158363013cf211bd247fd11e13",
+    "port": 5476,
+    "proof": {
+      "allowed_demo_tool_permitted": true,
+      "cache_matches_root_policy": true,
+      "exact_demo_tool_denied_by_policy": true,
+      "live": {
+        "has_policy": true,
+        "mcp_governed": true,
+        "mcp_source": "policy",
+        "on_unavailable": "fail_closed",
+        "source_scheme": "file"
+      },
+      "policy_sha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87",
+      "process": {
+        "pid": 133032,
+        "start": "42784068186"
+      },
+      "sources": {
+        "agent.py": "29db2dc3af749c54fde7079e76b043ebb7aea660745cfc8f4983b05ae0661de6",
+        "config/loader.py": "8c939117d505987e860e7d33ad472acb8404689d5ab55a6c6b995c21f57a9aa5",
+        "dashboard/handlers/mcp_custom.py": "2aefc532339349fb637f4ddb2e054eafabaea41dab32ced8a0fb555f5f60cd89",
+        "dashboard/handlers/security.py": "f6350b8e00bc948c4f5e2179a05cc392f7cc71e343f3aa6193957c1c5d03e109",
+        "hooks.py": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+        "platform/governance.py": "7d9c5b109086b8c4a2d36c589d387e1fd562e7d2b407dc65d54d2e7d2fc09341",
+        "platform/policy_distribution.py": "b4f57a6163a61f7d1f5025f3472794d44484c0b83fc263b29d957845937df30e"
+      }
+    },
+    "service": "kirocrew-demo.service",
+    "state_dir": "/var/lib/kirocrew"
+  },
+  "gateway_restart_required": true,
+  "hook_entry_will_be_removed": true,
+  "kind": "demo_mcp_plan",
+  "native_enforcement_verified": false,
+  "plan_id": "b30e3a7d0b34ef8f2d100fdd06b7578171c195d6ee7b38c1a0999019097d62eb",
+  "registration": "add",
+  "retire_mutable_deny": true,
+  "schema_version": 1,
+  "scope": "crew_only"
+}

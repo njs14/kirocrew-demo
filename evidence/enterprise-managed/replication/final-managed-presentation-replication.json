@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "kind": "final_managed_presentation_replication",
+  "created_at": "2026-09-14T03:30:07.330523+00:00",
+  "verdict": "PASS",
+  "source_artifacts": [
+    {
+      "path": "output/kirocrew-native-controls.html",
+      "sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
+      "bytes": 2033388
+    },
+    {
+      "path": "output/kirocrew-native-controls-build.json",
+      "sha256": "6e4e80643de8dacaf7ed3d1c1a893e2dc1b52672d70c1ac6e3522a9d113f65f1",
+      "bytes": 44395
+    },
+    {
+      "path": "config/presentation-native.json",
+      "sha256": "1fba6900d643cd78d6f178f7d765aa8fd4146dcfae95633304e468862901bb34",
+      "bytes": 10376
+    },
+    {
+      "path": "scripts/build-demo-presentation.py",
+      "sha256": "3b20de8f9caf19230a39a2beb1e7e7ded0020d0dbfa144f3ddf177ad9d981055",
+      "bytes": 9958
+    },
+    {
+      "path": "scripts/tests/test_presentation_recipe.py",
+      "sha256": "ac5b92a8886f3e030c15e4d8fc60de99ca2a4927cd07666ca9992d5629a66747",
+      "bytes": 14082
+    },
+    {
+      "path": ".agents/skills/kirocrew-demo/SKILL.md",
+      "sha256": "df041ff167652ad63484a27138ac4f2aee1c665e00a28cbd868b0c9640abb166",
+      "bytes": 2662
+    },
+    {
+      "path": "docs/LIVE-SETUP.md",
+      "sha256": "3dd408177b5a7030d2c2c242e696bd3f7f29740ec1f1970856372f481a5fd09d",
+      "bytes": 14905
+    }
+  ],
+  "input_validation": {
+    "recipeInputCount": 39,
+    "boundAssetCount": 83,
+    "sceneCount": 9
+  },
+  "focused_tests": {
+    "command": "python3 -m unittest scripts/tests/test_presentation_recipe.py scripts/tests/test_recorded_demo_server.py",
+    "tests": 11,
+    "exit_code": 0,
+    "coverage": [
+      "Clean checkout and export paths contain spaces; invocation outside checkout",
+      "Exact final 16-slide, nine-scene HTML reproduction; accepted bytes preserved",
+      "Source checkout moved before exported server and HTTP checks",
+      "Every allowlisted route, HTML link, ranges, private paths, changed-file guard",
+      "Explicit relative recipe, missing inputs, symlink and route collision guards",
+      "README collision preserves existing bytes",
+      "Project skill Markdown references and dependency-guide links resolve in clean checkout"
+    ]
+  },
+  "forward_test": {
+    "source_file_count": 163,
+    "skill_link_file_count": 73,
+    "private_runtime_config_or_build_state_copied": false,
+    "source_and_export_paths_contain_spaces": true,
+    "source_moved_before_export_validation": true,
+    "skill_local_links_resolve_in_clean_checkout": true,
+    "historical_output_artifacts_copied_without_reclassifying_their_old_internal_links": true,
+    "slide_count": 16,
+    "scene_count": 9,
+    "edition_sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
+    "export_allowlisted_routes_hash_checked": 116,
+    "export_build_sha256": "adbd308cb022e3beafe7b0bf2d9aeab853a98abf6cad636c5962401a833d3947",
+    "ignored_export_directory": ".build/final managed reproduction 20260914T033006Z/presentation export with spaces"
+  },
+  "scope": {
+    "presentation_playback_export_only": true,
+    "complete_live_setup_skill_runs_from": "Private project checkout",
+    "export_readme_and_receipt_state_boundary": true,
+    "transitive_live_setup_links_promised_in_export": false,
+    "second_live_deployment_or_dependency_installation_performed": false,
+    "browser_and_council_verdicts": "Separate exact-candidate receipts"
+  },
+  "frozen_deck_tour_diagram_or_evidence_edited": false
+}

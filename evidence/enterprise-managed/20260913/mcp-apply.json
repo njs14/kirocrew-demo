@@ -1,0 +1,18 @@
+{
+  "crew_only_enabled": true,
+  "default_agent_materialized": true,
+  "gateway_restarted": true,
+  "global_configurations_unchanged": true,
+  "governed_auto_approval_absent": true,
+  "hook_retirement": {
+    "backup_path": "/etc/kirocrew-demo/mcp-management/60367e61332c8a295f60774aeaee022b8e521213d079aab70ef7f812cbc60bbc-hook.json",
+    "backup_sha256": "6c9ef0cb4c15a529f7a36e384e3630f545754368014a3246f1346032de2c98ed",
+    "removed_only_exact_entry": true
+  },
+  "kind": "demo_mcp_applied",
+  "native_enforcement_verified": false,
+  "next": "Run verify after restart, then demonstrate a fresh native managed denial in KiroCrew.",
+  "plan_id": "b30e3a7d0b34ef8f2d100fdd06b7578171c195d6ee7b38c1a0999019097d62eb",
+  "schema_version": 1,
+  "source_agent_unchanged": true
+}

@@ -1,5 +1,7 @@
 # Native Mac client demo
 
+> Current state: Read the [managed demo guide](MANAGED-DEMO.md) and its linked status before running this demo. The root-owned policy and fresh native managed-denial test supersede the earlier configuration described below. Historical results and unfinished host cases retain their recorded scope.
+
 The demonstration follows a macOS KiroCrew user from a request to the server’s decision. The Mac displays the conversation and approval controls. The EC2 host runs the Gateway, selected Kiro CLI backend, workspace and purpose-built enforcement MCP. The local Mac Gateway stays off.
 
 ## Current recorded results

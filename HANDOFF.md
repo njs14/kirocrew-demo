@@ -1,4 +1,12 @@
-# KiroCrew demo — ARM and telemetry live, native Kiro CLI sign-in pending
+# KiroCrew demo — managed EC2 controls and native recordings
+
+> Current state: Read the [managed demo guide](docs/MANAGED-DEMO.md) and its linked status before running this demo. The root-owned policy and fresh native managed-denial test supersede the earlier configuration described below. Historical results and unfinished host cases retain their recorded scope.
+
+The current Mac client uses the EC2 Gateway with its local Gateway off. The original Kiro CLI is authenticated, and fresh managed-policy turns verified a permitted MCP read and an automatic MCP denial. The delivered presentation has 16 slides and nine recordings; the separate admin tour has 10 stops and 26 screenshots. The [project skill](.agents/skills/kirocrew-demo/SKILL.md) covers dependencies, setup, presentation and recording. Use [current-status.json](evidence/native-client-demo/current-status.json) for the final artifact and validation bindings.
+
+## Earlier deployment notes — historical
+
+The sign-in failures and unfinished results below describe their original observation times. They do not override the current status above.
 
 Updated September 13, 2026. The user authorized actual EC2 backend/MCP/AWS enforcement through CloudFormation, inbound access only from their IP, primary AWS MCP in us-east-1, and the subsequent ARM upgrade. The presentation work includes an updated deck and Archify, exact Grok 4.6 xhigh / Opus 5 xhigh council review, then no-ai-slop editing. The historical no-cloud authorization statements below are superseded. The preceding accepted handoff is preserved at `evidence/accepted-before-ec2/HANDOFF.md`.
 

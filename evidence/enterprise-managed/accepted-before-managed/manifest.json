@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "accepted_native_presentation_preservation",
+  "createdAt": "2026-09-14T01:52:47.790076+00:00",
+  "scope": "Preserves the accepted 14-slide/eight-recording edition before the managed-policy derivative. Copies retain their original paths and review scope; this archive is not a self-contained replay export.",
+  "slideCount": 14,
+  "sceneCount": 8,
+  "artifacts": [
+    {
+      "source": "output/kirocrew-native-controls.html",
+      "copy": "evidence/enterprise-managed/accepted-before-managed/kirocrew-native-controls.html",
+      "sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c",
+      "bytes": 639250
+    },
+    {
+      "source": "output/kirocrew-native-controls-build.json",
+      "copy": "evidence/enterprise-managed/accepted-before-managed/kirocrew-native-controls-build.json",
+      "sha256": "f01a3d2539a64ec3ca42e3abd72257c2308735650653e9ba8b8265a7f8761248",
+      "bytes": 34634
+    },
+    {
+      "source": "output/kirocrew-native-controls-notes.md",
+      "copy": "evidence/enterprise-managed/accepted-before-managed/kirocrew-native-controls-notes.md",
+      "sha256": "415e0f99e8add71613d140907955f2be5a29f7813f6f419fa97fd35bd15df164",
+      "bytes": 25826
+    },
+    {
+      "source": "output/kirocrew-native-controls-manifest.json",
+      "copy": "evidence/enterprise-managed/accepted-before-managed/kirocrew-native-controls-manifest.json",
+      "sha256": "7262516697502200db5122b8ea968c7f9230f92f4e43a8d900b69854deb39dda",
+      "bytes": 35002
+    }
+  ],
+  "browserReview": {
+    "path": "evidence/native-client-demo/presentation-host-final/browser/final-review.json",
+    "sha256": "97a6e8928b9ec4512a2f6a08cd811e8a67248dfde72083455c99f7795e61ecbc"
+  },
+  "integrationReview": {
+    "path": "evidence/native-client-demo/host-20260913-review/final-integration-review.json",
+    "sha256": "e916baa7ad8496ce3a72e12550e16ab68c0ba113d5a5e8070ec2d2552a2fa6e5"
+  }
+}

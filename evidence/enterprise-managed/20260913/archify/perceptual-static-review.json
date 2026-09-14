@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "kind": "static_svg_perceptual_review",
+  "reviewer": "/root/actual_archify",
+  "images": [
+    {
+      "path": "evidence/enterprise-managed/20260913/archify/kirocrew-managed-controls-diagram-1152x480.png",
+      "bytes": 84978,
+      "sha256": "af42256da34c833d335c080bf8148a1eb4c0d174a02777cd50ac596ec56379cd"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/archify/stage-static-1030x568.png",
+      "bytes": 101965,
+      "sha256": "f32ed210eb224947bb57c24c14d1083a3ccd1e272ccdaddaf0deb6d5c4b5a3b8"
+    }
+  ],
+  "observed": [
+    "All eight nodes, seven routes and the single EC2 enclosure remain visible.",
+    "Managed policy label and cc/YOLO subtitle fit the existing control node.",
+    "Mac client, original CLI, separate MCP UID and IAM authority labels remain readable at the 1030×568 stage approximation.",
+    "No overlapping node text, clipped labels, or route-label collisions observed."
+  ],
+  "scope": "Image-capable review of librsvg exports only. The 1152×480 export is supplemental; the deck links the standalone HTML for exploration. Cards and viewer behavior need parent browser QA.",
+  "browser_review_performed": false
+}

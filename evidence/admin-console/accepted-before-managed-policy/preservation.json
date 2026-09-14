@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "kind": "accepted_admin_tour_before_managed_policy",
+  "preservedAt": "2026-09-14T02:18:01.739287+00:00",
+  "scope": "Exact accepted19-image tour, source and bound review/manifests before the managed-policy content pass. Original screenshots remain unchanged at their recorded paths; the copied build retains all19 hashes.",
+  "files": [
+    {
+      "original": "scripts/build-native-admin-tour.py",
+      "preserved": "evidence/admin-console/accepted-before-managed-policy/scripts/build-native-admin-tour.py",
+      "bytes": 44645,
+      "sha256": "4205168e4d3ed75dbea4a522cb039373d5b4080a2566fad0487674b6969168c2"
+    },
+    {
+      "original": "output/kirocrew-admin-tour.html",
+      "preserved": "evidence/admin-console/accepted-before-managed-policy/output/kirocrew-admin-tour.html",
+      "bytes": 2516369,
+      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87"
+    },
+    {
+      "original": "output/kirocrew-admin-tour.md",
+      "preserved": "evidence/admin-console/accepted-before-managed-policy/output/kirocrew-admin-tour.md",
+      "bytes": 18384,
+      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108"
+    },
+    {
+      "original": "output/kirocrew-native-admin-findings.md",
+      "preserved": "evidence/admin-console/accepted-before-managed-policy/output/kirocrew-native-admin-findings.md",
+      "bytes": 9214,
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/tour-build.json",
+      "preserved": "evidence/admin-console/accepted-before-managed-policy/evidence/admin-console/native-20260913/tour-build.json",
+      "bytes": 15583,
+      "sha256": "bb458337d82be7c57700431e8cf7282ec462fbef8b45a8ea1fe7bff9f3cc9f5f"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/tour-serve.json",
+      "preserved": "evidence/admin-console/accepted-before-managed-policy/evidence/admin-console/native-20260913/tour-serve.json",
+      "bytes": 18828,
+      "sha256": "6026e648bf7279173e921eb8aeb37af8f7d3c45ec293466f4a5e9f78a936c654"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/host-captures.json",
+      "preserved": "evidence/admin-console/accepted-before-managed-policy/evidence/admin-console/native-20260913/host-captures.json",
+      "bytes": 9447,
+      "sha256": "dfaf5df98ebbec220a75aae5103a07020d76b0e4c7b7395dd5843e74f2b0a5b3"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/host-capture-editorial-review.json",
+      "preserved": "evidence/admin-console/accepted-before-managed-policy/evidence/admin-console/native-20260913/host-capture-editorial-review.json",
+      "bytes": 1708,
+      "sha256": "e9cc3b2a7a8db72b1a6cf66285720ea4d5089d9aba867264d8c87333766c3760"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/builder-source-review.json",
+      "preserved": "evidence/admin-console/accepted-before-managed-policy/evidence/admin-console/native-20260913/builder-source-review.json",
+      "bytes": 1396,
+      "sha256": "85f74ab3750a0b6fce52a69792f56ad287703e58164c55fde27966feecca6cb8"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/browser-host/review.json",
+      "preserved": "evidence/admin-console/accepted-before-managed-policy/evidence/admin-console/native-20260913/browser-host/review.json",
+      "bytes": 2493,
+      "sha256": "d41782b5bfac85b4ba657c54c1eee2d8eac2f32789c47cd7b3d9a0caa3216813"
+    }
+  ]
+}

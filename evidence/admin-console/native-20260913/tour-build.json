@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "kind": "native_admin_tour_build",
-  "built_at_utc": "2026-09-14T01:03:58.811636+00:00",
-  "status": "static_and_browser_passed",
-  "builder_sha256": "4205168e4d3ed75dbea4a522cb039373d5b4080a2566fad0487674b6969168c2",
-  "stop_count": 9,
-  "screenshot_count": 19,
+  "built_at_utc": "2026-09-14T02:36:17.624743+00:00",
+  "status": "static_passed_browser_review_pending",
+  "builder_sha256": "d16eaed14f5a325302b6be24c67453173759bb7b16c4e8e97aa8537ceca68ef5",
+  "stop_count": 10,
+  "screenshot_count": 26,
   "static_checks": {
     "unique_ids": true,
     "all_anchor_targets_exist": true,
@@ -23,7 +23,7 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_label": "September 13, 2026 \u00b7 evening capture \u00b7 before managed policy",
       "capture_group": "fresh_security_tour",
       "stop": "host"
     },
@@ -34,7 +34,7 @@
       "width": 1280,
       "height": 720,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 earlier baseline",
+      "capture_label": "September 13, 2026 \u00b7 earlier baseline \u00b7 before managed policy",
       "capture_group": "accepted_earlier_baseline",
       "stop": "host"
     },
@@ -45,9 +45,20 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_label": "September 13, 2026 \u00b7 evening capture \u00b7 before managed policy",
       "capture_group": "fresh_security_tour",
       "stop": "posture"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/managed-command-locked.jpg",
+      "sha256": "1d29e47e9cd598234ecc939cb34a8cd38e248f1c936240042e7b9ccffc20771a",
+      "bytes": 168122,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 late evening EDT \u00b7 managed policy active",
+      "capture_group": "managed-policy-20260913",
+      "stop": "rules"
     },
     {
       "path": "output/admin-console-native-20260913/03-denied-command-categories.png",
@@ -56,7 +67,7 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_label": "September 13, 2026 \u00b7 evening capture \u00b7 before managed policy",
       "capture_group": "fresh_security_tour",
       "stop": "rules"
     },
@@ -67,7 +78,7 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_label": "September 13, 2026 \u00b7 evening capture \u00b7 before managed policy",
       "capture_group": "fresh_security_tour",
       "stop": "rules"
     },
@@ -78,7 +89,7 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT) \u00b7 before managed policy",
       "capture_group": "host-20260913-evening",
       "stop": "rules"
     },
@@ -89,9 +100,20 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT) \u00b7 before managed policy",
       "capture_group": "host-20260913-evening",
       "stop": "rules"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/user-approval-modes.jpg",
+      "sha256": "24c3f8a70b9a3f2bcf243d8b1f7c5f6ae3e8c17cc6dd09e775e9c2eb12014bb1",
+      "bytes": 146122,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 late evening EDT \u00b7 managed policy active",
+      "capture_group": "managed-policy-20260913",
+      "stop": "approval"
     },
     {
       "path": "output/admin-console-native-20260913/05-approval-duration.png",
@@ -100,9 +122,20 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_label": "September 13, 2026 \u00b7 evening capture \u00b7 before managed policy",
       "capture_group": "fresh_security_tour",
       "stop": "approval"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/managed-governance.jpg",
+      "sha256": "54902bb87b5a77658200ca7a1cda676e7f3eb51d16c3c61df14b6f2cd240c6a7",
+      "bytes": 124344,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 late evening EDT \u00b7 managed policy active",
+      "capture_group": "managed-policy-20260913",
+      "stop": "governance"
     },
     {
       "path": "output/admin-console-native-20260913/06-governance-status.png",
@@ -111,9 +144,53 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_label": "September 13, 2026 \u00b7 evening capture \u00b7 before managed policy",
       "capture_group": "fresh_security_tour",
       "stop": "governance"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-enabled.jpg",
+      "sha256": "03c50af7b54bafa8c2d6e5d14b81816f9665971fb548352ab4fb1943c560d8ce",
+      "bytes": 74693,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 late evening EDT \u00b7 managed policy active",
+      "capture_group": "managed-policy-20260913",
+      "stop": "mcp"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-staged-restriction.jpg",
+      "sha256": "f579fbb4e5d218ace76dfbe82c24e70deef272aa6a66b0e9e0e23228af705324",
+      "bytes": 88780,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 late evening EDT \u00b7 managed policy active",
+      "capture_group": "managed-policy-20260913",
+      "stop": "mcp"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/user-session-mcp-tools.jpg",
+      "sha256": "f293022244e732ddbb151402cd4e2c090df93f10b648f39c58b242cf12c58771",
+      "bytes": 156731,
+      "width": 1555,
+      "height": 1324,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 late evening EDT \u00b7 managed policy active",
+      "capture_group": "managed-policy-20260913",
+      "stop": "mcp"
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/screenshots/native-managed-recorded-denial.jpg",
+      "sha256": "480df161fc232da1308db9cbc37e0648b6b9d06c71ebef7d440e8029f66a2666",
+      "bytes": 103418,
+      "width": 1144,
+      "height": 768,
+      "mime_type": "image/jpeg",
+      "capture_label": "September 13, 2026 \u00b7 late evening EDT \u00b7 managed policy active",
+      "capture_group": "managed-policy-20260913",
+      "stop": "mcp"
     },
     {
       "path": "output/admin-console-native-20260913/02-sel-coverage-viewport.png",
@@ -122,7 +199,7 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_label": "September 13, 2026 \u00b7 evening capture \u00b7 before managed policy",
       "capture_group": "fresh_security_tour",
       "stop": "audit"
     },
@@ -133,7 +210,7 @@
       "width": 1280,
       "height": 720,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 earlier baseline",
+      "capture_label": "September 13, 2026 \u00b7 earlier baseline \u00b7 before managed policy",
       "capture_group": "accepted_earlier_baseline",
       "stop": "backend"
     },
@@ -144,7 +221,7 @@
       "width": 1280,
       "height": 720,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 earlier baseline",
+      "capture_label": "September 13, 2026 \u00b7 earlier baseline \u00b7 before managed policy",
       "capture_group": "accepted_earlier_baseline",
       "stop": "metrics"
     },
@@ -155,7 +232,7 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 evening capture",
+      "capture_label": "September 13, 2026 \u00b7 evening capture \u00b7 before managed policy",
       "capture_group": "fresh_security_tour",
       "stop": "metrics"
     },
@@ -166,7 +243,7 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT) \u00b7 before managed policy",
       "capture_group": "host-20260913-evening",
       "stop": "metrics"
     },
@@ -177,7 +254,7 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT) \u00b7 before managed policy",
       "capture_group": "host-20260913-evening",
       "stop": "metrics"
     },
@@ -188,7 +265,7 @@
       "width": 1280,
       "height": 720,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 earlier baseline",
+      "capture_label": "September 13, 2026 \u00b7 earlier baseline \u00b7 before managed policy",
       "capture_group": "accepted_earlier_baseline",
       "stop": "collection"
     },
@@ -199,7 +276,7 @@
       "width": 1280,
       "height": 720,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 earlier baseline",
+      "capture_label": "September 13, 2026 \u00b7 earlier baseline \u00b7 before managed policy",
       "capture_group": "accepted_earlier_baseline",
       "stop": "collection"
     },
@@ -210,7 +287,7 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT) \u00b7 before managed policy",
       "capture_group": "host-20260913-evening",
       "stop": "collection"
     },
@@ -221,118 +298,153 @@
       "width": 1555,
       "height": 1324,
       "mime_type": "image/jpeg",
-      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT)",
+      "capture_label": "September 13, 2026 \u00b7 later evening capture (EDT) \u00b7 before managed policy",
       "capture_group": "host-20260913-evening",
       "stop": "collection"
     }
   ],
   "sources": [
     {
-      "label": "Fresh EC2 CLI authentication",
+      "label": "Managed policy, client state and screenshot summary",
+      "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+      "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452"
+    },
+    {
+      "label": "Active managed policy readback",
+      "path": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
+    },
+    {
+      "label": "MCP configuration and policy readback",
+      "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4"
+    },
+    {
+      "label": "Managed native allowed read and automatic deny correlation (ui3; read not filmed)",
+      "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a"
+    },
+    {
+      "label": "Filmed automatic managed MCP denial correlation (ui4)",
+      "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+    },
+    {
+      "label": "Independent managed native artifact review",
+      "path": "evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+      "sha256": "5f325f568203ec997c7f94a0d3c2c01e358906bba83d9a95e1d80b692a82e0ce"
+    },
+    {
+      "label": "Root-owned policy and separate service sandbox observations",
+      "path": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7"
+    },
+    {
+      "label": "Mac quit and relaunch with local Gateway off (before policy activation)",
+      "path": "evidence/enterprise-managed/20260913/client-relaunch.json",
+      "sha256": "5520f2939ab2dba5227e5daf90d535fa44eccd7fd5820adc3ce5b8182a187ea0"
+    },
+    {
+      "label": "Managed native clip review",
+      "path": "evidence/enterprise-managed/20260913/media-review.json",
+      "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd"
+    },
+    {
+      "label": "Before managed policy: Fresh EC2 CLI authentication",
       "path": "evidence/native-client-demo/20260913/authenticated.json",
       "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1"
     },
     {
-      "label": "Native Mac recording guide",
-      "path": "docs/NATIVE-CLIENT-DEMO.md",
-      "sha256": "92c76b60e2d306156e13e6a84146b7f80c3abab61eda1bf4769bc6a5db036b63"
-    },
-    {
-      "label": "MCP and IAM enforcement contract",
+      "label": "Before managed policy: MCP and IAM enforcement contract",
       "path": "infrastructure/mcp-enforcement/README.md",
       "sha256": "68a0c13a955baec04a34e25f382bde6eea1d8701c6fb12a8d356589526b45910"
     },
     {
-      "label": "Custom telemetry data contract",
+      "label": "Before managed policy: Custom telemetry data contract",
       "path": "infrastructure/observability/APP-INSTALL.md",
       "sha256": "98d682cadc364ec25f98e85cb3709f2b1fc19a13ed792abb3a6efb19c28a907e"
     },
     {
-      "label": "Earlier screenshot capture receipt",
+      "label": "Before managed policy: Earlier screenshot capture receipt",
       "path": "evidence/admin-console/browser-receipt.json",
       "sha256": "7ec5239c3cb55087dbab974ab64a3c485fdf6038a4136952a4a933f3dc5cd317"
     },
     {
-      "label": "Earlier admin findings",
+      "label": "Before managed policy: Earlier admin findings",
       "path": "output/kirocrew-admin-findings.md",
       "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
     },
     {
-      "label": "Final four-outcome reconciliation",
+      "label": "Before managed policy: Final four-outcome reconciliation",
       "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
       "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b"
     },
     {
-      "label": "Independent reconciliation review",
+      "label": "Before managed policy: Independent reconciliation review",
       "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
       "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9"
     },
     {
-      "label": "MCP and IAM authority attribution review",
+      "label": "Before managed policy: MCP and IAM authority attribution review",
       "path": "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
       "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642"
     },
     {
-      "label": "Publication export of the incomplete collector receipt",
+      "label": "Before managed policy: Publication export of the incomplete collector receipt",
       "path": "evidence/native-client-demo/20260913-ui2/receipt-publication.json",
       "sha256": "1e81f02d2237afbd0d6394b178def71134a8be79bd50f26b23f79af42983ee2e"
     },
     {
-      "label": "Native MCP clip review",
+      "label": "Before managed policy: Native MCP clip review",
       "path": "evidence/native-client-demo/media-review-mcp-controls.json",
       "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d"
     },
     {
-      "label": "Later host workspace-read observations",
+      "label": "Before managed policy: Later host workspace-read observations",
       "path": "evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
       "sha256": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7"
     },
     {
-      "label": "Later native command-rule observations",
+      "label": "Before managed policy: Later native command-rule observations",
       "path": "evidence/native-client-demo/host-20260913-ui3/command-observations.json",
       "sha256": "88bc23a85ab8db45a0d24ee34f711f46f263245e1a83f4e89c623e21dd9c2455"
     },
     {
-      "label": "Independent initial host review",
+      "label": "Before managed policy: Independent initial host review",
       "path": "evidence/native-client-demo/host-20260913-review/initial-review.json",
       "sha256": "ff855dbecb4bdb852200521040f4d5e523b1f50d7035fb3ec808395f4e3314e9"
     },
     {
-      "label": "Anonymous Gateway authentication correlation",
+      "label": "Before managed policy: Anonymous Gateway authentication correlation",
       "path": "evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
       "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543"
     },
     {
-      "label": "Independent anonymous Gateway authentication review",
+      "label": "Before managed policy: Independent anonymous Gateway authentication review",
       "path": "evidence/native-client-demo/host-20260913-review/auth-review.json",
       "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204"
     },
     {
-      "label": "Temporary command-rule cleanup readback",
+      "label": "Before managed policy: Temporary command-rule cleanup readback",
       "path": "evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
       "sha256": "3eae37afdfc7d513f702a336d1e6ce70f07f36209151630b0271f314bfc146e1"
     },
     {
-      "label": "Current native admin findings",
+      "label": "Before managed policy: Current native admin findings",
       "path": "output/kirocrew-native-admin-findings.md",
       "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
-    },
-    {
-      "label": "Host-control scenario guide",
-      "path": "docs/HOST-CONTROL-SCENARIOS.md",
-      "sha256": "6d8e0210da6e135ece4d368d3d4891627563b6c4af119cd422e1f94d1d67c9a1"
     }
   ],
   "outputs": [
     {
       "path": "output/kirocrew-admin-tour.html",
-      "sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87",
-      "bytes": 2516369
+      "sha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a",
+      "bytes": 3679148
     },
     {
       "path": "output/kirocrew-admin-tour.md",
-      "sha256": "e8895c63b4d787e7e6d94565b66dab3184fc82103e550917b10eb7b88b75a108",
-      "bytes": 18384
+      "sha256": "0ae7d24098fbd374356791d2e9bc823ce901d1c80b92d4c4d46853c0d3382294",
+      "bytes": 26723
     }
   ],
   "native_proof_links": [
@@ -345,10 +457,20 @@
     "bounded_four_outcomes_reconciled": true,
     "full_native_acceptance": false,
     "original_collection_complete": false,
-    "authority_verdict": "bounded_attribution_supported"
+    "authority_verdict": "bounded_attribution_supported",
+    "earlier_run_scope": "The four original outcomes predate managed policy.",
+    "managed": {
+      "allowed_read_verified": true,
+      "allowed_read_filmed": false,
+      "managed_denial_verified": true,
+      "managed_denial_filmed": true,
+      "scene_id": "native-managed-mcp-denial",
+      "filmed_trace": "managed-20260914-ui4-crew",
+      "legacy_clips": "Earlier eight recordings predate managed policy and retain their individual evidence limits."
+    }
   },
   "browser_review": {
-    "current_candidate": "passed",
+    "current_candidate": "copy_delta_review_pending",
     "reviewed_candidate_sha256": "f1246a9deca25c817a1506098f5056add4b617518962e0e7c9c7a5074feddd87",
     "review_path": "evidence/admin-console/native-20260913/browser-host/review.json",
     "review_sha256": "d41782b5bfac85b4ba657c54c1eee2d8eac2f32789c47cd7b3d9a0caa3216813",
@@ -376,9 +498,36 @@
       "scope": "Appended original screenshots and reviewed copy; this input does not change native outcome verdicts."
     }
   ],
-  "builder_source_review": {
-    "path": "evidence/admin-console/native-20260913/builder-source-review.json",
-    "sha256": "85f74ab3750a0b6fce52a69792f56ad287703e58164c55fde27966feecca6cb8",
-    "reviewed_builder_sha256": "4205168e4d3ed75dbea4a522cb039373d5b4080a2566fad0487674b6969168c2"
+  "managed_edition": {
+    "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+    "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452",
+    "observed_at": "2026-09-14T02:20:00Z",
+    "policy_sha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87",
+    "screenshot_roles": [
+      "governance",
+      "mcp_enabled",
+      "mcp_staged",
+      "managed_command",
+      "session_mcp",
+      "approval_modes",
+      "native_denial"
+    ],
+    "native_claim_scope": {
+      "allowed_read_verified": true,
+      "allowed_read_filmed": false,
+      "managed_denial_verified": true,
+      "managed_denial_filmed": true,
+      "scene_id": "native-managed-mcp-denial",
+      "filmed_trace": "managed-20260914-ui4-crew",
+      "legacy_clips": "Earlier eight recordings predate managed policy and retain their individual evidence limits."
+    },
+    "scope": "Seven managed-policy captures plus 19 unchanged earlier images; earlier outcomes retain their original authority and collection limits."
+  },
+  "content_source_review": {
+    "path": "evidence/admin-console/native-20260913/managed-content-source-review.json",
+    "sha256": "b5e2ee4e8cee39c1ef69bf316f3f60012c129c6d061bfb18e417ecb3afe2d1ef",
+    "verdict": "SHIP",
+    "builder_sha256": "d16eaed14f5a325302b6be24c67453173759bb7b16c4e8e97aa8537ceca68ef5",
+    "scope": "Managed copy, scoped input handling and complete receipt validation before writes; browser interaction remains separate."
   }
 }

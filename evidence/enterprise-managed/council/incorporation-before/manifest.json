@@ -1,0 +1,283 @@
+{
+  "kind": "managed_council_candidate_preservation",
+  "copied_artifacts": [
+    {
+      "source": "output/kirocrew-native-controls.html",
+      "copy": "evidence/enterprise-managed/council/incorporation-before/kirocrew-native-controls.html",
+      "sha256": "80cc88e8b845a607a9795b9da17840c3df5e96cda80e4c81d17638fd83888eab",
+      "bytes": 1751613
+    },
+    {
+      "source": "output/kirocrew-native-controls-build.json",
+      "copy": "evidence/enterprise-managed/council/incorporation-before/kirocrew-native-controls-build.json",
+      "sha256": "c442a7ee79ac9573889aebffe46ba3cee59769515b394a291db71157375169af",
+      "bytes": 44342
+    },
+    {
+      "source": "output/kirocrew-native-controls-notes.md",
+      "copy": "evidence/enterprise-managed/council/incorporation-before/kirocrew-native-controls-notes.md",
+      "sha256": "3848de8ebf15e0fa5fc6a669015b7f275a6cd354fc3b154778549f6a98fd0ed8",
+      "bytes": 34059
+    },
+    {
+      "source": "output/kirocrew-native-controls-manifest.json",
+      "copy": "evidence/enterprise-managed/council/incorporation-before/kirocrew-native-controls-manifest.json",
+      "sha256": "1c5d314bee7eb80d8d88330b1991d44ffdc2a1723d4198350bfc0d8ce5bf350a",
+      "bytes": 46042
+    },
+    {
+      "source": "scripts/build-native-control-presentation.py",
+      "copy": "evidence/enterprise-managed/council/incorporation-before/build-native-control-presentation.py",
+      "sha256": "0edbc9dc27632116e7271a1f4b0fc44a03ebbe96149e8922b8bfb67368dd4415",
+      "bytes": 114856
+    }
+  ],
+  "immutable_candidate_files": [
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/navigation-11-16.json",
+      "sha256": "a0d549cb9a3e18b61ec1536a906c1b74caa1fd66a4959ebb225d6bcc5ae51b1e",
+      "bytes": 1022
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-01.jpg",
+      "sha256": "a3521f45c0a961d9f35f954cff9bcf0f39d8b9cbee8f38135b7c927309c2d546",
+      "bytes": 51691
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-02.jpg",
+      "sha256": "23d878103032d247af582d0420d8e5a2e2793d6bba079617d08f5ca4792cde58",
+      "bytes": 74254
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-03.jpg",
+      "sha256": "3d400a17b76e7b0f92854be97a81fe929dbcd9fc66cb797b781266c9cc74ce3b",
+      "bytes": 70832
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-04.jpg",
+      "sha256": "32788f01052772c461b74c3b0c17551ac6e0c5841f21e81b4af79370aff1984c",
+      "bytes": 80290
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-05.jpg",
+      "sha256": "bb1d9595e7ecca1d813768f0c52e1a86f262289f06f99bae91b19428a009a8bf",
+      "bytes": 70356
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-06.jpg",
+      "sha256": "6e43e0fe2f63b6a476198b48fc5d09ec698c8611e42a656df53958712de3e980",
+      "bytes": 73888
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-07.jpg",
+      "sha256": "3c8ef36a79e2e174e07df76b0f539bdba9895b8c7b23d77b3da2f152c2f491e4",
+      "bytes": 72503
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-08.jpg",
+      "sha256": "a271c6142e2a76451b8098d4834f81d7af1cf3867bf314f00d69fba3e45575e6",
+      "bytes": 71565
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-09.jpg",
+      "sha256": "c867e767c8de0ad84fcd15491023117afebc3f0d078edb05e4b9c6c7ad08404f",
+      "bytes": 71006
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-10.jpg",
+      "sha256": "1b513870b74ac18bfae55c4f4c30cbee4b38a849aa3b38812b48f2ee3f6b5161",
+      "bytes": 76206
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-11.jpg",
+      "sha256": "df4aac21c82fa27d9194c42f2d8d4614ddddf310419b4fc4f2c34e986534f218",
+      "bytes": 76182
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-12.jpg",
+      "sha256": "f57229d52f9deb93ad801b469f2493c8a9e3d32214f04a0b7c26f82419204ba3",
+      "bytes": 86163
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-13.jpg",
+      "sha256": "bbe96c662518d60829f08d779479bfc3a3b52fd94c3fd1b1259e97bec049a48e",
+      "bytes": 77298
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-14.jpg",
+      "sha256": "92bcea89c3dfb6c185934664092ed51c43a805b41c9d81fb404bcddc7647ec0d",
+      "bytes": 79318
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-15.jpg",
+      "sha256": "1981a56d49fdf43d4194f04ff0c9eef654c5a92acc1b9d1cb5eceea39946b96d",
+      "bytes": 77114
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/browser-jpeg/slide-16.jpg",
+      "sha256": "a541680c368c63cd85a9553958f07f6b5de307306a837ff23b5382c960855097",
+      "bytes": 73119
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/capture-receipt.json",
+      "sha256": "06d3ff8673db91eae66cd783c9de83ab912e0e3fd3f7faa05998c44904d7c596",
+      "bytes": 7017
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/contact-1.jpg",
+      "sha256": "6b1aa9ae5543baa2d3522f46c4feee24c6efa087a22c5654248408b0c65f3267",
+      "bytes": 98770
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/contact-2.jpg",
+      "sha256": "94e771d246cb5bc513fe7355d7530a95aa880521ac788fcf23d4462915249372",
+      "bytes": 108115
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/claude-launch.json",
+      "sha256": "4f78739d653ea6cba02e0a404b31cc59f5a215f3ac0b9e02ce3a247b4d621379",
+      "bytes": 1898
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/claude-raw.jsonl",
+      "sha256": "940a416f49c565129285c34d034de50f3ac0eb449fb405773f216a2bda7c25ed",
+      "bytes": 11779020
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/claude-receipt.json",
+      "sha256": "206cd6272930b9847e5f5d15cc1c81613a8039a6f446481e1c43f99d671efbac",
+      "bytes": 6153
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/claude-review.md",
+      "sha256": "1ca75b11cc46c5536be2d186bcdf70878068c9e0c53ce408b958ee973bc05bb9",
+      "bytes": 6964
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/claude-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/council-receipt.json",
+      "sha256": "e4648f2ddc256dacb91246fbba888c846e97c5740d3fbcc67f8b95aa8d3706f3",
+      "bytes": 14199
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/grok-launch.json",
+      "sha256": "dcf410a937414ed6666da23012a802dc76d4d53c33ae60e55bb03f4a144821ec",
+      "bytes": 2032
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/grok-raw.jsonl",
+      "sha256": "c3e2fa10c52055bcbdc0258cd8405e040949e023b602c1909aada4b1f5af2a5e",
+      "bytes": 6027900
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/grok-receipt.json",
+      "sha256": "6c7b850f502ec62b4c5abce6df7517467b233c1f751a26686a966042a9f24903",
+      "bytes": 6115
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/grok-review.md",
+      "sha256": "700c8d3fbef66c3527d88ffb57c7b5af1a0b50be12f6805ea506e9b77a0d99ad",
+      "bytes": 5280
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/grok-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/dispatch/prompt.txt",
+      "sha256": "d9f6bbbdbd2161416bd928228df5da4fd4062f9c89117550a7d5c22a9805ba55",
+      "bytes": 3535
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/review/prepared.json",
+      "sha256": "9cd5eb675cf834ce49688e91b0bea6925d517b9c2af44f30be41f019e2880c4e",
+      "bytes": 3266
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-01.png",
+      "sha256": "acc2962548d0aa6f8d5e7796b23712c354122f6e1d263998b3256b7ac2251860",
+      "bytes": 202974
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-02.png",
+      "sha256": "a120a39c03f3d37b00a1744cd0ddbcb3e0ac0410c500e9f402173f6f153072d1",
+      "bytes": 273091
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-03.png",
+      "sha256": "f2796561fe3912bd262e8b88dfc1242b8400a637e153d3912cf32cc5def69e63",
+      "bytes": 241732
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-04.png",
+      "sha256": "076ead49122570ce496b371c5de0786b687684e33d7d41035e4bfa9a11f4f4a3",
+      "bytes": 282064
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-05.png",
+      "sha256": "00c6eb635d366ac0ccd25554bd61cc81616c1cbc6cb6337216a8428ad77baa74",
+      "bytes": 254352
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-06.png",
+      "sha256": "9b082984f0308836d604098f9b1f42db91d7d6de634d45b5448b9cd8c0ad75bd",
+      "bytes": 271433
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-07.png",
+      "sha256": "11a09aeb0f2e47b93e48290d4535586c25064ddb63c7e4ca88225028ece618ba",
+      "bytes": 265957
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-08.png",
+      "sha256": "12be5973a60f1c6b0a42f8ff301a4b23c3b05179b56b5b035415789c48cc1d33",
+      "bytes": 263476
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-09.png",
+      "sha256": "ca868f8e62e79b997f471b5561d2b550c70d8a210c03ab4714eb31f9e8c20f7d",
+      "bytes": 250445
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-10.png",
+      "sha256": "c992af8ddaec8893dc16e6c98557159f55c5ba65fb24f825a6aabc29e019ee85",
+      "bytes": 278145
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-11.png",
+      "sha256": "d222fa34bb91a03139f21671b64e47e6fb762506e6947b6dd3694ed1253cbfd6",
+      "bytes": 273107
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-12.png",
+      "sha256": "c0090affc27ffa621753997fa95d3ac729fa3f640a5a095646138226e33fa4f7",
+      "bytes": 326792
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-13.png",
+      "sha256": "ddde209a2593567f590b10695ff6a9e055845a2f624b037409d55c08d7e7fe62",
+      "bytes": 277549
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-14.png",
+      "sha256": "7ba7d32a33c67895e3fb7a21e66d9ae8e5b2f81290653b3dac9fc72cb46e4af8",
+      "bytes": 285723
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-15.png",
+      "sha256": "1ba72f6a2a29cbdfd2facb99125a42369f4f05c79303750417ea25abe576f2f4",
+      "bytes": 278748
+    },
+    {
+      "path": "evidence/enterprise-managed/council/candidate/slides/slide-16.png",
+      "sha256": "81e1e2dc37cb5b9ea8cc0c83551c6f2d1b7a22b6b409b9f1f2669255fb815be2",
+      "bytes": 294060
+    }
+  ],
+  "scope": "Before incorporation. Existing council candidate, dispatch and reviews remain untouched."
+}

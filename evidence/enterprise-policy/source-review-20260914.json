@@ -1,0 +1,41 @@
+{
+  "captured_at": "2026-09-14T01:51:20.604062+00:00",
+  "checks": {
+    "actual_builtin_pattern_matches": true,
+    "actual_installed_parser_decisions_passed": 7,
+    "compiled": true,
+    "diff_check_passed": true,
+    "offline_command": "python3 -m unittest scripts/tests/test_enterprise_policy.py",
+    "offline_tests_passed": 41
+  },
+  "files": {
+    "infrastructure/enterprise-policy/OPERATIONS.md": "170c041ca2de621199d044bc057a5024a5e173cc10b79d47241a504a23b53316",
+    "infrastructure/enterprise-policy/manage.py": "fa8186e665c17f10ffcaebf9ccd1875c20bd18976fd49f1271696fa73aa29857",
+    "infrastructure/enterprise-policy/policy.template.json": "5d862e815267a94c29b850495eba54f4d52716e68a9cdb222b2d370bc927b4b5",
+    "infrastructure/enterprise-policy/reviewer-profile.example.json": "af60474afa86ea142b1c4d98d04e48e9c1e8486e8ad9fef5a80998ec5b898cd6",
+    "scripts/manage-enterprise-policy.py": "b46a23b1f1e40731bd1df36916bff047801083d7b63b21c60b461c140b3fd263",
+    "scripts/tests/test_enterprise_policy.py": "6abb610f06fe5e0fe8da4cf95a7c9cfff5f3b7e276c81885799ab553fac5fbf7"
+  },
+  "independent_review": {
+    "agent": "enterprise_policy_source_review",
+    "findings_addressed": [
+      "Bound the public platform export, bootstrap and context source files so stale plans cannot omit changes to ceiling activation.",
+      "The terminal patch rechecks content hash, owner, group and mode immediately before replacing the file; a concurrent chmod regression proves preservation."
+    ],
+    "role": "sol_advisor_sol_reviewer",
+    "verdict": "SHIP"
+  },
+  "kind": "enterprise_policy_source_review",
+  "recovery_regressions": [
+    "Failed service with PID zero can be rolled back while root and target guards stay active.",
+    "Activation tolerates bounded transitional activating/PID-zero observations."
+  ],
+  "required_live_checks": [
+    "Actual loaded Governance UI and backend sign-in after activation.",
+    "Fresh native permitted MCP call and managed denial with the duplicate mutable hook removed only after policy load verification.",
+    "PTY refusal inside the actual Gateway service cgroup."
+  ],
+  "schema_version": 1,
+  "scope": "Reviewed source candidate and offline behavior only; no live installation, native enforcement or Gateway cgroup PTY result is asserted.",
+  "verdict": "SHIP"
+}

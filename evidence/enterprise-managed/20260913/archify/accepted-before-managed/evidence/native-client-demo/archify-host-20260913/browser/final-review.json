@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "reviewed_at": "2026-09-14T00:47:28.418861+00:00",
+  "artifact": {
+    "path": "kirocrew-native-controls-diagram.html",
+    "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb",
+    "bytes": 810648
+  },
+  "server": {
+    "path": "scripts/serve-recorded-demos.py",
+    "sha256": "3ed2f61d96c23ba4d5ec382d34be2d7f178fe2efb36609a8d413a1c2b7427aaf",
+    "bytes": 8532
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "method": "Actual Codex in-app browser via CUA; read-only DOM observations and original screenshots.",
+  "checks": {
+    "presentation_reload_with_exact_present_query": true,
+    "light_theme_render": true,
+    "dark_theme_render": true,
+    "gateway_node_focus": true,
+    "focus_incoming_connections": 2,
+    "focus_outgoing_connections": 2,
+    "close_focus": true,
+    "exit_presentation": true,
+    "single_endpoint_control_enclosure": true,
+    "legible_key_labels_no_material_clipping": true
+  },
+  "screenshots": [
+    {
+      "path": "evidence/native-client-demo/archify-host-20260913/browser/final-stage-light.jpg",
+      "sha256": "128c2a6fab22b296039e8fadf0a6c913dea441ee84803e9ac5d0d17246d61ddc",
+      "bytes": 78943
+    },
+    {
+      "path": "evidence/native-client-demo/archify-host-20260913/browser/final-stage-dark.jpg",
+      "sha256": "4642619593d9489627898dd6c791148bcd0c05c0b4dac27c85fbe00ad168d8a3",
+      "bytes": 74396
+    },
+    {
+      "path": "evidence/native-client-demo/archify-host-20260913/browser/final-gateway-focus.jpg",
+      "sha256": "d8461b5c3cc433666bdffc8cdbebbe5205ff09fdd21dbb0d4d6f4b5f59a0acd7",
+      "bytes": 78720
+    }
+  ],
+  "scope": "Static diagram and interaction validation only; runtime and native enforcement claims follow separately bound evidence. Export formats and mobile rendering not tested in this browser pass.",
+  "passed": true
+}

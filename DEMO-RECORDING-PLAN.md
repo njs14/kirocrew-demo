@@ -1,5 +1,7 @@
 # KiroCrew native client demos and admin tour
 
+> Current state: Read the [managed demo guide](docs/MANAGED-DEMO.md) and its linked status before running this demo. The root-owned policy and fresh native managed-denial test supersede the earlier configuration described below. Historical results and unfinished host cases retain their recorded scope.
+
 The current [14-slide presentation](output/kirocrew-native-controls.html) contains eight native Mac recordings. Five original clips cover Crew/MCP/IAM decisions and private-memory assignment. Three additions show an allowed workspace read, a command-denial response summary and the anonymous helper's execute approval through the HTTP 403 summary. Recording count is separate from the number of fully verified control outcomes. The separate [admin screenshot tour](output/kirocrew-admin-tour.html) explains the controls, four completed turns and client/server collection data.
 
 The endpoint client scope is macOS. EC2 runs the Gateway, original Kiro CLI backend, workspace and separate MCP service. Keep the single endpoint-control box around the remote execution host. The Mac's local Gateway stays off.

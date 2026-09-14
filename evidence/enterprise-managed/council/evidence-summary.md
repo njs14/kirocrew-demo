@@ -1,0 +1,45 @@
+# Managed-policy presentation: recorded evidence
+
+This packet contains the frozen 16-slide HTML, its complete presenter notes, and 16 actual browser captures. Root inspected both contact sheets and confirmed distinct, correctly ordered frames. The source captures are JPEGs from a 1280×720 browser viewport; the supplied PNGs losslessly encode the same decoded pixels. The capture receipt binds the HTML, every PNG, original JPEG hashes and pixel-identity conversion. The screenshots show posters and controls, not video playback or every clip frame. Do not claim live or playback verification yourself.
+
+The principal factual source is `evidence/enterprise-managed/20260913/managed-presentation.json`, SHA-256 `bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452`, observed September 14, 2026 at 02:20 UTC. Its runtime facts supersede older policy/authentication gaps only where new receipts support them. The complete notes preserve source paths and hashes. This review does not poll AWS, the desktop, or any live service.
+
+## Current deployment and managed policy
+
+The actual macOS KiroCrew client connects to the existing ARM EC2 Gateway and original Kiro CLI backend. Local Gateway remains off. Client Nightly is `0.7.0-nightly.20260913t061222`; server is the custom ARM repack of `0.7.0-nightly.20260912t060850`; original Kiro CLI is 2.21.4. The backend authenticated before the recorded native controls. The Mac quit/relaunch and local-Gateway-off observation preceded managed-policy installation; the later managed take used the remote Gateway. Do not restore the earlier standalone-CLI-pending statement to these new native results.
+
+The one endpoint-control enclosure contains remote Gateway, backend, workspace and host controls; the Mac is the client. MCP runs separately on the same host with fixed demo grants and the existing instance role. CloudFormation uses supplied existing VPC/subnet and explicit SSH source CIDR. This edition adds no networking infrastructure, NAT gateway or load balancer.
+
+Managed Policy v1 is an unsigned local file at `/etc/kirocrew-demo/security-policy.json`, SHA-256 `ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87`. Root owns the file and protected ancestors, and the systemd policy environment points to that file with `fail_closed`. Crew cannot replace it. Fetch/refresh is startup-only. The active policy sets Linux sandbox minimum `cc`, denies YOLO, denies `@aws-enforcement/crew_denied`, denies a harmless managed-command marker and the pinned S3 upload pattern, and names read/write filesystem paths. Host root can replace it; no signed fleet policy, enterprise SSO, restricted human-role RBAC or root-proof immutability is claimed.
+
+The policy plan includes parser checks and proposed file/service content, and retains `native_enforcement_verified:false`. The early `policy-verify.json` confirms protected managed files and active policy environment but retains its false native and PTY-verification fields. Later native and host receipts supply the additional evidence; do not relabel the early plan/verification as a completed native test.
+
+Ordinary Crew configuration remains writable for local MCP availability. The duplicate owner-mutable MCP deny hook was removed before the new managed take. A local enable toggle does not remove the root-managed execution deny. A staged local restriction was discarded after capture, so the screenshot does not prove an applied local change.
+
+## New native result and host observations
+
+The new ninth clip is a continuous macOS request-to-denial recording of ui4 only, trace `managed-20260914-ui4-crew`. It shows a request for the exact managed-denied tool, an automatic block without an Allow once prompt, then the expanded host notice identifying governance policy and the exact deny. Visible earlier ui3 conversation history is outside the filmed sequence. A successful permitted read was verified separately in an earlier unfilmed managed take. The new clip does not contain that allowed control.
+
+The ui4 verification joins its trace to the native blocked row by exact native tool ID. Policy-layer SEL attribution uses the isolated slot, tool, reason and bounded time, with adjacent hash-chain linkage; SEL itself has no direct native trace/tool-ID field. A complete stable MCP journal interval contains no matching arrival, with continuity checked. This supports the managed pre-MCP refusal. Media decoding/visual review and native/server attribution are separate receipts. The policy-layer refusal does not establish exact-tool sandbox execution.
+
+The dashboard terminal is disabled. A disposable Crew-UID child placed in the actual Gateway service cgroup received EPERM opening a PTY. Six Kiro CLI descendants showed seccomp mode 2, NoNewPrivs 1 and a different mount namespace in a point-in-time inspection. These observations are distinct from attribution to one exact native tool. Linux `cc` is not macOS Seatbelt or strict-tier isolation.
+
+Governance displays Policy v1, the file source, startup fetch and cc floor. The S3 upload deny switch is on and disabled with an organization-policy explanation. This is UI evidence; there is no new native S3-upload command test. Approval options show Normal selected, Reads and Trust available, and YOLO absent. Denying YOLO does not force every session to Normal; no mode was changed during this screenshot.
+
+Connections shows Crew-only aws-enforcement registration enabled with four tools while provider-global settings are off. The native session menu reports the server started, `0 of 4 specs loaded`, and deferred tools. It does not say all four schemas loaded and has no per-tool policy-lock badge. Current UI is not an enterprise-managed MCP registry.
+
+## Earlier clips and remaining gaps
+
+The previous eight clips retain their original bytes, cuts, dates and pre-managed-policy labels. They do not prove the newly installed policy. Their bounded evidence includes an allowed S3 read after native approval, automatic Crew hook denial, MCP grant denial, target IAM AccessDenied, a private-memory assignment refusal before a tool turn, permitted workspace read, a command-denial summary inspection and an anonymous Gateway request from execution approval to the assistant's HTTP 403 summary.
+
+For the four earlier MCP outcomes, native and service/AWS results were reconciled against a complete bounded MCP journal with service-continuity checks, although the original passive collector remains incomplete. SEL denial attribution lacks a direct trace join and uses the isolated turn. The command clip begins after denial and leaves tool history collapsed; separate persisted history and scoped SEL establish the earlier hook result. The temporary command marker rule was later removed. The anonymous-request clip omits the prior source-read approval and ends with the assistant summary, with actual tool Output collapsed. Its helper's `native_enforcement_verified:false` remains preserved; combined native and Gateway receipts support bounded token-auth attribution.
+
+Private-memory refusal is a conversation-assignment guard before a tool, not filesystem enforcement or human RBAC. Sensitive-path read, protected-path write and native IMDS execution recordings remain unfinished. Earlier model-only refusals contain no native tool attempt. An IMDS execution approval expired unanswered; there is no helper execution or native firewall-result recording. Do not promote historical host checks or configuration into these missing native takes.
+
+## Reproduction and operating scope
+
+The project skill, dependency planner, portable recorded-artifact builder and staged live setup workflow are present. Root reports 150 passing offline tooling tests, a freshly prepared ARM runtime bundle using installed Nightly plus official CLI, and a tested clean-checkout artifact reproduction. These are tooling/artifact checks, not 150 native enforcement cases. No second complete live deployment has been run.
+
+Recorded playback can rebuild from Python 3.9+ and committed media without AWS, native login or historical private raw footage. The export carries the byte-range allowlist server. Full setup has explicit runtime, services, fixtures, server integrations, managed policy, desktop, telemetry, app, MCP UI and host-control stages. Plans precede apply. Each product authenticates through its own supported flow; no credentials or sessions transfer between products. Presentation controls never execute live commands.
+
+The managed summary and notes are the supplied factual sources; underlying private authentication stores and raw event dumps are not in this packet. The managed-policy plan's exact JSON is embedded as presentation evidence, but configuration/parser success alone is not execution proof. Prior councils cover their own candidates. This single council is followed by root's incorporation of agreed findings and a new No AI Slop pass, then final browser/media QA. Later edited bytes require incorporation verification, not automatic reuse of this candidate verdict.

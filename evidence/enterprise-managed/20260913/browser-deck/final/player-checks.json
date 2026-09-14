@@ -1,0 +1,51 @@
+{
+  "play": {
+    "dimensions": [
+      1920,
+      1340
+    ],
+    "duration": 40.000076,
+    "error": null,
+    "playing": true,
+    "readyState": 4
+  },
+  "cues": [
+    {
+      "error": null,
+      "paused": true,
+      "readyState": 4,
+      "time": 0
+    },
+    {
+      "error": null,
+      "paused": true,
+      "readyState": 4,
+      "time": 7
+    },
+    {
+      "error": null,
+      "paused": true,
+      "readyState": 4,
+      "time": 34
+    }
+  ],
+  "expandedImage": {
+    "images": [
+      {
+        "complete": true,
+        "size": [
+          1144,
+          768
+        ]
+      }
+    ],
+    "open": true
+  },
+  "beforeLeave": {
+    "playing": true
+  },
+  "afterLeave": {
+    "hash": "#slide-14",
+    "managedPaused": true
+  }
+}

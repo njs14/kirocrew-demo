@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "kind": "managed_tour_browser_review",
+  "checked_at": "2026-09-14T02:44:39.757412+00:00",
+  "verdict": "pass",
+  "artifact": {
+    "path": "output/kirocrew-admin-tour.html",
+    "sha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a",
+    "bytes": 3679148
+  },
+  "build_at_review": {
+    "path": "evidence/admin-console/native-20260913/tour-build.json",
+    "sha256": "acbcec28f25e0eaaae626de4d01f3d2559e59f2a164588e1606a5658a3d7e65a",
+    "bytes": 23280
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "checks": {
+    "stops": 10,
+    "images": 26,
+    "all_visible_images_decoded": true,
+    "horizontal_overflow": false,
+    "governance_image_open_close": true
+  },
+  "navigation": {
+    "path": "evidence/enterprise-managed/20260913/browser-tour/navigation.json",
+    "sha256": "bab2b179f3d6cf26d87f9595785f6f1bf565e7afcb0f47ff8a4ee763fb3cff73",
+    "bytes": 6530
+  },
+  "screenshot": {
+    "path": "evidence/enterprise-managed/20260913/browser-tour/governance-zoom.jpg",
+    "sha256": "f556e3e892e13921febef06259115a1bf5c162ac233139a4606d982f3439db16",
+    "bytes": 45515
+  },
+  "limits": [
+    "No fresh product requests were made by this presentation check.",
+    "Source screenshot timing and native evidence remain in the bound tour receipts."
+  ]
+}

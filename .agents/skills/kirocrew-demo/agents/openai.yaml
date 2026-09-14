@@ -1,0 +1,4 @@
+interface:
+  display_name: "KiroCrew Demo"
+  short_description: "Set up, present, and reproduce KiroCrew controls"
+  default_prompt: "Use $kirocrew-demo to set up this project, present the current walkthrough, and verify its live controls."

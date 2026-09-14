@@ -1,0 +1,212 @@
+[
+  {
+    "hash": "#host",
+    "heading": "Locate the execution host",
+    "horizontalOverflow": false,
+    "images": [
+      {
+        "alt": "Overview shows All systems running, one session and the remote September 12 server build.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "System Performance identifies ARM Linux and the remote workspace.",
+        "complete": true,
+        "width": 1280
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "hash": "#posture",
+    "heading": "Read the configured controls",
+    "horizontalOverflow": false,
+    "images": [
+      {
+        "alt": "Live Security Posture shows Standard sandbox, Interactive approval and control coverage counts.",
+        "complete": true,
+        "width": 1555
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "hash": "#rules",
+    "heading": "Inspect the command rules",
+    "horizontalOverflow": false,
+    "images": [
+      {
+        "alt": "The S3 upload command rule is on with a disabled switch and an organization-policy explanation.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "Denied Commands lists credential, shell, destructive-command and publication rule categories.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "The expanded IaC teardown category shows CDK destroy, Kubernetes namespace deletion, Pulumi destroy and Terraform destroy rules.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "Denied Commands shows 112 built-in rules and the enabled custom pattern KIROCREW_DEMO_COMMAND_CONTROL_20260913.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "Denied Commands shows an empty custom-deny list after the temporary marker was removed; 112 built-in rules remain listed.",
+        "complete": true,
+        "width": 1555
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "hash": "#approval",
+    "heading": "Read the user's approval choices",
+    "horizontalOverflow": false,
+    "images": [
+      {
+        "alt": "The session approval menu lists Normal, Reads and Trust; Normal is selected and YOLO is absent.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "The YOLO duration screen shows Interactive in its sidebar and a six-hour next-activation selection.",
+        "complete": true,
+        "width": 1555
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "hash": "#governance",
+    "heading": "Check who owns the policy",
+    "horizontalOverflow": false,
+    "images": [
+      {
+        "alt": "Governance Policy shows Policy v1, file source, startup-only refresh, cc sandbox floor and the configured policy lists.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "Governance Policy states No enterprise policy in effect and describes standalone mode.",
+        "complete": true,
+        "width": 1555
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "hash": "#mcp",
+    "heading": "See what the user can enable",
+    "horizontalOverflow": false,
+    "images": [
+      {
+        "alt": "MCP Servers shows the enabled Crew-only aws-enforcement server with four tools.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "The MCP manager shows one staged tool restriction and the Apply and Discard buttons.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "Session options shows aws-enforcement started, zero of four tool specifications loaded, and read_allowed, crew_denied, mcp_denied and iam_denied listed as deferred tools.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "The actual macOS client shows the expanded host notice identifying the automatic governance-policy block of crew_denied.",
+        "complete": true,
+        "width": 1144
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "hash": "#audit",
+    "heading": "Understand what SEL coverage lists",
+    "horizontalOverflow": false,
+    "images": [
+      {
+        "alt": "The expanded SEL audit logging row lists session-key surfaces including Background, CLI, Cron and Dashboard.",
+        "complete": true,
+        "width": 1555
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "hash": "#backend",
+    "heading": "Separate backend choice from sign-in",
+    "horizontalOverflow": false,
+    "images": [
+      {
+        "alt": "Kiro CLI is selected beside a GitHub sign-in card representing KAS identity.",
+        "complete": true,
+        "width": 1280
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "hash": "#metrics",
+    "heading": "Read Gateway instrumentation",
+    "horizontalOverflow": false,
+    "images": [
+      {
+        "alt": "Privacy shows Gateway metrics enabled and anonymous telemetry disabled.",
+        "complete": true,
+        "width": 1280
+      },
+      {
+        "alt": "Native Telemetry expands the MCP Tool Call Read Allowed session into four completed turns, with durations 12.3, 8.9, 14.2 and 17.7 seconds.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "Native Telemetry expands the command-demonstration session into its one recorded turn and shows the aggregate runtime measurements.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "Native Telemetry expands the anonymous-probe session into one recorded turn; the header shows 0 faults of 9 and throughput 23.",
+        "complete": true,
+        "width": 1555
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "hash": "#collection",
+    "heading": "Read client and server health together",
+    "horizontalOverflow": false,
+    "images": [
+      {
+        "alt": "Demo Observability shows macOS client and EC2 server samples with freshness and service checks.",
+        "complete": true,
+        "width": 1280
+      },
+      {
+        "alt": "Collection logs show source labels, timestamps, event levels and All, Client and Server filters.",
+        "complete": true,
+        "width": 1280
+      },
+      {
+        "alt": "Demo Observability shows Current macOS and EC2 samples, local Gateway off, client 3.7% CPU and 967.1 MiB memory, and server 0.7% CPU with 12.6 GiB available.",
+        "complete": true,
+        "width": 1555
+      },
+      {
+        "alt": "Demo Observability shows expanded server process measurements and a Server-only collection log containing one First sample collected event at 10:31:23.",
+        "complete": true,
+        "width": 1555
+      }
+    ],
+    "width": 1280
+  }
+]

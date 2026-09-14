@@ -1,0 +1,4 @@
+{
+  "name": "demo-mcp-reviewer",
+  "mcp": {"mode": "deny", "deny": ["@aws-enforcement/iam_denied"]}
+}

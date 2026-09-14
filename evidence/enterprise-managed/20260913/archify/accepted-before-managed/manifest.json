@@ -1,0 +1,41 @@
+{
+  "kind": "accepted_native_diagram_preserved_before_managed_derivative",
+  "files": [
+    {
+      "source_path": "kirocrew-native-controls-diagram.architecture.json",
+      "archived_path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/kirocrew-native-controls-diagram.architecture.json",
+      "bytes": 4888,
+      "sha256": "a7504c4668e148c630bc6889047e75b8b73db2fb897c41ca12d83d529abd4aa0"
+    },
+    {
+      "source_path": "kirocrew-native-controls-diagram.html",
+      "archived_path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/kirocrew-native-controls-diagram.html",
+      "bytes": 810648,
+      "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb"
+    },
+    {
+      "source_path": "evidence/native-client-demo/archify-host-20260913/asset-dependencies.json",
+      "archived_path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/evidence/native-client-demo/archify-host-20260913/asset-dependencies.json",
+      "bytes": 699,
+      "sha256": "a109b7b10371b8bfab24dcca4588dcf2f4a248dcb13eea29346a41f5363b67ec"
+    },
+    {
+      "source_path": "evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "archived_path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "bytes": 20791,
+      "sha256": "caeca579dc6c8a82e8799d6274c121af21c46cdc4420935bd0ec31b14a6db01b"
+    },
+    {
+      "source_path": "evidence/native-client-demo/archify-host-20260913/source-bindings.json",
+      "archived_path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/evidence/native-client-demo/archify-host-20260913/source-bindings.json",
+      "bytes": 3148,
+      "sha256": "dc678c9c395b8f4868bf76f4ced3186a8d35934a33d4e252746c337214f65a33"
+    },
+    {
+      "source_path": "evidence/native-client-demo/archify-host-20260913/browser/final-review.json",
+      "archived_path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/evidence/native-client-demo/archify-host-20260913/browser/final-review.json",
+      "bytes": 1867,
+      "sha256": "4d351ae3f0cedd44afc8e492f1d0f89ec92664b0f925156fab778f74d048361c"
+    }
+  ]
+}

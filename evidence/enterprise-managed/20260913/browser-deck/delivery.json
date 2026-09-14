@@ -1,0 +1,66 @@
+{
+  "kind": "managed_candidate_asset_delivery",
+  "candidate_sha256": "80cc88e8b845a607a9795b9da17840c3df5e96cda80e4c81d17638fd83888eab",
+  "checked_routes": [
+    {
+      "route": "/native-managed-clip-20260914/native-managed-mcp-denial/native-managed-mcp-denial.mp4",
+      "status": 200,
+      "bytes": 2007186,
+      "sha256": "d3a8a2197d69bc42667434cfef0a0ea789cd3d4bde0aad74bdd4b9c84f4cabc1"
+    },
+    {
+      "route": "/native-managed-clip-20260914/native-managed-mcp-denial/poster.jpg",
+      "status": 200,
+      "bytes": 176636,
+      "sha256": "9d3f592d1362d4c3c77e6688139fefe48ce85b33d203660ecbfa8244e8c5ced1"
+    },
+    {
+      "route": "/native-managed-clip-20260914/native-managed-mcp-denial/contact-sheet.jpg",
+      "status": 200,
+      "bytes": 126675,
+      "sha256": "b525f61dacb0a9e9d5b60cce1d1fd1d117bf206d8ab14d2786e6724da826f1dd"
+    },
+    {
+      "route": "/native-managed-clip-20260914/receipts/native-managed-ui4-verification.json",
+      "status": 200,
+      "bytes": 7208,
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/managed-presentation.json",
+      "status": 200,
+      "bytes": 8119,
+      "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452"
+    },
+    {
+      "route": "/kirocrew-managed-controls-diagram.html",
+      "status": 200,
+      "bytes": 810663,
+      "sha256": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763"
+    },
+    {
+      "route": "/.agents/skills/kirocrew-demo/SKILL.md",
+      "status": 200,
+      "bytes": 2662,
+      "sha256": "df041ff167652ad63484a27138ac4f2aee1c665e00a28cbd868b0c9640abb166"
+    },
+    {
+      "route": "/docs/MANAGED-DEMO.md",
+      "status": 200,
+      "bytes": 6765,
+      "sha256": "c4a1c0af079b08667071b4bf32567ae6bb9e8aea873e07033818bdc296341de9"
+    },
+    {
+      "route": "/docs/LIVE-SETUP.md",
+      "status": 200,
+      "bytes": 14905,
+      "sha256": "3dd408177b5a7030d2c2c242e696bd3f7f29740ec1f1970856372f481a5fd09d"
+    }
+  ],
+  "video_range": {
+    "status": 206,
+    "content_range": "bytes 100-199/2007186",
+    "bytes": 100
+  },
+  "scope": "HTTP delivery/hash checks. Actual browser playback and screenshot expansion are separately observed."
+}

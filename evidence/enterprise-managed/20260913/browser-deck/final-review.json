@@ -1,0 +1,826 @@
+{
+  "schema_version": 1,
+  "kind": "managed_final_deck_browser_review",
+  "checked_at": "2026-09-14T03:21:45.254476+00:00",
+  "verdict": "pass",
+  "artifact": {
+    "path": "output/kirocrew-native-controls.html",
+    "sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
+    "bytes": 2033388
+  },
+  "build": {
+    "path": "output/kirocrew-native-controls-build.json",
+    "sha256": "6e4e80643de8dacaf7ed3d1c1a893e2dc1b52672d70c1ac6e3522a9d113f65f1",
+    "bytes": 44395
+  },
+  "viewport": [
+    1280,
+    720
+  ],
+  "checks": {
+    "slides": 16,
+    "native_videos": 9,
+    "all_slides_visually_inspected": true,
+    "no_slide_overflow": true,
+    "single_endpoint_enclosure": 1,
+    "managed_playback_and_three_cues": "passed",
+    "managed_expanded_image": "decoded and opened/closed",
+    "leave_slide_pauses_recording": true,
+    "all_113_bound_routes_match": true,
+    "range": {
+      "status": 206,
+      "bytes": 100,
+      "content_range": "bytes 100-199/2007186"
+    }
+  },
+  "navigation": {
+    "path": "evidence/enterprise-managed/20260913/browser-deck/final/navigation.json",
+    "sha256": "20c45b62510168a5a654c4cae12fa3fb658537ab7cee596f45623a636ed5d695",
+    "bytes": 3201
+  },
+  "player": {
+    "path": "evidence/enterprise-managed/20260913/browser-deck/final/player-checks.json",
+    "sha256": "56bd666d0ab776282b528a73adac7dfb0b9c1cf08b75528a0535c92fb4f8dc1a",
+    "bytes": 742
+  },
+  "screenshots": [
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-01.jpg",
+      "sha256": "b7234f922d893dc9be8c03a2ef9c13278e32c3e1a5689e8319c85cdd57840c79",
+      "bytes": 47338
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-02.jpg",
+      "sha256": "5d8cd734de03b267ee6a49ee74631eba8fc4b19431a49c42d0711ee379fdf66c",
+      "bytes": 75923
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-03.jpg",
+      "sha256": "23cdb1c8bd70a8495e6bb635c5a316fd10860c65f0ef881ae311a60f6464e6fc",
+      "bytes": 65200
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-04.jpg",
+      "sha256": "26512804d4873a8abb7a2e3a99876b584acb588264dc697a4be6ecda0eb89c6d",
+      "bytes": 74733
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-05.jpg",
+      "sha256": "4d1cfe7f04d89029baf99be3ac984b76c4c1a22f515290592a0ee96ba2370455",
+      "bytes": 70170
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-06.jpg",
+      "sha256": "639a5b33b72ac8691d97684e42d1004deb4e9c8fd6086956127c7a81dba141f0",
+      "bytes": 73819
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-07.jpg",
+      "sha256": "1bc4dba70a05bf95d7f97f58201e7492a354d1073df009cdb49de5c475830527",
+      "bytes": 72277
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-08.jpg",
+      "sha256": "adc127e1f3c11346f960c412e70f0fa6fbc411475d8683fb97da1ce0766b9df3",
+      "bytes": 71671
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-09.jpg",
+      "sha256": "c867e767c8de0ad84fcd15491023117afebc3f0d078edb05e4b9c6c7ad08404f",
+      "bytes": 71006
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-10.jpg",
+      "sha256": "e5612ea8bdbd651b27ff88f16beee54987f0f69425cf79c472e984d830e22508",
+      "bytes": 76220
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-11.jpg",
+      "sha256": "df4aac21c82fa27d9194c42f2d8d4614ddddf310419b4fc4f2c34e986534f218",
+      "bytes": 76182
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-12.jpg",
+      "sha256": "f57229d52f9deb93ad801b469f2493c8a9e3d32214f04a0b7c26f82419204ba3",
+      "bytes": 86163
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-13.jpg",
+      "sha256": "f4dd418236e449c0d5ddb00fd4ec2b89ab72a1693c05dedfb94e41006e058151",
+      "bytes": 87199
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-14.jpg",
+      "sha256": "b59d63e7ac319747be0c426dcf05b52a0bb5d6d4a1dee52a05669c1cc59ff5dd",
+      "bytes": 78230
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-15.jpg",
+      "sha256": "ae1c26ead75f565ff8499569850509e77bb2c888ce23018d15c0d6dcd3ec837c",
+      "bytes": 80490
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/slide-16.jpg",
+      "sha256": "883e3b05edd3227fee83d11a8ee6a16a95c9ac85947b0178cdd47a4be7d7b324",
+      "bytes": 80820
+    }
+  ],
+  "contact_sheets": [
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/contact-1.jpg",
+      "sha256": "3744211d119195df462bad0b38e483b92e72340e62d6e70adfcaaf0c18c823a3",
+      "bytes": 298550
+    },
+    {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final/contact-9.jpg",
+      "sha256": "0dc0e100473dbf3cce53b65f18be42ea2ee805e97dcee533d8ed2c9eeec4ad5d",
+      "bytes": 339484
+    }
+  ],
+  "asset_routes": [
+    {
+      "route": "/native-client-clips-20260913/native-allowed-read/native-allowed-read.mp4",
+      "bytes": 1136859,
+      "sha256": "3bcd32eab9989b73a1b85845bd1294d02f4a3de6e622808f839b676fa8bc731a",
+      "status": 200
+    },
+    {
+      "route": "/native-client-clips-20260913/native-allowed-read/poster.jpg",
+      "bytes": 200388,
+      "sha256": "132b18bce72c27c560dfdf61d973a0c922de9a8c95994f174e0dbcac1821e98d",
+      "status": 200
+    },
+    {
+      "route": "/native-client-clips-20260913/native-allowed-read/contact-sheet.jpg",
+      "bytes": 112453,
+      "sha256": "bcb7f08a4a92be535490b37fadd3d03aab78090502f44873212a00e74789bf7a",
+      "status": 200
+    },
+    {
+      "route": "/native-client-clips-20260913/native-crew-denial/native-crew-denial.mp4",
+      "bytes": 1983357,
+      "sha256": "92f089ffc6d408310cda808387c748d187e75daf9d6314d0322b32ba43fe917e",
+      "status": 200
+    },
+    {
+      "route": "/native-client-clips-20260913/native-crew-denial/poster.jpg",
+      "bytes": 227591,
+      "sha256": "d74da469fa069a9672be8d716d36259258b521ba5c7360c165407ccae99fb65a",
+      "status": 200
+    },
+    {
+      "route": "/native-client-clips-20260913/native-crew-denial/contact-sheet.jpg",
+      "bytes": 148417,
+      "sha256": "c55171f636dd94a2890d2fd020c19fa9ab12d05085b30207f602549e316dc18c",
+      "status": 200
+    },
+    {
+      "route": "/native-client-clips-20260913/native-mcp-denial/native-mcp-denial.mp4",
+      "bytes": 2047715,
+      "sha256": "9895ac8db2f08902a6086be866676e3e1273373e876d402f21cd788b101fb7a2",
+      "status": 200
+    },
+    {
+      "route": "/native-client-clips-20260913/native-mcp-denial/poster.jpg",
+      "bytes": 234538,
+      "sha256": "90dac171aeab9b9abf0031ba84b58b4ac37fc24d6114195490a838c6e430511d",
+      "status": 200
+    },
+    {
+      "route": "/native-client-clips-20260913/native-mcp-denial/contact-sheet.jpg",
+      "bytes": 155597,
+      "sha256": "7049a091cba27cf307d89249e5fbb3008fa25a7a8656a43827b6c4a07374bf91",
+      "status": 200
+    },
+    {
+      "route": "/native-client-clips-20260913/native-iam-denial/native-iam-denial.mp4",
+      "bytes": 2207810,
+      "sha256": "56c8166490123442d83c89f5694b644898355f53c97649a4275a10d2d676067e",
+      "status": 200
+    },
+    {
+      "route": "/native-client-clips-20260913/native-iam-denial/poster.jpg",
+      "bytes": 205600,
+      "sha256": "a7c77c80e53dd36d7e643cad757755875abe56e6125ff4f2c0e41eec17c5ff9f",
+      "status": 200
+    },
+    {
+      "route": "/native-client-clips-20260913/native-iam-denial/contact-sheet.jpg",
+      "bytes": 147279,
+      "sha256": "5735ac378d6149c37ea49a97afc6050dc201dc334476085bdcdaa621ce7ff60b",
+      "status": 200
+    },
+    {
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/native-memory-assignment-refusal.mp4",
+      "bytes": 407034,
+      "sha256": "4ab78129747a1db40c05ed3115969756e70e5e9a122a709beee6c4e0e6d26c19",
+      "status": 200
+    },
+    {
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/poster.jpg",
+      "bytes": 152476,
+      "sha256": "2abf516c8994a53d5a102d4b57c967bff0e2270b7e3b8d82524fae5289ea68fc",
+      "status": 200
+    },
+    {
+      "route": "/native-memory-clip-20260913/native-memory-assignment-refusal/contact-sheet.jpg",
+      "bytes": 101129,
+      "sha256": "70710b24084c9bef74d647f5aa9653d2b362038649df628b3910029fe18a9c05",
+      "status": 200
+    },
+    {
+      "route": "/native-host-clips-20260913/native-host-workspace-read/native-host-workspace-read.mp4",
+      "bytes": 1197687,
+      "sha256": "2a086d947a5530b53d03332698b909c6f40092298da3721bc7e3eeb74940b946",
+      "status": 200
+    },
+    {
+      "route": "/native-host-clips-20260913/native-host-workspace-read/poster.jpg",
+      "bytes": 195626,
+      "sha256": "3cb1b2a63da5a12475b733bd8fbc37d788f0bb5d11545ff21b9a6aa6b76f49fd",
+      "status": 200
+    },
+    {
+      "route": "/native-host-clips-20260913/native-host-workspace-read/contact-sheet.jpg",
+      "bytes": 108671,
+      "sha256": "df7f2793848c5e0dab8ae6a2c4a73586d925ec89fe54dbe715a7dfe166713932",
+      "status": 200
+    },
+    {
+      "route": "/native-host-clips-20260913/native-host-command-denial-summary/native-host-command-denial-summary.mp4",
+      "bytes": 523705,
+      "sha256": "f3156ac900f643e06fbe4309ac563b880e6076250daa690c244bf4ea9b3f85ea",
+      "status": 200
+    },
+    {
+      "route": "/native-host-clips-20260913/native-host-command-denial-summary/poster.jpg",
+      "bytes": 194096,
+      "sha256": "1ae25cf1b7e924f7476e86bdd922fadfce3711aa888a154f20afc328b2a1e341",
+      "status": 200
+    },
+    {
+      "route": "/native-host-clips-20260913/native-host-command-denial-summary/contact-sheet.jpg",
+      "bytes": 121337,
+      "sha256": "b33b410664e7c3781222c4e986a4f49ad9ffcd3380f4bddc6c0a7abc55208820",
+      "status": 200
+    },
+    {
+      "route": "/native-host-clips-20260913/native-host-anonymous-http403/native-host-anonymous-http403.mp4",
+      "bytes": 2207528,
+      "sha256": "0bc81f03f539f0614fa49a65ae3b27ef53f00bf26f35c7573684652cf1e87ada",
+      "status": 200
+    },
+    {
+      "route": "/native-host-clips-20260913/native-host-anonymous-http403/poster.jpg",
+      "bytes": 273116,
+      "sha256": "e8afb8f9325657f3af4430cb71f6629d23d06db56af4d7edbc235f163df9e417",
+      "status": 200
+    },
+    {
+      "route": "/native-host-clips-20260913/native-host-anonymous-http403/contact-sheet.jpg",
+      "bytes": 182119,
+      "sha256": "5476b424b3838bbd287a4c5fbb81c8619d87960269b008e67d28c6ebcdd7bf98",
+      "status": 200
+    },
+    {
+      "route": "/native-managed-clip-20260914/native-managed-mcp-denial/native-managed-mcp-denial.mp4",
+      "bytes": 2007186,
+      "sha256": "d3a8a2197d69bc42667434cfef0a0ea789cd3d4bde0aad74bdd4b9c84f4cabc1",
+      "status": 200
+    },
+    {
+      "route": "/native-managed-clip-20260914/native-managed-mcp-denial/poster.jpg",
+      "bytes": 176636,
+      "sha256": "9d3f592d1362d4c3c77e6688139fefe48ce85b33d203660ecbfa8244e8c5ced1",
+      "status": 200
+    },
+    {
+      "route": "/native-managed-clip-20260914/native-managed-mcp-denial/contact-sheet.jpg",
+      "bytes": 126675,
+      "sha256": "b525f61dacb0a9e9d5b60cce1d1fd1d117bf206d8ab14d2786e6724da826f1dd",
+      "status": 200
+    },
+    {
+      "route": "/native-managed-clip-20260914/receipts/native-managed-ui4-verification.json",
+      "bytes": 7208,
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
+      "bytes": 14113,
+      "sha256": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913-ui2-reconciled-final/review.json",
+      "bytes": 2040,
+      "sha256": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913-ui2/authority-attribution-review.json",
+      "bytes": 6242,
+      "sha256": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/media-review-mcp-controls.json",
+      "bytes": 10273,
+      "sha256": "e7ffdfac58d9c255c3aa538f41ef6c0568142b445c9779483393f684feee051d",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/media-review-memory-assignment.json",
+      "bytes": 4551,
+      "sha256": "68e609282f6cf097fc9ed3f88a1228f4703fee5311a5945cfa98a9dfc78cc167",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913/authenticated.json",
+      "bytes": 482,
+      "sha256": "e34c9d5411b8a0f32cd65ee2ae29b45136cbdecb0e06cefbd4ea0b06d71742c1",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913/runtime-preflight.json",
+      "bytes": 622,
+      "sha256": "d7c65d53e3bd2be421c6f5c80f9fe4f512eb18a5e76a52261f0cefc68ef60499",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/poster-review-v2.json",
+      "bytes": 14034,
+      "sha256": "0489c07e6174363188760877260778e6b47cf72c462d3589224574872885649a",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913/assignment-diagnostic.json",
+      "bytes": 2500,
+      "sha256": "8090b4a69f0c4f76021d6cf1c869f352c188aaa61c31382f3b4e0b19f0ea8a6c",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/council-native-v1/council-decision-summary.json",
+      "bytes": 5530,
+      "sha256": "16def13ae85f6ba9e911a633b17dd2bf584ac0f2bf210ba139ba849b8e6e86d1",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui3/initial-observations-v2.json",
+      "bytes": 8811,
+      "sha256": "9f757015d7bd9da89c7e694a315c0d73e7004e743f0404cd0cd487d88c742302",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui3/command-observations-v2.json",
+      "bytes": 8261,
+      "sha256": "63a86c6d6e8be4e14efe5dbe31962eab4d921c104cf40a1d6bbef770c3a54436",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui3/auth-correlation.json",
+      "bytes": 4509,
+      "sha256": "24c53664bcecc22aaa59e15a86f52c910bcb2dc6662d840b2a665c8f2e133543",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-review/auth-review.json",
+      "bytes": 3477,
+      "sha256": "da505b7c943ad593d02e1c2021b8e54d84ce58478bb6b4ef53b668d891047204",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui3/auth-public-history.json",
+      "bytes": 5133,
+      "sha256": "663302446418b5ec7d52330ecaec42a2ee57ef4598af1e3ef5034990b6398603",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/media-review-host-controls.json",
+      "bytes": 12899,
+      "sha256": "bc649485a4d7d99c09d1793837a9977072ac0d63092d1a9cba0e0b85bf8432a2",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/media-review-host-controls/metadata-copy-review-v2.json",
+      "bytes": 8355,
+      "sha256": "f1a2e27eba4e90e473a659114773a29db9a4c8bdd4dae24f4a56b8d02bf42f46",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json",
+      "bytes": 2060,
+      "sha256": "3eae37afdfc7d513f702a336d1e6ce70f07f36209151630b0271f314bfc146e1",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui3/evidence-tool-review.json",
+      "bytes": 1619,
+      "sha256": "a30dd5e1cb270195a4a36392d647e37b3133dbc83913bf164f694eac9b39fcda",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui3/imds-pending-status.json",
+      "bytes": 2257,
+      "sha256": "f05b5336c8d2578089664011b2717997fe3b6888386a8f48fc9ff70107dbddd3",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/council-host-v1/council-decision-summary.json",
+      "bytes": 6868,
+      "sha256": "5d21490418ca4616ba874c857c8a271509e03e871728b41444008c53ea0bae30",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/council-host-v1/candidate/dispatch/council-receipt.json",
+      "bytes": 12729,
+      "sha256": "b00d88905245deba9277723580642c3e8db8c0394f8216f4b0c40c3b9be86b11",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+      "bytes": 20791,
+      "sha256": "caeca579dc6c8a82e8799d6274c121af21c46cdc4420935bd0ec31b14a6db01b",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui4/prior-imds-timeout-correlation.json",
+      "bytes": 4206,
+      "sha256": "3532f590c516fd5fd7aaa937e101fa216b2403e5cfb53ad8cb425f848a1caf83",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
+      "bytes": 1539,
+      "sha256": "8437471934f673b0aa312104b99bc84144c6c9293e616b2abb858f68438c25f0",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/policy-plan.json",
+      "bytes": 7460,
+      "sha256": "c1c5d3d9703a6d2bf18583bb54111a53332dd98bdce3868dd2bf9633498dd9e5",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/managed-presentation.json",
+      "bytes": 8119,
+      "sha256": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/archify/delivery-receipt.json",
+      "bytes": 6569,
+      "sha256": "6afaef5379cb72d29f9ca06baff7dd1cddc5c68974341f548a649d81d0af9172",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/policy-verify.json",
+      "bytes": 625,
+      "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/mcp-verify.json",
+      "bytes": 2275,
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "bytes": 13380,
+      "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "bytes": 7208,
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+      "bytes": 2854,
+      "sha256": "5f325f568203ec997c7f94a0d3c2c01e358906bba83d9a95e1d80b692a82e0ce",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "bytes": 5252,
+      "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/client-relaunch.json",
+      "bytes": 889,
+      "sha256": "5520f2939ab2dba5227e5daf90d535fa44eccd7fd5820adc3ce5b8182a187ea0",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/media-review.json",
+      "bytes": 8335,
+      "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/screenshots/managed-governance.jpg",
+      "bytes": 124344,
+      "sha256": "54902bb87b5a77658200ca7a1cda676e7f3eb51d16c3c61df14b6f2cd240c6a7",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/screenshots/mcp-manager-enabled.jpg",
+      "bytes": 74693,
+      "sha256": "03c50af7b54bafa8c2d6e5d14b81816f9665971fb548352ab4fb1943c560d8ce",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/screenshots/mcp-manager-staged-restriction.jpg",
+      "bytes": 88780,
+      "sha256": "f579fbb4e5d218ace76dfbe82c24e70deef272aa6a66b0e9e0e23228af705324",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/screenshots/managed-command-locked.jpg",
+      "bytes": 168122,
+      "sha256": "1d29e47e9cd598234ecc939cb34a8cd38e248f1c936240042e7b9ccffc20771a",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/screenshots/user-session-mcp-tools.jpg",
+      "bytes": 156731,
+      "sha256": "f293022244e732ddbb151402cd4e2c090df93f10b648f39c58b242cf12c58771",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/screenshots/user-approval-modes.jpg",
+      "bytes": 146122,
+      "sha256": "24c3f8a70b9a3f2bcf243d8b1f7c5f6ae3e8c17cc6dd09e775e9c2eb12014bb1",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/screenshots/native-managed-recorded-denial.jpg",
+      "bytes": 103418,
+      "sha256": "480df161fc232da1308db9cbc37e0648b6b9d06c71ebef7d440e8029f66a2666",
+      "status": 200
+    },
+    {
+      "route": "/docs/HOST-CONTROL-SCENARIOS.md",
+      "bytes": 22205,
+      "sha256": "c5ae04a8b7bdea3f6bb35b58e7c2caf5cba13aa08a29740a06b4c597120cff73",
+      "status": 200
+    },
+    {
+      "route": "/kirocrew-managed-controls-diagram.html",
+      "bytes": 810663,
+      "sha256": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763",
+      "status": 200
+    },
+    {
+      "route": "/evidence/enterprise-managed/20260913/archify/asset-dependencies.json",
+      "bytes": 660,
+      "sha256": "80c071fdbccee7a21925514a4b566a981b99fce981eb78e4e1a4e611bbf73adf",
+      "status": 200
+    },
+    {
+      "route": "/kirocrew-admin-tour.html",
+      "bytes": 3679148,
+      "sha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a",
+      "status": 200
+    },
+    {
+      "route": "/kirocrew-admin-tour.md",
+      "bytes": 26723,
+      "sha256": "0ae7d24098fbd374356791d2e9bc823ce901d1c80b92d4c4d46853c0d3382294",
+      "status": 200
+    },
+    {
+      "route": "/infrastructure/mcp-enforcement/README.md",
+      "bytes": 11222,
+      "sha256": "68a0c13a955baec04a34e25f382bde6eea1d8701c6fb12a8d356589526b45910",
+      "status": 200
+    },
+    {
+      "route": "/infrastructure/observability/APP-INSTALL.md",
+      "bytes": 6803,
+      "sha256": "98d682cadc364ec25f98e85cb3709f2b1fc19a13ed792abb3a6efb19c28a907e",
+      "status": 200
+    },
+    {
+      "route": "/evidence/admin-console/browser-receipt.json",
+      "bytes": 3664,
+      "sha256": "7ec5239c3cb55087dbab974ab64a3c485fdf6038a4136952a4a933f3dc5cd317",
+      "status": 200
+    },
+    {
+      "route": "/kirocrew-admin-findings.md",
+      "bytes": 7075,
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/20260913-ui2/receipt-publication.json",
+      "bytes": 11079,
+      "sha256": "1e81f02d2237afbd0d6394b178def71134a8be79bd50f26b23f79af42983ee2e",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui3/initial-observations.json",
+      "bytes": 8346,
+      "sha256": "04ce8616bfdf26739007ae2e2bce7291e48740615e02543a2f8a13d05ba3b3f7",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-ui3/command-observations.json",
+      "bytes": 8740,
+      "sha256": "88bc23a85ab8db45a0d24ee34f711f46f263245e1a83f4e89c623e21dd9c2455",
+      "status": 200
+    },
+    {
+      "route": "/evidence/native-client-demo/host-20260913-review/initial-review.json",
+      "bytes": 7194,
+      "sha256": "ff855dbecb4bdb852200521040f4d5e523b1f50d7035fb3ec808395f4e3314e9",
+      "status": 200
+    },
+    {
+      "route": "/kirocrew-native-admin-findings.md",
+      "bytes": 9214,
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-native-20260913/07-gateway-overview.png",
+      "bytes": 74217,
+      "sha256": "d4094b575c6cb8ac5678f050bb894df36f82fe47ff38c659aa52d0376c1967fb",
+      "status": 200
+    },
+    {
+      "route": "/admin-console/02-arm-performance.jpg",
+      "bytes": 51458,
+      "sha256": "368456a4d432f80a3c79ed34117b2bb8b24182cbcdcb917acea7e8308dd891ba",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-native-20260913/01-live-security-posture.png",
+      "bytes": 111407,
+      "sha256": "9b0a9a96268e198b8a6c1ebc4b97177fa5348ed10292766f8d71bdb93817d44f",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-native-20260913/03-denied-command-categories.png",
+      "bytes": 107657,
+      "sha256": "318d8ec1d2ec81d30c01676e7441262b1c45522baecb6a2cc721cafb0ddfa57b",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-native-20260913/04-teardown-rule-coverage-viewport.png",
+      "bytes": 138288,
+      "sha256": "4ce5b3632c2eb1ca3d769c9acc2f9e38edb74629a9af2dca79090a1cfac92d9e",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-host-20260913/01-command-rule-active.jpg",
+      "bytes": 112473,
+      "sha256": "ed8fd2f5e10d6acc5ebec1d2cdbe5b70a86b73201565b18c71b6d1e7aecbdd00",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-host-20260913/02-command-rule-removed.jpg",
+      "bytes": 107638,
+      "sha256": "f0994d88918d6f00ceeb6fcb3823905d98e481495016a9a543041efec93e51d3",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-native-20260913/05-approval-duration.png",
+      "bytes": 88046,
+      "sha256": "0827e2d83fcf36745c9325b6e967bf100678fa1f6536c741da29a79e59fbb71f",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-native-20260913/06-governance-status.png",
+      "bytes": 89720,
+      "sha256": "0963be9afa8c60e73ce18b2e779202529cf88b4261708050fdfd7b1292f468d6",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-native-20260913/02-sel-coverage-viewport.png",
+      "bytes": 132207,
+      "sha256": "8f6f13d46a0fe51af91f23bd9ffc3d3fc5276b78f24274ba61c0cc003c3c6e5e",
+      "status": 200
+    },
+    {
+      "route": "/admin-console/07-agent-backend.jpg",
+      "bytes": 82406,
+      "sha256": "35735f35bed62fee253dd3d4d1471acd2ea32c072a4421d6906db0b422e73ccf",
+      "status": 200
+    },
+    {
+      "route": "/admin-console/08-telemetry-controls.jpg",
+      "bytes": 70977,
+      "sha256": "16ca6e0c062799f6e7510dce429a9853a515be0f558e7a93e21ca9bfa65a09b1",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-native-20260913/10-native-turn-telemetry.png",
+      "bytes": 83630,
+      "sha256": "680e9f08a55db92372b13356f697010fe674532741da467b2b93be9d61fbd8aa",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-host-20260913/03-command-turn-metrics.jpg",
+      "bytes": 89769,
+      "sha256": "0daf14b482ab41bc35214d12fce77d07397dd027ddf650f33e82d01bc4357b52",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-host-20260913/04-anonymous-turn-metrics.jpg",
+      "bytes": 89892,
+      "sha256": "5148ca90307b13698a6b91f17689e094b60cfa5e6887b2af1a62cadcfe043705",
+      "status": 200
+    },
+    {
+      "route": "/admin-console/11-client-server-telemetry.jpg",
+      "bytes": 78171,
+      "sha256": "efb9aa3eefc1613f75bdc15867128222afec5ac2b9195ad06064e1f3abae1698",
+      "status": 200
+    },
+    {
+      "route": "/admin-console/12-collection-logs.jpg",
+      "bytes": 81268,
+      "sha256": "dbbe2b16568eb22975f28ed64459166afbd483153dbf657b8bd738687ad78c63",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-host-20260913/05-client-server-health.jpg",
+      "bytes": 146893,
+      "sha256": "e9cf198282a847b9e4681c2cd0191e4061d5a17b51fad6f7f753682981e5dded",
+      "status": 200
+    },
+    {
+      "route": "/admin-console-host-20260913/06-server-collection-logs.jpg",
+      "bytes": 118292,
+      "sha256": "a24e67be86372e9c76ac4602af6832520c46deea4f587360c929ff7355d40734",
+      "status": 200
+    },
+    {
+      "route": "/evidence/admin-console/native-20260913/tour-build.json",
+      "bytes": 23280,
+      "sha256": "acbcec28f25e0eaaae626de4d01f3d2559e59f2a164588e1606a5658a3d7e65a",
+      "status": 200
+    },
+    {
+      "route": "/output/kirocrew-admin-findings.md",
+      "bytes": 7075,
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71",
+      "status": 200
+    },
+    {
+      "route": "/output/kirocrew-native-admin-findings.md",
+      "bytes": 9214,
+      "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39",
+      "status": 200
+    },
+    {
+      "route": "/.agents/skills/kirocrew-demo/SKILL.md",
+      "bytes": 2662,
+      "sha256": "df041ff167652ad63484a27138ac4f2aee1c665e00a28cbd868b0c9640abb166",
+      "status": 200
+    },
+    {
+      "route": "/docs/MANAGED-DEMO.md",
+      "bytes": 6765,
+      "sha256": "c4a1c0af079b08667071b4bf32567ae6bb9e8aea873e07033818bdc296341de9",
+      "status": 200
+    },
+    {
+      "route": "/docs/LIVE-SETUP.md",
+      "bytes": 14905,
+      "sha256": "3dd408177b5a7030d2c2c242e696bd3f7f29740ec1f1970856372f481a5fd09d",
+      "status": 200
+    },
+    {
+      "route": "/kirocrew-native-controls-notes.md",
+      "bytes": 35044,
+      "sha256": "0dda0d02f3b9bd13f51a995ef88b0704d23881712a95da37091255160ee3c111",
+      "status": 200
+    },
+    {
+      "route": "/kirocrew-native-controls-manifest.json",
+      "bytes": 46081,
+      "sha256": "74e12ac4f7aff4d6b56d92ffd9f1093ecda96ac6fced2b859c372837156fc8ba",
+      "status": 200
+    },
+    {
+      "route": "/kirocrew-native-controls.html",
+      "bytes": 2033388,
+      "sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
+      "status": 200
+    }
+  ],
+  "review_scope": [
+    "Final HTML reloaded before all retained final screenshots. An initial stale-tab capture was rejected and replaced.",
+    "Original eight recordings and both player scripts are unchanged; prior playback evidence retains its original scope. New managed video playback is freshly exercised on this final HTML.",
+    "Both external model reviews covered the preceding frozen candidate. This final derivative includes the agreed changes and direct No AI Slop pass; no second model review is claimed.",
+    "This is presentation/browser validation, not a new live security-control run."
+  ]
+}

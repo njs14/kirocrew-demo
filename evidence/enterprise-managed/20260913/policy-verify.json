@@ -1,0 +1,15 @@
+{
+  "activation_performed": false,
+  "dashboard_terminal_disabled": true,
+  "kind": "enterprise_policy_verification",
+  "main_pid": 133867,
+  "native_enforcement_verified": false,
+  "next": "Confirm the running Governance UI and a fresh native denial with no duplicate mutable hook.",
+  "plan_id": "b54f7009e2d5439d68a10fec70be25d573feb864fc22850b8536e36326b4672f",
+  "root_protected_managed_files_verified": true,
+  "service_active_state": "active",
+  "service_cgroup_pty_denial_verified": false,
+  "service_start": "42927304138",
+  "unit_and_process_policy_environment_active": true,
+  "unit_device_policy_matches": true
+}

@@ -1,0 +1,899 @@
+{
+  "schema_version": 1,
+  "kind": "managed_demo_tooling_validation",
+  "recorded_at": "2026-09-14T02:24:49.877867+00:00",
+  "base_commit": "baca619ca4e279ad62497bbe1601a7027cd73e64",
+  "scope": "Combined local offline tests and a bounded prospective-file text scan. No installation, live AWS, SSH or UI actions.",
+  "tests": {
+    "argv": [
+      ".build/demo-tools-venv/bin/python",
+      "-B",
+      "-m",
+      "unittest",
+      "scripts.tests.test_enterprise_policy",
+      "scripts.tests.test_arm_runtime_bundle",
+      "scripts.tests.test_manage_demo_mcp",
+      "scripts.tests.test_live_setup",
+      "scripts.tests.test_live_setup_app",
+      "scripts.tests.test_live_setup_desktop",
+      "scripts.tests.test_demo_dependencies"
+    ],
+    "python_version": "3.12.14",
+    "exit_code": 0,
+    "tests_run": 150,
+    "duration_seconds": 2.735,
+    "result": "OK",
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "modules": [
+      {
+        "path": "scripts/tests/test_enterprise_policy.py",
+        "test_methods": 44
+      },
+      {
+        "path": "scripts/tests/test_arm_runtime_bundle.py",
+        "test_methods": 12
+      },
+      {
+        "path": "scripts/tests/test_manage_demo_mcp.py",
+        "test_methods": 16
+      },
+      {
+        "path": "scripts/tests/test_live_setup.py",
+        "test_methods": 22
+      },
+      {
+        "path": "scripts/tests/test_live_setup_app.py",
+        "test_methods": 20
+      },
+      {
+        "path": "scripts/tests/test_live_setup_desktop.py",
+        "test_methods": 25
+      },
+      {
+        "path": "scripts/tests/test_demo_dependencies.py",
+        "test_methods": 11
+      }
+    ],
+    "execution_note": "Mocks and isolated temporary files exercise lifecycle guards; the App Kit audit subprocess tests run local Python against temporary fixture directories. Console installation messages come from mocked dependency test calls.",
+    "evidence_boundary": "These tests do not establish fresh-cloud installation, native enforcement, or live authentication. Presentation and recipe tests were intentionally excluded while that candidate was changing."
+  },
+  "input_binding": {
+    "timing": "Hashes collected after the successful combined run, from the stable tooling input files. This is not a whole-worktree freeze.",
+    "files": [
+      {
+        "path": "scripts/tests/test_enterprise_policy.py",
+        "bytes": 41108,
+        "sha256": "c2d0cdb322a292cff1e979dbaa8c183205c77474ac7ca8386603ccf79f8e3292",
+        "role": "test_module"
+      },
+      {
+        "path": "scripts/tests/test_arm_runtime_bundle.py",
+        "bytes": 7105,
+        "sha256": "79a046ac7cb86258259251ad4787f8474fd8049591b34e26f8f6283c7d14b824",
+        "role": "test_module"
+      },
+      {
+        "path": "scripts/tests/test_manage_demo_mcp.py",
+        "bytes": 8468,
+        "sha256": "0fbc6cc546de71159e3e83f18f6395142719c94f0c96917e2744186e1ce98387",
+        "role": "test_module"
+      },
+      {
+        "path": "scripts/tests/test_live_setup.py",
+        "bytes": 14586,
+        "sha256": "e3eb4e547401e9946596edd81bb5cd50d39c455b9db4388905e767fa55a451bc",
+        "role": "test_module"
+      },
+      {
+        "path": "scripts/tests/test_live_setup_app.py",
+        "bytes": 14481,
+        "sha256": "511b5bb0c528dff945ab5b234c34355c2f56d3af91e67e6fe117a1460e2fa4a0",
+        "role": "test_module"
+      },
+      {
+        "path": "scripts/tests/test_live_setup_desktop.py",
+        "bytes": 16042,
+        "sha256": "997285c7cfeb2fe23c791fad340816f55d37dbd91ac92391ea4450fb6a750624",
+        "role": "test_module"
+      },
+      {
+        "path": "scripts/tests/test_demo_dependencies.py",
+        "bytes": 9477,
+        "sha256": "b4f7cc2fd65cf6638a5146a0e6a2802260e8e50226305fb1138de5336a9a31a8",
+        "role": "test_module"
+      },
+      {
+        "path": "scripts/manage-enterprise-policy.py",
+        "bytes": 5137,
+        "sha256": "b46a23b1f1e40731bd1df36916bff047801083d7b63b21c60b461c140b3fd263",
+        "role": "tested_source_or_template"
+      },
+      {
+        "path": "infrastructure/enterprise-policy/manage.py",
+        "bytes": 27909,
+        "sha256": "6dd31b2e33276a08f711167894435d8d15cde4c8104725e8efdffb3f2288cfc3",
+        "role": "tested_source_or_template"
+      },
+      {
+        "path": "infrastructure/enterprise-policy/policy.template.json",
+        "bytes": 716,
+        "sha256": "5d862e815267a94c29b850495eba54f4d52716e68a9cdb222b2d370bc927b4b5",
+        "role": "tested_source_or_template"
+      },
+      {
+        "path": "scripts/prepare-arm-runtime.py",
+        "bytes": 11244,
+        "sha256": "e9754328e06ac7a0c44f952c7fc2d6614ec2532f077670ab30e95b10bc65c04b",
+        "role": "tested_source_or_template"
+      },
+      {
+        "path": "infrastructure/install-runtime-bundle.py",
+        "bytes": 20573,
+        "sha256": "dc6c4dbf78111479c5cdb1dc55ba0dab80b010c928eddc797a5c88060668611f",
+        "role": "tested_source_or_template"
+      },
+      {
+        "path": "scripts/manage-demo-mcp.py",
+        "bytes": 23974,
+        "sha256": "fffd0e3ce2a39db400810977e0f93d0954181e158363013cf211bd247fd11e13",
+        "role": "tested_source_or_template"
+      },
+      {
+        "path": "scripts/setup-live-demo.py",
+        "bytes": 24670,
+        "sha256": "33eb17dcb2bb675d974d8f2b2086679d5e1bdb17f944c4e643ced68cfb1da9f0",
+        "role": "tested_source_or_template"
+      },
+      {
+        "path": "scripts/live_setup_app.py",
+        "bytes": 19655,
+        "sha256": "b9feb4bbe6551658e68c90e3e796d2ad263aef889b72d3701411aac5562cb4ad",
+        "role": "tested_source_or_template"
+      },
+      {
+        "path": "scripts/live_setup_desktop.py",
+        "bytes": 15803,
+        "sha256": "f872c0d2fb1e24954118d0ba2ca5e03aeaacefef6efa96e112f2cf13d1992a52",
+        "role": "tested_source_or_template"
+      },
+      {
+        "path": "infrastructure/live-setup/remote.py",
+        "bytes": 14408,
+        "sha256": "cbc1b9b0ad001d6fae46c08e23d633b95aeeb3d3fe0a72f51373fca7ff6f7d54",
+        "role": "tested_source_or_template"
+      },
+      {
+        "path": "scripts/demo-dependencies.py",
+        "bytes": 19925,
+        "sha256": "f4f888e3a9c3ea32914b633006ad15fb4e7b462abd94d7ed179e121fe0f75805",
+        "role": "tested_source_or_template"
+      },
+      {
+        "path": "scripts/demo_config.py",
+        "bytes": 10201,
+        "sha256": "dc7ff02a5ff956bd32e927aa2bd92a49ffd326830c951c85dd3d53098811a31e",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "scripts/demo-cloud.py",
+        "bytes": 29540,
+        "sha256": "0a0c8851db860a94abcc7ce8502037a2d706408975846821419d3669fef80ab5",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "scripts/prepare-demo-baseline.py",
+        "bytes": 12824,
+        "sha256": "17464754e976bd4e653f4c4f59daaf3341a9bda5deaa0fcde49848535d1729f6",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/crew-requirements-linux-arm64.lock",
+        "bytes": 154265,
+        "sha256": "ec8fbe5784220eb94a51d44b2d28734dbe2d21a1080d1d7645408bb69ac12427",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "requirements-demo.txt",
+        "bytes": 706,
+        "sha256": "0736cc52c8071389f4ddce2f0d7e6639e68d25865e4bd375d64ee8ffb07b3c4c",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "package.json",
+        "bytes": 906,
+        "sha256": "45526fcb39ca126a38a66b7e59c8781dd4f6c5444d9ba12951332abf8b218802",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "package-lock.json",
+        "bytes": 21733,
+        "sha256": "713d9889b376904ac49400f8b201c9f72a8a0c4604384167965375fa5378cbe2",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/configure-demo.py",
+        "bytes": 3034,
+        "sha256": "ae424b093cad4d768157099d9306c999c0ab65745c3729f342c8e10c8ef53224",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/configure-arm-services.sh",
+        "bytes": 3950,
+        "sha256": "081edcf235f39774605c80a33ee495434d5a30bbfb4e7e3eeb26c8b149f890b1",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/kirocrew-demo-wrapper.sh",
+        "bytes": 295,
+        "sha256": "66b0dab6068a0ae354c1f7b893d12897887bae1f70c13947aebea81eead9e649",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/kirocrew-demo.service",
+        "bytes": 1094,
+        "sha256": "662c10170325a0a2e0025e2007d48c650e5ddf88343f0475f50404cfc97360df",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/kirocrew-mcp-demo.service",
+        "bytes": 850,
+        "sha256": "027ec03ceffdf0fcb38b9961bd35211572f564e0f249904feb111f0624461d01",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/kirocrew-owner-token.py",
+        "bytes": 7730,
+        "sha256": "7750fe9d6e51c4568c8ac155137c23c3f29ec45faf9fbaf55c07fb0ca7b593a5",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/mcp-enforcement/server.py",
+        "bytes": 13826,
+        "sha256": "a52c0c42d91430232fc68c20f6554e70842ebd33d0a71a79dff3f50ef431eb08",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/mcp-enforcement/probe.py",
+        "bytes": 5247,
+        "sha256": "772c26fdc20cd498b52fc565f2228fd6f1ab097995c164cc45cfa68780b7e607",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/mcp-enforcement/requirements.txt",
+        "bytes": 40073,
+        "sha256": "9815c0cb4be1aa117db7feaa1f91eb3376c1aebf95489d023dec50e2e1d932c8",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/observability-collector/collector.py",
+        "bytes": 22710,
+        "sha256": "f96c61c9395569886c01d28f3e74c26b86719bbcd3b6f1e9cf467f703cd58124",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/observability-collector/kirocrew-demo-observability.service",
+        "bytes": 528,
+        "sha256": "72fbb8ee0c76f8c82a26aa9528c96b370a1154cb893e4f0f4fbc38c7bae35c51",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/observability-collector/kirocrew-demo-observability.timer",
+        "bytes": 202,
+        "sha256": "c23fe500d0af81997c9a9b6a6b4b106b9aa0e50fa2ffd64f08179cc98e36e058",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/observability/app/app.json",
+        "bytes": 640,
+        "sha256": "34e474700da3868d828fdaeba2af60cd71801defe9b93e9a6548131fea571cee",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/observability/app/backend/server.py",
+        "bytes": 9701,
+        "sha256": "33a46c42b29de99d41cbe581fa5e86c3946a279d8506932a5fec8429d720c80e",
+        "role": "supporting_dependency_or_payload"
+      },
+      {
+        "path": "infrastructure/observability/app/ui/dist/index.mjs",
+        "bytes": 12156,
+        "sha256": "a652b81dea5a32ff5772f48b27875fc8ca810f36c0d4743a7800c584682f67eb",
+        "role": "supporting_dependency_or_payload"
+      }
+    ]
+  },
+  "prospective_file_scan": {
+    "selection": "git ls-files --others --exclude-standard, restricted to scope_prefixes; this receipt itself did not exist during the scan.",
+    "scope_prefixes": [
+      "scripts/",
+      "infrastructure/",
+      "evidence/enterprise-managed/",
+      "evidence/enterprise-policy/",
+      ".agents/",
+      "recordings/enterprise-managed/",
+      "output/native-managed-clip-20260914/"
+    ],
+    "checked_at": "2026-09-14T02:24:49.905676+00:00",
+    "text_files": 77,
+    "binary_files_not_content_scanned": 26,
+    "credential_pattern_categories": [
+      "aws_access_key",
+      "github_token",
+      "private_key",
+      "literal_bearer",
+      "credential_assignment",
+      "auth_query"
+    ],
+    "private_filename_categories": [
+      "provider raw JSONL",
+      "provider stderr",
+      "private prepared review packet"
+    ],
+    "findings": [],
+    "text_inventory": [
+      {
+        "path": ".agents/skills/kirocrew-demo/SKILL.md",
+        "bytes": 2662,
+        "sha256": "df041ff167652ad63484a27138ac4f2aee1c665e00a28cbd868b0c9640abb166"
+      },
+      {
+        "path": ".agents/skills/kirocrew-demo/agents/openai.yaml",
+        "bytes": 241,
+        "sha256": "c4bab77dff3beebff0c4345bd25aa4a54e3f831e0c7e6fb2adca59c825f29ec0"
+      },
+      {
+        "path": ".agents/skills/kirocrew-demo/references/presentation.md",
+        "bytes": 2792,
+        "sha256": "a2d253772b09cec726ecc27bbcca568b231838968da2c1f6d2d8467cd25fdcc9"
+      },
+      {
+        "path": ".agents/skills/kirocrew-demo/references/recording.md",
+        "bytes": 4138,
+        "sha256": "f29515e7ff080abe974692c12bc2d55b8999e5364681d6ef771a74f77f351b74"
+      },
+      {
+        "path": ".agents/skills/kirocrew-demo/references/setup.md",
+        "bytes": 5796,
+        "sha256": "ccb173778ec9163d7fd41da0f2b5cb8c8dd3318f7f210e54a504857c5f0a6384"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/evidence/native-client-demo/archify-host-20260913/asset-dependencies.json",
+        "bytes": 699,
+        "sha256": "a109b7b10371b8bfab24dcca4588dcf2f4a248dcb13eea29346a41f5363b67ec"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/evidence/native-client-demo/archify-host-20260913/browser/final-review.json",
+        "bytes": 1867,
+        "sha256": "4d351ae3f0cedd44afc8e492f1d0f89ec92664b0f925156fab778f74d048361c"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/evidence/native-client-demo/archify-host-20260913/delivery-receipt.json",
+        "bytes": 20791,
+        "sha256": "caeca579dc6c8a82e8799d6274c121af21c46cdc4420935bd0ec31b14a6db01b"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/evidence/native-client-demo/archify-host-20260913/source-bindings.json",
+        "bytes": 3148,
+        "sha256": "dc678c9c395b8f4868bf76f4ced3186a8d35934a33d4e252746c337214f65a33"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/kirocrew-native-controls-diagram.architecture.json",
+        "bytes": 4888,
+        "sha256": "a7504c4668e148c630bc6889047e75b8b73db2fb897c41ca12d83d529abd4aa0"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/kirocrew-native-controls-diagram.html",
+        "bytes": 810648,
+        "sha256": "3d9424fbeac53817f1f32492c788fd6bb48c3416fc21295700c86cf0a06c01eb"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/accepted-before-managed/manifest.json",
+        "bytes": 2275,
+        "sha256": "3596a88dac8bf969a15610b0c7a0f06d01140d6f52be7b092bcca7bf171fad2f"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/base-delivery.json",
+        "bytes": 737,
+        "sha256": "06b02b17ef7d9578d970eac9860b957eb0296f39e70f302edce427824dcf9dda"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/base-validation.json",
+        "bytes": 1927,
+        "sha256": "66eed0b60d22432a4ff9385deb64b961b222fe017cf7b8b0742a79c3e9aed77a"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/base.html",
+        "bytes": 809281,
+        "sha256": "6c7aaf6137439d18043b94e53c88beb598af26dc4211c1b7d69b75acc1eb2020"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/enlarge-typography.py",
+        "bytes": 7207,
+        "sha256": "34c43f611e867b9eb14cfb7040f2b6097ef3a477bfb8029784845e7a3358eddb"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/final-artifact-check.txt",
+        "bytes": 1840,
+        "sha256": "30c6c01d46a1ad671ce7e86c9a280226c186a9c829ccf5970c625ad6dbd5128d"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/kirocrew-managed-controls-diagram-static.json",
+        "bytes": 2198,
+        "sha256": "aeec25002aa4c7e0e8de7eef04f861e0bb6585b38e8e371b0a857f546bb8e0c6"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/kirocrew-managed-controls-diagram.svg",
+        "bytes": 297028,
+        "sha256": "7f6ebfd18e901e3eab47d0134587bde8cfc78e796c01bcb5fb5fdb9612c0aba1"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/render-static.cjs",
+        "bytes": 3087,
+        "sha256": "55edf7e437aedda4534771f14fafdfe7fb76649985ff5ac929f369be38bce685"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/typography-derivative.json",
+        "bytes": 6204,
+        "sha256": "51e7497906c34b1ab45830d138b16a327b5e2a59b4ea319047f4b06614d6f7bc"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/client-relaunch.json",
+        "bytes": 889,
+        "sha256": "5520f2939ab2dba5227e5daf90d535fa44eccd7fd5820adc3ce5b8182a187ea0"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+        "bytes": 5252,
+        "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/managed-presentation.json",
+        "bytes": 8119,
+        "sha256": "871f808d6ff8d5d5bc6c97f1afc2893bacc84f0248cdff879bf5f86b1223a77d"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/mcp-apply.json",
+        "bytes": 775,
+        "sha256": "b56acede119c7b69c35a2cdc449e45fe27c51c2250c1db9c24b25ae476deabf5"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/mcp-plan.json",
+        "bytes": 2294,
+        "sha256": "e155490f5e7159d791ca3e77c04946266652ceb22366239e257219e10ade2d11"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+        "bytes": 2275,
+        "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/media-review.json",
+        "bytes": 6774,
+        "sha256": "d6a791b3ac3ee4a58cc08d494a5645cae50108c8066521e8d7a42ac5fd3406ec"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/native-managed-artifact-review.json",
+        "bytes": 2854,
+        "sha256": "5f325f568203ec997c7f94a0d3c2c01e358906bba83d9a95e1d80b692a82e0ce"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+        "bytes": 7208,
+        "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+        "bytes": 13380,
+        "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/policy-activation.json",
+        "bytes": 309,
+        "sha256": "c1919d96bdfc4f5451837c841751743c24d62bf6f99ce329e92626eb98205e86"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/policy-install.json",
+        "bytes": 8845,
+        "sha256": "0fabff77d691bd2d9ab8c3ec491ae6b5b139ea20e025051e5c1077abfacaeef4"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/policy-plan.json",
+        "bytes": 7460,
+        "sha256": "c1c5d3d9703a6d2bf18583bb54111a53332dd98bdce3868dd2bf9633498dd9e5"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/policy-verify.json",
+        "bytes": 625,
+        "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
+      },
+      {
+        "path": "evidence/enterprise-managed/accepted-before-managed/current-status.json",
+        "bytes": 33265,
+        "sha256": "19171a4079811f57ac02a6e41d9756f410e1e0149361c336d6fb8269de9609ed"
+      },
+      {
+        "path": "evidence/enterprise-managed/accepted-before-managed/kirocrew-native-controls-build.json",
+        "bytes": 34634,
+        "sha256": "f01a3d2539a64ec3ca42e3abd72257c2308735650653e9ba8b8265a7f8761248"
+      },
+      {
+        "path": "evidence/enterprise-managed/accepted-before-managed/kirocrew-native-controls-manifest.json",
+        "bytes": 35002,
+        "sha256": "7262516697502200db5122b8ea968c7f9230f92f4e43a8d900b69854deb39dda"
+      },
+      {
+        "path": "evidence/enterprise-managed/accepted-before-managed/kirocrew-native-controls-notes.md",
+        "bytes": 25826,
+        "sha256": "415e0f99e8add71613d140907955f2be5a29f7813f6f419fa97fd35bd15df164"
+      },
+      {
+        "path": "evidence/enterprise-managed/accepted-before-managed/kirocrew-native-controls.html",
+        "bytes": 639250,
+        "sha256": "c8cb2b03b5041a28c3f75ed84327cad6eb46dc51ca33aef01fabd631bb47146c"
+      },
+      {
+        "path": "evidence/enterprise-managed/accepted-before-managed/manifest.json",
+        "bytes": 1940,
+        "sha256": "6712dbc921e6dd2aa1332ad8283d189d3564c9583ce902c4187cccdf67df627f"
+      },
+      {
+        "path": "evidence/enterprise-managed/council/READY.md",
+        "bytes": 3471,
+        "sha256": "6f14619ac9fc7851566a80e5fac5481add1b80b87927163cf1a349dca0b89d05"
+      },
+      {
+        "path": "evidence/enterprise-managed/council/interface-validation.json",
+        "bytes": 280,
+        "sha256": "5606770f4d3c30f11fc2f82a16cab0560789da12dc9525857fefabd8e3330fcf"
+      },
+      {
+        "path": "evidence/enterprise-managed/council/launch-policy.py",
+        "bytes": 25887,
+        "sha256": "9d2ec8086b50260ae6c6202c5c2c861a4b2828946ac68baefe081fce636a5540"
+      },
+      {
+        "path": "evidence/enterprise-managed/council/preflight.json",
+        "bytes": 1523,
+        "sha256": "62c175ddc9235586a09ba27ceab4c2adc40c9b43aa6419afe8986c4f49859bbe"
+      },
+      {
+        "path": "evidence/enterprise-managed/council/run-council.py",
+        "bytes": 35208,
+        "sha256": "e6b5607241629c7ae8885bf78320c2e2ded282f1f4e501a3649b5057e2b0f775"
+      },
+      {
+        "path": "evidence/enterprise-managed/replication/20260914T015152Z-pre-managed-skill-forward-test.json",
+        "bytes": 16075,
+        "sha256": "be525aee47257bdf61c4d5ebf2cf7c601f809f1479d5ebfb833e5410572a0982"
+      },
+      {
+        "path": "evidence/enterprise-policy/source-review-20260914.json",
+        "bytes": 2316,
+        "sha256": "c2393d26ebf9d3fdcdac66d3853beb8a34cd185223c9ed95522dc0344869ac2c"
+      },
+      {
+        "path": "evidence/enterprise-policy/verifier-fix-review-20260914.json",
+        "bytes": 1569,
+        "sha256": "575b1cf2cb88b93d325843cc5d8951c7bf099a7248ec39630c84946887f0a6c8"
+      },
+      {
+        "path": "infrastructure/enterprise-policy/OPERATIONS.md",
+        "bytes": 6748,
+        "sha256": "170c041ca2de621199d044bc057a5024a5e173cc10b79d47241a504a23b53316"
+      },
+      {
+        "path": "infrastructure/enterprise-policy/manage.py",
+        "bytes": 27909,
+        "sha256": "6dd31b2e33276a08f711167894435d8d15cde4c8104725e8efdffb3f2288cfc3"
+      },
+      {
+        "path": "infrastructure/enterprise-policy/policy.template.json",
+        "bytes": 716,
+        "sha256": "5d862e815267a94c29b850495eba54f4d52716e68a9cdb222b2d370bc927b4b5"
+      },
+      {
+        "path": "infrastructure/enterprise-policy/reviewer-profile.example.json",
+        "bytes": 102,
+        "sha256": "af60474afa86ea142b1c4d98d04e48e9c1e8486e8ad9fef5a80998ec5b898cd6"
+      },
+      {
+        "path": "infrastructure/install-runtime-bundle.py",
+        "bytes": 20573,
+        "sha256": "dc6c4dbf78111479c5cdb1dc55ba0dab80b010c928eddc797a5c88060668611f"
+      },
+      {
+        "path": "infrastructure/live-setup/remote.py",
+        "bytes": 14408,
+        "sha256": "cbc1b9b0ad001d6fae46c08e23d633b95aeeb3d3fe0a72f51373fca7ff6f7d54"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/manifest.json",
+        "bytes": 5417,
+        "sha256": "a73e8adadd4e30cadc93fe0ab9d800b8a0c65084bc850cbad973e656bdb1702a"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/receipt.json",
+        "bytes": 9994,
+        "sha256": "5582b57b64ef8546c1270d881d7fb6fc9139a19f56ea7f4a5b231d2e5efac307"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/receipts/native-managed-ui4-verification.json",
+        "bytes": 7208,
+        "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+      },
+      {
+        "path": "recordings/enterprise-managed/cuts.json",
+        "bytes": 2246,
+        "sha256": "d8142d80a6b5ff2a0075d345fb9c2b6d44a67cfb43e2beded9e850291d037af7"
+      },
+      {
+        "path": "recordings/enterprise-managed/receipts/native-managed-ui4-verification.json",
+        "bytes": 7208,
+        "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+      },
+      {
+        "path": "scripts/build-demo-presentation.py",
+        "bytes": 7704,
+        "sha256": "fb2b2a502ea77669eca25b9dfcada1f0e5866c5f90308e778a96ca0bcb5851b6"
+      },
+      {
+        "path": "scripts/demo-dependencies.py",
+        "bytes": 19925,
+        "sha256": "f4f888e3a9c3ea32914b633006ad15fb4e7b462abd94d7ed179e121fe0f75805"
+      },
+      {
+        "path": "scripts/live_setup_app.py",
+        "bytes": 19655,
+        "sha256": "b9feb4bbe6551658e68c90e3e796d2ad263aef889b72d3701411aac5562cb4ad"
+      },
+      {
+        "path": "scripts/live_setup_desktop.py",
+        "bytes": 15803,
+        "sha256": "f872c0d2fb1e24954118d0ba2ca5e03aeaacefef6efa96e112f2cf13d1992a52"
+      },
+      {
+        "path": "scripts/manage-demo-mcp.py",
+        "bytes": 23974,
+        "sha256": "fffd0e3ce2a39db400810977e0f93d0954181e158363013cf211bd247fd11e13"
+      },
+      {
+        "path": "scripts/manage-enterprise-policy.py",
+        "bytes": 5137,
+        "sha256": "b46a23b1f1e40731bd1df36916bff047801083d7b63b21c60b461c140b3fd263"
+      },
+      {
+        "path": "scripts/prepare-arm-runtime.py",
+        "bytes": 11244,
+        "sha256": "e9754328e06ac7a0c44f952c7fc2d6614ec2532f077670ab30e95b10bc65c04b"
+      },
+      {
+        "path": "scripts/setup-live-demo.py",
+        "bytes": 24670,
+        "sha256": "33eb17dcb2bb675d974d8f2b2086679d5e1bdb17f944c4e643ced68cfb1da9f0"
+      },
+      {
+        "path": "scripts/tests/test_arm_runtime_bundle.py",
+        "bytes": 7105,
+        "sha256": "79a046ac7cb86258259251ad4787f8474fd8049591b34e26f8f6283c7d14b824"
+      },
+      {
+        "path": "scripts/tests/test_demo_dependencies.py",
+        "bytes": 9477,
+        "sha256": "b4f7cc2fd65cf6638a5146a0e6a2802260e8e50226305fb1138de5336a9a31a8"
+      },
+      {
+        "path": "scripts/tests/test_enterprise_policy.py",
+        "bytes": 41108,
+        "sha256": "c2d0cdb322a292cff1e979dbaa8c183205c77474ac7ca8386603ccf79f8e3292"
+      },
+      {
+        "path": "scripts/tests/test_live_setup.py",
+        "bytes": 14586,
+        "sha256": "e3eb4e547401e9946596edd81bb5cd50d39c455b9db4388905e767fa55a451bc"
+      },
+      {
+        "path": "scripts/tests/test_live_setup_app.py",
+        "bytes": 14481,
+        "sha256": "511b5bb0c528dff945ab5b234c34355c2f56d3af91e67e6fe117a1460e2fa4a0"
+      },
+      {
+        "path": "scripts/tests/test_live_setup_desktop.py",
+        "bytes": 16042,
+        "sha256": "997285c7cfeb2fe23c791fad340816f55d37dbd91ac92391ea4450fb6a750624"
+      },
+      {
+        "path": "scripts/tests/test_manage_demo_mcp.py",
+        "bytes": 8468,
+        "sha256": "0fbc6cc546de71159e3e83f18f6395142719c94f0c96917e2744186e1ce98387"
+      },
+      {
+        "path": "scripts/tests/test_presentation_recipe.py",
+        "bytes": 10960,
+        "sha256": "cb7138abb8f16b5e3717af5ffffa27f1947c95ceef8e96c9484f7c1224f6e96d"
+      },
+      {
+        "path": "scripts/verify-managed-host.py",
+        "bytes": 14548,
+        "sha256": "1b5caa8fb072000246e6a06bf3839ce6d451fb8ee34c8b397dfb3b0f19fdecbb"
+      }
+    ],
+    "binary_inventory": [
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/kirocrew-managed-controls-diagram-1152x480.png",
+        "bytes": 84978,
+        "sha256": "af42256da34c833d335c080bf8148a1eb4c0d174a02777cd50ac596ec56379cd"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/kirocrew-managed-controls-diagram.png",
+        "bytes": 604804,
+        "sha256": "4222ac705ccd38835c53f6c683001edfd5c7e8a7962d67b4e532aed79f42687a"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/archify/stage-static-1030x568.png",
+        "bytes": 101965,
+        "sha256": "f32ed210eb224947bb57c24c14d1083a3ccd1e272ccdaddaf0deb6d5c4b5a3b8"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/screenshots/before-governance.jpg",
+        "bytes": 89653,
+        "sha256": "611d48bdf60b8d3ab3edf9008411a69e2bb6f6d152af9fb8f65074acce196504"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/screenshots/managed-command-locked.jpg",
+        "bytes": 168122,
+        "sha256": "1d29e47e9cd598234ecc939cb34a8cd38e248f1c936240042e7b9ccffc20771a"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/screenshots/managed-governance.jpg",
+        "bytes": 124344,
+        "sha256": "54902bb87b5a77658200ca7a1cda676e7f3eb51d16c3c61df14b6f2cd240c6a7"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-enabled.jpg",
+        "bytes": 74693,
+        "sha256": "03c50af7b54bafa8c2d6e5d14b81816f9665971fb548352ab4fb1943c560d8ce"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/screenshots/mcp-manager-staged-restriction.jpg",
+        "bytes": 88780,
+        "sha256": "f579fbb4e5d218ace76dfbe82c24e70deef272aa6a66b0e9e0e23228af705324"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/screenshots/native-after-relaunch.jpg",
+        "bytes": 96591,
+        "sha256": "7cb3f1331e662f33143c0118d5b3a50f0a2c099e36b62cfa06546b32d8ae9bdf"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/screenshots/native-managed-denial-detail.jpg",
+        "bytes": 110367,
+        "sha256": "77de6a953951a86b7a0f868fe9007bef904002cb80fe616cfaef617205cd125b"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/screenshots/native-managed-denial.jpg",
+        "bytes": 110737,
+        "sha256": "ff31d01ff0fff02230be18b4fd20b99e7eb09c7673cd68a986bb07e5d79e4535"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/screenshots/native-managed-recorded-denial.jpg",
+        "bytes": 103418,
+        "sha256": "480df161fc232da1308db9cbc37e0648b6b9d06c71ebef7d440e8029f66a2666"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/screenshots/user-approval-modes.jpg",
+        "bytes": 146122,
+        "sha256": "24c3f8a70b9a3f2bcf243d8b1f7c5f6ae3e8c17cc6dd09e775e9c2eb12014bb1"
+      },
+      {
+        "path": "evidence/enterprise-managed/20260913/screenshots/user-session-mcp-tools.jpg",
+        "bytes": 156731,
+        "sha256": "f293022244e732ddbb151402cd4e2c090df93f10b648f39c58b242cf12c58771"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/contact-sheet.jpg",
+        "bytes": 126675,
+        "sha256": "b525f61dacb0a9e9d5b60cce1d1fd1d117bf206d8ab14d2786e6724da826f1dd"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/frame-01.jpg",
+        "bytes": 21355,
+        "sha256": "a35324aafa2e9a859faa03cbe9e511dbd86903f36a210799bdfbdb617e870dcb"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/frame-02.jpg",
+        "bytes": 22672,
+        "sha256": "502c197af9be0208c45da2ae3d99dd5ce7d68c375a549b0eb32f90322333b861"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/frame-03.jpg",
+        "bytes": 21940,
+        "sha256": "c28bacb16fd75c6d212ab0dc340dd429654937b3c241774af8d01b438119e3fb"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/frame-04.jpg",
+        "bytes": 23368,
+        "sha256": "add61c26d4ab683abc88514accf1a2063ae2ca871cfdf90a2a3d1577a3a46050"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/frame-05.jpg",
+        "bytes": 21455,
+        "sha256": "23b3f8c5f717908b64b0393d8a0b8f370f77c68286a24b59405ae5c4f6e7365b"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/frame-06.jpg",
+        "bytes": 17614,
+        "sha256": "f317249b5064fa285642e524dbcf60ed6497fe16f32d994e35eca6d428a81599"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/native-managed-mcp-denial.mp4",
+        "bytes": 2007186,
+        "sha256": "d3a8a2197d69bc42667434cfef0a0ea789cd3d4bde0aad74bdd4b9c84f4cabc1"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/poster.jpg",
+        "bytes": 214116,
+        "sha256": "930f6fa93f65fa8b22f260e644693d1737b712ab891e90e58abe2988ec6bf47b"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/review-automatic-block.jpg",
+        "bytes": 213986,
+        "sha256": "c2d65937a223b2f366905a89e1d9161c62cc192c838dc1288c4d57421d68c2e7"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/review-policy-reason.jpg",
+        "bytes": 176636,
+        "sha256": "9d3f592d1362d4c3c77e6688139fefe48ce85b33d203660ecbfa8244e8c5ced1"
+      },
+      {
+        "path": "output/native-managed-clip-20260914/native-managed-mcp-denial/review-request.jpg",
+        "bytes": 214137,
+        "sha256": "c74c27bffb48f044b7b52beb39f57e819d57990c035432ae58cc5d53d52bf039"
+      }
+    ],
+    "ignore_rule_checks": [
+      {
+        "example_path": ".build/validation-private/receipt.json",
+        "ignored": true
+      },
+      {
+        "example_path": "config/validation.local.json",
+        "ignored": true
+      },
+      {
+        "example_path": "recordings/enterprise-managed/raw/validation.mov",
+        "ignored": true
+      },
+      {
+        "example_path": "evidence/enterprise-managed/council/validation/prepared.json",
+        "ignored": true
+      },
+      {
+        "example_path": "evidence/enterprise-managed/council/validation/dispatch/grok-raw.jsonl",
+        "ignored": true
+      },
+      {
+        "example_path": "evidence/enterprise-managed/council/validation/dispatch/claude-raw.jsonl",
+        "ignored": true
+      },
+      {
+        "example_path": "evidence/enterprise-managed/council/validation/dispatch/grok-stderr.txt",
+        "ignored": true
+      },
+      {
+        "example_path": "evidence/enterprise-managed/council/validation/dispatch/claude-stderr.txt",
+        "ignored": true
+      },
+      {
+        "example_path": ".github/workflows/validation.yml",
+        "ignored": true
+      }
+    ],
+    "ignore_rules_input": {
+      "path": ".gitignore",
+      "bytes": 2157,
+      "sha256": "6ff68517499eaab7e3506786c8ff65dac02de47e91687c779c173f090e0e8b3f"
+    },
+    "limitation": "Pattern matching is a bounded textual check, not exhaustive secret detection. Binary screenshots and clips require the separate visual/media review. This snapshot does not cover files added or changed later."
+  }
+}
