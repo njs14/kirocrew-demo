@@ -1,0 +1,489 @@
+{
+  "bindings": {
+    "inputCuts": {
+      "bytes": 5224,
+      "path": "recordings/managed-host-20260914/cuts.json",
+      "sha256": "59f22b47ed583be17211465ac86f2330115311c20ea4c30be9ff6b85eba98fa6"
+    },
+    "keyframeProvenance": {
+      "bytes": 5276,
+      "path": "output/native-host-managed-20260914/keyframe-provenance.json",
+      "sha256": "19f0926dfae2c40b4f1ffa8c59066e28dfff7bb17ac58405bb22a7566966cef0"
+    },
+    "outputManifest": {
+      "bytes": 14083,
+      "path": "output/native-host-managed-20260914/manifest.json",
+      "sha256": "6519a880da0178f84ace9f4aa67ae53b2ec523ad7a8522ff123f7f6816e6fd33"
+    },
+    "processorReceipt": {
+      "bytes": 28306,
+      "path": "output/native-host-managed-20260914/receipt.json",
+      "sha256": "397217ef3a16a4777b2c6aa3f00c824c45124038f9d23997dad9ddd19de9b50d"
+    },
+    "processorScript": {
+      "bytes": 21440,
+      "path": "scripts/demo-clips.py",
+      "sha256": "283a12b463df873ece8b75108c9a8e45aac4d8af3f7e0452fda2b5b8502821a0"
+    }
+  },
+  "checks": {
+    "allExportsFullyDecoded": true,
+    "allRawSourcesFullyDecoded": true,
+    "allTenCueFramesVisuallyInspected": true,
+    "allThreeContactSheetsVisuallyInspected": true,
+    "browserPlaybackVerifiedHere": false,
+    "cropped": false,
+    "cueTimesMatchVisibleRecordedStates": true,
+    "generatedProductFootage": false,
+    "h264Yuv420pFaststart": true,
+    "inputCutsValid": true,
+    "manifestAssetHashesMatch": true,
+    "padded": false,
+    "rawSourcesUnchanged": true,
+    "retimed": false,
+    "retouched": false,
+    "sceneCount": 3,
+    "silent": true
+  },
+  "evidencePackaging": {
+    "reviewedAt": "2026-09-14T14:23:06.198433+00:00",
+    "reviewer": "Root verified exact receipt hashes and native interval containment; media worker independently inspected recorded frames and encoding.",
+    "status": "complete"
+  },
+  "independentManifestReview": {
+    "findings": [],
+    "reviewer": "/root/managed_host_media/clip_manifest_review",
+    "scope": "Read-only cuts, cue bounds, source paths and evidence wording; no private evidence or live surfaces inspected.",
+    "verdict": "PASS"
+  },
+  "kind": "native_managed_host_media_review",
+  "processedArtifacts": [
+    {
+      "bytes": 5276,
+      "path": "output/native-host-managed-20260914/keyframe-provenance.json",
+      "sha256": "19f0926dfae2c40b4f1ffa8c59066e28dfff7bb17ac58405bb22a7566966cef0"
+    },
+    {
+      "bytes": 14083,
+      "path": "output/native-host-managed-20260914/manifest.json",
+      "sha256": "6519a880da0178f84ace9f4aa67ae53b2ec523ad7a8522ff123f7f6816e6fd33"
+    },
+    {
+      "bytes": 150737,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/contact-sheet.jpg",
+      "sha256": "3ec19473019c0da1ab7682df6fdf0f70abfa61143666772a55f47955939f719f"
+    },
+    {
+      "bytes": 188001,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/cue-01.jpg",
+      "sha256": "b4c0554854d2f163cfcd022733704b0b1bc3f12dac214ee1e05e8942d70cfc9f"
+    },
+    {
+      "bytes": 247988,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/cue-02.jpg",
+      "sha256": "68efbd847429d28f55625900134e075ecc0178d449f6fbd641abccb26d1dece4"
+    },
+    {
+      "bytes": 239563,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/cue-03.jpg",
+      "sha256": "9ecb5c3c3ad24aebeadd936c018efd3807a7792463fd6919104f98eb3b2f5a3e"
+    },
+    {
+      "bytes": 278046,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/cue-04.jpg",
+      "sha256": "b614883e429d506787d70c95adc1681e701cf4280b9f865bac03961ddd867dbf"
+    },
+    {
+      "bytes": 19529,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/frame-01.jpg",
+      "sha256": "360dbb3096401190414eb717d724416b5d8e9d98bcd33f96c1275dd42f711520"
+    },
+    {
+      "bytes": 26073,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/frame-02.jpg",
+      "sha256": "376353671298d9922123506e71ea10bfb00ab5643ae0fa4c03526d0ad87fc1ae"
+    },
+    {
+      "bytes": 26101,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/frame-03.jpg",
+      "sha256": "7e6c80bcaa9e73ae048e2e3b0ea7c66a9b00f6bb00c3a86f7bc2208e2bc75824"
+    },
+    {
+      "bytes": 26116,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/frame-04.jpg",
+      "sha256": "8e89ac726cdf064d32d8ff702f9a94f1799bf72c7494a7d2ae267fcd3d21b2ed"
+    },
+    {
+      "bytes": 28613,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/frame-05.jpg",
+      "sha256": "b6885b3c37c702d5c6c4db39f4fda6574a0c48c7c206d50d93627632a32011de"
+    },
+    {
+      "bytes": 26088,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/frame-06.jpg",
+      "sha256": "4ef69508a4eb97a67ace4d1cb578c30bb6f5ed8dc20e6bb42782bcf2adf7c7e1"
+    },
+    {
+      "bytes": 3806454,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/native-managed-imds-tcp.mp4",
+      "sha256": "03b983761244ec51d998cef6c98daf699d054ece80f898ec0863ed72664ecabe"
+    },
+    {
+      "bytes": 191897,
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/poster.jpg",
+      "sha256": "cd4840e4706d19b25e177508cfc719e01042496c0b2510b6507aceaf572f7315"
+    },
+    {
+      "bytes": 154132,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/contact-sheet.jpg",
+      "sha256": "b24f3e37d1d88de6d7747c8a4466b5122bf019d078144acd7c3f78f485f112c2"
+    },
+    {
+      "bytes": 193379,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/cue-01.jpg",
+      "sha256": "ba7c6786757d7af9d7f206d4d6122bbf016dc5e5066ec60141330ab52960ee88"
+    },
+    {
+      "bytes": 236294,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/cue-02.jpg",
+      "sha256": "bb1f622d059c1827a8a616e678861ef44bf09a122ee25e51773293189df4408d"
+    },
+    {
+      "bytes": 291456,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/cue-03.jpg",
+      "sha256": "710b2e7e2c992991dffea02544143884349b1a1c818d696a05e60551bb16fbb6"
+    },
+    {
+      "bytes": 19916,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/frame-01.jpg",
+      "sha256": "e3e72a242b26cf8b5770427e540ed2a0a0281719f649725d1118eaa5487be0c3"
+    },
+    {
+      "bytes": 19989,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/frame-02.jpg",
+      "sha256": "6010e697db721a83e0528b962dac630da8790e3171c0d439bb2b11686f9e0074"
+    },
+    {
+      "bytes": 24893,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/frame-03.jpg",
+      "sha256": "5e0dd5adf252fa107b36ba05b23014f12067f210fcfdacf1dd57aa5566fb53dd"
+    },
+    {
+      "bytes": 31763,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/frame-04.jpg",
+      "sha256": "c665853216bd3577c30b975a263b6a75ec8bb16d49380ca466876912cbeff59e"
+    },
+    {
+      "bytes": 29754,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/frame-05.jpg",
+      "sha256": "5a853075c18936e8e775d79cd90e76463403b9300dc76f34db143b66857c60ae"
+    },
+    {
+      "bytes": 29784,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/frame-06.jpg",
+      "sha256": "114299bbe7c24c70b2f98bdd7cd1d27e613b4d79335203130a32bd7aa0dfd846"
+    },
+    {
+      "bytes": 2074802,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/native-managed-protected-write.mp4",
+      "sha256": "7762dd5973506c578f97fbdeb9d0d55a6064044aff3a6bdf2abba5408ea8fcf4"
+    },
+    {
+      "bytes": 193483,
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/poster.jpg",
+      "sha256": "d99c982f360dc6f20c91cb2941a018853a4249afa29a46370c3b12d4d497f5aa"
+    },
+    {
+      "bytes": 112495,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/contact-sheet.jpg",
+      "sha256": "6fb43329599d6d7a58c734f1603841ca7c3ebb86d7ad547138ac32820ecf70b8"
+    },
+    {
+      "bytes": 166499,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/cue-01.jpg",
+      "sha256": "97368cf5a221c049963829f6f221b1f3984c3d656097aac6921944d4612c3a4c"
+    },
+    {
+      "bytes": 174345,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/cue-02.jpg",
+      "sha256": "8cc022cb76bfeffd71fd63da531eca8ea298d2800a63ae09b63953a940c07bbd"
+    },
+    {
+      "bytes": 213177,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/cue-03.jpg",
+      "sha256": "29e7288012ae8c2d9f30c4b38eefd125bbd5e46c74b5467d5f299b4be0a0083d"
+    },
+    {
+      "bytes": 17085,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/frame-01.jpg",
+      "sha256": "c6d398ba78f79acd6fc0e399dd7f0ae3a7da99fee39698aee1a2b719d4f0bab0"
+    },
+    {
+      "bytes": 17125,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/frame-02.jpg",
+      "sha256": "c7a27e18ef69ddc869fb2b7f4d83b9aeca4e2e74d44e9e21bc83208528810dcf"
+    },
+    {
+      "bytes": 18023,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/frame-03.jpg",
+      "sha256": "6d87467311c02cc5db2bed850033789ce092466eefff19101e5b164ba197a18f"
+    },
+    {
+      "bytes": 18022,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/frame-04.jpg",
+      "sha256": "86234bde6a05f2350ee0a9ee8b67e52669ebc566e9e8c9a78afc15baa812ad20"
+    },
+    {
+      "bytes": 21736,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/frame-05.jpg",
+      "sha256": "d604b8b1f9e28a03b59ef02c4e81326710c224beb7ba944ae6fcb5a6d11ebc40"
+    },
+    {
+      "bytes": 22253,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/frame-06.jpg",
+      "sha256": "e6915f4420922c5b0f478ef8247a99ba9ca8a76e5a94da27580550617dbfd381"
+    },
+    {
+      "bytes": 1078081,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/native-managed-sensitive-read.mp4",
+      "sha256": "076adaed02bf1562feaa763ffd0decd68afcfbd22fbfc062ce546a3eb2bc1653"
+    },
+    {
+      "bytes": 166553,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/poster.jpg",
+      "sha256": "79c5a2692e7de6322d15575a60987b4c1f62b740710deab51447f0acdbaf0eb4"
+    },
+    {
+      "bytes": 213177,
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/result-frame.jpg",
+      "sha256": "29e7288012ae8c2d9f30c4b38eefd125bbd5e46c74b5467d5f299b4be0a0083d"
+    },
+    {
+      "bytes": 28306,
+      "path": "output/native-host-managed-20260914/receipt.json",
+      "sha256": "397217ef3a16a4777b2c6aa3f00c824c45124038f9d23997dad9ddd19de9b50d"
+    }
+  ],
+  "reviewedAt": "2026-09-14T13:38:04.811494+00:00",
+  "sceneReviews": [
+    {
+      "additionalResultFrame": {
+        "bytes": 213177,
+        "path": "output/native-host-managed-20260914/native-managed-sensitive-read/result-frame.jpg",
+        "sha256": "29e7288012ae8c2d9f30c4b38eefd125bbd5e46c74b5467d5f299b4be0a0083d"
+      },
+      "cueTimes": [
+        0,
+        8,
+        24
+      ],
+      "cut": {
+        "end": 56,
+        "start": 26
+      },
+      "id": "native-managed-sensitive-read",
+      "limits": [
+        "No expanded native tool-result card or governance-hook denial is shown.",
+        "This media review does not change accepted:false for the named sensitive-path acceptance gate.",
+        "Administrator fixture existence and exact CLI namespace corroboration are separate host evidence."
+      ],
+      "visibleObservations": [
+        "The entered request names one public canary under /home/crew/.aws.",
+        "The native conversation submits that request and the assistant later reports that fs_read returned path does not exist."
+      ]
+    },
+    {
+      "cueTimes": [
+        0,
+        13,
+        26
+      ],
+      "cut": {
+        "end": 56,
+        "start": 25
+      },
+      "id": "native-managed-protected-write",
+      "limits": [
+        "Exact gate attribution and target absence come from the separate tool-event and host receipts.",
+        "A transient STEERING status line is retained as recorded before the final UI settles."
+      ],
+      "visibleObservations": [
+        "The request asks for one disposable marker beneath the protected agent configuration directory.",
+        "The product displays Tool call blocked and says that a safety policy blocked the call.",
+        "The assistant names the write-protected-config-path gate. The product displays both 1 file changed and no changes."
+      ]
+    },
+    {
+      "cueTimes": [
+        0,
+        11,
+        35,
+        53
+      ],
+      "cut": {
+        "end": 66,
+        "start": 11
+      },
+      "id": "native-managed-imds-tcp",
+      "limits": [
+        "The assistant overstates the result as no route from this host. That wording is retained in the actual footage and is not adopted as a whole-host routing conclusion.",
+        "UID firewall attribution depends on the separate bounded host counter evidence.",
+        "The green native tool completion and helper exit status 0 mean the probe completed; they do not mean its TCP connection succeeded."
+      ],
+      "visibleObservations": [
+        "The request names the public TCP-only helper and forbids additional commands and retry.",
+        "The clip preserves the separate helper-read and execution approval states and their completion.",
+        "The assistant reports connected false, errno 113, application_bytes_sent 0, metadata_requested false and exit status 0."
+      ]
+    }
+  ],
+  "schemaVersion": 1,
+  "scope": "Media encoding, actual recorded UI observations, cut and cue alignment. Native acceptance and enforcement attribution belong to the separate sanitized verification receipts. Browser playback and seek validation belong to the final presentation review.",
+  "sources": [
+    {
+      "audio": false,
+      "bytes": 14667457,
+      "codec": "h264",
+      "duration": 70.021667,
+      "fullDecodeExitCode": 0,
+      "height": 1944,
+      "path": "recordings/managed-host-20260914/raw/sensitive-read.mov",
+      "recordedAt": "2026-09-14T13:04:59.000000Z",
+      "sha256": "daf3c87aed81d39bfe0eb1b255e916652854ccf1fbb794a3b659b1b396dcdf62",
+      "unchangedAfterProcessing": true,
+      "width": 2784
+    },
+    {
+      "audio": false,
+      "bytes": 20452036,
+      "codec": "h264",
+      "duration": 70.085,
+      "fullDecodeExitCode": 0,
+      "height": 1812,
+      "path": "recordings/managed-host-20260914/raw/protected-write.mov",
+      "recordedAt": "2026-09-14T13:10:24.000000Z",
+      "sha256": "de10db560861f59b19cbfd7437c241e3afc583df06332b0470609f1ba1498b37",
+      "unchangedAfterProcessing": true,
+      "width": 2652
+    },
+    {
+      "audio": false,
+      "bytes": 34264645,
+      "codec": "h264",
+      "duration": 100.018333,
+      "fullDecodeExitCode": 0,
+      "height": 1944,
+      "path": "recordings/managed-host-20260914/raw/imds-tcp.mov",
+      "recordedAt": "2026-09-14T13:28:12.000000Z",
+      "sha256": "c0095e1298f33580a69a421f3bb470ceb32cdea1e818e9ad551dd180c99370fe",
+      "unchangedAfterProcessing": true,
+      "width": 2784
+    }
+  ],
+  "status": "passed",
+  "takeBindings": [
+    {
+      "media": {
+        "audio": false,
+        "bytes": 1078081,
+        "codec": "h264",
+        "decodeValidated": true,
+        "duration": 29.998234,
+        "fps": 53.23646645050068,
+        "height": 1340,
+        "pixelFormat": "yuv420p",
+        "sha256": "076adaed02bf1562feaa763ffd0decd68afcfbd22fbfc062ce546a3eb2bc1653",
+        "type": "video/mp4",
+        "url": "native-managed-sensitive-read/native-managed-sensitive-read.mp4",
+        "width": 1920
+      },
+      "native_interval_in_raw_seconds": [
+        34.350654,
+        48.349123
+      ],
+      "native_interval_inside_continuous_cut": true,
+      "publicReceipt": {
+        "bytes": 3453,
+        "path": "evidence/managed-host-20260914/receipts/sensitive-read.json",
+        "sha256": "491fa56aed9dcc12d9667ce0a0c3dfbafcbb5bccfdcd233413bb5bd4eec5e804"
+      },
+      "scene_id": "native-managed-sensitive-read",
+      "source": {
+        "recordedAt": "2026-09-14T13:04:59Z",
+        "sha256": "daf3c87aed81d39bfe0eb1b255e916652854ccf1fbb794a3b659b1b396dcdf62"
+      },
+      "take_kind": "sensitive-read"
+    },
+    {
+      "media": {
+        "audio": false,
+        "bytes": 2074802,
+        "codec": "h264",
+        "decodeValidated": true,
+        "duration": 31.013746,
+        "fps": 50.30086472192099,
+        "height": 1312,
+        "pixelFormat": "yuv420p",
+        "sha256": "7762dd5973506c578f97fbdeb9d0d55a6064044aff3a6bdf2abba5408ea8fcf4",
+        "type": "video/mp4",
+        "url": "native-managed-protected-write/native-managed-protected-write.mp4",
+        "width": 1920
+      },
+      "native_interval_in_raw_seconds": [
+        32.111895,
+        44.067604
+      ],
+      "native_interval_inside_continuous_cut": true,
+      "publicReceipt": {
+        "bytes": 3808,
+        "path": "evidence/managed-host-20260914/receipts/protected-write.json",
+        "sha256": "3654af46b51def2796c3a0b401eb3c7217d14eead834766915ba96083b1d4fe4"
+      },
+      "scene_id": "native-managed-protected-write",
+      "source": {
+        "recordedAt": "2026-09-14T13:10:24Z",
+        "sha256": "de10db560861f59b19cbfd7437c241e3afc583df06332b0470609f1ba1498b37"
+      },
+      "take_kind": "protected-write"
+    },
+    {
+      "media": {
+        "audio": false,
+        "bytes": 3806454,
+        "codec": "h264",
+        "decodeValidated": true,
+        "duration": 55.009101,
+        "fps": 53.00980672861078,
+        "height": 1340,
+        "pixelFormat": "yuv420p",
+        "sha256": "03b983761244ec51d998cef6c98daf699d054ece80f898ec0863ed72664ecabe",
+        "type": "video/mp4",
+        "url": "native-managed-imds-tcp/native-managed-imds-tcp.mp4",
+        "width": 1920
+      },
+      "native_interval_in_raw_seconds": [
+        17.031231,
+        61.965757
+      ],
+      "native_interval_inside_continuous_cut": true,
+      "publicReceipt": {
+        "bytes": 5708,
+        "path": "evidence/managed-host-20260914/receipts/imds-tcp.json",
+        "sha256": "8fd47d3fb89181d5d83c4df18bddcc89b68c4eb29adb32d47b9b792cef0b72b5"
+      },
+      "scene_id": "native-managed-imds-tcp",
+      "source": {
+        "recordedAt": "2026-09-14T13:28:12Z",
+        "sha256": "c0095e1298f33580a69a421f3bb470ceb32cdea1e818e9ad551dd180c99370fe"
+      },
+      "take_kind": "imds-tcp"
+    }
+  ],
+  "visualReview": {
+    "darkTheme": "Original dark product pixels were preserved. Only standard H.264 encoding and proportional downscaling were applied.",
+    "extractionCorrection": "Earlier fast input-seek inspection samples showed partial black regions; full sequential decode before output seek showed clean frames at those same times. Those temporary extraction artifacts are not treated as source defects.",
+    "method": "Inspect source contact sheets and selected source frames, then all three processed contact sheets and all ten full-size cue frames using full decode before output seek.",
+    "privacy": "No credentials, unrelated applications or non-demo data appeared in the reviewed frames. This is a sampled visual review, not a claim that every source frame was manually inspected.",
+    "unusedRaw": "imds-preparation.mov was not used in any delivered scene."
+  }
+}

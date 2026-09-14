@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": {
+    "dynamic19": true,
+    "prompt_includes_all19": true,
+    "grok_model_effort": true,
+    "claude_model_effort": true,
+    "filtered_cloud_api_env": true
+  },
+  "resolved_cli_paths": {
+    "grok": "/Users/noahsutter/.grok/downloads/grok-1.0.25-macos-aarch64",
+    "claude": "/opt/homebrew/Caskroom/claude-code@latest/2.1.267/claude"
+  },
+  "inference_started": false,
+  "packet_prepared": false
+}

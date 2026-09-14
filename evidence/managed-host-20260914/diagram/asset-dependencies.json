@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "artifact": {
+    "path": "kirocrew-managed-controls-diagram.html",
+    "bytes": 810624,
+    "sha256": "7fe23f0611ba37f0e4bd6dc7155bf336f4c4bd2a566a1352ca5e27dd381b11ab"
+  },
+  "required_asset_files": [
+    "kirocrew-managed-controls-diagram.html"
+  ],
+  "external_asset_dependencies": [],
+  "inline_script_count": 4,
+  "inline_style_count": 2,
+  "embedded_resource_count": 0,
+  "embedded_css_url_count": 34,
+  "navigation_links": [],
+  "scope": "Inherited static HTML/CSS resource inventory from the archived accepted diagram. Final HTML differs only in three plain-text card bullets and preserves the exact SVG. There are no added URLs or asset dependencies; no browser or network execution."
+}

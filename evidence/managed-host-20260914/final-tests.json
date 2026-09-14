@@ -1,0 +1,25 @@
+{
+  "kind": "managed_host_focused_local_validation",
+  "passed": true,
+  "tests_run": 106,
+  "failure_count": 0,
+  "error_count": 0,
+  "elapsed_seconds": 5.468,
+  "test_patterns": [
+    "test_review_native_host_take.py",
+    "test_native_namespace_readback.py",
+    "test_presentation_recipe.py",
+    "test_recorded_demo_server.py",
+    "test_demo_clips.py",
+    "test_native_deck_council.py"
+  ],
+  "deck_sha256": "587f500eaa2f42b343146c9942303855a38cff22c583719476e65284a725d8c1",
+  "scope": "Offline guards, native evidence classification, presentation rebuild and export isolation, media tooling and council packet contracts. No second live deployment.",
+  "sources": {
+    "scripts/review-native-host-take.py": "15c47901abff5c01f0ca75c200c4da4b6be22240121d8b795cf14221e07cc133",
+    "scripts/inspect-native-session-namespace.py": "60fd081fd703e692df7dd895c51353c307e965ea4e2ca83ac33ece6bc6780053",
+    "scripts/build-demo-presentation.py": "188dd8220744e1ec44669fc09a6d46ebbb8f12c3f734453e944c291b5be38e71",
+    "scripts/build-native-control-presentation.py": "18a2d10f1f0e72dcc23236c078147956ad16a4b596379601cbe27cafe0043766",
+    "scripts/build-native-admin-tour.py": "9a704136dfa0d8a65fc73d22faabc1c4ae12a0120e3e607ff8c5eead5a6e571c"
+  }
+}

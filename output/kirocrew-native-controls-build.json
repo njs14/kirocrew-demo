@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "builtAt": "2026-09-14T02:58:58.636830+00:00",
+  "builtAt": "2026-09-14T14:45:07.793812+00:00",
   "edition": "output/kirocrew-native-controls.html",
-  "editionSha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
+  "editionSha256": "587f500eaa2f42b343146c9942303855a38cff22c583719476e65284a725d8c1",
   "notes": "output/kirocrew-native-controls-notes.md",
-  "notesSha256": "0dda0d02f3b9bd13f51a995ef88b0704d23881712a95da37091255160ee3c111",
+  "notesSha256": "a669f26788d8f36522d82045de1764ea82a0ad672e0cf704890cadf721666e94",
   "publicManifest": "output/kirocrew-native-controls-manifest.json",
-  "slideCount": 16,
-  "sceneCount": 9,
+  "slideCount": 19,
+  "sceneCount": 12,
   "synthetic": false,
   "singleEndpointControlBoxCount": 1,
   "processedManifests": {
@@ -15,12 +15,13 @@
     "output/native-memory-clip-20260913/manifest.json": "3565112184e648433a295349127b60181e80cd6517f67a46604edf66477b127d",
     "output/native-host-clips-20260913/manifest.json": "0539ebc7f303cefe42d4fa554aa986d9ff431e4a3448d9dc10447cf9064b2e52",
     "output/native-managed-clip-20260914/manifest.json": "f2a0ca0d1e54e021ebe4bd0cb9c2e06119fade72f631901ec2c483bacd8b5afb",
-    "docs/HOST-CONTROL-SCENARIOS.md": "c5ae04a8b7bdea3f6bb35b58e7c2caf5cba13aa08a29740a06b4c597120cff73",
-    "evidence/enterprise-managed/20260913/archify/asset-dependencies.json": "80c071fdbccee7a21925514a4b566a981b99fce981eb78e4e1a4e611bbf73adf",
-    "kirocrew-managed-controls-diagram.html": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763",
-    "evidence/admin-console/native-20260913/tour-build.json": "acbcec28f25e0eaaae626de4d01f3d2559e59f2a164588e1606a5658a3d7e65a",
-    ".agents/skills/kirocrew-demo/SKILL.md": "df041ff167652ad63484a27138ac4f2aee1c665e00a28cbd868b0c9640abb166",
-    "docs/MANAGED-DEMO.md": "c4a1c0af079b08667071b4bf32567ae6bb9e8aea873e07033818bdc296341de9",
+    "output/native-host-managed-20260914/manifest.json": "6519a880da0178f84ace9f4aa67ae53b2ec523ad7a8522ff123f7f6816e6fd33",
+    "output/native-host-managed-20260914/keyframe-provenance.json": "19f0926dfae2c40b4f1ffa8c59066e28dfff7bb17ac58405bb22a7566966cef0",
+    "evidence/managed-host-20260914/diagram/asset-dependencies.json": "84c3985e24520cef9a02af1101e20ef55765d123a0651a819fc2c025a37ec5d6",
+    "kirocrew-managed-controls-diagram.html": "7fe23f0611ba37f0e4bd6dc7155bf336f4c4bd2a566a1352ca5e27dd381b11ab",
+    "evidence/admin-console/native-20260913/tour-build.json": "ee7d0b236fa933feb3519d3875afcc943b3ac6c4592e51c771b59d047e9fd81b",
+    ".agents/skills/kirocrew-demo/SKILL.md": "413d4ec277300c5799e95d9b09d398eda58c99a50b59da6245e43b3129724fb8",
+    "docs/MANAGED-DEMO.md": "81a9bd1dc19b393dc239e2dedcbc4513385d5226cdaac2e397fae9ca713b6b38",
     "docs/LIVE-SETUP.md": "3dd408177b5a7030d2c2c242e696bd3f7f29740ec1f1970856372f481a5fd09d"
   },
   "supportingReceipts": [
@@ -165,6 +166,16 @@
       "sha256": "6afaef5379cb72d29f9ca06baff7dd1cddc5c68974341f548a649d81d0af9172"
     },
     {
+      "path": "evidence/managed-host-20260914/index.json",
+      "url": "evidence/managed-host-20260914/index.json",
+      "sha256": "c7ea50639058346517fe79bc50ea4e07dbd07041a6d6021de01c969a943f5489"
+    },
+    {
+      "path": "evidence/managed-host-20260914/media-review.json",
+      "url": "evidence/managed-host-20260914/media-review.json",
+      "sha256": "b3d81b563ad60602e0d04b7506ae59208869316d7767fb886eac617d7b24c528"
+    },
+    {
       "path": "evidence/enterprise-managed/20260913/policy-verify.json",
       "url": "evidence/enterprise-managed/20260913/policy-verify.json",
       "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
@@ -203,6 +214,41 @@
       "path": "evidence/enterprise-managed/20260913/media-review.json",
       "url": "evidence/enterprise-managed/20260913/media-review.json",
       "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd"
+    },
+    {
+      "path": "evidence/managed-host-20260914/receipts/host-state-snapshots.json",
+      "url": "evidence/managed-host-20260914/receipts/host-state-snapshots.json",
+      "sha256": "997ef6d1b446fb8c35dbab1088d1a892db5501b04428407e798b7126e52321e5"
+    },
+    {
+      "path": "evidence/managed-host-20260914/findings.md",
+      "url": "evidence/managed-host-20260914/findings.md",
+      "sha256": "2afac39efedafbc155ce5f783ec77fe5daab6d022c57501d628c6a8f7f6dad40"
+    },
+    {
+      "path": "evidence/managed-host-20260914/public-evidence-review.json",
+      "url": "evidence/managed-host-20260914/public-evidence-review.json",
+      "sha256": "a7b6fd7e5102a793442fa50e0f438b6302b826d01970c868611b8a42830903d1"
+    },
+    {
+      "path": "evidence/managed-host-20260914/receipts/sensitive-read.json",
+      "url": "evidence/managed-host-20260914/receipts/sensitive-read.json",
+      "sha256": "491fa56aed9dcc12d9667ce0a0c3dfbafcbb5bccfdcd233413bb5bd4eec5e804"
+    },
+    {
+      "path": "evidence/managed-host-20260914/receipts/sensitive-namespace.json",
+      "url": "evidence/managed-host-20260914/receipts/sensitive-namespace.json",
+      "sha256": "7d93cfe4cb1efa0c0a4f6aa4d9013db5f747d54915fee3d1034998aa18f979ad"
+    },
+    {
+      "path": "evidence/managed-host-20260914/receipts/protected-write.json",
+      "url": "evidence/managed-host-20260914/receipts/protected-write.json",
+      "sha256": "3654af46b51def2796c3a0b401eb3c7217d14eead834766915ba96083b1d4fe4"
+    },
+    {
+      "path": "evidence/managed-host-20260914/receipts/imds-tcp.json",
+      "url": "evidence/managed-host-20260914/receipts/imds-tcp.json",
+      "sha256": "8fd47d3fb89181d5d83c4df18bddcc89b68c4eb29adb32d47b9b792cef0b72b5"
     }
   ],
   "serveFiles": {
@@ -346,6 +392,51 @@
       "bytes": 7208,
       "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
     },
+    "/native-host-managed-20260914/native-managed-sensitive-read/native-managed-sensitive-read.mp4": {
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/native-managed-sensitive-read.mp4",
+      "bytes": 1078081,
+      "sha256": "076adaed02bf1562feaa763ffd0decd68afcfbd22fbfc062ce546a3eb2bc1653"
+    },
+    "/native-host-managed-20260914/native-managed-sensitive-read/poster.jpg": {
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/poster.jpg",
+      "bytes": 166553,
+      "sha256": "79c5a2692e7de6322d15575a60987b4c1f62b740710deab51447f0acdbaf0eb4"
+    },
+    "/native-host-managed-20260914/native-managed-sensitive-read/contact-sheet.jpg": {
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/contact-sheet.jpg",
+      "bytes": 112495,
+      "sha256": "6fb43329599d6d7a58c734f1603841ca7c3ebb86d7ad547138ac32820ecf70b8"
+    },
+    "/native-host-managed-20260914/native-managed-protected-write/native-managed-protected-write.mp4": {
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/native-managed-protected-write.mp4",
+      "bytes": 2074802,
+      "sha256": "7762dd5973506c578f97fbdeb9d0d55a6064044aff3a6bdf2abba5408ea8fcf4"
+    },
+    "/native-host-managed-20260914/native-managed-protected-write/poster.jpg": {
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/poster.jpg",
+      "bytes": 193483,
+      "sha256": "d99c982f360dc6f20c91cb2941a018853a4249afa29a46370c3b12d4d497f5aa"
+    },
+    "/native-host-managed-20260914/native-managed-protected-write/contact-sheet.jpg": {
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/contact-sheet.jpg",
+      "bytes": 154132,
+      "sha256": "b24f3e37d1d88de6d7747c8a4466b5122bf019d078144acd7c3f78f485f112c2"
+    },
+    "/native-host-managed-20260914/native-managed-imds-tcp/native-managed-imds-tcp.mp4": {
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/native-managed-imds-tcp.mp4",
+      "bytes": 3806454,
+      "sha256": "03b983761244ec51d998cef6c98daf699d054ece80f898ec0863ed72664ecabe"
+    },
+    "/native-host-managed-20260914/native-managed-imds-tcp/poster.jpg": {
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/poster.jpg",
+      "bytes": 191897,
+      "sha256": "cd4840e4706d19b25e177508cfc719e01042496c0b2510b6507aceaf572f7315"
+    },
+    "/native-host-managed-20260914/native-managed-imds-tcp/contact-sheet.jpg": {
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/contact-sheet.jpg",
+      "bytes": 150737,
+      "sha256": "3ec19473019c0da1ab7682df6fdf0f70abfa61143666772a55f47955939f719f"
+    },
     "/evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": {
       "path": "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
       "bytes": 14113,
@@ -486,6 +577,16 @@
       "bytes": 6569,
       "sha256": "6afaef5379cb72d29f9ca06baff7dd1cddc5c68974341f548a649d81d0af9172"
     },
+    "/evidence/managed-host-20260914/index.json": {
+      "path": "evidence/managed-host-20260914/index.json",
+      "bytes": 2346,
+      "sha256": "c7ea50639058346517fe79bc50ea4e07dbd07041a6d6021de01c969a943f5489"
+    },
+    "/evidence/managed-host-20260914/media-review.json": {
+      "path": "evidence/managed-host-20260914/media-review.json",
+      "bytes": 19570,
+      "sha256": "b3d81b563ad60602e0d04b7506ae59208869316d7767fb886eac617d7b24c528"
+    },
     "/evidence/enterprise-managed/20260913/policy-verify.json": {
       "path": "evidence/enterprise-managed/20260913/policy-verify.json",
       "bytes": 625,
@@ -561,30 +662,90 @@
       "bytes": 103418,
       "sha256": "480df161fc232da1308db9cbc37e0648b6b9d06c71ebef7d440e8029f66a2666"
     },
-    "/docs/HOST-CONTROL-SCENARIOS.md": {
-      "path": "docs/HOST-CONTROL-SCENARIOS.md",
-      "bytes": 22205,
-      "sha256": "c5ae04a8b7bdea3f6bb35b58e7c2caf5cba13aa08a29740a06b4c597120cff73"
+    "/evidence/managed-host-20260914/receipts/host-state-snapshots.json": {
+      "path": "evidence/managed-host-20260914/receipts/host-state-snapshots.json",
+      "bytes": 31137,
+      "sha256": "997ef6d1b446fb8c35dbab1088d1a892db5501b04428407e798b7126e52321e5"
+    },
+    "/evidence/managed-host-20260914/findings.md": {
+      "path": "evidence/managed-host-20260914/findings.md",
+      "bytes": 2183,
+      "sha256": "2afac39efedafbc155ce5f783ec77fe5daab6d022c57501d628c6a8f7f6dad40"
+    },
+    "/evidence/managed-host-20260914/public-evidence-review.json": {
+      "path": "evidence/managed-host-20260914/public-evidence-review.json",
+      "bytes": 2638,
+      "sha256": "a7b6fd7e5102a793442fa50e0f438b6302b826d01970c868611b8a42830903d1"
+    },
+    "/native-host-managed-20260914/keyframe-provenance.json": {
+      "path": "output/native-host-managed-20260914/keyframe-provenance.json",
+      "bytes": 5276,
+      "sha256": "19f0926dfae2c40b4f1ffa8c59066e28dfff7bb17ac58405bb22a7566966cef0"
+    },
+    "/evidence/managed-host-20260914/receipts/sensitive-read.json": {
+      "path": "evidence/managed-host-20260914/receipts/sensitive-read.json",
+      "bytes": 3453,
+      "sha256": "491fa56aed9dcc12d9667ce0a0c3dfbafcbb5bccfdcd233413bb5bd4eec5e804"
+    },
+    "/evidence/managed-host-20260914/receipts/sensitive-namespace.json": {
+      "path": "evidence/managed-host-20260914/receipts/sensitive-namespace.json",
+      "bytes": 7742,
+      "sha256": "7d93cfe4cb1efa0c0a4f6aa4d9013db5f747d54915fee3d1034998aa18f979ad"
+    },
+    "/native-host-managed-20260914/native-managed-sensitive-read/cue-03.jpg": {
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/cue-03.jpg",
+      "bytes": 213177,
+      "sha256": "29e7288012ae8c2d9f30c4b38eefd125bbd5e46c74b5467d5f299b4be0a0083d"
+    },
+    "/evidence/managed-host-20260914/receipts/protected-write.json": {
+      "path": "evidence/managed-host-20260914/receipts/protected-write.json",
+      "bytes": 3808,
+      "sha256": "3654af46b51def2796c3a0b401eb3c7217d14eead834766915ba96083b1d4fe4"
+    },
+    "/native-host-managed-20260914/native-managed-protected-write/cue-03.jpg": {
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/cue-03.jpg",
+      "bytes": 291456,
+      "sha256": "710b2e7e2c992991dffea02544143884349b1a1c818d696a05e60551bb16fbb6"
+    },
+    "/evidence/managed-host-20260914/receipts/imds-tcp.json": {
+      "path": "evidence/managed-host-20260914/receipts/imds-tcp.json",
+      "bytes": 5708,
+      "sha256": "8fd47d3fb89181d5d83c4df18bddcc89b68c4eb29adb32d47b9b792cef0b72b5"
+    },
+    "/native-host-managed-20260914/native-managed-imds-tcp/cue-04.jpg": {
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/cue-04.jpg",
+      "bytes": 278046,
+      "sha256": "b614883e429d506787d70c95adc1681e701cf4280b9f865bac03961ddd867dbf"
     },
     "/kirocrew-managed-controls-diagram.html": {
       "path": "kirocrew-managed-controls-diagram.html",
-      "bytes": 810663,
-      "sha256": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763"
+      "bytes": 810624,
+      "sha256": "7fe23f0611ba37f0e4bd6dc7155bf336f4c4bd2a566a1352ca5e27dd381b11ab"
     },
-    "/evidence/enterprise-managed/20260913/archify/asset-dependencies.json": {
-      "path": "evidence/enterprise-managed/20260913/archify/asset-dependencies.json",
-      "bytes": 660,
-      "sha256": "80c071fdbccee7a21925514a4b566a981b99fce981eb78e4e1a4e611bbf73adf"
+    "/evidence/managed-host-20260914/diagram/asset-dependencies.json": {
+      "path": "evidence/managed-host-20260914/diagram/asset-dependencies.json",
+      "bytes": 724,
+      "sha256": "84c3985e24520cef9a02af1101e20ef55765d123a0651a819fc2c025a37ec5d6"
     },
     "/kirocrew-admin-tour.html": {
       "path": "output/kirocrew-admin-tour.html",
-      "bytes": 3679148,
-      "sha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a"
+      "bytes": 4365485,
+      "sha256": "a7b73fd8ca411cb6a5ebf2b1d0534fc0886f2230f3c9151363408d27018b33fc"
     },
     "/kirocrew-admin-tour.md": {
       "path": "output/kirocrew-admin-tour.md",
-      "bytes": 26723,
-      "sha256": "0ae7d24098fbd374356791d2e9bc823ce901d1c80b92d4c4d46853c0d3382294"
+      "bytes": 32072,
+      "sha256": "8e0e00945503f7ee54e051217f1bc2c1bb400ac6b1630f4a7386538672670f66"
+    },
+    "/evidence/managed-host-20260914/tour-input.json": {
+      "path": "evidence/managed-host-20260914/tour-input.json",
+      "bytes": 4352,
+      "sha256": "f8829a051917d7592fb407ff95193235d30f96332863fe446b460fa70dfcc758"
+    },
+    "/native-host-managed-20260914/manifest.json": {
+      "path": "output/native-host-managed-20260914/manifest.json",
+      "bytes": 14083,
+      "sha256": "6519a880da0178f84ace9f4aa67ae53b2ec523ad7a8522ff123f7f6816e6fd33"
     },
     "/infrastructure/mcp-enforcement/README.md": {
       "path": "infrastructure/mcp-enforcement/README.md",
@@ -600,11 +761,6 @@
       "path": "evidence/admin-console/browser-receipt.json",
       "bytes": 3664,
       "sha256": "7ec5239c3cb55087dbab974ab64a3c485fdf6038a4136952a4a933f3dc5cd317"
-    },
-    "/kirocrew-admin-findings.md": {
-      "path": "output/kirocrew-admin-findings.md",
-      "bytes": 7075,
-      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
     },
     "/evidence/native-client-demo/20260913-ui2/receipt-publication.json": {
       "path": "evidence/native-client-demo/20260913-ui2/receipt-publication.json",
@@ -630,6 +786,11 @@
       "path": "output/kirocrew-native-admin-findings.md",
       "bytes": 9214,
       "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
+    },
+    "/kirocrew-admin-findings.md": {
+      "path": "output/kirocrew-admin-findings.md",
+      "bytes": 9987,
+      "sha256": "0a1839c09d46607d0961d8367bd79ad22ef43e150e80355cb5c0f9d17c82e415"
     },
     "/admin-console-native-20260913/07-gateway-overview.png": {
       "path": "output/admin-console-native-20260913/07-gateway-overview.png",
@@ -726,30 +887,70 @@
       "bytes": 118292,
       "sha256": "a24e67be86372e9c76ac4602af6832520c46deea4f587360c929ff7355d40734"
     },
+    "/evidence/managed-host-20260914/screenshots/protected-write-result.jpg": {
+      "path": "evidence/managed-host-20260914/screenshots/protected-write-result.jpg",
+      "bytes": 157753,
+      "sha256": "2d73e4c23e149bb98978a1684c944b5fcca4c84455429210c7c01281c596a4ea"
+    },
+    "/evidence/managed-host-20260914/screenshots/imds-tcp-result.jpg": {
+      "path": "evidence/managed-host-20260914/screenshots/imds-tcp-result.jpg",
+      "bytes": 137791,
+      "sha256": "850e61c9db072145f75d8c6e43517b3050a94a8306a24edf573e8bbb109e7c04"
+    },
     "/evidence/admin-console/native-20260913/tour-build.json": {
       "path": "evidence/admin-console/native-20260913/tour-build.json",
-      "bytes": 23280,
-      "sha256": "acbcec28f25e0eaaae626de4d01f3d2559e59f2a164588e1606a5658a3d7e65a"
+      "bytes": 29391,
+      "sha256": "ee7d0b236fa933feb3519d3875afcc943b3ac6c4592e51c771b59d047e9fd81b"
     },
-    "/output/kirocrew-admin-findings.md": {
-      "path": "output/kirocrew-admin-findings.md",
-      "bytes": 7075,
-      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    "/output/native-host-managed-20260914/native-managed-sensitive-read/cue-03.jpg": {
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/cue-03.jpg",
+      "bytes": 213177,
+      "sha256": "29e7288012ae8c2d9f30c4b38eefd125bbd5e46c74b5467d5f299b4be0a0083d"
+    },
+    "/output/native-host-managed-20260914/manifest.json": {
+      "path": "output/native-host-managed-20260914/manifest.json",
+      "bytes": 14083,
+      "sha256": "6519a880da0178f84ace9f4aa67ae53b2ec523ad7a8522ff123f7f6816e6fd33"
+    },
+    "/output/native-host-managed-20260914/keyframe-provenance.json": {
+      "path": "output/native-host-managed-20260914/keyframe-provenance.json",
+      "bytes": 5276,
+      "sha256": "19f0926dfae2c40b4f1ffa8c59066e28dfff7bb17ac58405bb22a7566966cef0"
+    },
+    "/output/native-host-managed-20260914/native-managed-sensitive-read/native-managed-sensitive-read.mp4": {
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/native-managed-sensitive-read.mp4",
+      "bytes": 1078081,
+      "sha256": "076adaed02bf1562feaa763ffd0decd68afcfbd22fbfc062ce546a3eb2bc1653"
+    },
+    "/output/native-host-managed-20260914/native-managed-protected-write/native-managed-protected-write.mp4": {
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/native-managed-protected-write.mp4",
+      "bytes": 2074802,
+      "sha256": "7762dd5973506c578f97fbdeb9d0d55a6064044aff3a6bdf2abba5408ea8fcf4"
+    },
+    "/output/native-host-managed-20260914/native-managed-imds-tcp/native-managed-imds-tcp.mp4": {
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/native-managed-imds-tcp.mp4",
+      "bytes": 3806454,
+      "sha256": "03b983761244ec51d998cef6c98daf699d054ece80f898ec0863ed72664ecabe"
     },
     "/output/kirocrew-native-admin-findings.md": {
       "path": "output/kirocrew-native-admin-findings.md",
       "bytes": 9214,
       "sha256": "8184cdd303f6727b02e3863c3b350fcd4c5ad863c66efef685bad60b87ee0c39"
     },
+    "/output/kirocrew-admin-findings.md": {
+      "path": "output/kirocrew-admin-findings.md",
+      "bytes": 9987,
+      "sha256": "0a1839c09d46607d0961d8367bd79ad22ef43e150e80355cb5c0f9d17c82e415"
+    },
     "/.agents/skills/kirocrew-demo/SKILL.md": {
       "path": ".agents/skills/kirocrew-demo/SKILL.md",
-      "bytes": 2662,
-      "sha256": "df041ff167652ad63484a27138ac4f2aee1c665e00a28cbd868b0c9640abb166"
+      "bytes": 2960,
+      "sha256": "413d4ec277300c5799e95d9b09d398eda58c99a50b59da6245e43b3129724fb8"
     },
     "/docs/MANAGED-DEMO.md": {
       "path": "docs/MANAGED-DEMO.md",
-      "bytes": 6765,
-      "sha256": "c4a1c0af079b08667071b4bf32567ae6bb9e8aea873e07033818bdc296341de9"
+      "bytes": 11274,
+      "sha256": "81a9bd1dc19b393dc239e2dedcbc4513385d5226cdaac2e397fae9ca713b6b38"
     },
     "/docs/LIVE-SETUP.md": {
       "path": "docs/LIVE-SETUP.md",
@@ -758,22 +959,22 @@
     },
     "/kirocrew-native-controls-notes.md": {
       "path": "output/kirocrew-native-controls-notes.md",
-      "bytes": 35044,
-      "sha256": "0dda0d02f3b9bd13f51a995ef88b0704d23881712a95da37091255160ee3c111"
+      "bytes": 38803,
+      "sha256": "a669f26788d8f36522d82045de1764ea82a0ad672e0cf704890cadf721666e94"
     },
     "/kirocrew-native-controls-manifest.json": {
       "path": "output/kirocrew-native-controls-manifest.json",
-      "bytes": 46081,
-      "sha256": "74e12ac4f7aff4d6b56d92ffd9f1093ecda96ac6fced2b859c372837156fc8ba"
+      "bytes": 60957,
+      "sha256": "53e1db7a7b16dfdbd244385af29b90cdd1c8408480107f9df77ae7f12c30d460"
     },
     "/kirocrew-native-controls.html": {
       "path": "output/kirocrew-native-controls.html",
-      "bytes": 2033388,
-      "sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b"
+      "bytes": 2046398,
+      "sha256": "587f500eaa2f42b343146c9942303855a38cff22c583719476e65284a725d8c1"
     }
   },
   "buildInputs": {
-    "scripts/build-native-control-presentation.py": "831312056d217d6961c0862cfa64429f21e50ac60cff0e6e66328c38fe6234b1",
+    "scripts/build-native-control-presentation.py": "18a2d10f1f0e72dcc23236c078147956ad16a4b596379601cbe27cafe0043766",
     "scripts/build-recorded-demo-presentation.py": "4b271074f028fdcf56f37fdf233eecac83405265efff734c5b20c90f20cd3dfb",
     "presentation/slides.css": "4fff4b0514279836ad7ed05fe94d08d4996c90ea9555bfa0425b74230753e7ce",
     "presentation/slide-runtime.js": "a90bfa3c9feb9de983fe91b01b70995424d21c7190f83b357fb702a090c9e2d9",
@@ -792,19 +993,15 @@
   "browserReview": "Required separately for this edition hash",
   "editorialReview": "Post-council No AI Slop self-review applied to this managed-edition copy; exact incorporation receipt is separate.",
   "editionParameters": {
-    "pendingControls": [
-      "Sensitive-path read",
-      "Protected-path write",
-      "IMDS execution"
-    ],
+    "pendingControls": [],
     "limitations": [
-      "The earlier sensitive-path and anonymous-helper attempts ended in model-only responses, with no native tool execution. The later anonymous-helper execution has separate reviewed authentication evidence. Sensitive-path enforcement remains pending.",
+      "Earlier sensitive-path and anonymous-helper attempts ended before native execution. Their dated receipts are preserved; the new September 14 sensitive take and later namespace readback have their own evidence.",
       "The command clip starts after the denial and shows an assistant summary with collapsed tool history. Persisted native history and scoped SEL establish the configured Crew rule as the enforcer; the request-to-denial recording is missing.",
       "The authentication excerpt starts at execution approval. The earlier source read required its own Allow once. The clip ends with the assistant's HTTP 403 summary; its native Output stays collapsed. Separate exact-input, native-result and Gateway evidence support attribution.",
-      "The IMDS helper's source read completed. Its execution approval expired unanswered after ten minutes; no helper execution or metadata firewall result was observed. The earlier pending-at-observer-expiry receipt remains preserved as a historical snapshot.",
+      "The earlier IMDS execution approval expired without a run. A separate September 14 take completed one native execution after separate source-read and execution approvals; it has its own counter attribution.",
       "The custom marker-command rule was removed after its take. The recording describes that earlier configuration; replay does not mean the rule remains active. The cleanup receipt verifies the exact marker rule is absent, but does not establish full preservation of every unrelated prior custom rule."
     ],
     "recordingCoverageOverrides": {},
-    "diagramBuild": "evidence/enterprise-managed/20260913/archify/asset-dependencies.json"
+    "diagramBuild": "evidence/managed-host-20260914/diagram/asset-dependencies.json"
   }
 }

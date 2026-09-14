@@ -1,0 +1,21 @@
+{
+  "kind": "read_only_mac_client_state",
+  "observed_at": "2026-09-14T13:35:51.793373+00:00",
+  "platform": "macOS",
+  "app_version": "0.7.0-nightly.20260913t061222",
+  "app_build": "0.7.0-nightly.20260913t061222",
+  "bundle_id": "com.amazon.kiro.crew",
+  "local_gateway_enabled": false,
+  "remote_port": "5599",
+  "selected_remote_entry_matches": true,
+  "listeners": {
+    "5476": [],
+    "5599": [
+      "p44556",
+      "cssh",
+      "f4",
+      "n127.0.0.1:5599"
+    ]
+  },
+  "native_result_scope": "Three distinct completed native host-control turns on the EC2 Gateway; receipt binding is separate."
+}

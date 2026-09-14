@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "kind": "native_demo_status",
+  "updated_at": "2026-09-14T03:30:46.368529+00:00",
+  "status": "managed_policy_native_denial_and_presentation_verified",
+  "current_guide": "docs/MANAGED-DEMO.md",
+  "endpoint_client_scope": "macOS only",
+  "historical_status": {
+    "path": "evidence/enterprise-managed/accepted-before-managed/current-status.json",
+    "sha256": "19171a4079811f57ac02a6e41d9756f410e1e0149361c336d6fb8269de9609ed"
+  },
+  "managed_policy": {
+    "status": "active_and_native_mcp_denial_verified",
+    "authority": "Root-owned policy file and systemd drop-in on the EC2 execution host; host root retains administration.",
+    "policy_sha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87",
+    "distribution": "Unsigned local file fetched at Gateway startup; fail_closed.",
+    "controls": [
+      "Minimum cc sandbox level",
+      "YOLO mode denied",
+      "@aws-enforcement/crew_denied denied by policy",
+      "Built-in S3 upload command rule pinned",
+      "Specified command and filesystem restrictions configured"
+    ],
+    "exact_mutable_mcp_duplicate_removed": true,
+    "dashboard_terminal_enabled": false,
+    "gateway_cgroup_pty_probe": "Crew-identity disposable child received EPERM; existing processes were not moved.",
+    "native_process_observation": "Existing Kiro CLI descendants had NoNewPrivs=1, Seccomp=2 and mount namespaces distinct from the Gateway; exact-tool sandbox behavior remains unverified."
+  },
+  "client": {
+    "local_gateway_enabled": false,
+    "quit_and_relaunch_verified": true,
+    "remote_tunnel_continuity_observed": true,
+    "subsequent_native_execution_verified": true,
+    "backend": "original Kiro CLI on EC2"
+  },
+  "native_managed_results": [
+    {
+      "run_id": "managed-20260914-ui3",
+      "outcomes": [
+        "Allowed S3 read after native approval",
+        "Automatic governance-policy denial before MCP arrival"
+      ],
+      "retained_video": false
+    },
+    {
+      "run_id": "managed-20260914-ui4",
+      "outcomes": [
+        "One fresh automatic governance-policy denial without a permission prompt"
+      ],
+      "retained_video": true,
+      "clip_seconds": 40,
+      "allowed_read_filmed": false,
+      "service_audit_arrivals_in_completed_interval": 0
+    }
+  ],
+  "user_mcp_ui": {
+    "server": "aws-enforcement",
+    "tools": 4,
+    "scope": "Crew only; provider-global settings remain off.",
+    "staged_restriction_capture": "Pending disable was discarded without applying.",
+    "policy_indicator_limit": "Per-tool availability toggles have no separate policy-lock badge; availability does not remove the server policy.",
+    "session_inventory": "Server started; 0/4 specifications loaded, deferred until needed."
+  },
+  "presentation": {
+    "path": "output/kirocrew-native-controls.html",
+    "integration_status": "complete",
+    "historical_native_clips": 8,
+    "historical_clip_scope": "The first eight clips predate managed-policy activation.",
+    "fresh_clip": "output/native-managed-clip-20260914/manifest.json",
+    "media_review": "passed_encoding_and_visual_review",
+    "browser_playback_cue_and_slide_pause_review": "pass",
+    "council_and_final_editorial_review": "Both requested models reviewed the frozen candidate; agreed changes incorporated, then direct No AI Slop edit and exact-final browser QA.",
+    "slides": 16,
+    "native_clips": 9
+  },
+  "admin_tour": {
+    "path": "output/kirocrew-admin-tour.html",
+    "managed_screenshot_integration": "complete",
+    "stops": 10,
+    "screenshots": 26,
+    "browser_review": "pass; all stops, all images decoded, zoom opened and closed"
+  },
+  "replication": {
+    "skill": ".agents/skills/kirocrew-demo/SKILL.md",
+    "dependency_guide": "docs/DEPENDENCIES.md",
+    "live_setup": "docs/LIVE-SETUP.md",
+    "live_setup_stages": 10,
+    "runtime_bundle": "docs/ARM-RUNTIME-BUNDLE.md",
+    "infrastructure": "CloudFormation uses an existing VPC and subnet, with SSH ingress restricted to one client IPv4 /32; no added network infrastructure.",
+    "new_deployment_acceptance": "Requires its own product sign-ins and native control observations.",
+    "local_tooling_tests": {
+      "passed": 150,
+      "scope": "Policy, ARM bundle, MCP setup, live stages, Mac setup, App Kit and dependency helpers; no second complete live deployment."
+    },
+    "presentation_clean_copy": {
+      "status": "pass",
+      "slides": 16,
+      "clips": 9,
+      "source_files": 163,
+      "skill_linked_files": 73,
+      "source_and_export_paths_contain_spaces": true,
+      "source_moved_away_before_export_checks": true,
+      "export_routes_verified": 116,
+      "html_matches_delivered_edition": true,
+      "scope": "Presentation-only export; complete live setup skill and its links execute from the project checkout. A second full live deployment remains unexecuted."
+    },
+    "presentation_tests": {
+      "passed": 11,
+      "scope": "Recipe, clean copy, export isolation, delivery and collision guards."
+    },
+    "total_new_focused_tests": 161
+  },
+  "pending_host_takes": [
+    "Sensitive-path read",
+    "Protected-path write",
+    "IPv4 metadata TCP connection isolation"
+  ],
+  "pending_host_reason": "The earlier IMDS execution approval expired without execution. The new PTY check and managed MCP denial do not close these native host cases.",
+  "limits": [
+    "Host root retains control; enterprise SSO and restricted human-role RBAC remain untested.",
+    "No macOS Seatbelt or Kiro CLI enterprise MCP registry enrollment is claimed.",
+    "The native managed-policy tests did not repeat the historical MCP grant-denied or IAM-denied turns.",
+    "The earlier command clip shows response-summary inspection; private-memory refusal establishes conversation assignment only.",
+    "Telemetry and configured coverage counts alone do not establish security decisions.",
+    "Policy SEL correlation uses the isolated session, tool, reason, timestamp and adjacent linkage; no direct native trace or tool-call ID is present."
+  ],
+  "receipts": {
+    "policy": {
+      "path": "evidence/enterprise-managed/20260913/policy-verify.json",
+      "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
+    },
+    "mcp_configuration": {
+      "path": "evidence/enterprise-managed/20260913/mcp-verify.json",
+      "sha256": "be5a2670a5c0519ac15db97680561d55fafb19e5c6f667b99d2f079a16ff26e4"
+    },
+    "host_runtime": {
+      "path": "evidence/enterprise-managed/20260913/host-runtime-check.json",
+      "sha256": "5ec75e030727cf7b2004b017c8b72d5061e6572d448f89519238bf790761f3b7"
+    },
+    "client_relaunch": {
+      "path": "evidence/enterprise-managed/20260913/client-relaunch.json",
+      "sha256": "5520f2939ab2dba5227e5daf90d535fa44eccd7fd5820adc3ce5b8182a187ea0"
+    },
+    "native_allow_and_deny": {
+      "path": "evidence/enterprise-managed/20260913/native-managed-verification.json",
+      "sha256": "6759084d5a9914f1d0d815f7d54c44b79c1472236259cb592a736906c0b79e3a"
+    },
+    "recorded_native_deny": {
+      "path": "evidence/enterprise-managed/20260913/native-managed-ui4-verification.json",
+      "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
+    },
+    "media": {
+      "path": "evidence/enterprise-managed/20260913/media-review.json",
+      "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd",
+      "bytes": 8335
+    },
+    "deck": {
+      "path": "output/kirocrew-native-controls.html",
+      "sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
+      "bytes": 2033388
+    },
+    "deck_build": {
+      "path": "output/kirocrew-native-controls-build.json",
+      "sha256": "6e4e80643de8dacaf7ed3d1c1a893e2dc1b52672d70c1ac6e3522a9d113f65f1",
+      "bytes": 44395
+    },
+    "deck_browser": {
+      "path": "evidence/enterprise-managed/20260913/browser-deck/final-review.json",
+      "sha256": "495a4d0097d1472fd8c842bcfc09fd5e0a9c6c5d3122c6af369c85359b3d35c4",
+      "bytes": 30634
+    },
+    "tour": {
+      "path": "output/kirocrew-admin-tour.html",
+      "sha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a",
+      "bytes": 3679148
+    },
+    "tour_browser": {
+      "path": "evidence/enterprise-managed/20260913/browser-tour/review.json",
+      "sha256": "0326eca34b3e37746c312a4918089f06679ef948c95f28c0998985b3cc7150bd",
+      "bytes": 1325
+    },
+    "diagram": {
+      "path": "kirocrew-managed-controls-diagram.html",
+      "sha256": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763",
+      "bytes": 810663
+    },
+    "diagram_browser": {
+      "path": "evidence/enterprise-managed/20260913/browser-diagram/review.json",
+      "sha256": "f1e0486b563524294d9be262bfcab84855ea8bd86bf6f7cf868b274aa05acc8b",
+      "bytes": 1313
+    },
+    "council": {
+      "path": "evidence/enterprise-managed/council/council-verified-receipt.json",
+      "sha256": "e46a50eb848a4d1819a0f533376a601cba64057648309b60ae7e985af34b108e",
+      "bytes": 14313
+    },
+    "council_incorporation": {
+      "path": "evidence/enterprise-managed/council/incorporation.json",
+      "sha256": "9ee08ea650ab5b8c53ce172d66dcb28bf6471d2417807a4df8dbf0630b81ed99",
+      "bytes": 5928
+    },
+    "editorial": {
+      "path": "evidence/enterprise-managed/council/post-council-no-ai-slop.json",
+      "sha256": "3d3b01e1fcbd3a43dbb2ba6e9404735193073452a31dc58f6d8b04d2e0ae34dd",
+      "bytes": 2909
+    },
+    "tooling_tests": {
+      "path": "evidence/enterprise-managed/replication/tooling-validation.json",
+      "sha256": "9bff3ead1771ba569122d049e8504ae73886dff4aa686e098ef3771a11bf3a98",
+      "bytes": 35630
+    },
+    "project_skill": {
+      "path": ".agents/skills/kirocrew-demo/SKILL.md",
+      "sha256": "df041ff167652ad63484a27138ac4f2aee1c665e00a28cbd868b0c9640abb166",
+      "bytes": 2662
+    },
+    "final_replication": {
+      "path": "evidence/enterprise-managed/replication/final-managed-presentation-replication.json",
+      "sha256": "6e81f23933bb810550057da6f62dc40a21dae00a55b6eab6142b651c7b72bcac",
+      "bytes": 3497
+    }
+  },
+  "publication": "Existing private GitHub repository; GitHub Actions out of scope.",
+  "architecture": {
+    "path": "kirocrew-managed-controls-diagram.html",
+    "endpoint_control_enclosures": 1,
+    "browser_review": "pass; policy focus and presentation stage inspected"
+  },
+  "cloud_recheck": {
+    "checked_at": "2026-09-14T02:50:00Z",
+    "time_precision": "Approximate minute of read-only check",
+    "region": "us-east-1",
+    "instance_type": "t4g.xlarge",
+    "architecture": "arm64",
+    "state": "running",
+    "sole_inbound_rule": "TCP 22 from 24.60.107.229/32",
+    "client_public_ipv4_matched": true,
+    "network": "Existing VPC and subnet; no network resources added in this update."
+  }
+}

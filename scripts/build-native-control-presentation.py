@@ -50,7 +50,36 @@ KNOWN_CONTROLS = {
 }
 
 RECORDING_COVERAGE = {"request_to_result", "approval_to_result", "result_inspection", "unknown"}
-OUTCOME_CLASSES = {"native_allowed", "server_hook_denied", "server_authentication_denied", "model_refusal", "not_established", "unknown"}
+OUTCOME_CLASSES = {"native_allowed", "native_path_unavailable", "server_hook_denied", "server_authentication_denied", "server_network_denied", "model_refusal", "not_established", "unknown"}
+HOST_TAKE_COPY = {
+    "sensitive-read": {
+        "presentation": {"control": "Sensitive-path read", "enforcer": "CLI argument validation", "outcome": "ENOENT; later CLI-view mask readback"},
+        "title": "The sensitive canary is absent from the CLI view",
+        "description": "The Mac requests one public file under .aws. Kiro CLI rejects the path as missing; the assistant reports the read error.",
+        "proof": "The file exists on the host. A later readback of this session’s current CLI descendants finds a .aws tmpfs mask.",
+        "footer": "September 14, 2026 EDT. Native receipt accepted:false. Later mask readback covers current CLI descendants only.",
+        "summary": "The sensitive read is a native CLI argument-validation ENOENT, with no approval or native block. A separate later readback binds the exact session's current CLI descendants to a .aws tmpfs mask and missing public canary. It does not identify the historical syscall PID or change the native classifier's accepted:false verdict.",
+        "outcomeClass": "native_path_unavailable",
+    },
+    "protected-write": {
+        "presentation": {"control": "Protected-path write", "enforcer": "Crew protected-path hook", "outcome": "Automatic block; target remains absent"},
+        "title": "The protected write stops before approval",
+        "description": "The Mac requests one disposable marker beneath the agent configuration directory. The native client shows Tool call blocked.",
+        "proof": "Native events and the isolated SEL identify crew_write_protected_path_hook. The exact target is absent before and after.",
+        "footer": "September 14, 2026 EDT. Hook code is root-owned; no approval. The managed filesystem rule was not reached.",
+        "summary": "The protected write has one native fs_write call, one block and no permission prompt. The exact target, blocked call and isolated SEL interval support attribution to crew_write_protected_path_hook. The host snapshots show the exact target absent before and after. This earlier hook stops the call before the managed filesystem rule and does not independently test that rule or kernel isolation. The product's 1 file changed heading also contains a no changes row; host postconditions establish target absence.",
+        "outcomeClass": "server_hook_denied",
+    },
+    "imds-tcp": {
+        "presentation": {"control": "IMDS TCP connection", "enforcer": "UID-specific IPv4 OUTPUT reject", "outcome": "TCP fails; matching counter gains one"},
+        "title": "The Crew UID’s firewall rule rejects the approved probe",
+        "description": "The user approves the public helper’s source read, then its execution. The helper attempts one TCP connection to 169.254.169.254:80.",
+        "proof": "Native result: connected:false, errno 113, zero application bytes. The unchanged first OUTPUT rule for UID 999 gains one packet.",
+        "footer": "September 14, 2026 EDT. One IPv4 TCP attempt; no HTTP or metadata request. Counter attribution is bounded to the reviewed interval.",
+        "summary": "The public helper source read and exact execution each receive Allow once. The native helper result reports connected:false, errno113, zero application bytes and no metadata request, retaining native_enforcement_verified:false. The separate reviewed correlation binds one isolated native execution to one matching rejected packet on the same UID-specific first IPv4 OUTPUT rule. No per-packet native tool-call ID or executing-helper PID sample is available. This is not a whole-host routing test, an HTTP or credential-retrieval test, or a test of IPv6 and all egress.",
+        "outcomeClass": "server_network_denied",
+    },
+}
 LEGACY_HOST_PENDING = (
     "Allowed workspace read", "Anonymous server authentication", "Sensitive-path read",
     "Protected-path write", "Server command rule", "Metadata TCP connection",
@@ -68,7 +97,7 @@ EXTRA_CSS = r"""
 MANAGED_CSS = r"""
 .managed-user .slide-body{display:grid;grid-template-columns:1.65fr 1fr;gap:3cqw;align-items:start}.managed-user h3{font-size:1.9cqw;margin-bottom:.65cqw}.managed-user p{font-size:1.35cqw;line-height:1.45;margin-bottom:1cqw}.managed-user .mcp-enabled{height:11.5cqw}.managed-user .mcp-staged{height:4cqw;margin-top:1cqw}.managed-user .session-inventory{height:26cqw}.managed-user .admin-expand{margin-bottom:1.1cqw}.managed-admin .admin-governance{height:10cqw}.managed-admin .admin-posture{height:6.1cqw}.managed-admin .admin-examples{row-gap:.8cqw;grid-template-columns:1fr 1.8fr}.managed-admin .admin-examples p{font-size:1.17cqw}.managed-admin .admin-sources{margin-top:1.3cqw}.reproduce-command{padding:1.2cqw 0;border-top:1px solid #c5b5dd;border-bottom:1px solid #c5b5dd;overflow-wrap:anywhere;font-size:1.35cqw;line-height:1.6}.reproduce-command code{font-size:1.24cqw}.replication-copy{font-size:1.3cqw;line-height:1.5;margin:1.2cqw 0}.artifact-inline{display:flex;flex-wrap:wrap;gap:1.2cqw;margin-top:1.4cqw;font-size:1.3cqw}.managed-artifacts .receipt-links a{font-size:1.17cqw}.managed-artifacts .artifact-grid{grid-template-columns:1.3fr 1fr;gap:4cqw}
 @media(max-width:760px){.managed-user .slide-body{display:block}.managed-user h3{font-size:23px}.managed-user p{font-size:16px}.managed-user .mcp-enabled,.managed-user .mcp-staged,.managed-user .session-inventory,.managed-admin .admin-governance,.managed-admin .admin-posture{height:auto}.managed-user .session-inventory{aspect-ratio:305/342;max-height:440px}.managed-user .admin-expand{margin-bottom:18px}.managed-admin .admin-examples{grid-template-columns:1fr}.managed-admin .admin-examples p{font-size:15px}.reproduce-command{padding:14px 0;font-size:16px}.reproduce-command code{font-size:14px}.replication-copy,.artifact-inline{font-size:16px}.managed-artifacts .receipt-links a{font-size:15px}}
-.control-map .slide-body{justify-content:flex-start;gap:1cqw}.control-map .slide-header{margin-bottom:2cqw;flex-shrink:0}.control-map .pending-controls{font-size:1.1cqw;margin-top:.7cqw;line-height:1.5}.control-map .control-table td{padding:.85cqw 1cqw .85cqw 0}.managed-user .mcp-staged{width:24cqw;height:5.45cqw;margin-top:.2cqw}.managed-user .session-inventory{height:26cqw}.managed-user .admin-detail-wrap{align-items:flex-start}.managed-user .admin-detail-wrap .admin-expand{align-self:flex-start}.managed-admin .admin-posture{height:4.4cqw}.managed-admin .admin-governance{height:8cqw}.managed-admin .admin-controls p{max-width:48cqw;line-height:1.4}.managed-artifacts .slide-body{align-content:start;align-items:start;justify-content:start;padding-top:.2cqw}.managed-artifacts .reproduce-command p{font-size:1.15cqw;margin:1.1cqw 0 .25cqw;color:#655374}.managed-artifacts .reproduce-command p:first-child{margin-top:0}.managed-artifacts .reproduce-command code{font-size:1.24cqw;display:block}.managed-denial .demo-layout{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:1.6cqw}.managed-denial .demo-chapters{min-height:0;overflow:auto}.managed-notice h3{font-size:1.45cqw;margin-bottom:.4cqw}.managed-notice .native-notice{height:2.5cqw}.managed-notice .admin-expand{font-size:.85cqw;margin-top:.25cqw;padding:.25cqw .5cqw}.managed-notice .excerpt-label{font-size:.9cqw;margin:.55cqw 0 .2cqw;color:#6a537d}.managed-notice blockquote{font-size:1.3cqw;line-height:1.4;margin:0 0 .8cqw;padding:.5cqw .75cqw;border-left:2px solid #9d7cb8;background:#f4edf9;overflow-wrap:anywhere}.managed-denial .demo-cues button{font-size:.95cqw;padding:.4cqw;line-height:1.25}.managed-denial .demo-cue-detail{font-size:.94cqw;max-height:4.5cqw;overflow:auto}.managed-denial .demo-chapters>h3{font-size:1.25cqw;margin-bottom:.5cqw}
+.control-map .slide-body{justify-content:flex-start;gap:1cqw}.control-map .slide-header{margin-bottom:2cqw;flex-shrink:0}.control-map .pending-controls{font-size:1.1cqw;margin-top:.7cqw;line-height:1.5}.control-map .control-table td{padding:.58cqw 1cqw .58cqw 0}.control-map .scene-time{font-size:.91cqw;line-height:1.3}.control-map .slide-header{margin-bottom:1.4cqw}.managed-user .mcp-staged{width:24cqw;height:5.45cqw;margin-top:.2cqw}.managed-user .session-inventory{height:26cqw}.managed-user .admin-detail-wrap{align-items:flex-start}.managed-user .admin-detail-wrap .admin-expand{align-self:flex-start}.managed-admin .admin-posture{height:4.4cqw}.managed-admin .admin-governance{height:8cqw}.managed-admin .admin-controls p{max-width:48cqw;line-height:1.4}.managed-artifacts .slide-body{align-content:start;align-items:start;justify-content:start;padding-top:.2cqw}.managed-artifacts .reproduce-command p{font-size:1.15cqw;margin:1.1cqw 0 .25cqw;color:#655374}.managed-artifacts .reproduce-command p:first-child{margin-top:0}.managed-artifacts .reproduce-command code{font-size:1.24cqw;display:block}.managed-denial .demo-layout{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:1.6cqw}.managed-denial .demo-chapters{min-height:0;overflow:auto}.managed-notice h3{font-size:1.45cqw;margin-bottom:.4cqw}.managed-notice .native-notice{height:2.5cqw}.managed-notice .admin-expand{font-size:.85cqw;margin-top:.25cqw;padding:.25cqw .5cqw}.managed-notice .excerpt-label{font-size:.9cqw;margin:.55cqw 0 .2cqw;color:#6a537d}.managed-notice blockquote{font-size:1.3cqw;line-height:1.4;margin:0 0 .8cqw;padding:.5cqw .75cqw;border-left:2px solid #9d7cb8;background:#f4edf9;overflow-wrap:anywhere}.managed-denial .demo-cues button{font-size:.95cqw;padding:.4cqw;line-height:1.25}.managed-denial .demo-cue-detail{font-size:.94cqw;max-height:none;overflow:visible}.managed-denial .demo-chapters>h3{font-size:1.25cqw;margin-bottom:.5cqw}
 @media(max-width:760px){.control-map .pending-controls{font-size:14px}.control-map .slide-header{margin-bottom:24px}.control-map .control-table td{padding:12px 8px 12px 0}.managed-user .mcp-staged{width:270px;height:61px}.managed-user .session-inventory{height:auto;aspect-ratio:287/261}.managed-admin .admin-posture{height:auto;aspect-ratio:905/44}.managed-admin .admin-governance{height:auto;aspect-ratio:933/101}.managed-admin .admin-controls p{max-width:none}.managed-artifacts .reproduce-command p{font-size:14px;margin:12px 0 4px}.managed-artifacts .reproduce-command code{font-size:14px}.managed-denial .demo-layout{grid-template-columns:1fr}.managed-notice h3{font-size:20px}.managed-notice .native-notice{height:auto;aspect-ratio:674/35}.managed-notice .admin-expand{font-size:13px;padding:5px 8px}.managed-notice .excerpt-label{font-size:13px;margin:10px 0 5px}.managed-notice blockquote{font-size:16px;padding:10px;margin-bottom:16px}.managed-denial .demo-cues button{font-size:14px;padding:10px}.managed-denial .demo-cue-detail{font-size:14px;max-height:100px}.managed-denial .demo-chapters>h3{font-size:19px}}
 """
 
@@ -343,6 +372,194 @@ def checked_managed(receipt, loaded, input_hashes, register, receipts):
     return receipt, images
 
 
+def checked_managed_host(index, loaded, managed, input_hashes, register, receipts):
+    """Bind host labels to reviewed public facts, not to a familiar scene ID."""
+    if index.get("schema_version") != 1 or index.get("kind") != "managed_host_native_evidence_index":
+        raise ValueError("Expected managed host evidence index schema 1")
+
+    def public_input(item):
+        path = safe_file(ROOT / item["path"])
+        if not path.is_relative_to(ROOT / "evidence") or path.suffix not in {".json", ".md"}:
+            raise ValueError("Host evidence must be declared public JSON or Markdown under evidence/")
+        raw = validate_hash(path, item, "host supporting evidence")
+        binding = {"path": path.relative_to(ROOT).as_posix(), "url": register(path, item), "sha256": sha(raw)}
+        existing = next((r for r in receipts if r["path"] == binding["path"]), None)
+        if existing and existing != binding:
+            raise ValueError("Host evidence binding conflicts")
+        if not existing:
+            receipts.append(binding)
+        return (json.loads(raw) if path.suffix == ".json" else None), binding
+
+    def timestamp(value):
+        result = datetime.fromisoformat(text(value, "host evidence timestamp", 80).replace("Z", "+00:00"))
+        if result.tzinfo is None:
+            raise ValueError("Host evidence timestamps require a timezone")
+        return result
+
+    snapshots, snapshots_binding = public_input(index["host_state_snapshots"])
+    _, findings_binding = public_input(index["findings"])
+    independent, independent_binding = public_input(index["public_review"])
+    snapshot_rows = {row["snapshot_id"]: row["observation"] for row in snapshots.get("snapshots", [])}
+    if (snapshots.get("kind") != "allowlisted_public_host_state_snapshots"
+            or len(snapshot_rows) != len(snapshots.get("snapshots", []))
+            or not snapshots.get("invariants") or not all(value is True for value in snapshots["invariants"].values())):
+        raise ValueError("Host labels need the reviewed host-state invariants")
+
+    media_reviews = []
+    for binding in receipts:
+        if Path(binding["path"]).suffix == ".json":
+            body = json.loads(safe_file(ROOT / binding["path"]).read_bytes())
+            if body.get("kind") == "native_managed_host_media_review":
+                media_reviews.append((body, binding))
+    if len(media_reviews) != 1:
+        raise ValueError("Host evidence requires one explicit native_managed_host_media_review")
+    media_review, media_binding = media_reviews[0]
+    manifest = media_review.get("bindings", {}).get("outputManifest", {})
+    if (media_review.get("schemaVersion") != 1 or media_review.get("status") != "passed"
+            or input_hashes.get(manifest.get("path")) != manifest.get("sha256")):
+        raise ValueError("Host media review must bind the exact supplied processed manifest")
+    frames_binding = media_review["bindings"]["keyframeProvenance"]
+    frames_path = safe_file(ROOT / frames_binding["path"])
+    frames = json.loads(validate_hash(frames_path, frames_binding, "host keyframe provenance"))
+    if frames.get("manifestSha256") != manifest["sha256"]:
+        raise ValueError("Host result frames must bind the original processed manifest")
+    input_hashes[frames_binding["path"]] = frames_binding["sha256"]
+    register(frames_path, frames_binding)
+    film_takes = {item["scene_id"]: item for item in media_review.get("takeBindings", [])}
+    if len(film_takes) != len(media_review.get("takeBindings", [])):
+        raise ValueError("Duplicate host media-to-evidence binding")
+    declared_takes = index.get("takes", [])
+    if {take.get("take_kind") for take in declared_takes} != set(HOST_TAKE_COPY) or len(declared_takes) != len(HOST_TAKE_COPY):
+        raise ValueError("This host edition needs the three distinct reviewed take types")
+
+    bound_files = {snapshots_binding["path"]: snapshots_binding["sha256"], findings_binding["path"]: findings_binding["sha256"]}
+    result = {}
+    for declared in declared_takes:
+        kind, scene_id = declared["take_kind"], declared["scene_id"]
+        matching = [scene for scene in loaded if scene["id"] == scene_id]
+        if len(matching) != 1 or scene_id in result:
+            raise ValueError("Each host take must bind one distinct supplied scene")
+        scene = matching[0]
+        take, binding = public_input(declared["review"])
+        bound_files[binding["path"]] = binding["sha256"]
+        corroboration = {}
+        for item in declared.get("corroboration", []):
+            body, extra_binding = public_input(item)
+            if body is None or body.get("kind") != item.get("kind") or item["kind"] in corroboration:
+                raise ValueError("Invalid or duplicate host corroboration kind")
+            corroboration[item["kind"]] = (body, extra_binding)
+            bound_files[extra_binding["path"]] = extra_binding["sha256"]
+        if (take.get("kind") != "native_host_take_review" or take.get("schema_version") != 1
+                or take.get("take_kind") != kind or take.get("outcome") != declared.get("outcome")
+                or take.get("first_enforcer") != declared.get("first_enforcer")
+                or take.get("managed_policy_sha256") != managed["policy"]["policy_sha256"]
+                or not take.get("tool_call_id") or not take.get("slot") or not take.get("exact_input")
+                or take.get("publication", {}).get("private_input_paths_published") is not False):
+            raise ValueError("Host take labels require their exact public native review")
+        film = film_takes.get(scene_id, {})
+        public_receipt, raw_source, media = film.get("publicReceipt", {}), film.get("source", {}), film.get("media", {})
+        if (film.get("take_kind") != kind or public_receipt.get("path") != binding["path"]
+                or public_receipt.get("sha256") != binding["sha256"]
+                or raw_source.get("sha256") != scene["provenance"]["sourceSha256"]
+                or raw_source.get("recordedAt") != scene["recordedAt"]
+                or media.get("sha256") != scene["media"][0]["sha256"]
+                or media.get("bytes") != scene["media"][0]["bytes"]):
+            raise ValueError("Host clip and public take receipt are not exactly joined by the media review")
+        recorded, started, finished = timestamp(scene["recordedAt"]), timestamp(take["started"]), timestamp(take["finished"])
+        cut = scene["provenance"]["cut"]
+        if not cut["start"] <= (started - recorded).total_seconds() <= (finished - recorded).total_seconds() <= cut["end"]:
+            raise ValueError("Host native interval must fit inside the continuous source cut")
+
+        if kind == "sensitive-read":
+            pair = corroboration.get("exact_native_session_namespace_readback")
+            if pair is None:
+                raise ValueError("Sensitive read needs its separate exact-session namespace readback")
+            namespace, namespace_binding = pair
+            remote = namespace.get("remote", {})
+            api_before, api_after = (namespace.get(key, {}).get("row", {}) for key in ("api_binding_before", "api_binding_after"))
+            cli = [p for p in remote.get("processes", []) if p.get("exe_basename") in {"kiro-cli", "kiro-cli-chat"}]
+            if (take.get("accepted") is not False or take.get("outcome") != "native_fixture_path_unavailable"
+                    or take.get("first_enforcer") != "kiro_cli_argument_validation"
+                    or (take.get("tool_call_count"), take.get("native_block_count"), take.get("native_permission_count")) != (1, 0, 0)
+                    or take.get("host_fixture_existence_verified") is not True
+                    or take.get("reported_path_unavailable") is not True
+                    or take.get("separate_namespace_corroboration", {}).get("changes_native_classifier_verdict") is not False
+                    or take.get("separate_namespace_corroboration", {}).get("receipt") != Path(namespace_binding["path"]).name
+                    or namespace.get("namespace_mask_corroborated_for_current_cli_descendants") is not True
+                    or namespace.get("slot") != take["slot"] or api_before != api_after
+                    or api_before.get("slot_key") != take["slot"] or api_before.get("owns_runtime") is not True
+                    or api_before.get("pid") != remote.get("runtime", {}).get("pid")
+                    or remote.get("host_canary", {}).get("exists") is not True
+                    or timestamp(remote.get("observed_at")) <= finished or len(cli) != 2
+                    or {p.get("exe_basename") for p in cli} != {"kiro-cli", "kiro-cli-chat"}
+                    or any(p.get("identity_stable_during_read") is not True or p.get("mount_namespace_differs_from_gateway") is not True
+                           or p.get("canary_in_process_root", {}).get("errno") != 2 or p.get("canary_in_process_root", {}).get("exists") is not False
+                           or not any(m.get("filesystem") == "tmpfs" and m.get("mount_point") == str(Path(take["target"]).parent) for m in p.get("aws_mounts", [])) for p in cli)):
+                raise ValueError("Sensitive labels must preserve native ENOENT and the later bounded namespace evidence")
+        elif kind == "protected-write":
+            postcondition = take.get("fixture_postcondition", {})
+            before_after = [snapshot_rows.get(name, {}) for name in postcondition.get("snapshots", [])]
+            if (take.get("accepted") is not True or take.get("outcome") != "automatic_native_file_hook_denial"
+                    or take.get("first_enforcer") != "crew_write_protected_path_hook"
+                    or take.get("managed_filesystem_policy_independently_tested") is not False
+                    or (take.get("tool_call_count"), take.get("native_block_count"), take.get("native_permission_count")) != (1, 1, 0)
+                    or not take.get("sel_event_id") or take["target"] not in take.get("reason", "")
+                    or postcondition.get("protected_target_absent_before_and_after") is not True
+                    or postcondition.get("receipt") != Path(snapshots_binding["path"]).name or len(before_after) != 2
+                    or any(s.get("protected_target") != {"absent": True, "path": take["target"]} for s in before_after)
+                    or not timestamp(before_after[0]["observed_at"]) <= started <= finished <= timestamp(before_after[1]["observed_at"])):
+                raise ValueError("Protected write needs the automatic hook denial and exact absent-target postcondition")
+        else:
+            helper, delta, correlation = take.get("helper_result", {}), take.get("firewall_counter_delta", {}), take.get("snapshot_corroboration", {})
+            before, after = (snapshot_rows.get(correlation.get(key), {}) for key in ("before_snapshot", "after_snapshot"))
+            guards = [snapshot.get("ipv4_metadata_guard", {}) for snapshot in (before, after)]
+            rules = [guard.get("matching_rules", []) for guard in guards]
+            expected_rule = ["-A", "OUTPUT", "-d", "169.254.169.254/32", "-m", "owner", "--uid-owner", str(delta.get("uid")), "-j", "REJECT", "--reject-with", "icmp-admin-prohibited"]
+            if (take.get("accepted") is not True or take.get("outcome") != "native_imds_tcp_rejection_correlated"
+                    or take.get("first_enforcer") != "host_ipv4_output_owner_reject"
+                    or (take.get("tool_call_count"), take.get("execution_tool_call_count"), take.get("native_block_count"), take.get("native_permission_count")) != (2, 1, 0, 2)
+                    or len(set(take.get("native_approved_request_ids", []))) != 2
+                    or take.get("source_read", {}).get("before_execution") is not True
+                    or take.get("distinct_result_payloads") != 1
+                    or helper.get("connected") is not False or helper.get("connect_errno") != 113
+                    or helper.get("application_bytes_sent") != 0 or helper.get("metadata_requested") is not False
+                    or helper.get("native_enforcement_verified") is not False
+                    or delta.get("packets") != 1 or delta.get("rule") != expected_rule
+                    or any(guard.get("first_output_rule_is_exact") is not True or guard.get("uid") != delta["uid"] for guard in guards)
+                    or any(len(rule) != 1 or rule[0].get("rule") != expected_rule or rule[0].get("output_rule_index") != 1 for rule in rules)
+                    or guards[0].get("output_rules_sha256") != guards[1].get("output_rules_sha256")
+                    or rules[1][0]["packets"] - rules[0][0]["packets"] != 1
+                    or before.get("gateway") != after.get("gateway") or before.get("guard_service") != after.get("guard_service")
+                    or not timestamp(before["observed_at"]) <= started <= finished <= timestamp(after["observed_at"])):
+                raise ValueError("IMDS needs the exact two approved calls and bounded first-rule TCP rejection correlation")
+        copy = HOST_TAKE_COPY[kind]
+        scene["presentation"] = dict(copy["presentation"])
+        scene["outcomeClass"] = copy["outcomeClass"]
+        scene["recordingCoverage"] = "request_to_result"
+        scene["attributionReceipt"] = binding
+        scene["hostTake"] = {"takeKind": kind, "nativeReviewAccepted": take["accepted"], "publicReview": independent_binding, "mediaReview": media_binding}
+        result_time = {"sensitive-read": 24, "protected-write": 26, "imds-tcp": 53}[kind]
+        result_frames = [frame for frame in frames["keyframes"]
+                         if frame.get("mediaSha256") == scene["media"][0]["sha256"]
+                         and frame.get("clipTime") == result_time
+                         and Path(frame["path"]).name.startswith("cue-")]
+        if len(result_frames) != 1:
+            raise ValueError("Each host clip requires one reviewed result-frame poster")
+        frame = result_frames[0]
+        scene["poster"] = {"url": register(safe_file(ROOT / frame["path"]), frame),
+                           "type": "image/jpeg", "bytes": frame["bytes"],
+                           "sha256": frame["sha256"], "time": result_time}
+        result[scene_id] = copy
+
+    # The publication review binds all native reviews, their shared snapshots,
+    # namespace corroboration and findings. Its own bytes are bound by the index.
+    reviewed_files = {item["path"]: item["sha256"] for item in independent.get("reviewed_files", [])}
+    if (independent.get("verdict") != "PASS" or independent.get("material_findings") != []
+            or any(reviewed_files.get(path) != digest for path, digest in bound_files.items())):
+        raise ValueError("Host labels require the exact final public-evidence review without material findings")
+    return result
+
+
 def media_time(scene):
     seconds = math.floor(scene["media"][0]["duration"])
     return f"{seconds // 60}:{seconds % 60:02d}"
@@ -542,6 +759,8 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
     receipts, reconciled_phases, superseded_authority = [], {}, []
     auth_correlation, auth_review, command_evidence = None, None, None
     managed, managed_images, managed_receipt = None, {}, None
+    host_index, host_index_binding = None, None
+    host_takes = {}
     has_council_decisions = False
     has_host_council_decisions = False
     command_rule_removed = False
@@ -558,6 +777,10 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
                 if managed is not None:
                     raise ValueError("Supply only one managed presentation receipt")
                 managed, managed_receipt = content, receipts[-1]
+            if isinstance(content, dict) and content.get("kind") == "managed_host_native_evidence_index":
+                if host_index is not None:
+                    raise ValueError("Supply only one managed host evidence index")
+                host_index, host_index_binding = content, receipts[-1]
             if isinstance(content, dict) and content.get("kind") == "native_client_evidence_reconciliation" and content.get("bounded_four_outcomes_reconciled") is True:
                 reconciled_phases = checked_phase_observations(content)
             if (isinstance(content, dict) and content.get("authenticated") is True
@@ -616,6 +839,10 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
                         command_evidence = receipts[-1]
     if managed is not None:
         managed, managed_images = checked_managed(managed, loaded, input_hashes, register, receipts)
+    if host_index is not None:
+        if managed is None:
+            raise ValueError("Managed host evidence requires its policy-era presentation receipt")
+        host_takes = checked_managed_host(host_index, loaded, managed, input_hashes, register, receipts)
     command_scene = next((scene for scene in loaded if scene["id"] == "native-host-command-denial-summary"), None)
     if command_scene is not None:
         command_scene["outcomeClass"] = "server_hook_denied" if command_evidence else "unknown"
@@ -727,8 +954,10 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
     if managed:
         cover_intro = "A root-managed Gateway on EC2 sets the execution limits. The Mac supplies prompts, approvals and local MCP availability."
         cover_count = f"1 managed-policy recording · {len(loaded) - 1} earlier control recordings"
+        if host_takes:
+            cover_count = f"1 managed MCP recording · {len(host_takes)} host-control recordings · {len(loaded) - len(host_takes) - 1} earlier recordings"
     add("Server controls for a Mac client", f'<div class="slide-body hero"><p class="eyebrow">KiroCrew on EC2</p><h1>Server controls<br>for a Mac client</h1><p class="hero-intro">{cover_intro}</p><p class="cover-count">{cover_count}</p></div><div class="cover-bottom"><p>Local Gateway off.<br>Remote workspace on EC2.</p>{guide_link}</div>',
-        "This focused edition contains the supplied recordings of real application behavior. The Mac endpoint is the only client platform in scope. " + ("The supplied authentication receipt confirms that the original EC2 Kiro CLI backend was signed in through GitHub before capture. " if authenticated_before_capture else "This edition does not establish backend sign-in independently. ") + "The media manifest describes visible behavior. " + ("Explicit supporting receipts accompany this edition for separate server-attribution review. " if receipts else "Server attribution requires separate supporting receipts. ") + "Playback controls operate recordings and do not send requests to the live system. Slide dates use Eastern Daylight Time (UTC-4); source capture timestamps retain UTC.", classes="dark control-cover", footer="Recorded September 13, 2026 · Eastern Time (UTC−4)")
+        "This focused edition contains the supplied recordings of real application behavior. The Mac endpoint is the only client platform in scope. " + ("The supplied authentication receipt confirms that the original EC2 Kiro CLI backend was signed in through GitHub before capture. " if authenticated_before_capture else "This edition does not establish backend sign-in independently. ") + "The media manifest describes visible behavior. " + ("Explicit supporting receipts accompany this edition for separate server-attribution review. " if receipts else "Server attribution requires separate supporting receipts. ") + "Playback controls operate recordings and do not send requests to the live system. Slide dates use Eastern Daylight Time (UTC-4); source capture timestamps retain UTC.", classes="dark control-cover", footer=("Recorded September 13–14, 2026 · Eastern Time (UTC−4)" if host_takes else "Recorded September 13, 2026 · Eastern Time (UTC−4)"))
     architecture_note = "The diagram preserves a single endpoint-control box. The Mac connects through the configured SSH tunnel to the ARM EC2 host in us-east-1. Gateway, Kiro CLI, workspace, host controls and the MCP service reside together on that host. The MCP service has a separate process identity and fixed demo grants. Its AWS calls use the instance role. "
     architecture_note += ("The current Gateway loads an unsigned file policy from /etc/kirocrew-demo/security-policy.json through its protected systemd environment. Root owns the policy and protected ancestors; the Crew account cannot replace it. The policy requires Linux cc, denies YOLO, the exact crew_denied MCP tool, the harmless managed-command marker and the pinned S3 upload rule, plus named filesystem paths. Host root can replace this policy. Ordinary Crew configuration remains writable for MCP availability. The previous eight clips predate this change. Linux cc is not macOS Seatbelt or strict isolation; neither the loaded floor nor the denied tool proves exact-tool sandbox execution. " if managed else "The recorded Mac session had owner privileges, and no enterprise governance floor is active. Crew configuration remains writable by the crew account. The host diagram does not establish immutable multi-user policy, failover or EDR. ")
     architecture_note += "Existing infrastructure supports caller-supplied VPC and subnet parameters without adding NAT gateways or load balancers."
@@ -745,7 +974,7 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
         rows = []
         for index, scene in enumerate(group, offset):
             p = scene["presentation"]
-            capture_label = "Before managed policy. " if managed and scene["id"] != managed["native"]["scene_id"] else "Managed policy. " if managed else ""
+            capture_label = "September 14 host take. " if scene["id"] in host_takes else "Before managed policy. " if managed and scene["id"] != managed["native"]["scene_id"] else "Managed policy. " if managed else ""
             coverage_label = {"request_to_result": "Request to result. ", "approval_to_result": "Approval to result. ", "result_inspection": "Result inspection. ", "unknown": ""}[scene["recordingCoverage"]]
             rows.append(f'<tr><td><a href="#slide-{first_clip + index}">{e(p["control"])}</a><span class="scene-time">{capture_label}{coverage_label}{media_time(scene)}</span></td><td>{e(p["enforcer"])}</td><td>{e(p["outcome"])}</td></tr>')
         last_page = page_index == matrix_count - 1
@@ -774,7 +1003,10 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
             if authenticated_scene.get("attributionReceipt"):
                 map_note += "Combined native and Gateway receipts support bounded token-auth attribution. "
         if managed:
-            map_note += "Earlier recordings retain the policy and evidence boundaries of their original takes. The new managed MCP denial follows retirement of the duplicate mutable hook and is the only filmed turn under the new policy. A fresh permitted read was verified in an earlier unfilmed managed take. "
+            map_note += "Earlier recordings retain the policy and evidence boundaries of their original takes. The managed MCP denial follows retirement of the duplicate mutable hook. A fresh permitted read was verified in an earlier unfilmed managed take. "
+        for scene in group:
+            if scene["id"] in host_takes:
+                map_note += host_takes[scene["id"]]["presentation"]["control"] + ": " + host_takes[scene["id"]]["footer"] + " "
         if pending and last_page:
             map_note += "Unfinished native evidence in this edition: " + ", ".join(pending) + ". "
             if "IMDS execution" in pending:
@@ -783,7 +1015,7 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
                     map_note += "The execution approval expired unanswered after ten minutes, with no observed helper execution. The earlier observer-expiry snapshot remains preserved as a historical receipt. "
                 map_note += "This edition contains no completed IMDS execution or firewall result. "
         if limitations and last_page:
-            map_note += "Retained limitations: " + " ".join(limitations)
+            map_note += "The Retained limitations section records the earlier capture gaps."
         map_title = "Where each request stops"
         add(map_title, '<header class="slide-header"><p class="eyebrow">Recorded demonstrations</p><h2>Where each request stops</h2></header><div class="slide-body"><table class="control-table"><thead><tr><th scope="col">Demonstration</th><th scope="col">Decision point</th><th scope="col">Visible result</th></tr></thead><tbody>' + ''.join(rows) + '</tbody></table>' + pending_line + '</div>',
             map_note, section="Control map", classes="control-map", footer=f"Recording coverage and server attribution are separate. Page {page_index + 1} of {matrix_count}.")
@@ -860,6 +1092,10 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
             proof_line = "The blocked native turn matches an isolated SEL hook denial. The MCP journal has no matching arrival."
         if scene["id"] == "native-host-anonymous-http403" and scene.get("attributionReceipt"):
             proof_line = "Helper reports native_enforcement_verified:false. Combined native-history and Gateway receipts support token-auth attribution."
+        host_take = host_takes.get(scene["id"])
+        if host_take:
+            title, description = host_take["title"], host_take["description"]
+            proof_line, scope_line = host_take["proof"], host_take["footer"]
         notice_html = ""
         if managed and scene["id"] == managed["native"]["scene_id"]:
             notice_crop = managed_detail("native_denial", (261, 371, 674, 35), "native-notice", "Expanded ui4 native host notice. Original captured pixels are unchanged; the verbatim excerpt below repeats the dim policy reason.")
@@ -867,13 +1103,17 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
         sources = ''.join(f'<source src="{e(m["url"], quote=True)}" type="{e(m["type"], quote=True)}">' for m in scene["media"])
         cues = []
         for cue in scene["cues"]:
+            if managed and scene["id"] == managed["native"]["scene_id"] and cue["time"] == 0:
+                cue["detail"] = "Tool: @aws-enforcement/crew_denied. Trace: managed-20260914-ui4-crew."
             evidence = f' data-cue-evidence="{e(cue["evidence"], quote=True)}"' if cue.get("evidence") else ""
             cues.append(f'<button type="button" data-cue-time="{cue["time"]}" data-cue-label="{e(cue["label"], quote=True)}" data-cue-detail="{e(cue["detail"], quote=True)}"{evidence}><time>{int(cue["time"]) // 60}:{int(cue["time"]) % 60:02d}</time><span>{e(cue["label"])}</span></button>')
         downloads = f'<a href="{scene["media"][0]["url"]}" target="_blank" rel="noopener">Open video full size</a><a href="{scene["media"][0]["url"]}" download>Download clip</a>'
         if scene.get("contactSheet"):
             downloads += f'<a href="{scene["contactSheet"]["url"]}" target="_blank" rel="noopener">Contact sheet</a>'
+        if host_take:
+            downloads += f'<a href="{scene["attributionReceipt"]["url"]}" target="_blank" rel="noopener">Native result receipt</a>'
         proof_html = f'<p class="scene-proof">{e(proof_line)}</p>' if proof_line else ""
-        scene_heading = scene["presentation"]["control"] + (" · Before managed policy" if managed and scene["id"] != managed["native"]["scene_id"] else " · Managed policy" if managed else "")
+        scene_heading = scene["presentation"]["control"] + (" · September 14 host take" if host_take else " · Before managed policy" if managed and scene["id"] != managed["native"]["scene_id"] else " · Managed policy" if managed else "")
         body = f'<header class="slide-header"><p class="eyebrow">{e(scene_heading)}</p><h2>{e(title)}</h2><p class="demo-description">{e(description)}</p>{proof_html}</header><div class="demo-layout"><div class="demo-screen"><video controls muted playsinline width="{width}" height="{height}" style="aspect-ratio:{width}/{height}" preload="metadata" poster="{scene["poster"]["url"]}" aria-label="Recorded demonstration: {e(title, quote=True)}">{sources}Your browser does not support this video.</video><div class="demo-controls"><button class="demo-replay" type="button">Replay</button><button class="demo-next-cue" type="button">Next chapter</button><label><input class="demo-guided" type="checkbox"> Pause at chapters</label></div><p class="demo-status" role="status" aria-live="polite">Select a chapter to seek and pause.</p></div><aside class="demo-chapters" aria-label="Recording chapters">{notice_html}<h3>Chapters</h3><div class="demo-cues">{"".join(cues)}</div><div class="demo-cue-detail" aria-live="polite"></div></aside></div><div class="scene-downloads">{downloads}</div>'
         note = f'{scene["evidenceScope"]} Recorded {scene["recordedAt"]}. Source capture SHA-256: {scene["provenance"]["sourceSha256"]}. Cut: {json.dumps(scene["provenance"].get("cut"))}. ' + ' '.join(f'{cue["time"]:g}s: {cue["label"]}. {cue["detail"]}' for cue in scene["cues"])
         if scene["recordingCoverage"] == "result_inspection":
@@ -892,13 +1132,24 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
                 note += " Attribution follows the supplied correlation receipt and its independent review. The helper's native_enforcement_verified:false field is retained. Source read and execution were two separate calls, each approved once. SEL correlation uses the unique route, caller, reason and approval-to-result interval, without a direct SEL-to-tool trace ID. This demonstrates anonymous Gateway token authentication; restricted human-role RBAC and immutable managed policy remain outside its scope."
             elif managed and scene["id"] == managed["native"]["scene_id"]:
                 note += " The exact native tool ID joins the trace to the blocked row. SEL correlation uses the isolated slot, tool, policy reason and time, plus adjacent hash-chain linkage; SEL has no direct native trace or tool ID. The duplicate mutable Crew denial was retired before this take. No permission prompt appeared. This take contains only ui4 denial; visible ui3 conversation history and the separately verified allowed read are outside its filmed sequence. The original dark host notice stays unchanged. The policy-layer denial does not establish exact-tool sandbox execution, human-role RBAC or a managed MCP registry."
+            elif host_take:
+                note += " " + host_take["summary"]
             else:
                 note += " Layer attribution follows the supplied bounded four-outcome reconciliation. It uses the complete MCP journal and service-continuity checks for these four turns. The original passive collector remains incomplete. Crew correlation uses the isolated turn because SEL has no direct trace-to-tool-call join for that denial."
         if scene["id"] == "native-iam-denial" and "iam" in reconciled_phases:
             note += " AWS role attribution uses the existing instance-profile/cutover receipts and after-capture source, service and policy checks. No per-request STS caller identity was collected. Fixture HEAD checks establish existence and metadata, without recomputing the denied object's content digest. Process observations do not establish that a sampled PID overlapped a pending approval. These limits remain in the linked authority review."
+        if host_take:
+            note = (host_take["summary"] + " Recorded " + scene["recordedAt"] + ". "
+                    + "Source SHA-256: " + scene["provenance"]["sourceSha256"] + ". "
+                    + "Continuous raw cut: " + json.dumps(scene["provenance"]["cut"]) + ". "
+                    + "Chapters: " + "; ".join(f'{cue["time"]:g}s {cue["label"]}' for cue in scene["cues"]) + ".")
+            if host_take["presentation"]["control"] == "Protected-path write":
+                note += " The hooks.py and security/paths.py files are root-owned, mode 0644, and hash-matched in both host snapshots. The built-in path check precedes mutable tool-deny configuration and managed filesystem rules; host root can replace its code."
+            if host_take["presentation"]["control"] == "IMDS TCP connection":
+                note += " The reviewed helper source, SHA-256 79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93, fixes its TCP destination to 169.254.169.254 port 80."
         if scene.get("poster", {}).get("time") is not None:
             note += f' The poster uses an actual result frame at {scene["poster"]["time"]:g} seconds in this clip. Video bytes and cut boundaries remain unchanged.'
-        if managed and scene["id"] != managed["native"]["scene_id"]:
+        if managed and scene["id"] != managed["native"]["scene_id"] and not host_take:
             note = "Recorded before the root-managed policy was installed. This earlier take retains its original configuration, outcome and limits; it does not verify the current managed floor. " + note
         add(title, body, note, section="Recorded controls", classes="recorded-demo native-scene" + (" managed-denial" if notice_html else ""), footer=scope_line)
 
@@ -913,7 +1164,7 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
         governance = managed_detail("governance", (590, 352, 933, 101), "admin-governance", "Governance image saved September 14 at 01:52:51 UTC, before the ui4 take. CENTRAL POLICY DISTRIBUTION is the product label for this local root-owned file. Policy v1, startup-only fetch, SHA-256 ca6c7e60….")
         command = managed_detail("managed_command", (610, 502, 905, 44), "admin-posture", "Current S3 upload deny: the switch is on and disabled, with the organization-policy explanation. This capture establishes the UI state, not execution of an S3 upload.")
         add("Managed policy and admin evidence", '<header class="slide-header"><p class="eyebrow">Separate admin screenshot tour</p><h2>Managed policy and admin evidence</h2></header><div class="slide-body"><div class="admin-examples"><div><h3>Local root-owned policy file</h3><p>“Central policy distribution” is the UI label. This source loads at startup. Linux <code>cc</code> is the loaded floor. Sandbox behavior for this tool remains unverified.</p></div>' + governance + '<div><h3>Locked S3 upload setting</h3><p>The <code>aws s3 cp</code> deny is on and locked by policy. No native S3-upload command was tested in this edition.</p></div>' + command + '</div><dl class="admin-sources"><div><dt>Gateway telemetry</dt><dd>Backend activity and performance metrics.</dd></div><div><dt>Collection events</dt><dd>Mac and EC2 health samples and errors.</dd></div><div><dt>SEL evidence</dt><dd>Security decisions in receipts. The portal lists coverage.</dd></div><div><dt>MCP audit</dt><dd>Service decisions and AWS dispatch in the journal.</dd></div></dl><div class="admin-controls">' + guide_link + '<p>Governance saved 01:52:51 UTC; ui4 take 02:06:34 UTC, September 14.</p></div></div>',
-            "The Governance image was saved at 01:52:51 UTC on September 14 (September 13 EDT), before the ui4 take began at 02:06:34 UTC. The UI heading CENTRAL POLICY DISTRIBUTION labels the local root-owned file channel in this installation. The view reports Source: file, startup-only fetch and Policy v1. Its full screenshot also displays the cc floor and governed scopes. The active policy digest ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87 is bound to the ui4 native receipt; its collection interval and service-continuity evidence apply to that take. The summary was assembled at 02:20 UTC. That assembly time does not establish capture time or Gateway process continuity through 02:20. The protected policy and systemd environment were verified separately. The S3 upload rule’s on/disabled switch and policy explanation are actual UI evidence, distinct from a native command-execution test. The loaded policy also denies YOLO and the harmless managed-command marker. The session menu shows YOLO absent while Normal, Reads and Trust remain available. Those settings do not establish a native S3-upload take. Shell Denied Commands, the managed MCP rule and the earlier mutable auto_deny_tools hook are different controls; the duplicate mutable MCP denial was retired before the new take. The owner cannot replace the protected policy file, while host root retains that authority. The dashboard terminal setting is off; a disposable Crew-UID child in the actual Gateway cgroup received EPERM when opening a PTY. Six Kiro CLI descendants showed seccomp mode2, NoNewPrivs1 and different mount namespaces in a point-in-time check. Those observations do not establish exact-tool sandbox behavior. Sensitive-path read, protected-path write and native IMDS execution remain unfinished. Linux cc is neither Seatbelt nor strict isolation. The screenshot tour retains prior telemetry and health captures with their dates; configured control counts, backend metrics, collection health, SEL decisions and service audit have separate scopes.",
+            "The Governance image was saved at 01:52:51 UTC on September 14 (September 13 EDT), before the ui4 take began at 02:06:34 UTC. The UI heading CENTRAL POLICY DISTRIBUTION labels the local root-owned file channel in this installation. The view reports Source: file, startup-only fetch and Policy v1. Its full screenshot also displays the cc floor and governed scopes. The active policy digest ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87 is bound to the ui4 native receipt; its collection interval and service-continuity evidence apply to that take. The summary was assembled at 02:20 UTC. That assembly time does not establish capture time or Gateway process continuity through 02:20. The protected policy and systemd environment were verified separately. The S3 upload rule’s on/disabled switch and policy explanation are actual UI evidence, distinct from a native command-execution test. The loaded policy also denies YOLO and the harmless managed-command marker. The session menu shows YOLO absent while Normal, Reads and Trust remain available. Those settings do not establish a native S3-upload take. Shell Denied Commands, the managed MCP rule and the earlier mutable auto_deny_tools hook are different controls; the duplicate mutable MCP denial was retired before the new take. The owner cannot replace the protected policy file, while host root retains that authority. The dashboard terminal setting is off; a disposable Crew-UID child in the actual Gateway cgroup received EPERM when opening a PTY. Six Kiro CLI descendants showed seccomp mode2, NoNewPrivs1 and different mount namespaces in a point-in-time check. Those observations do not establish exact-tool sandbox behavior. The September 14 takes on slides 14–16 now document CLI ENOENT with later namespace corroboration, a protected-write hook denial and an approved TCP probe rejected by the UID firewall rule. Linux cc is neither Seatbelt nor strict isolation. The screenshot tour retains prior telemetry and health captures with their dates; configured control counts, backend metrics, collection health, SEL decisions and service audit have separate scopes.",
             section="Admin tour", classes="managed-admin", footer="Policy v1 · SHA-256 ca6c7e60… · September 13 EDT. Host root retains control of the file and service.")
 
     if admin_url and not managed:
@@ -967,10 +1218,10 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
             path = safe_file(ROOT / relative)
             setup_links[label] = register(path)
             input_hashes[relative] = sha(path.read_bytes())
-        managed_labels = {"managed-presentation.json": "Current policy and capture scope", "native-managed-ui4-verification.json": "Recorded managed denial", "native-managed-artifact-review.json": "Independent native evidence review", "native-managed-verification.json": "Unfilmed managed allowed control", "host-runtime-check.json": "Host protection checks", "media-review.json": "New recording scope and quality"}
-        managed_evidence_links = ''.join(f'<a href="{r["url"]}" target="_blank" rel="noopener">{e(managed_labels[Path(r["path"]).name])}</a>' for r in receipts if Path(r["path"]).name in managed_labels)
+        managed_labels = {"managed-presentation.json": "Current policy and capture scope", "native-managed-ui4-verification.json": "Recorded managed denial", "native-managed-artifact-review.json": "Independent native evidence review", "native-managed-verification.json": "Unfilmed managed allowed control", "host-runtime-check.json": "Host protection checks", "media-review.json": "Managed MCP recording review"}
+        managed_evidence_links = ''.join(f'<a href="{r["url"]}" target="_blank" rel="noopener">{e("September 14 host recording review" if "managed-host-20260914" in r["path"] else managed_labels[Path(r["path"]).name])}</a>' for r in receipts if Path(r["path"]).name in managed_labels)
         add("Reproduce the presentation or set up a host", f'<header class="slide-header"><p class="eyebrow">Project skill and portable assets</p><h2>Reproduce the presentation or set up a host</h2></header><div class="slide-body artifact-grid"><div><p class="replication-copy">Use the <a href="{setup_links["Project skill"]}" target="_blank" rel="noopener">kirocrew-demo project skill</a> to present, rebuild, set up or record this demo.</p><div class="reproduce-command"><p>1. Check the committed inputs</p><code>python3 scripts/build-demo-presentation.py --check</code><p>2. Export to a fresh directory</p><code>python3 scripts/build-demo-presentation.py --output-dir .build/presentation-export</code></div><p class="replication-copy">Rebuild the recorded edition from a checkout with Python 3.9+. The returned preview command runs its included local server.</p><div class="artifact-inline"><a href="{NOTES.name}" download>Notes</a><a href="{PUBLIC.name}" download>Recording manifest</a><a href="{BUILD.name}" download>Build receipt</a></div><div class="artifact-inline"><a href="{setup_links["Managed walkthrough"]}" target="_blank" rel="noopener">Managed walkthrough</a><a href="{setup_links["Live setup"]}" target="_blank" rel="noopener">Live setup stages</a></div></div><div><p class="receipt-heading">Managed-policy evidence</p><div class="plain-links receipt-links">{managed_evidence_links}</div><p class="replication-copy">Live setup uses your account, runtime package, existing VPC/subnet and SSH source CIDR. A second complete live deployment has not been run.</p></div></div>',
-            "From a clean checkout, run python3 scripts/build-demo-presentation.py --check, then python3 scripts/build-demo-presentation.py --output-dir .build/presentation-export using a fresh destination. The recorded artifact rebuild needs Python 3.9+ and committed media, without AWS, Kiro login or historical private raw footage. Run the returned preview command; the allowlist and byte-range server travel with the export. The project skill routes full setup through dependency planning, explicit account/network configuration, a prepared ARM runtime bundle, CloudFormation, services, fixtures, server integrations, managed policy, MCP user UI, desktop connection, observability app and client telemetry. Read each stage’s plan before applying it. The Mac app and original remote CLI authenticate through their own supported flows. CloudFormation uses supplied VPC/subnet and exact SSH source CIDR without creating additional network infrastructure. A fresh ARM bundle and clean-checkout artifact reproduction were tested; a second complete live deployment was not run. Existing clips and reviews keep their original dates and scope. Grok 4.6 and Opus 5 reviewed the preceding sixteen-slide candidate and requested changes. This derivative incorporates the agreed revisions, followed by a No AI Slop edit. Their original verdicts remain unchanged; final browser acceptance applies through its separate exact-artifact receipt. Presentation controls never execute live demo commands.",
+            "From a clean checkout, run python3 scripts/build-demo-presentation.py --check, then python3 scripts/build-demo-presentation.py --output-dir .build/presentation-export using a fresh destination. The recorded artifact rebuild needs Python 3.9+ and committed media, without AWS, Kiro login or historical private raw footage. Run the returned preview command; the allowlist and byte-range server travel with the export. The project skill routes full setup through dependency planning, explicit account/network configuration, a prepared ARM runtime bundle, CloudFormation, services, fixtures, server integrations, managed policy, MCP user UI, desktop connection, observability app and client telemetry. Read each stage’s plan before applying it. The Mac app and original remote CLI authenticate through their own supported flows. CloudFormation uses supplied VPC/subnet and exact SSH source CIDR without creating additional network infrastructure. A fresh ARM bundle and clean-checkout artifact reproduction were tested; a second complete live deployment was not run. Existing clips and reviews keep their original dates and scope. Grok 4.6 and Opus 5 reviewed all 19 images of managed-host-v1 with explicit xhigh settings and requested changes. This edition incorporates the agreed corrections, followed by a No AI Slop edit. Their candidate verdicts remain unchanged; final browser checks are recorded separately. Presentation controls never execute live demo commands.",
             section="Reproduce", classes="lilac managed-artifacts", footer="Recorded playback and artifact rebuild are reproducible locally. Live deployment needs its own account and acceptance checks.")
 
 
@@ -990,15 +1241,18 @@ def build(manifests, receipt_paths=(), admin_build=DEFAULT_ADMIN, pending_host_t
             host_notes.append("The command clip inspects an assistant summary after completion." + (" Its separate native history and SEL receipt establish the configured Crew denial." if command_evidence else " Server attribution requires a separate receipt."))
         if authenticated_scene:
             host_notes.append("The anonymous-request clip starts at execution approval and ends with the assistant's HTTP 403 summary. The earlier helper-source read had its own approval.")
-        notes_text += "\n\n## Host edition\n\n" + " ".join(host_notes) + " The slides label the remaining tests separately.\n"
+        notes_text += "\n\n## Host edition\n\n" + " ".join(host_notes) + " Earlier capture gaps remain dated in their own receipts.\n"
     if has_host_council_decisions and not managed:
         notes_text += "\n\n## Host council changes\n\nThe control maps are balanced across their pages, with notes specific to each set of rows. Pending sensitive-path read, protected-path write and IMDS execution are named on the slide. The authentication scene identifies the anonymous EC2 loopback helper while the Mac session remains authenticated, retains the helper's false verification flag, and attributes the Gateway decision to combined receipts. The command scene states that its temporary rule was removed. The admin crop contains three complete configured-coverage rows, with expansion buttons outside each crop, and distinguishes shell Denied Commands from the Crew MCP hook. The cover uses Eastern Time; the IAM footer states the STS limitation; the Crew footer separates the incomplete original collector from complete bounded reconciliation.\n"
     if not managed:
         notes_text += "\n\n## What changed\n\n" + ("The previously reviewed result posters, video bytes, continuous cuts and original timing remain unchanged. " if has_host_council_decisions else "After the Grok and Opus council, each clip now opens with its own real result poster. The video bytes, continuous cuts and original timing remain unchanged. " if has_council_decisions else "This edition puts each supplied native recording on its own slide. ") + "Owner authority and the absence of an enterprise policy floor are visible on the slides. The memory scene says the request stopped before tools. The admin slide magnifies actual posture and governance details and separates health collection, Gateway telemetry, SEL evidence and MCP audit records. The No AI Slop pass tightened the new captions and evidence labels while retaining the control names and observed outcomes.\n"
     else:
         notes_text += "\n\n## Managed edition\n\nAdded one continuous request-to-result recording of the managed MCP denial and the actual Connections, session inventory, Governance and pinned-command views. The previous eight clips retain their pre-managed-policy labels, bytes, cuts and evidence limits. A separate unfilmed managed allowed-read receipt establishes the positive control. Root owns the active file policy and service environment; the ordinary Crew configuration remains writable for local MCP management. The registered project skill and portable build command cover reproduction without reusing private runtime state.\n"
-        notes_text += "\n\n## Managed source and limits\n\nEvidence summary assembled " + managed["observed_at"] + ". Policy SHA-256: " + managed["policy"]["policy_sha256"] + ". Client Nightly " + managed["client"]["mac_version"] + "; server Nightly " + managed["client"]["server_version"] + "; " + managed["client"]["backend"] + ". The source field observed_at is a legacy name for assembly time; it is not a timestamp for every screenshot or a process-continuity claim. The Mac quit/relaunch and local Gateway off observation preceded policy installation. The later managed take used the remote Gateway.\n\n" + "\n\n".join(managed["limits"]) + "\n"
+        notes_text += "\n\n## Managed source and limits\n\nEvidence summary assembled " + managed["observed_at"] + ". Policy SHA-256: " + managed["policy"]["policy_sha256"] + ". Client Nightly " + managed["client"]["mac_version"] + "; server Nightly " + managed["client"]["server_version"] + "; " + managed["client"]["backend"] + ". The source field observed_at is a legacy name for assembly time; it is not a timestamp for every screenshot or a process-continuity claim. The Mac quit/relaunch and local Gateway off observation preceded policy installation. The later managed take used the remote Gateway.\n\n" + "\n\n".join(("As of the 02:20 UTC source summary: " + limit + " The September 14 host takes later completed these cases with separate receipts.") if host_takes and "recordings remain unfinished" in limit else limit for limit in managed["limits"]) + "\n"
 
+
+    if host_takes:
+        notes_text += "\n\n## What changed\n\nAdded three native host-control clips and their result posters. Corrected the stale pending status, separated the CLI result from its later namespace check, named the root-owned write-hook code and narrowed the network title to the Crew UID rule. The control map has room above its footer, the managed MCP chapter is readable without scrolling, and recording-review links have distinct labels. Removed repeated host-case explanations while preserving the source hashes, approval sequence and attribution limits.\n"
 
     notes_text = "\n".join(line.rstrip() for line in notes_text.splitlines()).rstrip() + "\n"
 

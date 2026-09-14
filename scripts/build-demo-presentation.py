@@ -64,6 +64,43 @@ def load_recipe(path=DEFAULT_RECIPE):
     return recipe
 
 
+def receipt_dependencies(receipt):
+    """Follow only the two declared public presentation-receipt contracts."""
+    if not isinstance(receipt, dict):
+        return []
+    if receipt.get("kind") == "managed_native_presentation":
+        return receipt.get("receipts", []) + receipt.get("screenshots", [])
+    if receipt.get("kind") == "native_managed_host_media_review":
+        frames_binding = receipt.get("bindings", {}).get("keyframeProvenance")
+        if not isinstance(frames_binding, dict):
+            raise ValueError("Host media review requires keyframe provenance")
+        frames_path = project_file(frames_binding["path"])
+        frames = json.loads(builder.validate_hash(frames_path, frames_binding, "keyframe provenance"))
+        if frames.get("manifestSha256") != receipt["bindings"]["outputManifest"]["sha256"]:
+            raise ValueError("Keyframes must bind the reviewed processed manifest")
+        dependencies = [frames_binding, *frames["keyframes"]]
+        if any(not item["path"].startswith("output/") or any(part in {".build", "raw"} for part in Path(item["path"]).parts)
+               for item in dependencies):
+            raise ValueError("Host keyframes must be public output assets")
+        return dependencies
+    if receipt.get("kind") != "managed_host_native_evidence_index":
+        return []
+    if receipt.get("schema_version") != 1 or not isinstance(receipt.get("takes"), list):
+        raise ValueError("Expected a schema_version 1 managed host evidence index")
+    dependencies = [receipt.get(key) for key in ("host_state_snapshots", "findings", "public_review")]
+    for take in receipt["takes"]:
+        if not isinstance(take, dict) or not isinstance(take.get("corroboration"), list):
+            raise ValueError("Invalid managed host take dependencies")
+        dependencies.append(take.get("review"))
+        dependencies.extend(take["corroboration"])
+    if not all(isinstance(item, dict) and isinstance(item.get("path"), str) for item in dependencies):
+        raise ValueError("Managed host evidence needs explicit public dependency bindings")
+    if any(any(part in {".build", "raw"} for part in Path(item["path"]).parts)
+           or Path(item["path"]).name == "demo.local.json" for item in dependencies):
+        raise ValueError("Managed host presentation dependencies cannot include private state")
+    return dependencies
+
+
 def check_assets(recipe):
     """Read every media/admin dependency named by the hash-bound recipe."""
     checked = set()
@@ -99,9 +136,8 @@ def check_assets(recipe):
         if not relative.endswith(".json"):
             continue
         receipt = json.loads(project_file(relative).read_bytes())
-        if isinstance(receipt, dict) and receipt.get("kind") == "managed_native_presentation":
-            for item in receipt.get("receipts", []) + receipt.get("screenshots", []):
-                check(project_file(item["path"]), item)
+        for item in receipt_dependencies(receipt):
+            check(project_file(item["path"]), item)
     return {"recipeInputCount": len(recipe["input_sha256"]), "boundAssetCount": len(checked), "sceneCount": scenes}
 
 

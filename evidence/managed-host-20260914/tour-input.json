@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "kind": "native_host_results_tour",
+  "verifiedOutcomes": [
+    "sensitive_enoent",
+    "protected_write_hook",
+    "imds_tcp_rejected"
+  ],
+  "screenshots": [
+    {
+      "role": "sensitive",
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/cue-03.jpg",
+      "sha256": "29e7288012ae8c2d9f30c4b38eefd125bbd5e46c74b5467d5f299b4be0a0083d",
+      "bytes": 213177
+    },
+    {
+      "role": "protected",
+      "path": "evidence/managed-host-20260914/screenshots/protected-write-result.jpg",
+      "sha256": "2d73e4c23e149bb98978a1684c944b5fcca4c84455429210c7c01281c596a4ea",
+      "bytes": 157753
+    },
+    {
+      "role": "imds",
+      "path": "evidence/managed-host-20260914/screenshots/imds-tcp-result.jpg",
+      "sha256": "850e61c9db072145f75d8c6e43517b3050a94a8306a24edf573e8bbb109e7c04",
+      "bytes": 137791
+    }
+  ],
+  "sources": [
+    {
+      "label": "index",
+      "path": "evidence/managed-host-20260914/index.json",
+      "sha256": "c7ea50639058346517fe79bc50ea4e07dbd07041a6d6021de01c969a943f5489",
+      "bytes": 2346
+    },
+    {
+      "label": "findings",
+      "path": "evidence/managed-host-20260914/findings.md",
+      "sha256": "2afac39efedafbc155ce5f783ec77fe5daab6d022c57501d628c6a8f7f6dad40",
+      "bytes": 2183
+    },
+    {
+      "label": "public evidence review",
+      "path": "evidence/managed-host-20260914/public-evidence-review.json",
+      "sha256": "a7b6fd7e5102a793442fa50e0f438b6302b826d01970c868611b8a42830903d1",
+      "bytes": 2638
+    },
+    {
+      "label": "media review",
+      "path": "evidence/managed-host-20260914/media-review.json",
+      "sha256": "b3d81b563ad60602e0d04b7506ae59208869316d7767fb886eac617d7b24c528",
+      "bytes": 19570
+    },
+    {
+      "label": "sensitive read",
+      "path": "evidence/managed-host-20260914/receipts/sensitive-read.json",
+      "sha256": "491fa56aed9dcc12d9667ce0a0c3dfbafcbb5bccfdcd233413bb5bd4eec5e804",
+      "bytes": 3453
+    },
+    {
+      "label": "sensitive namespace",
+      "path": "evidence/managed-host-20260914/receipts/sensitive-namespace.json",
+      "sha256": "7d93cfe4cb1efa0c0a4f6aa4d9013db5f747d54915fee3d1034998aa18f979ad",
+      "bytes": 7742
+    },
+    {
+      "label": "protected write",
+      "path": "evidence/managed-host-20260914/receipts/protected-write.json",
+      "sha256": "3654af46b51def2796c3a0b401eb3c7217d14eead834766915ba96083b1d4fe4",
+      "bytes": 3808
+    },
+    {
+      "label": "imds tcp",
+      "path": "evidence/managed-host-20260914/receipts/imds-tcp.json",
+      "sha256": "8fd47d3fb89181d5d83c4df18bddcc89b68c4eb29adb32d47b9b792cef0b72b5",
+      "bytes": 5708
+    },
+    {
+      "label": "host state snapshots",
+      "path": "evidence/managed-host-20260914/receipts/host-state-snapshots.json",
+      "sha256": "997ef6d1b446fb8c35dbab1088d1a892db5501b04428407e798b7126e52321e5",
+      "bytes": 31137
+    },
+    {
+      "label": "manifest",
+      "path": "output/native-host-managed-20260914/manifest.json",
+      "sha256": "6519a880da0178f84ace9f4aa67ae53b2ec523ad7a8522ff123f7f6816e6fd33",
+      "bytes": 14083
+    },
+    {
+      "label": "keyframe provenance",
+      "path": "output/native-host-managed-20260914/keyframe-provenance.json",
+      "sha256": "19f0926dfae2c40b4f1ffa8c59066e28dfff7bb17ac58405bb22a7566966cef0",
+      "bytes": 5276
+    }
+  ],
+  "clips": [
+    {
+      "id": "native-managed-sensitive-read",
+      "label": "Read the protected .aws canary",
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/native-managed-sensitive-read.mp4",
+      "sha256": "076adaed02bf1562feaa763ffd0decd68afcfbd22fbfc062ce546a3eb2bc1653",
+      "bytes": 1078081
+    },
+    {
+      "id": "native-managed-protected-write",
+      "label": "Try writing a protected configuration path",
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/native-managed-protected-write.mp4",
+      "sha256": "7762dd5973506c578f97fbdeb9d0d55a6064044aff3a6bdf2abba5408ea8fcf4",
+      "bytes": 2074802
+    },
+    {
+      "id": "native-managed-imds-tcp",
+      "label": "Approve an IMDS TCP probe",
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/native-managed-imds-tcp.mp4",
+      "sha256": "03b983761244ec51d998cef6c98daf699d054ece80f898ec0863ed72664ecabe",
+      "bytes": 3806454
+    }
+  ]
+}

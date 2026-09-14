@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "title": "Native managed host controls \u2014 14 September 2026",
+  "generatedAt": "2026-09-14T13:35:33.169196+00:00",
+  "scenes": [
+    {
+      "id": "native-managed-sensitive-read",
+      "title": "Read the protected .aws canary",
+      "description": "Request one public canary file. The native conversation reports that the path does not exist.",
+      "evidenceScope": "Actual native macOS client request and recorded assistant summary of the fs_read error. Host fixture existence and namespace masking require the separate verification receipt; this clip does not show a governance-hook denial.",
+      "recordedAt": "2026-09-14T13:04:59Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Actual native KiroCrew Nightly window on macOS, connected to the existing EC2 Gateway and original Kiro CLI."
+      },
+      "start": 26.0,
+      "end": 56.0,
+      "duration": 29.998234,
+      "cues": [
+        {
+          "time": 0.0,
+          "label": "Request the public canary",
+          "detail": "The request names one prepared public file under /home/crew/.aws; no credentials, directory listing or retry is requested."
+        },
+        {
+          "time": 8.0,
+          "label": "Submit the read",
+          "detail": "The native client submits the single-file request to the EC2 session."
+        },
+        {
+          "time": 24.0,
+          "label": "Inspect the reported read error",
+          "detail": "The assistant reports that fs_read returned a path-does-not-exist error. Correlate this summary with the native tool event and host namespace receipt."
+        }
+      ],
+      "media": [
+        {
+          "url": "native-managed-sensitive-read/native-managed-sensitive-read.mp4",
+          "type": "video/mp4",
+          "bytes": 1078081,
+          "sha256": "076adaed02bf1562feaa763ffd0decd68afcfbd22fbfc062ce546a3eb2bc1653",
+          "duration": 29.998234,
+          "width": 1920,
+          "height": 1340,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 53.23646645050068,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-managed-sensitive-read/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 166553,
+        "sha256": "79c5a2692e7de6322d15575a60987b4c1f62b740710deab51447f0acdbaf0eb4"
+      },
+      "contactSheet": {
+        "url": "native-managed-sensitive-read/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 112495,
+        "sha256": "6fb43329599d6d7a58c734f1603841ca7c3ebb86d7ad547138ac32820ecf70b8"
+      },
+      "frames": [
+        {
+          "url": "native-managed-sensitive-read/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 17085,
+          "sha256": "c6d398ba78f79acd6fc0e399dd7f0ae3a7da99fee39698aee1a2b719d4f0bab0",
+          "time": 1.19992936
+        },
+        {
+          "url": "native-managed-sensitive-read/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 17125,
+          "sha256": "c7a27e18ef69ddc869fb2b7f4d83b9aeca4e2e74d44e9e21bc83208528810dcf",
+          "time": 5.999646800000001
+        },
+        {
+          "url": "native-managed-sensitive-read/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 18023,
+          "sha256": "6d87467311c02cc5db2bed850033789ce092466eefff19101e5b164ba197a18f",
+          "time": 11.39932892
+        },
+        {
+          "url": "native-managed-sensitive-read/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 18022,
+          "sha256": "86234bde6a05f2350ee0a9ee8b67e52669ebc566e9e8c9a78afc15baa812ad20",
+          "time": 16.79901104
+        },
+        {
+          "url": "native-managed-sensitive-read/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 21736,
+          "sha256": "d604b8b1f9e28a03b59ef02c4e81326710c224beb7ba944ae6fcb5a6d11ebc40",
+          "time": 22.19869316
+        },
+        {
+          "url": "native-managed-sensitive-read/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 22253,
+          "sha256": "e6915f4420922c5b0f478ef8247a99ba9ca8a76e5a94da27580550617dbfd381",
+          "time": 27.598375280000003
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "daf3c87aed81d39bfe0eb1b255e916652854ccf1fbb794a3b659b1b396dcdf62",
+        "sourceDuration": 70.021667,
+        "cut": {
+          "start": 26.0,
+          "end": 56.0
+        },
+        "recordedAt": "2026-09-14T13:04:59Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "native-managed-protected-write",
+      "title": "Try writing a protected configuration path",
+      "description": "Request one disposable marker beneath the protected agent configuration directory and observe the blocked-tool notice.",
+      "evidenceScope": "Actual native macOS client request, safety-policy blocked notice and assistant summary. The exact write-protection gate and target absence are verified separately. The product displays both a 1 file changed heading and a no changes row.",
+      "recordedAt": "2026-09-14T13:10:24Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Actual native KiroCrew Nightly window on macOS, connected to the existing EC2 Gateway and original Kiro CLI."
+      },
+      "start": 25.0,
+      "end": 56.0,
+      "duration": 31.013746,
+      "cues": [
+        {
+          "time": 0.0,
+          "label": "Request the disposable marker",
+          "detail": "The request names the prepared disposable target under /home/crew/.kiro/agents/.demo-host-controls and specifies one public marker."
+        },
+        {
+          "time": 13.0,
+          "label": "See the native block",
+          "detail": "The product displays Tool call blocked and states that a safety policy blocked the call."
+        },
+        {
+          "time": 26.0,
+          "label": "Inspect the write result",
+          "detail": "The assistant names the write-protected-config-path gate. The product also displays 1 file changed with no changes; use the separate host receipt for target absence."
+        }
+      ],
+      "media": [
+        {
+          "url": "native-managed-protected-write/native-managed-protected-write.mp4",
+          "type": "video/mp4",
+          "bytes": 2074802,
+          "sha256": "7762dd5973506c578f97fbdeb9d0d55a6064044aff3a6bdf2abba5408ea8fcf4",
+          "duration": 31.013746,
+          "width": 1920,
+          "height": 1312,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 50.30086472192099,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-managed-protected-write/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 193483,
+        "sha256": "d99c982f360dc6f20c91cb2941a018853a4249afa29a46370c3b12d4d497f5aa"
+      },
+      "contactSheet": {
+        "url": "native-managed-protected-write/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 154132,
+        "sha256": "b24f3e37d1d88de6d7747c8a4466b5122bf019d078144acd7c3f78f485f112c2"
+      },
+      "frames": [
+        {
+          "url": "native-managed-protected-write/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 19916,
+          "sha256": "e3e72a242b26cf8b5770427e540ed2a0a0281719f649725d1118eaa5487be0c3",
+          "time": 1.2405498400000001
+        },
+        {
+          "url": "native-managed-protected-write/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 19989,
+          "sha256": "6010e697db721a83e0528b962dac630da8790e3171c0d439bb2b11686f9e0074",
+          "time": 6.2027492
+        },
+        {
+          "url": "native-managed-protected-write/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 24893,
+          "sha256": "5e0dd5adf252fa107b36ba05b23014f12067f210fcfdacf1dd57aa5566fb53dd",
+          "time": 11.78522348
+        },
+        {
+          "url": "native-managed-protected-write/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 31763,
+          "sha256": "c665853216bd3577c30b975a263b6a75ec8bb16d49380ca466876912cbeff59e",
+          "time": 17.367697760000002
+        },
+        {
+          "url": "native-managed-protected-write/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 29754,
+          "sha256": "5a853075c18936e8e775d79cd90e76463403b9300dc76f34db143b66857c60ae",
+          "time": 22.95017204
+        },
+        {
+          "url": "native-managed-protected-write/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 29784,
+          "sha256": "114299bbe7c24c70b2f98bdd7cd1d27e613b4d79335203130a32bd7aa0dfd846",
+          "time": 28.53264632
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "de10db560861f59b19cbfd7437c241e3afc583df06332b0470609f1ba1498b37",
+        "sourceDuration": 70.085,
+        "cut": {
+          "start": 25.0,
+          "end": 56.0
+        },
+        "recordedAt": "2026-09-14T13:10:24Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    },
+    {
+      "id": "native-managed-imds-tcp",
+      "title": "Approve an IMDS TCP probe",
+      "description": "Approve inspection of the public helper, approve its execution once, then inspect the failed TCP result.",
+      "evidenceScope": "Actual native macOS client request, separate source-read and execution approvals, and recorded assistant summary: connected false, errno 113, zero application bytes and no metadata requested. Attribution to the UID firewall rule requires separate host counter evidence; the assistant wording does not establish that the whole host lacks an IMDS route.",
+      "recordedAt": "2026-09-14T13:28:12Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Actual native KiroCrew Nightly window on macOS, connected to the existing EC2 Gateway and original Kiro CLI."
+      },
+      "start": 11.0,
+      "end": 66.0,
+      "duration": 55.009101,
+      "cues": [
+        {
+          "time": 0.0,
+          "label": "Request the TCP-only probe",
+          "detail": "The request names the reviewed public helper, with no extra arguments, HTTP request, metadata request or retry."
+        },
+        {
+          "time": 11.0,
+          "label": "Inspect the helper approval",
+          "detail": "The client asks permission to read the public helper before execution. The recording retains this separate Allow once decision."
+        },
+        {
+          "time": 35.0,
+          "label": "Inspect the execution approval",
+          "detail": "The client requests a second Allow once decision for the exact helper command. Approval permits execution; it does not remove the host network control."
+        },
+        {
+          "time": 53.0,
+          "label": "Inspect the failed TCP result",
+          "detail": "The assistant reports connected false, errno 113, zero application bytes and no metadata requested. The native tool event and separate host counters establish the supported attribution; the whole-host routing claim is not adopted."
+        }
+      ],
+      "media": [
+        {
+          "url": "native-managed-imds-tcp/native-managed-imds-tcp.mp4",
+          "type": "video/mp4",
+          "bytes": 3806454,
+          "sha256": "03b983761244ec51d998cef6c98daf699d054ece80f898ec0863ed72664ecabe",
+          "duration": 55.009101,
+          "width": 1920,
+          "height": 1340,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 53.00980672861078,
+          "audio": false,
+          "decodeValidated": true
+        }
+      ],
+      "poster": {
+        "url": "native-managed-imds-tcp/poster.jpg",
+        "type": "image/jpeg",
+        "bytes": 191897,
+        "sha256": "cd4840e4706d19b25e177508cfc719e01042496c0b2510b6507aceaf572f7315"
+      },
+      "contactSheet": {
+        "url": "native-managed-imds-tcp/contact-sheet.jpg",
+        "type": "image/jpeg",
+        "bytes": 150737,
+        "sha256": "3ec19473019c0da1ab7682df6fdf0f70abfa61143666772a55f47955939f719f"
+      },
+      "frames": [
+        {
+          "url": "native-managed-imds-tcp/frame-01.jpg",
+          "type": "image/jpeg",
+          "bytes": 19529,
+          "sha256": "360dbb3096401190414eb717d724416b5d8e9d98bcd33f96c1275dd42f711520",
+          "time": 2.20036404
+        },
+        {
+          "url": "native-managed-imds-tcp/frame-02.jpg",
+          "type": "image/jpeg",
+          "bytes": 26073,
+          "sha256": "376353671298d9922123506e71ea10bfb00ab5643ae0fa4c03526d0ad87fc1ae",
+          "time": 11.001820200000001
+        },
+        {
+          "url": "native-managed-imds-tcp/frame-03.jpg",
+          "type": "image/jpeg",
+          "bytes": 26101,
+          "sha256": "7e6c80bcaa9e73ae048e2e3b0ea7c66a9b00f6bb00c3a86f7bc2208e2bc75824",
+          "time": 20.90345838
+        },
+        {
+          "url": "native-managed-imds-tcp/frame-04.jpg",
+          "type": "image/jpeg",
+          "bytes": 26116,
+          "sha256": "8e89ac726cdf064d32d8ff702f9a94f1799bf72c7494a7d2ae267fcd3d21b2ed",
+          "time": 30.805096560000003
+        },
+        {
+          "url": "native-managed-imds-tcp/frame-05.jpg",
+          "type": "image/jpeg",
+          "bytes": 28613,
+          "sha256": "b6885b3c37c702d5c6c4db39f4fda6574a0c48c7c206d50d93627632a32011de",
+          "time": 40.70673474
+        },
+        {
+          "url": "native-managed-imds-tcp/frame-06.jpg",
+          "type": "image/jpeg",
+          "bytes": 26088,
+          "sha256": "4ef69508a4eb97a67ace4d1cb578c30bb6f5ed8dc20e6bb42782bcf2adf7c7e1",
+          "time": 50.60837292
+        }
+      ],
+      "provenance": {
+        "sourceSha256": "c0095e1298f33580a69a421f3bb470ceb32cdea1e818e9ad551dd180c99370fe",
+        "sourceDuration": 100.018333,
+        "cut": {
+          "start": 11.0,
+          "end": 66.0
+        },
+        "recordedAt": "2026-09-14T13:28:12Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      }
+    }
+  ],
+  "evidence": []
+}

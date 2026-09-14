@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "title": "Native managed host controls \u2014 14 September 2026",
+  "scenes": [
+    {
+      "id": "native-managed-sensitive-read",
+      "title": "Read the protected .aws canary",
+      "description": "Request one public canary file. The native conversation reports that the path does not exist.",
+      "evidenceScope": "Actual native macOS client request and recorded assistant summary of the fs_read error. Host fixture existence and namespace masking require the separate verification receipt; this clip does not show a governance-hook denial.",
+      "recordedAt": "2026-09-14T13:04:59Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/sensitive-read.mov",
+        "description": "Actual native KiroCrew Nightly window on macOS, connected to the existing EC2 Gateway and original Kiro CLI."
+      },
+      "start": 26,
+      "end": 56,
+      "cues": [
+        {
+          "time": 0,
+          "label": "Request the public canary",
+          "detail": "The request names one prepared public file under /home/crew/.aws; no credentials, directory listing or retry is requested."
+        },
+        {
+          "time": 8,
+          "label": "Submit the read",
+          "detail": "The native client submits the single-file request to the EC2 session."
+        },
+        {
+          "time": 24,
+          "label": "Inspect the reported read error",
+          "detail": "The assistant reports that fs_read returned a path-does-not-exist error. Correlate this summary with the native tool event and host namespace receipt."
+        }
+      ]
+    },
+    {
+      "id": "native-managed-protected-write",
+      "title": "Try writing a protected configuration path",
+      "description": "Request one disposable marker beneath the protected agent configuration directory and observe the blocked-tool notice.",
+      "evidenceScope": "Actual native macOS client request, safety-policy blocked notice and assistant summary. The exact write-protection gate and target absence are verified separately. The product displays both a 1 file changed heading and a no changes row.",
+      "recordedAt": "2026-09-14T13:10:24Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/protected-write.mov",
+        "description": "Actual native KiroCrew Nightly window on macOS, connected to the existing EC2 Gateway and original Kiro CLI."
+      },
+      "start": 25,
+      "end": 56,
+      "cues": [
+        {
+          "time": 0,
+          "label": "Request the disposable marker",
+          "detail": "The request names the prepared disposable target under /home/crew/.kiro/agents/.demo-host-controls and specifies one public marker."
+        },
+        {
+          "time": 13,
+          "label": "See the native block",
+          "detail": "The product displays Tool call blocked and states that a safety policy blocked the call."
+        },
+        {
+          "time": 26,
+          "label": "Inspect the write result",
+          "detail": "The assistant names the write-protected-config-path gate. The product also displays 1 file changed with no changes; use the separate host receipt for target absence."
+        }
+      ]
+    },
+    {
+      "id": "native-managed-imds-tcp",
+      "title": "Approve an IMDS TCP probe",
+      "description": "Approve inspection of the public helper, approve its execution once, then inspect the failed TCP result.",
+      "evidenceScope": "Actual native macOS client request, separate source-read and execution approvals, and recorded assistant summary: connected false, errno 113, zero application bytes and no metadata requested. Attribution to the UID firewall rule requires separate host counter evidence; the assistant wording does not establish that the whole host lacks an IMDS route.",
+      "recordedAt": "2026-09-14T13:28:12Z",
+      "source": {
+        "kind": "desktop-recording",
+        "raw": "raw/imds-tcp.mov",
+        "description": "Actual native KiroCrew Nightly window on macOS, connected to the existing EC2 Gateway and original Kiro CLI."
+      },
+      "start": 11,
+      "end": 66,
+      "cues": [
+        {
+          "time": 0,
+          "label": "Request the TCP-only probe",
+          "detail": "The request names the reviewed public helper, with no extra arguments, HTTP request, metadata request or retry."
+        },
+        {
+          "time": 11,
+          "label": "Inspect the helper approval",
+          "detail": "The client asks permission to read the public helper before execution. The recording retains this separate Allow once decision."
+        },
+        {
+          "time": 35,
+          "label": "Inspect the execution approval",
+          "detail": "The client requests a second Allow once decision for the exact helper command. Approval permits execution; it does not remove the host network control."
+        },
+        {
+          "time": 53,
+          "label": "Inspect the failed TCP result",
+          "detail": "The assistant reports connected false, errno 113, zero application bytes and no metadata requested. The native tool event and separate host counters establish the supported attribution; the whole-host routing claim is not adopted."
+        }
+      ]
+    }
+  ]
+}

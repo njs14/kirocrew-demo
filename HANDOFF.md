@@ -1,8 +1,10 @@
 # KiroCrew demo — managed EC2 controls and native recordings
 
-> Current state: Read the [managed demo guide](docs/MANAGED-DEMO.md) and its linked status before running this demo. The root-owned policy and fresh native managed-denial test supersede the earlier configuration described below. Historical results and unfinished host cases retain their recorded scope.
+> Current state — September 14, 2026: Read the [managed demo guide](docs/MANAGED-DEMO.md) and its linked status before presenting or running the demo. The root-owned policy, managed MCP denial and three completed native host takes supersede the earlier pending results. Historical notes below retain their original observation dates.
 
-The current Mac client uses the EC2 Gateway with its local Gateway off. The original Kiro CLI is authenticated, and fresh managed-policy turns verified a permitted MCP read and an automatic MCP denial. The delivered presentation has 16 slides and nine recordings; the separate admin tour has 10 stops and 26 screenshots. The [project skill](.agents/skills/kirocrew-demo/SKILL.md) covers dependencies, setup, presentation and recording. Use [current-status.json](evidence/native-client-demo/current-status.json) for the final artifact and validation bindings.
+The Mac client uses the EC2 Gateway with its local Gateway off and the original Kiro CLI backend. Managed-policy turns verified a permitted MCP read and an automatic MCP denial. The September 14 host takes added a sensitive-path CLI `ENOENT` result with current-session namespace-mask corroboration, an automatic built-in protected-path write denial, and a separately approved IPv4 metadata TCP attempt rejected with one increment on the unchanged Crew-UID firewall rule. Those are specific observed boundaries, not general sandbox or enterprise-identity acceptance.
+
+Use the [project skill](.agents/skills/kirocrew-demo/SKILL.md) for dependencies, setup, presentation and recording, and [NATIVE-HOST-REVIEW.md](docs/NATIVE-HOST-REVIEW.md) for a fresh host take. [current-status.json](evidence/native-client-demo/current-status.json) binds the delivered deck, admin tour and validation; a new deployment still needs its own sign-in and native acceptance. The earlier recordings and model-review receipts keep their recorded scope.
 
 ## Earlier deployment notes — historical
 

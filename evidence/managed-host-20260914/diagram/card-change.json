@@ -1,0 +1,22 @@
+{
+  "kind": "three_completed_host_take_card_update",
+  "before": {
+    "dot": "amber",
+    "title": "Host evidence scope",
+    "items": [
+      "Linux seccomp and mount snapshots; a cgroup PTY probe returned EPERM.",
+      "Those observations do not prove the sandbox of each native tool.",
+      "Native sensitive read, protected write and IMDS execution remain unfinished."
+    ]
+  },
+  "after": {
+    "dot": "amber",
+    "title": "Host evidence scope",
+    "items": [
+      "CLI sensitive path unavailable; later .aws mask corroborated.",
+      "Built-in protected-write hook denied the native write.",
+      "Native IPv4 metadata TCP rejected; rule counter 2 to 3."
+    ]
+  },
+  "scope": "Card text only; all specification fields outside this card are preserved."
+}

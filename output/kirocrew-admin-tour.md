@@ -1,12 +1,12 @@
 # KiroCrew admin console tour
 
-September 13, 2026 · macOS client / ARM EC2 server · owner console
+September 14, 2026 · macOS client / ARM EC2 server · owner console
 
-Inspect the server’s controls, understand their authority and read the client and server measurements. These are original captures of the owner console connected to the ARM EC2 Gateway. The Mac runs the client with its local Gateway off.
+Tour the owner console connected to the ARM EC2 Gateway: policy, user controls, runtime metrics and client/server health. The Mac runs the client with its local Gateway off. Each image retains its capture date.
 
-Managed file policy is active on the EC2 Gateway. A fresh macOS take records its automatic MCP-tool refusal. A separate managed allowed read is verified in the receipts but was not filmed.
+Managed file policy is active on the EC2 Gateway. A fresh macOS take records its automatic MCP-tool refusal. A separate managed allowed read is verified in the receipts but was not filmed. Three September 14 native recordings now cover the sensitive-path read, protected-path write and fixed IMDS TCP check.
 
-Ten stops, seven managed-policy captures and 19 unchanged images from before the change. Each image is dated. Configuration, Gateway metrics, collection health and security decisions have separate evidence.
+Eleven stops and 29 original images: 26 dated images retained from the previous edition, plus three clearly labeled native client result images. Configuration, Gateway metrics, collection health and security decisions have separate evidence.
 
 ## 01. Locate the execution host
 
@@ -252,10 +252,55 @@ Presenter cue: Read both timestamps and individual checks. Expand server measure
 
 ![Demo Observability shows expanded server process measurements and a Server-only collection log containing one First sample collected event at 10:31:23.](admin-console-host-20260913/06-server-collection-logs.jpg)
 
+## 11. Inspect the native host results
+
+Open **Recorded macOS client sessions; supporting receipts below**.
+
+Route: `Native client results, not an admin-console route`
+
+Three September 14 recordings complete the previously unfinished host checks. These images show the native Mac client. The existing admin screenshots and dashboard counters do not establish these outcomes.
+
+Sensitive-path read: CLI argument validation returned ENOENT for the public canary. A later readback found the host file hidden from the current CLI descendants by a .aws tmpfs mask. The native classifier remains accepted:false; the readback does not identify the historical syscall PID.
+
+Protected-path write: Crew's built-in hook blocked the marker, which remained absent. Its source files are root-owned. The hook runs before the managed filesystem rule, so this take tests that earlier hook. The host readback resolves the UI's conflicting 1 file changed heading and no changes row.
+
+IMDS TCP: the user approved the helper source read once and execution once. One native execution made one fixed TCP attempt, returned errno 113, sent zero application bytes and requested no metadata. The Crew UID's firewall counter increased from 2 to 3 during the observed interval. This does not establish that the whole host lacks an IMDS route. The earlier unanswered IMDS approval timeout remains a separate historical take.
+
+Open the three actual clips and sanitized receipts in the evidence list. Keep each result tied to its mechanism: filesystem visibility, a built-in write hook or an outbound network rule.
+
+Presenter cue: Read the native result first, then the matching receipt. Do not count these frames as fresh admin-dashboard measurements.
+
+*September 14, 2026 · native macOS result · not admin-console UI.* Actual recording frame at clip 24 seconds (raw 50 seconds). The native read returned ENOENT for the public canary. Separate current namespace evidence corroborates that the host file is hidden; this was not a read-hook denial.
+
+![Actual native recording frame shows the public sensitive-path canary read returning ENOENT.](../output/native-host-managed-20260914/native-managed-sensitive-read/cue-03.jpg)
+
+*September 14, 2026 · native macOS result · not admin-console UI.* Actual macOS client result: the prepared write was refused by the built-in protected-config write hook. The UI displays both 1 file changed and no changes. The separate host readback confirms the marker file is absent.
+
+![The native macOS client reports a protected-config write refusal; its file panel displays both 1 file changed and no changes.](../evidence/managed-host-20260914/screenshots/protected-write-result.jpg)
+
+*September 14, 2026 · native macOS result · not admin-console UI.* Actual macOS result: connected false, errno 113, zero application bytes sent and no metadata requested. The sanitized receipt joins the one native execution to the firewall counter changing from 2 to 3 in the observed interval.
+
+![The native IMDS TCP result reports EHOSTUNREACH, zero application bytes and no metadata request.](../evidence/managed-host-20260914/screenshots/imds-tcp-result.jpg)
+
 ## Evidence
 
-Host root retains authority. This deployment does not establish signed fleet policy, enterprise SSO or human-role RBAC. The Linux cc floor is not macOS Seatbelt or strict-tier isolation. Sensitive-path read, protected-path write and native IMDS recordings remain unfinished. The policy-layer SEL join uses the isolated session, tool, reason and interval; those SEL events have no direct tool-call or trace-ID field. Earlier MCP/IAM collection: The original collector receipt remains collection_complete=false because its recent SEL window lost the baseline anchor. Its exact bytes are retained locally; the linked publication export identifies the original by hash. A separate read-only recovery joined the retained rows. The generic reconciler keeps full_native_acceptance=false: it does not decide footage acceptance or every attribution check. Process sampling was not shown to overlap an approval, and SEL integrity relies on the original Gateway verification rather than independent per-row signatures.
+Host root retains authority. This deployment does not establish signed fleet policy, enterprise SSO or human-role RBAC. The Linux cc floor is not macOS Seatbelt or strict-tier isolation. The three host checks now have separate native recordings and sanitized evidence. The sensitive-read result is ENOENT with separate current namespace corroboration; it is not a read-hook denial. The earlier unanswered IMDS approval remains historical. The policy-layer SEL join uses the isolated session, tool, reason and interval; those SEL events have no direct tool-call or trace-ID field. Earlier MCP/IAM collection: The original collector receipt remains collection_complete=false because its recent SEL window lost the baseline anchor. Its exact bytes are retained locally; the linked publication export identifies the original by hash. A separate read-only recovery joined the retained rows. The generic reconciler keeps full_native_acceptance=false: it does not decide footage acceptance or every attribution check. Process sampling was not shown to overlap an approval, and SEL integrity relies on the original Gateway verification rather than independent per-row signatures.
 
+- [September 14 native host result images and evidence bindings](../evidence/managed-host-20260914/tour-input.json)
+- [index](../evidence/managed-host-20260914/index.json)
+- [findings](../evidence/managed-host-20260914/findings.md)
+- [public evidence review](../evidence/managed-host-20260914/public-evidence-review.json)
+- [media review](../evidence/managed-host-20260914/media-review.json)
+- [sensitive read](../evidence/managed-host-20260914/receipts/sensitive-read.json)
+- [sensitive namespace](../evidence/managed-host-20260914/receipts/sensitive-namespace.json)
+- [protected write](../evidence/managed-host-20260914/receipts/protected-write.json)
+- [imds tcp](../evidence/managed-host-20260914/receipts/imds-tcp.json)
+- [host state snapshots](../evidence/managed-host-20260914/receipts/host-state-snapshots.json)
+- [manifest](../output/native-host-managed-20260914/manifest.json)
+- [keyframe provenance](../output/native-host-managed-20260914/keyframe-provenance.json)
+- [Read the protected .aws canary](../output/native-host-managed-20260914/native-managed-sensitive-read/native-managed-sensitive-read.mp4)
+- [Try writing a protected configuration path](../output/native-host-managed-20260914/native-managed-protected-write/native-managed-protected-write.mp4)
+- [Approve an IMDS TCP probe](../output/native-host-managed-20260914/native-managed-imds-tcp/native-managed-imds-tcp.mp4)
 - [Managed policy, client state and screenshot summary](../evidence/enterprise-managed/20260913/managed-presentation.json)
 - [Active managed policy readback](../evidence/enterprise-managed/20260913/policy-verify.json)
 - [MCP configuration and policy readback](../evidence/enterprise-managed/20260913/mcp-verify.json)
@@ -269,7 +314,6 @@ Host root retains authority. This deployment does not establish signed fleet pol
 - [Before managed policy: MCP and IAM enforcement contract](../infrastructure/mcp-enforcement/README.md)
 - [Before managed policy: Custom telemetry data contract](../infrastructure/observability/APP-INSTALL.md)
 - [Before managed policy: Earlier screenshot capture receipt](../evidence/admin-console/browser-receipt.json)
-- [Before managed policy: Earlier admin findings](../output/kirocrew-admin-findings.md)
 - [Before managed policy: Final four-outcome reconciliation](../evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json)
 - [Before managed policy: Independent reconciliation review](../evidence/native-client-demo/20260913-ui2-reconciled-final/review.json)
 - [Before managed policy: MCP and IAM authority attribution review](../evidence/native-client-demo/20260913-ui2/authority-attribution-review.json)
@@ -282,7 +326,12 @@ Host root retains authority. This deployment does not establish signed fleet pol
 - [Before managed policy: Independent anonymous Gateway authentication review](../evidence/native-client-demo/host-20260913-review/auth-review.json)
 - [Before managed policy: Temporary command-rule cleanup readback](../evidence/native-client-demo/host-20260913-ui3/command-rule-cleanup.json)
 - [Before managed policy: Current native admin findings](../output/kirocrew-native-admin-findings.md)
+- [Current findings, followed by the preserved September 13 findings](../output/kirocrew-admin-findings.md)
+- [Native run receipt 1 (read its recorded verdict)](../evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json)
+- [Native run receipt 2 (read its recorded verdict)](../evidence/native-client-demo/20260913-ui2-reconciled-final/review.json)
+- [Native run receipt 3 (read its recorded verdict)](../evidence/native-client-demo/20260913-ui2/authority-attribution-review.json)
+- [Native run receipt 4 (read its recorded verdict)](../evidence/native-client-demo/20260913-ui2/receipt-publication.json)
 
 ## What changed
 
-Added the active file policy, locked S3 command rule, user approval menu, MCP availability and deferred inventory views, and the filmed native managed-denial result. Preserved all 19 earlier screenshots with pre-policy labels and added seven unchanged captures. The staged MCP restriction was discarded.
+Retained all 26 prior images and added one native-results stop with three original result images and links to the three actual clips. Updated the sensitive-read, protected-write and IMDS status from their sanitized receipts; preserved the earlier unanswered IMDS take and its limits.

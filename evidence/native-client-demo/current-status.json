@@ -1,13 +1,14 @@
 {
   "schema_version": 1,
   "kind": "native_demo_status",
-  "updated_at": "2026-09-14T03:30:46.368529+00:00",
-  "status": "managed_policy_native_denial_and_presentation_verified",
+  "updated_at": "2026-09-14T14:53:32.372370+00:00",
+  "status": "managed_policy_and_three_native_host_takes_delivered",
   "current_guide": "docs/MANAGED-DEMO.md",
   "endpoint_client_scope": "macOS only",
   "historical_status": {
-    "path": "evidence/enterprise-managed/accepted-before-managed/current-status.json",
-    "sha256": "19171a4079811f57ac02a6e41d9756f410e1e0149361c336d6fb8269de9609ed"
+    "path": "evidence/managed-host-20260914/accepted-current-status.json",
+    "sha256": "15fd56bc4c03c03b52731c6a687a4229ab3286650034f9dd46ba093a403e17bf",
+    "bytes": 10793
   },
   "managed_policy": {
     "status": "active_and_native_mcp_denial_verified",
@@ -31,7 +32,12 @@
     "quit_and_relaunch_verified": true,
     "remote_tunnel_continuity_observed": true,
     "subsequent_native_execution_verified": true,
-    "backend": "original Kiro CLI on EC2"
+    "backend": "original Kiro CLI on EC2",
+    "september14_state_receipt": {
+      "path": "evidence/managed-host-20260914/client-state.json",
+      "sha256": "30255dd6b7c8448b8b414d8fd14b1a56622ca67670034eef39ef564b12884c09",
+      "bytes": 608
+    }
   },
   "native_managed_results": [
     {
@@ -69,16 +75,17 @@
     "fresh_clip": "output/native-managed-clip-20260914/manifest.json",
     "media_review": "passed_encoding_and_visual_review",
     "browser_playback_cue_and_slide_pause_review": "pass",
-    "council_and_final_editorial_review": "Both requested models reviewed the frozen candidate; agreed changes incorporated, then direct No AI Slop edit and exact-final browser QA.",
-    "slides": 16,
-    "native_clips": 9
+    "council_and_final_editorial_review": "Exact Grok 4.6 and Opus 5 reviewed all 19 candidate images with explicit xhigh launches. Agreed changes incorporated, direct No AI Slop edit and separate author final-browser verification; no final-byte model approval claimed.",
+    "slides": 19,
+    "native_clips": 12,
+    "host_clip_manifest": "output/native-host-managed-20260914/manifest.json"
   },
   "admin_tour": {
     "path": "output/kirocrew-admin-tour.html",
     "managed_screenshot_integration": "complete",
-    "stops": 10,
-    "screenshots": 26,
-    "browser_review": "pass; all stops, all images decoded, zoom opened and closed"
+    "stops": 11,
+    "screenshots": 29,
+    "browser_review": "pass; 11 stops, 29 final decoded images and native-result zoom checks"
   },
   "replication": {
     "skill": ".agents/skills/kirocrew-demo/SKILL.md",
@@ -88,41 +95,64 @@
     "runtime_bundle": "docs/ARM-RUNTIME-BUNDLE.md",
     "infrastructure": "CloudFormation uses an existing VPC and subnet, with SSH ingress restricted to one client IPv4 /32; no added network infrastructure.",
     "new_deployment_acceptance": "Requires its own product sign-ins and native control observations.",
-    "local_tooling_tests": {
+    "presentation_clean_copy": {
+      "kind": "final_managed_host_presentation_replication",
+      "status": "pass",
+      "final_deck": {
+        "path": "output/kirocrew-native-controls.html",
+        "sha256": "587f500eaa2f42b343146c9942303855a38cff22c583719476e65284a725d8c1",
+        "bytes": 2046398
+      },
+      "recipe": {
+        "path": "config/presentation-native.json",
+        "sha256": "d0684bdc283a44a19ce6c0881b286d583e668a96f688951198c49ccd31cb8f4f",
+        "bytes": 11152
+      },
+      "tests": {
+        "path": "evidence/managed-host-20260914/final-tests.json",
+        "sha256": "1e8c447e33bae432efec5b0a033073e864d6216e09910bb192f5476eca009885",
+        "bytes": 1248
+      },
+      "source_files": 201,
+      "skill_linked_files": 83,
+      "slides": 19,
+      "clips": 12,
+      "source_and_export_paths_contain_spaces": true,
+      "source_moved_away_before_export_checks": true,
+      "html_matches_delivered_edition": true,
+      "checks": "The clean-copy test rebuilt from declared inputs, moved the source away, checked all generated HTML references and media byte ranges, and rejected private/missing/colliding paths.",
+      "project_skill": {
+        "path": ".agents/skills/kirocrew-demo/SKILL.md",
+        "sha256": "413d4ec277300c5799e95d9b09d398eda58c99a50b59da6245e43b3129724fb8",
+        "bytes": 2960
+      },
+      "namespace_helper_validation": "Nine offline identity/fixture/freshness/source/mount guard tests; no second live inspector execution claimed.",
+      "second_complete_live_deployment": false
+    },
+    "historical_tooling_tests": {
       "passed": 150,
       "scope": "Policy, ARM bundle, MCP setup, live stages, Mac setup, App Kit and dependency helpers; no second complete live deployment."
     },
-    "presentation_clean_copy": {
-      "status": "pass",
-      "slides": 16,
-      "clips": 9,
-      "source_files": 163,
-      "skill_linked_files": 73,
-      "source_and_export_paths_contain_spaces": true,
-      "source_moved_away_before_export_checks": true,
-      "export_routes_verified": 116,
-      "html_matches_delivered_edition": true,
-      "scope": "Presentation-only export; complete live setup skill and its links execute from the project checkout. A second full live deployment remains unexecuted."
-    },
-    "presentation_tests": {
-      "passed": 11,
-      "scope": "Recipe, clean copy, export isolation, delivery and collision guards."
-    },
-    "total_new_focused_tests": 161
+    "current_focused_tests": {
+      "passed": 106,
+      "receipt": {
+        "path": "evidence/managed-host-20260914/final-tests.json",
+        "sha256": "1e8c447e33bae432efec5b0a033073e864d6216e09910bb192f5476eca009885",
+        "bytes": 1248
+      }
+    }
   },
-  "pending_host_takes": [
-    "Sensitive-path read",
-    "Protected-path write",
-    "IPv4 metadata TCP connection isolation"
-  ],
-  "pending_host_reason": "The earlier IMDS execution approval expired without execution. The new PTY check and managed MCP denial do not close these native host cases.",
+  "pending_host_takes": [],
   "limits": [
     "Host root retains control; enterprise SSO and restricted human-role RBAC remain untested.",
     "No macOS Seatbelt or Kiro CLI enterprise MCP registry enrollment is claimed.",
     "The native managed-policy tests did not repeat the historical MCP grant-denied or IAM-denied turns.",
     "The earlier command clip shows response-summary inspection; private-memory refusal establishes conversation assignment only.",
     "Telemetry and configured coverage counts alone do not establish security decisions.",
-    "Policy SEL correlation uses the isolated session, tool, reason, timestamp and adjacent linkage; no direct native trace or tool-call ID is present."
+    "Policy SEL correlation uses the isolated session, tool, reason, timestamp and adjacent linkage; no direct native trace or tool-call ID is present.",
+    "Sensitive native read remains accepted:false for hook enforcement; later exact-session current namespace evidence separately corroborates the mask.",
+    "The protected write reaches the built-in hook before the managed filesystem rule.",
+    "IMDS attribution covers one isolated approved execution and one UID-specific IPv4 rejected packet; no historical syscall PID or per-packet native identifier is claimed."
   ],
   "receipts": {
     "policy": {
@@ -156,53 +186,53 @@
     },
     "deck": {
       "path": "output/kirocrew-native-controls.html",
-      "sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
-      "bytes": 2033388
+      "sha256": "587f500eaa2f42b343146c9942303855a38cff22c583719476e65284a725d8c1",
+      "bytes": 2046398
     },
     "deck_build": {
       "path": "output/kirocrew-native-controls-build.json",
-      "sha256": "6e4e80643de8dacaf7ed3d1c1a893e2dc1b52672d70c1ac6e3522a9d113f65f1",
-      "bytes": 44395
+      "sha256": "74bb00e0953d95a646324ff53e8c1baa3f53b38a2d43f3423aee912ba22dc5b2",
+      "bytes": 55192
     },
     "deck_browser": {
-      "path": "evidence/enterprise-managed/20260913/browser-deck/final-review.json",
-      "sha256": "495a4d0097d1472fd8c842bcfc09fd5e0a9c6c5d3122c6af369c85359b3d35c4",
-      "bytes": 30634
+      "path": "evidence/managed-host-20260914/final-browser/review.json",
+      "sha256": "19ce39ba4fba159dc15370dc96cbf2c90e1eae9b48a3b14261f46ec2088229c6",
+      "bytes": 5875
     },
     "tour": {
       "path": "output/kirocrew-admin-tour.html",
-      "sha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a",
-      "bytes": 3679148
+      "sha256": "a7b73fd8ca411cb6a5ebf2b1d0534fc0886f2230f3c9151363408d27018b33fc",
+      "bytes": 4365485
     },
     "tour_browser": {
-      "path": "evidence/enterprise-managed/20260913/browser-tour/review.json",
-      "sha256": "0326eca34b3e37746c312a4918089f06679ef948c95f28c0998985b3cc7150bd",
-      "bytes": 1325
+      "path": "evidence/managed-host-20260914/final-browser/review.json",
+      "sha256": "19ce39ba4fba159dc15370dc96cbf2c90e1eae9b48a3b14261f46ec2088229c6",
+      "bytes": 5875
     },
     "diagram": {
       "path": "kirocrew-managed-controls-diagram.html",
-      "sha256": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763",
-      "bytes": 810663
+      "sha256": "7fe23f0611ba37f0e4bd6dc7155bf336f4c4bd2a566a1352ca5e27dd381b11ab",
+      "bytes": 810624
     },
     "diagram_browser": {
-      "path": "evidence/enterprise-managed/20260913/browser-diagram/review.json",
-      "sha256": "f1e0486b563524294d9be262bfcab84855ea8bd86bf6f7cf868b274aa05acc8b",
-      "bytes": 1313
+      "path": "evidence/managed-host-20260914/final-browser/review.json",
+      "sha256": "19ce39ba4fba159dc15370dc96cbf2c90e1eae9b48a3b14261f46ec2088229c6",
+      "bytes": 5875
     },
     "council": {
-      "path": "evidence/enterprise-managed/council/council-verified-receipt.json",
-      "sha256": "e46a50eb848a4d1819a0f533376a601cba64057648309b60ae7e985af34b108e",
-      "bytes": 14313
+      "path": "evidence/managed-host-20260914/council/candidate/review/dispatch/council-receipt.json",
+      "sha256": "b81f48ae17e4290c34558b0ea1d3024167d281f873afa66792db599b65dfea92",
+      "bytes": 16389
     },
     "council_incorporation": {
-      "path": "evidence/enterprise-managed/council/incorporation.json",
-      "sha256": "9ee08ea650ab5b8c53ce172d66dcb28bf6471d2417807a4df8dbf0630b81ed99",
-      "bytes": 5928
+      "path": "evidence/managed-host-20260914/council/incorporation.json",
+      "sha256": "7ae7b674f4eb9f346bcc19656e9a5acee3aea029b7619f7cb17da848df43f3a5",
+      "bytes": 3928
     },
     "editorial": {
-      "path": "evidence/enterprise-managed/council/post-council-no-ai-slop.json",
-      "sha256": "3d3b01e1fcbd3a43dbb2ba6e9404735193073452a31dc58f6d8b04d2e0ae34dd",
-      "bytes": 2909
+      "path": "evidence/managed-host-20260914/council/post-council-no-ai-slop.json",
+      "sha256": "23c65ea5ce00d34c7d4f875a15999409399411ee664c69a0c98bf03721bfda53",
+      "bytes": 1589
     },
     "tooling_tests": {
       "path": "evidence/enterprise-managed/replication/tooling-validation.json",
@@ -211,16 +241,31 @@
     },
     "project_skill": {
       "path": ".agents/skills/kirocrew-demo/SKILL.md",
-      "sha256": "df041ff167652ad63484a27138ac4f2aee1c665e00a28cbd868b0c9640abb166",
-      "bytes": 2662
+      "sha256": "413d4ec277300c5799e95d9b09d398eda58c99a50b59da6245e43b3129724fb8",
+      "bytes": 2960
     },
     "final_replication": {
-      "path": "evidence/enterprise-managed/replication/final-managed-presentation-replication.json",
-      "sha256": "6e81f23933bb810550057da6f62dc40a21dae00a55b6eab6142b651c7b72bcac",
-      "bytes": 3497
+      "path": "evidence/managed-host-20260914/replication.json",
+      "sha256": "ada7a141732fd5f758a1a1fd510ee50c6ae49e58b282aeb5749d1b1a0b8d504f",
+      "bytes": 1394
+    },
+    "host_evidence": {
+      "path": "evidence/managed-host-20260914/index.json",
+      "sha256": "c7ea50639058346517fe79bc50ea4e07dbd07041a6d6021de01c969a943f5489",
+      "bytes": 2346
+    },
+    "host_media": {
+      "path": "evidence/managed-host-20260914/media-review.json",
+      "sha256": "b3d81b563ad60602e0d04b7506ae59208869316d7767fb886eac617d7b24c528",
+      "bytes": 19570
+    },
+    "current_tests": {
+      "path": "evidence/managed-host-20260914/final-tests.json",
+      "sha256": "1e8c447e33bae432efec5b0a033073e864d6216e09910bb192f5476eca009885",
+      "bytes": 1248
     }
   },
-  "publication": "Existing private GitHub repository; GitHub Actions out of scope.",
+  "publication": "Private njs14/kirocrew-demo; GitHub Actions out of scope. Commit and remote verification are recorded in the final response.",
   "architecture": {
     "path": "kirocrew-managed-controls-diagram.html",
     "endpoint_control_enclosures": 1,
@@ -236,5 +281,37 @@
     "sole_inbound_rule": "TCP 22 from 24.60.107.229/32",
     "client_public_ipv4_matched": true,
     "network": "Existing VPC and subnet; no network resources added in this update."
-  }
+  },
+  "native_host_results": [
+    {
+      "take_kind": "sensitive-read",
+      "outcome": "native_fixture_path_unavailable",
+      "first_enforcer": "kiro_cli_argument_validation",
+      "review": {
+        "bytes": 3453,
+        "path": "evidence/managed-host-20260914/receipts/sensitive-read.json",
+        "sha256": "491fa56aed9dcc12d9667ce0a0c3dfbafcbb5bccfdcd233413bb5bd4eec5e804"
+      }
+    },
+    {
+      "take_kind": "protected-write",
+      "outcome": "automatic_native_file_hook_denial",
+      "first_enforcer": "crew_write_protected_path_hook",
+      "review": {
+        "bytes": 3808,
+        "path": "evidence/managed-host-20260914/receipts/protected-write.json",
+        "sha256": "3654af46b51def2796c3a0b401eb3c7217d14eead834766915ba96083b1d4fe4"
+      }
+    },
+    {
+      "take_kind": "imds-tcp",
+      "outcome": "native_imds_tcp_rejection_correlated",
+      "first_enforcer": "host_ipv4_output_owner_reject",
+      "review": {
+        "bytes": 5708,
+        "path": "evidence/managed-host-20260914/receipts/imds-tcp.json",
+        "sha256": "8fd47d3fb89181d5d83c4df18bddcc89b68c4eb29adb32d47b9b792cef0b72b5"
+      }
+    }
+  ]
 }

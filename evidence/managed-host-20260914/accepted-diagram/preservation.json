@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "kind": "accepted_managed_diagram_before_completed_host_takes",
+  "files": [
+    {
+      "source_path": "kirocrew-managed-controls-diagram.html",
+      "archive_path": "evidence/managed-host-20260914/accepted-diagram/kirocrew-managed-controls-diagram.html",
+      "bytes": 810663,
+      "sha256": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763"
+    },
+    {
+      "source_path": "kirocrew-managed-controls-diagram.architecture.json",
+      "archive_path": "evidence/managed-host-20260914/accepted-diagram/kirocrew-managed-controls-diagram.architecture.json",
+      "bytes": 4977,
+      "sha256": "64a10b9878e2481f3b433a383723304915af32ad9d7359ef8e547ecb7bb8740a"
+    },
+    {
+      "source_path": "evidence/enterprise-managed/20260913/archify/asset-dependencies.json",
+      "archive_path": "evidence/managed-host-20260914/accepted-diagram/evidence/enterprise-managed/20260913/archify/asset-dependencies.json",
+      "bytes": 660,
+      "sha256": "80c071fdbccee7a21925514a4b566a981b99fce981eb78e4e1a4e611bbf73adf"
+    },
+    {
+      "source_path": "evidence/enterprise-managed/20260913/archify/delivery-receipt.json",
+      "archive_path": "evidence/managed-host-20260914/accepted-diagram/evidence/enterprise-managed/20260913/archify/delivery-receipt.json",
+      "bytes": 6569,
+      "sha256": "6afaef5379cb72d29f9ca06baff7dd1cddc5c68974341f548a649d81d0af9172"
+    },
+    {
+      "source_path": "evidence/enterprise-managed/20260913/archify/source-bindings.json",
+      "archive_path": "evidence/managed-host-20260914/accepted-diagram/evidence/enterprise-managed/20260913/archify/source-bindings.json",
+      "bytes": 8464,
+      "sha256": "4871e938ddf736cbe3af1c44c9ff516fc11d47d9d1d245fe487b72a21685b346"
+    },
+    {
+      "source_path": "evidence/enterprise-managed/20260913/archify/base-delivery.json",
+      "archive_path": "evidence/managed-host-20260914/accepted-diagram/evidence/enterprise-managed/20260913/archify/base-delivery.json",
+      "bytes": 737,
+      "sha256": "06b02b17ef7d9578d970eac9860b957eb0296f39e70f302edce427824dcf9dda"
+    },
+    {
+      "source_path": "evidence/enterprise-managed/20260913/archify/typography-derivative.json",
+      "archive_path": "evidence/managed-host-20260914/accepted-diagram/evidence/enterprise-managed/20260913/archify/typography-derivative.json",
+      "bytes": 6204,
+      "sha256": "51e7497906c34b1ab45830d138b16a327b5e2a59b4ea319047f4b06614d6f7bc"
+    },
+    {
+      "source_path": "evidence/enterprise-managed/20260913/archify/final-artifact-check.txt",
+      "archive_path": "evidence/managed-host-20260914/accepted-diagram/evidence/enterprise-managed/20260913/archify/final-artifact-check.txt",
+      "bytes": 1840,
+      "sha256": "30c6c01d46a1ad671ce7e86c9a280226c186a9c829ccf5970c625ad6dbd5128d"
+    }
+  ]
+}

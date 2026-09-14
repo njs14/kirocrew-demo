@@ -1,0 +1,82 @@
+{
+  "kind": "managed_host_demo_delivery",
+  "completed_at": "2026-09-14T14:53:32.372370+00:00",
+  "artifacts": [
+    {
+      "path": "output/kirocrew-native-controls.html",
+      "sha256": "587f500eaa2f42b343146c9942303855a38cff22c583719476e65284a725d8c1",
+      "bytes": 2046398
+    },
+    {
+      "path": "output/kirocrew-native-controls-notes.md",
+      "sha256": "a669f26788d8f36522d82045de1764ea82a0ad672e0cf704890cadf721666e94",
+      "bytes": 38803
+    },
+    {
+      "path": "output/kirocrew-admin-tour.html",
+      "sha256": "a7b73fd8ca411cb6a5ebf2b1d0534fc0886f2230f3c9151363408d27018b33fc",
+      "bytes": 4365485
+    },
+    {
+      "path": "output/kirocrew-admin-tour.md",
+      "sha256": "8e0e00945503f7ee54e051217f1bc2c1bb400ac6b1630f4a7386538672670f66",
+      "bytes": 32072
+    },
+    {
+      "path": "kirocrew-managed-controls-diagram.html",
+      "sha256": "7fe23f0611ba37f0e4bd6dc7155bf336f4c4bd2a566a1352ca5e27dd381b11ab",
+      "bytes": 810624
+    },
+    {
+      "path": ".agents/skills/kirocrew-demo/SKILL.md",
+      "sha256": "413d4ec277300c5799e95d9b09d398eda58c99a50b59da6245e43b3129724fb8",
+      "bytes": 2960
+    }
+  ],
+  "status": {
+    "path": "evidence/native-client-demo/current-status.json",
+    "sha256": "73e195dbbcbbbf86f6b9156953e35c05d81a8dd8ff007d24f6461bfc09545077",
+    "bytes": 14222
+  },
+  "host_evidence": {
+    "path": "evidence/managed-host-20260914/index.json",
+    "sha256": "c7ea50639058346517fe79bc50ea4e07dbd07041a6d6021de01c969a943f5489",
+    "bytes": 2346
+  },
+  "council": {
+    "path": "evidence/managed-host-20260914/council/incorporation.json",
+    "sha256": "7ae7b674f4eb9f346bcc19656e9a5acee3aea029b7619f7cb17da848df43f3a5",
+    "bytes": 3928
+  },
+  "editorial": {
+    "path": "evidence/managed-host-20260914/council/post-council-no-ai-slop.json",
+    "sha256": "23c65ea5ce00d34c7d4f875a15999409399411ee664c69a0c98bf03721bfda53",
+    "bytes": 1589
+  },
+  "browser": {
+    "path": "evidence/managed-host-20260914/final-browser/review.json",
+    "sha256": "19ce39ba4fba159dc15370dc96cbf2c90e1eae9b48a3b14261f46ec2088229c6",
+    "bytes": 5875
+  },
+  "tests": {
+    "path": "evidence/managed-host-20260914/final-tests.json",
+    "sha256": "1e8c447e33bae432efec5b0a033073e864d6216e09910bb192f5476eca009885",
+    "bytes": 1248
+  },
+  "replication": {
+    "path": "evidence/managed-host-20260914/replication.json",
+    "sha256": "ada7a141732fd5f758a1a1fd510ee50c6ae49e58b282aeb5749d1b1a0b8d504f",
+    "bytes": 1394
+  },
+  "single_endpoint_control_box": true,
+  "local_gateway_off_observation": {
+    "path": "evidence/managed-host-20260914/client-state.json",
+    "sha256": "30255dd6b7c8448b8b414d8fd14b1a56622ca67670034eef39ef564b12884c09",
+    "bytes": 608
+  },
+  "limits": [
+    "No second live deployment.",
+    "Native sensitive read is CLI ENOENT, with later current-session namespace corroboration.",
+    "Final-byte verification is by the author after the independent council candidate review."
+  ]
+}

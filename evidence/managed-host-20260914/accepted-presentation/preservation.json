@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "accepted_presentation_preservation",
+  "edition": {
+    "slides": 16,
+    "clips": 9
+  },
+  "files": [
+    {
+      "source": "output/kirocrew-native-controls-build.json",
+      "preserved": "evidence/managed-host-20260914/accepted-presentation/kirocrew-native-controls-build.json",
+      "sha256": "6e4e80643de8dacaf7ed3d1c1a893e2dc1b52672d70c1ac6e3522a9d113f65f1",
+      "bytes": 44395
+    },
+    {
+      "source": "output/kirocrew-native-controls-manifest.json",
+      "preserved": "evidence/managed-host-20260914/accepted-presentation/kirocrew-native-controls-manifest.json",
+      "sha256": "74e12ac4f7aff4d6b56d92ffd9f1093ecda96ac6fced2b859c372837156fc8ba",
+      "bytes": 46081
+    },
+    {
+      "source": "output/kirocrew-native-controls-notes.md",
+      "preserved": "evidence/managed-host-20260914/accepted-presentation/kirocrew-native-controls-notes.md",
+      "sha256": "0dda0d02f3b9bd13f51a995ef88b0704d23881712a95da37091255160ee3c111",
+      "bytes": 35044
+    },
+    {
+      "source": "output/kirocrew-native-controls.html",
+      "preserved": "evidence/managed-host-20260914/accepted-presentation/kirocrew-native-controls.html",
+      "sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
+      "bytes": 2033388
+    }
+  ],
+  "scope": "Exact accepted output bytes preserved before the three managed host takes are added."
+}

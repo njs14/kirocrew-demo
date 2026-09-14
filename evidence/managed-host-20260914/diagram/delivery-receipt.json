@@ -1,0 +1,31 @@
+{
+  "kind": "managed_host_diagram_delivery",
+  "artifact": {
+    "path": "kirocrew-managed-controls-diagram.html",
+    "sha256": "7fe23f0611ba37f0e4bd6dc7155bf336f4c4bd2a566a1352ca5e27dd381b11ab",
+    "bytes": 810624
+  },
+  "architecture_source": {
+    "path": "kirocrew-managed-controls-diagram.architecture.json",
+    "sha256": "c590d08fa9d47be712da2aae4695e41e3edf27dce78e2bbbbfeff8c00bd6dc6b",
+    "bytes": 4938
+  },
+  "static_check": {
+    "path": "evidence/managed-host-20260914/diagram/final-artifact-check.json",
+    "sha256": "30c6c01d46a1ad671ce7e86c9a280226c186a9c829ccf5970c625ad6dbd5128d",
+    "bytes": 1840
+  },
+  "browser_check": {
+    "path": "evidence/managed-host-20260914/final-browser/review.json",
+    "sha256": "19ce39ba4fba159dc15370dc96cbf2c90e1eae9b48a3b14261f46ec2088229c6",
+    "bytes": 5875
+  },
+  "asset_dependencies": {
+    "path": "evidence/managed-host-20260914/diagram/asset-dependencies.json",
+    "sha256": "84c3985e24520cef9a02af1101e20ef55765d123a0651a819fc2c025a37ec5d6",
+    "bytes": 724
+  },
+  "single_endpoint_control_enclosure": true,
+  "svg_identical_to_accepted": true,
+  "change": "Three host-evidence bullets now name the separate completed observations."
+}

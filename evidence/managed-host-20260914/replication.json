@@ -1,0 +1,34 @@
+{
+  "kind": "final_managed_host_presentation_replication",
+  "status": "pass",
+  "final_deck": {
+    "path": "output/kirocrew-native-controls.html",
+    "sha256": "587f500eaa2f42b343146c9942303855a38cff22c583719476e65284a725d8c1",
+    "bytes": 2046398
+  },
+  "recipe": {
+    "path": "config/presentation-native.json",
+    "sha256": "d0684bdc283a44a19ce6c0881b286d583e668a96f688951198c49ccd31cb8f4f",
+    "bytes": 11152
+  },
+  "tests": {
+    "path": "evidence/managed-host-20260914/final-tests.json",
+    "sha256": "1e8c447e33bae432efec5b0a033073e864d6216e09910bb192f5476eca009885",
+    "bytes": 1248
+  },
+  "source_files": 201,
+  "skill_linked_files": 83,
+  "slides": 19,
+  "clips": 12,
+  "source_and_export_paths_contain_spaces": true,
+  "source_moved_away_before_export_checks": true,
+  "html_matches_delivered_edition": true,
+  "checks": "The clean-copy test rebuilt from declared inputs, moved the source away, checked all generated HTML references and media byte ranges, and rejected private/missing/colliding paths.",
+  "project_skill": {
+    "path": ".agents/skills/kirocrew-demo/SKILL.md",
+    "sha256": "413d4ec277300c5799e95d9b09d398eda58c99a50b59da6245e43b3129724fb8",
+    "bytes": 2960
+  },
+  "namespace_helper_validation": "Nine offline identity/fixture/freshness/source/mount guard tests; no second live inspector execution claimed.",
+  "second_complete_live_deployment": false
+}

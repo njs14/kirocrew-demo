@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "kind": "accepted_admin_before_completed_host_controls",
+  "preservedAt": "2026-09-14T13:34:02.484075+00:00",
+  "scope": "Exact accepted10-stop26-image tour, builder, findings and bound metadata before adding completed native host results. All original screenshot bytes remain at their recorded paths.",
+  "files": [
+    {
+      "original": "scripts/build-native-admin-tour.py",
+      "preserved": "evidence/managed-host-20260914/accepted-admin/scripts/build-native-admin-tour.py",
+      "bytes": 61934,
+      "sha256": "d16eaed14f5a325302b6be24c67453173759bb7b16c4e8e97aa8537ceca68ef5"
+    },
+    {
+      "original": "output/kirocrew-admin-tour.html",
+      "preserved": "evidence/managed-host-20260914/accepted-admin/output/kirocrew-admin-tour.html",
+      "bytes": 3679148,
+      "sha256": "611fd56d46cdff40e66a12e13e7d6b9cb1130bda9e6912dc0a0cb335e15f274a"
+    },
+    {
+      "original": "output/kirocrew-admin-tour.md",
+      "preserved": "evidence/managed-host-20260914/accepted-admin/output/kirocrew-admin-tour.md",
+      "bytes": 26723,
+      "sha256": "0ae7d24098fbd374356791d2e9bc823ce901d1c80b92d4c4d46853c0d3382294"
+    },
+    {
+      "original": "output/kirocrew-admin-findings.md",
+      "preserved": "evidence/managed-host-20260914/accepted-admin/output/kirocrew-admin-findings.md",
+      "bytes": 7075,
+      "sha256": "a3b6545cd75590fad8e692483a97c4fd71dad7e43020e41eee876806ca661d71"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/tour-build.json",
+      "preserved": "evidence/managed-host-20260914/accepted-admin/evidence/admin-console/native-20260913/tour-build.json",
+      "bytes": 23280,
+      "sha256": "acbcec28f25e0eaaae626de4d01f3d2559e59f2a164588e1606a5658a3d7e65a"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/tour-serve.json",
+      "preserved": "evidence/managed-host-20260914/accepted-admin/evidence/admin-console/native-20260913/tour-serve.json",
+      "bytes": 21456,
+      "sha256": "a8dd7079fac0a6699c1b0e642e18c6a39e0f3664dc60961f5c305ce944fdb4ad"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/browser-host/review.json",
+      "preserved": "evidence/managed-host-20260914/accepted-admin/evidence/admin-console/native-20260913/browser-host/review.json",
+      "bytes": 2493,
+      "sha256": "d41782b5bfac85b4ba657c54c1eee2d8eac2f32789c47cd7b3d9a0caa3216813"
+    },
+    {
+      "original": "evidence/admin-console/native-20260913/managed-content-source-review.json",
+      "preserved": "evidence/managed-host-20260914/accepted-admin/evidence/admin-console/native-20260913/managed-content-source-review.json",
+      "bytes": 8908,
+      "sha256": "b5e2ee4e8cee39c1ef69bf316f3f60012c129c6d061bfb18e417ecb3afe2d1ef"
+    }
+  ]
+}

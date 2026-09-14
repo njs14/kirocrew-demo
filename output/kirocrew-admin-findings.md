@@ -1,5 +1,21 @@
 # KiroCrew admin console findings
 
+## Current update · September 14, 2026
+
+The three previously unfinished host checks now have actual macOS recordings and separate server evidence. They demonstrate different mechanisms:
+
+- **Sensitive-path read:** the public canary returned ENOENT. The native-only review remains `accepted:false`; a later check of the same session found the host canary hidden from its current CLI descendants. That corroborates namespace masking without identifying the historical read process or a Crew read-hook denial. [Native result](../evidence/managed-host-20260914/receipts/sensitive-read.json), [namespace readback](../evidence/managed-host-20260914/receipts/sensitive-namespace.json), [actual clip](native-host-managed-20260914/native-managed-sensitive-read/native-managed-sensitive-read.mp4).
+- **Protected-path write:** the built-in protected-config write hook automatically refused the prepared marker. The file remained absent. This hook runs before the managed filesystem policy, so the result does not independently test that policy's write rule or kernel isolation. The UI shows both “1 file changed” and “no changes”; use the host readback for the actual postcondition. [Native decision](../evidence/managed-host-20260914/receipts/protected-write.json), [host snapshots](../evidence/managed-host-20260914/receipts/host-state-snapshots.json), [actual clip](native-host-managed-20260914/native-managed-protected-write/native-managed-protected-write.mp4).
+- **IMDS TCP:** after separate once-only approvals for the helper source read and execution, one native execution returned errno 113, sent zero application bytes and requested no metadata. The matching UID 999 firewall rule increased from two rejected packets to three. This supports the bounded native-to-firewall correlation, not a claim that the whole host lacks an IMDS route. [Native and counter correlation](../evidence/managed-host-20260914/receipts/imds-tcp.json), [actual clip](native-host-managed-20260914/native-managed-imds-tcp/native-managed-imds-tcp.mp4).
+
+The earlier unanswered IMDS approval remains a historical failed take. The active governance configuration and managed MCP refusal retain their separate [September 13 evidence](../evidence/enterprise-managed/20260913/managed-presentation.json). Host root retains authority; enterprise SSO and separate human roles were not demonstrated.
+
+The [current tour](kirocrew-admin-tour.html#host-results) adds three native result images to the prior 26 images. It labels these as native client results. The dated admin telemetry and custom collection logs still describe activity and health; their counters do not prove these security outcomes.
+
+## Preserved baseline · September 13, before sign-in recovery and managed policy
+
+The findings below retain their original capture-time wording. Their sign-in, policy, telemetry and unfinished-demo statements describe that earlier state.
+
 Observed September 13, 2026 · ARM EC2 demo
 
 The owner dashboard shows the remote host and its control settings. The GitHub sign-in card can look ready while the selected standalone Kiro CLI is signed out. The screenshots preserve that observed failure.

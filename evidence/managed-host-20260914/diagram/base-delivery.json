@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-managed-controls-diagram.architecture.json",
+  "output": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/managed-host-20260914/diagram/base.html",
+  "specification": {
+    "sha256": "c590d08fa9d47be712da2aae4695e41e3edf27dce78e2bbbbfeff8c00bd6dc6b",
+    "bytes": 4938
+  },
+  "artifact": {
+    "sha256": "ad853c39af3280662d3aaad59128327a9823b8f3a75fd2f88c10b1da4ec325c2",
+    "bytes": 809242
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}

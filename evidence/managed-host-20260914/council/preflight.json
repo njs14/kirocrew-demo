@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-14T13:35:06.505975+00:00",
+  "status": "awaiting_frozen_candidate",
+  "expected_slides": 19,
+  "expected_clips": 12,
+  "runner": "evidence/managed-host-20260914/council/run-council.py",
+  "runner_sha256": "6d133fbe53f4a402c5ccc8ebee9143c5762a4a88cd4d849910356422481bf47c",
+  "source_runner_sha256": "b03a335bfe95d3dda00cb7315e4a9f2e94251e4fd5d814228c58e89113de5f19",
+  "launch_policy_sha256": "9d2ec8086b50260ae6c6202c5c2c861a4b2828946ac68baefe081fce636a5540",
+  "source_launch_policy_identical": true,
+  "changed_functions": [
+    "prompt_for"
+  ],
+  "models": {
+    "grok": "grok-4.6",
+    "claude": "claude-opus-5"
+  },
+  "effort": "xhigh",
+  "cli_versions": {
+    "grok": "1.0.25 (f7e67d6988e2) stable",
+    "claude": "2.1.267"
+  },
+  "inference_started": false,
+  "packet_prepared": false,
+  "authentication_entitlement_exercised": false,
+  "scope": "All slide PNGs/full notes; focus new three host cases and control map. No video playback inference from stills."
+}

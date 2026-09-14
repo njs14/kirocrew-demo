@@ -1,0 +1,111 @@
+{
+  "kind": "managed_host_council_incorporation",
+  "completed_at": "2026-09-14T14:53:32.372370+00:00",
+  "candidate_name": "managed-host-v1",
+  "candidate_deck_sha256": "1ff762449f530a888d63a1599b4dbb158cb748e250b165fd84b80f3ae1772bd4",
+  "candidate_receipt": {
+    "path": "evidence/managed-host-20260914/council/candidate/review/dispatch/council-receipt.json",
+    "sha256": "b81f48ae17e4290c34558b0ea1d3024167d281f873afa66792db599b65dfea92",
+    "bytes": 16389
+  },
+  "final_deck": {
+    "path": "output/kirocrew-native-controls.html",
+    "sha256": "587f500eaa2f42b343146c9942303855a38cff22c583719476e65284a725d8c1",
+    "bytes": 2046398
+  },
+  "final_notes": {
+    "path": "output/kirocrew-native-controls-notes.md",
+    "sha256": "a669f26788d8f36522d82045de1764ea82a0ad672e0cf704890cadf721666e94",
+    "bytes": 38803
+  },
+  "decisions": [
+    {
+      "id": "MH1",
+      "sources": [
+        "Grok 1",
+        "Opus 1"
+      ],
+      "decision": "accepted",
+      "change": "Replace stale pending text in slide 18 notes; explicitly date the retained 02:20 UTC pending summary and state the later outcomes."
+    },
+    {
+      "id": "MH2",
+      "sources": [
+        "Grok 2",
+        "Opus 2"
+      ],
+      "decision": "accepted",
+      "change": "Reduce control-map row padding and capture-label size; final last-row-to-footer gap is more than 89 pixels."
+    },
+    {
+      "id": "MH3",
+      "sources": [
+        "Grok 3",
+        "Opus 7"
+      ],
+      "decision": "accepted",
+      "change": "Shorten ui4 chapter text to the exact tool and trace, remove the short detail-height cap; full chapter panel fits without scrolling."
+    },
+    {
+      "id": "MH4",
+      "sources": [
+        "Grok 4"
+      ],
+      "decision": "accepted",
+      "change": "Use existing unretouched result frames at 24, 26 and 53 seconds for the three host posters. Original processed video bytes and manifests stay unchanged."
+    },
+    {
+      "id": "MH5",
+      "sources": [
+        "Grok 5",
+        "Opus 3"
+      ],
+      "decision": "accepted",
+      "change": "Keep CLI ENOENT as the immediate result, label later CLI-view readback, and put native accepted:false in slide 14 footer."
+    },
+    {
+      "id": "MH6",
+      "sources": [
+        "Opus 4"
+      ],
+      "decision": "accepted",
+      "change": "State root ownership of hook source and its precedence before the managed filesystem rule. Exact source hashes match all take snapshots."
+    },
+    {
+      "id": "MH7",
+      "sources": [
+        "Opus 5"
+      ],
+      "decision": "accepted_with_source_clarification",
+      "change": "Narrow the network title to the Crew UID firewall rule. Retain port 80 because the exact reviewed helper fixes that destination; add the source hash to notes."
+    },
+    {
+      "id": "MH8",
+      "sources": [
+        "Grok 6",
+        "Opus 6"
+      ],
+      "decision": "accepted",
+      "change": "Distinguish the host recording review from the managed MCP recording review."
+    },
+    {
+      "id": "MH9",
+      "sources": [
+        "Opus 8"
+      ],
+      "decision": "no_change_required",
+      "change": "Capture receipt intentionally names source slide-01.png; packet normalizes to slide-1.png. Dispatcher verifies exact PNG hashes for both reviewers. README already documents this contract."
+    },
+    {
+      "id": "MH10",
+      "sources": [
+        "Opus editorial note"
+      ],
+      "decision": "accepted",
+      "change": "Remove repeated host explanations from map and recording notes; preserve one precise attribution summary and the chapters/provenance."
+    }
+  ],
+  "all_agreed_changes_incorporated": true,
+  "final_byte_model_approval": false,
+  "scope": "Both exact models reviewed the frozen candidate with explicit xhigh launch settings. Provider-internal effort is not observable. Candidate verdicts remain CHANGES REQUIRED; author incorporated these decisions and separately reviewed the final bytes."
+}

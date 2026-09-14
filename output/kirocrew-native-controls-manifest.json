@@ -677,7 +677,7 @@
         {
           "time": 0.0,
           "label": "Submit the MCP request",
-          "detail": "The composed ui4 request names @aws-enforcement/crew_denied and trace managed-20260914-ui4-crew. The user sends this one harmless fixture.",
+          "detail": "Tool: @aws-enforcement/crew_denied. Trace: managed-20260914-ui4-crew.",
           "evidence": "native-managed-clip-20260914/receipts/native-managed-ui4-verification.json"
         },
         {
@@ -718,6 +718,299 @@
         "sha256": "70fca5da1a1fad89613a89e62baf3d9bd8cc7b1b663c79067ccc7bcee5da7012"
       },
       "policySha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87"
+    },
+    {
+      "id": "native-managed-sensitive-read",
+      "title": "Read the protected .aws canary",
+      "description": "Request one public canary file. The native conversation reports that the path does not exist.",
+      "evidenceScope": "Actual native macOS client request and recorded assistant summary of the fs_read error. Host fixture existence and namespace masking require the separate verification receipt; this clip does not show a governance-hook denial.",
+      "duration": 29.998234,
+      "recordedAt": "2026-09-14T13:04:59Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Actual native KiroCrew Nightly window on macOS, connected to the existing EC2 Gateway and original Kiro CLI."
+      },
+      "provenance": {
+        "sourceSha256": "daf3c87aed81d39bfe0eb1b255e916652854ccf1fbb794a3b659b1b396dcdf62",
+        "sourceDuration": 70.021667,
+        "cut": {
+          "start": 26.0,
+          "end": 56.0
+        },
+        "recordedAt": "2026-09-14T13:04:59Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 1078081,
+          "sha256": "076adaed02bf1562feaa763ffd0decd68afcfbd22fbfc062ce546a3eb2bc1653",
+          "duration": 29.998234,
+          "width": 1920,
+          "height": 1340,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 53.23646645050068,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-host-managed-20260914/native-managed-sensitive-read/native-managed-sensitive-read.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 0.0,
+          "label": "Request the public canary",
+          "detail": "The request names one prepared public file under /home/crew/.aws; no credentials, directory listing or retry is requested."
+        },
+        {
+          "time": 8.0,
+          "label": "Submit the read",
+          "detail": "The native client submits the single-file request to the EC2 session."
+        },
+        {
+          "time": 24.0,
+          "label": "Inspect the reported read error",
+          "detail": "The assistant reports that fs_read returned a path-does-not-exist error. Correlate this summary with the native tool event and host namespace receipt."
+        }
+      ],
+      "recordingCoverage": "request_to_result",
+      "outcomeClass": "native_path_unavailable",
+      "poster": {
+        "url": "native-host-managed-20260914/native-managed-sensitive-read/cue-03.jpg",
+        "type": "image/jpeg",
+        "bytes": 213177,
+        "sha256": "29e7288012ae8c2d9f30c4b38eefd125bbd5e46c74b5467d5f299b4be0a0083d",
+        "time": 24
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 112495,
+        "sha256": "6fb43329599d6d7a58c734f1603841ca7c3ebb86d7ad547138ac32820ecf70b8",
+        "url": "native-host-managed-20260914/native-managed-sensitive-read/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Sensitive-path read",
+        "enforcer": "CLI argument validation",
+        "outcome": "ENOENT; later CLI-view mask readback"
+      },
+      "attributionReceipt": {
+        "path": "evidence/managed-host-20260914/receipts/sensitive-read.json",
+        "url": "evidence/managed-host-20260914/receipts/sensitive-read.json",
+        "sha256": "491fa56aed9dcc12d9667ce0a0c3dfbafcbb5bccfdcd233413bb5bd4eec5e804"
+      },
+      "hostTake": {
+        "takeKind": "sensitive-read",
+        "nativeReviewAccepted": false,
+        "publicReview": {
+          "path": "evidence/managed-host-20260914/public-evidence-review.json",
+          "url": "evidence/managed-host-20260914/public-evidence-review.json",
+          "sha256": "a7b6fd7e5102a793442fa50e0f438b6302b826d01970c868611b8a42830903d1"
+        },
+        "mediaReview": {
+          "path": "evidence/managed-host-20260914/media-review.json",
+          "url": "evidence/managed-host-20260914/media-review.json",
+          "sha256": "b3d81b563ad60602e0d04b7506ae59208869316d7767fb886eac617d7b24c528"
+        }
+      }
+    },
+    {
+      "id": "native-managed-protected-write",
+      "title": "Try writing a protected configuration path",
+      "description": "Request one disposable marker beneath the protected agent configuration directory and observe the blocked-tool notice.",
+      "evidenceScope": "Actual native macOS client request, safety-policy blocked notice and assistant summary. The exact write-protection gate and target absence are verified separately. The product displays both a 1 file changed heading and a no changes row.",
+      "duration": 31.013746,
+      "recordedAt": "2026-09-14T13:10:24Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Actual native KiroCrew Nightly window on macOS, connected to the existing EC2 Gateway and original Kiro CLI."
+      },
+      "provenance": {
+        "sourceSha256": "de10db560861f59b19cbfd7437c241e3afc583df06332b0470609f1ba1498b37",
+        "sourceDuration": 70.085,
+        "cut": {
+          "start": 25.0,
+          "end": 56.0
+        },
+        "recordedAt": "2026-09-14T13:10:24Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 2074802,
+          "sha256": "7762dd5973506c578f97fbdeb9d0d55a6064044aff3a6bdf2abba5408ea8fcf4",
+          "duration": 31.013746,
+          "width": 1920,
+          "height": 1312,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 50.30086472192099,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-host-managed-20260914/native-managed-protected-write/native-managed-protected-write.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 0.0,
+          "label": "Request the disposable marker",
+          "detail": "The request names the prepared disposable target under /home/crew/.kiro/agents/.demo-host-controls and specifies one public marker."
+        },
+        {
+          "time": 13.0,
+          "label": "See the native block",
+          "detail": "The product displays Tool call blocked and states that a safety policy blocked the call."
+        },
+        {
+          "time": 26.0,
+          "label": "Inspect the write result",
+          "detail": "The assistant names the write-protected-config-path gate. The product also displays 1 file changed with no changes; use the separate host receipt for target absence."
+        }
+      ],
+      "recordingCoverage": "request_to_result",
+      "outcomeClass": "server_hook_denied",
+      "poster": {
+        "url": "native-host-managed-20260914/native-managed-protected-write/cue-03.jpg",
+        "type": "image/jpeg",
+        "bytes": 291456,
+        "sha256": "710b2e7e2c992991dffea02544143884349b1a1c818d696a05e60551bb16fbb6",
+        "time": 26
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 154132,
+        "sha256": "b24f3e37d1d88de6d7747c8a4466b5122bf019d078144acd7c3f78f485f112c2",
+        "url": "native-host-managed-20260914/native-managed-protected-write/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "Protected-path write",
+        "enforcer": "Crew protected-path hook",
+        "outcome": "Automatic block; target remains absent"
+      },
+      "attributionReceipt": {
+        "path": "evidence/managed-host-20260914/receipts/protected-write.json",
+        "url": "evidence/managed-host-20260914/receipts/protected-write.json",
+        "sha256": "3654af46b51def2796c3a0b401eb3c7217d14eead834766915ba96083b1d4fe4"
+      },
+      "hostTake": {
+        "takeKind": "protected-write",
+        "nativeReviewAccepted": true,
+        "publicReview": {
+          "path": "evidence/managed-host-20260914/public-evidence-review.json",
+          "url": "evidence/managed-host-20260914/public-evidence-review.json",
+          "sha256": "a7b6fd7e5102a793442fa50e0f438b6302b826d01970c868611b8a42830903d1"
+        },
+        "mediaReview": {
+          "path": "evidence/managed-host-20260914/media-review.json",
+          "url": "evidence/managed-host-20260914/media-review.json",
+          "sha256": "b3d81b563ad60602e0d04b7506ae59208869316d7767fb886eac617d7b24c528"
+        }
+      }
+    },
+    {
+      "id": "native-managed-imds-tcp",
+      "title": "Approve an IMDS TCP probe",
+      "description": "Approve inspection of the public helper, approve its execution once, then inspect the failed TCP result.",
+      "evidenceScope": "Actual native macOS client request, separate source-read and execution approvals, and recorded assistant summary: connected false, errno 113, zero application bytes and no metadata requested. Attribution to the UID firewall rule requires separate host counter evidence; the assistant wording does not establish that the whole host lacks an IMDS route.",
+      "duration": 55.009101,
+      "recordedAt": "2026-09-14T13:28:12Z",
+      "source": {
+        "kind": "desktop-recording",
+        "description": "Actual native KiroCrew Nightly window on macOS, connected to the existing EC2 Gateway and original Kiro CLI."
+      },
+      "provenance": {
+        "sourceSha256": "c0095e1298f33580a69a421f3bb470ceb32cdea1e818e9ad551dd180c99370fe",
+        "sourceDuration": 100.018333,
+        "cut": {
+          "start": 11.0,
+          "end": 66.0
+        },
+        "recordedAt": "2026-09-14T13:28:12Z",
+        "retimed": false,
+        "padded": false,
+        "audioIncluded": false
+      },
+      "media": [
+        {
+          "type": "video/mp4",
+          "bytes": 3806454,
+          "sha256": "03b983761244ec51d998cef6c98daf699d054ece80f898ec0863ed72664ecabe",
+          "duration": 55.009101,
+          "width": 1920,
+          "height": 1340,
+          "codec": "h264",
+          "pixelFormat": "yuv420p",
+          "fps": 53.00980672861078,
+          "audio": false,
+          "decodeValidated": true,
+          "url": "native-host-managed-20260914/native-managed-imds-tcp/native-managed-imds-tcp.mp4"
+        }
+      ],
+      "cues": [
+        {
+          "time": 0.0,
+          "label": "Request the TCP-only probe",
+          "detail": "The request names the reviewed public helper, with no extra arguments, HTTP request, metadata request or retry."
+        },
+        {
+          "time": 11.0,
+          "label": "Inspect the helper approval",
+          "detail": "The client asks permission to read the public helper before execution. The recording retains this separate Allow once decision."
+        },
+        {
+          "time": 35.0,
+          "label": "Inspect the execution approval",
+          "detail": "The client requests a second Allow once decision for the exact helper command. Approval permits execution; it does not remove the host network control."
+        },
+        {
+          "time": 53.0,
+          "label": "Inspect the failed TCP result",
+          "detail": "The assistant reports connected false, errno 113, zero application bytes and no metadata requested. The native tool event and separate host counters establish the supported attribution; the whole-host routing claim is not adopted."
+        }
+      ],
+      "recordingCoverage": "request_to_result",
+      "outcomeClass": "server_network_denied",
+      "poster": {
+        "url": "native-host-managed-20260914/native-managed-imds-tcp/cue-04.jpg",
+        "type": "image/jpeg",
+        "bytes": 278046,
+        "sha256": "b614883e429d506787d70c95adc1681e701cf4280b9f865bac03961ddd867dbf",
+        "time": 53
+      },
+      "contactSheet": {
+        "type": "image/jpeg",
+        "bytes": 150737,
+        "sha256": "3ec19473019c0da1ab7682df6fdf0f70abfa61143666772a55f47955939f719f",
+        "url": "native-host-managed-20260914/native-managed-imds-tcp/contact-sheet.jpg"
+      },
+      "presentation": {
+        "control": "IMDS TCP connection",
+        "enforcer": "UID-specific IPv4 OUTPUT reject",
+        "outcome": "TCP fails; matching counter gains one"
+      },
+      "attributionReceipt": {
+        "path": "evidence/managed-host-20260914/receipts/imds-tcp.json",
+        "url": "evidence/managed-host-20260914/receipts/imds-tcp.json",
+        "sha256": "8fd47d3fb89181d5d83c4df18bddcc89b68c4eb29adb32d47b9b792cef0b72b5"
+      },
+      "hostTake": {
+        "takeKind": "imds-tcp",
+        "nativeReviewAccepted": true,
+        "publicReview": {
+          "path": "evidence/managed-host-20260914/public-evidence-review.json",
+          "url": "evidence/managed-host-20260914/public-evidence-review.json",
+          "sha256": "a7b6fd7e5102a793442fa50e0f438b6302b826d01970c868611b8a42830903d1"
+        },
+        "mediaReview": {
+          "path": "evidence/managed-host-20260914/media-review.json",
+          "url": "evidence/managed-host-20260914/media-review.json",
+          "sha256": "b3d81b563ad60602e0d04b7506ae59208869316d7767fb886eac617d7b24c528"
+        }
+      }
     }
   ],
   "supportingReceipts": [
@@ -862,6 +1155,16 @@
       "sha256": "6afaef5379cb72d29f9ca06baff7dd1cddc5c68974341f548a649d81d0af9172"
     },
     {
+      "path": "evidence/managed-host-20260914/index.json",
+      "url": "evidence/managed-host-20260914/index.json",
+      "sha256": "c7ea50639058346517fe79bc50ea4e07dbd07041a6d6021de01c969a943f5489"
+    },
+    {
+      "path": "evidence/managed-host-20260914/media-review.json",
+      "url": "evidence/managed-host-20260914/media-review.json",
+      "sha256": "b3d81b563ad60602e0d04b7506ae59208869316d7767fb886eac617d7b24c528"
+    },
+    {
       "path": "evidence/enterprise-managed/20260913/policy-verify.json",
       "url": "evidence/enterprise-managed/20260913/policy-verify.json",
       "sha256": "f774ce2b5c0969f99c49b44ba14ddc206d06968da8f85983ad382b189d22f6ff"
@@ -900,20 +1203,51 @@
       "path": "evidence/enterprise-managed/20260913/media-review.json",
       "url": "evidence/enterprise-managed/20260913/media-review.json",
       "sha256": "96066140c93144204784b4957af14c9151803b94b295acfef30eea3e6ffb7ecd"
+    },
+    {
+      "path": "evidence/managed-host-20260914/receipts/host-state-snapshots.json",
+      "url": "evidence/managed-host-20260914/receipts/host-state-snapshots.json",
+      "sha256": "997ef6d1b446fb8c35dbab1088d1a892db5501b04428407e798b7126e52321e5"
+    },
+    {
+      "path": "evidence/managed-host-20260914/findings.md",
+      "url": "evidence/managed-host-20260914/findings.md",
+      "sha256": "2afac39efedafbc155ce5f783ec77fe5daab6d022c57501d628c6a8f7f6dad40"
+    },
+    {
+      "path": "evidence/managed-host-20260914/public-evidence-review.json",
+      "url": "evidence/managed-host-20260914/public-evidence-review.json",
+      "sha256": "a7b6fd7e5102a793442fa50e0f438b6302b826d01970c868611b8a42830903d1"
+    },
+    {
+      "path": "evidence/managed-host-20260914/receipts/sensitive-read.json",
+      "url": "evidence/managed-host-20260914/receipts/sensitive-read.json",
+      "sha256": "491fa56aed9dcc12d9667ce0a0c3dfbafcbb5bccfdcd233413bb5bd4eec5e804"
+    },
+    {
+      "path": "evidence/managed-host-20260914/receipts/sensitive-namespace.json",
+      "url": "evidence/managed-host-20260914/receipts/sensitive-namespace.json",
+      "sha256": "7d93cfe4cb1efa0c0a4f6aa4d9013db5f747d54915fee3d1034998aa18f979ad"
+    },
+    {
+      "path": "evidence/managed-host-20260914/receipts/protected-write.json",
+      "url": "evidence/managed-host-20260914/receipts/protected-write.json",
+      "sha256": "3654af46b51def2796c3a0b401eb3c7217d14eead834766915ba96083b1d4fe4"
+    },
+    {
+      "path": "evidence/managed-host-20260914/receipts/imds-tcp.json",
+      "url": "evidence/managed-host-20260914/receipts/imds-tcp.json",
+      "sha256": "8fd47d3fb89181d5d83c4df18bddcc89b68c4eb29adb32d47b9b792cef0b72b5"
     }
   ],
   "adminTour": "kirocrew-admin-tour.html",
   "architectureDiagram": "../kirocrew-managed-controls-diagram.html",
-  "pendingControls": [
-    "Sensitive-path read",
-    "Protected-path write",
-    "IMDS execution"
-  ],
+  "pendingControls": [],
   "limitations": [
-    "The earlier sensitive-path and anonymous-helper attempts ended in model-only responses, with no native tool execution. The later anonymous-helper execution has separate reviewed authentication evidence. Sensitive-path enforcement remains pending.",
+    "Earlier sensitive-path and anonymous-helper attempts ended before native execution. Their dated receipts are preserved; the new September 14 sensitive take and later namespace readback have their own evidence.",
     "The command clip starts after the denial and shows an assistant summary with collapsed tool history. Persisted native history and scoped SEL establish the configured Crew rule as the enforcer; the request-to-denial recording is missing.",
     "The authentication excerpt starts at execution approval. The earlier source read required its own Allow once. The clip ends with the assistant's HTTP 403 summary; its native Output stays collapsed. Separate exact-input, native-result and Gateway evidence support attribution.",
-    "The IMDS helper's source read completed. Its execution approval expired unanswered after ten minutes; no helper execution or metadata firewall result was observed. The earlier pending-at-observer-expiry receipt remains preserved as a historical snapshot.",
+    "The earlier IMDS execution approval expired without a run. A separate September 14 take completed one native execution after separate source-read and execution approvals; it has its own counter attribution.",
     "The custom marker-command rule was removed after its take. The recording describes that earlier configuration; replay does not mean the rule remains active. The cleanup receipt verifies the exact marker rule is absent, but does not establish full preservation of every unrelated prior custom rule."
   ],
   "reviewScope": "Artifact integrity and visible recorded behavior. Enforcement acceptance and model council apply only through their separate exact-candidate receipts.",

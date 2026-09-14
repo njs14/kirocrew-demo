@@ -1,0 +1,894 @@
+{
+  "invariants": {
+    "protected_marker_absent_in_all_snapshots": true,
+    "same_first_output_rule_and_counter_free_rules_hash": true,
+    "same_fixtures_and_installed_source_hashes": true,
+    "same_gateway_process_and_service_invocation": true,
+    "same_machine_id_sha256": true,
+    "same_policy_sha256_and_root_ownership": true
+  },
+  "kind": "allowlisted_public_host_state_snapshots",
+  "limitations": [
+    "Snapshot identity and file metadata establish continuity at the sampled times, not uninterrupted monitoring.",
+    "The hashed source files and root-owned policy file do not alone prove an individual enforcement outcome."
+  ],
+  "schema_version": 1,
+  "scope": "Five read-only snapshots around three native client takes; the snapshots themselves send no probe packets.",
+  "snapshots": [
+    {
+      "observation": {
+        "crew_gid": 988,
+        "crew_uid": 999,
+        "files": {
+          "agent": {
+            "absent": false,
+            "bytes": 2556,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/home/crew/.kiro/agents/host-controls-demo.json",
+            "regular": true,
+            "sha256": "df1389d82c7335953a9168a9f811bc3358a5ccc2f79c61dd23768edfbbe4dacb",
+            "uid": 0
+          },
+          "allowed_canary": {
+            "absent": false,
+            "bytes": 53,
+            "gid": 988,
+            "links": 1,
+            "mode": 384,
+            "path": "/srv/kirocrew-demo/workspace/.host-controls-demo/allowed-canary.txt",
+            "regular": true,
+            "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+            "uid": 999
+          },
+          "imds-tcp.py": {
+            "absent": false,
+            "bytes": 1285,
+            "gid": 0,
+            "links": 1,
+            "mode": 493,
+            "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py",
+            "regular": true,
+            "sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+            "uid": 0
+          },
+          "sensitive_canary": {
+            "absent": false,
+            "bytes": 53,
+            "gid": 988,
+            "links": 1,
+            "mode": 384,
+            "path": "/home/crew/.aws/kirocrew-demo-control-canary.txt",
+            "regular": true,
+            "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+            "uid": 999
+          }
+        },
+        "gateway": {
+          "ActiveState": "active",
+          "ExecMainStartTimestamp": "Mon 2026-09-14 06:22:15 UTC",
+          "InvocationID": "d6181462c0cc4a05b21908fa46516fcc",
+          "MainPID": "192820",
+          "NRestarts": "0",
+          "User": "crew"
+        },
+        "guard_service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestamp": "Sun 2026-09-13 13:59:18 UTC",
+          "InvocationID": "138f3ff113504c54b19917a431420d0e",
+          "MainPID": "0",
+          "NRestarts": "0",
+          "User": ""
+        },
+        "ipv4_metadata_guard": {
+          "first_output_rule_is_exact": true,
+          "matching_rules": [
+            {
+              "bytes": 120,
+              "output_rule_index": 1,
+              "packets": 2,
+              "rule": [
+                "-A",
+                "OUTPUT",
+                "-d",
+                "169.254.169.254/32",
+                "-m",
+                "owner",
+                "--uid-owner",
+                "999",
+                "-j",
+                "REJECT",
+                "--reject-with",
+                "icmp-admin-prohibited"
+              ]
+            }
+          ],
+          "output_rules_sha256": "8b6f47f97d30ac30cc517fb00f4620e1458c1f4889d819a90119880bd9ef9bbe",
+          "uid": 999
+        },
+        "kind": "native_host_take_snapshot",
+        "machine_id_sha256": "d1b470b94a19bccb4788ddc340199406391bde10f8181ba1a4071f3545f615ac",
+        "observed_at": "2026-09-14T13:03:42.838459+00:00",
+        "policy": {
+          "absent": false,
+          "bytes": 1006,
+          "gid": 0,
+          "links": 1,
+          "mode": 420,
+          "path": "/etc/kirocrew-demo/security-policy.json",
+          "regular": true,
+          "sha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87",
+          "uid": 0
+        },
+        "probe_packets_sent": false,
+        "protected_target": {
+          "absent": true,
+          "path": "/home/crew/.kiro/agents/.demo-host-controls/write-probe-managed-host-20260914-ui1.txt"
+        },
+        "read_only": true,
+        "schema_version": 1,
+        "sources": {
+          "hooks.py": {
+            "absent": false,
+            "bytes": 257918,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/hooks.py",
+            "regular": true,
+            "sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+            "uid": 0
+          },
+          "platform/governance.py": {
+            "absent": false,
+            "bytes": 235938,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/platform/governance.py",
+            "regular": true,
+            "sha256": "7d9c5b109086b8c4a2d36c589d387e1fd562e7d2b407dc65d54d2e7d2fc09341",
+            "uid": 0
+          },
+          "platform/governance_profiles.py": {
+            "absent": false,
+            "bytes": 71035,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/platform/governance_profiles.py",
+            "regular": true,
+            "sha256": "102ab33ed14c8ecd1060d81a0de13214602b519291d8c25f331eae77cbfb4c73",
+            "uid": 0
+          },
+          "sandbox.py": {
+            "absent": false,
+            "bytes": 579148,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/sandbox.py",
+            "regular": true,
+            "sha256": "3fcb43313c4970f523a50ce7a508b8b9801e88bdc06a61947a649a67cf8902e9",
+            "uid": 0
+          },
+          "security/paths.py": {
+            "absent": false,
+            "bytes": 141630,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/security/paths.py",
+            "regular": true,
+            "sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+            "uid": 0
+          }
+        },
+        "started_at": "2026-09-14T13:03:42.818062+00:00"
+      },
+      "snapshot_id": "before",
+      "source_sha256": "d73ed3ab5627a870c014bb723585c21b71040513aa3398a14b51eed3a6b7c420"
+    },
+    {
+      "observation": {
+        "crew_gid": 988,
+        "crew_uid": 999,
+        "files": {
+          "agent": {
+            "absent": false,
+            "bytes": 2556,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/home/crew/.kiro/agents/host-controls-demo.json",
+            "regular": true,
+            "sha256": "df1389d82c7335953a9168a9f811bc3358a5ccc2f79c61dd23768edfbbe4dacb",
+            "uid": 0
+          },
+          "allowed_canary": {
+            "absent": false,
+            "bytes": 53,
+            "gid": 988,
+            "links": 1,
+            "mode": 384,
+            "path": "/srv/kirocrew-demo/workspace/.host-controls-demo/allowed-canary.txt",
+            "regular": true,
+            "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+            "uid": 999
+          },
+          "imds-tcp.py": {
+            "absent": false,
+            "bytes": 1285,
+            "gid": 0,
+            "links": 1,
+            "mode": 493,
+            "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py",
+            "regular": true,
+            "sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+            "uid": 0
+          },
+          "sensitive_canary": {
+            "absent": false,
+            "bytes": 53,
+            "gid": 988,
+            "links": 1,
+            "mode": 384,
+            "path": "/home/crew/.aws/kirocrew-demo-control-canary.txt",
+            "regular": true,
+            "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+            "uid": 999
+          }
+        },
+        "gateway": {
+          "ActiveState": "active",
+          "ExecMainStartTimestamp": "Mon 2026-09-14 06:22:15 UTC",
+          "InvocationID": "d6181462c0cc4a05b21908fa46516fcc",
+          "MainPID": "192820",
+          "NRestarts": "0",
+          "User": "crew"
+        },
+        "guard_service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestamp": "Sun 2026-09-13 13:59:18 UTC",
+          "InvocationID": "138f3ff113504c54b19917a431420d0e",
+          "MainPID": "0",
+          "NRestarts": "0",
+          "User": ""
+        },
+        "ipv4_metadata_guard": {
+          "first_output_rule_is_exact": true,
+          "matching_rules": [
+            {
+              "bytes": 120,
+              "output_rule_index": 1,
+              "packets": 2,
+              "rule": [
+                "-A",
+                "OUTPUT",
+                "-d",
+                "169.254.169.254/32",
+                "-m",
+                "owner",
+                "--uid-owner",
+                "999",
+                "-j",
+                "REJECT",
+                "--reject-with",
+                "icmp-admin-prohibited"
+              ]
+            }
+          ],
+          "output_rules_sha256": "8b6f47f97d30ac30cc517fb00f4620e1458c1f4889d819a90119880bd9ef9bbe",
+          "uid": 999
+        },
+        "kind": "native_host_take_snapshot",
+        "machine_id_sha256": "d1b470b94a19bccb4788ddc340199406391bde10f8181ba1a4071f3545f615ac",
+        "observed_at": "2026-09-14T13:09:10.288902+00:00",
+        "policy": {
+          "absent": false,
+          "bytes": 1006,
+          "gid": 0,
+          "links": 1,
+          "mode": 420,
+          "path": "/etc/kirocrew-demo/security-policy.json",
+          "regular": true,
+          "sha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87",
+          "uid": 0
+        },
+        "probe_packets_sent": false,
+        "protected_target": {
+          "absent": true,
+          "path": "/home/crew/.kiro/agents/.demo-host-controls/write-probe-managed-host-20260914-ui1.txt"
+        },
+        "read_only": true,
+        "schema_version": 1,
+        "sources": {
+          "hooks.py": {
+            "absent": false,
+            "bytes": 257918,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/hooks.py",
+            "regular": true,
+            "sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+            "uid": 0
+          },
+          "platform/governance.py": {
+            "absent": false,
+            "bytes": 235938,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/platform/governance.py",
+            "regular": true,
+            "sha256": "7d9c5b109086b8c4a2d36c589d387e1fd562e7d2b407dc65d54d2e7d2fc09341",
+            "uid": 0
+          },
+          "platform/governance_profiles.py": {
+            "absent": false,
+            "bytes": 71035,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/platform/governance_profiles.py",
+            "regular": true,
+            "sha256": "102ab33ed14c8ecd1060d81a0de13214602b519291d8c25f331eae77cbfb4c73",
+            "uid": 0
+          },
+          "sandbox.py": {
+            "absent": false,
+            "bytes": 579148,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/sandbox.py",
+            "regular": true,
+            "sha256": "3fcb43313c4970f523a50ce7a508b8b9801e88bdc06a61947a649a67cf8902e9",
+            "uid": 0
+          },
+          "security/paths.py": {
+            "absent": false,
+            "bytes": 141630,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/security/paths.py",
+            "regular": true,
+            "sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+            "uid": 0
+          }
+        },
+        "started_at": "2026-09-14T13:09:10.269191+00:00"
+      },
+      "snapshot_id": "after-sensitive-before-write",
+      "source_sha256": "48bf2579654d9d73901159833ec49dbf745d8787780309eb007e302982063f2c"
+    },
+    {
+      "observation": {
+        "crew_gid": 988,
+        "crew_uid": 999,
+        "files": {
+          "agent": {
+            "absent": false,
+            "bytes": 2556,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/home/crew/.kiro/agents/host-controls-demo.json",
+            "regular": true,
+            "sha256": "df1389d82c7335953a9168a9f811bc3358a5ccc2f79c61dd23768edfbbe4dacb",
+            "uid": 0
+          },
+          "allowed_canary": {
+            "absent": false,
+            "bytes": 53,
+            "gid": 988,
+            "links": 1,
+            "mode": 384,
+            "path": "/srv/kirocrew-demo/workspace/.host-controls-demo/allowed-canary.txt",
+            "regular": true,
+            "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+            "uid": 999
+          },
+          "imds-tcp.py": {
+            "absent": false,
+            "bytes": 1285,
+            "gid": 0,
+            "links": 1,
+            "mode": 493,
+            "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py",
+            "regular": true,
+            "sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+            "uid": 0
+          },
+          "sensitive_canary": {
+            "absent": false,
+            "bytes": 53,
+            "gid": 988,
+            "links": 1,
+            "mode": 384,
+            "path": "/home/crew/.aws/kirocrew-demo-control-canary.txt",
+            "regular": true,
+            "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+            "uid": 999
+          }
+        },
+        "gateway": {
+          "ActiveState": "active",
+          "ExecMainStartTimestamp": "Mon 2026-09-14 06:22:15 UTC",
+          "InvocationID": "d6181462c0cc4a05b21908fa46516fcc",
+          "MainPID": "192820",
+          "NRestarts": "0",
+          "User": "crew"
+        },
+        "guard_service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestamp": "Sun 2026-09-13 13:59:18 UTC",
+          "InvocationID": "138f3ff113504c54b19917a431420d0e",
+          "MainPID": "0",
+          "NRestarts": "0",
+          "User": ""
+        },
+        "ipv4_metadata_guard": {
+          "first_output_rule_is_exact": true,
+          "matching_rules": [
+            {
+              "bytes": 120,
+              "output_rule_index": 1,
+              "packets": 2,
+              "rule": [
+                "-A",
+                "OUTPUT",
+                "-d",
+                "169.254.169.254/32",
+                "-m",
+                "owner",
+                "--uid-owner",
+                "999",
+                "-j",
+                "REJECT",
+                "--reject-with",
+                "icmp-admin-prohibited"
+              ]
+            }
+          ],
+          "output_rules_sha256": "8b6f47f97d30ac30cc517fb00f4620e1458c1f4889d819a90119880bd9ef9bbe",
+          "uid": 999
+        },
+        "kind": "native_host_take_snapshot",
+        "machine_id_sha256": "d1b470b94a19bccb4788ddc340199406391bde10f8181ba1a4071f3545f615ac",
+        "observed_at": "2026-09-14T13:13:39.256791+00:00",
+        "policy": {
+          "absent": false,
+          "bytes": 1006,
+          "gid": 0,
+          "links": 1,
+          "mode": 420,
+          "path": "/etc/kirocrew-demo/security-policy.json",
+          "regular": true,
+          "sha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87",
+          "uid": 0
+        },
+        "probe_packets_sent": false,
+        "protected_target": {
+          "absent": true,
+          "path": "/home/crew/.kiro/agents/.demo-host-controls/write-probe-managed-host-20260914-ui1.txt"
+        },
+        "read_only": true,
+        "schema_version": 1,
+        "sources": {
+          "hooks.py": {
+            "absent": false,
+            "bytes": 257918,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/hooks.py",
+            "regular": true,
+            "sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+            "uid": 0
+          },
+          "platform/governance.py": {
+            "absent": false,
+            "bytes": 235938,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/platform/governance.py",
+            "regular": true,
+            "sha256": "7d9c5b109086b8c4a2d36c589d387e1fd562e7d2b407dc65d54d2e7d2fc09341",
+            "uid": 0
+          },
+          "platform/governance_profiles.py": {
+            "absent": false,
+            "bytes": 71035,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/platform/governance_profiles.py",
+            "regular": true,
+            "sha256": "102ab33ed14c8ecd1060d81a0de13214602b519291d8c25f331eae77cbfb4c73",
+            "uid": 0
+          },
+          "sandbox.py": {
+            "absent": false,
+            "bytes": 579148,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/sandbox.py",
+            "regular": true,
+            "sha256": "3fcb43313c4970f523a50ce7a508b8b9801e88bdc06a61947a649a67cf8902e9",
+            "uid": 0
+          },
+          "security/paths.py": {
+            "absent": false,
+            "bytes": 141630,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/security/paths.py",
+            "regular": true,
+            "sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+            "uid": 0
+          }
+        },
+        "started_at": "2026-09-14T13:13:39.237640+00:00"
+      },
+      "snapshot_id": "after-write",
+      "source_sha256": "548efe8890280dd60215fa9e76f3545113a2d8b80b1627936bd815495b672bb3"
+    },
+    {
+      "observation": {
+        "crew_gid": 988,
+        "crew_uid": 999,
+        "files": {
+          "agent": {
+            "absent": false,
+            "bytes": 2556,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/home/crew/.kiro/agents/host-controls-demo.json",
+            "regular": true,
+            "sha256": "df1389d82c7335953a9168a9f811bc3358a5ccc2f79c61dd23768edfbbe4dacb",
+            "uid": 0
+          },
+          "allowed_canary": {
+            "absent": false,
+            "bytes": 53,
+            "gid": 988,
+            "links": 1,
+            "mode": 384,
+            "path": "/srv/kirocrew-demo/workspace/.host-controls-demo/allowed-canary.txt",
+            "regular": true,
+            "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+            "uid": 999
+          },
+          "imds-tcp.py": {
+            "absent": false,
+            "bytes": 1285,
+            "gid": 0,
+            "links": 1,
+            "mode": 493,
+            "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py",
+            "regular": true,
+            "sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+            "uid": 0
+          },
+          "sensitive_canary": {
+            "absent": false,
+            "bytes": 53,
+            "gid": 988,
+            "links": 1,
+            "mode": 384,
+            "path": "/home/crew/.aws/kirocrew-demo-control-canary.txt",
+            "regular": true,
+            "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+            "uid": 999
+          }
+        },
+        "gateway": {
+          "ActiveState": "active",
+          "ExecMainStartTimestamp": "Mon 2026-09-14 06:22:15 UTC",
+          "InvocationID": "d6181462c0cc4a05b21908fa46516fcc",
+          "MainPID": "192820",
+          "NRestarts": "0",
+          "User": "crew"
+        },
+        "guard_service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestamp": "Sun 2026-09-13 13:59:18 UTC",
+          "InvocationID": "138f3ff113504c54b19917a431420d0e",
+          "MainPID": "0",
+          "NRestarts": "0",
+          "User": ""
+        },
+        "ipv4_metadata_guard": {
+          "first_output_rule_is_exact": true,
+          "matching_rules": [
+            {
+              "bytes": 120,
+              "output_rule_index": 1,
+              "packets": 2,
+              "rule": [
+                "-A",
+                "OUTPUT",
+                "-d",
+                "169.254.169.254/32",
+                "-m",
+                "owner",
+                "--uid-owner",
+                "999",
+                "-j",
+                "REJECT",
+                "--reject-with",
+                "icmp-admin-prohibited"
+              ]
+            }
+          ],
+          "output_rules_sha256": "8b6f47f97d30ac30cc517fb00f4620e1458c1f4889d819a90119880bd9ef9bbe",
+          "uid": 999
+        },
+        "kind": "native_host_take_snapshot",
+        "machine_id_sha256": "d1b470b94a19bccb4788ddc340199406391bde10f8181ba1a4071f3545f615ac",
+        "observed_at": "2026-09-14T13:27:43.573643+00:00",
+        "policy": {
+          "absent": false,
+          "bytes": 1006,
+          "gid": 0,
+          "links": 1,
+          "mode": 420,
+          "path": "/etc/kirocrew-demo/security-policy.json",
+          "regular": true,
+          "sha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87",
+          "uid": 0
+        },
+        "probe_packets_sent": false,
+        "protected_target": {
+          "absent": true,
+          "path": "/home/crew/.kiro/agents/.demo-host-controls/write-probe-managed-host-20260914-ui1.txt"
+        },
+        "read_only": true,
+        "schema_version": 1,
+        "sources": {
+          "hooks.py": {
+            "absent": false,
+            "bytes": 257918,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/hooks.py",
+            "regular": true,
+            "sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+            "uid": 0
+          },
+          "platform/governance.py": {
+            "absent": false,
+            "bytes": 235938,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/platform/governance.py",
+            "regular": true,
+            "sha256": "7d9c5b109086b8c4a2d36c589d387e1fd562e7d2b407dc65d54d2e7d2fc09341",
+            "uid": 0
+          },
+          "platform/governance_profiles.py": {
+            "absent": false,
+            "bytes": 71035,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/platform/governance_profiles.py",
+            "regular": true,
+            "sha256": "102ab33ed14c8ecd1060d81a0de13214602b519291d8c25f331eae77cbfb4c73",
+            "uid": 0
+          },
+          "sandbox.py": {
+            "absent": false,
+            "bytes": 579148,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/sandbox.py",
+            "regular": true,
+            "sha256": "3fcb43313c4970f523a50ce7a508b8b9801e88bdc06a61947a649a67cf8902e9",
+            "uid": 0
+          },
+          "security/paths.py": {
+            "absent": false,
+            "bytes": 141630,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/security/paths.py",
+            "regular": true,
+            "sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+            "uid": 0
+          }
+        },
+        "started_at": "2026-09-14T13:27:43.554103+00:00"
+      },
+      "snapshot_id": "before-imds",
+      "source_sha256": "41b4b03c6fef2b6301eaba42c76c0c0e98811df3e16bf508b88f46cd420e39ed"
+    },
+    {
+      "observation": {
+        "crew_gid": 988,
+        "crew_uid": 999,
+        "files": {
+          "agent": {
+            "absent": false,
+            "bytes": 2556,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/home/crew/.kiro/agents/host-controls-demo.json",
+            "regular": true,
+            "sha256": "df1389d82c7335953a9168a9f811bc3358a5ccc2f79c61dd23768edfbbe4dacb",
+            "uid": 0
+          },
+          "allowed_canary": {
+            "absent": false,
+            "bytes": 53,
+            "gid": 988,
+            "links": 1,
+            "mode": 384,
+            "path": "/srv/kirocrew-demo/workspace/.host-controls-demo/allowed-canary.txt",
+            "regular": true,
+            "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+            "uid": 999
+          },
+          "imds-tcp.py": {
+            "absent": false,
+            "bytes": 1285,
+            "gid": 0,
+            "links": 1,
+            "mode": 493,
+            "path": "/opt/kirocrew-demo/host-controls/imds-tcp.py",
+            "regular": true,
+            "sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93",
+            "uid": 0
+          },
+          "sensitive_canary": {
+            "absent": false,
+            "bytes": 53,
+            "gid": 988,
+            "links": 1,
+            "mode": 384,
+            "path": "/home/crew/.aws/kirocrew-demo-control-canary.txt",
+            "regular": true,
+            "sha256": "33d830dd07ef2cb4c04784bc1311b6e13f711e85e7a62a0bdc2fea3dfea407a1",
+            "uid": 999
+          }
+        },
+        "gateway": {
+          "ActiveState": "active",
+          "ExecMainStartTimestamp": "Mon 2026-09-14 06:22:15 UTC",
+          "InvocationID": "d6181462c0cc4a05b21908fa46516fcc",
+          "MainPID": "192820",
+          "NRestarts": "0",
+          "User": "crew"
+        },
+        "guard_service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestamp": "Sun 2026-09-13 13:59:18 UTC",
+          "InvocationID": "138f3ff113504c54b19917a431420d0e",
+          "MainPID": "0",
+          "NRestarts": "0",
+          "User": ""
+        },
+        "ipv4_metadata_guard": {
+          "first_output_rule_is_exact": true,
+          "matching_rules": [
+            {
+              "bytes": 180,
+              "output_rule_index": 1,
+              "packets": 3,
+              "rule": [
+                "-A",
+                "OUTPUT",
+                "-d",
+                "169.254.169.254/32",
+                "-m",
+                "owner",
+                "--uid-owner",
+                "999",
+                "-j",
+                "REJECT",
+                "--reject-with",
+                "icmp-admin-prohibited"
+              ]
+            }
+          ],
+          "output_rules_sha256": "8b6f47f97d30ac30cc517fb00f4620e1458c1f4889d819a90119880bd9ef9bbe",
+          "uid": 999
+        },
+        "kind": "native_host_take_snapshot",
+        "machine_id_sha256": "d1b470b94a19bccb4788ddc340199406391bde10f8181ba1a4071f3545f615ac",
+        "observed_at": "2026-09-14T13:29:30.564644+00:00",
+        "policy": {
+          "absent": false,
+          "bytes": 1006,
+          "gid": 0,
+          "links": 1,
+          "mode": 420,
+          "path": "/etc/kirocrew-demo/security-policy.json",
+          "regular": true,
+          "sha256": "ca6c7e60f5afe4c75ac4c996ed9b9ee1bb4dfaa9031ae777260027bbc9302f87",
+          "uid": 0
+        },
+        "probe_packets_sent": false,
+        "protected_target": {
+          "absent": true,
+          "path": "/home/crew/.kiro/agents/.demo-host-controls/write-probe-managed-host-20260914-ui1.txt"
+        },
+        "read_only": true,
+        "schema_version": 1,
+        "sources": {
+          "hooks.py": {
+            "absent": false,
+            "bytes": 257918,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/hooks.py",
+            "regular": true,
+            "sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+            "uid": 0
+          },
+          "platform/governance.py": {
+            "absent": false,
+            "bytes": 235938,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/platform/governance.py",
+            "regular": true,
+            "sha256": "7d9c5b109086b8c4a2d36c589d387e1fd562e7d2b407dc65d54d2e7d2fc09341",
+            "uid": 0
+          },
+          "platform/governance_profiles.py": {
+            "absent": false,
+            "bytes": 71035,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/platform/governance_profiles.py",
+            "regular": true,
+            "sha256": "102ab33ed14c8ecd1060d81a0de13214602b519291d8c25f331eae77cbfb4c73",
+            "uid": 0
+          },
+          "sandbox.py": {
+            "absent": false,
+            "bytes": 579148,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/sandbox.py",
+            "regular": true,
+            "sha256": "3fcb43313c4970f523a50ce7a508b8b9801e88bdc06a61947a649a67cf8902e9",
+            "uid": 0
+          },
+          "security/paths.py": {
+            "absent": false,
+            "bytes": 141630,
+            "gid": 0,
+            "links": 1,
+            "mode": 420,
+            "path": "/opt/kirocrew/venv/lib/python3.12/site-packages/kiro_crew/security/paths.py",
+            "regular": true,
+            "sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+            "uid": 0
+          }
+        },
+        "started_at": "2026-09-14T13:29:30.545901+00:00"
+      },
+      "snapshot_id": "after-imds",
+      "source_sha256": "8fd75db47fccfe97f3f2e3459388ab801f9078b0a26772f39d3e6a9a1e2a5bc9"
+    }
+  ]
+}

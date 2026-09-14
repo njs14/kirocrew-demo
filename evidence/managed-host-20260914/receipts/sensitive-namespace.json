@@ -1,0 +1,284 @@
+{
+  "api_binding_after": {
+    "observed_at": "2026-09-14T13:13:38.289073+00:00",
+    "row": {
+      "agent": "host-controls-demo",
+      "key": "dashboard:chat-10-1789390806",
+      "owns_runtime": true,
+      "pid": 275305,
+      "prompts": 1,
+      "slot_key": "chat-10-1789390806"
+    }
+  },
+  "api_binding_before": {
+    "observed_at": "2026-09-14T13:13:37.631973+00:00",
+    "row": {
+      "agent": "host-controls-demo",
+      "key": "dashboard:chat-10-1789390806",
+      "owns_runtime": true,
+      "pid": 275305,
+      "prompts": 1,
+      "slot_key": "chat-10-1789390806"
+    }
+  },
+  "api_route": "/api/sessions/memory",
+  "host_snapshot_sha256": "d73ed3ab5627a870c014bb723585c21b71040513aa3398a14b51eed3a6b7c420",
+  "inspector_sha256": "fbc5be5e3897d2c50ca449c66dda33419d8e131c2460b38eec2da05ddc81d20a",
+  "kind": "exact_native_session_namespace_readback",
+  "limitations": [
+    "Readback occurred after the native file-read result, not during its syscall.",
+    "The API binds the current session runtime; it does not expose the historical syscall PID.",
+    "Native missing-path output is not reclassified as a hook-policy denial."
+  ],
+  "namespace_mask_corroborated_for_current_cli_descendants": true,
+  "publication": {
+    "contents": "Exact slot API binding, stable process identities, relevant .aws mount entries, public fixture lstat, source file hashes only.",
+    "kind": "reviewed_public_process_metadata",
+    "private_input_paths_published": false,
+    "source_receipt_sha256": "b74d8f2350bdf91290cb1b286ed8821eaadae8ed8e126f9de6b099027278e7ea"
+  },
+  "remote": {
+    "environment_read": false,
+    "gateway": {
+      "pid": 192820,
+      "ppid": 1,
+      "start_ticks": 5901932
+    },
+    "gateway_mount_namespace": "mnt:[4026532517]",
+    "host_aws_directory": {
+      "bytes": 4096,
+      "device": 66305,
+      "directory": true,
+      "exists": true,
+      "gid": 988,
+      "inode": 329703,
+      "mode": 448,
+      "regular": false,
+      "symlink": false,
+      "uid": 999
+    },
+    "host_canary": {
+      "bytes": 53,
+      "device": 66305,
+      "directory": false,
+      "exists": true,
+      "gid": 988,
+      "inode": 329796,
+      "mode": 384,
+      "regular": true,
+      "symlink": false,
+      "uid": 999
+    },
+    "namespace_entered": false,
+    "observed_at": "2026-09-14T13:13:38.219036+00:00",
+    "process_launched_inside_target_namespace": false,
+    "processes": [
+      {
+        "aws_directory_in_process_root": {
+          "bytes": 4096,
+          "device": 66305,
+          "directory": true,
+          "exists": true,
+          "gid": 988,
+          "inode": 329703,
+          "mode": 448,
+          "regular": false,
+          "symlink": false,
+          "uid": 999
+        },
+        "aws_mounts": [],
+        "canary_in_process_root": {
+          "bytes": 53,
+          "device": 66305,
+          "directory": false,
+          "exists": true,
+          "gid": 988,
+          "inode": 329796,
+          "mode": 384,
+          "regular": true,
+          "symlink": false,
+          "uid": 999
+        },
+        "exe_basename": "python3.12",
+        "gid": [
+          988,
+          988,
+          988,
+          988
+        ],
+        "identity_stable_during_read": true,
+        "mount_namespace_differs_from_gateway": false,
+        "namespaces": {
+          "mnt": "mnt:[4026532517]",
+          "user": "user:[4026531837]"
+        },
+        "no_new_privs": 1,
+        "pid": 275305,
+        "ppid": 192820,
+        "seccomp": 2,
+        "start_ticks": 8321711,
+        "uid": [
+          999,
+          999,
+          999,
+          999
+        ]
+      },
+      {
+        "aws_directory_in_process_root": {
+          "bytes": 40,
+          "device": 52,
+          "directory": true,
+          "exists": true,
+          "gid": 988,
+          "inode": 19894,
+          "mode": 448,
+          "regular": false,
+          "symlink": false,
+          "uid": 999
+        },
+        "aws_mounts": [
+          {
+            "device": "0:52",
+            "filesystem": "tmpfs",
+            "mount_id": "796",
+            "mount_point": "/home/crew/.aws",
+            "options": "rw,nosuid,nodev,relatime",
+            "parent_id": "305",
+            "root": "/kirocrew_sb_275306_b5fhr8pc",
+            "source": "tmpfs"
+          }
+        ],
+        "canary_in_process_root": {
+          "errno": 2,
+          "exists": false
+        },
+        "exe_basename": "kiro-cli",
+        "gid": [
+          988,
+          988,
+          988,
+          988
+        ],
+        "identity_stable_during_read": true,
+        "mount_namespace_differs_from_gateway": true,
+        "namespaces": {
+          "mnt": "mnt:[4026532521]",
+          "user": "user:[4026532515]"
+        },
+        "no_new_privs": 1,
+        "pid": 275306,
+        "ppid": 275305,
+        "seccomp": 2,
+        "start_ticks": 8321716,
+        "uid": [
+          999,
+          999,
+          999,
+          999
+        ]
+      },
+      {
+        "aws_directory_in_process_root": {
+          "bytes": 40,
+          "device": 52,
+          "directory": true,
+          "exists": true,
+          "gid": 988,
+          "inode": 19894,
+          "mode": 448,
+          "regular": false,
+          "symlink": false,
+          "uid": 999
+        },
+        "aws_mounts": [
+          {
+            "device": "0:52",
+            "filesystem": "tmpfs",
+            "mount_id": "796",
+            "mount_point": "/home/crew/.aws",
+            "options": "rw,nosuid,nodev,relatime",
+            "parent_id": "305",
+            "root": "/kirocrew_sb_275306_b5fhr8pc",
+            "source": "tmpfs"
+          }
+        ],
+        "canary_in_process_root": {
+          "errno": 2,
+          "exists": false
+        },
+        "exe_basename": "kiro-cli-chat",
+        "gid": [
+          988,
+          988,
+          988,
+          988
+        ],
+        "identity_stable_during_read": true,
+        "mount_namespace_differs_from_gateway": true,
+        "namespaces": {
+          "mnt": "mnt:[4026532521]",
+          "user": "user:[4026532515]"
+        },
+        "no_new_privs": 1,
+        "pid": 275313,
+        "ppid": 275306,
+        "seccomp": 2,
+        "start_ticks": 8321721,
+        "uid": [
+          999,
+          999,
+          999,
+          999
+        ]
+      }
+    ],
+    "public_canary_contents_read": false,
+    "read_only": true,
+    "runtime": {
+      "pid": 275305,
+      "ppid": 192820,
+      "start_ticks": 8321711
+    },
+    "source_bindings": {
+      "acp/client.py": {
+        "mode": 420,
+        "sha256": "74f001cfb0355e2cf999dc240d1c8930c1cc8dba6376168c225c42d9ea3ccc57",
+        "uid": 0
+      },
+      "dashboard/handlers/sessions.py": {
+        "mode": 420,
+        "sha256": "e6024cc2e374e65c7993463952b1696ff85b6209c25a1b0ead1850c6c0d79e7b",
+        "uid": 0
+      },
+      "dashboard/routes/system.py": {
+        "mode": 420,
+        "sha256": "b2870bcb503efcc6cf9a22f156fce0ceac831283e2193f0f72026efd7bcf6f6d",
+        "uid": 0
+      },
+      "dashboard/session_memory.py": {
+        "mode": 420,
+        "sha256": "8085d571e2d4e0437d1406aa3baa50a7a8286f904bd594a70cc0f4bd47f6087f",
+        "uid": 0
+      },
+      "sandbox.py": {
+        "mode": 420,
+        "sha256": "3fcb43313c4970f523a50ce7a508b8b9801e88bdc06a61947a649a67cf8902e9",
+        "uid": 0
+      },
+      "session_allocation.py": {
+        "mode": 420,
+        "sha256": "9bebf16c394a3af2f009de540fe7f2e9c631c3f4f2cb82955ecbb78cd8baebb6",
+        "uid": 0
+      }
+    }
+  },
+  "schema_version": 1,
+  "slot": "chat-10-1789390806",
+  "source_mechanism": {
+    "cc_selection": "sandbox.py:4606",
+    "cc_sensitive_dirs": "sandbox.py:1682",
+    "empty_bind_mounts": "sandbox.py:5103",
+    "runtime_binding": "session_allocation.py:735"
+  }
+}

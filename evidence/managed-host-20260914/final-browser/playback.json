@@ -1,0 +1,115 @@
+[
+  {
+    "slide": 14,
+    "cue": "0:00 Request the public canary",
+    "error": null,
+    "paused": true,
+    "ready": 4,
+    "time": 0.018472
+  },
+  {
+    "slide": 14,
+    "cue": "0:08 Submit the read",
+    "error": null,
+    "paused": true,
+    "ready": 4,
+    "time": 8
+  },
+  {
+    "slide": 14,
+    "cue": "0:24 Inspect the reported read error",
+    "error": null,
+    "paused": true,
+    "ready": 4,
+    "time": 24
+  },
+  {
+    "slide": 14,
+    "replay": {
+      "paused": false,
+      "time": 1.162457
+    }
+  },
+  {
+    "slide": 14,
+    "pausedAfterNavigation": true
+  },
+  {
+    "slide": 15,
+    "cue": "0:00 Request the disposable marker",
+    "error": null,
+    "paused": true,
+    "ready": 4,
+    "time": 0
+  },
+  {
+    "slide": 15,
+    "cue": "0:13 See the native block",
+    "error": null,
+    "paused": true,
+    "ready": 4,
+    "time": 13
+  },
+  {
+    "slide": 15,
+    "cue": "0:26 Inspect the write result",
+    "error": null,
+    "paused": true,
+    "ready": 4,
+    "time": 26
+  },
+  {
+    "slide": 15,
+    "replay": {
+      "paused": false,
+      "time": 1.144392
+    }
+  },
+  {
+    "slide": 15,
+    "pausedAfterNavigation": true
+  },
+  {
+    "slide": 16,
+    "cue": "0:00 Request the TCP-only probe",
+    "error": null,
+    "paused": true,
+    "ready": 4,
+    "time": 0
+  },
+  {
+    "slide": 16,
+    "cue": "0:11 Inspect the helper approval",
+    "error": null,
+    "paused": true,
+    "ready": 4,
+    "time": 11
+  },
+  {
+    "slide": 16,
+    "cue": "0:35 Inspect the execution approval",
+    "error": null,
+    "paused": true,
+    "ready": 4,
+    "time": 35
+  },
+  {
+    "slide": 16,
+    "cue": "0:53 Inspect the failed TCP result",
+    "error": null,
+    "paused": true,
+    "ready": 4,
+    "time": 53
+  },
+  {
+    "slide": 16,
+    "replay": {
+      "paused": false,
+      "time": 1.142846
+    }
+  },
+  {
+    "slide": 16,
+    "pausedAfterNavigation": true
+  }
+]

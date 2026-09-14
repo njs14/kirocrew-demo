@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/Users/noahsutter/git-projects/kirocrew-demo/kirocrew-managed-controls-diagram.architecture.json",
+  "output": "/Users/noahsutter/git-projects/kirocrew-demo/evidence/enterprise-managed/20260913/archify/base.html",
+  "specification": {
+    "sha256": "64a10b9878e2481f3b433a383723304915af32ad9d7359ef8e547ecb7bb8740a",
+    "bytes": 4977
+  },
+  "artifact": {
+    "sha256": "6c7aaf6137439d18043b94e53c88beb598af26dc4211c1b7d69b75acc1eb2020",
+    "bytes": 809281
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}

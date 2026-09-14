@@ -1,0 +1,31 @@
+{
+  "kind": "author_source_clarifications",
+  "source_files": [
+    {
+      "source": "hooks.py",
+      "sha256": "5cf0ec4af04a8190e047447881dbcd2af77165330a3871ba9f801cfe3f0ee16d",
+      "all_take_snapshots_root_owned_0644": true
+    },
+    {
+      "source": "security/paths.py",
+      "sha256": "24b4348e047fea56eb08adc456853ab4f8ba39b4351d6a3be5ccc7c136724e75",
+      "all_take_snapshots_root_owned_0644": true
+    }
+  ],
+  "host_snapshot_receipt": {
+    "path": "evidence/managed-host-20260914/receipts/host-state-snapshots.json",
+    "sha256": "997ef6d1b446fb8c35dbab1088d1a892db5501b04428407e798b7126e52321e5",
+    "bytes": 31137
+  },
+  "helper_template": {
+    "path": "infrastructure/host-controls/imds-tcp.py",
+    "sha256": "e016d75b86f5a67d4e98efa5ec6f4cfa1a2265179255b457867e4a1b0d520bf8",
+    "bytes": 1303
+  },
+  "instantiation": {
+    "EXPECTED_CREW_UID": 999,
+    "sha256": "79f9a501028b38fde995ce25756766cf3fa88c167c5d434a32f12bfbf2bbce93"
+  },
+  "fixed_target": "169.254.169.254:80",
+  "scope": "Root-owned source files and named built-in branch observed in matching reviewed source; host root can replace code. Port 80 is fixed in the exact helper source."
+}

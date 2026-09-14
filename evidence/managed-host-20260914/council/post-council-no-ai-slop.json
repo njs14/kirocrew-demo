@@ -1,0 +1,47 @@
+{
+  "kind": "direct_no_ai_slop_edit",
+  "completed_at": "2026-09-14T14:53:32.372370+00:00",
+  "skill": "no-ai-slop:no-ai-slop 1.0.6",
+  "mode": "edit",
+  "scope": [
+    "All slide copy and complete notes",
+    "Admin-tour copy and new host-result stop"
+  ],
+  "final_artifacts": [
+    {
+      "path": "output/kirocrew-native-controls.html",
+      "sha256": "587f500eaa2f42b343146c9942303855a38cff22c583719476e65284a725d8c1",
+      "bytes": 2046398
+    },
+    {
+      "path": "output/kirocrew-native-controls-notes.md",
+      "sha256": "a669f26788d8f36522d82045de1764ea82a0ad672e0cf704890cadf721666e94",
+      "bytes": 38803
+    },
+    {
+      "path": "output/kirocrew-admin-tour.html",
+      "sha256": "a7b73fd8ca411cb6a5ebf2b1d0534fc0886f2230f3c9151363408d27018b33fc",
+      "bytes": 4365485
+    },
+    {
+      "path": "output/kirocrew-admin-tour.md",
+      "sha256": "8e0e00945503f7ee54e051217f1bc2c1bb400ac6b1630f4a7386538672670f66",
+      "bytes": 32072
+    }
+  ],
+  "eval": {
+    "editing_principles_1_through_10": "pass",
+    "words_to_cut_1": "pass",
+    "patterns_to_cut_1_through_8": "pass",
+    "final_read_1_through_5": "pass",
+    "detect_check": "not applicable: edit mode"
+  },
+  "changes": [
+    "Removed repeated host-case explanations and stale undated pending claims.",
+    "Kept actual control names, approval sequence, source hashes and limits.",
+    "Replaced the repeated tour introduction with the concrete stop topics.",
+    "The full edited deck, notes and tour include their What changed text."
+  ],
+  "reviewer": "author",
+  "independent_final_verdict": false
+}

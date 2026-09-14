@@ -1,0 +1,158 @@
+{
+  "kind": "author_final_browser_review",
+  "completed_at": "2026-09-14T14:53:32.372370+00:00",
+  "passed": true,
+  "artifacts": [
+    {
+      "path": "output/kirocrew-native-controls.html",
+      "sha256": "587f500eaa2f42b343146c9942303855a38cff22c583719476e65284a725d8c1",
+      "bytes": 2046398
+    },
+    {
+      "path": "output/kirocrew-admin-tour.html",
+      "sha256": "a7b73fd8ca411cb6a5ebf2b1d0534fc0886f2230f3c9151363408d27018b33fc",
+      "bytes": 4365485
+    },
+    {
+      "path": "kirocrew-managed-controls-diagram.html",
+      "sha256": "7fe23f0611ba37f0e4bd6dc7155bf336f4c4bd2a566a1352ca5e27dd381b11ab",
+      "bytes": 810624
+    }
+  ],
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "slide_count": 19,
+  "scene_count": 12,
+  "checks": {
+    "all_slides_captured_and_visually_inspected": true,
+    "no_slide_overflow": true,
+    "no_control_map_footer_overlap": true,
+    "no_chapter_panel_clipping": true,
+    "new_host_cues_seek_and_pause": true,
+    "new_host_replay_advances": true,
+    "navigation_pauses_video": true,
+    "all_tour_images_decoded": true,
+    "all_eleven_stops_navigated": true,
+    "new_image_zooms_open_and_close": true,
+    "diagram_reader_and_presentation_inspected": true,
+    "single_endpoint_enclosure_preserved": true,
+    "exact_prior_diagram_svg_preserved": true
+  },
+  "screenshots": [
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-01.jpg",
+      "sha256": "94f5f6e7f8a72f9e1895ca161e955bcf0f51cca8669b8b5e2a2846f965a450e2",
+      "bytes": 53718
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-02.jpg",
+      "sha256": "470b8f0fa0277995bd6f4919c147b17869829a8528cc55eafba390617fe941e9",
+      "bytes": 75914
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-03.jpg",
+      "sha256": "ed5f6bd324540a15f899f85af87cafdfea892b74dd67b778ae0b9fcf9820a392",
+      "bytes": 70799
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-04.jpg",
+      "sha256": "734853e1f58ff343976719fdfc40872dc75a95d761bcf4dd838eaa5a6ec86ab4",
+      "bytes": 81855
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-05.jpg",
+      "sha256": "c513c747375b280d2959c7052fd1f6fead0d5eba65133ba0a753161c6151d724",
+      "bytes": 70174
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-06.jpg",
+      "sha256": "c2dcf06a2680fc029b61788d6a4a4e40a0203a8f9ca9fd6ac0bf6ca8c385237f",
+      "bytes": 73944
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-07.jpg",
+      "sha256": "84bd0d4ca33cb0daa22fd448d9efc1b36cc6e7a12d7746131dd50e1817a47d91",
+      "bytes": 72355
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-08.jpg",
+      "sha256": "296def711deaa5ab529a9e6f14fd563bae863331bfb6dcc244461419b23d3b23",
+      "bytes": 71639
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-09.jpg",
+      "sha256": "e83b4c7f2307c7a7dc47e107223ebb3beeb71d7ceacbc248f63d9d86bcb74a90",
+      "bytes": 70806
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-10.jpg",
+      "sha256": "f47094750605eca50f54a252fbb3c31eb350893a72639bd95c8272afd07cb47e",
+      "bytes": 76198
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-11.jpg",
+      "sha256": "778dc81df9ada8097ecb5494df69a79774426cac7e5d8fcdc48f6e07dcbe8814",
+      "bytes": 76184
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-12.jpg",
+      "sha256": "36ce7d7daa6cac6b65fb1683ba6a5a54ab0051ed7180c895ca676b7bb3728e20",
+      "bytes": 86140
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-13.jpg",
+      "sha256": "04a84d2736442ae5df6385a2823d46f69ef0dc36361de47c660574254d45b7c1",
+      "bytes": 87250
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-14.jpg",
+      "sha256": "8490eca44b369fe1791c568beda37d8ec94880fedbb03b2425e1f4bed7bbd4d3",
+      "bytes": 79089
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-15.jpg",
+      "sha256": "dc57bffb70aea40c32004ed0718395bb71058bfa585691290fe4244e6f03f9e8",
+      "bytes": 83913
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-16.jpg",
+      "sha256": "4140ddb732a3b9fc13ea529cabc1aaff138da520ab673c7bc1b38246bb103196",
+      "bytes": 86935
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-17.jpg",
+      "sha256": "fd270b18210323531fa8e853bdc1f99528273b4b4e1240dc036010080c7f30e2",
+      "bytes": 78219
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-18.jpg",
+      "sha256": "de95b95135566d996fcbca44ad0b0a7dced7fecf9c97ecd7d7d43ec8afc14dc9",
+      "bytes": 80470
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/slide-19.jpg",
+      "sha256": "7e39cdfcf348d1ac1a6bb5c1a14fd89fbaeb7d438ea1ee4d8d6ac3770463853f",
+      "bytes": 82282
+    }
+  ],
+  "details": [
+    {
+      "path": "evidence/managed-host-20260914/final-browser/layouts.json",
+      "sha256": "f72865e6d8c6b88ef618dcca347520788d58834b2ee915bed26aaaca06e03adc",
+      "bytes": 2607
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/playback.json",
+      "sha256": "19e0f66dfb6647bc45a3e5f52bee21dcf039168ef69fed7b68ea85b87e49a57d",
+      "bytes": 1883
+    },
+    {
+      "path": "evidence/managed-host-20260914/final-browser/tour.json",
+      "sha256": "3051a1fbd95ae5b0b033e6d54bece3847b3ed765e63a9c4efc62867029fd0b2a",
+      "bytes": 12578
+    }
+  ],
+  "scope": "CUA browser observations and author visual inspection of final slides. Tour navigation/zoom checks preceded its final copy-only edit; all 29 final images and changed text were rechecked after reload. No new live console measurements are claimed."
+}

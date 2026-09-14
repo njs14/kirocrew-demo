@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "manifestSha256": "6519a880da0178f84ace9f4aa67ae53b2ec523ad7a8522ff123f7f6816e6fd33",
+  "keyframes": [
+    {
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/cue-01.jpg",
+      "sha256": "97368cf5a221c049963829f6f221b1f3984c3d656097aac6921944d4612c3a4c",
+      "bytes": 166499,
+      "clipTime": 0.0,
+      "nominalRawTime": 26.0,
+      "mediaSha256": "076adaed02bf1562feaa763ffd0decd68afcfbd22fbfc062ce546a3eb2bc1653",
+      "method": "Full MP4 decode then output seek; no crop, retouching, overlays or image generation."
+    },
+    {
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/cue-02.jpg",
+      "sha256": "8cc022cb76bfeffd71fd63da531eca8ea298d2800a63ae09b63953a940c07bbd",
+      "bytes": 174345,
+      "clipTime": 8.0,
+      "nominalRawTime": 34.0,
+      "mediaSha256": "076adaed02bf1562feaa763ffd0decd68afcfbd22fbfc062ce546a3eb2bc1653",
+      "method": "Full MP4 decode then output seek; no crop, retouching, overlays or image generation."
+    },
+    {
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/cue-03.jpg",
+      "sha256": "29e7288012ae8c2d9f30c4b38eefd125bbd5e46c74b5467d5f299b4be0a0083d",
+      "bytes": 213177,
+      "clipTime": 24.0,
+      "nominalRawTime": 50.0,
+      "mediaSha256": "076adaed02bf1562feaa763ffd0decd68afcfbd22fbfc062ce546a3eb2bc1653",
+      "method": "Full MP4 decode then output seek; no crop, retouching, overlays or image generation."
+    },
+    {
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/cue-01.jpg",
+      "sha256": "ba7c6786757d7af9d7f206d4d6122bbf016dc5e5066ec60141330ab52960ee88",
+      "bytes": 193379,
+      "clipTime": 0.0,
+      "nominalRawTime": 25.0,
+      "mediaSha256": "7762dd5973506c578f97fbdeb9d0d55a6064044aff3a6bdf2abba5408ea8fcf4",
+      "method": "Full MP4 decode then output seek; no crop, retouching, overlays or image generation."
+    },
+    {
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/cue-02.jpg",
+      "sha256": "bb1f622d059c1827a8a616e678861ef44bf09a122ee25e51773293189df4408d",
+      "bytes": 236294,
+      "clipTime": 13.0,
+      "nominalRawTime": 38.0,
+      "mediaSha256": "7762dd5973506c578f97fbdeb9d0d55a6064044aff3a6bdf2abba5408ea8fcf4",
+      "method": "Full MP4 decode then output seek; no crop, retouching, overlays or image generation."
+    },
+    {
+      "path": "output/native-host-managed-20260914/native-managed-protected-write/cue-03.jpg",
+      "sha256": "710b2e7e2c992991dffea02544143884349b1a1c818d696a05e60551bb16fbb6",
+      "bytes": 291456,
+      "clipTime": 26.0,
+      "nominalRawTime": 51.0,
+      "mediaSha256": "7762dd5973506c578f97fbdeb9d0d55a6064044aff3a6bdf2abba5408ea8fcf4",
+      "method": "Full MP4 decode then output seek; no crop, retouching, overlays or image generation."
+    },
+    {
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/cue-01.jpg",
+      "sha256": "b4c0554854d2f163cfcd022733704b0b1bc3f12dac214ee1e05e8942d70cfc9f",
+      "bytes": 188001,
+      "clipTime": 0.0,
+      "nominalRawTime": 11.0,
+      "mediaSha256": "03b983761244ec51d998cef6c98daf699d054ece80f898ec0863ed72664ecabe",
+      "method": "Full MP4 decode then output seek; no crop, retouching, overlays or image generation."
+    },
+    {
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/cue-02.jpg",
+      "sha256": "68efbd847429d28f55625900134e075ecc0178d449f6fbd641abccb26d1dece4",
+      "bytes": 247988,
+      "clipTime": 11.0,
+      "nominalRawTime": 22.0,
+      "mediaSha256": "03b983761244ec51d998cef6c98daf699d054ece80f898ec0863ed72664ecabe",
+      "method": "Full MP4 decode then output seek; no crop, retouching, overlays or image generation."
+    },
+    {
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/cue-03.jpg",
+      "sha256": "9ecb5c3c3ad24aebeadd936c018efd3807a7792463fd6919104f98eb3b2f5a3e",
+      "bytes": 239563,
+      "clipTime": 35.0,
+      "nominalRawTime": 46.0,
+      "mediaSha256": "03b983761244ec51d998cef6c98daf699d054ece80f898ec0863ed72664ecabe",
+      "method": "Full MP4 decode then output seek; no crop, retouching, overlays or image generation."
+    },
+    {
+      "path": "output/native-host-managed-20260914/native-managed-imds-tcp/cue-04.jpg",
+      "sha256": "b614883e429d506787d70c95adc1681e701cf4280b9f865bac03961ddd867dbf",
+      "bytes": 278046,
+      "clipTime": 53.0,
+      "nominalRawTime": 64.0,
+      "mediaSha256": "03b983761244ec51d998cef6c98daf699d054ece80f898ec0863ed72664ecabe",
+      "method": "Full MP4 decode then output seek; no crop, retouching, overlays or image generation."
+    },
+    {
+      "path": "output/native-host-managed-20260914/native-managed-sensitive-read/result-frame.jpg",
+      "sha256": "29e7288012ae8c2d9f30c4b38eefd125bbd5e46c74b5467d5f299b4be0a0083d",
+      "bytes": 213177,
+      "clipTime": 24.0,
+      "nominalRawTime": 50.0,
+      "mediaSha256": "076adaed02bf1562feaa763ffd0decd68afcfbd22fbfc062ce546a3eb2bc1653",
+      "method": "Full MP4 decode then output seek; no crop, retouching, overlays or image generation.",
+      "identicalTo": "output/native-host-managed-20260914/native-managed-sensitive-read/cue-03.jpg"
+    }
+  ]
+}

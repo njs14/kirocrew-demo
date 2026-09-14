@@ -19,7 +19,7 @@ EVIDENCE = ROOT / "evidence/admin-console/native-20260913"
 FRESH = "admin-console-native-20260913/"
 EARLIER = "admin-console/"
 TITLE = "KiroCrew admin console tour"
-INTRO = "Inspect the server’s controls, understand their authority and read the client and server measurements. These are original captures of the owner console connected to the ARM EC2 Gateway. The Mac runs the client with its local Gateway off."
+INTRO = "Tour the owner console connected to the ARM EC2 Gateway: policy, user controls, runtime metrics and client/server health. The Mac runs the client with its local Gateway off. Each image retains its capture date."
 STATUS = "The native Mac run recorded an allowed S3 read, a Crew policy refusal, an MCP grant refusal and IAM AccessDenied. The final reconciliation and authority review support those four bounded outcomes."
 
 
@@ -161,7 +161,7 @@ def checked_public_source(value):
     if not isinstance(value, str):
         raise ValueError("Expected a scoped evidence path")
     parts = value.split("/")
-    if (len(parts) < 3 or parts[:2] not in [["evidence", "native-client-demo"], ["evidence", "admin-console"], ["evidence", "enterprise-managed"]]
+    if (len(parts) < 3 or parts[:2] not in [["evidence", "native-client-demo"], ["evidence", "admin-console"], ["evidence", "enterprise-managed"], ["evidence", "managed-host-20260914"]]
             or any(part.startswith(".") or part == "raw" for part in parts)
             or any(token in parts[-1] for token in (".local.", "preflight"))):
         raise ValueError("Added sources must be reviewed JSON receipts in the scoped demo evidence folders")
@@ -376,11 +376,81 @@ def image_info(item):
             "uri": f"data:{mime};base64," + base64.b64encode(data).decode()}
 
 
-def build(proof_paths, capture_group=None, validate_only=False, browser_review_file=None, managed_summary=None):
+def load_host_results(manifest_path, stops):
+    """Add inspected native result frames and direct links to their bounded proof."""
+    relative = manifest_path.absolute().relative_to(ROOT).as_posix()
+    manifest_path = checked_public_source(relative)
+    data = json.loads(manifest_path.read_text())
+    if (data.get("schemaVersion") != 1 or data.get("kind") != "native_host_results_tour"
+            or data.get("verifiedOutcomes") != ["sensitive_enoent", "protected_write_hook", "imds_tcp_rejected"]):
+        raise ValueError("Expected the reviewed three-outcome native host tour input")
+    descriptions = {
+        "sensitive": ("Actual recording frame at clip 24 seconds (raw 50 seconds). The native read returned ENOENT for the public canary. Separate current namespace evidence corroborates that the host file is hidden; this was not a read-hook denial.", "Actual native recording frame shows the public sensitive-path canary read returning ENOENT."),
+        "protected": ("Actual macOS client result: the prepared write was refused by the built-in protected-config write hook. The UI displays both 1 file changed and no changes. The separate host readback confirms the marker file is absent.", "The native macOS client reports a protected-config write refusal; its file panel displays both 1 file changed and no changes."),
+        "imds": ("Actual macOS result: connected false, errno 113, zero application bytes sent and no metadata requested. The sanitized receipt joins the one native execution to the firewall counter changing from 2 to 3 in the observed interval.", "The native IMDS TCP result reports EHOSTUNREACH, zero application bytes and no metadata request."),
+    }
+    images = data.get("screenshots", [])
+    if len(images) != 3 or {item.get("role") for item in images} != set(descriptions):
+        raise ValueError("Host results need three inspected native result images")
+    shots = []
+    for item in images:
+        value = item.get("path", "")
+        if not value.startswith(("evidence/managed-host-20260914/screenshots/", "output/native-host-managed-20260914/")):
+            raise ValueError("Host result image must be an inspected capture or decoded recording frame")
+        path = checked_relative_file(value)
+        if path.suffix.lower() not in {".jpg", ".jpeg", ".png"} or sha(path) != item.get("sha256") or path.stat().st_size != item.get("bytes"):
+            raise ValueError("Host result image differs from its inspected bytes")
+        caption, alt = descriptions[item["role"]]
+        shots.append({"source": value, "file": "../" + value, "caption": caption, "alt": alt,
+                      "capture_label": "September 14, 2026 · native macOS result · not admin-console UI",
+                      "capture_group": "completed-host-results-20260914"})
+    sources = [("September 14 native host result images and evidence bindings", relative)]
+    receipts = data.get("sources", [])
+    if not receipts:
+        raise ValueError("Native result frames require their sanitized supporting receipts")
+    for item in receipts:
+        value = item.get("path")
+        media_documents = {"output/native-host-managed-20260914/manifest.json", "output/native-host-managed-20260914/keyframe-provenance.json"}
+        path = (checked_relative_file(value) if value in media_documents or value == "evidence/managed-host-20260914/findings.md"
+                else checked_public_source(value))
+        if sha(path) != item.get("sha256") or path.stat().st_size != item.get("bytes"):
+            raise ValueError("Host result receipt differs from its reviewed bytes")
+        if not isinstance(item.get("label"), str) or not item["label"].strip():
+            raise ValueError("Host evidence needs a descriptive label")
+        sources.append((item["label"], item["path"]))
+    clips = data.get("clips", [])
+    clip_names = {"native-managed-sensitive-read", "native-managed-protected-write", "native-managed-imds-tcp"}
+    if len(clips) != 3 or {item.get("id") for item in clips} != clip_names:
+        raise ValueError("Host results need the three actual reviewed clips")
+    for item in clips:
+        value = item.get("path", "")
+        path = checked_relative_file(value)
+        if (not value.startswith("output/native-host-managed-20260914/") or path.suffix != ".mp4"
+                or sha(path) != item.get("sha256") or path.stat().st_size != item.get("bytes")):
+            raise ValueError("Host clip differs from its reviewed recording output")
+        if not isinstance(item.get("label"), str) or not item["label"].strip():
+            raise ValueError("Host clip needs a descriptive label")
+        sources.append((item["label"], value))
+    stops.append({"id": "host-results", "title": "Inspect the native host results",
+        "path": "Recorded macOS client sessions; supporting receipts below", "route": "Native client results, not an admin-console route",
+        "body": ["Three September 14 recordings complete the previously unfinished host checks. These images show the native Mac client. The existing admin screenshots and dashboard counters do not establish these outcomes.",
+                 "Sensitive-path read: CLI argument validation returned ENOENT for the public canary. A later readback found the host file hidden from the current CLI descendants by a .aws tmpfs mask. The native classifier remains accepted:false; the readback does not identify the historical syscall PID.",
+                 "Protected-path write: Crew's built-in hook blocked the marker, which remained absent. Its source files are root-owned. The hook runs before the managed filesystem rule, so this take tests that earlier hook. The host readback resolves the UI's conflicting 1 file changed heading and no changes row.",
+                 "IMDS TCP: the user approved the helper source read once and execution once. One native execution made one fixed TCP attempt, returned errno 113, sent zero application bytes and requested no metadata. The Crew UID's firewall counter increased from 2 to 3 during the observed interval. This does not establish that the whole host lacks an IMDS route. The earlier unanswered IMDS approval timeout remains a separate historical take.",
+                 "Open the three actual clips and sanitized receipts in the evidence list. Keep each result tied to its mechanism: filesystem visibility, a built-in write hook or an outbound network rule."],
+        "cue": "Read the native result first, then the matching receipt. Do not count these frames as fresh admin-dashboard measurements.",
+        "shots": shots})
+    return sources, {"path": relative, "sha256": sha(manifest_path), "observed_date": "2026-09-14",
+                     "verified_outcomes": data["verifiedOutcomes"], "scope": "Three native result images and recorded clips with separately reviewed proof; earlier admin captures are unchanged."}
+
+
+def build(proof_paths, capture_group=None, validate_only=False, browser_review_file=None, managed_summary=None, host_results=None):
     stops = copy.deepcopy(STOPS)
     sources = list(SOURCES)
     capture_metadata = None
     managed_metadata = None
+    host_metadata = None
+    edition_date = "September 13, 2026"
     status = STATUS
     status_link = ("Read the four-outcome reconciliation", "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json")
     scope = "Fresh security captures and earlier baseline images are dated separately. All screenshots are embedded unchanged. Native client enforcement requires a separate recording and receipt."
@@ -414,6 +484,20 @@ def build(proof_paths, capture_group=None, validate_only=False, browser_review_f
         native_limits = "Host root retains authority. This deployment does not establish signed fleet policy, enterprise SSO or human-role RBAC. The Linux cc floor is not macOS Seatbelt or strict-tier isolation. Sensitive-path read, protected-path write and native IMDS recordings remain unfinished. The policy-layer SEL join uses the isolated session, tool, reason and interval; those SEL events have no direct tool-call or trace-ID field. Earlier MCP/IAM collection: " + NATIVE_LIMITS
         md_changes = "Added the active file policy, locked S3 command rule, user approval menu, MCP availability and deferred inventory views, and the filmed native managed-denial result. Preserved all 19 earlier screenshots with pre-policy labels and added seven unchanged captures. The staged MCP restriction was discarded."
         footer_changes = md_changes
+    if host_results:
+        if not managed_summary:
+            raise ValueError("The current host results extend the managed-policy tour")
+        extra_sources, host_metadata = load_host_results(host_results, stops)
+        sources = extra_sources + [(label, path) for label, path in sources if path != "output/kirocrew-admin-findings.md"]
+        sources.append(("Current findings, followed by the preserved September 13 findings", "output/kirocrew-admin-findings.md"))
+        edition_date = "September 14, 2026"
+        status += " Three September 14 native recordings now cover the sensitive-path read, protected-path write and fixed IMDS TCP check."
+        status_link = ("Read the completed host-result evidence bindings", host_metadata["path"])
+        scope = "Eleven stops and 29 original images: 26 dated images retained from the previous edition, plus three clearly labeled native client result images. Configuration, Gateway metrics, collection health and security decisions have separate evidence."
+        native_limits = native_limits.replace("Sensitive-path read, protected-path write and native IMDS recordings remain unfinished.", "The three host checks now have separate native recordings and sanitized evidence. The sensitive-read result is ENOENT with separate current namespace corroboration; it is not a read-hook denial. The earlier unanswered IMDS approval remains historical.")
+        evidence_intro += " The September 14 host-result receipts and three actual clips are linked first. Their results do not turn the earlier admin counters into security-decision evidence."
+        md_changes = "Retained all 26 prior images and added one native-results stop with three original result images and links to the three actual clips. Updated the sensitive-read, protected-write and IMDS status from their sanitized receipts; preserved the earlier unanswered IMDS take and its limits."
+        footer_changes = md_changes
     for i, path in enumerate(proof_paths, 1):
         relative = path.absolute().relative_to(ROOT).as_posix()
         checked_public_source(relative)
@@ -436,7 +520,7 @@ def build(proof_paths, capture_group=None, validate_only=False, browser_review_f
             or publication.get("collection_complete") != native["original_collection_complete"]):
         raise ValueError("The publication export does not match the retained original native receipt")
     images, cards = [], []
-    md = [f"# {TITLE}", "", "September 13, 2026 · macOS client / ARM EC2 server · owner console", "", INTRO, "", status, "",
+    md = [f"# {TITLE}", "", edition_date + " · macOS client / ARM EC2 server · owner console", "", INTRO, "", status, "",
           scope, ""]
     for index, stop in enumerate(stops):
         paragraphs = "".join(f"<p>{esc(text)}</p>" for text in stop["body"])
@@ -462,7 +546,7 @@ def build(proof_paths, capture_group=None, validate_only=False, browser_review_f
     choices = "".join(f'<option value="{i}">{i+1:02} · {esc(stop["title"])}</option>' for i, stop in enumerate(stops))
     rendered = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A screenshot tour of the KiroCrew owner console, security controls and client/server telemetry."><title>{TITLE}</title><style>{STYLE}</style></head><body><div class="shell">
-<header><p class="eyebrow">KiroCrew · operator tour · September 13, 2026</p><h1>Inspect the server’s controls.<br>Read the evidence behind them.</h1><p class="intro">{esc(INTRO)}</p><p class="status">{esc(status)} <a href="../{esc(status_link[1])}">{esc(status_link[0])}</a>.</p><p class="scope">{esc(scope)}</p></header>
+<header><p class="eyebrow">KiroCrew · operator tour · {esc(edition_date)}</p><h1>Inspect the server’s controls.<br>Read the evidence behind them.</h1><p class="intro">{esc(INTRO)}</p><p class="status">{esc(status)} <a href="../{esc(status_link[1])}">{esc(status_link[0])}</a>.</p><p class="scope">{esc(scope)}</p></header>
 <div class="toolbar" aria-label="Tour navigation"><button id="previous" type="button">← Previous</button><label for="stop-choice" class="sr-only" hidden>Choose a stop</label><select id="stop-choice" aria-label="Choose a stop">{choices}</select><span id="counter" class="counter" aria-live="polite"></span><button id="next" type="button">Next →</button></div>
 <noscript><p class="nojs">Every stop is shown below. Use the stop links and Open original to inspect screenshots.</p></noscript>
 <div class="layout"><nav class="toc" aria-label="Tour stops">{navigation}</nav><main>{"".join(cards)}
@@ -519,6 +603,9 @@ def build(proof_paths, capture_group=None, validate_only=False, browser_review_f
         receipt["managed_edition"] = managed_metadata
         receipt["native_claim_scope"]["earlier_run_scope"] = "The four original outcomes predate managed policy."
         receipt["native_claim_scope"]["managed"] = managed_metadata["native_claim_scope"]
+    if host_metadata:
+        receipt["completed_host_results"] = host_metadata
+        receipt["native_claim_scope"]["completed_host_results"] = host_metadata["verified_outcomes"]
     receipt_text = json.dumps(receipt, indent=2) + "\n"
     if validate_only:
         print(json.dumps({"status": "validated_without_writes", "stops": len(stops), "screenshots": len(images),
@@ -539,5 +626,6 @@ if __name__ == "__main__":
     parser.add_argument("--validate-only", action="store_true", help="Validate inputs and report the proposed HTML hash without changing outputs or receipts.")
     parser.add_argument("--browser-review", type=Path, help="Existing scoped browser receipt to bind; approval applies only if its exact HTML hash matches.")
     parser.add_argument("--managed-summary", type=Path, help="Reviewed managed-policy summary with exact screenshot roles and receipt hashes; applied after the earlier capture group.")
+    parser.add_argument("--host-results", type=Path, help="Reviewed completed-host result images, clips and sanitized receipt bindings; adds a native-results stop.")
     args = parser.parse_args()
-    build(args.native_proof, args.capture_group, args.validate_only, args.browser_review, args.managed_summary)
+    build(args.native_proof, args.capture_group, args.validate_only, args.browser_review, args.managed_summary, args.host_results)

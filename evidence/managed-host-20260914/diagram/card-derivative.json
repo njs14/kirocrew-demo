@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "kind": "host_card_only_html_derivative",
+  "accepted_source": {
+    "path": "evidence/managed-host-20260914/accepted-diagram/kirocrew-managed-controls-diagram.html",
+    "bytes": 810663,
+    "sha256": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763"
+  },
+  "new_base_delivery": {
+    "path": "evidence/managed-host-20260914/diagram/base-delivery.json",
+    "bytes": 731,
+    "sha256": "6a95a8febe84738988d2a587b12d29452e344cf2e4d30cfabc2388d9b64094cd"
+  },
+  "new_base_html": {
+    "path": "evidence/managed-host-20260914/diagram/base.html",
+    "bytes": 809242,
+    "sha256": "ad853c39af3280662d3aaad59128327a9823b8f3a75fd2f88c10b1da4ec325c2"
+  },
+  "output": {
+    "path": "kirocrew-managed-controls-diagram.html",
+    "bytes": 810624,
+    "sha256": "7fe23f0611ba37f0e4bd6dc7155bf336f4c4bd2a566a1352ca5e27dd381b11ab"
+  },
+  "script": {
+    "path": "evidence/managed-host-20260914/diagram/preserve-svg.py",
+    "bytes": 2303,
+    "sha256": "d78ee1f6151aaa7f03d71c22d17af2362bc81f63fd31bb4e339baad3d8a9e157"
+  },
+  "card_change": {
+    "path": "evidence/managed-host-20260914/diagram/card-change.json",
+    "bytes": 770,
+    "sha256": "082ebdeb6ab08bbcdcd0c041a964753a35ea3d0e3d55786a7bd3b1c6e8586b90"
+  },
+  "svg_sha256": "79f5e8548af8854b1104c81b910f54f449a2384a2a01c9aebecbceeaf4470354",
+  "svg_bytes": 22359,
+  "accepted_svg_byte_identical": true,
+  "all_html_outside_three_card_text_replacements_byte_identical": true,
+  "artwork_rerendered": false,
+  "scope": "New Archify base proves specification rendering and validation. Final HTML reuses the exact accepted SVG, including its typography; only the three host card bullet strings differ from the accepted HTML."
+}

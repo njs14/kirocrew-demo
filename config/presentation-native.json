@@ -1,12 +1,13 @@
 {
   "schema_version": 1,
-  "edition": "managed-native-controls-20260914",
-  "description": "Rebuild the final 16-slide, nine-scene managed presentation from public project inputs. Playback exports include the presentation and its bound assets; execute the complete setup skill from the project checkout. Rebuilding does not exercise or revalidate the live deployment.",
+  "edition": "managed-native-host-controls-20260914",
+  "description": "Rebuild the presentation and twelve recorded native control clips from public project inputs. Playback is independent of AWS; a new live host needs its own setup and acceptance.",
   "manifests": [
     "output/native-client-clips-20260913/manifest.json",
     "output/native-memory-clip-20260913/manifest.json",
     "output/native-host-clips-20260913/manifest.json",
-    "output/native-managed-clip-20260914/manifest.json"
+    "output/native-managed-clip-20260914/manifest.json",
+    "output/native-host-managed-20260914/manifest.json"
   ],
   "receipts": [
     "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json",
@@ -36,20 +37,18 @@
     "evidence/native-client-demo/host-20260913-ui4/unused-slot8-observer.json",
     "evidence/enterprise-managed/20260913/policy-plan.json",
     "evidence/enterprise-managed/20260913/managed-presentation.json",
-    "evidence/enterprise-managed/20260913/archify/delivery-receipt.json"
+    "evidence/enterprise-managed/20260913/archify/delivery-receipt.json",
+    "evidence/managed-host-20260914/index.json",
+    "evidence/managed-host-20260914/media-review.json"
   ],
   "admin_build": "evidence/admin-console/native-20260913/tour-build.json",
-  "diagram_build": "evidence/enterprise-managed/20260913/archify/asset-dependencies.json",
-  "pending_controls": [
-    "Sensitive-path read",
-    "Protected-path write",
-    "IMDS execution"
-  ],
+  "diagram_build": "evidence/managed-host-20260914/diagram/asset-dependencies.json",
+  "pending_controls": [],
   "limitations": [
-    "The earlier sensitive-path and anonymous-helper attempts ended in model-only responses, with no native tool execution. The later anonymous-helper execution has separate reviewed authentication evidence. Sensitive-path enforcement remains pending.",
+    "Earlier sensitive-path and anonymous-helper attempts ended before native execution. Their dated receipts are preserved; the new September 14 sensitive take and later namespace readback have their own evidence.",
     "The command clip starts after the denial and shows an assistant summary with collapsed tool history. Persisted native history and scoped SEL establish the configured Crew rule as the enforcer; the request-to-denial recording is missing.",
     "The authentication excerpt starts at execution approval. The earlier source read required its own Allow once. The clip ends with the assistant's HTTP 403 summary; its native Output stays collapsed. Separate exact-input, native-result and Gateway evidence support attribution.",
-    "The IMDS helper's source read completed. Its execution approval expired unanswered after ten minutes; no helper execution or metadata firewall result was observed. The earlier pending-at-observer-expiry receipt remains preserved as a historical snapshot.",
+    "The earlier IMDS execution approval expired without a run. A separate September 14 take completed one native execution after separate source-read and execution approvals; it has its own counter attribution.",
     "The custom marker-command rule was removed after its take. The recording describes that earlier configuration; replay does not mean the rule remains active. The cleanup receipt verifies the exact marker rule is absent, but does not establish full preservation of every unrelated prior custom rule."
   ],
   "recording_coverage": {},
@@ -58,13 +57,18 @@
     "kirocrew-managed-controls-diagram.html",
     ".agents/skills/kirocrew-demo/SKILL.md",
     "docs/MANAGED-DEMO.md",
-    "docs/LIVE-SETUP.md"
+    "docs/LIVE-SETUP.md",
+    "docs/NATIVE-HOST-REVIEW.md",
+    "evidence/managed-host-20260914/findings.md",
+    "docs/NAMESPACE-READBACK.md",
+    "scripts/inspect-native-session-namespace.py"
   ],
   "input_sha256": {
     "output/native-client-clips-20260913/manifest.json": "2683eef05ff8d2a347e8c2494ca15ffe8eb991effeb48fce12b98055cdf3e59e",
     "output/native-memory-clip-20260913/manifest.json": "3565112184e648433a295349127b60181e80cd6517f67a46604edf66477b127d",
     "output/native-host-clips-20260913/manifest.json": "0539ebc7f303cefe42d4fa554aa986d9ff431e4a3448d9dc10447cf9064b2e52",
     "output/native-managed-clip-20260914/manifest.json": "f2a0ca0d1e54e021ebe4bd0cb9c2e06119fade72f631901ec2c483bacd8b5afb",
+    "output/native-host-managed-20260914/manifest.json": "6519a880da0178f84ace9f4aa67ae53b2ec523ad7a8522ff123f7f6816e6fd33",
     "evidence/native-client-demo/20260913-ui2-reconciled-final/reconciliation.json": "301c4baaf4fc7ff2dbab091c91df9bd89338f301247dd289450fbe2ad051ee0b",
     "evidence/native-client-demo/20260913-ui2-reconciled-final/review.json": "e18b6f2e304d800a2734e74d346a07894c34d745c43df69c2b370ff50b9989c9",
     "evidence/native-client-demo/20260913-ui2/authority-attribution-review.json": "3bd876c012bf0c0039e4cac74fb63b8736f3104dc947736356d66a7ccfb95642",
@@ -93,18 +97,24 @@
     "evidence/enterprise-managed/20260913/policy-plan.json": "c1c5d3d9703a6d2bf18583bb54111a53332dd98bdce3868dd2bf9633498dd9e5",
     "evidence/enterprise-managed/20260913/managed-presentation.json": "bc7cfae5bd659e0aa499848e29f6346ae39579b6c750d96b792e8aa9d78d7452",
     "evidence/enterprise-managed/20260913/archify/delivery-receipt.json": "6afaef5379cb72d29f9ca06baff7dd1cddc5c68974341f548a649d81d0af9172",
-    "evidence/admin-console/native-20260913/tour-build.json": "acbcec28f25e0eaaae626de4d01f3d2559e59f2a164588e1606a5658a3d7e65a",
-    "evidence/enterprise-managed/20260913/archify/asset-dependencies.json": "80c071fdbccee7a21925514a4b566a981b99fce981eb78e4e1a4e611bbf73adf",
-    "docs/HOST-CONTROL-SCENARIOS.md": "c5ae04a8b7bdea3f6bb35b58e7c2caf5cba13aa08a29740a06b4c597120cff73",
-    "kirocrew-managed-controls-diagram.html": "07951e4f52ce364d721cb65aa4d150e327c760e33d970ea8fe17d9ea4cefa763",
-    ".agents/skills/kirocrew-demo/SKILL.md": "df041ff167652ad63484a27138ac4f2aee1c665e00a28cbd868b0c9640abb166",
-    "docs/MANAGED-DEMO.md": "c4a1c0af079b08667071b4bf32567ae6bb9e8aea873e07033818bdc296341de9",
-    "docs/LIVE-SETUP.md": "3dd408177b5a7030d2c2c242e696bd3f7f29740ec1f1970856372f481a5fd09d"
+    "evidence/managed-host-20260914/index.json": "c7ea50639058346517fe79bc50ea4e07dbd07041a6d6021de01c969a943f5489",
+    "evidence/managed-host-20260914/media-review.json": "b3d81b563ad60602e0d04b7506ae59208869316d7767fb886eac617d7b24c528",
+    "docs/HOST-CONTROL-SCENARIOS.md": "7d13372f855dc4b3307f219755e276c98c7a58332d7a454333b2c1f7c735aeae",
+    "kirocrew-managed-controls-diagram.html": "7fe23f0611ba37f0e4bd6dc7155bf336f4c4bd2a566a1352ca5e27dd381b11ab",
+    ".agents/skills/kirocrew-demo/SKILL.md": "413d4ec277300c5799e95d9b09d398eda58c99a50b59da6245e43b3129724fb8",
+    "docs/MANAGED-DEMO.md": "81a9bd1dc19b393dc239e2dedcbc4513385d5226cdaac2e397fae9ca713b6b38",
+    "docs/LIVE-SETUP.md": "3dd408177b5a7030d2c2c242e696bd3f7f29740ec1f1970856372f481a5fd09d",
+    "docs/NATIVE-HOST-REVIEW.md": "13e63089b06047f4b8e21c059127dc6613cc5d097d00ab2855867be3538d026e",
+    "evidence/managed-host-20260914/findings.md": "2afac39efedafbc155ce5f783ec77fe5daab6d022c57501d628c6a8f7f6dad40",
+    "docs/NAMESPACE-READBACK.md": "ffadec16d0c1df6a38d9590916adeab3b72a1c42a7bf9550022e06a46c30f35d",
+    "scripts/inspect-native-session-namespace.py": "60fd081fd703e692df7dd895c51353c307e965ea4e2ca83ac33ece6bc6780053",
+    "evidence/admin-console/native-20260913/tour-build.json": "ee7d0b236fa933feb3519d3875afcc943b3ac6c4592e51c771b59d047e9fd81b",
+    "evidence/managed-host-20260914/diagram/asset-dependencies.json": "84c3985e24520cef9a02af1101e20ef55765d123a0651a819fc2c025a37ec5d6"
   },
   "accepted_reference": {
-    "edition_sha256": "73c5bcacab559ed30b89b4a26b4937718036481d0829e797452002952b5f288b",
-    "slide_count": 16,
-    "scene_count": 9,
-    "scope": "Final managed presentation after council incorporation and No AI Slop editing. New exports receive their own integrity receipts and do not inherit model-council or browser verdicts."
+    "edition_sha256": "587f500eaa2f42b343146c9942303855a38cff22c583719476e65284a725d8c1",
+    "slide_count": 19,
+    "scene_count": 12,
+    "scope": "Final post-council derivative; review decisions and final browser receipt are separate."
   }
 }

@@ -1,0 +1,6 @@
+# Keep local reviewer transport/session metadata private; publish concise receipts.
+**/prepared.json
+**/grok-raw.jsonl
+**/claude-raw.jsonl
+**/grok-stderr.txt
+**/claude-stderr.txt

@@ -1,0 +1,57 @@
+{
+  "checks": [
+    "Allowlisted public fields compared with exact private receipt and snapshot hashes.",
+    "Sensitive ENOENT and later current-session namespace observation retain separate scope.",
+    "Protected target and SEL/native call match; marker absent before and after.",
+    "IMDS permission cards map by exact tool-call ID, not sorted approval ID.",
+    "Both native approvals precede their results; fixed source, single execution and counter increment agree.",
+    "All 55 offline reviewer tests pass, including the four independently identified false-accept cases."
+  ],
+  "fixed_findings": [
+    "History recovery could conceal a conflicting command when another field was redacted.",
+    "Approval input was not compared with the native call.",
+    "Native activity outside the parsed turn was ignored.",
+    "collection_complete false could be accepted.",
+    "Draft public IMDS approval IDs were assigned by array order."
+  ],
+  "independent_final_verdict": false,
+  "independent_review_scope": "Independent agents identified four checker defects and one swapped approval-ID mapping before their usage limit. Root fixed and verified the final changes; no independent approval of final bytes is claimed.",
+  "kind": "public_native_host_evidence_review",
+  "material_findings": [],
+  "review_mode": "author_final_after_independent_findings",
+  "reviewed_at": "2026-09-14T14:23:06.198433+00:00",
+  "reviewed_files": [
+    {
+      "bytes": 3453,
+      "path": "evidence/managed-host-20260914/receipts/sensitive-read.json",
+      "sha256": "491fa56aed9dcc12d9667ce0a0c3dfbafcbb5bccfdcd233413bb5bd4eec5e804"
+    },
+    {
+      "bytes": 7742,
+      "path": "evidence/managed-host-20260914/receipts/sensitive-namespace.json",
+      "sha256": "7d93cfe4cb1efa0c0a4f6aa4d9013db5f747d54915fee3d1034998aa18f979ad"
+    },
+    {
+      "bytes": 3808,
+      "path": "evidence/managed-host-20260914/receipts/protected-write.json",
+      "sha256": "3654af46b51def2796c3a0b401eb3c7217d14eead834766915ba96083b1d4fe4"
+    },
+    {
+      "bytes": 5708,
+      "path": "evidence/managed-host-20260914/receipts/imds-tcp.json",
+      "sha256": "8fd47d3fb89181d5d83c4df18bddcc89b68c4eb29adb32d47b9b792cef0b72b5"
+    },
+    {
+      "bytes": 31137,
+      "path": "evidence/managed-host-20260914/receipts/host-state-snapshots.json",
+      "sha256": "997ef6d1b446fb8c35dbab1088d1a892db5501b04428407e798b7126e52321e5"
+    },
+    {
+      "bytes": 2183,
+      "path": "evidence/managed-host-20260914/findings.md",
+      "sha256": "2afac39efedafbc155ce5f783ec77fe5daab6d022c57501d628c6a8f7f6dad40"
+    }
+  ],
+  "schema_version": 1,
+  "verdict": "PASS"
+}

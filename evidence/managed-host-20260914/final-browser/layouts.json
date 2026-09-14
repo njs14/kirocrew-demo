@@ -1,0 +1,146 @@
+[
+  {
+    "clientHeight": 604,
+    "footerTop": 594.2421875,
+    "scrollHeight": 604,
+    "slide": "slide-1",
+    "tableBottom": null
+  },
+  {
+    "clientHeight": 604,
+    "footerTop": 594.2421875,
+    "scrollHeight": 604,
+    "slide": "slide-2",
+    "tableBottom": null
+  },
+  {
+    "clientHeight": 604,
+    "footerTop": 594.2421875,
+    "scrollHeight": 604,
+    "slide": "slide-3",
+    "tableBottom": 497.8359375
+  },
+  {
+    "clientHeight": 604,
+    "footerTop": 594.2421875,
+    "scrollHeight": 604,
+    "slide": "slide-4",
+    "tableBottom": 505.1015625
+  },
+  {
+    "clientHeight": 604,
+    "footerTop": 608.1953125,
+    "scrollHeight": 604,
+    "slide": "slide-5",
+    "tableBottom": null
+  },
+  {
+    "clientHeight": 604,
+    "footerTop": 608.1953125,
+    "scrollHeight": 604,
+    "slide": "slide-6",
+    "tableBottom": null
+  },
+  {
+    "clientHeight": 604,
+    "footerTop": 608.1953125,
+    "scrollHeight": 604,
+    "slide": "slide-7",
+    "tableBottom": null
+  },
+  {
+    "clientHeight": 604,
+    "footerTop": 608.1953125,
+    "scrollHeight": 604,
+    "slide": "slide-8",
+    "tableBottom": null
+  },
+  {
+    "clientHeight": 604,
+    "footerTop": 608.1953125,
+    "scrollHeight": 604,
+    "slide": "slide-9",
+    "tableBottom": null
+  },
+  {
+    "chapters": {
+      "client": 289,
+      "scroll": 289
+    },
+    "clientHeight": 604,
+    "scrollHeight": 604,
+    "slide": "slide-10"
+  },
+  {
+    "chapters": {
+      "client": 253,
+      "scroll": 253
+    },
+    "clientHeight": 604,
+    "scrollHeight": 604,
+    "slide": "slide-11"
+  },
+  {
+    "chapters": {
+      "client": 299,
+      "scroll": 299
+    },
+    "clientHeight": 604,
+    "scrollHeight": 604,
+    "slide": "slide-12"
+  },
+  {
+    "chapters": {
+      "client": 351,
+      "scroll": 351
+    },
+    "clientHeight": 604,
+    "scrollHeight": 604,
+    "slide": "slide-13"
+  },
+  {
+    "chapters": {
+      "client": 239,
+      "scroll": 239
+    },
+    "clientHeight": 604,
+    "scrollHeight": 604,
+    "slide": "slide-14"
+  },
+  {
+    "chapters": {
+      "client": 239,
+      "scroll": 239
+    },
+    "clientHeight": 604,
+    "scrollHeight": 604,
+    "slide": "slide-15"
+  },
+  {
+    "chapters": {
+      "client": 259,
+      "scroll": 259
+    },
+    "clientHeight": 604,
+    "scrollHeight": 604,
+    "slide": "slide-16"
+  },
+  {
+    "chapters": null,
+    "clientHeight": 604,
+    "scrollHeight": 604,
+    "slide": "slide-17"
+  },
+  {
+    "chapters": null,
+    "clientHeight": 604,
+    "scrollHeight": 604,
+    "slide": "slide-18"
+  },
+  {
+    "chapters": null,
+    "clientHeight": 604,
+    "scrollHeight": 604,
+    "slide": "slide-19"
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "height": 604,
+    "id": "slide-1",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Server controlsfor a Mac client",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-2",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Execution and host controls stay on EC2",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-3",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Where each request stops",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-4",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Where each request stops",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-5",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "A permitted S3 read",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-6",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Crew blocks a tool call",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-7",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "The MCP service refuses the grant",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-8",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "AWS refuses the S3 read",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-9",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Private memory requires an assigned conversation",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-10",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Read the permitted workspace canary",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-11",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Inspect the command denial summary",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-12",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Approve the helper; read the 403 summary",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-13",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "A managed policy blocks a locally enabled tool",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-14",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "The sensitive canary is absent from the CLI view",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-15",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "The protected write stops before approval",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-16",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Approval permits the probe; the host rejects TCP",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-17",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "MCP availability and execution permission",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-18",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Managed policy and admin evidence",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  },
+  {
+    "height": 604,
+    "id": "slide-19",
+    "scrollHeight": 604,
+    "scrollWidth": 1074,
+    "title": "Reproduce the presentation or set up a host",
+    "viewport": [
+      1280,
+      720
+    ],
+    "width": 1074
+  }
+]

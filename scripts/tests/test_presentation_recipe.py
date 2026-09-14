@@ -49,8 +49,7 @@ def declared_sources(recipe):
     for relative in recipe["receipts"]:
         if relative.endswith(".json"):
             receipt = json.loads((ROOT / relative).read_bytes())
-            if isinstance(receipt, dict) and receipt.get("kind") == "managed_native_presentation":
-                paths.update(item["path"] for item in receipt.get("receipts", []) + receipt.get("screenshots", []))
+            paths.update(item["path"] for item in recipe_module.receipt_dependencies(receipt))
     paths.update({"config/presentation-native.json", "scripts/build-demo-presentation.py",
                   "scripts/build-native-control-presentation.py", "scripts/build-recorded-demo-presentation.py",
                   "scripts/serve-recorded-demos.py", "presentation/slides.css", "presentation/demo-player.css",
@@ -92,6 +91,19 @@ def skill_link_sources(root):
 
 
 class RecipeValidationTests(unittest.TestCase):
+    def test_managed_host_dependency_index_follows_only_public_fields(self):
+        binding = lambda name: {"path": "evidence/managed-host-fixture/" + name, "sha256": "0" * 64, "bytes": 10}
+        index = {"schema_version": 1, "kind": "managed_host_native_evidence_index",
+                 "takes": [{"review": binding("take.json"), "corroboration": [binding("corroboration.json")]}],
+                 "host_state_snapshots": binding("host.json"), "findings": binding("findings.md"),
+                 "public_review": binding("review.json"),
+                 "private_source": {"path": ".build/private-collector.json"}}
+        paths = {item["path"] for item in recipe_module.receipt_dependencies(index)}
+        self.assertEqual(paths, {binding(name)["path"] for name in ("take.json", "corroboration.json", "host.json", "findings.md", "review.json")})
+        index["takes"][0]["corroboration"][0]["path"] = ".build/private-collector.json"
+        with self.assertRaisesRegex(ValueError, "cannot include private state"):
+            recipe_module.receipt_dependencies(index)
+
     def test_playback_readme_collision_preserves_existing_bytes(self):
         recipe = recipe_module.load_recipe()
         with tempfile.TemporaryDirectory() as temporary:
